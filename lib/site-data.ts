@@ -22,9 +22,8 @@ const isDeployedProduction =
   isProduction &&
   (process.env.VERCEL === "1" || Boolean(process.env.VERCEL_ENV));
 const isVercelBlobEnabled = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
-const blobAccess = (process.env.BLOB_ACCESS === "private" ? "private" : "public") as
-  | "private"
-  | "public";
+const blobAccess =
+  process.env.BLOB_ACCESS === "public" ? "public" : "private";
 
 async function streamToText(stream: ReadableStream<Uint8Array>) {
   return await new Response(stream).text();
@@ -122,14 +121,16 @@ export async function saveUpload(file: File, prefix: string) {
 
   if (isVercelBlobEnabled) {
     const result = await put(`uploads/${fileName}`, file, {
-      access: "public",
+      access: blobAccess,
       addRandomSuffix: false,
       allowOverwrite: true,
       contentType: file.type || undefined,
       cacheControlMaxAge: 60 * 60 * 24 * 30,
     });
 
-    return result.url;
+    return blobAccess === "private"
+      ? `/media/${result.pathname}`
+      : result.url;
   }
 
   const outputPath = path.join(uploadsDirectory, fileName);

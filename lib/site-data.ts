@@ -50,14 +50,10 @@ function getBundledSeedData() {
 }
 
 function classifyPosterPath(posterPath: string) {
-  const value = posterPath.trim();
+  const value = normalizePosterPath(posterPath);
 
   if (!value) {
     return "missing" as const;
-  }
-
-  if (value === "/posters/updating-placeholder.png") {
-    return "placeholder" as const;
   }
 
   if (value.startsWith("/posters/batch-17/")) {
@@ -77,6 +73,11 @@ function classifyPosterPath(posterPath: string) {
   }
 
   return "other" as const;
+}
+
+function normalizePosterPath(posterPath: string | null | undefined) {
+  const value = (posterPath || "").trim();
+  return value === "/posters/updating-placeholder.png" ? "" : value;
 }
 
 function getTimestamp(value: string | null | undefined) {
@@ -121,7 +122,7 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
 
     if (
       existingKind === "batch" &&
-      (bundledKind === "placeholder" || bundledKind === "managed")
+      bundledKind === "managed"
     ) {
       return true;
     }
@@ -164,13 +165,12 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
       ...(preferBundledReviewFields ? review : bundledReview),
       ...(preferBundledReviewFields ? bundledReview : review),
       posterImage: shouldPreferBundledPoster(
-        review.posterImage || "",
-        bundledReview.posterImage || "",
+        normalizePosterPath(review.posterImage),
+        normalizePosterPath(bundledReview.posterImage),
       )
-        ? bundledReview.posterImage
-        : review.posterImage && review.posterImage.trim()
-          ? review.posterImage
-          : bundledReview.posterImage,
+        ? normalizePosterPath(bundledReview.posterImage)
+        : normalizePosterPath(review.posterImage) ||
+          normalizePosterPath(bundledReview.posterImage),
       backdropImage: mergeStringField(
         review.backdropImage,
         bundledReview.backdropImage,

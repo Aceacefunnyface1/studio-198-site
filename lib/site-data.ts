@@ -79,6 +79,15 @@ function classifyPosterPath(posterPath: string) {
   return "other" as const;
 }
 
+function getTimestamp(value: string | null | undefined) {
+  if (!value) {
+    return Number.NEGATIVE_INFINITY;
+  }
+
+  const timestamp = Date.parse(value);
+  return Number.isNaN(timestamp) ? Number.NEGATIVE_INFINITY : timestamp;
+}
+
 function mergeSiteData(existing: SiteData, bundled: SiteData) {
   const bundledBySlug = new Map(
     bundled.reviews.map((review) => [review.slug, review]),
@@ -129,9 +138,31 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
 
     bundledBySlug.delete(review.slug);
 
+    const preferBundledReviewFields =
+      getTimestamp(bundledReview.updatedAt) > getTimestamp(review.updatedAt);
+
+    const mergeStringField = (existingValue: string, bundledValue: string) => {
+      if (preferBundledReviewFields && bundledValue.trim()) {
+        return bundledValue;
+      }
+
+      return existingValue.trim() ? existingValue : bundledValue;
+    };
+
+    const mergeArrayField = (
+      existingValue: string[],
+      bundledValue: string[],
+    ) => {
+      if (preferBundledReviewFields && bundledValue.length > 0) {
+        return bundledValue;
+      }
+
+      return existingValue.length > 0 ? existingValue : bundledValue;
+    };
+
     return {
-      ...bundledReview,
-      ...review,
+      ...(preferBundledReviewFields ? review : bundledReview),
+      ...(preferBundledReviewFields ? bundledReview : review),
       posterImage: shouldPreferBundledPoster(
         review.posterImage || "",
         bundledReview.posterImage || "",
@@ -140,20 +171,51 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
         : review.posterImage && review.posterImage.trim()
           ? review.posterImage
           : bundledReview.posterImage,
-      backdropImage:
-        review.backdropImage && review.backdropImage.trim()
-          ? review.backdropImage
-          : bundledReview.backdropImage,
-      releaseYear: review.releaseYear ?? bundledReview.releaseYear,
-      genreTags:
-        review.genreTags.length > 0 ? review.genreTags : bundledReview.genreTags,
-      moodTags:
-        review.moodTags.length > 0 ? review.moodTags : bundledReview.moodTags,
-      runtime: review.runtime || bundledReview.runtime,
-      director: review.director || bundledReview.director,
-      reviewVideoUrl: review.reviewVideoUrl || bundledReview.reviewVideoUrl,
-      whereToWatchUrl:
-        review.whereToWatchUrl || bundledReview.whereToWatchUrl,
+      backdropImage: mergeStringField(
+        review.backdropImage,
+        bundledReview.backdropImage,
+      ),
+      releaseYear:
+        preferBundledReviewFields && bundledReview.releaseYear !== null
+          ? bundledReview.releaseYear
+          : review.releaseYear ?? bundledReview.releaseYear,
+      verdict:
+        preferBundledReviewFields && bundledReview.verdict
+          ? bundledReview.verdict
+          : review.verdict,
+      rating:
+        preferBundledReviewFields && bundledReview.rating !== null
+          ? bundledReview.rating
+          : review.rating ?? bundledReview.rating,
+      reviewerName: mergeStringField(
+        review.reviewerName,
+        bundledReview.reviewerName,
+      ),
+      quickHit: mergeStringField(review.quickHit, bundledReview.quickHit),
+      fullTake: mergeStringField(review.fullTake, bundledReview.fullTake),
+      reviewVideoUrl: mergeStringField(
+        review.reviewVideoUrl,
+        bundledReview.reviewVideoUrl,
+      ),
+      whereToWatchUrl: mergeStringField(
+        review.whereToWatchUrl,
+        bundledReview.whereToWatchUrl,
+      ),
+      featured:
+        preferBundledReviewFields && bundledReview.featured !== review.featured
+          ? bundledReview.featured
+          : review.featured,
+      genreTags: mergeArrayField(review.genreTags, bundledReview.genreTags),
+      moodTags: mergeArrayField(review.moodTags, bundledReview.moodTags),
+      runtime: mergeStringField(review.runtime, bundledReview.runtime),
+      director: mergeStringField(review.director, bundledReview.director),
+      status:
+        preferBundledReviewFields && bundledReview.status
+          ? bundledReview.status
+          : review.status,
+      updatedAt: preferBundledReviewFields
+        ? bundledReview.updatedAt
+        : review.updatedAt,
     };
   });
 

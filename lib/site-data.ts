@@ -49,6 +49,52 @@ function getBundledSeedData() {
   return bundledSeedData as SiteData;
 }
 
+function mergeSiteData(existing: SiteData, bundled: SiteData) {
+  const bundledBySlug = new Map(
+    bundled.reviews.map((review) => [review.slug, review]),
+  );
+
+  const mergedReviews = existing.reviews.map((review) => {
+    const bundledReview = bundledBySlug.get(review.slug);
+
+    if (!bundledReview) {
+      return review;
+    }
+
+    bundledBySlug.delete(review.slug);
+
+    return {
+      ...bundledReview,
+      ...review,
+      posterImage:
+        review.posterImage && review.posterImage.trim()
+          ? review.posterImage
+          : bundledReview.posterImage,
+      backdropImage:
+        review.backdropImage && review.backdropImage.trim()
+          ? review.backdropImage
+          : bundledReview.backdropImage,
+      releaseYear: review.releaseYear ?? bundledReview.releaseYear,
+      genreTags:
+        review.genreTags.length > 0 ? review.genreTags : bundledReview.genreTags,
+      moodTags:
+        review.moodTags.length > 0 ? review.moodTags : bundledReview.moodTags,
+      runtime: review.runtime || bundledReview.runtime,
+      director: review.director || bundledReview.director,
+      reviewVideoUrl: review.reviewVideoUrl || bundledReview.reviewVideoUrl,
+      whereToWatchUrl:
+        review.whereToWatchUrl || bundledReview.whereToWatchUrl,
+    };
+  });
+
+  const missingBundledReviews = [...bundledBySlug.values()];
+
+  return {
+    ...existing,
+    reviews: [...mergedReviews, ...missingBundledReviews],
+  } satisfies SiteData;
+}
+
 function requireBlobInProduction() {
   if (isDeployedProduction && !isVercelBlobEnabled) {
     throw new Error(
@@ -78,7 +124,21 @@ async function readBlobSiteData() {
   }
 
   const raw = await streamToText(result.stream);
-  return JSON.parse(raw) as SiteData;
+  const blobData = JSON.parse(raw) as SiteData;
+  const bundledData = getBundledSeedData();
+  const mergedData = mergeSiteData(blobData, bundledData);
+
+  if (JSON.stringify(mergedData) !== JSON.stringify(blobData)) {
+    await put(siteDataBlobPath, JSON.stringify(mergedData, null, 2), {
+      access: blobAccess,
+      addRandomSuffix: false,
+      allowOverwrite: true,
+      contentType: "application/json",
+      cacheControlMaxAge: 60,
+    });
+  }
+
+  return mergedData;
 }
 
 export async function readSiteData() {

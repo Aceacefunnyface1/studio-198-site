@@ -1,0 +1,1502 @@
+[
+  {
+    "rank": 1,
+    "title": "The Shawshank Redemption",
+    "normalizedTitle": "theshawshankredemption",
+    "year": 1994
+  },
+  {
+    "rank": 2,
+    "title": "The Godfather",
+    "normalizedTitle": "thegodfather",
+    "year": 1972
+  },
+  {
+    "rank": 3,
+    "title": "The Dark Knight",
+    "normalizedTitle": "thedarkknight",
+    "year": 2008
+  },
+  {
+    "rank": 4,
+    "title": "The Godfather Part II",
+    "normalizedTitle": "thegodfatherpartii",
+    "year": 1974
+  },
+  {
+    "rank": 5,
+    "title": "12 Angry Men",
+    "normalizedTitle": "12angrymen",
+    "year": 1957
+  },
+  {
+    "rank": 6,
+    "title": "The Lord of the Rings: The Return of the King",
+    "normalizedTitle": "thelordoftheringsthereturnoftheking",
+    "year": 2003
+  },
+  {
+    "rank": 7,
+    "title": "Schindler's List",
+    "normalizedTitle": "schindlerslist",
+    "year": 1993
+  },
+  {
+    "rank": 8,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "normalizedTitle": "thelordoftheringsthefellowshipofthering",
+    "year": 2001
+  },
+  {
+    "rank": 9,
+    "title": "Pulp Fiction",
+    "normalizedTitle": "pulpfiction",
+    "year": 1994
+  },
+  {
+    "rank": 10,
+    "title": "The Good, the Bad and the Ugly",
+    "normalizedTitle": "thegoodthebadandtheugly",
+    "year": 1966
+  },
+  {
+    "rank": 11,
+    "title": "The Lord of the Rings: The Two Towers",
+    "normalizedTitle": "thelordoftheringsthetwotowers",
+    "year": 2002
+  },
+  {
+    "rank": 12,
+    "title": "Forrest Gump",
+    "normalizedTitle": "forrestgump",
+    "year": 1994
+  },
+  {
+    "rank": 13,
+    "title": "Fight Club",
+    "normalizedTitle": "fightclub",
+    "year": 1999
+  },
+  {
+    "rank": 14,
+    "title": "Inception",
+    "normalizedTitle": "inception",
+    "year": 2010
+  },
+  {
+    "rank": 15,
+    "title": "Star Wars: Episode V - The Empire Strikes Back",
+    "normalizedTitle": "starwarsepisodevtheempirestrikesback",
+    "year": 1980
+  },
+  {
+    "rank": 16,
+    "title": "The Matrix",
+    "normalizedTitle": "thematrix",
+    "year": 1999
+  },
+  {
+    "rank": 17,
+    "title": "GoodFellas",
+    "normalizedTitle": "goodfellas",
+    "year": 1990
+  },
+  {
+    "rank": 18,
+    "title": "Interstellar",
+    "normalizedTitle": "interstellar",
+    "year": 2014
+  },
+  {
+    "rank": 19,
+    "title": "One Flew Over the Cuckoo's Nest",
+    "normalizedTitle": "oneflewoverthecuckoosnest",
+    "year": 1975
+  },
+  {
+    "rank": 20,
+    "title": "Seven",
+    "normalizedTitle": "seven",
+    "year": 1995
+  },
+  {
+    "rank": 21,
+    "title": "It's a Wonderful Life",
+    "normalizedTitle": "itsawonderfullife",
+    "year": 1946
+  },
+  {
+    "rank": 22,
+    "title": "The Silence of the Lambs",
+    "normalizedTitle": "thesilenceofthelambs",
+    "year": 1991
+  },
+  {
+    "rank": 23,
+    "title": "Seven Samurai",
+    "normalizedTitle": "sevensamurai",
+    "year": 1954
+  },
+  {
+    "rank": 24,
+    "title": "Saving Private Ryan",
+    "normalizedTitle": "savingprivateryan",
+    "year": 1998
+  },
+  {
+    "rank": 25,
+    "title": "The Green Mile",
+    "normalizedTitle": "thegreenmile",
+    "year": 1999
+  },
+  {
+    "rank": 26,
+    "title": "City of God",
+    "normalizedTitle": "cityofgod",
+    "year": 2002
+  },
+  {
+    "rank": 27,
+    "title": "Life Is Beautiful",
+    "normalizedTitle": "lifeisbeautiful",
+    "year": 1997
+  },
+  {
+    "rank": 28,
+    "title": "Terminator 2: Judgment Day",
+    "normalizedTitle": "terminator2judgmentday",
+    "year": 1991
+  },
+  {
+    "rank": 29,
+    "title": "Star Wars: Episode IV - A New Hope",
+    "normalizedTitle": "starwarsepisodeivanewhope",
+    "year": 1977
+  },
+  {
+    "rank": 30,
+    "title": "Back to the Future",
+    "normalizedTitle": "backtothefuture",
+    "year": 1985
+  },
+  {
+    "rank": 31,
+    "title": "Spirited Away",
+    "normalizedTitle": "spiritedaway",
+    "year": 2001
+  },
+  {
+    "rank": 32,
+    "title": "The Pianist",
+    "normalizedTitle": "thepianist",
+    "year": 2002
+  },
+  {
+    "rank": 33,
+    "title": "Gladiator",
+    "normalizedTitle": "gladiator",
+    "year": 2000
+  },
+  {
+    "rank": 34,
+    "title": "Parasite",
+    "normalizedTitle": "parasite",
+    "year": 2019
+  },
+  {
+    "rank": 35,
+    "title": "Grave of the Fireflies",
+    "normalizedTitle": "graveofthefireflies",
+    "year": 1988
+  },
+  {
+    "rank": 36,
+    "title": "Psycho",
+    "normalizedTitle": "psycho",
+    "year": 1960
+  },
+  {
+    "rank": 37,
+    "title": "The Lion King",
+    "normalizedTitle": "thelionking",
+    "year": 1994
+  },
+  {
+    "rank": 38,
+    "title": "Harakiri",
+    "normalizedTitle": "harakiri",
+    "year": 1962
+  },
+  {
+    "rank": 39,
+    "title": "The Departed",
+    "normalizedTitle": "thedeparted",
+    "year": 2006
+  },
+  {
+    "rank": 40,
+    "title": "Whiplash",
+    "normalizedTitle": "whiplash",
+    "year": 2014
+  },
+  {
+    "rank": 41,
+    "title": "Kill Bill: The Whole Bloody Affair",
+    "normalizedTitle": "killbillthewholebloodyaffair",
+    "year": 2004
+  },
+  {
+    "rank": 42,
+    "title": "The Prestige",
+    "normalizedTitle": "theprestige",
+    "year": 2006
+  },
+  {
+    "rank": 43,
+    "title": "American History X",
+    "normalizedTitle": "americanhistoryx",
+    "year": 1998
+  },
+  {
+    "rank": 44,
+    "title": "Léon: The Professional",
+    "normalizedTitle": "leontheprofessional",
+    "year": 1994
+  },
+  {
+    "rank": 45,
+    "title": "Spider-Man: Across the Spider-Verse",
+    "normalizedTitle": "spidermanacrossthespiderverse",
+    "year": 2023
+  },
+  {
+    "rank": 46,
+    "title": "Cinema Paradiso",
+    "normalizedTitle": "cinemaparadiso",
+    "year": 1988
+  },
+  {
+    "rank": 47,
+    "title": "Casablanca",
+    "normalizedTitle": "casablanca",
+    "year": 1942
+  },
+  {
+    "rank": 48,
+    "title": "The Intouchables",
+    "normalizedTitle": "theintouchables",
+    "year": 2011
+  },
+  {
+    "rank": 49,
+    "title": "The Usual Suspects",
+    "normalizedTitle": "theusualsuspects",
+    "year": 1995
+  },
+  {
+    "rank": 50,
+    "title": "Alien",
+    "normalizedTitle": "alien",
+    "year": 1979
+  },
+  {
+    "rank": 51,
+    "title": "Django Unchained",
+    "normalizedTitle": "djangounchained",
+    "year": 2012
+  },
+  {
+    "rank": 52,
+    "title": "Modern Times",
+    "normalizedTitle": "moderntimes",
+    "year": 1936
+  },
+  {
+    "rank": 53,
+    "title": "Rear Window",
+    "normalizedTitle": "rearwindow",
+    "year": 1954
+  },
+  {
+    "rank": 54,
+    "title": "Once Upon a Time in the West",
+    "normalizedTitle": "onceuponatimeinthewest",
+    "year": 1968
+  },
+  {
+    "rank": 55,
+    "title": "City Lights",
+    "normalizedTitle": "citylights",
+    "year": 1931
+  },
+  {
+    "rank": 56,
+    "title": "Apocalypse Now",
+    "normalizedTitle": "apocalypsenow",
+    "year": 1979
+  },
+  {
+    "rank": 57,
+    "title": "WALL·E",
+    "normalizedTitle": "walle",
+    "year": 2008
+  },
+  {
+    "rank": 58,
+    "title": "Memento",
+    "normalizedTitle": "memento",
+    "year": 2000
+  },
+  {
+    "rank": 59,
+    "title": "Dune: Part Two",
+    "normalizedTitle": "duneparttwo",
+    "year": 2024
+  },
+  {
+    "rank": 60,
+    "title": "Raiders of the Lost Ark",
+    "normalizedTitle": "raidersofthelostark",
+    "year": 1981
+  },
+  {
+    "rank": 61,
+    "title": "Avengers: Infinity War",
+    "normalizedTitle": "avengersinfinitywar",
+    "year": 2018
+  },
+  {
+    "rank": 62,
+    "title": "The Lives of Others",
+    "normalizedTitle": "thelivesofothers",
+    "year": 2006
+  },
+  {
+    "rank": 63,
+    "title": "Spider-Man: Into the Spider-Verse",
+    "normalizedTitle": "spidermanintothespiderverse",
+    "year": 2018
+  },
+  {
+    "rank": 64,
+    "title": "Sunset Boulevard",
+    "normalizedTitle": "sunsetboulevard",
+    "year": 1950
+  },
+  {
+    "rank": 65,
+    "title": "Witness for the Prosecution",
+    "normalizedTitle": "witnessfortheprosecution",
+    "year": 1957
+  },
+  {
+    "rank": 66,
+    "title": "Paths of Glory",
+    "normalizedTitle": "pathsofglory",
+    "year": 1957
+  },
+  {
+    "rank": 67,
+    "title": "The Shining",
+    "normalizedTitle": "theshining",
+    "year": 1980
+  },
+  {
+    "rank": 68,
+    "title": "The Great Dictator",
+    "normalizedTitle": "thegreatdictator",
+    "year": 1940
+  },
+  {
+    "rank": 69,
+    "title": "Inglourious Basterds",
+    "normalizedTitle": "inglouriousbasterds",
+    "year": 2009
+  },
+  {
+    "rank": 70,
+    "title": "12th Fail",
+    "normalizedTitle": "12thfail",
+    "year": 2023
+  },
+  {
+    "rank": 71,
+    "title": "Aliens",
+    "normalizedTitle": "aliens",
+    "year": 1986
+  },
+  {
+    "rank": 72,
+    "title": "High and Low",
+    "normalizedTitle": "highandlow",
+    "year": 1963
+  },
+  {
+    "rank": 73,
+    "title": "Good Will Hunting",
+    "normalizedTitle": "goodwillhunting",
+    "year": 1997
+  },
+  {
+    "rank": 74,
+    "title": "Avengers: Endgame",
+    "normalizedTitle": "avengersendgame",
+    "year": 2019
+  },
+  {
+    "rank": 75,
+    "title": "The Dark Knight Rises",
+    "normalizedTitle": "thedarkknightrises",
+    "year": 2012
+  },
+  {
+    "rank": 76,
+    "title": "Coco",
+    "normalizedTitle": "coco",
+    "year": 2017
+  },
+  {
+    "rank": 77,
+    "title": "Amadeus",
+    "normalizedTitle": "amadeus",
+    "year": 1984
+  },
+  {
+    "rank": 78,
+    "title": "Toy Story",
+    "normalizedTitle": "toystory",
+    "year": 1995
+  },
+  {
+    "rank": 79,
+    "title": "Your Name.",
+    "normalizedTitle": "yourname",
+    "year": 2016
+  },
+  {
+    "rank": 80,
+    "title": "Das Boot",
+    "normalizedTitle": "dasboot",
+    "year": 1981
+  },
+  {
+    "rank": 81,
+    "title": "Oldboy",
+    "normalizedTitle": "oldboy",
+    "year": 2003
+  },
+  {
+    "rank": 82,
+    "title": "Braveheart",
+    "normalizedTitle": "braveheart",
+    "year": 1995
+  },
+  {
+    "rank": 83,
+    "title": "Princess Mononoke",
+    "normalizedTitle": "princessmononoke",
+    "year": 1997
+  },
+  {
+    "rank": 84,
+    "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+    "normalizedTitle": "drstrangeloveorhowilearnedtostopworryingandlovethebomb",
+    "year": 1964
+  },
+  {
+    "rank": 85,
+    "title": "3 Idiots",
+    "normalizedTitle": "3idiots",
+    "year": 2009
+  },
+  {
+    "rank": 86,
+    "title": "American Beauty",
+    "normalizedTitle": "americanbeauty",
+    "year": 1999
+  },
+  {
+    "rank": 87,
+    "title": "Project Hail Mary",
+    "normalizedTitle": "projecthailmary",
+    "year": 2026
+  },
+  {
+    "rank": 88,
+    "title": "Capernaum",
+    "normalizedTitle": "capernaum",
+    "year": 2018
+  },
+  {
+    "rank": 89,
+    "title": "Singin' in the Rain",
+    "normalizedTitle": "singinintherain",
+    "year": 1952
+  },
+  {
+    "rank": 90,
+    "title": "Joker",
+    "normalizedTitle": "joker",
+    "year": 2019
+  },
+  {
+    "rank": 91,
+    "title": "Once Upon a Time in America",
+    "normalizedTitle": "onceuponatimeinamerica",
+    "year": 1984
+  },
+  {
+    "rank": 92,
+    "title": "Come and See",
+    "normalizedTitle": "comeandsee",
+    "year": 1985
+  },
+  {
+    "rank": 93,
+    "title": "Star Wars: Episode VI - Return of the Jedi",
+    "normalizedTitle": "starwarsepisodevireturnofthejedi",
+    "year": 1983
+  },
+  {
+    "rank": 94,
+    "title": "Requiem for a Dream",
+    "normalizedTitle": "requiemforadream",
+    "year": 2000
+  },
+  {
+    "rank": 95,
+    "title": "Toy Story 3",
+    "normalizedTitle": "toystory3",
+    "year": 2010
+  },
+  {
+    "rank": 96,
+    "title": "Ikiru",
+    "normalizedTitle": "ikiru",
+    "year": 1952
+  },
+  {
+    "rank": 97,
+    "title": "The Hunt",
+    "normalizedTitle": "thehunt",
+    "year": 2012
+  },
+  {
+    "rank": 98,
+    "title": "Incendies",
+    "normalizedTitle": "incendies",
+    "year": 2010
+  },
+  {
+    "rank": 99,
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "normalizedTitle": "eternalsunshineofthespotlessmind",
+    "year": 2004
+  },
+  {
+    "rank": 100,
+    "title": "The Apartment",
+    "normalizedTitle": "theapartment",
+    "year": 1960
+  },
+  {
+    "rank": 101,
+    "title": "Lawrence of Arabia",
+    "normalizedTitle": "lawrenceofarabia",
+    "year": 1962
+  },
+  {
+    "rank": 102,
+    "title": "Heat",
+    "normalizedTitle": "heat",
+    "year": 1995
+  },
+  {
+    "rank": 103,
+    "title": "2001: A Space Odyssey",
+    "normalizedTitle": "2001aspaceodyssey",
+    "year": 1968
+  },
+  {
+    "rank": 104,
+    "title": "Reservoir Dogs",
+    "normalizedTitle": "reservoirdogs",
+    "year": 1992
+  },
+  {
+    "rank": 105,
+    "title": "Scarface",
+    "normalizedTitle": "scarface",
+    "year": 1983
+  },
+  {
+    "rank": 106,
+    "title": "Double Indemnity",
+    "normalizedTitle": "doubleindemnity",
+    "year": 1944
+  },
+  {
+    "rank": 107,
+    "title": "Up",
+    "normalizedTitle": "up",
+    "year": 2009
+  },
+  {
+    "rank": 108,
+    "title": "North by Northwest",
+    "normalizedTitle": "northbynorthwest",
+    "year": 1959
+  },
+  {
+    "rank": 109,
+    "title": "Like Stars on Earth",
+    "normalizedTitle": "likestarsonearth",
+    "year": 2007
+  },
+  {
+    "rank": 110,
+    "title": "Full Metal Jacket",
+    "normalizedTitle": "fullmetaljacket",
+    "year": 1987
+  },
+  {
+    "rank": 111,
+    "title": "M",
+    "normalizedTitle": "m",
+    "year": 1931
+  },
+  {
+    "rank": 112,
+    "title": "Amélie",
+    "normalizedTitle": "amelie",
+    "year": 2001
+  },
+  {
+    "rank": 113,
+    "title": "Citizen Kane",
+    "normalizedTitle": "citizenkane",
+    "year": 1941
+  },
+  {
+    "rank": 114,
+    "title": "Vertigo",
+    "normalizedTitle": "vertigo",
+    "year": 1958
+  },
+  {
+    "rank": 115,
+    "title": "A Separation",
+    "normalizedTitle": "aseparation",
+    "year": 2011
+  },
+  {
+    "rank": 116,
+    "title": "Die Hard",
+    "normalizedTitle": "diehard",
+    "year": 1988
+  },
+  {
+    "rank": 117,
+    "title": "To Kill a Mockingbird",
+    "normalizedTitle": "tokillamockingbird",
+    "year": 1962
+  },
+  {
+    "rank": 118,
+    "title": "Indiana Jones and the Last Crusade",
+    "normalizedTitle": "indianajonesandthelastcrusade",
+    "year": 1989
+  },
+  {
+    "rank": 119,
+    "title": "The Sting",
+    "normalizedTitle": "thesting",
+    "year": 1973
+  },
+  {
+    "rank": 120,
+    "title": "A Clockwork Orange",
+    "normalizedTitle": "aclockworkorange",
+    "year": 1971
+  },
+  {
+    "rank": 121,
+    "title": "Metropolis",
+    "normalizedTitle": "metropolis",
+    "year": 1927
+  },
+  {
+    "rank": 122,
+    "title": "1917",
+    "normalizedTitle": "1917",
+    "year": 2019
+  },
+  {
+    "rank": 123,
+    "title": "Snatch",
+    "normalizedTitle": "snatch",
+    "year": 2000
+  },
+  {
+    "rank": 124,
+    "title": "L.A. Confidential",
+    "normalizedTitle": "laconfidential",
+    "year": 1997
+  },
+  {
+    "rank": 125,
+    "title": "The Wolf of Wall Street",
+    "normalizedTitle": "thewolfofwallstreet",
+    "year": 2013
+  },
+  {
+    "rank": 126,
+    "title": "Downfall",
+    "normalizedTitle": "downfall",
+    "year": 2004
+  },
+  {
+    "rank": 127,
+    "title": "Dangal",
+    "normalizedTitle": "dangal",
+    "year": 2016
+  },
+  {
+    "rank": 128,
+    "title": "The Truman Show",
+    "normalizedTitle": "thetrumanshow",
+    "year": 1998
+  },
+  {
+    "rank": 129,
+    "title": "Bicycle Thieves",
+    "normalizedTitle": "bicyclethieves",
+    "year": 1948
+  },
+  {
+    "rank": 130,
+    "title": "Oppenheimer",
+    "normalizedTitle": "oppenheimer",
+    "year": 2023
+  },
+  {
+    "rank": 131,
+    "title": "Green Book",
+    "normalizedTitle": "greenbook",
+    "year": 2018
+  },
+  {
+    "rank": 132,
+    "title": "Shutter Island",
+    "normalizedTitle": "shutterisland",
+    "year": 2010
+  },
+  {
+    "rank": 133,
+    "title": "Judgment at Nuremberg",
+    "normalizedTitle": "judgmentatnuremberg",
+    "year": 1961
+  },
+  {
+    "rank": 134,
+    "title": "Batman Begins",
+    "normalizedTitle": "batmanbegins",
+    "year": 2005
+  },
+  {
+    "rank": 135,
+    "title": "Hamilton",
+    "normalizedTitle": "hamilton",
+    "year": 2020
+  },
+  {
+    "rank": 136,
+    "title": "For a Few Dollars More",
+    "normalizedTitle": "forafewdollarsmore",
+    "year": 1965
+  },
+  {
+    "rank": 137,
+    "title": "Taxi Driver",
+    "normalizedTitle": "taxidriver",
+    "year": 1976
+  },
+  {
+    "rank": 138,
+    "title": "Jurassic Park",
+    "normalizedTitle": "jurassicpark",
+    "year": 1993
+  },
+  {
+    "rank": 139,
+    "title": "Some Like It Hot",
+    "normalizedTitle": "somelikeithot",
+    "year": 1959
+  },
+  {
+    "rank": 140,
+    "title": "There Will Be Blood",
+    "normalizedTitle": "therewillbeblood",
+    "year": 2007
+  },
+  {
+    "rank": 141,
+    "title": "The Kid",
+    "normalizedTitle": "thekid",
+    "year": 1921
+  },
+  {
+    "rank": 142,
+    "title": "The Father",
+    "normalizedTitle": "thefather",
+    "year": 2020
+  },
+  {
+    "rank": 143,
+    "title": "All About Eve",
+    "normalizedTitle": "allabouteve",
+    "year": 1950
+  },
+  {
+    "rank": 144,
+    "title": "The Sixth Sense",
+    "normalizedTitle": "thesixthsense",
+    "year": 1999
+  },
+  {
+    "rank": 145,
+    "title": "Ran",
+    "normalizedTitle": "ran",
+    "year": 1985
+  },
+  {
+    "rank": 146,
+    "title": "Casino",
+    "normalizedTitle": "casino",
+    "year": 1995
+  },
+  {
+    "rank": 147,
+    "title": "No Country for Old Men",
+    "normalizedTitle": "nocountryforoldmen",
+    "year": 2007
+  },
+  {
+    "rank": 148,
+    "title": "The Thing",
+    "normalizedTitle": "thething",
+    "year": 1982
+  },
+  {
+    "rank": 149,
+    "title": "I Swear",
+    "normalizedTitle": "iswear",
+    "year": null
+  },
+  {
+    "rank": 150,
+    "title": "Top Gun: Maverick",
+    "normalizedTitle": "topgunmaverick",
+    "year": 2022
+  },
+  {
+    "rank": 151,
+    "title": "Prisoners",
+    "normalizedTitle": "prisoners",
+    "year": 2013
+  },
+  {
+    "rank": 152,
+    "title": "Kill Bill: Vol. 1",
+    "normalizedTitle": "killbillvol1",
+    "year": 2003
+  },
+  {
+    "rank": 153,
+    "title": "Pan's Labyrinth",
+    "normalizedTitle": "panslabyrinth",
+    "year": 2006
+  },
+  {
+    "rank": 154,
+    "title": "Unforgiven",
+    "normalizedTitle": "unforgiven",
+    "year": 1992
+  },
+  {
+    "rank": 155,
+    "title": "A Beautiful Mind",
+    "normalizedTitle": "abeautifulmind",
+    "year": 2001
+  },
+  {
+    "rank": 156,
+    "title": "The Treasure of the Sierra Madre",
+    "normalizedTitle": "thetreasureofthesierramadre",
+    "year": 1948
+  },
+  {
+    "rank": 157,
+    "title": "Howl's Moving Castle",
+    "normalizedTitle": "howlsmovingcastle",
+    "year": 2004
+  },
+  {
+    "rank": 158,
+    "title": "Finding Nemo",
+    "normalizedTitle": "findingnemo",
+    "year": 2003
+  },
+  {
+    "rank": 159,
+    "title": "Klaus",
+    "normalizedTitle": "klaus",
+    "year": 2019
+  },
+  {
+    "rank": 160,
+    "title": "Yojimbo",
+    "normalizedTitle": "yojimbo",
+    "year": 1961
+  },
+  {
+    "rank": 161,
+    "title": "The Great Escape",
+    "normalizedTitle": "thegreatescape",
+    "year": 1963
+  },
+  {
+    "rank": 162,
+    "title": "The Elephant Man",
+    "normalizedTitle": "theelephantman",
+    "year": 1980
+  },
+  {
+    "rank": 163,
+    "title": "Monty Python and the Holy Grail",
+    "normalizedTitle": "montypythonandtheholygrail",
+    "year": 1975
+  },
+  {
+    "rank": 164,
+    "title": "Dial M for Murder",
+    "normalizedTitle": "dialmformurder",
+    "year": 1954
+  },
+  {
+    "rank": 165,
+    "title": "The Best of Youth",
+    "normalizedTitle": "thebestofyouth",
+    "year": 2003
+  },
+  {
+    "rank": 166,
+    "title": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
+    "normalizedTitle": "demonslayerkimetsunoyaibainfinitycastle",
+    "year": 2025
+  },
+  {
+    "rank": 167,
+    "title": "The Secret in Their Eyes",
+    "normalizedTitle": "thesecretintheireyes",
+    "year": 2009
+  },
+  {
+    "rank": 168,
+    "title": "Gone with the Wind",
+    "normalizedTitle": "gonewiththewind",
+    "year": 1939
+  },
+  {
+    "rank": 169,
+    "title": "Chinatown",
+    "normalizedTitle": "chinatown",
+    "year": 1974
+  },
+  {
+    "rank": 170,
+    "title": "Lock, Stock and Two Smoking Barrels",
+    "normalizedTitle": "lockstockandtwosmokingbarrels",
+    "year": 1998
+  },
+  {
+    "rank": 171,
+    "title": "V for Vendetta",
+    "normalizedTitle": "vforvendetta",
+    "year": 2005
+  },
+  {
+    "rank": 172,
+    "title": "Catch Me If You Can",
+    "normalizedTitle": "catchmeifyoucan",
+    "year": 2002
+  },
+  {
+    "rank": 173,
+    "title": "Inside Out",
+    "normalizedTitle": "insideout",
+    "year": 2015
+  },
+  {
+    "rank": 174,
+    "title": "Rashomon",
+    "normalizedTitle": "rashomon",
+    "year": 1950
+  },
+  {
+    "rank": 175,
+    "title": "Three Billboards Outside Ebbing, Missouri",
+    "normalizedTitle": "threebillboardsoutsideebbingmissouri",
+    "year": 2017
+  },
+  {
+    "rank": 176,
+    "title": "Trainspotting",
+    "normalizedTitle": "trainspotting",
+    "year": 1996
+  },
+  {
+    "rank": 177,
+    "title": "The Bridge on the River Kwai",
+    "normalizedTitle": "thebridgeontheriverkwai",
+    "year": 1957
+  },
+  {
+    "rank": 178,
+    "title": "Harry Potter and the Deathly Hallows: Part 2",
+    "normalizedTitle": "harrypotterandthedeathlyhallowspart2",
+    "year": 2011
+  },
+  {
+    "rank": 179,
+    "title": "Dead Poets Society",
+    "normalizedTitle": "deadpoetssociety",
+    "year": 1989
+  },
+  {
+    "rank": 180,
+    "title": "The Wild Robot",
+    "normalizedTitle": "thewildrobot",
+    "year": 2024
+  },
+  {
+    "rank": 181,
+    "title": "Warrior",
+    "normalizedTitle": "warrior",
+    "year": 2011
+  },
+  {
+    "rank": 182,
+    "title": "Barry Lyndon",
+    "normalizedTitle": "barrylyndon",
+    "year": 1975
+  },
+  {
+    "rank": 183,
+    "title": "Fargo",
+    "normalizedTitle": "fargo",
+    "year": 1996
+  },
+  {
+    "rank": 184,
+    "title": "Ben-Hur",
+    "normalizedTitle": "benhur",
+    "year": 1959
+  },
+  {
+    "rank": 185,
+    "title": "Raging Bull",
+    "normalizedTitle": "ragingbull",
+    "year": 1980
+  },
+  {
+    "rank": 186,
+    "title": "The Chaos Class Failed the Class",
+    "normalizedTitle": "thechaosclassfailedtheclass",
+    "year": 1975
+  },
+  {
+    "rank": 187,
+    "title": "Million Dollar Baby",
+    "normalizedTitle": "milliondollarbaby",
+    "year": 2004
+  },
+  {
+    "rank": 188,
+    "title": "Mad Max: Fury Road",
+    "normalizedTitle": "madmaxfuryroad",
+    "year": 2015
+  },
+  {
+    "rank": 189,
+    "title": "Children of Heaven",
+    "normalizedTitle": "childrenofheaven",
+    "year": 1997
+  },
+  {
+    "rank": 190,
+    "title": "Hacksaw Ridge",
+    "normalizedTitle": "hacksawridge",
+    "year": 2016
+  },
+  {
+    "rank": 191,
+    "title": "My Neighbor Totoro",
+    "normalizedTitle": "myneighbortotoro",
+    "year": 1988
+  },
+  {
+    "rank": 192,
+    "title": "Gran Torino",
+    "normalizedTitle": "grantorino",
+    "year": 2008
+  },
+  {
+    "rank": 193,
+    "title": "Ratatouille",
+    "normalizedTitle": "ratatouille",
+    "year": 2007
+  },
+  {
+    "rank": 194,
+    "title": "12 Years a Slave",
+    "normalizedTitle": "12yearsaslave",
+    "year": 2013
+  },
+  {
+    "rank": 195,
+    "title": "The Grand Budapest Hotel",
+    "normalizedTitle": "thegrandbudapesthotel",
+    "year": 2014
+  },
+  {
+    "rank": 196,
+    "title": "Before Sunrise",
+    "normalizedTitle": "beforesunrise",
+    "year": 1995
+  },
+  {
+    "rank": 197,
+    "title": "Memories of Murder",
+    "normalizedTitle": "memoriesofmurder",
+    "year": 2003
+  },
+  {
+    "rank": 198,
+    "title": "Blade Runner",
+    "normalizedTitle": "bladerunner",
+    "year": 1982
+  },
+  {
+    "rank": 199,
+    "title": "How to Train Your Dragon",
+    "normalizedTitle": "howtotrainyourdragon",
+    "year": 2010
+  },
+  {
+    "rank": 200,
+    "title": "Spider-Man: No Way Home",
+    "normalizedTitle": "spidermannowayhome",
+    "year": 2021
+  },
+  {
+    "rank": 201,
+    "title": "Gone Girl",
+    "normalizedTitle": "gonegirl",
+    "year": 2014
+  },
+  {
+    "rank": 202,
+    "title": "Monsters, Inc.",
+    "normalizedTitle": "monstersinc",
+    "year": 2001
+  },
+  {
+    "rank": 203,
+    "title": "Jaws",
+    "normalizedTitle": "jaws",
+    "year": 1975
+  },
+  {
+    "rank": 204,
+    "title": "In the Name of the Father",
+    "normalizedTitle": "inthenameofthefather",
+    "year": 1993
+  },
+  {
+    "rank": 205,
+    "title": "Ford v Ferrari",
+    "normalizedTitle": "fordvferrari",
+    "year": 2019
+  },
+  {
+    "rank": 206,
+    "title": "Wild Tales",
+    "normalizedTitle": "wildtales",
+    "year": 2014
+  },
+  {
+    "rank": 207,
+    "title": "The Gold Rush",
+    "normalizedTitle": "thegoldrush",
+    "year": 1925
+  },
+  {
+    "rank": 208,
+    "title": "Mary and Max",
+    "normalizedTitle": "maryandmax",
+    "year": 2009
+  },
+  {
+    "rank": 209,
+    "title": "Sherlock Jr.",
+    "normalizedTitle": "sherlockjr",
+    "year": 1924
+  },
+  {
+    "rank": 210,
+    "title": "The Deer Hunter",
+    "normalizedTitle": "thedeerhunter",
+    "year": 1978
+  },
+  {
+    "rank": 211,
+    "title": "The Wages of Fear",
+    "normalizedTitle": "thewagesoffear",
+    "year": 1953
+  },
+  {
+    "rank": 212,
+    "title": "The General",
+    "normalizedTitle": "thegeneral",
+    "year": 1926
+  },
+  {
+    "rank": 213,
+    "title": "Logan",
+    "normalizedTitle": "logan",
+    "year": 2017
+  },
+  {
+    "rank": 214,
+    "title": "Rocky",
+    "normalizedTitle": "rocky",
+    "year": 1976
+  },
+  {
+    "rank": 215,
+    "title": "Mr. Smith Goes to Washington",
+    "normalizedTitle": "mrsmithgoestowashington",
+    "year": 1939
+  },
+  {
+    "rank": 216,
+    "title": "Tokyo Story",
+    "normalizedTitle": "tokyostory",
+    "year": 1953
+  },
+  {
+    "rank": 217,
+    "title": "On the Waterfront",
+    "normalizedTitle": "onthewaterfront",
+    "year": 1954
+  },
+  {
+    "rank": 218,
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "normalizedTitle": "piratesofthecaribbeanthecurseoftheblackpearl",
+    "year": 2003
+  },
+  {
+    "rank": 219,
+    "title": "A Silent Voice: The Movie",
+    "normalizedTitle": "asilentvoicethemovie",
+    "year": 2016
+  },
+  {
+    "rank": 220,
+    "title": "Wild Strawberries",
+    "normalizedTitle": "wildstrawberries",
+    "year": 1957
+  },
+  {
+    "rank": 221,
+    "title": "Spotlight",
+    "normalizedTitle": "spotlight",
+    "year": 2015
+  },
+  {
+    "rank": 222,
+    "title": "La haine",
+    "normalizedTitle": "lahaine",
+    "year": 1995
+  },
+  {
+    "rank": 223,
+    "title": "The Terminator",
+    "normalizedTitle": "theterminator",
+    "year": 1984
+  },
+  {
+    "rank": 224,
+    "title": "Jai Bhim",
+    "normalizedTitle": "jaibhim",
+    "year": 2021
+  },
+  {
+    "rank": 225,
+    "title": "The Sound of Music",
+    "normalizedTitle": "thesoundofmusic",
+    "year": 1965
+  },
+  {
+    "rank": 226,
+    "title": "Maharaja",
+    "normalizedTitle": "maharaja",
+    "year": 2024
+  },
+  {
+    "rank": 227,
+    "title": "The Third Man",
+    "normalizedTitle": "thethirdman",
+    "year": 1949
+  },
+  {
+    "rank": 228,
+    "title": "The Big Lebowski",
+    "normalizedTitle": "thebiglebowski",
+    "year": 1998
+  },
+  {
+    "rank": 229,
+    "title": "The Best Years of Our Lives",
+    "normalizedTitle": "thebestyearsofourlives",
+    "year": 1946
+  },
+  {
+    "rank": 230,
+    "title": "The Seventh Seal",
+    "normalizedTitle": "theseventhseal",
+    "year": 1957
+  },
+  {
+    "rank": 231,
+    "title": "Chainsaw Man - The Movie: Reze Arc",
+    "normalizedTitle": "chainsawmanthemovierezearc",
+    "year": 2025
+  },
+  {
+    "rank": 232,
+    "title": "Before Sunset",
+    "normalizedTitle": "beforesunset",
+    "year": 2004
+  },
+  {
+    "rank": 233,
+    "title": "Room",
+    "normalizedTitle": "room",
+    "year": 2015
+  },
+  {
+    "rank": 234,
+    "title": "Hotel Rwanda",
+    "normalizedTitle": "hotelrwanda",
+    "year": 2004
+  },
+  {
+    "rank": 235,
+    "title": "The Incredibles",
+    "normalizedTitle": "theincredibles",
+    "year": 2004
+  },
+  {
+    "rank": 236,
+    "title": "Platoon",
+    "normalizedTitle": "platoon",
+    "year": 1986
+  },
+  {
+    "rank": 237,
+    "title": "Hachi: A Dog's Tale",
+    "normalizedTitle": "hachiadogstale",
+    "year": 2009
+  },
+  {
+    "rank": 238,
+    "title": "The Exorcist",
+    "normalizedTitle": "theexorcist",
+    "year": 1973
+  },
+  {
+    "rank": 239,
+    "title": "Rush",
+    "normalizedTitle": "rush",
+    "year": 2013
+  },
+  {
+    "rank": 240,
+    "title": "The Iron Giant",
+    "normalizedTitle": "theirongiant",
+    "year": 1999
+  },
+  {
+    "rank": 241,
+    "title": "The Wizard of Oz",
+    "normalizedTitle": "thewizardofoz",
+    "year": 1939
+  },
+  {
+    "rank": 242,
+    "title": "Stand by Me",
+    "normalizedTitle": "standbyme",
+    "year": 1986
+  },
+  {
+    "rank": 243,
+    "title": "The Passion of Joan of Arc",
+    "normalizedTitle": "thepassionofjoanofarc",
+    "year": 1928
+  },
+  {
+    "rank": 244,
+    "title": "My Father and My Son",
+    "normalizedTitle": "myfatherandmyson",
+    "year": 2005
+  },
+  {
+    "rank": 245,
+    "title": "The Battle of Algiers",
+    "normalizedTitle": "thebattleofalgiers",
+    "year": 1966
+  },
+  {
+    "rank": 246,
+    "title": "The Handmaiden",
+    "normalizedTitle": "thehandmaiden",
+    "year": 2016
+  },
+  {
+    "rank": 247,
+    "title": "Network",
+    "normalizedTitle": "network",
+    "year": 1976
+  },
+  {
+    "rank": 248,
+    "title": "Drishyam",
+    "normalizedTitle": "drishyam",
+    "year": 2015
+  },
+  {
+    "rank": 249,
+    "title": "Gangs of Wasseypur",
+    "normalizedTitle": "gangsofwasseypur",
+    "year": 2012
+  },
+  {
+    "rank": 250,
+    "title": "The Grapes of Wrath",
+    "normalizedTitle": "thegrapesofwrath",
+    "year": 1940
+  }
+]

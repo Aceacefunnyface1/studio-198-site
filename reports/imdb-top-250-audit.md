@@ -1,0 +1,474 @@
+# IMDb Top 250 Metadata Audit
+
+- Already on site: 211
+- Missing from site: 39
+- On site but using low-quality batch-17 posters: 210
+
+## Already On Site
+
+- #38 Harakiri (1962) — slug `harakiri` — `/posters/batch-17/harakiri.jpeg`
+- #39 The Departed (2006) — slug `the-departed` — `/posters/batch-17/the-departed.jpeg`
+- #40 Whiplash (2014) — slug `whiplash` — `/posters/batch-17/whiplash.jpeg`
+- #41 Kill Bill: The Whole Bloody Affair (2004) — slug `kill-bill-the-whole-bloody-affair` — `/posters/batch-17/kill-bill-the-whole-bloody-affair.jpeg`
+- #42 The Prestige (2006) — slug `the-prestige` — `/posters/batch-17/the-prestige.jpeg`
+- #43 American History X (1998) — slug `american-history-x` — `/posters/batch-17/american-history-x.jpeg`
+- #44 Léon: The Professional (1994) — slug `l-on-the-professional` — `/posters/batch-17/l-on-the-professional.jpeg`
+- #45 Spider-Man: Across the Spider-Verse (2023) — slug `spider-man-across-the-spider-verse` — `/posters/batch-17/spider-man-across-the-spider-verse.jpeg`
+- #46 Cinema Paradiso (1988) — slug `cinema-paradiso` — `/posters/batch-17/cinema-paradiso.jpeg`
+- #47 Casablanca (1942) — slug `casablanca` — `/posters/batch-17/casablanca.jpeg`
+- #48 The Intouchables (2011) — slug `the-intouchables` — `/posters/batch-17/the-intouchables.jpeg`
+- #49 The Usual Suspects (1995) — slug `the-usual-suspects` — `/posters/batch-17/the-usual-suspects.jpeg`
+- #50 Alien (1979) — slug `alien` — `/posters/batch-17/alien.jpeg`
+- #51 Django Unchained (2012) — slug `django-unchained` — `/posters/batch-17/django-unchained.jpeg`
+- #52 Modern Times (1936) — slug `modern-times` — `/posters/batch-17/modern-times.jpeg`
+- #53 Rear Window (1954) — slug `rear-window` — `/posters/batch-17/rear-window.jpeg`
+- #54 Once Upon a Time in the West (1968) — slug `once-upon-a-time-in-the-west` — `/posters/batch-17/once-upon-a-time-in-the-west.jpeg`
+- #55 City Lights (1931) — slug `city-lights` — `/posters/batch-17/city-lights.jpeg`
+- #56 Apocalypse Now (1979) — slug `apocalypse-now` — `/posters/batch-17/apocalypse-now.jpeg`
+- #57 WALL·E (2008) — slug `wall-e` — `/posters/batch-17/wall-e.jpeg`
+- #58 Memento (2000) — slug `memento` — `/posters/batch-17/memento.jpeg`
+- #59 Dune: Part Two (2024) — slug `dune-part-two` — `/posters/batch-17/dune-part-two.jpeg`
+- #60 Raiders of the Lost Ark (1981) — slug `raiders-of-the-lost-ark` — `/posters/batch-17/raiders-of-the-lost-ark.jpeg`
+- #61 Avengers: Infinity War (2018) — slug `avengers-infinity-war` — `/posters/batch-17/avengers-infinity-war.jpeg`
+- #62 The Lives of Others (2006) — slug `the-lives-of-others` — `/posters/batch-17/the-lives-of-others.jpeg`
+- #63 Spider-Man: Into the Spider-Verse (2018) — slug `spider-man-into-the-spider-verse` — `/posters/batch-17/spider-man-into-the-spider-verse.jpeg`
+- #64 Sunset Boulevard (1950) — slug `sunset-boulevard` — `/posters/batch-17/sunset-boulevard.jpeg`
+- #65 Witness for the Prosecution (1957) — slug `witness-for-the-prosecution` — `/posters/batch-17/witness-for-the-prosecution.jpeg`
+- #66 Paths of Glory (1957) — slug `paths-of-glory` — `/posters/batch-17/paths-of-glory.jpeg`
+- #67 The Shining (1980) — slug `the-shining` — `/posters/batch-17/the-shining.jpeg`
+- #68 The Great Dictator (1940) — slug `the-great-dictator` — `/posters/batch-17/the-great-dictator.jpeg`
+- #69 Inglourious Basterds (2009) — slug `inglourious-basterds` — `/posters/batch-17/inglourious-basterds.jpeg`
+- #71 Aliens (1986) — slug `aliens` — `/posters/batch-17/aliens.jpeg`
+- #72 High and Low (1963) — slug `high-and-low` — `/posters/batch-17/high-and-low.jpeg`
+- #73 Good Will Hunting (1997) — slug `good-will-hunting` — `/posters/batch-17/good-will-hunting.jpeg`
+- #74 Avengers: Endgame (2019) — slug `avengers-endgame` — `/posters/batch-17/avengers-endgame.jpeg`
+- #75 The Dark Knight Rises (2012) — slug `the-dark-knight-rises` — `/posters/batch-17/the-dark-knight-rises.jpeg`
+- #76 Coco (2017) — slug `coco` — `/posters/batch-17/coco.jpeg`
+- #77 Amadeus (1984) — slug `amadeus` — `/posters/batch-17/amadeus.jpeg`
+- #78 Toy Story (1995) — slug `toy-story` — `/posters/batch-17/toy-story.jpeg`
+- #79 Your Name. (2016) — slug `your-name` — `/posters/batch-17/your-name.jpeg` (title normalized)
+- #80 Das Boot (1981) — slug `das-boot` — `/posters/batch-17/das-boot.jpeg`
+- #81 Oldboy (2003) — slug `oldboy` — `/posters/batch-17/oldboy.jpeg`
+- #82 Braveheart (1995) — slug `braveheart` — `/posters/batch-17/braveheart.jpeg`
+- #83 Princess Mononoke (1997) — slug `princess-mononoke` — `/posters/batch-17/princess-mononoke.jpeg`
+- #85 3 Idiots (2009) — slug `3-idiots` — `/posters/batch-17/3-idiots.jpeg`
+- #86 American Beauty (1999) — slug `american-beauty` — `/posters/batch-17/american-beauty.jpeg`
+- #87 Project Hail Mary (2026) — slug `project-hail-mary` — `/posters/batch-17/project-hail-mary.jpeg`
+- #88 Capernaum (2018) — slug `capernaum` — `/posters/batch-17/capernaum.jpeg`
+- #89 Singin' in the Rain (1952) — slug `singin-in-the-rain` — `/posters/batch-17/singin-in-the-rain.jpeg`
+- #90 Joker (2019) — slug `joker` — `/posters/batch-17/joker.jpeg`
+- #91 Once Upon a Time in America (1984) — slug `once-upon-a-time-in-america` — `/posters/batch-17/once-upon-a-time-in-america.jpeg`
+- #92 Come and See (1985) — slug `come-and-see` — `/posters/batch-17/come-and-see.jpeg`
+- #93 Star Wars: Episode VI - Return of the Jedi (1983) — slug `star-wars-episode-vi-return-of-the-jedi` — `/posters/batch-17/star-wars-episode-vi-return-of-the-jedi.jpeg`
+- #94 Requiem for a Dream (2000) — slug `requiem-for-a-dream` — `/posters/batch-17/requiem-for-a-dream.jpeg`
+- #95 Toy Story 3 (2010) — slug `toy-story-3` — `/posters/batch-17/toy-story-3.jpeg`
+- #96 Ikiru (1952) — slug `ikiru` — `/posters/batch-17/ikiru.jpeg`
+- #97 The Hunt (2012) — slug `the-hunt` — `/posters/batch-17/the-hunt.jpeg`
+- #98 Incendies (2010) — slug `incendies` — `/posters/batch-17/incendies.jpeg`
+- #99 Eternal Sunshine of the Spotless Mind (2004) — slug `eternal-sunshine-of-the-spotless-mind` — `/posters/batch-17/eternal-sunshine-of-the-spotless-mind.jpeg`
+- #100 The Apartment (1960) — slug `the-apartment` — `/posters/batch-17/the-apartment.jpeg`
+- #101 Lawrence of Arabia (1962) — slug `lawrence-of-arabia` — `/posters/batch-17/lawrence-of-arabia.jpeg`
+- #102 Heat (1995) — slug `heat` — `/posters/batch-17/heat.jpeg`
+- #103 2001: A Space Odyssey (1968) — slug `2001-a-space-odyssey` — `/posters/batch-17/2001-a-space-odyssey.jpeg`
+- #104 Reservoir Dogs (1992) — slug `reservoir-dogs` — `/posters/batch-17/reservoir-dogs.jpeg`
+- #105 Scarface (1983) — slug `scarface` — `/posters/batch-17/scarface.jpeg`
+- #106 Double Indemnity (1944) — slug `double-indemnity` — `/posters/batch-17/double-indemnity.jpeg`
+- #107 Up (2009) — slug `up` — `/posters/batch-17/up.jpeg`
+- #108 North by Northwest (1959) — slug `north-by-northwest` — `/posters/batch-17/north-by-northwest.jpeg`
+- #109 Like Stars on Earth (2007) — slug `like-stars-on-earth` — `/posters/batch-17/like-stars-on-earth.jpeg`
+- #110 Full Metal Jacket (1987) — slug `full-metal-jacket` — `/posters/batch-17/full-metal-jacket.jpeg`
+- #111 M (1931) — slug `m` — `/posters/batch-17/m.jpeg`
+- #112 Amélie (2001) — slug `am-lie` — `/posters/batch-17/am-lie.jpeg`
+- #113 Citizen Kane (1941) — slug `citizen-kane` — `/posters/batch-17/citizen-kane.jpeg`
+- #114 Vertigo (1958) — slug `vertigo` — `/posters/batch-17/vertigo.jpeg`
+- #115 A Separation (2011) — slug `a-separation` — `/posters/batch-17/a-separation.jpeg`
+- #116 Die Hard (1988) — slug `die-hard` — `/posters/batch-17/die-hard.jpeg`
+- #117 To Kill a Mockingbird (1962) — slug `to-kill-a-mockingbird` — `/posters/batch-17/to-kill-a-mockingbird.jpeg`
+- #118 Indiana Jones and the Last Crusade (1989) — slug `indiana-jones-and-the-last-crusade` — `/posters/batch-17/indiana-jones-and-the-last-crusade.jpeg`
+- #119 The Sting (1973) — slug `the-sting` — `/posters/batch-17/the-sting.jpeg`
+- #120 A Clockwork Orange (1971) — slug `a-clockwork-orange` — `/posters/batch-17/a-clockwork-orange.jpeg`
+- #121 Metropolis (1927) — slug `metropolis` — `/posters/batch-17/metropolis.jpeg`
+- #122 1917 (2019) — slug `1917` — `(missing)`
+- #123 Snatch (2000) — slug `snatch` — `/posters/batch-17/snatch.jpeg`
+- #124 L.A. Confidential (1997) — slug `l-a-confidential` — `/posters/batch-17/l-a-confidential.jpeg`
+- #125 The Wolf of Wall Street (2013) — slug `the-wolf-of-wall-street` — `/posters/batch-17/the-wolf-of-wall-street.jpeg`
+- #126 Downfall (2004) — slug `downfall` — `/posters/batch-17/downfall.jpeg`
+- #127 Dangal (2016) — slug `dangal` — `/posters/batch-17/dangal.jpeg`
+- #128 The Truman Show (1998) — slug `the-truman-show` — `/posters/batch-17/the-truman-show.jpeg`
+- #129 Bicycle Thieves (1948) — slug `bicycle-thieves` — `/posters/batch-17/bicycle-thieves.jpeg`
+- #130 Oppenheimer (2023) — slug `oppenheimer` — `/posters/batch-17/oppenheimer.jpeg`
+- #131 Green Book (2018) — slug `green-book` — `/posters/batch-17/green-book.jpeg`
+- #132 Shutter Island (2010) — slug `shutter-island` — `/posters/batch-17/shutter-island.jpeg`
+- #133 Judgment at Nuremberg (1961) — slug `judgment-at-nuremberg` — `/posters/batch-17/judgment-at-nuremberg.jpeg`
+- #134 Batman Begins (2005) — slug `batman-begins` — `/posters/batch-17/batman-begins.jpeg`
+- #135 Hamilton (2020) — slug `hamilton` — `/posters/batch-17/hamilton.jpeg`
+- #136 For a Few Dollars More (1965) — slug `for-a-few-dollars-more` — `/posters/batch-17/for-a-few-dollars-more.jpeg`
+- #137 Taxi Driver (1976) — slug `taxi-driver` — `/posters/batch-17/taxi-driver.jpeg`
+- #138 Jurassic Park (1993) — slug `jurassic-park` — `/posters/batch-17/jurassic-park.jpeg`
+- #139 Some Like It Hot (1959) — slug `some-like-it-hot` — `/posters/batch-17/some-like-it-hot.jpeg`
+- #140 There Will Be Blood (2007) — slug `there-will-be-blood` — `/posters/batch-17/there-will-be-blood.jpeg`
+- #141 The Kid (1921) — slug `the-kid` — `/posters/batch-17/the-kid.jpeg`
+- #142 The Father (2020) — slug `the-father` — `/posters/batch-17/the-father.jpeg`
+- #143 All About Eve (1950) — slug `all-about-eve` — `/posters/batch-17/all-about-eve.jpeg`
+- #144 The Sixth Sense (1999) — slug `the-sixth-sense` — `/posters/batch-17/the-sixth-sense.jpeg`
+- #145 Ran (1985) — slug `ran` — `/posters/batch-17/ran.jpeg`
+- #146 Casino (1995) — slug `casino` — `/posters/batch-17/casino.jpeg`
+- #147 No Country for Old Men (2007) — slug `no-country-for-old-men` — `/posters/batch-17/no-country-for-old-men.jpeg`
+- #148 The Thing (1982) — slug `the-thing` — `/posters/batch-17/the-thing.jpeg`
+- #149 I Swear (None) — slug `i-swear` — `/posters/batch-17/i-swear.jpeg`
+- #150 Top Gun: Maverick (2022) — slug `top-gun-maverick` — `/posters/batch-17/top-gun-maverick.jpeg`
+- #151 Prisoners (2013) — slug `prisoners` — `/posters/batch-17/prisoners.jpeg`
+- #152 Kill Bill: Vol. 1 (2003) — slug `kill-bill-vol-1` — `/posters/batch-17/kill-bill-vol-1.jpeg`
+- #153 Pan's Labyrinth (2006) — slug `pan-s-labyrinth` — `/posters/batch-17/pan-s-labyrinth.jpeg`
+- #154 Unforgiven (1992) — slug `unforgiven` — `/posters/batch-17/unforgiven.jpeg`
+- #155 A Beautiful Mind (2001) — slug `a-beautiful-mind` — `/posters/batch-17/a-beautiful-mind.jpeg`
+- #156 The Treasure of the Sierra Madre (1948) — slug `the-treasure-of-the-sierra-madre` — `/posters/batch-17/the-treasure-of-the-sierra-madre.jpeg`
+- #157 Howl's Moving Castle (2004) — slug `howl-s-moving-castle` — `/posters/batch-17/howl-s-moving-castle.jpeg`
+- #158 Finding Nemo (2003) — slug `finding-nemo` — `/posters/batch-17/finding-nemo.jpeg`
+- #159 Klaus (2019) — slug `klaus` — `/posters/batch-17/klaus.jpeg`
+- #160 Yojimbo (1961) — slug `yojimbo` — `/posters/batch-17/yojimbo.jpeg`
+- #161 The Great Escape (1963) — slug `the-great-escape` — `/posters/batch-17/the-great-escape.jpeg`
+- #162 The Elephant Man (1980) — slug `the-elephant-man` — `/posters/batch-17/the-elephant-man.jpeg`
+- #163 Monty Python and the Holy Grail (1975) — slug `monty-python-and-the-holy-grail` — `/posters/batch-17/monty-python-and-the-holy-grail.jpeg`
+- #164 Dial M for Murder (1954) — slug `dial-m-for-murder` — `/posters/batch-17/dial-m-for-murder.jpeg`
+- #165 The Best of Youth (2003) — slug `the-best-of-youth` — `/posters/batch-17/the-best-of-youth.jpeg`
+- #166 Demon Slayer: Kimetsu No Yaiba Infinity Castle (2025) — slug `demon-slayer-kimetsu-no-yaiba-infinity-castle` — `/posters/batch-17/demon-slayer-kimetsu-no-yaiba-infinity-castle.jpeg`
+- #167 The Secret in Their Eyes (2009) — slug `the-secret-in-their-eyes` — `/posters/batch-17/the-secret-in-their-eyes.jpeg`
+- #168 Gone with the Wind (1939) — slug `gone-with-the-wind` — `/posters/batch-17/gone-with-the-wind.jpeg`
+- #169 Chinatown (1974) — slug `chinatown` — `/posters/batch-17/chinatown.jpeg`
+- #170 Lock, Stock and Two Smoking Barrels (1998) — slug `lock-stock-and-two-smoking-barrels` — `/posters/batch-17/lock-stock-and-two-smoking-barrels.jpeg`
+- #171 V for Vendetta (2005) — slug `v-for-vendetta` — `/posters/batch-17/v-for-vendetta.jpeg`
+- #172 Catch Me If You Can (2002) — slug `catch-me-if-you-can` — `/posters/batch-17/catch-me-if-you-can.jpeg`
+- #173 Inside Out (2015) — slug `inside-out` — `/posters/batch-17/inside-out.jpeg`
+- #174 Rashomon (1950) — slug `rashomon` — `/posters/batch-17/rashomon.jpeg`
+- #175 Three Billboards Outside Ebbing, Missouri (2017) — slug `three-billboards-outside-ebbing-missouri` — `/posters/batch-17/three-billboards-outside-ebbing-missouri.jpeg`
+- #176 Trainspotting (1996) — slug `trainspotting` — `/posters/batch-17/trainspotting.jpeg`
+- #177 The Bridge on the River Kwai (1957) — slug `the-bridge-on-the-river-kwai` — `/posters/batch-17/the-bridge-on-the-river-kwai.jpeg`
+- #178 Harry Potter and the Deathly Hallows: Part 2 (2011) — slug `harry-potter-and-the-deathly-hallows-part-2` — `/posters/batch-17/harry-potter-and-the-deathly-hallows-part-2.jpeg`
+- #179 Dead Poets Society (1989) — slug `dead-poets-society` — `/posters/batch-17/dead-poets-society.jpeg`
+- #180 The Wild Robot (2024) — slug `the-wild-robot` — `/posters/batch-17/the-wild-robot.jpeg`
+- #181 Warrior (2011) — slug `warrior` — `/posters/batch-17/warrior.jpeg`
+- #182 Barry Lyndon (1975) — slug `barry-lyndon` — `/posters/batch-17/barry-lyndon.jpeg`
+- #183 Fargo (1996) — slug `fargo` — `/posters/batch-17/fargo.jpeg`
+- #184 Ben-Hur (1959) — slug `ben-hur` — `/posters/batch-17/ben-hur.jpeg`
+- #185 Raging Bull (1980) — slug `raging-bull` — `/posters/batch-17/raging-bull.jpeg`
+- #186 The Chaos Class Failed the Class (1975) — slug `the-chaos-class-failed-the-class` — `/posters/batch-17/the-chaos-class-failed-the-class.jpeg`
+- #187 Million Dollar Baby (2004) — slug `million-dollar-baby` — `/posters/batch-17/million-dollar-baby.jpeg`
+- #188 Mad Max: Fury Road (2015) — slug `mad-max-fury-road` — `/posters/batch-17/mad-max-fury-road.jpeg`
+- #189 Children of Heaven (1997) — slug `children-of-heaven` — `/posters/batch-17/children-of-heaven.jpeg`
+- #190 Hacksaw Ridge (2016) — slug `hacksaw-ridge` — `/posters/batch-17/hacksaw-ridge.jpeg`
+- #191 My Neighbor Totoro (1988) — slug `my-neighbor-totoro` — `/posters/batch-17/my-neighbor-totoro.jpeg`
+- #192 Gran Torino (2008) — slug `gran-torino` — `/posters/batch-17/gran-torino.jpeg`
+- #193 Ratatouille (2007) — slug `ratatouille` — `/posters/batch-17/ratatouille.jpeg`
+- #194 12 Years a Slave (2013) — slug `12-years-a-slave` — `/posters/batch-17/12-years-a-slave.jpeg`
+- #195 The Grand Budapest Hotel (2014) — slug `the-grand-budapest-hotel` — `/posters/batch-17/the-grand-budapest-hotel.jpeg`
+- #196 Before Sunrise (1995) — slug `before-sunrise` — `/posters/batch-17/before-sunrise.jpeg`
+- #197 Memories of Murder (2003) — slug `memories-of-murder` — `/posters/batch-17/memories-of-murder.jpeg`
+- #198 Blade Runner (1982) — slug `blade-runner` — `/posters/batch-17/blade-runner.jpeg`
+- #199 How to Train Your Dragon (2010) — slug `how-to-train-your-dragon` — `/posters/batch-17/how-to-train-your-dragon.jpeg`
+- #200 Spider-Man: No Way Home (2021) — slug `spider-man-no-way-home` — `/posters/batch-17/spider-man-no-way-home.jpeg`
+- #201 Gone Girl (2014) — slug `gone-girl` — `/posters/batch-17/gone-girl.jpeg`
+- #202 Monsters, Inc. (2001) — slug `monsters-inc` — `/posters/batch-17/monsters-inc.jpeg`
+- #203 Jaws (1975) — slug `jaws` — `/posters/batch-17/jaws.jpeg`
+- #204 In the Name of the Father (1993) — slug `in-the-name-of-the-father` — `/posters/batch-17/in-the-name-of-the-father.jpeg`
+- #205 Ford v Ferrari (2019) — slug `ford-v-ferrari` — `/posters/batch-17/ford-v-ferrari.jpeg`
+- #206 Wild Tales (2014) — slug `wild-tales` — `/posters/batch-17/wild-tales.jpeg`
+- #207 The Gold Rush (1925) — slug `the-gold-rush` — `/posters/batch-17/the-gold-rush.jpeg`
+- #208 Mary and Max (2009) — slug `mary-and-max` — `/posters/batch-17/mary-and-max.jpeg`
+- #209 Sherlock Jr. (1924) — slug `sherlock-jr` — `/posters/batch-17/sherlock-jr.jpeg`
+- #210 The Deer Hunter (1978) — slug `the-deer-hunter` — `/posters/batch-17/the-deer-hunter.jpeg`
+- #211 The Wages of Fear (1953) — slug `the-wages-of-fear` — `/posters/batch-17/the-wages-of-fear.jpeg`
+- #212 The General (1926) — slug `the-general` — `/posters/batch-17/the-general.jpeg`
+- #213 Logan (2017) — slug `logan` — `/posters/batch-17/logan.jpeg`
+- #214 Rocky (1976) — slug `rocky` — `/posters/batch-17/rocky.jpeg`
+- #215 Mr. Smith Goes to Washington (1939) — slug `mr-smith-goes-to-washington` — `/posters/batch-17/mr-smith-goes-to-washington.jpeg`
+- #216 Tokyo Story (1953) — slug `tokyo-story` — `/posters/batch-17/tokyo-story.jpeg`
+- #217 On the Waterfront (1954) — slug `on-the-waterfront` — `/posters/batch-17/on-the-waterfront.jpeg`
+- #218 Pirates of the Caribbean: The Curse of the Black Pearl (2003) — slug `pirates-of-the-caribbean-the-curse-of-the-black-pearl` — `/posters/batch-17/pirates-of-the-caribbean-the-curse-of-the-black-pearl.jpeg`
+- #219 A Silent Voice: The Movie (2016) — slug `a-silent-voice-the-movie` — `/posters/batch-17/a-silent-voice-the-movie.jpeg`
+- #220 Wild Strawberries (1957) — slug `wild-strawberries` — `/posters/batch-17/wild-strawberries.jpeg`
+- #221 Spotlight (2015) — slug `spotlight` — `/posters/batch-17/spotlight.jpeg`
+- #222 La haine (1995) — slug `la-haine` — `/posters/batch-17/la-haine.jpeg`
+- #223 The Terminator (1984) — slug `the-terminator` — `/posters/batch-17/the-terminator.jpeg`
+- #224 Jai Bhim (2021) — slug `jai-bhim` — `/posters/batch-17/jai-bhim.jpeg`
+- #225 The Sound of Music (1965) — slug `the-sound-of-music` — `/posters/batch-17/the-sound-of-music.jpeg`
+- #226 Maharaja (2024) — slug `maharaja` — `/posters/batch-17/maharaja.jpeg`
+- #227 The Third Man (1949) — slug `the-third-man` — `/posters/batch-17/the-third-man.jpeg`
+- #228 The Big Lebowski (1998) — slug `the-big-lebowski` — `/posters/batch-17/the-big-lebowski.jpeg`
+- #229 The Best Years of Our Lives (1946) — slug `the-best-years-of-our-lives` — `/posters/batch-17/the-best-years-of-our-lives.jpeg`
+- #230 The Seventh Seal (1957) — slug `the-seventh-seal` — `/posters/batch-17/the-seventh-seal.jpeg`
+- #231 Chainsaw Man - The Movie: Reze Arc (2025) — slug `chainsaw-man-the-movie-reze-arc` — `/posters/batch-17/chainsaw-man-the-movie-reze-arc.jpeg`
+- #232 Before Sunset (2004) — slug `before-sunset` — `/posters/batch-17/before-sunset.jpeg`
+- #233 Room (2015) — slug `room` — `/posters/batch-17/room.jpeg`
+- #234 Hotel Rwanda (2004) — slug `hotel-rwanda` — `/posters/batch-17/hotel-rwanda.jpeg`
+- #235 The Incredibles (2004) — slug `the-incredibles` — `/posters/batch-17/the-incredibles.jpeg`
+- #236 Platoon (1986) — slug `platoon` — `/posters/batch-17/platoon.jpeg`
+- #237 Hachi: A Dog's Tale (2009) — slug `hachi-a-dog-s-tale` — `/posters/batch-17/hachi-a-dog-s-tale.jpeg`
+- #238 The Exorcist (1973) — slug `the-exorcist` — `/posters/batch-17/the-exorcist.jpeg`
+- #239 Rush (2013) — slug `rush` — `/posters/batch-17/rush.jpeg`
+- #240 The Iron Giant (1999) — slug `the-iron-giant` — `/posters/batch-17/the-iron-giant.jpeg`
+- #241 The Wizard of Oz (1939) — slug `the-wizard-of-oz` — `/posters/batch-17/the-wizard-of-oz.jpeg`
+- #242 Stand by Me (1986) — slug `stand-by-me` — `/posters/batch-17/stand-by-me.jpeg`
+- #243 The Passion of Joan of Arc (1928) — slug `the-passion-of-joan-of-arc` — `/posters/batch-17/the-passion-of-joan-of-arc.jpeg`
+- #244 My Father and My Son (2005) — slug `my-father-and-my-son` — `/posters/batch-17/my-father-and-my-son.jpeg`
+- #245 The Battle of Algiers (1966) — slug `the-battle-of-algiers` — `/posters/batch-17/the-battle-of-algiers.jpeg`
+- #246 The Handmaiden (2016) — slug `the-handmaiden` — `/posters/batch-17/the-handmaiden.jpeg`
+- #247 Network (1976) — slug `network` — `/posters/batch-17/network.jpeg`
+- #248 Drishyam (2015) — slug `drishyam` — `/posters/batch-17/drishyam.jpeg`
+- #249 Gangs of Wasseypur (2012) — slug `gangs-of-wasseypur` — `/posters/batch-17/gangs-of-wasseypur.jpeg`
+- #250 The Grapes of Wrath (1940) — slug `the-grapes-of-wrath` — `/posters/batch-17/the-grapes-of-wrath.jpeg`
+
+## Missing From Site
+
+- #1 The Shawshank Redemption (1994)
+- #2 The Godfather (1972)
+- #3 The Dark Knight (2008)
+- #4 The Godfather Part II (1974)
+- #5 12 Angry Men (1957)
+- #6 The Lord of the Rings: The Return of the King (2003)
+- #7 Schindler's List (1993)
+- #8 The Lord of the Rings: The Fellowship of the Ring (2001)
+- #9 Pulp Fiction (1994)
+- #10 The Good, the Bad and the Ugly (1966)
+- #11 The Lord of the Rings: The Two Towers (2002)
+- #12 Forrest Gump (1994)
+- #13 Fight Club (1999)
+- #14 Inception (2010)
+- #15 Star Wars: Episode V - The Empire Strikes Back (1980)
+- #16 The Matrix (1999)
+- #17 GoodFellas (1990)
+- #18 Interstellar (2014)
+- #19 One Flew Over the Cuckoo's Nest (1975)
+- #20 Seven (1995)
+- #21 It's a Wonderful Life (1946)
+- #22 The Silence of the Lambs (1991)
+- #23 Seven Samurai (1954)
+- #24 Saving Private Ryan (1998)
+- #25 The Green Mile (1999)
+- #26 City of God (2002)
+- #27 Life Is Beautiful (1997)
+- #28 Terminator 2: Judgment Day (1991)
+- #29 Star Wars: Episode IV - A New Hope (1977)
+- #30 Back to the Future (1985)
+- #31 Spirited Away (2001)
+- #32 The Pianist (2002)
+- #33 Gladiator (2000)
+- #34 Parasite (2019)
+- #35 Grave of the Fireflies (1988)
+- #36 Psycho (1960)
+- #37 The Lion King (1994)
+- #70 12th Fail (2023)
+- #84 Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)
+
+## On Site But Using Low-Quality Batch-17 Posters
+
+- #38 Harakiri (1962) — slug `harakiri` — `/posters/batch-17/harakiri.jpeg`
+- #39 The Departed (2006) — slug `the-departed` — `/posters/batch-17/the-departed.jpeg`
+- #40 Whiplash (2014) — slug `whiplash` — `/posters/batch-17/whiplash.jpeg`
+- #41 Kill Bill: The Whole Bloody Affair (2004) — slug `kill-bill-the-whole-bloody-affair` — `/posters/batch-17/kill-bill-the-whole-bloody-affair.jpeg`
+- #42 The Prestige (2006) — slug `the-prestige` — `/posters/batch-17/the-prestige.jpeg`
+- #43 American History X (1998) — slug `american-history-x` — `/posters/batch-17/american-history-x.jpeg`
+- #44 Léon: The Professional (1994) — slug `l-on-the-professional` — `/posters/batch-17/l-on-the-professional.jpeg`
+- #45 Spider-Man: Across the Spider-Verse (2023) — slug `spider-man-across-the-spider-verse` — `/posters/batch-17/spider-man-across-the-spider-verse.jpeg`
+- #46 Cinema Paradiso (1988) — slug `cinema-paradiso` — `/posters/batch-17/cinema-paradiso.jpeg`
+- #47 Casablanca (1942) — slug `casablanca` — `/posters/batch-17/casablanca.jpeg`
+- #48 The Intouchables (2011) — slug `the-intouchables` — `/posters/batch-17/the-intouchables.jpeg`
+- #49 The Usual Suspects (1995) — slug `the-usual-suspects` — `/posters/batch-17/the-usual-suspects.jpeg`
+- #50 Alien (1979) — slug `alien` — `/posters/batch-17/alien.jpeg`
+- #51 Django Unchained (2012) — slug `django-unchained` — `/posters/batch-17/django-unchained.jpeg`
+- #52 Modern Times (1936) — slug `modern-times` — `/posters/batch-17/modern-times.jpeg`
+- #53 Rear Window (1954) — slug `rear-window` — `/posters/batch-17/rear-window.jpeg`
+- #54 Once Upon a Time in the West (1968) — slug `once-upon-a-time-in-the-west` — `/posters/batch-17/once-upon-a-time-in-the-west.jpeg`
+- #55 City Lights (1931) — slug `city-lights` — `/posters/batch-17/city-lights.jpeg`
+- #56 Apocalypse Now (1979) — slug `apocalypse-now` — `/posters/batch-17/apocalypse-now.jpeg`
+- #57 WALL·E (2008) — slug `wall-e` — `/posters/batch-17/wall-e.jpeg`
+- #58 Memento (2000) — slug `memento` — `/posters/batch-17/memento.jpeg`
+- #59 Dune: Part Two (2024) — slug `dune-part-two` — `/posters/batch-17/dune-part-two.jpeg`
+- #60 Raiders of the Lost Ark (1981) — slug `raiders-of-the-lost-ark` — `/posters/batch-17/raiders-of-the-lost-ark.jpeg`
+- #61 Avengers: Infinity War (2018) — slug `avengers-infinity-war` — `/posters/batch-17/avengers-infinity-war.jpeg`
+- #62 The Lives of Others (2006) — slug `the-lives-of-others` — `/posters/batch-17/the-lives-of-others.jpeg`
+- #63 Spider-Man: Into the Spider-Verse (2018) — slug `spider-man-into-the-spider-verse` — `/posters/batch-17/spider-man-into-the-spider-verse.jpeg`
+- #64 Sunset Boulevard (1950) — slug `sunset-boulevard` — `/posters/batch-17/sunset-boulevard.jpeg`
+- #65 Witness for the Prosecution (1957) — slug `witness-for-the-prosecution` — `/posters/batch-17/witness-for-the-prosecution.jpeg`
+- #66 Paths of Glory (1957) — slug `paths-of-glory` — `/posters/batch-17/paths-of-glory.jpeg`
+- #67 The Shining (1980) — slug `the-shining` — `/posters/batch-17/the-shining.jpeg`
+- #68 The Great Dictator (1940) — slug `the-great-dictator` — `/posters/batch-17/the-great-dictator.jpeg`
+- #69 Inglourious Basterds (2009) — slug `inglourious-basterds` — `/posters/batch-17/inglourious-basterds.jpeg`
+- #71 Aliens (1986) — slug `aliens` — `/posters/batch-17/aliens.jpeg`
+- #72 High and Low (1963) — slug `high-and-low` — `/posters/batch-17/high-and-low.jpeg`
+- #73 Good Will Hunting (1997) — slug `good-will-hunting` — `/posters/batch-17/good-will-hunting.jpeg`
+- #74 Avengers: Endgame (2019) — slug `avengers-endgame` — `/posters/batch-17/avengers-endgame.jpeg`
+- #75 The Dark Knight Rises (2012) — slug `the-dark-knight-rises` — `/posters/batch-17/the-dark-knight-rises.jpeg`
+- #76 Coco (2017) — slug `coco` — `/posters/batch-17/coco.jpeg`
+- #77 Amadeus (1984) — slug `amadeus` — `/posters/batch-17/amadeus.jpeg`
+- #78 Toy Story (1995) — slug `toy-story` — `/posters/batch-17/toy-story.jpeg`
+- #79 Your Name. (2016) — slug `your-name` — `/posters/batch-17/your-name.jpeg`
+- #80 Das Boot (1981) — slug `das-boot` — `/posters/batch-17/das-boot.jpeg`
+- #81 Oldboy (2003) — slug `oldboy` — `/posters/batch-17/oldboy.jpeg`
+- #82 Braveheart (1995) — slug `braveheart` — `/posters/batch-17/braveheart.jpeg`
+- #83 Princess Mononoke (1997) — slug `princess-mononoke` — `/posters/batch-17/princess-mononoke.jpeg`
+- #85 3 Idiots (2009) — slug `3-idiots` — `/posters/batch-17/3-idiots.jpeg`
+- #86 American Beauty (1999) — slug `american-beauty` — `/posters/batch-17/american-beauty.jpeg`
+- #87 Project Hail Mary (2026) — slug `project-hail-mary` — `/posters/batch-17/project-hail-mary.jpeg`
+- #88 Capernaum (2018) — slug `capernaum` — `/posters/batch-17/capernaum.jpeg`
+- #89 Singin' in the Rain (1952) — slug `singin-in-the-rain` — `/posters/batch-17/singin-in-the-rain.jpeg`
+- #90 Joker (2019) — slug `joker` — `/posters/batch-17/joker.jpeg`
+- #91 Once Upon a Time in America (1984) — slug `once-upon-a-time-in-america` — `/posters/batch-17/once-upon-a-time-in-america.jpeg`
+- #92 Come and See (1985) — slug `come-and-see` — `/posters/batch-17/come-and-see.jpeg`
+- #93 Star Wars: Episode VI - Return of the Jedi (1983) — slug `star-wars-episode-vi-return-of-the-jedi` — `/posters/batch-17/star-wars-episode-vi-return-of-the-jedi.jpeg`
+- #94 Requiem for a Dream (2000) — slug `requiem-for-a-dream` — `/posters/batch-17/requiem-for-a-dream.jpeg`
+- #95 Toy Story 3 (2010) — slug `toy-story-3` — `/posters/batch-17/toy-story-3.jpeg`
+- #96 Ikiru (1952) — slug `ikiru` — `/posters/batch-17/ikiru.jpeg`
+- #97 The Hunt (2012) — slug `the-hunt` — `/posters/batch-17/the-hunt.jpeg`
+- #98 Incendies (2010) — slug `incendies` — `/posters/batch-17/incendies.jpeg`
+- #99 Eternal Sunshine of the Spotless Mind (2004) — slug `eternal-sunshine-of-the-spotless-mind` — `/posters/batch-17/eternal-sunshine-of-the-spotless-mind.jpeg`
+- #100 The Apartment (1960) — slug `the-apartment` — `/posters/batch-17/the-apartment.jpeg`
+- #101 Lawrence of Arabia (1962) — slug `lawrence-of-arabia` — `/posters/batch-17/lawrence-of-arabia.jpeg`
+- #102 Heat (1995) — slug `heat` — `/posters/batch-17/heat.jpeg`
+- #103 2001: A Space Odyssey (1968) — slug `2001-a-space-odyssey` — `/posters/batch-17/2001-a-space-odyssey.jpeg`
+- #104 Reservoir Dogs (1992) — slug `reservoir-dogs` — `/posters/batch-17/reservoir-dogs.jpeg`
+- #105 Scarface (1983) — slug `scarface` — `/posters/batch-17/scarface.jpeg`
+- #106 Double Indemnity (1944) — slug `double-indemnity` — `/posters/batch-17/double-indemnity.jpeg`
+- #107 Up (2009) — slug `up` — `/posters/batch-17/up.jpeg`
+- #108 North by Northwest (1959) — slug `north-by-northwest` — `/posters/batch-17/north-by-northwest.jpeg`
+- #109 Like Stars on Earth (2007) — slug `like-stars-on-earth` — `/posters/batch-17/like-stars-on-earth.jpeg`
+- #110 Full Metal Jacket (1987) — slug `full-metal-jacket` — `/posters/batch-17/full-metal-jacket.jpeg`
+- #111 M (1931) — slug `m` — `/posters/batch-17/m.jpeg`
+- #112 Amélie (2001) — slug `am-lie` — `/posters/batch-17/am-lie.jpeg`
+- #113 Citizen Kane (1941) — slug `citizen-kane` — `/posters/batch-17/citizen-kane.jpeg`
+- #114 Vertigo (1958) — slug `vertigo` — `/posters/batch-17/vertigo.jpeg`
+- #115 A Separation (2011) — slug `a-separation` — `/posters/batch-17/a-separation.jpeg`
+- #116 Die Hard (1988) — slug `die-hard` — `/posters/batch-17/die-hard.jpeg`
+- #117 To Kill a Mockingbird (1962) — slug `to-kill-a-mockingbird` — `/posters/batch-17/to-kill-a-mockingbird.jpeg`
+- #118 Indiana Jones and the Last Crusade (1989) — slug `indiana-jones-and-the-last-crusade` — `/posters/batch-17/indiana-jones-and-the-last-crusade.jpeg`
+- #119 The Sting (1973) — slug `the-sting` — `/posters/batch-17/the-sting.jpeg`
+- #120 A Clockwork Orange (1971) — slug `a-clockwork-orange` — `/posters/batch-17/a-clockwork-orange.jpeg`
+- #121 Metropolis (1927) — slug `metropolis` — `/posters/batch-17/metropolis.jpeg`
+- #123 Snatch (2000) — slug `snatch` — `/posters/batch-17/snatch.jpeg`
+- #124 L.A. Confidential (1997) — slug `l-a-confidential` — `/posters/batch-17/l-a-confidential.jpeg`
+- #125 The Wolf of Wall Street (2013) — slug `the-wolf-of-wall-street` — `/posters/batch-17/the-wolf-of-wall-street.jpeg`
+- #126 Downfall (2004) — slug `downfall` — `/posters/batch-17/downfall.jpeg`
+- #127 Dangal (2016) — slug `dangal` — `/posters/batch-17/dangal.jpeg`
+- #128 The Truman Show (1998) — slug `the-truman-show` — `/posters/batch-17/the-truman-show.jpeg`
+- #129 Bicycle Thieves (1948) — slug `bicycle-thieves` — `/posters/batch-17/bicycle-thieves.jpeg`
+- #130 Oppenheimer (2023) — slug `oppenheimer` — `/posters/batch-17/oppenheimer.jpeg`
+- #131 Green Book (2018) — slug `green-book` — `/posters/batch-17/green-book.jpeg`
+- #132 Shutter Island (2010) — slug `shutter-island` — `/posters/batch-17/shutter-island.jpeg`
+- #133 Judgment at Nuremberg (1961) — slug `judgment-at-nuremberg` — `/posters/batch-17/judgment-at-nuremberg.jpeg`
+- #134 Batman Begins (2005) — slug `batman-begins` — `/posters/batch-17/batman-begins.jpeg`
+- #135 Hamilton (2020) — slug `hamilton` — `/posters/batch-17/hamilton.jpeg`
+- #136 For a Few Dollars More (1965) — slug `for-a-few-dollars-more` — `/posters/batch-17/for-a-few-dollars-more.jpeg`
+- #137 Taxi Driver (1976) — slug `taxi-driver` — `/posters/batch-17/taxi-driver.jpeg`
+- #138 Jurassic Park (1993) — slug `jurassic-park` — `/posters/batch-17/jurassic-park.jpeg`
+- #139 Some Like It Hot (1959) — slug `some-like-it-hot` — `/posters/batch-17/some-like-it-hot.jpeg`
+- #140 There Will Be Blood (2007) — slug `there-will-be-blood` — `/posters/batch-17/there-will-be-blood.jpeg`
+- #141 The Kid (1921) — slug `the-kid` — `/posters/batch-17/the-kid.jpeg`
+- #142 The Father (2020) — slug `the-father` — `/posters/batch-17/the-father.jpeg`
+- #143 All About Eve (1950) — slug `all-about-eve` — `/posters/batch-17/all-about-eve.jpeg`
+- #144 The Sixth Sense (1999) — slug `the-sixth-sense` — `/posters/batch-17/the-sixth-sense.jpeg`
+- #145 Ran (1985) — slug `ran` — `/posters/batch-17/ran.jpeg`
+- #146 Casino (1995) — slug `casino` — `/posters/batch-17/casino.jpeg`
+- #147 No Country for Old Men (2007) — slug `no-country-for-old-men` — `/posters/batch-17/no-country-for-old-men.jpeg`
+- #148 The Thing (1982) — slug `the-thing` — `/posters/batch-17/the-thing.jpeg`
+- #149 I Swear (None) — slug `i-swear` — `/posters/batch-17/i-swear.jpeg`
+- #150 Top Gun: Maverick (2022) — slug `top-gun-maverick` — `/posters/batch-17/top-gun-maverick.jpeg`
+- #151 Prisoners (2013) — slug `prisoners` — `/posters/batch-17/prisoners.jpeg`
+- #152 Kill Bill: Vol. 1 (2003) — slug `kill-bill-vol-1` — `/posters/batch-17/kill-bill-vol-1.jpeg`
+- #153 Pan's Labyrinth (2006) — slug `pan-s-labyrinth` — `/posters/batch-17/pan-s-labyrinth.jpeg`
+- #154 Unforgiven (1992) — slug `unforgiven` — `/posters/batch-17/unforgiven.jpeg`
+- #155 A Beautiful Mind (2001) — slug `a-beautiful-mind` — `/posters/batch-17/a-beautiful-mind.jpeg`
+- #156 The Treasure of the Sierra Madre (1948) — slug `the-treasure-of-the-sierra-madre` — `/posters/batch-17/the-treasure-of-the-sierra-madre.jpeg`
+- #157 Howl's Moving Castle (2004) — slug `howl-s-moving-castle` — `/posters/batch-17/howl-s-moving-castle.jpeg`
+- #158 Finding Nemo (2003) — slug `finding-nemo` — `/posters/batch-17/finding-nemo.jpeg`
+- #159 Klaus (2019) — slug `klaus` — `/posters/batch-17/klaus.jpeg`
+- #160 Yojimbo (1961) — slug `yojimbo` — `/posters/batch-17/yojimbo.jpeg`
+- #161 The Great Escape (1963) — slug `the-great-escape` — `/posters/batch-17/the-great-escape.jpeg`
+- #162 The Elephant Man (1980) — slug `the-elephant-man` — `/posters/batch-17/the-elephant-man.jpeg`
+- #163 Monty Python and the Holy Grail (1975) — slug `monty-python-and-the-holy-grail` — `/posters/batch-17/monty-python-and-the-holy-grail.jpeg`
+- #164 Dial M for Murder (1954) — slug `dial-m-for-murder` — `/posters/batch-17/dial-m-for-murder.jpeg`
+- #165 The Best of Youth (2003) — slug `the-best-of-youth` — `/posters/batch-17/the-best-of-youth.jpeg`
+- #166 Demon Slayer: Kimetsu No Yaiba Infinity Castle (2025) — slug `demon-slayer-kimetsu-no-yaiba-infinity-castle` — `/posters/batch-17/demon-slayer-kimetsu-no-yaiba-infinity-castle.jpeg`
+- #167 The Secret in Their Eyes (2009) — slug `the-secret-in-their-eyes` — `/posters/batch-17/the-secret-in-their-eyes.jpeg`
+- #168 Gone with the Wind (1939) — slug `gone-with-the-wind` — `/posters/batch-17/gone-with-the-wind.jpeg`
+- #169 Chinatown (1974) — slug `chinatown` — `/posters/batch-17/chinatown.jpeg`
+- #170 Lock, Stock and Two Smoking Barrels (1998) — slug `lock-stock-and-two-smoking-barrels` — `/posters/batch-17/lock-stock-and-two-smoking-barrels.jpeg`
+- #171 V for Vendetta (2005) — slug `v-for-vendetta` — `/posters/batch-17/v-for-vendetta.jpeg`
+- #172 Catch Me If You Can (2002) — slug `catch-me-if-you-can` — `/posters/batch-17/catch-me-if-you-can.jpeg`
+- #173 Inside Out (2015) — slug `inside-out` — `/posters/batch-17/inside-out.jpeg`
+- #174 Rashomon (1950) — slug `rashomon` — `/posters/batch-17/rashomon.jpeg`
+- #175 Three Billboards Outside Ebbing, Missouri (2017) — slug `three-billboards-outside-ebbing-missouri` — `/posters/batch-17/three-billboards-outside-ebbing-missouri.jpeg`
+- #176 Trainspotting (1996) — slug `trainspotting` — `/posters/batch-17/trainspotting.jpeg`
+- #177 The Bridge on the River Kwai (1957) — slug `the-bridge-on-the-river-kwai` — `/posters/batch-17/the-bridge-on-the-river-kwai.jpeg`
+- #178 Harry Potter and the Deathly Hallows: Part 2 (2011) — slug `harry-potter-and-the-deathly-hallows-part-2` — `/posters/batch-17/harry-potter-and-the-deathly-hallows-part-2.jpeg`
+- #179 Dead Poets Society (1989) — slug `dead-poets-society` — `/posters/batch-17/dead-poets-society.jpeg`
+- #180 The Wild Robot (2024) — slug `the-wild-robot` — `/posters/batch-17/the-wild-robot.jpeg`
+- #181 Warrior (2011) — slug `warrior` — `/posters/batch-17/warrior.jpeg`
+- #182 Barry Lyndon (1975) — slug `barry-lyndon` — `/posters/batch-17/barry-lyndon.jpeg`
+- #183 Fargo (1996) — slug `fargo` — `/posters/batch-17/fargo.jpeg`
+- #184 Ben-Hur (1959) — slug `ben-hur` — `/posters/batch-17/ben-hur.jpeg`
+- #185 Raging Bull (1980) — slug `raging-bull` — `/posters/batch-17/raging-bull.jpeg`
+- #186 The Chaos Class Failed the Class (1975) — slug `the-chaos-class-failed-the-class` — `/posters/batch-17/the-chaos-class-failed-the-class.jpeg`
+- #187 Million Dollar Baby (2004) — slug `million-dollar-baby` — `/posters/batch-17/million-dollar-baby.jpeg`
+- #188 Mad Max: Fury Road (2015) — slug `mad-max-fury-road` — `/posters/batch-17/mad-max-fury-road.jpeg`
+- #189 Children of Heaven (1997) — slug `children-of-heaven` — `/posters/batch-17/children-of-heaven.jpeg`
+- #190 Hacksaw Ridge (2016) — slug `hacksaw-ridge` — `/posters/batch-17/hacksaw-ridge.jpeg`
+- #191 My Neighbor Totoro (1988) — slug `my-neighbor-totoro` — `/posters/batch-17/my-neighbor-totoro.jpeg`
+- #192 Gran Torino (2008) — slug `gran-torino` — `/posters/batch-17/gran-torino.jpeg`
+- #193 Ratatouille (2007) — slug `ratatouille` — `/posters/batch-17/ratatouille.jpeg`
+- #194 12 Years a Slave (2013) — slug `12-years-a-slave` — `/posters/batch-17/12-years-a-slave.jpeg`
+- #195 The Grand Budapest Hotel (2014) — slug `the-grand-budapest-hotel` — `/posters/batch-17/the-grand-budapest-hotel.jpeg`
+- #196 Before Sunrise (1995) — slug `before-sunrise` — `/posters/batch-17/before-sunrise.jpeg`
+- #197 Memories of Murder (2003) — slug `memories-of-murder` — `/posters/batch-17/memories-of-murder.jpeg`
+- #198 Blade Runner (1982) — slug `blade-runner` — `/posters/batch-17/blade-runner.jpeg`
+- #199 How to Train Your Dragon (2010) — slug `how-to-train-your-dragon` — `/posters/batch-17/how-to-train-your-dragon.jpeg`
+- #200 Spider-Man: No Way Home (2021) — slug `spider-man-no-way-home` — `/posters/batch-17/spider-man-no-way-home.jpeg`
+- #201 Gone Girl (2014) — slug `gone-girl` — `/posters/batch-17/gone-girl.jpeg`
+- #202 Monsters, Inc. (2001) — slug `monsters-inc` — `/posters/batch-17/monsters-inc.jpeg`
+- #203 Jaws (1975) — slug `jaws` — `/posters/batch-17/jaws.jpeg`
+- #204 In the Name of the Father (1993) — slug `in-the-name-of-the-father` — `/posters/batch-17/in-the-name-of-the-father.jpeg`
+- #205 Ford v Ferrari (2019) — slug `ford-v-ferrari` — `/posters/batch-17/ford-v-ferrari.jpeg`
+- #206 Wild Tales (2014) — slug `wild-tales` — `/posters/batch-17/wild-tales.jpeg`
+- #207 The Gold Rush (1925) — slug `the-gold-rush` — `/posters/batch-17/the-gold-rush.jpeg`
+- #208 Mary and Max (2009) — slug `mary-and-max` — `/posters/batch-17/mary-and-max.jpeg`
+- #209 Sherlock Jr. (1924) — slug `sherlock-jr` — `/posters/batch-17/sherlock-jr.jpeg`
+- #210 The Deer Hunter (1978) — slug `the-deer-hunter` — `/posters/batch-17/the-deer-hunter.jpeg`
+- #211 The Wages of Fear (1953) — slug `the-wages-of-fear` — `/posters/batch-17/the-wages-of-fear.jpeg`
+- #212 The General (1926) — slug `the-general` — `/posters/batch-17/the-general.jpeg`
+- #213 Logan (2017) — slug `logan` — `/posters/batch-17/logan.jpeg`
+- #214 Rocky (1976) — slug `rocky` — `/posters/batch-17/rocky.jpeg`
+- #215 Mr. Smith Goes to Washington (1939) — slug `mr-smith-goes-to-washington` — `/posters/batch-17/mr-smith-goes-to-washington.jpeg`
+- #216 Tokyo Story (1953) — slug `tokyo-story` — `/posters/batch-17/tokyo-story.jpeg`
+- #217 On the Waterfront (1954) — slug `on-the-waterfront` — `/posters/batch-17/on-the-waterfront.jpeg`
+- #218 Pirates of the Caribbean: The Curse of the Black Pearl (2003) — slug `pirates-of-the-caribbean-the-curse-of-the-black-pearl` — `/posters/batch-17/pirates-of-the-caribbean-the-curse-of-the-black-pearl.jpeg`
+- #219 A Silent Voice: The Movie (2016) — slug `a-silent-voice-the-movie` — `/posters/batch-17/a-silent-voice-the-movie.jpeg`
+- #220 Wild Strawberries (1957) — slug `wild-strawberries` — `/posters/batch-17/wild-strawberries.jpeg`
+- #221 Spotlight (2015) — slug `spotlight` — `/posters/batch-17/spotlight.jpeg`
+- #222 La haine (1995) — slug `la-haine` — `/posters/batch-17/la-haine.jpeg`
+- #223 The Terminator (1984) — slug `the-terminator` — `/posters/batch-17/the-terminator.jpeg`
+- #224 Jai Bhim (2021) — slug `jai-bhim` — `/posters/batch-17/jai-bhim.jpeg`
+- #225 The Sound of Music (1965) — slug `the-sound-of-music` — `/posters/batch-17/the-sound-of-music.jpeg`
+- #226 Maharaja (2024) — slug `maharaja` — `/posters/batch-17/maharaja.jpeg`
+- #227 The Third Man (1949) — slug `the-third-man` — `/posters/batch-17/the-third-man.jpeg`
+- #228 The Big Lebowski (1998) — slug `the-big-lebowski` — `/posters/batch-17/the-big-lebowski.jpeg`
+- #229 The Best Years of Our Lives (1946) — slug `the-best-years-of-our-lives` — `/posters/batch-17/the-best-years-of-our-lives.jpeg`
+- #230 The Seventh Seal (1957) — slug `the-seventh-seal` — `/posters/batch-17/the-seventh-seal.jpeg`
+- #231 Chainsaw Man - The Movie: Reze Arc (2025) — slug `chainsaw-man-the-movie-reze-arc` — `/posters/batch-17/chainsaw-man-the-movie-reze-arc.jpeg`
+- #232 Before Sunset (2004) — slug `before-sunset` — `/posters/batch-17/before-sunset.jpeg`
+- #233 Room (2015) — slug `room` — `/posters/batch-17/room.jpeg`
+- #234 Hotel Rwanda (2004) — slug `hotel-rwanda` — `/posters/batch-17/hotel-rwanda.jpeg`
+- #235 The Incredibles (2004) — slug `the-incredibles` — `/posters/batch-17/the-incredibles.jpeg`
+- #236 Platoon (1986) — slug `platoon` — `/posters/batch-17/platoon.jpeg`
+- #237 Hachi: A Dog's Tale (2009) — slug `hachi-a-dog-s-tale` — `/posters/batch-17/hachi-a-dog-s-tale.jpeg`
+- #238 The Exorcist (1973) — slug `the-exorcist` — `/posters/batch-17/the-exorcist.jpeg`
+- #239 Rush (2013) — slug `rush` — `/posters/batch-17/rush.jpeg`
+- #240 The Iron Giant (1999) — slug `the-iron-giant` — `/posters/batch-17/the-iron-giant.jpeg`
+- #241 The Wizard of Oz (1939) — slug `the-wizard-of-oz` — `/posters/batch-17/the-wizard-of-oz.jpeg`
+- #242 Stand by Me (1986) — slug `stand-by-me` — `/posters/batch-17/stand-by-me.jpeg`
+- #243 The Passion of Joan of Arc (1928) — slug `the-passion-of-joan-of-arc` — `/posters/batch-17/the-passion-of-joan-of-arc.jpeg`
+- #244 My Father and My Son (2005) — slug `my-father-and-my-son` — `/posters/batch-17/my-father-and-my-son.jpeg`
+- #245 The Battle of Algiers (1966) — slug `the-battle-of-algiers` — `/posters/batch-17/the-battle-of-algiers.jpeg`
+- #246 The Handmaiden (2016) — slug `the-handmaiden` — `/posters/batch-17/the-handmaiden.jpeg`
+- #247 Network (1976) — slug `network` — `/posters/batch-17/network.jpeg`
+- #248 Drishyam (2015) — slug `drishyam` — `/posters/batch-17/drishyam.jpeg`
+- #249 Gangs of Wasseypur (2012) — slug `gangs-of-wasseypur` — `/posters/batch-17/gangs-of-wasseypur.jpeg`
+- #250 The Grapes of Wrath (1940) — slug `the-grapes-of-wrath` — `/posters/batch-17/the-grapes-of-wrath.jpeg`

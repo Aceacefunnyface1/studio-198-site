@@ -1,0 +1,1472 @@
+{
+  "12-years-a-slave": {
+    "movieTitle": "12 Years a Slave",
+    "currentPath": "/posters/batch-17/12-years-a-slave.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "2001-a-space-odyssey": {
+    "movieTitle": "2001: A Space Odyssey",
+    "currentPath": "/posters/batch-17/2001-a-space-odyssey.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "3-idiots": {
+    "movieTitle": "3 Idiots",
+    "currentPath": "/posters/batch-17/3-idiots.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "a-beautiful-mind": {
+    "movieTitle": "A Beautiful Mind",
+    "currentPath": "/posters/batch-17/a-beautiful-mind.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "a-clockwork-orange": {
+    "movieTitle": "A Clockwork Orange",
+    "currentPath": "/posters/batch-17/a-clockwork-orange.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "a-separation": {
+    "movieTitle": "A Separation",
+    "currentPath": "/posters/batch-17/a-separation.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "a-silent-voice-the-movie": {
+    "movieTitle": "A Silent Voice: The Movie",
+    "currentPath": "/posters/batch-17/a-silent-voice-the-movie.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "alien": {
+    "movieTitle": "Alien",
+    "currentPath": "/posters/batch-17/alien.jpeg",
+    "replacementPath": "",
+    "status": "approved",
+    "source": "goodones-whitelist"
+  },
+  "aliens": {
+    "movieTitle": "Aliens",
+    "currentPath": "/posters/batch-17/aliens.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "all-about-eve": {
+    "movieTitle": "All About Eve",
+    "currentPath": "/posters/batch-17/all-about-eve.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "amadeus": {
+    "movieTitle": "Amadeus",
+    "currentPath": "/posters/batch-17/amadeus.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "american-beauty": {
+    "movieTitle": "American Beauty",
+    "currentPath": "/posters/batch-17/american-beauty.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "american-history-x": {
+    "movieTitle": "American History X",
+    "currentPath": "/posters/batch-17/american-history-x.jpeg",
+    "replacementPath": "",
+    "status": "approved",
+    "source": "goodones-whitelist"
+  },
+  "am-lie": {
+    "movieTitle": "Amélie",
+    "currentPath": "/posters/batch-17/am-lie.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "apocalypse-now": {
+    "movieTitle": "Apocalypse Now",
+    "currentPath": "/posters/batch-17/apocalypse-now.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "avengers-endgame": {
+    "movieTitle": "Avengers: Endgame",
+    "currentPath": "/posters/batch-17/avengers-endgame.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "avengers-infinity-war": {
+    "movieTitle": "Avengers: Infinity War",
+    "currentPath": "/posters/batch-17/avengers-infinity-war.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "barry-lyndon": {
+    "movieTitle": "Barry Lyndon",
+    "currentPath": "/posters/batch-17/barry-lyndon.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "batman-begins": {
+    "movieTitle": "Batman Begins",
+    "currentPath": "/posters/batch-17/batman-begins.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "before-sunrise": {
+    "movieTitle": "Before Sunrise",
+    "currentPath": "/posters/batch-17/before-sunrise.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "before-sunset": {
+    "movieTitle": "Before Sunset",
+    "currentPath": "/posters/batch-17/before-sunset.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "ben-hur": {
+    "movieTitle": "Ben-Hur",
+    "currentPath": "/posters/batch-17/ben-hur.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "bicycle-thieves": {
+    "movieTitle": "Bicycle Thieves",
+    "currentPath": "/posters/batch-17/bicycle-thieves.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "blade-runner": {
+    "movieTitle": "Blade Runner",
+    "currentPath": "/posters/batch-17/blade-runner.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "braveheart": {
+    "movieTitle": "Braveheart",
+    "currentPath": "/posters/batch-17/braveheart.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "capernaum": {
+    "movieTitle": "Capernaum",
+    "currentPath": "/posters/batch-17/capernaum.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "casablanca": {
+    "movieTitle": "Casablanca",
+    "currentPath": "/posters/batch-17/casablanca.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "casino": {
+    "movieTitle": "Casino",
+    "currentPath": "/posters/batch-17/casino.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "catch-me-if-you-can": {
+    "movieTitle": "Catch Me If You Can",
+    "currentPath": "/posters/batch-17/catch-me-if-you-can.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "chainsaw-man-the-movie-reze-arc": {
+    "movieTitle": "Chainsaw Man - The Movie: Reze Arc",
+    "currentPath": "/posters/batch-17/chainsaw-man-the-movie-reze-arc.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "children-of-heaven": {
+    "movieTitle": "Children of Heaven",
+    "currentPath": "/posters/batch-17/children-of-heaven.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "chinatown": {
+    "movieTitle": "Chinatown",
+    "currentPath": "/posters/batch-17/chinatown.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "cinema-paradiso": {
+    "movieTitle": "Cinema Paradiso",
+    "currentPath": "/posters/batch-17/cinema-paradiso.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "citizen-kane": {
+    "movieTitle": "Citizen Kane",
+    "currentPath": "/posters/batch-17/citizen-kane.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "city-lights": {
+    "movieTitle": "City Lights",
+    "currentPath": "/posters/batch-17/city-lights.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "coco": {
+    "movieTitle": "Coco",
+    "currentPath": "/posters/batch-17/coco.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "come-and-see": {
+    "movieTitle": "Come and See",
+    "currentPath": "/posters/batch-17/come-and-see.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "dangal": {
+    "movieTitle": "Dangal",
+    "currentPath": "/posters/batch-17/dangal.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "das-boot": {
+    "movieTitle": "Das Boot",
+    "currentPath": "/posters/batch-17/das-boot.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "dead-poets-society": {
+    "movieTitle": "Dead Poets Society",
+    "currentPath": "/posters/batch-17/dead-poets-society.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "demon-slayer-kimetsu-no-yaiba-infinity-castle": {
+    "movieTitle": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
+    "currentPath": "/posters/batch-17/demon-slayer-kimetsu-no-yaiba-infinity-castle.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "dial-m-for-murder": {
+    "movieTitle": "Dial M for Murder",
+    "currentPath": "/posters/batch-17/dial-m-for-murder.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "die-hard": {
+    "movieTitle": "Die Hard",
+    "currentPath": "/posters/batch-17/die-hard.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "django-unchained": {
+    "movieTitle": "Django Unchained",
+    "currentPath": "/posters/batch-17/django-unchained.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "double-indemnity": {
+    "movieTitle": "Double Indemnity",
+    "currentPath": "/posters/batch-17/double-indemnity.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "downfall": {
+    "movieTitle": "Downfall",
+    "currentPath": "/posters/batch-17/downfall.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "drishyam": {
+    "movieTitle": "Drishyam",
+    "currentPath": "/posters/batch-17/drishyam.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "dune-part-two": {
+    "movieTitle": "Dune: Part Two",
+    "currentPath": "/posters/batch-17/dune-part-two.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "eternal-sunshine-of-the-spotless-mind": {
+    "movieTitle": "Eternal Sunshine of the Spotless Mind",
+    "currentPath": "/posters/batch-17/eternal-sunshine-of-the-spotless-mind.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "fargo": {
+    "movieTitle": "Fargo",
+    "currentPath": "/posters/batch-17/fargo.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "finding-nemo": {
+    "movieTitle": "Finding Nemo",
+    "currentPath": "/posters/batch-17/finding-nemo.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "for-a-few-dollars-more": {
+    "movieTitle": "For a Few Dollars More",
+    "currentPath": "/posters/batch-17/for-a-few-dollars-more.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "ford-v-ferrari": {
+    "movieTitle": "Ford v Ferrari",
+    "currentPath": "/posters/batch-17/ford-v-ferrari.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "full-metal-jacket": {
+    "movieTitle": "Full Metal Jacket",
+    "currentPath": "/posters/batch-17/full-metal-jacket.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "gangs-of-wasseypur": {
+    "movieTitle": "Gangs of Wasseypur",
+    "currentPath": "/posters/batch-17/gangs-of-wasseypur.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "gone-girl": {
+    "movieTitle": "Gone Girl",
+    "currentPath": "/posters/batch-17/gone-girl.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "gone-with-the-wind": {
+    "movieTitle": "Gone with the Wind",
+    "currentPath": "/posters/batch-17/gone-with-the-wind.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "good-will-hunting": {
+    "movieTitle": "Good Will Hunting",
+    "currentPath": "/posters/batch-17/good-will-hunting.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "gran-torino": {
+    "movieTitle": "Gran Torino",
+    "currentPath": "/posters/batch-17/gran-torino.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "green-book": {
+    "movieTitle": "Green Book",
+    "currentPath": "/posters/batch-17/green-book.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "hachi-a-dog-s-tale": {
+    "movieTitle": "Hachi: A Dog's Tale",
+    "currentPath": "/posters/batch-17/hachi-a-dog-s-tale.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "hacksaw-ridge": {
+    "movieTitle": "Hacksaw Ridge",
+    "currentPath": "/posters/batch-17/hacksaw-ridge.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "hamilton": {
+    "movieTitle": "Hamilton",
+    "currentPath": "/posters/batch-17/hamilton.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "harakiri": {
+    "movieTitle": "Harakiri",
+    "currentPath": "/posters/batch-17/harakiri.jpeg",
+    "replacementPath": "",
+    "status": "approved",
+    "source": "goodones-whitelist"
+  },
+  "harry-potter-and-the-deathly-hallows-part-2": {
+    "movieTitle": "Harry Potter and the Deathly Hallows: Part 2",
+    "currentPath": "/posters/batch-17/harry-potter-and-the-deathly-hallows-part-2.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "heat": {
+    "movieTitle": "Heat",
+    "currentPath": "/posters/batch-17/heat.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "high-and-low": {
+    "movieTitle": "High and Low",
+    "currentPath": "/posters/batch-17/high-and-low.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "hotel-rwanda": {
+    "movieTitle": "Hotel Rwanda",
+    "currentPath": "/posters/batch-17/hotel-rwanda.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "how-to-train-your-dragon": {
+    "movieTitle": "How to Train Your Dragon",
+    "currentPath": "/posters/batch-17/how-to-train-your-dragon.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "howl-s-moving-castle": {
+    "movieTitle": "Howl's Moving Castle",
+    "currentPath": "/posters/batch-17/howl-s-moving-castle.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "i-swear": {
+    "movieTitle": "I Swear",
+    "currentPath": "/posters/batch-17/i-swear.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "ikiru": {
+    "movieTitle": "Ikiru",
+    "currentPath": "/posters/batch-17/ikiru.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "in-the-name-of-the-father": {
+    "movieTitle": "In the Name of the Father",
+    "currentPath": "/posters/batch-17/in-the-name-of-the-father.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "incendies": {
+    "movieTitle": "Incendies",
+    "currentPath": "/posters/batch-17/incendies.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "indiana-jones-and-the-last-crusade": {
+    "movieTitle": "Indiana Jones and the Last Crusade",
+    "currentPath": "/posters/batch-17/indiana-jones-and-the-last-crusade.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "inglourious-basterds": {
+    "movieTitle": "Inglourious Basterds",
+    "currentPath": "/posters/batch-17/inglourious-basterds.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "inside-out": {
+    "movieTitle": "Inside Out",
+    "currentPath": "/posters/batch-17/inside-out.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "jai-bhim": {
+    "movieTitle": "Jai Bhim",
+    "currentPath": "/posters/batch-17/jai-bhim.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "jaws": {
+    "movieTitle": "Jaws",
+    "currentPath": "/posters/batch-17/jaws.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "joker": {
+    "movieTitle": "Joker",
+    "currentPath": "/posters/batch-17/joker.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "judgment-at-nuremberg": {
+    "movieTitle": "Judgment at Nuremberg",
+    "currentPath": "/posters/batch-17/judgment-at-nuremberg.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "jurassic-park": {
+    "movieTitle": "Jurassic Park",
+    "currentPath": "/posters/batch-17/jurassic-park.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "kill-bill-the-whole-bloody-affair": {
+    "movieTitle": "Kill Bill: The Whole Bloody Affair",
+    "currentPath": "/posters/batch-17/kill-bill-the-whole-bloody-affair.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "kill-bill-vol-1": {
+    "movieTitle": "Kill Bill: Vol. 1",
+    "currentPath": "/posters/batch-17/kill-bill-vol-1.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "klaus": {
+    "movieTitle": "Klaus",
+    "currentPath": "/posters/batch-17/klaus.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "l-a-confidential": {
+    "movieTitle": "L.A. Confidential",
+    "currentPath": "/posters/batch-17/l-a-confidential.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "la-haine": {
+    "movieTitle": "La haine",
+    "currentPath": "/posters/batch-17/la-haine.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "lawrence-of-arabia": {
+    "movieTitle": "Lawrence of Arabia",
+    "currentPath": "/posters/batch-17/lawrence-of-arabia.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "like-stars-on-earth": {
+    "movieTitle": "Like Stars on Earth",
+    "currentPath": "/posters/batch-17/like-stars-on-earth.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "lock-stock-and-two-smoking-barrels": {
+    "movieTitle": "Lock, Stock and Two Smoking Barrels",
+    "currentPath": "/posters/batch-17/lock-stock-and-two-smoking-barrels.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "logan": {
+    "movieTitle": "Logan",
+    "currentPath": "/posters/batch-17/logan.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "l-on-the-professional": {
+    "movieTitle": "Léon: The Professional",
+    "currentPath": "/posters/batch-17/l-on-the-professional.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "m": {
+    "movieTitle": "M",
+    "currentPath": "/posters/batch-17/m.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "mad-max-fury-road": {
+    "movieTitle": "Mad Max: Fury Road",
+    "currentPath": "/posters/batch-17/mad-max-fury-road.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "maharaja": {
+    "movieTitle": "Maharaja",
+    "currentPath": "/posters/batch-17/maharaja.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "mary-and-max": {
+    "movieTitle": "Mary and Max",
+    "currentPath": "/posters/batch-17/mary-and-max.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "memento": {
+    "movieTitle": "Memento",
+    "currentPath": "/posters/batch-17/memento.jpeg",
+    "replacementPath": "",
+    "status": "approved",
+    "source": "goodones-whitelist"
+  },
+  "memories-of-murder": {
+    "movieTitle": "Memories of Murder",
+    "currentPath": "/posters/batch-17/memories-of-murder.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "metropolis": {
+    "movieTitle": "Metropolis",
+    "currentPath": "/posters/batch-17/metropolis.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "million-dollar-baby": {
+    "movieTitle": "Million Dollar Baby",
+    "currentPath": "/posters/batch-17/million-dollar-baby.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "modern-times": {
+    "movieTitle": "Modern Times",
+    "currentPath": "/posters/batch-17/modern-times.jpeg",
+    "replacementPath": "",
+    "status": "approved",
+    "source": "goodones-whitelist"
+  },
+  "monsters-inc": {
+    "movieTitle": "Monsters, Inc.",
+    "currentPath": "/posters/batch-17/monsters-inc.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "monty-python-and-the-holy-grail": {
+    "movieTitle": "Monty Python and the Holy Grail",
+    "currentPath": "/posters/batch-17/monty-python-and-the-holy-grail.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "mr-smith-goes-to-washington": {
+    "movieTitle": "Mr. Smith Goes to Washington",
+    "currentPath": "/posters/batch-17/mr-smith-goes-to-washington.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "my-father-and-my-son": {
+    "movieTitle": "My Father and My Son",
+    "currentPath": "/posters/batch-17/my-father-and-my-son.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "my-neighbor-totoro": {
+    "movieTitle": "My Neighbor Totoro",
+    "currentPath": "/posters/batch-17/my-neighbor-totoro.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "network": {
+    "movieTitle": "Network",
+    "currentPath": "/posters/batch-17/network.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "no-country-for-old-men": {
+    "movieTitle": "No Country for Old Men",
+    "currentPath": "/posters/batch-17/no-country-for-old-men.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "north-by-northwest": {
+    "movieTitle": "North by Northwest",
+    "currentPath": "/posters/batch-17/north-by-northwest.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "oldboy": {
+    "movieTitle": "Oldboy",
+    "currentPath": "/posters/batch-17/oldboy.jpeg",
+    "replacementPath": "",
+    "status": "approved",
+    "source": "goodones-whitelist"
+  },
+  "on-the-waterfront": {
+    "movieTitle": "On the Waterfront",
+    "currentPath": "/posters/batch-17/on-the-waterfront.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "once-upon-a-time-in-america": {
+    "movieTitle": "Once Upon a Time in America",
+    "currentPath": "/posters/batch-17/once-upon-a-time-in-america.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "once-upon-a-time-in-the-west": {
+    "movieTitle": "Once Upon a Time in the West",
+    "currentPath": "/posters/batch-17/once-upon-a-time-in-the-west.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "oppenheimer": {
+    "movieTitle": "Oppenheimer",
+    "currentPath": "/posters/batch-17/oppenheimer.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "pan-s-labyrinth": {
+    "movieTitle": "Pan's Labyrinth",
+    "currentPath": "/posters/batch-17/pan-s-labyrinth.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "paths-of-glory": {
+    "movieTitle": "Paths of Glory",
+    "currentPath": "/posters/batch-17/paths-of-glory.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "pirates-of-the-caribbean-the-curse-of-the-black-pearl": {
+    "movieTitle": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "currentPath": "/posters/batch-17/pirates-of-the-caribbean-the-curse-of-the-black-pearl.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "platoon": {
+    "movieTitle": "Platoon",
+    "currentPath": "/posters/batch-17/platoon.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "princess-mononoke": {
+    "movieTitle": "Princess Mononoke",
+    "currentPath": "/posters/batch-17/princess-mononoke.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "prisoners": {
+    "movieTitle": "Prisoners",
+    "currentPath": "/posters/batch-17/prisoners.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "project-hail-mary": {
+    "movieTitle": "Project Hail Mary",
+    "currentPath": "/posters/batch-17/project-hail-mary.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "raging-bull": {
+    "movieTitle": "Raging Bull",
+    "currentPath": "/posters/batch-17/raging-bull.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "raiders-of-the-lost-ark": {
+    "movieTitle": "Raiders of the Lost Ark",
+    "currentPath": "/posters/batch-17/raiders-of-the-lost-ark.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "ran": {
+    "movieTitle": "Ran",
+    "currentPath": "/posters/batch-17/ran.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "rashomon": {
+    "movieTitle": "Rashomon",
+    "currentPath": "/posters/batch-17/rashomon.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "ratatouille": {
+    "movieTitle": "Ratatouille",
+    "currentPath": "/posters/batch-17/ratatouille.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "rear-window": {
+    "movieTitle": "Rear Window",
+    "currentPath": "/posters/batch-17/rear-window.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "requiem-for-a-dream": {
+    "movieTitle": "Requiem for a Dream",
+    "currentPath": "/posters/batch-17/requiem-for-a-dream.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "reservoir-dogs": {
+    "movieTitle": "Reservoir Dogs",
+    "currentPath": "/posters/batch-17/reservoir-dogs.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "rocky": {
+    "movieTitle": "Rocky",
+    "currentPath": "/posters/batch-17/rocky.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "room": {
+    "movieTitle": "Room",
+    "currentPath": "/posters/batch-17/room.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "rush": {
+    "movieTitle": "Rush",
+    "currentPath": "/posters/batch-17/rush.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "scarface": {
+    "movieTitle": "Scarface",
+    "currentPath": "/posters/batch-17/scarface.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "sherlock-jr": {
+    "movieTitle": "Sherlock Jr.",
+    "currentPath": "/posters/batch-17/sherlock-jr.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "shutter-island": {
+    "movieTitle": "Shutter Island",
+    "currentPath": "/posters/batch-17/shutter-island.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "singin-in-the-rain": {
+    "movieTitle": "Singin' in the Rain",
+    "currentPath": "/posters/batch-17/singin-in-the-rain.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "snatch": {
+    "movieTitle": "Snatch",
+    "currentPath": "/posters/batch-17/snatch.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "some-like-it-hot": {
+    "movieTitle": "Some Like It Hot",
+    "currentPath": "/posters/batch-17/some-like-it-hot.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "spider-man-across-the-spider-verse": {
+    "movieTitle": "Spider-Man: Across the Spider-Verse",
+    "currentPath": "/posters/batch-17/spider-man-across-the-spider-verse.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "spider-man-into-the-spider-verse": {
+    "movieTitle": "Spider-Man: Into the Spider-Verse",
+    "currentPath": "/posters/batch-17/spider-man-into-the-spider-verse.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "spider-man-no-way-home": {
+    "movieTitle": "Spider-Man: No Way Home",
+    "currentPath": "/posters/batch-17/spider-man-no-way-home.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "spotlight": {
+    "movieTitle": "Spotlight",
+    "currentPath": "/posters/batch-17/spotlight.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "stand-by-me": {
+    "movieTitle": "Stand by Me",
+    "currentPath": "/posters/batch-17/stand-by-me.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "star-wars-episode-vi-return-of-the-jedi": {
+    "movieTitle": "Star Wars: Episode VI - Return of the Jedi",
+    "currentPath": "/posters/batch-17/star-wars-episode-vi-return-of-the-jedi.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "sunset-boulevard": {
+    "movieTitle": "Sunset Boulevard",
+    "currentPath": "/posters/batch-17/sunset-boulevard.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "taxi-driver": {
+    "movieTitle": "Taxi Driver",
+    "currentPath": "/posters/batch-17/taxi-driver.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-apartment": {
+    "movieTitle": "The Apartment",
+    "currentPath": "/posters/batch-17/the-apartment.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-battle-of-algiers": {
+    "movieTitle": "The Battle of Algiers",
+    "currentPath": "/posters/batch-17/the-battle-of-algiers.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-best-of-youth": {
+    "movieTitle": "The Best of Youth",
+    "currentPath": "/posters/batch-17/the-best-of-youth.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-best-years-of-our-lives": {
+    "movieTitle": "The Best Years of Our Lives",
+    "currentPath": "/posters/batch-17/the-best-years-of-our-lives.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-big-lebowski": {
+    "movieTitle": "The Big Lebowski",
+    "currentPath": "/posters/batch-17/the-big-lebowski.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-bridge-on-the-river-kwai": {
+    "movieTitle": "The Bridge on the River Kwai",
+    "currentPath": "/posters/batch-17/the-bridge-on-the-river-kwai.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-chaos-class-failed-the-class": {
+    "movieTitle": "The Chaos Class Failed the Class",
+    "currentPath": "/posters/batch-17/the-chaos-class-failed-the-class.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-dark-knight-rises": {
+    "movieTitle": "The Dark Knight Rises",
+    "currentPath": "/posters/batch-17/the-dark-knight-rises.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-deer-hunter": {
+    "movieTitle": "The Deer Hunter",
+    "currentPath": "/posters/batch-17/the-deer-hunter.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-departed": {
+    "movieTitle": "The Departed",
+    "currentPath": "/posters/batch-17/the-departed.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-elephant-man": {
+    "movieTitle": "The Elephant Man",
+    "currentPath": "/posters/batch-17/the-elephant-man.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-exorcist": {
+    "movieTitle": "The Exorcist",
+    "currentPath": "/posters/batch-17/the-exorcist.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-father": {
+    "movieTitle": "The Father",
+    "currentPath": "/posters/batch-17/the-father.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-general": {
+    "movieTitle": "The General",
+    "currentPath": "/posters/batch-17/the-general.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-gold-rush": {
+    "movieTitle": "The Gold Rush",
+    "currentPath": "/posters/batch-17/the-gold-rush.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-grand-budapest-hotel": {
+    "movieTitle": "The Grand Budapest Hotel",
+    "currentPath": "/posters/batch-17/the-grand-budapest-hotel.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-grapes-of-wrath": {
+    "movieTitle": "The Grapes of Wrath",
+    "currentPath": "/posters/batch-17/the-grapes-of-wrath.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-great-dictator": {
+    "movieTitle": "The Great Dictator",
+    "currentPath": "/posters/batch-17/the-great-dictator.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-great-escape": {
+    "movieTitle": "The Great Escape",
+    "currentPath": "/posters/batch-17/the-great-escape.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-handmaiden": {
+    "movieTitle": "The Handmaiden",
+    "currentPath": "/posters/batch-17/the-handmaiden.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-hunt": {
+    "movieTitle": "The Hunt",
+    "currentPath": "/posters/batch-17/the-hunt.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-incredibles": {
+    "movieTitle": "The Incredibles",
+    "currentPath": "/posters/batch-17/the-incredibles.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-intouchables": {
+    "movieTitle": "The Intouchables",
+    "currentPath": "/posters/batch-17/the-intouchables.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-iron-giant": {
+    "movieTitle": "The Iron Giant",
+    "currentPath": "/posters/batch-17/the-iron-giant.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-kid": {
+    "movieTitle": "The Kid",
+    "currentPath": "/posters/batch-17/the-kid.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-lives-of-others": {
+    "movieTitle": "The Lives of Others",
+    "currentPath": "/posters/batch-17/the-lives-of-others.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-passion-of-joan-of-arc": {
+    "movieTitle": "The Passion of Joan of Arc",
+    "currentPath": "/posters/batch-17/the-passion-of-joan-of-arc.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-prestige": {
+    "movieTitle": "The Prestige",
+    "currentPath": "/posters/batch-17/the-prestige.jpeg",
+    "replacementPath": "",
+    "status": "approved",
+    "source": "goodones-whitelist"
+  },
+  "the-secret-in-their-eyes": {
+    "movieTitle": "The Secret in Their Eyes",
+    "currentPath": "/posters/batch-17/the-secret-in-their-eyes.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-seventh-seal": {
+    "movieTitle": "The Seventh Seal",
+    "currentPath": "/posters/batch-17/the-seventh-seal.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-shining": {
+    "movieTitle": "The Shining",
+    "currentPath": "/posters/batch-17/the-shining.jpeg",
+    "replacementPath": "",
+    "status": "approved",
+    "source": "goodones-whitelist"
+  },
+  "the-sixth-sense": {
+    "movieTitle": "The Sixth Sense",
+    "currentPath": "/posters/batch-17/the-sixth-sense.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-sound-of-music": {
+    "movieTitle": "The Sound of Music",
+    "currentPath": "/posters/batch-17/the-sound-of-music.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-sting": {
+    "movieTitle": "The Sting",
+    "currentPath": "/posters/batch-17/the-sting.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-terminator": {
+    "movieTitle": "The Terminator",
+    "currentPath": "/posters/batch-17/the-terminator.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-thing": {
+    "movieTitle": "The Thing",
+    "currentPath": "/posters/batch-17/the-thing.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-third-man": {
+    "movieTitle": "The Third Man",
+    "currentPath": "/posters/batch-17/the-third-man.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-treasure-of-the-sierra-madre": {
+    "movieTitle": "The Treasure of the Sierra Madre",
+    "currentPath": "/posters/batch-17/the-treasure-of-the-sierra-madre.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-truman-show": {
+    "movieTitle": "The Truman Show",
+    "currentPath": "/posters/batch-17/the-truman-show.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-usual-suspects": {
+    "movieTitle": "The Usual Suspects",
+    "currentPath": "/posters/batch-17/the-usual-suspects.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-wages-of-fear": {
+    "movieTitle": "The Wages of Fear",
+    "currentPath": "/posters/batch-17/the-wages-of-fear.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-wild-robot": {
+    "movieTitle": "The Wild Robot",
+    "currentPath": "/posters/batch-17/the-wild-robot.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-wizard-of-oz": {
+    "movieTitle": "The Wizard of Oz",
+    "currentPath": "/posters/batch-17/the-wizard-of-oz.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "the-wolf-of-wall-street": {
+    "movieTitle": "The Wolf of Wall Street",
+    "currentPath": "/posters/batch-17/the-wolf-of-wall-street.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "there-will-be-blood": {
+    "movieTitle": "There Will Be Blood",
+    "currentPath": "/posters/batch-17/there-will-be-blood.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "three-billboards-outside-ebbing-missouri": {
+    "movieTitle": "Three Billboards Outside Ebbing, Missouri",
+    "currentPath": "/posters/batch-17/three-billboards-outside-ebbing-missouri.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "to-kill-a-mockingbird": {
+    "movieTitle": "To Kill a Mockingbird",
+    "currentPath": "/posters/batch-17/to-kill-a-mockingbird.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "tokyo-story": {
+    "movieTitle": "Tokyo Story",
+    "currentPath": "/posters/batch-17/tokyo-story.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "top-gun-maverick": {
+    "movieTitle": "Top Gun: Maverick",
+    "currentPath": "/posters/batch-17/top-gun-maverick.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "toy-story": {
+    "movieTitle": "Toy Story",
+    "currentPath": "/posters/batch-17/toy-story.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "toy-story-3": {
+    "movieTitle": "Toy Story 3",
+    "currentPath": "/posters/batch-17/toy-story-3.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "trainspotting": {
+    "movieTitle": "Trainspotting",
+    "currentPath": "/posters/batch-17/trainspotting.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "unforgiven": {
+    "movieTitle": "Unforgiven",
+    "currentPath": "/posters/batch-17/unforgiven.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "up": {
+    "movieTitle": "Up",
+    "currentPath": "/posters/batch-17/up.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "v-for-vendetta": {
+    "movieTitle": "V for Vendetta",
+    "currentPath": "/posters/batch-17/v-for-vendetta.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "vertigo": {
+    "movieTitle": "Vertigo",
+    "currentPath": "/posters/batch-17/vertigo.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "wall-e": {
+    "movieTitle": "WALL·E",
+    "currentPath": "/posters/batch-17/wall-e.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "warrior": {
+    "movieTitle": "Warrior",
+    "currentPath": "/posters/batch-17/warrior.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "whiplash": {
+    "movieTitle": "Whiplash",
+    "currentPath": "/posters/batch-17/whiplash.jpeg",
+    "replacementPath": "",
+    "status": "approved",
+    "source": "goodones-whitelist"
+  },
+  "wild-strawberries": {
+    "movieTitle": "Wild Strawberries",
+    "currentPath": "/posters/batch-17/wild-strawberries.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "wild-tales": {
+    "movieTitle": "Wild Tales",
+    "currentPath": "/posters/batch-17/wild-tales.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "witness-for-the-prosecution": {
+    "movieTitle": "Witness for the Prosecution",
+    "currentPath": "/posters/batch-17/witness-for-the-prosecution.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "yojimbo": {
+    "movieTitle": "Yojimbo",
+    "currentPath": "/posters/batch-17/yojimbo.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  },
+  "your-name": {
+    "movieTitle": "Your Name",
+    "currentPath": "/posters/batch-17/your-name.jpeg",
+    "replacementPath": "/posters/updating-placeholder.png",
+    "status": "placeholder-active",
+    "source": "placeholder-until-replacement"
+  }
+}

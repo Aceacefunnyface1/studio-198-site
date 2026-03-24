@@ -14,6 +14,7 @@ export type Review = {
   id: string;
   movieTitle: string;
   slug: string;
+  imdbTop250Rank?: number | null;
   releaseYear: number | null;
   posterImage: string;
   backdropImage: string;
@@ -65,4 +66,7 @@ export type ReviewWithStats = Review & {
   commentCount: number;
   ratingLabel: string;
   verdictKey: string;
+  resolvedPosterImage: string;
+  posterStatus: "approved" | "needs-replacement" | "missing";
+  posterSource: "custom" | "batch-17" | "external" | "missing";
 };

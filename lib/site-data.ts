@@ -54,6 +54,35 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
     bundled.reviews.map((review) => [review.slug, review]),
   );
 
+  function shouldPreferBundledPoster(
+    existingPoster: string,
+    bundledPoster: string,
+  ) {
+    if (!bundledPoster) {
+      return false;
+    }
+
+    if (!existingPoster) {
+      return true;
+    }
+
+    const existingIsBatch = existingPoster.startsWith("/posters/batch-17/");
+    const bundledIsBatch = bundledPoster.startsWith("/posters/batch-17/");
+
+    if (existingIsBatch && !bundledIsBatch) {
+      return true;
+    }
+
+    if (
+      existingIsBatch &&
+      bundledPoster === "/posters/updating-placeholder.png"
+    ) {
+      return true;
+    }
+
+    return false;
+  }
+
   const mergedReviews = existing.reviews.map((review) => {
     const bundledReview = bundledBySlug.get(review.slug);
 
@@ -66,8 +95,12 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
     return {
       ...bundledReview,
       ...review,
-      posterImage:
-        review.posterImage && review.posterImage.trim()
+      posterImage: shouldPreferBundledPoster(
+        review.posterImage || "",
+        bundledReview.posterImage || "",
+      )
+        ? bundledReview.posterImage
+        : review.posterImage && review.posterImage.trim()
           ? review.posterImage
           : bundledReview.posterImage,
       backdropImage:

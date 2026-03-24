@@ -1,5 +1,6 @@
 import "server-only";
 
+import { resolvePoster } from "@/lib/poster-resolver";
 import { readSiteData, sortReviewsByNewest } from "@/lib/site-data";
 import { Comment, Review, ReviewWithStats } from "@/lib/types";
 import { ratingLabel, verdictKey } from "@/lib/utils";
@@ -11,6 +12,7 @@ function withStats(review: Review, likes: Record<string, number>, comments: Comm
 
   return {
     ...review,
+    ...resolvePoster(review),
     likeCount: likes[review.id] ?? 0,
     commentCount: visibleComments.length,
     ratingLabel: ratingLabel(review.rating),

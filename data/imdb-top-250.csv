@@ -1,0 +1,251 @@
+rank,title,year,normalizedTitle
+1,The Shawshank Redemption,1994,theshawshankredemption
+2,The Godfather,1972,thegodfather
+3,The Dark Knight,2008,thedarkknight
+4,The Godfather Part II,1974,thegodfatherpartii
+5,12 Angry Men,1957,12angrymen
+6,The Lord of the Rings: The Return of the King,2003,thelordoftheringsthereturnoftheking
+7,Schindler's List,1993,schindlerslist
+8,The Lord of the Rings: The Fellowship of the Ring,2001,thelordoftheringsthefellowshipofthering
+9,Pulp Fiction,1994,pulpfiction
+10,"The Good, the Bad and the Ugly",1966,thegoodthebadandtheugly
+11,The Lord of the Rings: The Two Towers,2002,thelordoftheringsthetwotowers
+12,Forrest Gump,1994,forrestgump
+13,Fight Club,1999,fightclub
+14,Inception,2010,inception
+15,Star Wars: Episode V - The Empire Strikes Back,1980,starwarsepisodevtheempirestrikesback
+16,The Matrix,1999,thematrix
+17,GoodFellas,1990,goodfellas
+18,Interstellar,2014,interstellar
+19,One Flew Over the Cuckoo's Nest,1975,oneflewoverthecuckoosnest
+20,Seven,1995,seven
+21,It's a Wonderful Life,1946,itsawonderfullife
+22,The Silence of the Lambs,1991,thesilenceofthelambs
+23,Seven Samurai,1954,sevensamurai
+24,Saving Private Ryan,1998,savingprivateryan
+25,The Green Mile,1999,thegreenmile
+26,City of God,2002,cityofgod
+27,Life Is Beautiful,1997,lifeisbeautiful
+28,Terminator 2: Judgment Day,1991,terminator2judgmentday
+29,Star Wars: Episode IV - A New Hope,1977,starwarsepisodeivanewhope
+30,Back to the Future,1985,backtothefuture
+31,Spirited Away,2001,spiritedaway
+32,The Pianist,2002,thepianist
+33,Gladiator,2000,gladiator
+34,Parasite,2019,parasite
+35,Grave of the Fireflies,1988,graveofthefireflies
+36,Psycho,1960,psycho
+37,The Lion King,1994,thelionking
+38,Harakiri,1962,harakiri
+39,The Departed,2006,thedeparted
+40,Whiplash,2014,whiplash
+41,Kill Bill: The Whole Bloody Affair,2004,killbillthewholebloodyaffair
+42,The Prestige,2006,theprestige
+43,American History X,1998,americanhistoryx
+44,Léon: The Professional,1994,leontheprofessional
+45,Spider-Man: Across the Spider-Verse,2023,spidermanacrossthespiderverse
+46,Cinema Paradiso,1988,cinemaparadiso
+47,Casablanca,1942,casablanca
+48,The Intouchables,2011,theintouchables
+49,The Usual Suspects,1995,theusualsuspects
+50,Alien,1979,alien
+51,Django Unchained,2012,djangounchained
+52,Modern Times,1936,moderntimes
+53,Rear Window,1954,rearwindow
+54,Once Upon a Time in the West,1968,onceuponatimeinthewest
+55,City Lights,1931,citylights
+56,Apocalypse Now,1979,apocalypsenow
+57,WALL·E,2008,walle
+58,Memento,2000,memento
+59,Dune: Part Two,2024,duneparttwo
+60,Raiders of the Lost Ark,1981,raidersofthelostark
+61,Avengers: Infinity War,2018,avengersinfinitywar
+62,The Lives of Others,2006,thelivesofothers
+63,Spider-Man: Into the Spider-Verse,2018,spidermanintothespiderverse
+64,Sunset Boulevard,1950,sunsetboulevard
+65,Witness for the Prosecution,1957,witnessfortheprosecution
+66,Paths of Glory,1957,pathsofglory
+67,The Shining,1980,theshining
+68,The Great Dictator,1940,thegreatdictator
+69,Inglourious Basterds,2009,inglouriousbasterds
+70,12th Fail,2023,12thfail
+71,Aliens,1986,aliens
+72,High and Low,1963,highandlow
+73,Good Will Hunting,1997,goodwillhunting
+74,Avengers: Endgame,2019,avengersendgame
+75,The Dark Knight Rises,2012,thedarkknightrises
+76,Coco,2017,coco
+77,Amadeus,1984,amadeus
+78,Toy Story,1995,toystory
+79,Your Name.,2016,yourname
+80,Das Boot,1981,dasboot
+81,Oldboy,2003,oldboy
+82,Braveheart,1995,braveheart
+83,Princess Mononoke,1997,princessmononoke
+84,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,drstrangeloveorhowilearnedtostopworryingandlovethebomb
+85,3 Idiots,2009,3idiots
+86,American Beauty,1999,americanbeauty
+87,Project Hail Mary,2026,projecthailmary
+88,Capernaum,2018,capernaum
+89,Singin' in the Rain,1952,singinintherain
+90,Joker,2019,joker
+91,Once Upon a Time in America,1984,onceuponatimeinamerica
+92,Come and See,1985,comeandsee
+93,Star Wars: Episode VI - Return of the Jedi,1983,starwarsepisodevireturnofthejedi
+94,Requiem for a Dream,2000,requiemforadream
+95,Toy Story 3,2010,toystory3
+96,Ikiru,1952,ikiru
+97,The Hunt,2012,thehunt
+98,Incendies,2010,incendies
+99,Eternal Sunshine of the Spotless Mind,2004,eternalsunshineofthespotlessmind
+100,The Apartment,1960,theapartment
+101,Lawrence of Arabia,1962,lawrenceofarabia
+102,Heat,1995,heat
+103,2001: A Space Odyssey,1968,2001aspaceodyssey
+104,Reservoir Dogs,1992,reservoirdogs
+105,Scarface,1983,scarface
+106,Double Indemnity,1944,doubleindemnity
+107,Up,2009,up
+108,North by Northwest,1959,northbynorthwest
+109,Like Stars on Earth,2007,likestarsonearth
+110,Full Metal Jacket,1987,fullmetaljacket
+111,M,1931,m
+112,Amélie,2001,amelie
+113,Citizen Kane,1941,citizenkane
+114,Vertigo,1958,vertigo
+115,A Separation,2011,aseparation
+116,Die Hard,1988,diehard
+117,To Kill a Mockingbird,1962,tokillamockingbird
+118,Indiana Jones and the Last Crusade,1989,indianajonesandthelastcrusade
+119,The Sting,1973,thesting
+120,A Clockwork Orange,1971,aclockworkorange
+121,Metropolis,1927,metropolis
+122,1917,2019,1917
+123,Snatch,2000,snatch
+124,L.A. Confidential,1997,laconfidential
+125,The Wolf of Wall Street,2013,thewolfofwallstreet
+126,Downfall,2004,downfall
+127,Dangal,2016,dangal
+128,The Truman Show,1998,thetrumanshow
+129,Bicycle Thieves,1948,bicyclethieves
+130,Oppenheimer,2023,oppenheimer
+131,Green Book,2018,greenbook
+132,Shutter Island,2010,shutterisland
+133,Judgment at Nuremberg,1961,judgmentatnuremberg
+134,Batman Begins,2005,batmanbegins
+135,Hamilton,2020,hamilton
+136,For a Few Dollars More,1965,forafewdollarsmore
+137,Taxi Driver,1976,taxidriver
+138,Jurassic Park,1993,jurassicpark
+139,Some Like It Hot,1959,somelikeithot
+140,There Will Be Blood,2007,therewillbeblood
+141,The Kid,1921,thekid
+142,The Father,2020,thefather
+143,All About Eve,1950,allabouteve
+144,The Sixth Sense,1999,thesixthsense
+145,Ran,1985,ran
+146,Casino,1995,casino
+147,No Country for Old Men,2007,nocountryforoldmen
+148,The Thing,1982,thething
+149,I Swear,,iswear
+150,Top Gun: Maverick,2022,topgunmaverick
+151,Prisoners,2013,prisoners
+152,Kill Bill: Vol. 1,2003,killbillvol1
+153,Pan's Labyrinth,2006,panslabyrinth
+154,Unforgiven,1992,unforgiven
+155,A Beautiful Mind,2001,abeautifulmind
+156,The Treasure of the Sierra Madre,1948,thetreasureofthesierramadre
+157,Howl's Moving Castle,2004,howlsmovingcastle
+158,Finding Nemo,2003,findingnemo
+159,Klaus,2019,klaus
+160,Yojimbo,1961,yojimbo
+161,The Great Escape,1963,thegreatescape
+162,The Elephant Man,1980,theelephantman
+163,Monty Python and the Holy Grail,1975,montypythonandtheholygrail
+164,Dial M for Murder,1954,dialmformurder
+165,The Best of Youth,2003,thebestofyouth
+166,Demon Slayer: Kimetsu No Yaiba Infinity Castle,2025,demonslayerkimetsunoyaibainfinitycastle
+167,The Secret in Their Eyes,2009,thesecretintheireyes
+168,Gone with the Wind,1939,gonewiththewind
+169,Chinatown,1974,chinatown
+170,"Lock, Stock and Two Smoking Barrels",1998,lockstockandtwosmokingbarrels
+171,V for Vendetta,2005,vforvendetta
+172,Catch Me If You Can,2002,catchmeifyoucan
+173,Inside Out,2015,insideout
+174,Rashomon,1950,rashomon
+175,"Three Billboards Outside Ebbing, Missouri",2017,threebillboardsoutsideebbingmissouri
+176,Trainspotting,1996,trainspotting
+177,The Bridge on the River Kwai,1957,thebridgeontheriverkwai
+178,Harry Potter and the Deathly Hallows: Part 2,2011,harrypotterandthedeathlyhallowspart2
+179,Dead Poets Society,1989,deadpoetssociety
+180,The Wild Robot,2024,thewildrobot
+181,Warrior,2011,warrior
+182,Barry Lyndon,1975,barrylyndon
+183,Fargo,1996,fargo
+184,Ben-Hur,1959,benhur
+185,Raging Bull,1980,ragingbull
+186,The Chaos Class Failed the Class,1975,thechaosclassfailedtheclass
+187,Million Dollar Baby,2004,milliondollarbaby
+188,Mad Max: Fury Road,2015,madmaxfuryroad
+189,Children of Heaven,1997,childrenofheaven
+190,Hacksaw Ridge,2016,hacksawridge
+191,My Neighbor Totoro,1988,myneighbortotoro
+192,Gran Torino,2008,grantorino
+193,Ratatouille,2007,ratatouille
+194,12 Years a Slave,2013,12yearsaslave
+195,The Grand Budapest Hotel,2014,thegrandbudapesthotel
+196,Before Sunrise,1995,beforesunrise
+197,Memories of Murder,2003,memoriesofmurder
+198,Blade Runner,1982,bladerunner
+199,How to Train Your Dragon,2010,howtotrainyourdragon
+200,Spider-Man: No Way Home,2021,spidermannowayhome
+201,Gone Girl,2014,gonegirl
+202,"Monsters, Inc.",2001,monstersinc
+203,Jaws,1975,jaws
+204,In the Name of the Father,1993,inthenameofthefather
+205,Ford v Ferrari,2019,fordvferrari
+206,Wild Tales,2014,wildtales
+207,The Gold Rush,1925,thegoldrush
+208,Mary and Max,2009,maryandmax
+209,Sherlock Jr.,1924,sherlockjr
+210,The Deer Hunter,1978,thedeerhunter
+211,The Wages of Fear,1953,thewagesoffear
+212,The General,1926,thegeneral
+213,Logan,2017,logan
+214,Rocky,1976,rocky
+215,Mr. Smith Goes to Washington,1939,mrsmithgoestowashington
+216,Tokyo Story,1953,tokyostory
+217,On the Waterfront,1954,onthewaterfront
+218,Pirates of the Caribbean: The Curse of the Black Pearl,2003,piratesofthecaribbeanthecurseoftheblackpearl
+219,A Silent Voice: The Movie,2016,asilentvoicethemovie
+220,Wild Strawberries,1957,wildstrawberries
+221,Spotlight,2015,spotlight
+222,La haine,1995,lahaine
+223,The Terminator,1984,theterminator
+224,Jai Bhim,2021,jaibhim
+225,The Sound of Music,1965,thesoundofmusic
+226,Maharaja,2024,maharaja
+227,The Third Man,1949,thethirdman
+228,The Big Lebowski,1998,thebiglebowski
+229,The Best Years of Our Lives,1946,thebestyearsofourlives
+230,The Seventh Seal,1957,theseventhseal
+231,Chainsaw Man - The Movie: Reze Arc,2025,chainsawmanthemovierezearc
+232,Before Sunset,2004,beforesunset
+233,Room,2015,room
+234,Hotel Rwanda,2004,hotelrwanda
+235,The Incredibles,2004,theincredibles
+236,Platoon,1986,platoon
+237,Hachi: A Dog's Tale,2009,hachiadogstale
+238,The Exorcist,1973,theexorcist
+239,Rush,2013,rush
+240,The Iron Giant,1999,theirongiant
+241,The Wizard of Oz,1939,thewizardofoz
+242,Stand by Me,1986,standbyme
+243,The Passion of Joan of Arc,1928,thepassionofjoanofarc
+244,My Father and My Son,2005,myfatherandmyson
+245,The Battle of Algiers,1966,thebattleofalgiers
+246,The Handmaiden,2016,thehandmaiden
+247,Network,1976,network
+248,Drishyam,2015,drishyam
+249,Gangs of Wasseypur,2012,gangsofwasseypur
+250,The Grapes of Wrath,1940,thegrapesofwrath

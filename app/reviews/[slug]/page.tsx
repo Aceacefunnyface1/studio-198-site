@@ -54,7 +54,7 @@ export default async function ReviewDetailPage({
       <section className="detail-shell">
         <div className="detail-side">
           <PosterFrame
-            posterImage={review.posterImage}
+            posterImage={review.resolvedPosterImage}
             title={review.movieTitle}
             className="detail-poster"
           />

@@ -37,7 +37,7 @@ export default async function HomePage() {
           <div className="hero-feature">
             <div className="hero-feature-media">
               <img
-                src={heroReview.posterImage}
+                src={heroReview.resolvedPosterImage}
                 alt={`${heroReview.movieTitle} poster`}
               />
             </div>

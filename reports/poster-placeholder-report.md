@@ -1,0 +1,221 @@
+# Poster Placeholder Report
+
+- GOOD posters kept: 9
+- BAD posters replaced with placeholder: 201
+- Placeholder path: `/posters/updating-placeholder.png`
+
+## GOOD Posters Kept
+
+- Alien — slug `alien` — `/posters/batch-17/alien.jpeg`
+- American History X — slug `american-history-x` — `/posters/batch-17/american-history-x.jpeg`
+- Harakiri — slug `harakiri` — `/posters/batch-17/harakiri.jpeg`
+- Memento — slug `memento` — `/posters/batch-17/memento.jpeg`
+- Modern Times — slug `modern-times` — `/posters/batch-17/modern-times.jpeg`
+- Oldboy — slug `oldboy` — `/posters/batch-17/oldboy.jpeg`
+- The Prestige — slug `the-prestige` — `/posters/batch-17/the-prestige.jpeg`
+- The Shining — slug `the-shining` — `/posters/batch-17/the-shining.jpeg`
+- Whiplash — slug `whiplash` — `/posters/batch-17/whiplash.jpeg`
+
+## BAD Posters Replaced With Placeholder
+
+- 12 Years a Slave — slug `12-years-a-slave` — `/posters/batch-17/12-years-a-slave.jpeg` -> `/posters/updating-placeholder.png`
+- 2001: A Space Odyssey — slug `2001-a-space-odyssey` — `/posters/batch-17/2001-a-space-odyssey.jpeg` -> `/posters/updating-placeholder.png`
+- 3 Idiots — slug `3-idiots` — `/posters/batch-17/3-idiots.jpeg` -> `/posters/updating-placeholder.png`
+- A Beautiful Mind — slug `a-beautiful-mind` — `/posters/batch-17/a-beautiful-mind.jpeg` -> `/posters/updating-placeholder.png`
+- A Clockwork Orange — slug `a-clockwork-orange` — `/posters/batch-17/a-clockwork-orange.jpeg` -> `/posters/updating-placeholder.png`
+- A Separation — slug `a-separation` — `/posters/batch-17/a-separation.jpeg` -> `/posters/updating-placeholder.png`
+- A Silent Voice: The Movie — slug `a-silent-voice-the-movie` — `/posters/batch-17/a-silent-voice-the-movie.jpeg` -> `/posters/updating-placeholder.png`
+- Aliens — slug `aliens` — `/posters/batch-17/aliens.jpeg` -> `/posters/updating-placeholder.png`
+- All About Eve — slug `all-about-eve` — `/posters/batch-17/all-about-eve.jpeg` -> `/posters/updating-placeholder.png`
+- Amadeus — slug `amadeus` — `/posters/batch-17/amadeus.jpeg` -> `/posters/updating-placeholder.png`
+- American Beauty — slug `american-beauty` — `/posters/batch-17/american-beauty.jpeg` -> `/posters/updating-placeholder.png`
+- Amélie — slug `am-lie` — `/posters/batch-17/am-lie.jpeg` -> `/posters/updating-placeholder.png`
+- Apocalypse Now — slug `apocalypse-now` — `/posters/batch-17/apocalypse-now.jpeg` -> `/posters/updating-placeholder.png`
+- Avengers: Endgame — slug `avengers-endgame` — `/posters/batch-17/avengers-endgame.jpeg` -> `/posters/updating-placeholder.png`
+- Avengers: Infinity War — slug `avengers-infinity-war` — `/posters/batch-17/avengers-infinity-war.jpeg` -> `/posters/updating-placeholder.png`
+- Barry Lyndon — slug `barry-lyndon` — `/posters/batch-17/barry-lyndon.jpeg` -> `/posters/updating-placeholder.png`
+- Batman Begins — slug `batman-begins` — `/posters/batch-17/batman-begins.jpeg` -> `/posters/updating-placeholder.png`
+- Before Sunrise — slug `before-sunrise` — `/posters/batch-17/before-sunrise.jpeg` -> `/posters/updating-placeholder.png`
+- Before Sunset — slug `before-sunset` — `/posters/batch-17/before-sunset.jpeg` -> `/posters/updating-placeholder.png`
+- Ben-Hur — slug `ben-hur` — `/posters/batch-17/ben-hur.jpeg` -> `/posters/updating-placeholder.png`
+- Bicycle Thieves — slug `bicycle-thieves` — `/posters/batch-17/bicycle-thieves.jpeg` -> `/posters/updating-placeholder.png`
+- Blade Runner — slug `blade-runner` — `/posters/batch-17/blade-runner.jpeg` -> `/posters/updating-placeholder.png`
+- Braveheart — slug `braveheart` — `/posters/batch-17/braveheart.jpeg` -> `/posters/updating-placeholder.png`
+- Capernaum — slug `capernaum` — `/posters/batch-17/capernaum.jpeg` -> `/posters/updating-placeholder.png`
+- Casablanca — slug `casablanca` — `/posters/batch-17/casablanca.jpeg` -> `/posters/updating-placeholder.png`
+- Casino — slug `casino` — `/posters/batch-17/casino.jpeg` -> `/posters/updating-placeholder.png`
+- Catch Me If You Can — slug `catch-me-if-you-can` — `/posters/batch-17/catch-me-if-you-can.jpeg` -> `/posters/updating-placeholder.png`
+- Chainsaw Man - The Movie: Reze Arc — slug `chainsaw-man-the-movie-reze-arc` — `/posters/batch-17/chainsaw-man-the-movie-reze-arc.jpeg` -> `/posters/updating-placeholder.png`
+- Children of Heaven — slug `children-of-heaven` — `/posters/batch-17/children-of-heaven.jpeg` -> `/posters/updating-placeholder.png`
+- Chinatown — slug `chinatown` — `/posters/batch-17/chinatown.jpeg` -> `/posters/updating-placeholder.png`
+- Cinema Paradiso — slug `cinema-paradiso` — `/posters/batch-17/cinema-paradiso.jpeg` -> `/posters/updating-placeholder.png`
+- Citizen Kane — slug `citizen-kane` — `/posters/batch-17/citizen-kane.jpeg` -> `/posters/updating-placeholder.png`
+- City Lights — slug `city-lights` — `/posters/batch-17/city-lights.jpeg` -> `/posters/updating-placeholder.png`
+- Coco — slug `coco` — `/posters/batch-17/coco.jpeg` -> `/posters/updating-placeholder.png`
+- Come and See — slug `come-and-see` — `/posters/batch-17/come-and-see.jpeg` -> `/posters/updating-placeholder.png`
+- Dangal — slug `dangal` — `/posters/batch-17/dangal.jpeg` -> `/posters/updating-placeholder.png`
+- Das Boot — slug `das-boot` — `/posters/batch-17/das-boot.jpeg` -> `/posters/updating-placeholder.png`
+- Dead Poets Society — slug `dead-poets-society` — `/posters/batch-17/dead-poets-society.jpeg` -> `/posters/updating-placeholder.png`
+- Demon Slayer: Kimetsu No Yaiba Infinity Castle — slug `demon-slayer-kimetsu-no-yaiba-infinity-castle` — `/posters/batch-17/demon-slayer-kimetsu-no-yaiba-infinity-castle.jpeg` -> `/posters/updating-placeholder.png`
+- Dial M for Murder — slug `dial-m-for-murder` — `/posters/batch-17/dial-m-for-murder.jpeg` -> `/posters/updating-placeholder.png`
+- Die Hard — slug `die-hard` — `/posters/batch-17/die-hard.jpeg` -> `/posters/updating-placeholder.png`
+- Django Unchained — slug `django-unchained` — `/posters/batch-17/django-unchained.jpeg` -> `/posters/updating-placeholder.png`
+- Double Indemnity — slug `double-indemnity` — `/posters/batch-17/double-indemnity.jpeg` -> `/posters/updating-placeholder.png`
+- Downfall — slug `downfall` — `/posters/batch-17/downfall.jpeg` -> `/posters/updating-placeholder.png`
+- Drishyam — slug `drishyam` — `/posters/batch-17/drishyam.jpeg` -> `/posters/updating-placeholder.png`
+- Dune: Part Two — slug `dune-part-two` — `/posters/batch-17/dune-part-two.jpeg` -> `/posters/updating-placeholder.png`
+- Eternal Sunshine of the Spotless Mind — slug `eternal-sunshine-of-the-spotless-mind` — `/posters/batch-17/eternal-sunshine-of-the-spotless-mind.jpeg` -> `/posters/updating-placeholder.png`
+- Fargo — slug `fargo` — `/posters/batch-17/fargo.jpeg` -> `/posters/updating-placeholder.png`
+- Finding Nemo — slug `finding-nemo` — `/posters/batch-17/finding-nemo.jpeg` -> `/posters/updating-placeholder.png`
+- For a Few Dollars More — slug `for-a-few-dollars-more` — `/posters/batch-17/for-a-few-dollars-more.jpeg` -> `/posters/updating-placeholder.png`
+- Ford v Ferrari — slug `ford-v-ferrari` — `/posters/batch-17/ford-v-ferrari.jpeg` -> `/posters/updating-placeholder.png`
+- Full Metal Jacket — slug `full-metal-jacket` — `/posters/batch-17/full-metal-jacket.jpeg` -> `/posters/updating-placeholder.png`
+- Gangs of Wasseypur — slug `gangs-of-wasseypur` — `/posters/batch-17/gangs-of-wasseypur.jpeg` -> `/posters/updating-placeholder.png`
+- Gone Girl — slug `gone-girl` — `/posters/batch-17/gone-girl.jpeg` -> `/posters/updating-placeholder.png`
+- Gone with the Wind — slug `gone-with-the-wind` — `/posters/batch-17/gone-with-the-wind.jpeg` -> `/posters/updating-placeholder.png`
+- Good Will Hunting — slug `good-will-hunting` — `/posters/batch-17/good-will-hunting.jpeg` -> `/posters/updating-placeholder.png`
+- Gran Torino — slug `gran-torino` — `/posters/batch-17/gran-torino.jpeg` -> `/posters/updating-placeholder.png`
+- Green Book — slug `green-book` — `/posters/batch-17/green-book.jpeg` -> `/posters/updating-placeholder.png`
+- Hachi: A Dog's Tale — slug `hachi-a-dog-s-tale` — `/posters/batch-17/hachi-a-dog-s-tale.jpeg` -> `/posters/updating-placeholder.png`
+- Hacksaw Ridge — slug `hacksaw-ridge` — `/posters/batch-17/hacksaw-ridge.jpeg` -> `/posters/updating-placeholder.png`
+- Hamilton — slug `hamilton` — `/posters/batch-17/hamilton.jpeg` -> `/posters/updating-placeholder.png`
+- Harry Potter and the Deathly Hallows: Part 2 — slug `harry-potter-and-the-deathly-hallows-part-2` — `/posters/batch-17/harry-potter-and-the-deathly-hallows-part-2.jpeg` -> `/posters/updating-placeholder.png`
+- Heat — slug `heat` — `/posters/batch-17/heat.jpeg` -> `/posters/updating-placeholder.png`
+- High and Low — slug `high-and-low` — `/posters/batch-17/high-and-low.jpeg` -> `/posters/updating-placeholder.png`
+- Hotel Rwanda — slug `hotel-rwanda` — `/posters/batch-17/hotel-rwanda.jpeg` -> `/posters/updating-placeholder.png`
+- How to Train Your Dragon — slug `how-to-train-your-dragon` — `/posters/batch-17/how-to-train-your-dragon.jpeg` -> `/posters/updating-placeholder.png`
+- Howl's Moving Castle — slug `howl-s-moving-castle` — `/posters/batch-17/howl-s-moving-castle.jpeg` -> `/posters/updating-placeholder.png`
+- I Swear — slug `i-swear` — `/posters/batch-17/i-swear.jpeg` -> `/posters/updating-placeholder.png`
+- Ikiru — slug `ikiru` — `/posters/batch-17/ikiru.jpeg` -> `/posters/updating-placeholder.png`
+- In the Name of the Father — slug `in-the-name-of-the-father` — `/posters/batch-17/in-the-name-of-the-father.jpeg` -> `/posters/updating-placeholder.png`
+- Incendies — slug `incendies` — `/posters/batch-17/incendies.jpeg` -> `/posters/updating-placeholder.png`
+- Indiana Jones and the Last Crusade — slug `indiana-jones-and-the-last-crusade` — `/posters/batch-17/indiana-jones-and-the-last-crusade.jpeg` -> `/posters/updating-placeholder.png`
+- Inglourious Basterds — slug `inglourious-basterds` — `/posters/batch-17/inglourious-basterds.jpeg` -> `/posters/updating-placeholder.png`
+- Inside Out — slug `inside-out` — `/posters/batch-17/inside-out.jpeg` -> `/posters/updating-placeholder.png`
+- Jai Bhim — slug `jai-bhim` — `/posters/batch-17/jai-bhim.jpeg` -> `/posters/updating-placeholder.png`
+- Jaws — slug `jaws` — `/posters/batch-17/jaws.jpeg` -> `/posters/updating-placeholder.png`
+- Joker — slug `joker` — `/posters/batch-17/joker.jpeg` -> `/posters/updating-placeholder.png`
+- Judgment at Nuremberg — slug `judgment-at-nuremberg` — `/posters/batch-17/judgment-at-nuremberg.jpeg` -> `/posters/updating-placeholder.png`
+- Jurassic Park — slug `jurassic-park` — `/posters/batch-17/jurassic-park.jpeg` -> `/posters/updating-placeholder.png`
+- Kill Bill: The Whole Bloody Affair — slug `kill-bill-the-whole-bloody-affair` — `/posters/batch-17/kill-bill-the-whole-bloody-affair.jpeg` -> `/posters/updating-placeholder.png`
+- Kill Bill: Vol. 1 — slug `kill-bill-vol-1` — `/posters/batch-17/kill-bill-vol-1.jpeg` -> `/posters/updating-placeholder.png`
+- Klaus — slug `klaus` — `/posters/batch-17/klaus.jpeg` -> `/posters/updating-placeholder.png`
+- L.A. Confidential — slug `l-a-confidential` — `/posters/batch-17/l-a-confidential.jpeg` -> `/posters/updating-placeholder.png`
+- La haine — slug `la-haine` — `/posters/batch-17/la-haine.jpeg` -> `/posters/updating-placeholder.png`
+- Lawrence of Arabia — slug `lawrence-of-arabia` — `/posters/batch-17/lawrence-of-arabia.jpeg` -> `/posters/updating-placeholder.png`
+- Like Stars on Earth — slug `like-stars-on-earth` — `/posters/batch-17/like-stars-on-earth.jpeg` -> `/posters/updating-placeholder.png`
+- Lock, Stock and Two Smoking Barrels — slug `lock-stock-and-two-smoking-barrels` — `/posters/batch-17/lock-stock-and-two-smoking-barrels.jpeg` -> `/posters/updating-placeholder.png`
+- Logan — slug `logan` — `/posters/batch-17/logan.jpeg` -> `/posters/updating-placeholder.png`
+- Léon: The Professional — slug `l-on-the-professional` — `/posters/batch-17/l-on-the-professional.jpeg` -> `/posters/updating-placeholder.png`
+- M — slug `m` — `/posters/batch-17/m.jpeg` -> `/posters/updating-placeholder.png`
+- Mad Max: Fury Road — slug `mad-max-fury-road` — `/posters/batch-17/mad-max-fury-road.jpeg` -> `/posters/updating-placeholder.png`
+- Maharaja — slug `maharaja` — `/posters/batch-17/maharaja.jpeg` -> `/posters/updating-placeholder.png`
+- Mary and Max — slug `mary-and-max` — `/posters/batch-17/mary-and-max.jpeg` -> `/posters/updating-placeholder.png`
+- Memories of Murder — slug `memories-of-murder` — `/posters/batch-17/memories-of-murder.jpeg` -> `/posters/updating-placeholder.png`
+- Metropolis — slug `metropolis` — `/posters/batch-17/metropolis.jpeg` -> `/posters/updating-placeholder.png`
+- Million Dollar Baby — slug `million-dollar-baby` — `/posters/batch-17/million-dollar-baby.jpeg` -> `/posters/updating-placeholder.png`
+- Monsters, Inc. — slug `monsters-inc` — `/posters/batch-17/monsters-inc.jpeg` -> `/posters/updating-placeholder.png`
+- Monty Python and the Holy Grail — slug `monty-python-and-the-holy-grail` — `/posters/batch-17/monty-python-and-the-holy-grail.jpeg` -> `/posters/updating-placeholder.png`
+- Mr. Smith Goes to Washington — slug `mr-smith-goes-to-washington` — `/posters/batch-17/mr-smith-goes-to-washington.jpeg` -> `/posters/updating-placeholder.png`
+- My Father and My Son — slug `my-father-and-my-son` — `/posters/batch-17/my-father-and-my-son.jpeg` -> `/posters/updating-placeholder.png`
+- My Neighbor Totoro — slug `my-neighbor-totoro` — `/posters/batch-17/my-neighbor-totoro.jpeg` -> `/posters/updating-placeholder.png`
+- Network — slug `network` — `/posters/batch-17/network.jpeg` -> `/posters/updating-placeholder.png`
+- No Country for Old Men — slug `no-country-for-old-men` — `/posters/batch-17/no-country-for-old-men.jpeg` -> `/posters/updating-placeholder.png`
+- North by Northwest — slug `north-by-northwest` — `/posters/batch-17/north-by-northwest.jpeg` -> `/posters/updating-placeholder.png`
+- On the Waterfront — slug `on-the-waterfront` — `/posters/batch-17/on-the-waterfront.jpeg` -> `/posters/updating-placeholder.png`
+- Once Upon a Time in America — slug `once-upon-a-time-in-america` — `/posters/batch-17/once-upon-a-time-in-america.jpeg` -> `/posters/updating-placeholder.png`
+- Once Upon a Time in the West — slug `once-upon-a-time-in-the-west` — `/posters/batch-17/once-upon-a-time-in-the-west.jpeg` -> `/posters/updating-placeholder.png`
+- Oppenheimer — slug `oppenheimer` — `/posters/batch-17/oppenheimer.jpeg` -> `/posters/updating-placeholder.png`
+- Pan's Labyrinth — slug `pan-s-labyrinth` — `/posters/batch-17/pan-s-labyrinth.jpeg` -> `/posters/updating-placeholder.png`
+- Paths of Glory — slug `paths-of-glory` — `/posters/batch-17/paths-of-glory.jpeg` -> `/posters/updating-placeholder.png`
+- Pirates of the Caribbean: The Curse of the Black Pearl — slug `pirates-of-the-caribbean-the-curse-of-the-black-pearl` — `/posters/batch-17/pirates-of-the-caribbean-the-curse-of-the-black-pearl.jpeg` -> `/posters/updating-placeholder.png`
+- Platoon — slug `platoon` — `/posters/batch-17/platoon.jpeg` -> `/posters/updating-placeholder.png`
+- Princess Mononoke — slug `princess-mononoke` — `/posters/batch-17/princess-mononoke.jpeg` -> `/posters/updating-placeholder.png`
+- Prisoners — slug `prisoners` — `/posters/batch-17/prisoners.jpeg` -> `/posters/updating-placeholder.png`
+- Project Hail Mary — slug `project-hail-mary` — `/posters/batch-17/project-hail-mary.jpeg` -> `/posters/updating-placeholder.png`
+- Raging Bull — slug `raging-bull` — `/posters/batch-17/raging-bull.jpeg` -> `/posters/updating-placeholder.png`
+- Raiders of the Lost Ark — slug `raiders-of-the-lost-ark` — `/posters/batch-17/raiders-of-the-lost-ark.jpeg` -> `/posters/updating-placeholder.png`
+- Ran — slug `ran` — `/posters/batch-17/ran.jpeg` -> `/posters/updating-placeholder.png`
+- Rashomon — slug `rashomon` — `/posters/batch-17/rashomon.jpeg` -> `/posters/updating-placeholder.png`
+- Ratatouille — slug `ratatouille` — `/posters/batch-17/ratatouille.jpeg` -> `/posters/updating-placeholder.png`
+- Rear Window — slug `rear-window` — `/posters/batch-17/rear-window.jpeg` -> `/posters/updating-placeholder.png`
+- Requiem for a Dream — slug `requiem-for-a-dream` — `/posters/batch-17/requiem-for-a-dream.jpeg` -> `/posters/updating-placeholder.png`
+- Reservoir Dogs — slug `reservoir-dogs` — `/posters/batch-17/reservoir-dogs.jpeg` -> `/posters/updating-placeholder.png`
+- Rocky — slug `rocky` — `/posters/batch-17/rocky.jpeg` -> `/posters/updating-placeholder.png`
+- Room — slug `room` — `/posters/batch-17/room.jpeg` -> `/posters/updating-placeholder.png`
+- Rush — slug `rush` — `/posters/batch-17/rush.jpeg` -> `/posters/updating-placeholder.png`
+- Scarface — slug `scarface` — `/posters/batch-17/scarface.jpeg` -> `/posters/updating-placeholder.png`
+- Sherlock Jr. — slug `sherlock-jr` — `/posters/batch-17/sherlock-jr.jpeg` -> `/posters/updating-placeholder.png`
+- Shutter Island — slug `shutter-island` — `/posters/batch-17/shutter-island.jpeg` -> `/posters/updating-placeholder.png`
+- Singin' in the Rain — slug `singin-in-the-rain` — `/posters/batch-17/singin-in-the-rain.jpeg` -> `/posters/updating-placeholder.png`
+- Snatch — slug `snatch` — `/posters/batch-17/snatch.jpeg` -> `/posters/updating-placeholder.png`
+- Some Like It Hot — slug `some-like-it-hot` — `/posters/batch-17/some-like-it-hot.jpeg` -> `/posters/updating-placeholder.png`
+- Spider-Man: Across the Spider-Verse — slug `spider-man-across-the-spider-verse` — `/posters/batch-17/spider-man-across-the-spider-verse.jpeg` -> `/posters/updating-placeholder.png`
+- Spider-Man: Into the Spider-Verse — slug `spider-man-into-the-spider-verse` — `/posters/batch-17/spider-man-into-the-spider-verse.jpeg` -> `/posters/updating-placeholder.png`
+- Spider-Man: No Way Home — slug `spider-man-no-way-home` — `/posters/batch-17/spider-man-no-way-home.jpeg` -> `/posters/updating-placeholder.png`
+- Spotlight — slug `spotlight` — `/posters/batch-17/spotlight.jpeg` -> `/posters/updating-placeholder.png`
+- Stand by Me — slug `stand-by-me` — `/posters/batch-17/stand-by-me.jpeg` -> `/posters/updating-placeholder.png`
+- Star Wars: Episode VI - Return of the Jedi — slug `star-wars-episode-vi-return-of-the-jedi` — `/posters/batch-17/star-wars-episode-vi-return-of-the-jedi.jpeg` -> `/posters/updating-placeholder.png`
+- Sunset Boulevard — slug `sunset-boulevard` — `/posters/batch-17/sunset-boulevard.jpeg` -> `/posters/updating-placeholder.png`
+- Taxi Driver — slug `taxi-driver` — `/posters/batch-17/taxi-driver.jpeg` -> `/posters/updating-placeholder.png`
+- The Apartment — slug `the-apartment` — `/posters/batch-17/the-apartment.jpeg` -> `/posters/updating-placeholder.png`
+- The Battle of Algiers — slug `the-battle-of-algiers` — `/posters/batch-17/the-battle-of-algiers.jpeg` -> `/posters/updating-placeholder.png`
+- The Best of Youth — slug `the-best-of-youth` — `/posters/batch-17/the-best-of-youth.jpeg` -> `/posters/updating-placeholder.png`
+- The Best Years of Our Lives — slug `the-best-years-of-our-lives` — `/posters/batch-17/the-best-years-of-our-lives.jpeg` -> `/posters/updating-placeholder.png`
+- The Big Lebowski — slug `the-big-lebowski` — `/posters/batch-17/the-big-lebowski.jpeg` -> `/posters/updating-placeholder.png`
+- The Bridge on the River Kwai — slug `the-bridge-on-the-river-kwai` — `/posters/batch-17/the-bridge-on-the-river-kwai.jpeg` -> `/posters/updating-placeholder.png`
+- The Chaos Class Failed the Class — slug `the-chaos-class-failed-the-class` — `/posters/batch-17/the-chaos-class-failed-the-class.jpeg` -> `/posters/updating-placeholder.png`
+- The Dark Knight Rises — slug `the-dark-knight-rises` — `/posters/batch-17/the-dark-knight-rises.jpeg` -> `/posters/updating-placeholder.png`
+- The Deer Hunter — slug `the-deer-hunter` — `/posters/batch-17/the-deer-hunter.jpeg` -> `/posters/updating-placeholder.png`
+- The Departed — slug `the-departed` — `/posters/batch-17/the-departed.jpeg` -> `/posters/updating-placeholder.png`
+- The Elephant Man — slug `the-elephant-man` — `/posters/batch-17/the-elephant-man.jpeg` -> `/posters/updating-placeholder.png`
+- The Exorcist — slug `the-exorcist` — `/posters/batch-17/the-exorcist.jpeg` -> `/posters/updating-placeholder.png`
+- The Father — slug `the-father` — `/posters/batch-17/the-father.jpeg` -> `/posters/updating-placeholder.png`
+- The General — slug `the-general` — `/posters/batch-17/the-general.jpeg` -> `/posters/updating-placeholder.png`
+- The Gold Rush — slug `the-gold-rush` — `/posters/batch-17/the-gold-rush.jpeg` -> `/posters/updating-placeholder.png`
+- The Grand Budapest Hotel — slug `the-grand-budapest-hotel` — `/posters/batch-17/the-grand-budapest-hotel.jpeg` -> `/posters/updating-placeholder.png`
+- The Grapes of Wrath — slug `the-grapes-of-wrath` — `/posters/batch-17/the-grapes-of-wrath.jpeg` -> `/posters/updating-placeholder.png`
+- The Great Dictator — slug `the-great-dictator` — `/posters/batch-17/the-great-dictator.jpeg` -> `/posters/updating-placeholder.png`
+- The Great Escape — slug `the-great-escape` — `/posters/batch-17/the-great-escape.jpeg` -> `/posters/updating-placeholder.png`
+- The Handmaiden — slug `the-handmaiden` — `/posters/batch-17/the-handmaiden.jpeg` -> `/posters/updating-placeholder.png`
+- The Hunt — slug `the-hunt` — `/posters/batch-17/the-hunt.jpeg` -> `/posters/updating-placeholder.png`
+- The Incredibles — slug `the-incredibles` — `/posters/batch-17/the-incredibles.jpeg` -> `/posters/updating-placeholder.png`
+- The Intouchables — slug `the-intouchables` — `/posters/batch-17/the-intouchables.jpeg` -> `/posters/updating-placeholder.png`
+- The Iron Giant — slug `the-iron-giant` — `/posters/batch-17/the-iron-giant.jpeg` -> `/posters/updating-placeholder.png`
+- The Kid — slug `the-kid` — `/posters/batch-17/the-kid.jpeg` -> `/posters/updating-placeholder.png`
+- The Lives of Others — slug `the-lives-of-others` — `/posters/batch-17/the-lives-of-others.jpeg` -> `/posters/updating-placeholder.png`
+- The Passion of Joan of Arc — slug `the-passion-of-joan-of-arc` — `/posters/batch-17/the-passion-of-joan-of-arc.jpeg` -> `/posters/updating-placeholder.png`
+- The Secret in Their Eyes — slug `the-secret-in-their-eyes` — `/posters/batch-17/the-secret-in-their-eyes.jpeg` -> `/posters/updating-placeholder.png`
+- The Seventh Seal — slug `the-seventh-seal` — `/posters/batch-17/the-seventh-seal.jpeg` -> `/posters/updating-placeholder.png`
+- The Sixth Sense — slug `the-sixth-sense` — `/posters/batch-17/the-sixth-sense.jpeg` -> `/posters/updating-placeholder.png`
+- The Sound of Music — slug `the-sound-of-music` — `/posters/batch-17/the-sound-of-music.jpeg` -> `/posters/updating-placeholder.png`
+- The Sting — slug `the-sting` — `/posters/batch-17/the-sting.jpeg` -> `/posters/updating-placeholder.png`
+- The Terminator — slug `the-terminator` — `/posters/batch-17/the-terminator.jpeg` -> `/posters/updating-placeholder.png`
+- The Thing — slug `the-thing` — `/posters/batch-17/the-thing.jpeg` -> `/posters/updating-placeholder.png`
+- The Third Man — slug `the-third-man` — `/posters/batch-17/the-third-man.jpeg` -> `/posters/updating-placeholder.png`
+- The Treasure of the Sierra Madre — slug `the-treasure-of-the-sierra-madre` — `/posters/batch-17/the-treasure-of-the-sierra-madre.jpeg` -> `/posters/updating-placeholder.png`
+- The Truman Show — slug `the-truman-show` — `/posters/batch-17/the-truman-show.jpeg` -> `/posters/updating-placeholder.png`
+- The Usual Suspects — slug `the-usual-suspects` — `/posters/batch-17/the-usual-suspects.jpeg` -> `/posters/updating-placeholder.png`
+- The Wages of Fear — slug `the-wages-of-fear` — `/posters/batch-17/the-wages-of-fear.jpeg` -> `/posters/updating-placeholder.png`
+- The Wild Robot — slug `the-wild-robot` — `/posters/batch-17/the-wild-robot.jpeg` -> `/posters/updating-placeholder.png`
+- The Wizard of Oz — slug `the-wizard-of-oz` — `/posters/batch-17/the-wizard-of-oz.jpeg` -> `/posters/updating-placeholder.png`
+- The Wolf of Wall Street — slug `the-wolf-of-wall-street` — `/posters/batch-17/the-wolf-of-wall-street.jpeg` -> `/posters/updating-placeholder.png`
+- There Will Be Blood — slug `there-will-be-blood` — `/posters/batch-17/there-will-be-blood.jpeg` -> `/posters/updating-placeholder.png`
+- Three Billboards Outside Ebbing, Missouri — slug `three-billboards-outside-ebbing-missouri` — `/posters/batch-17/three-billboards-outside-ebbing-missouri.jpeg` -> `/posters/updating-placeholder.png`
+- To Kill a Mockingbird — slug `to-kill-a-mockingbird` — `/posters/batch-17/to-kill-a-mockingbird.jpeg` -> `/posters/updating-placeholder.png`
+- Tokyo Story — slug `tokyo-story` — `/posters/batch-17/tokyo-story.jpeg` -> `/posters/updating-placeholder.png`
+- Top Gun: Maverick — slug `top-gun-maverick` — `/posters/batch-17/top-gun-maverick.jpeg` -> `/posters/updating-placeholder.png`
+- Toy Story — slug `toy-story` — `/posters/batch-17/toy-story.jpeg` -> `/posters/updating-placeholder.png`
+- Toy Story 3 — slug `toy-story-3` — `/posters/batch-17/toy-story-3.jpeg` -> `/posters/updating-placeholder.png`
+- Trainspotting — slug `trainspotting` — `/posters/batch-17/trainspotting.jpeg` -> `/posters/updating-placeholder.png`
+- Unforgiven — slug `unforgiven` — `/posters/batch-17/unforgiven.jpeg` -> `/posters/updating-placeholder.png`
+- Up — slug `up` — `/posters/batch-17/up.jpeg` -> `/posters/updating-placeholder.png`
+- V for Vendetta — slug `v-for-vendetta` — `/posters/batch-17/v-for-vendetta.jpeg` -> `/posters/updating-placeholder.png`
+- Vertigo — slug `vertigo` — `/posters/batch-17/vertigo.jpeg` -> `/posters/updating-placeholder.png`
+- WALL·E — slug `wall-e` — `/posters/batch-17/wall-e.jpeg` -> `/posters/updating-placeholder.png`
+- Warrior — slug `warrior` — `/posters/batch-17/warrior.jpeg` -> `/posters/updating-placeholder.png`
+- Wild Strawberries — slug `wild-strawberries` — `/posters/batch-17/wild-strawberries.jpeg` -> `/posters/updating-placeholder.png`
+- Wild Tales — slug `wild-tales` — `/posters/batch-17/wild-tales.jpeg` -> `/posters/updating-placeholder.png`
+- Witness for the Prosecution — slug `witness-for-the-prosecution` — `/posters/batch-17/witness-for-the-prosecution.jpeg` -> `/posters/updating-placeholder.png`
+- Yojimbo — slug `yojimbo` — `/posters/batch-17/yojimbo.jpeg` -> `/posters/updating-placeholder.png`
+- Your Name. — slug `your-name` — `/posters/batch-17/your-name.jpeg` -> `/posters/updating-placeholder.png`

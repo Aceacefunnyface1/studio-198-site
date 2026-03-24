@@ -10,7 +10,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
   return (
     <article className="review-card">
       <PosterFrame
-        posterImage={review.posterImage}
+        posterImage={review.resolvedPosterImage}
         title={review.movieTitle}
         className="review-card-poster"
       />

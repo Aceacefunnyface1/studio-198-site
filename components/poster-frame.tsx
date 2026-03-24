@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type PosterFrameProps = {
   posterImage: string;
   title: string;
@@ -14,12 +12,7 @@ export function PosterFrame({
   return (
     <div className={`poster-frame ${className ?? ""}`.trim()}>
       {posterImage ? (
-        <Image
-          src={posterImage}
-          alt={`${title} poster`}
-          fill
-          sizes="(max-width: 768px) 100vw, 33vw"
-        />
+        <img src={posterImage} alt={`${title} poster`} loading="lazy" />
       ) : (
         <div className="poster-frame-fallback">
           <div>

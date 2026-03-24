@@ -40,8 +40,6 @@ export async function saveReviewAction(formData: FormData) {
     redirect("/admin?error=Please%20log%20in%20first");
   }
 
-  const data = await readSiteData();
-  const id = requireText(formData.get("id")) || `review-${crypto.randomUUID()}`;
   const movieTitle = requireText(formData.get("movieTitle"));
   const slug = slugify(requireText(formData.get("slug")) || movieTitle);
 
@@ -49,61 +47,70 @@ export async function saveReviewAction(formData: FormData) {
     redirect("/admin?error=Movie%20title%20and%20slug%20are%20required");
   }
 
-  const existing = data.reviews.find((review) => review.id === id);
-  const posterFile = formData.get("posterFile");
-  const backdropFile = formData.get("backdropFile");
+  try {
+    const data = await readSiteData();
+    const id = requireText(formData.get("id")) || `review-${crypto.randomUUID()}`;
 
-  const posterImage =
-    posterFile instanceof File && posterFile.size > 0
-      ? await saveUpload(posterFile, slug)
-      : requireText(formData.get("posterImage")) || existing?.posterImage || "";
+    const existing = data.reviews.find((review) => review.id === id);
+    const posterFile = formData.get("posterFile");
+    const backdropFile = formData.get("backdropFile");
 
-  const backdropImage =
-    backdropFile instanceof File && backdropFile.size > 0
-      ? await saveUpload(backdropFile, `${slug}-backdrop`)
-      : requireText(formData.get("backdropImage")) ||
-        existing?.backdropImage ||
-        "";
+    const posterImage =
+      posterFile instanceof File && posterFile.size > 0
+        ? await saveUpload(posterFile, slug)
+        : requireText(formData.get("posterImage")) || existing?.posterImage || "";
 
-  const verdictInput = requireText(formData.get("verdict"));
-  const verdict: Verdict = verdictOptions.includes(
-    verdictInput as (typeof verdictOptions)[number],
-  )
-    ? (verdictInput as Verdict)
-    : "WATCH";
+    const backdropImage =
+      backdropFile instanceof File && backdropFile.size > 0
+        ? await saveUpload(backdropFile, `${slug}-backdrop`)
+        : requireText(formData.get("backdropImage")) ||
+          existing?.backdropImage ||
+          "";
 
-  const ratingRaw = requireText(formData.get("rating"));
-  const parsedRating = ratingRaw ? Number.parseFloat(ratingRaw) : null;
+    const verdictInput = requireText(formData.get("verdict"));
+    const verdict: Verdict = verdictOptions.includes(
+      verdictInput as (typeof verdictOptions)[number],
+    )
+      ? (verdictInput as Verdict)
+      : "WATCH";
 
-  const review: Review = {
-    id,
-    movieTitle,
-    slug,
-    releaseYear: requireText(formData.get("releaseYear"))
-      ? Number.parseInt(requireText(formData.get("releaseYear")), 10)
-      : null,
-    posterImage,
-    backdropImage,
-    verdict,
-    rating: clampRating(parsedRating),
-    reviewerName: requireText(formData.get("reviewerName")) || "Ace Verdict",
-    quickHit: requireText(formData.get("quickHit")),
-    fullTake: requireText(formData.get("fullTake")),
-    reviewVideoUrl: requireText(formData.get("reviewVideoUrl")),
-    whereToWatchUrl: requireText(formData.get("whereToWatchUrl")),
-    createdAt: existing?.createdAt || new Date().toISOString(),
-    updatedAt: new Date().toISOString(),
-    featured: formData.get("featured") === "on",
-    genreTags: splitTags(requireText(formData.get("genreTags"))),
-    moodTags: splitTags(requireText(formData.get("moodTags"))),
-    runtime: requireText(formData.get("runtime")),
-    director: requireText(formData.get("director")),
-    status: formData.get("status") === "draft" ? "draft" : "published",
-  };
+    const ratingRaw = requireText(formData.get("rating"));
+    const parsedRating = ratingRaw ? Number.parseFloat(ratingRaw) : null;
 
-  const remaining = data.reviews.filter((entry) => entry.id !== id);
-  data.reviews = [...remaining, review];
-  await writeSiteData(data);
+    const review: Review = {
+      id,
+      movieTitle,
+      slug,
+      releaseYear: requireText(formData.get("releaseYear"))
+        ? Number.parseInt(requireText(formData.get("releaseYear")), 10)
+        : null,
+      posterImage,
+      backdropImage,
+      verdict,
+      rating: clampRating(parsedRating),
+      reviewerName: requireText(formData.get("reviewerName")) || "Ace Verdict",
+      quickHit: requireText(formData.get("quickHit")),
+      fullTake: requireText(formData.get("fullTake")),
+      reviewVideoUrl: requireText(formData.get("reviewVideoUrl")),
+      whereToWatchUrl: requireText(formData.get("whereToWatchUrl")),
+      createdAt: existing?.createdAt || new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+      featured: formData.get("featured") === "on",
+      genreTags: splitTags(requireText(formData.get("genreTags"))),
+      moodTags: splitTags(requireText(formData.get("moodTags"))),
+      runtime: requireText(formData.get("runtime")),
+      director: requireText(formData.get("director")),
+      status: formData.get("status") === "draft" ? "draft" : "published",
+    };
+
+    const remaining = data.reviews.filter((entry) => entry.id !== id);
+    data.reviews = [...remaining, review];
+    await writeSiteData(data);
+  } catch (error) {
+    const message =
+      error instanceof Error ? error.message : "Review save failed";
+    redirect(`/admin?error=${encodeURIComponent(message)}`);
+  }
 
   revalidatePath("/");
   revalidatePath("/reviews");
@@ -119,13 +126,20 @@ export async function deleteReviewAction(formData: FormData) {
 
   const id = requireText(formData.get("id"));
   const slug = requireText(formData.get("slug"));
-  const data = await readSiteData();
 
-  data.reviews = data.reviews.filter((review) => review.id !== id);
-  data.comments = data.comments.filter((comment) => comment.reviewId !== id);
-  delete data.likes[id];
+  try {
+    const data = await readSiteData();
+    data.reviews = data.reviews.filter((review) => review.id !== id);
+    data.comments = data.comments.filter((comment) => comment.reviewId !== id);
+    delete data.likes[id];
 
-  await writeSiteData(data);
+    await writeSiteData(data);
+  } catch (error) {
+    const message =
+      error instanceof Error ? error.message : "Review delete failed";
+    redirect(`/admin?error=${encodeURIComponent(message)}`);
+  }
+
   revalidatePath("/");
   revalidatePath("/reviews");
   revalidatePath(`/reviews/${slug}`);

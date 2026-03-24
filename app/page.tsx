@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { BrowseExplorer } from "@/components/browse-explorer";
 import { ReviewCard } from "@/components/review-card";
@@ -37,12 +36,9 @@ export default async function HomePage() {
         {heroReview ? (
           <div className="hero-feature">
             <div className="hero-feature-media">
-              <Image
+              <img
                 src={heroReview.posterImage}
                 alt={`${heroReview.movieTitle} poster`}
-                fill
-                priority
-                sizes="(max-width: 960px) 100vw, 360px"
               />
             </div>
             <div className="hero-feature-content">

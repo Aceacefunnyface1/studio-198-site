@@ -65,12 +65,18 @@ export default async function ReviewDetailPage({
             <span className={`verdict-badge verdict-${review.verdictKey}`}>
               {review.verdict}
             </span>
-            <h1>{review.movieTitle}</h1>
+            <div className="detail-heading">
+              <h1>
+                {review.movieTitle}
+                {review.releaseYear ? ` (${review.releaseYear})` : ""}
+              </h1>
+              {review.director ? (
+                <p className="detail-subline">Directed by {review.director}</p>
+              ) : null}
+            </div>
             <div className="detail-meta">
-              <span>{review.releaseYear ?? "Release year pending"}</span>
               <span>{review.ratingLabel}</span>
               <span>{review.reviewerName}</span>
-              {review.director ? <span>Dir. {review.director}</span> : null}
               {review.runtime ? <span>{review.runtime}</span> : null}
             </div>
 

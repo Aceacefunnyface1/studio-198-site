@@ -242,11 +242,6 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
         <section className="auth-panel">
           <p className="eyebrow">Admin Access</p>
           <h1>Sign in to manage Snap Critique</h1>
-          <p>
-            Set <code>ADMIN_PASSWORD</code> in your environment for production.
-            If no environment password is set, the local fallback is{" "}
-            <code>studio198-admin</code>.
-          </p>
           {error ? <p className="muted-note">{error}</p> : null}
           <form action={loginAction} className="contact-form">
             <div className="field-full">

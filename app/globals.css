@@ -503,6 +503,12 @@ textarea {
   gap: 0.7rem;
 }
 
+.review-heading,
+.detail-heading {
+  display: grid;
+  gap: 0.2rem;
+}
+
 .review-card p,
 .field-hint,
 .muted-note,
@@ -515,6 +521,15 @@ textarea {
 
 .review-card p {
   font-size: 0.95rem;
+}
+
+.review-subline,
+.detail-subline {
+  margin: 0;
+  color: var(--muted-strong);
+  font-size: 0.84rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .review-meta span,
@@ -636,6 +651,10 @@ textarea {
 .detail-copy {
   display: grid;
   gap: 1rem;
+}
+
+.detail-heading h1 {
+  margin: 0;
 }
 
 .prose-block {

@@ -19,10 +19,17 @@ export function ReviewCard({ review }: ReviewCardProps) {
         <span className={`verdict-badge verdict-${review.verdictKey}`}>
           {review.verdict}
         </span>
-        <h3>{review.movieTitle}</h3>
+        <div className="review-heading">
+          <h3>
+            {review.movieTitle}
+            {review.releaseYear ? ` (${review.releaseYear})` : ""}
+          </h3>
+          {review.director ? (
+            <p className="review-subline">Directed by {review.director}</p>
+          ) : null}
+        </div>
         <p>{review.quickHit || "Review copy pending publication."}</p>
         <div className="review-meta">
-          <span>{review.releaseYear ?? "TBA"}</span>
           <span>{review.ratingLabel}</span>
           <span>{review.likeCount} likes</span>
           <span>{review.commentCount} comments</span>

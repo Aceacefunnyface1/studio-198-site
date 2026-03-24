@@ -1,0 +1,16 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1200" fill="#050505"/>
+  <rect x="48" y="48" width="704" height="1104" rx="30" stroke="#BA9240" stroke-width="2" stroke-dasharray="14 16"/>
+  <circle cx="400" cy="458" r="190" fill="url(#paint0_radial_1_4)"/>
+  <path d="M327 458H473M400 385V531" stroke="#F4EFE4" stroke-width="24" stroke-linecap="round"/>
+  <text x="114" y="920" fill="#BA9240" font-family="Georgia, serif" font-size="122" font-weight="700">NEXT REVIEW</text>
+  <text x="155" y="1008" fill="#F4EFE4" font-family="Georgia, serif" font-size="118" font-weight="700">SLOT OPEN</text>
+  <text x="124" y="1092" fill="#A1A1AA" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="10">ADD THE NEXT FILM FROM ADMIN</text>
+  <defs>
+    <radialGradient id="paint0_radial_1_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 458) rotate(90) scale(190)">
+      <stop stop-color="#D61F1F"/>
+      <stop offset="0.52" stop-color="#5D0A0E"/>
+      <stop offset="1" stop-color="#0A0A0A"/>
+    </radialGradient>
+  </defs>
+</svg>

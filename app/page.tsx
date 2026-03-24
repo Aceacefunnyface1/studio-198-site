@@ -1,65 +1,125 @@
 import Image from "next/image";
+import Link from "next/link";
+import { BrowseExplorer } from "@/components/browse-explorer";
+import { ReviewCard } from "@/components/review-card";
+import { getPublishedReviewsWithStats } from "@/lib/review-queries";
 
-export default function Home() {
+export default async function HomePage() {
+  const reviews = await getPublishedReviewsWithStats();
+  const featured = reviews.filter((review) => review.featured).slice(0, 3);
+  const heroReview = featured[0] ?? reviews[0];
+  const latest = [...reviews]
+    .sort((a, b) => +new Date(b.createdAt) - +new Date(a.createdAt))
+    .slice(0, 3);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="page-stack">
+      <section className="hero-panel">
+        <div className="hero-copy">
+          <p className="eyebrow">Studio 198 presents</p>
+          <h1>Snap Critique</h1>
+          <p className="hero-slogan">Not Meant to Feel Safe.</p>
+          <p className="hero-body">
+            Short-form movie reviews with hard edges, fast verdicts, and a
+            premium midnight-editorial look built for the web first and ready
+            for the feed later.
+          </p>
+          <div className="hero-actions">
+            <Link href="/reviews" className="button-primary">
+              Browse Reviews
+            </Link>
+            <Link href="/admin" className="button-secondary">
+              Manage Reviews
+            </Link>
+          </div>
+        </div>
+
+        {heroReview ? (
+          <div className="hero-feature">
+            <div className="hero-feature-media">
+              <Image
+                src={heroReview.posterImage}
+                alt={`${heroReview.movieTitle} poster`}
+                fill
+                priority
+                sizes="(max-width: 960px) 100vw, 360px"
+              />
+            </div>
+            <div className="hero-feature-content">
+              <span className={`verdict-badge verdict-${heroReview.verdictKey}`}>
+                {heroReview.verdict}
+              </span>
+              <h2>{heroReview.movieTitle}</h2>
+              <p>{heroReview.quickHit || "Review copy pending Studio 198."}</p>
+              <div className="meta-row">
+                <span>{heroReview.releaseYear ?? "Release year pending"}</span>
+                <span>{heroReview.ratingLabel}</span>
+                <span>{heroReview.genreTags.join(" / ")}</span>
+              </div>
+              <Link
+                href={`/reviews/${heroReview.slug}`}
+                className="button-primary"
+              >
+                Read Featured Review
+              </Link>
+            </div>
+          </div>
+        ) : null}
+      </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Featured Verdicts</p>
+            <h2>Poster-first spotlight</h2>
+          </div>
+          <Link href="/reviews" className="text-link">
+            See archive
+          </Link>
+        </div>
+        <div className="card-grid card-grid-featured">
+          {(featured.length ? featured : latest).map((review) => (
+            <ReviewCard key={review.id} review={review} />
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Browse the Feed</p>
+            <h2>Search, filter, sort</h2>
+          </div>
+        </div>
+        <BrowseExplorer
+          reviews={reviews}
+          emptyMessage="No reviews match the current filters."
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+      </section>
+
+      <section className="content-section two-column-callout">
+        <div className="callout-block">
+          <p className="eyebrow">Latest Reviews</p>
+          <h2>Fresh from Studio 198</h2>
+          <div className="stack-list">
+            {latest.map((review) => (
+              <Link key={review.id} href={`/reviews/${review.slug}`} className="list-link">
+                <span>{review.movieTitle}</span>
+                <span>{review.ratingLabel}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div className="callout-block">
+          <p className="eyebrow">Built To Scale</p>
+          <h2>Website first. App-ready later.</h2>
+          <p>
+            Reviews, comments, likes, and content management run through a
+            structured data model today so the same content can move into an API
+            and mobile surface later without reformatting everything by hand.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
     </div>
   );
 }

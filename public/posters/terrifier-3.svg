@@ -1,0 +1,18 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1200" fill="#040404"/>
+  <rect width="800" height="1200" fill="url(#paint0_radial_1_3)"/>
+  <ellipse cx="404" cy="422" rx="188" ry="252" fill="#111111"/>
+  <path d="M336 312C365 244 445 228 496 286C553 350 538 474 488 556C456 609 406 651 368 636C310 613 294 416 336 312Z" fill="#F4EFE4"/>
+  <path d="M371 366C392 336 437 332 460 360C484 390 474 438 448 456C418 478 365 458 357 423C353 407 357 386 371 366Z" fill="#0A0A0A"/>
+  <path d="M378 432C404 462 464 462 492 425C506 462 500 526 466 568C438 601 392 611 356 596C314 577 287 537 286 493C309 475 347 461 378 432Z" fill="#B30D14"/>
+  <text x="120" y="1008" fill="#F4EFE4" font-family="Georgia, serif" font-size="118" font-weight="700">TERRIFIER</text>
+  <text x="506" y="1008" fill="#BA9240" font-family="Georgia, serif" font-size="118" font-weight="700">3</text>
+  <text x="120" y="1086" fill="#D1B57A" font-family="Helvetica, Arial, sans-serif" font-size="24" letter-spacing="8">SNAP CRITIQUE ENTRY READY</text>
+  <defs>
+    <radialGradient id="paint0_radial_1_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(406 590) rotate(90) scale(648 468)">
+      <stop stop-color="#5F0408"/>
+      <stop offset="0.45" stop-color="#140406"/>
+      <stop offset="1" stop-color="#040404"/>
+    </radialGradient>
+  </defs>
+</svg>

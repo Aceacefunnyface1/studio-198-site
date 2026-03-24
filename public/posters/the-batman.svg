@@ -1,0 +1,21 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1200" fill="#070707"/>
+  <rect width="800" height="1200" fill="url(#paint0_linear_1_2)"/>
+  <path d="M436 182L544 368H328L436 182Z" fill="#181818"/>
+  <path d="M253 977C332 857 362 705 362 553V511C362 465 399 428 445 428V428C491 428 528 465 528 511V553C528 705 558 857 637 977H253Z" fill="#0F0F0F"/>
+  <rect x="117" y="888" width="566" height="244" rx="24" fill="rgba(0,0,0,0.48)"/>
+  <path d="M192 0H800V883C654 864 434 798 267 642C146 530 100 377 86 274C118 171 151 87 192 0Z" fill="url(#paint1_linear_1_2)"/>
+  <text x="132" y="1010" fill="#B81B20" font-family="Georgia, serif" font-size="92" font-weight="700">THE</text>
+  <text x="120" y="1092" fill="#B81B20" font-family="Georgia, serif" font-size="142" font-weight="700">BATMAN</text>
+  <text x="120" y="1160" fill="#F4EFE4" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="10">STUDIO 198 REVIEW SLOT</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="400" y1="0" x2="400" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#180202"/>
+      <stop offset="1" stop-color="#070707"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_2" x1="443" y1="0" x2="443" y2="883" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D61F1F"/>
+      <stop offset="1" stop-color="#310607" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -49,6 +49,36 @@ function getBundledSeedData() {
   return bundledSeedData as SiteData;
 }
 
+function classifyPosterPath(posterPath: string) {
+  const value = posterPath.trim();
+
+  if (!value) {
+    return "missing" as const;
+  }
+
+  if (value === "/posters/updating-placeholder.png") {
+    return "placeholder" as const;
+  }
+
+  if (value.startsWith("/posters/batch-17/")) {
+    return "batch" as const;
+  }
+
+  if (value.startsWith("/posters/")) {
+    return "managed" as const;
+  }
+
+  if (value.startsWith("/media/") || value.startsWith("/uploads/")) {
+    return "uploaded" as const;
+  }
+
+  if (/^https?:\/\//.test(value)) {
+    return "external" as const;
+  }
+
+  return "other" as const;
+}
+
 function mergeSiteData(existing: SiteData, bundled: SiteData) {
   const bundledBySlug = new Map(
     bundled.reviews.map((review) => [review.slug, review]),
@@ -58,24 +88,31 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
     existingPoster: string,
     bundledPoster: string,
   ) {
-    if (!bundledPoster) {
+    const existingKind = classifyPosterPath(existingPoster);
+    const bundledKind = classifyPosterPath(bundledPoster);
+
+    if (bundledKind === "missing") {
       return false;
     }
 
-    if (!existingPoster) {
+    if (existingKind === "missing") {
       return true;
     }
 
-    const existingIsBatch = existingPoster.startsWith("/posters/batch-17/");
-    const bundledIsBatch = bundledPoster.startsWith("/posters/batch-17/");
-
-    if (existingIsBatch && !bundledIsBatch) {
+    // Repo-managed /posters assets are the source of truth unless the existing
+    // record has an explicit admin-managed upload or external URL.
+    if (
+      bundledKind === "managed" &&
+      existingKind !== "uploaded" &&
+      existingKind !== "external" &&
+      existingPoster.trim() !== bundledPoster.trim()
+    ) {
       return true;
     }
 
     if (
-      existingIsBatch &&
-      bundledPoster === "/posters/updating-placeholder.png"
+      existingKind === "batch" &&
+      (bundledKind === "placeholder" || bundledKind === "managed")
     ) {
       return true;
     }

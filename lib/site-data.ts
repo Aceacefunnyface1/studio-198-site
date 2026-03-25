@@ -27,6 +27,8 @@ const isDeployedProduction =
 const isVercelBlobEnabled = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
 const blobAccess =
   process.env.BLOB_ACCESS === "public" ? "public" : "private";
+const isBuildPrerender =
+  process.env.NEXT_PHASE === "phase-production-build";
 
 async function streamToText(stream: ReadableStream<Uint8Array>) {
   return await new Response(stream).text();
@@ -273,6 +275,27 @@ function requireBlobInProduction() {
   }
 }
 
+async function readBuildSafeSiteData() {
+  if (isDeployedProduction) {
+    return getBundledSeedData();
+  }
+
+  return await readLocalSeedData();
+}
+
+async function readSiteDataWithFallback(error: unknown) {
+  if (
+    error instanceof Error &&
+    isDeployedProduction
+  ) {
+    console.warn(
+      `Falling back to bundled site data after Blob read failed: ${error.message}`,
+    );
+  }
+
+  return await readBuildSafeSiteData();
+}
+
 async function readBlobSiteData() {
   const result = await get(siteDataBlobPath, {
     access: blobAccess,
@@ -312,10 +335,18 @@ async function readBlobSiteData() {
 }
 
 export async function readSiteData() {
+  if (isBuildPrerender) {
+    return await readBuildSafeSiteData();
+  }
+
   requireBlobInProduction();
 
   if (isVercelBlobEnabled) {
-    return await readBlobSiteData();
+    try {
+      return await readBlobSiteData();
+    } catch (error) {
+      return await readSiteDataWithFallback(error);
+    }
   }
 
   return await readLocalSeedData();

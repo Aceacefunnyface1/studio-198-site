@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import pendingPosterSlugs from "@/data/pending-poster-slugs.json";
 import {
   clearAdminSession,
   createAdminSession,
@@ -14,6 +15,7 @@ import { Review, Verdict, verdictOptions } from "@/lib/types";
 import { clampRating, slugify, splitTags } from "@/lib/utils";
 
 const likedCookieName = "snap-critique-likes";
+const forcedDraftSlugs = new Set(pendingPosterSlugs as string[]);
 
 function requireText(value: FormDataEntryValue | null, fallback = "") {
   return typeof value === "string" ? value.trim() : fallback;
@@ -57,12 +59,12 @@ export async function saveReviewAction(formData: FormData) {
 
     const posterImage =
       posterFile instanceof File && posterFile.size > 0
-        ? await saveUpload(posterFile, slug)
+        ? await saveUpload(posterFile, slug, "poster")
         : requireText(formData.get("posterImage")) || existing?.posterImage || "";
 
     const backdropImage =
       backdropFile instanceof File && backdropFile.size > 0
-        ? await saveUpload(backdropFile, `${slug}-backdrop`)
+        ? await saveUpload(backdropFile, `${slug}-backdrop`, "backdrop")
         : requireText(formData.get("backdropImage")) ||
           existing?.backdropImage ||
           "";
@@ -100,7 +102,10 @@ export async function saveReviewAction(formData: FormData) {
       moodTags: splitTags(requireText(formData.get("moodTags"))),
       runtime: requireText(formData.get("runtime")),
       director: requireText(formData.get("director")),
-      status: formData.get("status") === "draft" ? "draft" : "published",
+      status:
+        forcedDraftSlugs.has(slug) || formData.get("status") === "draft"
+          ? "draft"
+          : "published",
     };
 
     const remaining = data.reviews.filter((entry) => entry.id !== id);

@@ -129,12 +129,23 @@ function ReviewForm({
           id={`posterImage-${review?.id ?? "new"}`}
           name="posterImage"
           defaultValue={review?.posterImage ?? ""}
-          placeholder="/uploads/my-poster.jpg"
+          placeholder="/posters/imported/my-poster.jpg"
         />
       </div>
       <div className="field">
         <label htmlFor={`posterFile-${review?.id ?? "new"}`}>Poster Upload</label>
         <input id={`posterFile-${review?.id ?? "new"}`} name="posterFile" type="file" accept="image/*" />
+        <p className="muted-note">
+          Deployed uploads are disabled. Add the file under
+          {" "}
+          <code>/public/posters/</code>
+          {" "}
+          and save the
+          {" "}
+          <code>/posters/...</code>
+          {" "}
+          path here.
+        </p>
       </div>
       <div className="field">
         <label htmlFor={`backdropImage-${review?.id ?? "new"}`}>Backdrop URL</label>
@@ -147,6 +158,9 @@ function ReviewForm({
       <div className="field">
         <label htmlFor={`backdropFile-${review?.id ?? "new"}`}>Backdrop Upload</label>
         <input id={`backdropFile-${review?.id ?? "new"}`} name="backdropFile" type="file" accept="image/*" />
+        <p className="muted-note">
+          Deployed file uploads are disabled to keep storage local and predictable.
+        </p>
       </div>
       <div className="field-full">
         <label htmlFor={`genreTags-${review?.id ?? "new"}`}>Genre Tags</label>

@@ -13,8 +13,11 @@ const overrides = posterOverrides as Record<string, PosterOverride>;
 
 export function resolvePoster(review: Review) {
   const override = overrides[review.slug];
-  const rawPoster = review.posterImage || "";
+  const rawPoster = (review.posterImage || "").trim();
   const replacementPath = override?.replacementPath?.trim();
+  const isBlobPoster =
+    rawPoster.startsWith("/media/") ||
+    /^https?:\/\/[^/]*blob\.vercel-storage\.com\//i.test(rawPoster);
 
   if (replacementPath) {
     return {
@@ -40,7 +43,15 @@ export function resolvePoster(review: Review) {
     };
   }
 
-  if (rawPoster.startsWith("/media/") || /^https?:\/\//.test(rawPoster)) {
+  if (isBlobPoster) {
+    return {
+      resolvedPosterImage: "",
+      posterStatus: "missing" as const,
+      posterSource: "missing" as const,
+    };
+  }
+
+  if (/^https?:\/\//.test(rawPoster)) {
     return {
       resolvedPosterImage: rawPoster,
       posterStatus: "approved" as const,

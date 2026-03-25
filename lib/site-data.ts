@@ -4,11 +4,14 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { get, put } from "@vercel/blob";
 import bundledSeedData from "@/data/site-data.json";
+import pendingPosterSlugs from "@/data/pending-poster-slugs.json";
 import { Review, SiteData } from "@/lib/types";
 
 const dataFilePath = path.join(process.cwd(), "data", "site-data.json");
-const uploadsDirectory = path.join(process.cwd(), "public", "uploads");
 const siteDataBlobPath = "site-data.json";
+const uploadsDirectory = path.join(process.cwd(), "public", "uploads");
+const posterUploadsDirectory = path.join(process.cwd(), "public", "posters", "manual");
+const forcedDraftSlugs = new Set(pendingPosterSlugs as string[]);
 
 const initialData: SiteData = {
   reviews: [],
@@ -77,7 +80,19 @@ function classifyPosterPath(posterPath: string) {
 
 function normalizePosterPath(posterPath: string | null | undefined) {
   const value = (posterPath || "").trim();
-  return value === "/posters/updating-placeholder.png" ? "" : value;
+
+  if (!value || value === "/posters/updating-placeholder.png") {
+    return "";
+  }
+
+  if (
+    value.startsWith("/media/") ||
+    /^https?:\/\/[^/]*blob\.vercel-storage\.com\//i.test(value)
+  ) {
+    return "";
+  }
+
+  return value;
 }
 
 function getTimestamp(value: string | null | undefined) {
@@ -89,9 +104,17 @@ function getTimestamp(value: string | null | undefined) {
   return Number.isNaN(timestamp) ? Number.NEGATIVE_INFINITY : timestamp;
 }
 
+function enforceReviewPolicies(review: Review) {
+  return {
+    ...review,
+    posterImage: normalizePosterPath(review.posterImage),
+    status: forcedDraftSlugs.has(review.slug) ? "draft" : review.status,
+  } satisfies Review;
+}
+
 function mergeSiteData(existing: SiteData, bundled: SiteData) {
   const bundledBySlug = new Map(
-    bundled.reviews.map((review) => [review.slug, review]),
+    bundled.reviews.map((review) => [review.slug, enforceReviewPolicies(review)]),
   );
 
   function shouldPreferBundledPoster(
@@ -131,16 +154,17 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
   }
 
   const mergedReviews = existing.reviews.map((review) => {
-    const bundledReview = bundledBySlug.get(review.slug);
+    const existingReview = enforceReviewPolicies(review);
+    const bundledReview = bundledBySlug.get(existingReview.slug);
 
     if (!bundledReview) {
-      return review;
+      return existingReview;
     }
 
-    bundledBySlug.delete(review.slug);
+    bundledBySlug.delete(existingReview.slug);
 
     const preferBundledReviewFields =
-      getTimestamp(bundledReview.updatedAt) > getTimestamp(review.updatedAt);
+      getTimestamp(bundledReview.updatedAt) > getTimestamp(existingReview.updatedAt);
 
     const mergeStringField = (existingValue: string, bundledValue: string) => {
       if (preferBundledReviewFields && bundledValue.trim()) {
@@ -161,65 +185,71 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
       return existingValue.length > 0 ? existingValue : bundledValue;
     };
 
-    return {
-      ...(preferBundledReviewFields ? review : bundledReview),
-      ...(preferBundledReviewFields ? bundledReview : review),
+    const mergedReview = {
+      ...(preferBundledReviewFields ? existingReview : bundledReview),
+      ...(preferBundledReviewFields ? bundledReview : existingReview),
       posterImage: shouldPreferBundledPoster(
-        normalizePosterPath(review.posterImage),
+        normalizePosterPath(existingReview.posterImage),
         normalizePosterPath(bundledReview.posterImage),
       )
         ? normalizePosterPath(bundledReview.posterImage)
-        : normalizePosterPath(review.posterImage) ||
+        : normalizePosterPath(existingReview.posterImage) ||
           normalizePosterPath(bundledReview.posterImage),
       backdropImage: mergeStringField(
-        review.backdropImage,
+        existingReview.backdropImage,
         bundledReview.backdropImage,
       ),
       releaseYear:
         preferBundledReviewFields && bundledReview.releaseYear !== null
           ? bundledReview.releaseYear
-          : review.releaseYear ?? bundledReview.releaseYear,
+          : existingReview.releaseYear ?? bundledReview.releaseYear,
       verdict:
         preferBundledReviewFields && bundledReview.verdict
           ? bundledReview.verdict
-          : review.verdict,
+          : existingReview.verdict,
       rating:
         preferBundledReviewFields && bundledReview.rating !== null
           ? bundledReview.rating
-          : review.rating ?? bundledReview.rating,
+          : existingReview.rating ?? bundledReview.rating,
       reviewerName: mergeStringField(
-        review.reviewerName,
+        existingReview.reviewerName,
         bundledReview.reviewerName,
       ),
-      quickHit: mergeStringField(review.quickHit, bundledReview.quickHit),
-      fullTake: mergeStringField(review.fullTake, bundledReview.fullTake),
+      quickHit: mergeStringField(existingReview.quickHit, bundledReview.quickHit),
+      fullTake: mergeStringField(existingReview.fullTake, bundledReview.fullTake),
       reviewVideoUrl: mergeStringField(
-        review.reviewVideoUrl,
+        existingReview.reviewVideoUrl,
         bundledReview.reviewVideoUrl,
       ),
       whereToWatchUrl: mergeStringField(
-        review.whereToWatchUrl,
+        existingReview.whereToWatchUrl,
         bundledReview.whereToWatchUrl,
       ),
       featured:
-        preferBundledReviewFields && bundledReview.featured !== review.featured
+        preferBundledReviewFields && bundledReview.featured !== existingReview.featured
           ? bundledReview.featured
-          : review.featured,
-      genreTags: mergeArrayField(review.genreTags, bundledReview.genreTags),
-      moodTags: mergeArrayField(review.moodTags, bundledReview.moodTags),
-      runtime: mergeStringField(review.runtime, bundledReview.runtime),
-      director: mergeStringField(review.director, bundledReview.director),
+          : existingReview.featured,
+      genreTags: mergeArrayField(existingReview.genreTags, bundledReview.genreTags),
+      moodTags: mergeArrayField(existingReview.moodTags, bundledReview.moodTags),
+      runtime: mergeStringField(existingReview.runtime, bundledReview.runtime),
+      director: mergeStringField(existingReview.director, bundledReview.director),
       status:
-        preferBundledReviewFields && bundledReview.status
+        forcedDraftSlugs.has(existingReview.slug)
+          ? "draft"
+          : preferBundledReviewFields && bundledReview.status
           ? bundledReview.status
-          : review.status,
+          : existingReview.status,
       updatedAt: preferBundledReviewFields
         ? bundledReview.updatedAt
-        : review.updatedAt,
-    };
+        : existingReview.updatedAt,
+    } satisfies Review;
+
+    return enforceReviewPolicies(mergedReview);
   });
 
-  const missingBundledReviews = [...bundledBySlug.values()];
+  const missingBundledReviews = [...bundledBySlug.values()].map(
+    enforceReviewPolicies,
+  );
 
   return {
     ...existing,
@@ -301,36 +331,33 @@ export async function writeSiteData(data: SiteData) {
   await writeFile(dataFilePath, JSON.stringify(data, null, 2), "utf8");
 }
 
-export async function saveUpload(file: File, prefix: string) {
+export async function saveUpload(
+  file: File,
+  prefix: string,
+  kind: "poster" | "backdrop" = "poster",
+) {
   if (!file || file.size === 0) {
     return "";
   }
 
-  requireBlobInProduction();
-
   const safeName = file.name.replace(/[^a-zA-Z0-9.-]+/g, "-").toLowerCase();
   const fileName = `${prefix}-${Date.now()}-${safeName}`;
 
-  if (isVercelBlobEnabled) {
-    const result = await put(`uploads/${fileName}`, file, {
-      access: blobAccess,
-      addRandomSuffix: false,
-      allowOverwrite: true,
-      contentType: file.type || undefined,
-      cacheControlMaxAge: 60 * 60 * 24 * 30,
-    });
-
-    return blobAccess === "private"
-      ? `/media/${result.pathname}`
-      : result.url;
+  if (isDeployedProduction) {
+    throw new Error(
+      "File uploads are disabled in deployed production. Add poster files under /public/posters and save the /posters/... path instead.",
+    );
   }
 
-  const outputPath = path.join(uploadsDirectory, fileName);
+  const outputDirectory =
+    kind === "poster" ? posterUploadsDirectory : uploadsDirectory;
+  const publicBasePath = kind === "poster" ? "/posters/manual" : "/uploads";
+  const outputPath = path.join(outputDirectory, fileName);
   const bytes = Buffer.from(await file.arrayBuffer());
 
-  await mkdir(uploadsDirectory, { recursive: true });
+  await mkdir(outputDirectory, { recursive: true });
   await writeFile(outputPath, bytes);
-  return `/uploads/${fileName}`;
+  return `${publicBasePath}/${fileName}`;
 }
 
 export function sortReviewsByNewest(reviews: Review[]) {

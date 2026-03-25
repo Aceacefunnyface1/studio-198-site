@@ -8,7 +8,11 @@ import {
   toggleCommentVisibilityAction,
 } from "@/app/actions";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
-import { readSiteData } from "@/lib/site-data";
+import {
+  getResolvedReviewStatus,
+  isPosterBlockedReview,
+  readSiteData,
+} from "@/lib/site-data";
 import { verdictOptions } from "@/lib/types";
 import { formatDate } from "@/lib/utils";
 
@@ -28,6 +32,10 @@ function ReviewForm({
   review?: Awaited<ReturnType<typeof readSiteData>>["reviews"][number];
 }) {
   const isEditing = Boolean(review);
+  const resolvedStatus = review
+    ? getResolvedReviewStatus(review)
+    : "published";
+  const isPosterBlocked = review ? isPosterBlockedReview(review.slug) : false;
 
   return (
     <form
@@ -89,14 +97,23 @@ function ReviewForm({
       </div>
       <div className="field">
         <label htmlFor={`status-${review?.id ?? "new"}`}>Status</label>
+        {isPosterBlocked ? (
+          <p className="muted-note">Blocked: Missing poster</p>
+        ) : null}
         <select
           id={`status-${review?.id ?? "new"}`}
           name="status"
-          defaultValue={review?.status ?? "published"}
+          defaultValue={resolvedStatus}
+          disabled={isPosterBlocked}
         >
-          <option value="published">Published</option>
+          <option value="published" disabled={isPosterBlocked}>
+            Published
+          </option>
           <option value="draft">Draft</option>
         </select>
+        {isPosterBlocked ? (
+          <input type="hidden" name="status" value="draft" />
+        ) : null}
       </div>
       <div className="field">
         <label htmlFor={`reviewer-${review?.id ?? "new"}`}>Reviewer Name</label>
@@ -323,7 +340,10 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
           {data.reviews.map((review) => (
             <details key={review.id} className="admin-item">
               <summary>
-                {review.movieTitle} · {review.status} · {formatDate(review.updatedAt)}
+                {review.movieTitle} · {getResolvedReviewStatus(review)}
+                {isPosterBlockedReview(review.slug) ? " · blocked: missing poster" : ""}
+                {" · "}
+                {formatDate(review.updatedAt)}
               </summary>
               <ReviewForm review={review} />
             </details>

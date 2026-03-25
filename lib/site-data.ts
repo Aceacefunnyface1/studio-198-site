@@ -108,8 +108,16 @@ function enforceReviewPolicies(review: Review) {
   return {
     ...review,
     posterImage: normalizePosterPath(review.posterImage),
-    status: forcedDraftSlugs.has(review.slug) ? "draft" : review.status,
+    status: getResolvedReviewStatus(review),
   } satisfies Review;
+}
+
+export function isPosterBlockedReview(slug: string) {
+  return forcedDraftSlugs.has(slug);
+}
+
+export function getResolvedReviewStatus(review: Pick<Review, "slug" | "status">) {
+  return forcedDraftSlugs.has(review.slug) ? "draft" : review.status;
 }
 
 function mergeSiteData(existing: SiteData, bundled: SiteData) {

@@ -2674,7 +2674,7 @@
       "movieTitle": "Monty Python and the Holy Grail",
       "slug": "monty-python-and-the-holy-grail",
       "releaseYear": 1975,
-      "posterImage": "",
+      "posterImage": "/posters/imported/monty-python-and-the-holy-grail.jpg",
       "backdropImage": "",
       "verdict": "ONLY IF YOU'RE INTO IT",
       "rating": null,
@@ -2692,7 +2692,7 @@
       "moodTags": [],
       "runtime": "",
       "director": "",
-      "status": "draft",
+      "status": "published",
       "imdbTop250Rank": 163
     },
     {
@@ -4364,7 +4364,7 @@
       "movieTitle": "The Big Lebowski",
       "slug": "the-big-lebowski",
       "releaseYear": 1998,
-      "posterImage": "",
+      "posterImage": "/posters/imported/the-big-lebowski.jpg",
       "backdropImage": "",
       "verdict": "WATCH",
       "rating": null,
@@ -4382,7 +4382,7 @@
       "moodTags": [],
       "runtime": "",
       "director": "",
-      "status": "draft",
+      "status": "published",
       "imdbTop250Rank": 228
     },
     {
@@ -4546,7 +4546,7 @@
       "movieTitle": "The Incredibles",
       "slug": "the-incredibles",
       "releaseYear": 2004,
-      "posterImage": "",
+      "posterImage": "/posters/imported/the-incredibles.jpg",
       "backdropImage": "",
       "verdict": "ONLY IF YOU'RE INTO IT",
       "rating": null,
@@ -4564,7 +4564,7 @@
       "moodTags": [],
       "runtime": "",
       "director": "",
-      "status": "draft",
+      "status": "published",
       "imdbTop250Rank": 235
     },
     {

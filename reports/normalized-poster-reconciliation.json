@@ -1,0 +1,766 @@
+{
+  "pending_review_count": 108,
+  "poster_file_count": 454,
+  "confirmed_match_count": 102,
+  "uncertain_match_count": 3,
+  "still_missing_count": 3,
+  "confirmed_matches": [
+    {
+      "title": "12 Years a Slave",
+      "slug": "12-years-a-slave",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/12-years-a-slave.jpeg",
+      "poster_file": "12-years-a-slave.jpeg"
+    },
+    {
+      "title": "A Beautiful Mind",
+      "slug": "a-beautiful-mind",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/a-beautiful-mind.jpeg",
+      "poster_file": "a-beautiful-mind.jpeg"
+    },
+    {
+      "title": "A Silent Voice: The Movie",
+      "slug": "a-silent-voice-the-movie",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/a-silent-voice-the-movie.jpeg",
+      "poster_file": "a-silent-voice-the-movie.jpeg"
+    },
+    {
+      "title": "All About Eve",
+      "slug": "all-about-eve",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/all-about-eve.jpeg",
+      "poster_file": "all-about-eve.jpeg"
+    },
+    {
+      "title": "Barry Lyndon",
+      "slug": "barry-lyndon",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/barry-lyndon.jpeg",
+      "poster_file": "barry-lyndon.jpeg"
+    },
+    {
+      "title": "Before Sunrise",
+      "slug": "before-sunrise",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/before-sunrise.jpeg",
+      "poster_file": "before-sunrise.jpeg"
+    },
+    {
+      "title": "Before Sunset",
+      "slug": "before-sunset",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/before-sunset.jpeg",
+      "poster_file": "before-sunset.jpeg"
+    },
+    {
+      "title": "Ben-Hur",
+      "slug": "ben-hur",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/ben-hur.jpeg",
+      "poster_file": "ben-hur.jpeg"
+    },
+    {
+      "title": "Blade Runner",
+      "slug": "blade-runner",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/blade-runner.jpeg",
+      "poster_file": "blade-runner.jpeg"
+    },
+    {
+      "title": "Casino",
+      "slug": "casino",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/casino.jpeg",
+      "poster_file": "casino.jpeg"
+    },
+    {
+      "title": "Catch Me If You Can",
+      "slug": "catch-me-if-you-can",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/catch-me-if-you-can.jpeg",
+      "poster_file": "catch-me-if-you-can.jpeg"
+    },
+    {
+      "title": "Chainsaw Man - The Movie: Reze Arc",
+      "slug": "chainsaw-man-the-movie-reze-arc",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/chainsaw-man-the-movie-reze-arc.jpeg",
+      "poster_file": "chainsaw-man-the-movie-reze-arc.jpeg"
+    },
+    {
+      "title": "Children of Heaven",
+      "slug": "children-of-heaven",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/children-of-heaven.jpeg",
+      "poster_file": "children-of-heaven.jpeg"
+    },
+    {
+      "title": "Chinatown",
+      "slug": "chinatown",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/chinatown.jpeg",
+      "poster_file": "chinatown.jpeg"
+    },
+    {
+      "title": "Dead Poets Society",
+      "slug": "dead-poets-society",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/dead-poets-society.jpeg",
+      "poster_file": "dead-poets-society.jpeg"
+    },
+    {
+      "title": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
+      "slug": "demon-slayer-kimetsu-no-yaiba-infinity-castle",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/demon-slayer-kimetsu-no-yaiba-infinity-castle.jpeg",
+      "poster_file": "demon-slayer-kimetsu-no-yaiba-infinity-castle.jpeg"
+    },
+    {
+      "title": "Dial M for Murder",
+      "slug": "dial-m-for-murder",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/dial-m-for-murder.jpeg",
+      "poster_file": "dial-m-for-murder.jpeg"
+    },
+    {
+      "title": "Drishyam",
+      "slug": "drishyam",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/drishyam.jpeg",
+      "poster_file": "drishyam.jpeg"
+    },
+    {
+      "title": "Fargo",
+      "slug": "fargo",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/fargo.jpeg",
+      "poster_file": "fargo.jpeg"
+    },
+    {
+      "title": "Finding Nemo",
+      "slug": "finding-nemo",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/finding-nemo.jpeg",
+      "poster_file": "finding-nemo.jpeg"
+    },
+    {
+      "title": "Ford v Ferrari",
+      "slug": "ford-v-ferrari",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/ford-v-ferrari.jpeg",
+      "poster_file": "ford-v-ferrari.jpeg"
+    },
+    {
+      "title": "Gangs of Wasseypur",
+      "slug": "gangs-of-wasseypur",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/gangs-of-wasseypur.jpeg",
+      "poster_file": "gangs-of-wasseypur.jpeg"
+    },
+    {
+      "title": "Gone Girl",
+      "slug": "gone-girl",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/gone-girl.jpeg",
+      "poster_file": "gone-girl.jpeg"
+    },
+    {
+      "title": "Gone with the Wind",
+      "slug": "gone-with-the-wind",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/gone-with-the-wind.jpeg",
+      "poster_file": "gone-with-the-wind.jpeg"
+    },
+    {
+      "title": "Gran Torino",
+      "slug": "gran-torino",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/gran-torino.jpeg",
+      "poster_file": "gran-torino.jpeg"
+    },
+    {
+      "title": "Hacksaw Ridge",
+      "slug": "hacksaw-ridge",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/hacksaw-ridge.jpeg",
+      "poster_file": "hacksaw-ridge.jpeg"
+    },
+    {
+      "title": "Harry Potter and the Deathly Hallows: Part 2",
+      "slug": "harry-potter-and-the-deathly-hallows-part-2",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/harry-potter-and-the-deathly-hallows-part-2.jpeg",
+      "poster_file": "harry-potter-and-the-deathly-hallows-part-2.jpeg"
+    },
+    {
+      "title": "Hotel Rwanda",
+      "slug": "hotel-rwanda",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/hotel-rwanda.jpeg",
+      "poster_file": "hotel-rwanda.jpeg"
+    },
+    {
+      "title": "How to Train Your Dragon",
+      "slug": "how-to-train-your-dragon",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/how-to-train-your-dragon.jpeg",
+      "poster_file": "how-to-train-your-dragon.jpeg"
+    },
+    {
+      "title": "I Swear",
+      "slug": "i-swear",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/i-swear.jpeg",
+      "poster_file": "i-swear.jpeg"
+    },
+    {
+      "title": "In the Name of the Father",
+      "slug": "in-the-name-of-the-father",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/in-the-name-of-the-father.jpeg",
+      "poster_file": "in-the-name-of-the-father.jpeg"
+    },
+    {
+      "title": "Inside Out",
+      "slug": "inside-out",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/inside-out.jpeg",
+      "poster_file": "inside-out.jpeg"
+    },
+    {
+      "title": "Jai Bhim",
+      "slug": "jai-bhim",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/jai-bhim.jpeg",
+      "poster_file": "jai-bhim.jpeg"
+    },
+    {
+      "title": "Jaws",
+      "slug": "jaws",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/jaws.jpeg",
+      "poster_file": "jaws.jpeg"
+    },
+    {
+      "title": "Kill Bill: Vol. 1",
+      "slug": "kill-bill-vol-1",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/kill-bill-vol-1.jpeg",
+      "poster_file": "kill-bill-vol-1.jpeg"
+    },
+    {
+      "title": "Klaus",
+      "slug": "klaus",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/klaus.jpeg",
+      "poster_file": "klaus.jpeg"
+    },
+    {
+      "title": "La haine",
+      "slug": "la-haine",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/la-haine.jpeg",
+      "poster_file": "la-haine.jpeg"
+    },
+    {
+      "title": "Lock, Stock and Two Smoking Barrels",
+      "slug": "lock-stock-and-two-smoking-barrels",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/lock-stock-and-two-smoking-barrels.jpeg",
+      "poster_file": "lock-stock-and-two-smoking-barrels.jpeg"
+    },
+    {
+      "title": "Logan",
+      "slug": "logan",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/logan.jpeg",
+      "poster_file": "logan.jpeg"
+    },
+    {
+      "title": "Mad Max: Fury Road",
+      "slug": "mad-max-fury-road",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/mad-max-fury-road.jpeg",
+      "poster_file": "mad-max-fury-road.jpeg"
+    },
+    {
+      "title": "Maharaja",
+      "slug": "maharaja",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/maharaja.jpeg",
+      "poster_file": "maharaja.jpeg"
+    },
+    {
+      "title": "Mary and Max",
+      "slug": "mary-and-max",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/mary-and-max.jpeg",
+      "poster_file": "mary-and-max.jpeg"
+    },
+    {
+      "title": "Memories of Murder",
+      "slug": "memories-of-murder",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/memories-of-murder.jpeg",
+      "poster_file": "memories-of-murder.jpeg"
+    },
+    {
+      "title": "Million Dollar Baby",
+      "slug": "million-dollar-baby",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/million-dollar-baby.jpeg",
+      "poster_file": "million-dollar-baby.jpeg"
+    },
+    {
+      "title": "Monsters, Inc.",
+      "slug": "monsters-inc",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/monsters-inc.jpeg",
+      "poster_file": "monsters-inc.jpeg"
+    },
+    {
+      "title": "Mr. Smith Goes to Washington",
+      "slug": "mr-smith-goes-to-washington",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/mr-smith-goes-to-washington.jpeg",
+      "poster_file": "mr-smith-goes-to-washington.jpeg"
+    },
+    {
+      "title": "My Father and My Son",
+      "slug": "my-father-and-my-son",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/my-father-and-my-son.jpeg",
+      "poster_file": "my-father-and-my-son.jpeg"
+    },
+    {
+      "title": "My Neighbor Totoro",
+      "slug": "my-neighbor-totoro",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/my-neighbor-totoro.jpeg",
+      "poster_file": "my-neighbor-totoro.jpeg"
+    },
+    {
+      "title": "Network",
+      "slug": "network",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/network.jpeg",
+      "poster_file": "network.jpeg"
+    },
+    {
+      "title": "On the Waterfront",
+      "slug": "on-the-waterfront",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/on-the-waterfront.jpeg",
+      "poster_file": "on-the-waterfront.jpeg"
+    },
+    {
+      "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "slug": "pirates-of-the-caribbean-the-curse-of-the-black-pearl",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/pirates-of-the-caribbean-the-curse-of-the-black-pearl.jpeg",
+      "poster_file": "pirates-of-the-caribbean-the-curse-of-the-black-pearl.jpeg"
+    },
+    {
+      "title": "Platoon",
+      "slug": "platoon",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/platoon.jpeg",
+      "poster_file": "platoon.jpeg"
+    },
+    {
+      "title": "Prisoners",
+      "slug": "prisoners",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/prisoners.jpeg",
+      "poster_file": "prisoners.jpeg"
+    },
+    {
+      "title": "Raging Bull",
+      "slug": "raging-bull",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/raging-bull.jpeg",
+      "poster_file": "raging-bull.jpeg"
+    },
+    {
+      "title": "Ran",
+      "slug": "ran",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/ran.jpeg",
+      "poster_file": "ran.jpeg"
+    },
+    {
+      "title": "Rashomon",
+      "slug": "rashomon",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/rashomon.jpeg",
+      "poster_file": "rashomon.jpeg"
+    },
+    {
+      "title": "Ratatouille",
+      "slug": "ratatouille",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/ratatouille.jpeg",
+      "poster_file": "ratatouille.jpeg"
+    },
+    {
+      "title": "Rocky",
+      "slug": "rocky",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/rocky.jpeg",
+      "poster_file": "rocky.jpeg"
+    },
+    {
+      "title": "Room",
+      "slug": "room",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/room.jpeg",
+      "poster_file": "room.jpeg"
+    },
+    {
+      "title": "Rush",
+      "slug": "rush",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/rush.jpeg",
+      "poster_file": "rush.jpeg"
+    },
+    {
+      "title": "Sherlock Jr.",
+      "slug": "sherlock-jr",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/sherlock-jr.jpeg",
+      "poster_file": "sherlock-jr.jpeg"
+    },
+    {
+      "title": "Spider-Man: No Way Home",
+      "slug": "spider-man-no-way-home",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/spider-man-no-way-home.jpeg",
+      "poster_file": "spider-man-no-way-home.jpeg"
+    },
+    {
+      "title": "Spotlight",
+      "slug": "spotlight",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/spotlight.jpeg",
+      "poster_file": "spotlight.jpeg"
+    },
+    {
+      "title": "Stand by Me",
+      "slug": "stand-by-me",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/stand-by-me.jpeg",
+      "poster_file": "stand-by-me.jpeg"
+    },
+    {
+      "title": "The Battle of Algiers",
+      "slug": "the-battle-of-algiers",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-battle-of-algiers.jpeg",
+      "poster_file": "the-battle-of-algiers.jpeg"
+    },
+    {
+      "title": "The Best of Youth",
+      "slug": "the-best-of-youth",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-best-of-youth.jpeg",
+      "poster_file": "the-best-of-youth.jpeg"
+    },
+    {
+      "title": "The Best Years of Our Lives",
+      "slug": "the-best-years-of-our-lives",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-best-years-of-our-lives.jpeg",
+      "poster_file": "the-best-years-of-our-lives.jpeg"
+    },
+    {
+      "title": "The Bridge on the River Kwai",
+      "slug": "the-bridge-on-the-river-kwai",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-bridge-on-the-river-kwai.jpeg",
+      "poster_file": "the-bridge-on-the-river-kwai.jpeg"
+    },
+    {
+      "title": "The Chaos Class Failed the Class",
+      "slug": "the-chaos-class-failed-the-class",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-chaos-class-failed-the-class.jpeg",
+      "poster_file": "the-chaos-class-failed-the-class.jpeg"
+    },
+    {
+      "title": "The Deer Hunter",
+      "slug": "the-deer-hunter",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-deer-hunter.jpeg",
+      "poster_file": "the-deer-hunter.jpeg"
+    },
+    {
+      "title": "The Elephant Man",
+      "slug": "the-elephant-man",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-elephant-man.jpeg",
+      "poster_file": "the-elephant-man.jpeg"
+    },
+    {
+      "title": "The Exorcist",
+      "slug": "the-exorcist",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-exorcist.jpeg",
+      "poster_file": "the-exorcist.jpeg"
+    },
+    {
+      "title": "The Father",
+      "slug": "the-father",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-father.jpeg",
+      "poster_file": "the-father.jpeg"
+    },
+    {
+      "title": "The General",
+      "slug": "the-general",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-general.jpeg",
+      "poster_file": "the-general.jpeg"
+    },
+    {
+      "title": "The Gold Rush",
+      "slug": "the-gold-rush",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-gold-rush.jpeg",
+      "poster_file": "the-gold-rush.jpeg"
+    },
+    {
+      "title": "The Grand Budapest Hotel",
+      "slug": "the-grand-budapest-hotel",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-grand-budapest-hotel.jpeg",
+      "poster_file": "the-grand-budapest-hotel.jpeg"
+    },
+    {
+      "title": "The Grapes of Wrath",
+      "slug": "the-grapes-of-wrath",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-grapes-of-wrath.jpeg",
+      "poster_file": "the-grapes-of-wrath.jpeg"
+    },
+    {
+      "title": "The Great Escape",
+      "slug": "the-great-escape",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-great-escape.jpeg",
+      "poster_file": "the-great-escape.jpeg"
+    },
+    {
+      "title": "The Handmaiden",
+      "slug": "the-handmaiden",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-handmaiden.jpeg",
+      "poster_file": "the-handmaiden.jpeg"
+    },
+    {
+      "title": "The Iron Giant",
+      "slug": "the-iron-giant",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-iron-giant.jpeg",
+      "poster_file": "the-iron-giant.jpeg"
+    },
+    {
+      "title": "The Passion of Joan of Arc",
+      "slug": "the-passion-of-joan-of-arc",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-passion-of-joan-of-arc.jpeg",
+      "poster_file": "the-passion-of-joan-of-arc.jpeg"
+    },
+    {
+      "title": "The Secret in Their Eyes",
+      "slug": "the-secret-in-their-eyes",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-secret-in-their-eyes.jpeg",
+      "poster_file": "the-secret-in-their-eyes.jpeg"
+    },
+    {
+      "title": "The Seventh Seal",
+      "slug": "the-seventh-seal",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-seventh-seal.jpeg",
+      "poster_file": "the-seventh-seal.jpeg"
+    },
+    {
+      "title": "The Sixth Sense",
+      "slug": "the-sixth-sense",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-sixth-sense.jpeg",
+      "poster_file": "the-sixth-sense.jpeg"
+    },
+    {
+      "title": "The Sound of Music",
+      "slug": "the-sound-of-music",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-sound-of-music.jpeg",
+      "poster_file": "the-sound-of-music.jpeg"
+    },
+    {
+      "title": "The Terminator",
+      "slug": "the-terminator",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-terminator.jpeg",
+      "poster_file": "the-terminator.jpeg"
+    },
+    {
+      "title": "The Thing",
+      "slug": "the-thing",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-thing.jpeg",
+      "poster_file": "the-thing.jpeg"
+    },
+    {
+      "title": "The Third Man",
+      "slug": "the-third-man",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-third-man.jpeg",
+      "poster_file": "the-third-man.jpeg"
+    },
+    {
+      "title": "The Treasure of the Sierra Madre",
+      "slug": "the-treasure-of-the-sierra-madre",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-treasure-of-the-sierra-madre.jpeg",
+      "poster_file": "the-treasure-of-the-sierra-madre.jpeg"
+    },
+    {
+      "title": "The Wages of Fear",
+      "slug": "the-wages-of-fear",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-wages-of-fear.jpeg",
+      "poster_file": "the-wages-of-fear.jpeg"
+    },
+    {
+      "title": "The Wild Robot",
+      "slug": "the-wild-robot",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-wild-robot.jpeg",
+      "poster_file": "the-wild-robot.jpeg"
+    },
+    {
+      "title": "The Wizard of Oz",
+      "slug": "the-wizard-of-oz",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/the-wizard-of-oz.jpeg",
+      "poster_file": "the-wizard-of-oz.jpeg"
+    },
+    {
+      "title": "Three Billboards Outside Ebbing, Missouri",
+      "slug": "three-billboards-outside-ebbing-missouri",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/three-billboards-outside-ebbing-missouri.jpeg",
+      "poster_file": "three-billboards-outside-ebbing-missouri.jpeg"
+    },
+    {
+      "title": "Tokyo Story",
+      "slug": "tokyo-story",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/tokyo-story.jpeg",
+      "poster_file": "tokyo-story.jpeg"
+    },
+    {
+      "title": "Top Gun: Maverick",
+      "slug": "top-gun-maverick",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/top-gun-maverick.jpeg",
+      "poster_file": "top-gun-maverick.jpeg"
+    },
+    {
+      "title": "Trainspotting",
+      "slug": "trainspotting",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/trainspotting.jpeg",
+      "poster_file": "trainspotting.jpeg"
+    },
+    {
+      "title": "Unforgiven",
+      "slug": "unforgiven",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/unforgiven.jpeg",
+      "poster_file": "unforgiven.jpeg"
+    },
+    {
+      "title": "V for Vendetta",
+      "slug": "v-for-vendetta",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/v-for-vendetta.jpeg",
+      "poster_file": "v-for-vendetta.jpeg"
+    },
+    {
+      "title": "Warrior",
+      "slug": "warrior",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/warrior.jpeg",
+      "poster_file": "warrior.jpeg"
+    },
+    {
+      "title": "Wild Strawberries",
+      "slug": "wild-strawberries",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/wild-strawberries.jpeg",
+      "poster_file": "wild-strawberries.jpeg"
+    },
+    {
+      "title": "Wild Tales",
+      "slug": "wild-tales",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/wild-tales.jpeg",
+      "poster_file": "wild-tales.jpeg"
+    },
+    {
+      "title": "Yojimbo",
+      "slug": "yojimbo",
+      "match_type": "exact-slug",
+      "poster_path": "/posters/batch-17/yojimbo.jpeg",
+      "poster_file": "yojimbo.jpeg"
+    }
+  ],
+  "uncertain_matches": [
+    {
+      "title": "Monty Python and the Holy Grail",
+      "slug": "monty-python-and-the-holy-grail",
+      "reason": "multiple exact slug matches",
+      "candidates": [
+        "/posters/imported/monty-python-and-the-holy-grail.jpg",
+        "/posters/batch-17/monty-python-and-the-holy-grail.jpeg"
+      ]
+    },
+    {
+      "title": "The Big Lebowski",
+      "slug": "the-big-lebowski",
+      "reason": "multiple exact slug matches",
+      "candidates": [
+        "/posters/imported/the-big-lebowski.jpg",
+        "/posters/batch-17/the-big-lebowski.jpeg"
+      ]
+    },
+    {
+      "title": "The Incredibles",
+      "slug": "the-incredibles",
+      "reason": "multiple exact slug matches",
+      "candidates": [
+        "/posters/imported/the-incredibles.jpg",
+        "/posters/batch-17/the-incredibles.jpeg"
+      ]
+    }
+  ],
+  "still_missing": [
+    {
+      "title": "Hachi: A Dog's Tale",
+      "slug": "hachi-a-dog-s-tale"
+    },
+    {
+      "title": "Howl's Moving Castle",
+      "slug": "howl-s-moving-castle"
+    },
+    {
+      "title": "Pan's Labyrinth",
+      "slug": "pan-s-labyrinth"
+    }
+  ]
+}

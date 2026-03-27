@@ -47,6 +47,11 @@ export const metadata: Metadata = {
     description:
       "Verdict-driven movie reviews with a dark cinematic Studio 198 identity.",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   verification: {
     google: "DiAhR40RSmomb0K3RUxbwf9aKoYAP3Gzjz6VQpfBI-U",
   },

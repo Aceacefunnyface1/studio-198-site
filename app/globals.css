@@ -451,12 +451,12 @@ textarea {
 
 .card-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .card-grid-featured,
 .related-grid {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .review-card {
@@ -990,6 +990,20 @@ textarea {
 
   .hero-feature-media {
     min-height: 26rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .card-grid-featured,
+  .related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1500px) {
+  .card-grid-featured,
+  .related-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

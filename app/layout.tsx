@@ -47,6 +47,9 @@ export const metadata: Metadata = {
     description:
       "Verdict-driven movie reviews with a dark cinematic Studio 198 identity.",
   },
+  verification: {
+    google: "DiAhR40RSmomb0K3RUxbwf9aKoYAP3Gzjz6VQpfBI-U",
+  },
 };
 
 export default function RootLayout({

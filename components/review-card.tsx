@@ -6,48 +6,89 @@ type ReviewCardProps = {
   review: ReviewWithStats;
 };
 
+function getRatingVisual(rating: number | null) {
+  if (rating !== null && rating >= 4) {
+    return {
+      accentClass: "review-card-elite",
+      label: "elite",
+      iconSrc: "/rating-icons/fire-eye.png",
+      iconAlt: "Fire eye rating icon",
+    };
+  }
+
+  if (rating !== null && rating >= 3) {
+    return {
+      accentClass: "review-card-solid",
+      label: "solid",
+      iconSrc: "/rating-icons/skull.png",
+      iconAlt: "Skull rating icon",
+    };
+  }
+
+  if (rating !== null && rating >= 1.1) {
+    return {
+      accentClass: "review-card-bad",
+      label: "bad",
+      iconSrc: "/rating-icons/block.png",
+      iconAlt: "Block rating icon",
+    };
+  }
+
+  return {
+    accentClass: "review-card-trash",
+    label: "trash",
+    iconSrc: "/rating-icons/poop.png",
+    iconAlt: "Trash rating icon",
+  };
+}
+
 export function ReviewCard({ review }: ReviewCardProps) {
+  const ratingVisual = getRatingVisual(review.rating);
+
   return (
-    <article className="review-card">
+    <article className={`review-card ${ratingVisual.accentClass}`}>
       <PosterFrame
         posterImage={review.resolvedPosterImage}
         title={review.movieTitle}
         className="review-card-poster"
       />
 
-      <div className="review-copy">
-        <span className={`verdict-badge verdict-${review.verdictKey}`}>
-          {review.verdict}
-        </span>
-        <div className="review-heading">
-          <h3>
-            {review.movieTitle}
-            {review.releaseYear ? ` (${review.releaseYear})` : ""}
+      <div className="review-card-body">
+        <div className="review-card-heading">
+          <h3 className="review-card-title">
+            <span>{review.movieTitle}</span>
+            {review.releaseYear ? (
+              <span className="review-card-year">({review.releaseYear})</span>
+            ) : null}
           </h3>
           {review.director ? (
-            <p className="review-subline">Directed by {review.director}</p>
+            <p className="review-card-director">Directed by {review.director}</p>
           ) : null}
         </div>
-        <p>{review.quickHit || "Review copy pending publication."}</p>
-        <div className="review-meta">
-          <span>{review.ratingLabel}</span>
-          <span>{review.likeCount} likes</span>
-          <span>{review.commentCount} comments</span>
-        </div>
-        <div className="button-row">
-          <Link href={`/reviews/${review.slug}`} className="button-primary">
+
+        <p className="review-card-hook">
+          {review.quickHit || "Studio 198 verdict locked. Read the full take."}
+        </p>
+
+        <div className="review-card-footer">
+          <Link href={`/reviews/${review.slug}`} className="button-primary review-card-button">
             Read Review
           </Link>
-          {review.reviewVideoUrl ? (
-            <a
-              href={review.reviewVideoUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="button-secondary"
-            >
-              Watch Video
-            </a>
-          ) : null}
+
+          <div className="review-card-rating" aria-label={`${ratingVisual.label} rating ${review.rating ?? 0}`}>
+            <span className="review-card-rating-label">{ratingVisual.label}</span>
+            <div className="review-card-rating-main">
+              <img
+                src={ratingVisual.iconSrc}
+                alt={ratingVisual.iconAlt}
+                className="review-card-rating-icon"
+                loading="lazy"
+              />
+              <span className="review-card-rating-value">
+                {review.rating !== null ? review.rating.toFixed(1) : "0.0"}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </article>

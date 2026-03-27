@@ -460,15 +460,60 @@ textarea {
 }
 
 .review-card {
+  --card-accent: #ff7a18;
+  --card-accent-soft: rgba(255, 122, 24, 0.2);
+  --card-accent-glow: rgba(255, 122, 24, 0.32);
   display: grid;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 1.35rem;
+  gap: 1.05rem;
+  padding: 0.95rem;
+  border-radius: 1.5rem;
   align-content: start;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+    linear-gradient(180deg, rgba(7, 7, 7, 0.98), rgba(2, 2, 2, 0.96));
+  overflow: hidden;
+}
+
+.review-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, var(--card-accent-soft), transparent 34%),
+    linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.18) 100%);
+  pointer-events: none;
+}
+
+.review-card-elite {
+  --card-accent: #ff5b1f;
+  --card-accent-soft: rgba(255, 91, 31, 0.24);
+  --card-accent-glow: rgba(255, 91, 31, 0.36);
+}
+
+.review-card-solid {
+  --card-accent: #ff8a1a;
+  --card-accent-soft: rgba(255, 138, 26, 0.22);
+  --card-accent-glow: rgba(255, 138, 26, 0.34);
+}
+
+.review-card-bad {
+  --card-accent: #9b241c;
+  --card-accent-soft: rgba(155, 36, 28, 0.24);
+  --card-accent-glow: rgba(155, 36, 28, 0.32);
+}
+
+.review-card-trash {
+  --card-accent: #a8601b;
+  --card-accent-soft: rgba(168, 96, 27, 0.24);
+  --card-accent-glow: rgba(168, 96, 27, 0.34);
 }
 
 .review-card-poster {
   aspect-ratio: 2 / 3;
+  border-radius: 1.15rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.45);
 }
 
 .poster-frame-fallback {
@@ -498,11 +543,6 @@ textarea {
   line-height: 1.15;
 }
 
-.review-copy {
-  display: grid;
-  gap: 0.7rem;
-}
-
 .review-heading,
 .detail-heading {
   display: grid;
@@ -523,13 +563,124 @@ textarea {
   font-size: 0.95rem;
 }
 
+.review-card-body {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.review-card-heading {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.review-card-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin: 0;
+  color: #b6ff2f;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.2rem, 1rem + 0.8vw, 1.55rem);
+  line-height: 0.98;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-shadow: 0 0 22px rgba(182, 255, 47, 0.15);
+}
+
+.review-card-year {
+  color: rgba(182, 255, 47, 0.76);
+  font-size: 0.88em;
+}
+
+.review-card-director,
 .review-subline,
 .detail-subline {
   margin: 0;
   color: var(--muted-strong);
-  font-size: 0.84rem;
-  letter-spacing: 0.04em;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+.review-card-hook {
+  margin: 0;
+  min-height: 3.6rem;
+  color: #f4efe4;
+  font-size: 0.96rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.review-card-footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 0.9rem;
+  margin-top: auto;
+}
+
+.review-card-button {
+  flex: 0 0 auto;
+  min-width: 8.4rem;
+  box-shadow: 0 12px 28px rgba(164, 13, 25, 0.28);
+}
+
+.review-card-rating {
+  position: relative;
+  display: grid;
+  justify-items: end;
+  gap: 0.18rem;
+  padding: 0.7rem 0.85rem 0.1rem 1rem;
+  text-align: right;
+}
+
+.review-card-rating::before {
+  content: "";
+  position: absolute;
+  inset: 0.1rem 0 0 auto;
+  width: 8.25rem;
+  border-radius: 999px 999px 1rem 1rem;
+  background: radial-gradient(circle at center, var(--card-accent-glow), transparent 72%);
+  filter: blur(18px);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.review-card-rating-label {
+  position: relative;
+  z-index: 1;
+  color: var(--card-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.review-card-rating-main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: end;
+  gap: 0.45rem;
+}
+
+.review-card-rating-icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px var(--card-accent-glow));
+}
+
+.review-card-rating-value {
+  color: #fff3e6;
+  font-size: clamp(2rem, 1.4rem + 1.5vw, 2.9rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  text-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
 }
 
 .review-meta span,

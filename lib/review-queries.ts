@@ -5,6 +5,10 @@ import { readSiteData, sortReviewsByNewest } from "@/lib/site-data";
 import { Comment, Review, ReviewWithStats } from "@/lib/types";
 import { ratingLabel, verdictKey } from "@/lib/utils";
 
+function hasResolvedPoster(review: Review) {
+  return resolvePoster(review).posterStatus !== "missing";
+}
+
 function withStats(review: Review, likes: Record<string, number>, comments: Comment[]) {
   const visibleComments = comments.filter(
     (comment) => comment.reviewId === review.id && comment.status === "visible",
@@ -23,7 +27,7 @@ function withStats(review: Review, likes: Record<string, number>, comments: Comm
 export async function getPublishedReviewsWithStats() {
   const data = await readSiteData();
   const publishedReviews = data.reviews.filter(
-    (review) => review.status === "published",
+    (review) => review.status === "published" && hasResolvedPoster(review),
   );
 
   return sortReviewsByNewest(publishedReviews).map((review) =>
@@ -43,7 +47,7 @@ export async function getReviewBundle(slug: string) {
   const data = await readSiteData();
   const review = data.reviews.find((entry) => entry.slug === slug);
 
-  if (!review) {
+  if (!review || !hasResolvedPoster(review)) {
     return null;
   }
 
@@ -57,6 +61,7 @@ export async function getReviewBundle(slug: string) {
     data.reviews.filter(
       (entry) =>
         entry.status === "published" &&
+        hasResolvedPoster(entry) &&
         entry.id !== review.id &&
         entry.genreTags.some((tag) => review.genreTags.includes(tag)),
     ),

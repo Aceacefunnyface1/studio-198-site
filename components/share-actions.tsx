@@ -20,9 +20,13 @@ export function ShareActions({ title, path }: ShareActionsProps) {
       return;
     }
 
-    if (navigator.clipboard?.writeText) {
-      await navigator.clipboard.writeText(shareUrl);
-    } else {
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(shareUrl);
+      } else {
+        window.prompt("Copy this review link:", shareUrl);
+      }
+    } catch {
       window.prompt("Copy this review link:", shareUrl);
     }
 
@@ -47,8 +51,6 @@ export function ShareActions({ title, path }: ShareActionsProps) {
   )}&url=${encodeURIComponent(shareUrl)}`;
   const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
   const redditUrl = `https://www.reddit.com/submit?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(shareText)}`;
-  const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
-
   const mailUrl = `mailto:?subject=${encodeURIComponent(
     `${title} | Snap Critique`,
   )}&body=${encodeURIComponent(`${shareText}\n\n${shareUrl}`)}`;
@@ -78,9 +80,6 @@ export function ShareActions({ title, path }: ShareActionsProps) {
       </a>
       <a className="button-secondary share-action-button" href={redditUrl} target="_blank" rel="noreferrer">
         Reddit
-      </a>
-      <a className="button-secondary share-action-button" href={linkedInUrl} target="_blank" rel="noreferrer">
-        LinkedIn
       </a>
     </div>
   );

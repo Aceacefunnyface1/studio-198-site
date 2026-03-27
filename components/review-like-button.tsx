@@ -16,7 +16,11 @@ export function ReviewLikeButton({ reviewId }: ReviewLikeButtonProps) {
       return false;
     }
 
-    return window.localStorage.getItem(getStorageKey(reviewId)) === "1";
+    try {
+      return window.localStorage.getItem(getStorageKey(reviewId)) === "1";
+    } catch {
+      return false;
+    }
   });
 
   function handleLike() {
@@ -24,8 +28,12 @@ export function ReviewLikeButton({ reviewId }: ReviewLikeButtonProps) {
       return;
     }
 
-    window.localStorage.setItem(getStorageKey(reviewId), "1");
-    setLiked(true);
+    try {
+      window.localStorage.setItem(getStorageKey(reviewId), "1");
+      setLiked(true);
+    } catch {
+      setLiked(true);
+    }
   }
 
   return (

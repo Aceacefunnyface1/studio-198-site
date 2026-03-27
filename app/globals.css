@@ -300,6 +300,32 @@ textarea {
   gap: 0.85rem;
 }
 
+.review-like-shell {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.review-like-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.review-like-shell button[disabled] {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.share-action-button {
+  min-height: 2.65rem;
+}
+
 .button-primary,
 .button-secondary,
 .button-link,

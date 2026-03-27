@@ -3,9 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   addCommentAction,
-  likeReviewAction,
 } from "@/app/actions";
 import { PosterFrame } from "@/components/poster-frame";
+import { ReviewLikeButton } from "@/components/review-like-button";
 import { ReviewCard } from "@/components/review-card";
 import { ShareActions } from "@/components/share-actions";
 import { getReviewBundle } from "@/lib/review-queries";
@@ -134,13 +134,7 @@ export default async function ReviewDetailPage({
               </div>
             </div>
 
-            <form action={likeReviewAction}>
-              <input type="hidden" name="reviewId" value={review.id} />
-              <input type="hidden" name="reviewSlug" value={review.slug} />
-              <button type="submit" className="button-primary">
-                Like This Review
-              </button>
-            </form>
+            <ReviewLikeButton reviewId={review.id} />
 
             <ShareActions title={review.movieTitle} path={`/reviews/${review.slug}`} />
           </div>

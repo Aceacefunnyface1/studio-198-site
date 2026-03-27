@@ -44,6 +44,8 @@ function getRatingVisual(rating: number | null) {
 
 export function ReviewCard({ review }: ReviewCardProps) {
   const ratingVisual = getRatingVisual(review.rating);
+  const likeCount = review.likeCount ?? 0;
+  const commentCount = review.commentCount ?? 0;
 
   return (
     <article className={`review-card ${ratingVisual.accentClass}`}>
@@ -70,23 +72,30 @@ export function ReviewCard({ review }: ReviewCardProps) {
           {review.quickHit || "Studio 198 verdict locked. Read the full take."}
         </p>
 
-        <div className="review-card-footer">
-          <Link href={`/reviews/${review.slug}`} className="button-primary review-card-button">
-            Read Review
-          </Link>
+        <div className="review-card-bottom">
+          <div className="review-card-stats" aria-label="Review engagement">
+            <span>{commentCount} comments</span>
+            <span>{likeCount} likes</span>
+          </div>
 
-          <div className="review-card-rating" aria-label={`${ratingVisual.label} rating ${review.rating ?? 0}`}>
-            <span className="review-card-rating-label">{ratingVisual.label}</span>
-            <div className="review-card-rating-main">
-              <img
-                src={ratingVisual.iconSrc}
-                alt={ratingVisual.iconAlt}
-                className="review-card-rating-icon"
-                loading="lazy"
-              />
-              <span className="review-card-rating-value">
-                {review.rating !== null ? review.rating.toFixed(1) : "0.0"}
-              </span>
+          <div className="review-card-footer">
+            <Link href={`/reviews/${review.slug}`} className="button-primary review-card-button">
+              Read Review
+            </Link>
+
+            <div className="review-card-rating" aria-label={`${ratingVisual.label} rating ${review.rating ?? 0}`}>
+              <span className="review-card-rating-label">{ratingVisual.label}</span>
+              <div className="review-card-rating-main">
+                <img
+                  src={ratingVisual.iconSrc}
+                  alt={ratingVisual.iconAlt}
+                  className="review-card-rating-icon"
+                  loading="lazy"
+                />
+                <span className="review-card-rating-value">
+                  {review.rating !== null ? review.rating.toFixed(1) : "0.0"}
+                </span>
+              </div>
             </div>
           </div>
         </div>

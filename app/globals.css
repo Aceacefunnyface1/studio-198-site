@@ -641,6 +641,35 @@ textarea {
   text-wrap: pretty;
 }
 
+.watch-this-movie {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1.15rem;
+  border: 1px solid rgba(214, 31, 31, 0.2);
+  background:
+    linear-gradient(180deg, rgba(214, 31, 31, 0.08), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.02);
+}
+
+.watch-this-movie-label {
+  margin: 0;
+  color: #f4efe4;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.watch-this-movie-button {
+  width: fit-content;
+  box-shadow: 0 12px 28px rgba(164, 13, 25, 0.28);
+}
+
+.review-card-watch {
+  margin-top: 0.05rem;
+}
+
 .review-card-bottom {
   display: grid;
   gap: 0.7rem;
@@ -878,6 +907,10 @@ textarea {
   margin: 0 0 0.8rem;
   font-family: var(--font-display), Georgia, serif;
   font-size: 1.1rem;
+}
+
+.detail-watch-this-movie {
+  margin-top: -0.1rem;
 }
 
 .comment-shell {

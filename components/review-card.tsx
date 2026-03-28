@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ReviewWithStats } from "@/lib/types";
 import { PosterFrame } from "@/components/poster-frame";
+import { WatchThisMovie } from "@/components/watch-this-movie";
 
 type ReviewCardProps = {
   review: ReviewWithStats;
@@ -71,6 +72,11 @@ export function ReviewCard({ review }: ReviewCardProps) {
         <p className="review-card-hook">
           {review.quickHit || "Studio 198 verdict locked. Read the full take."}
         </p>
+
+        <WatchThisMovie
+          url={review.whereToWatchUrl}
+          className="review-card-watch"
+        />
 
         <div className="review-card-bottom">
           <div className="review-card-stats" aria-label="Review engagement">

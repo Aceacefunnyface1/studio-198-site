@@ -8,6 +8,7 @@ import { PosterFrame } from "@/components/poster-frame";
 import { ReviewLikeButton } from "@/components/review-like-button";
 import { ReviewCard } from "@/components/review-card";
 import { ShareActions } from "@/components/share-actions";
+import { WatchThisMovie } from "@/components/watch-this-movie";
 import { getReviewBundle } from "@/lib/review-queries";
 import { formatDate } from "@/lib/utils";
 
@@ -93,6 +94,11 @@ export default async function ReviewDetailPage({
               </p>
             </div>
 
+            <WatchThisMovie
+              url={review.whereToWatchUrl}
+              className="detail-watch-this-movie"
+            />
+
             <div className="button-row">
               {review.reviewVideoUrl ? (
                 <a
@@ -102,16 +108,6 @@ export default async function ReviewDetailPage({
                   className="button-primary"
                 >
                   Watch Review Video
-                </a>
-              ) : null}
-              {review.whereToWatchUrl ? (
-                <a
-                  href={review.whereToWatchUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="button-secondary"
-                >
-                  Where To Watch
                 </a>
               ) : null}
               <Link href="/reviews" className="button-link">

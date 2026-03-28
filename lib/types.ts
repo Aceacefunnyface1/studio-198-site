@@ -25,7 +25,7 @@ export type Review = {
   fullTake: string;
   reviewVideoUrl: string;
   whereToWatchUrl: string;
-  amazonAffiliateUrl: string;
+  amazonAffiliateUrl?: string;
   createdAt: string;
   updatedAt: string;
   featured: boolean;

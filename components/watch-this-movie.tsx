@@ -1,5 +1,3 @@
-const DEFAULT_AMAZON_WATCH_URL = "https://amzn.to/4sA3DxD";
-
 type WatchThisMovieProps = {
   url?: string | null;
   className?: string;
@@ -9,7 +7,21 @@ export function WatchThisMovie({
   url,
   className = "",
 }: WatchThisMovieProps) {
-  const href = url?.trim() || DEFAULT_AMAZON_WATCH_URL;
+  const href = url?.trim();
+
+  if (!href) {
+    return null;
+  }
+
+  try {
+    const parsedUrl = new URL(href);
+
+    if (!["http:", "https:"].includes(parsedUrl.protocol)) {
+      return null;
+    }
+  } catch {
+    return null;
+  }
 
   return (
     <section className={`watch-this-movie ${className}`.trim()}>

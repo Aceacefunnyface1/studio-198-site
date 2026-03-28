@@ -95,7 +95,7 @@ export default async function ReviewDetailPage({
             </div>
 
             <WatchThisMovie
-              url={review.whereToWatchUrl}
+              url={review.amazonAffiliateUrl}
               className="detail-watch-this-movie"
             />
 

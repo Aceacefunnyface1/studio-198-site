@@ -95,6 +95,7 @@ export async function saveReviewAction(formData: FormData) {
       fullTake: requireText(formData.get("fullTake")),
       reviewVideoUrl: requireText(formData.get("reviewVideoUrl")),
       whereToWatchUrl: requireText(formData.get("whereToWatchUrl")),
+      amazonAffiliateUrl: requireText(formData.get("amazonAffiliateUrl")),
       createdAt: existing?.createdAt || new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       featured: formData.get("featured") === "on",

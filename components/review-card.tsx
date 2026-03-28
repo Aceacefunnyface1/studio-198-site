@@ -74,7 +74,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
         </p>
 
         <WatchThisMovie
-          url={review.whereToWatchUrl}
+          url={review.amazonAffiliateUrl}
           className="review-card-watch"
         />
 

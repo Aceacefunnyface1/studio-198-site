@@ -1,3 +1,5 @@
+const DEFAULT_AMAZON_AFFILIATE_URL = "https://amzn.to/3PtHOkZ";
+
 type WatchThisMovieProps = {
   url?: string | null;
   className?: string;
@@ -7,11 +9,7 @@ export function WatchThisMovie({
   url,
   className = "",
 }: WatchThisMovieProps) {
-  const href = url?.trim();
-
-  if (!href) {
-    return null;
-  }
+  const href = url?.trim() || DEFAULT_AMAZON_AFFILIATE_URL;
 
   try {
     const parsedUrl = new URL(href);

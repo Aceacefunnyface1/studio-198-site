@@ -221,12 +221,18 @@ function ReviewForm({
           defaultValue={review?.reviewVideoUrl ?? ""}
         />
       </div>
+      <input
+        type="hidden"
+        name="whereToWatchUrl"
+        value={review?.whereToWatchUrl ?? ""}
+      />
       <div className="field">
-        <label htmlFor={`watch-${review?.id ?? "new"}`}>Where To Watch URL</label>
+        <label htmlFor={`amazon-${review?.id ?? "new"}`}>Amazon Affiliate URL</label>
         <input
-          id={`watch-${review?.id ?? "new"}`}
-          name="whereToWatchUrl"
-          defaultValue={review?.whereToWatchUrl ?? ""}
+          id={`amazon-${review?.id ?? "new"}`}
+          name="amazonAffiliateUrl"
+          defaultValue={review?.amazonAffiliateUrl ?? ""}
+          placeholder="https://amzn.to/..."
         />
       </div>
       <div className="field">

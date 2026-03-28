@@ -235,6 +235,10 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
         existingReview.whereToWatchUrl,
         bundledReview.whereToWatchUrl,
       ),
+      amazonAffiliateUrl: mergeStringField(
+        existingReview.amazonAffiliateUrl ?? "",
+        bundledReview.amazonAffiliateUrl ?? "",
+      ),
       featured:
         preferBundledReviewFields && bundledReview.featured !== existingReview.featured
           ? bundledReview.featured

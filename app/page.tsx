@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { BrowseExplorer } from "@/components/browse-explorer";
 import { ReviewCard } from "@/components/review-card";
-import { getPublishedReviewsWithStats } from "@/lib/review-queries";
+import {
+  getDailyFeaturedReview,
+  getPublishedReviewsWithStats,
+} from "@/lib/review-queries";
 
 export default async function HomePage() {
   const reviews = await getPublishedReviewsWithStats();
-  const featured = reviews.filter((review) => review.featured).slice(0, 3);
-  const heroReview = featured[0] ?? reviews[0];
+  const heroReview = getDailyFeaturedReview(reviews);
   const latest = [...reviews]
     .sort((a, b) => +new Date(b.createdAt) - +new Date(a.createdAt))
     .slice(0, 3);
@@ -74,7 +76,9 @@ export default async function HomePage() {
           </Link>
         </div>
         <div className="card-grid card-grid-featured">
-          {(featured.length ? featured : latest).map((review) => (
+          {(heroReview ? [heroReview, ...latest.filter((review) => review.id !== heroReview.id)] : latest)
+            .slice(0, 3)
+            .map((review) => (
             <ReviewCard key={review.id} review={review} />
           ))}
         </div>

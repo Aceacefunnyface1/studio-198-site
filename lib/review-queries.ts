@@ -9,6 +9,10 @@ function hasResolvedPoster(review: Review) {
   return resolvePoster(review).posterStatus !== "missing";
 }
 
+function hasAmazonAffiliateUrl(review: Review) {
+  return Boolean(review.amazonAffiliateUrl?.trim());
+}
+
 function withStats(review: Review, likes: Record<string, number>, comments: Comment[]) {
   const visibleComments = comments.filter(
     (comment) => comment.reviewId === review.id && comment.status === "visible",
@@ -41,6 +45,37 @@ export async function getAllReviewsWithStats() {
   return sortReviewsByNewest(data.reviews).map((review) =>
     withStats(review, data.likes, data.comments),
   );
+}
+
+function getDayOfYear(date: Date) {
+  const start = new Date(date.getFullYear(), 0, 0);
+  const diff =
+    date.getTime() -
+    start.getTime() +
+    (start.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000;
+
+  return Math.floor(diff / (1000 * 60 * 60 * 24));
+}
+
+export function getDailyFeaturedReview(
+  reviews: ReviewWithStats[],
+  now = new Date(),
+) {
+  const eligibleReviews = [...reviews]
+    .filter(
+      (review) =>
+        review.status === "published" &&
+        review.posterStatus === "approved" &&
+        hasAmazonAffiliateUrl(review),
+    )
+    .sort((left, right) => left.slug.localeCompare(right.slug));
+
+  if (!eligibleReviews.length) {
+    return null;
+  }
+
+  const dayOfYear = getDayOfYear(now);
+  return eligibleReviews[dayOfYear % eligibleReviews.length];
 }
 
 export async function getReviewBundle(slug: string) {

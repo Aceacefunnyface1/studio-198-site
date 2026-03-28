@@ -24,6 +24,9 @@ export function WatchThisMovie({
   return (
     <section className={`watch-this-movie ${className}`.trim()}>
       <p className="watch-this-movie-label">WATCH THIS MOVIE</p>
+      <p className="watch-this-movie-note">
+        👉 Streaming now — check availability before it rotates out
+      </p>
       <a
         href={href}
         target="_blank"

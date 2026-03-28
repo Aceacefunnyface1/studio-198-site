@@ -661,6 +661,13 @@ textarea {
   text-transform: uppercase;
 }
 
+.watch-this-movie-note {
+  margin: -0.1rem 0 0;
+  color: var(--muted-strong);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
 .watch-this-movie-button {
   width: fit-content;
   box-shadow: 0 12px 28px rgba(164, 13, 25, 0.28);

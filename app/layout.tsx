@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Cinzel_Decorative, Lato } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
@@ -75,6 +76,7 @@ export default function RootLayout({
           <main>{children}</main>
           <SiteFooter />
         </div>
+        <Analytics />
       </body>
     </html>
   );

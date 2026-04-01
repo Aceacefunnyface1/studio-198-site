@@ -24,6 +24,14 @@ export default async function HomePage() {
     <div className="page-stack">
       <section className="hero-panel">
         <div className="hero-noise" aria-hidden="true" />
+        <div className="hero-atmosphere" aria-hidden="true">
+          <div className="hero-haze hero-haze-left" />
+          <div className="hero-haze hero-haze-right" />
+          <div className="hero-light-streak" />
+          <div className="hero-shadow-form" />
+          <div className="hero-silhouette hero-silhouette-left" />
+          <div className="hero-silhouette hero-silhouette-right" />
+        </div>
         <div className="hero-copy">
           <p className="eyebrow">STUDIO 198 PRESENTS</p>
           <h1>SNAP CRITIQUE</h1>

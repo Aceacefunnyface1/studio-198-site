@@ -340,15 +340,16 @@ textarea {
   grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.95fr);
   gap: clamp(1.2rem, 2vw, 1.8rem);
   padding: clamp(1.4rem, 3vw, 2.4rem);
-  border-radius: 1.6rem;
+  border-radius: 0.9rem;
   overflow: hidden;
   position: relative;
   align-items: center;
   min-height: 38rem;
   background:
-    radial-gradient(circle at 72% 26%, rgba(198, 30, 39, 0.18), transparent 26%),
-    radial-gradient(circle at 18% 0%, rgba(209, 109, 41, 0.08), transparent 24%),
-    linear-gradient(145deg, rgba(18, 8, 8, 0.98), rgba(5, 2, 2, 0.96));
+    radial-gradient(circle at 78% 24%, rgba(191, 35, 30, 0.26), transparent 18%),
+    radial-gradient(circle at 60% 42%, rgba(224, 116, 40, 0.12), transparent 22%),
+    linear-gradient(136deg, rgba(15, 9, 9, 0.96), rgba(5, 3, 3, 0.98) 42%, rgba(11, 5, 5, 0.98));
+  isolation: isolate;
 }
 
 .hero-panel::before {
@@ -356,9 +357,9 @@ textarea {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(120deg, rgba(198, 30, 39, 0.28), transparent 28%),
-    radial-gradient(circle at top right, rgba(198, 161, 93, 0.14), transparent 30%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.18), transparent 22%, rgba(0, 0, 0, 0.32) 100%);
+    radial-gradient(circle at 12% 16%, rgba(0, 0, 0, 0.5), transparent 24%),
+    linear-gradient(104deg, rgba(0, 0, 0, 0.46) 0 18%, transparent 34%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.18), transparent 22%, rgba(0, 0, 0, 0.6) 100%);
   pointer-events: none;
 }
 
@@ -367,12 +368,11 @@ textarea {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.42;
+  opacity: 0.72;
   background:
-    linear-gradient(110deg, transparent 0 64%, rgba(255, 255, 255, 0.04) 64.2%, transparent 64.5%),
-    linear-gradient(180deg, transparent 0 88%, rgba(126, 13, 20, 0.3) 100%),
-    linear-gradient(26deg, transparent 0 30%, rgba(198, 30, 39, 0.24) 30.4%, transparent 31%),
-    linear-gradient(151deg, transparent 0 72%, rgba(198, 30, 39, 0.18) 72.3%, transparent 72.8%);
+    linear-gradient(24deg, transparent 0 26%, rgba(200, 46, 31, 0.26) 30%, transparent 36%),
+    linear-gradient(152deg, transparent 0 68%, rgba(200, 46, 31, 0.16) 72%, transparent 76%),
+    radial-gradient(circle at center, transparent 48%, rgba(0, 0, 0, 0.54) 100%);
 }
 
 .hero-copy,
@@ -392,20 +392,106 @@ textarea {
   position: absolute;
   inset: 0;
   background:
+    radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.04), transparent 40%),
     repeating-linear-gradient(
-      135deg,
-      transparent 0 14px,
-      rgba(255, 255, 255, 0.025) 14px 15px
+      0deg,
+      rgba(255, 255, 255, 0.038) 0,
+      rgba(255, 255, 255, 0.038) 1px,
+      transparent 1px,
+      transparent 3px
     ),
     repeating-linear-gradient(
-      12deg,
-      transparent 0 34px,
-      rgba(255, 255, 255, 0.03) 34px 35px
+      87deg,
+      rgba(255, 255, 255, 0.018) 0,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px,
+      transparent 5px
     ),
-    radial-gradient(circle at 35% 50%, rgba(255, 255, 255, 0.06), transparent 42%),
-    radial-gradient(circle at 70% 20%, rgba(198, 30, 39, 0.18), transparent 18%);
-  mix-blend-mode: soft-light;
-  opacity: 0.76;
+    repeating-linear-gradient(
+      128deg,
+      transparent 0 26px,
+      rgba(255, 255, 255, 0.026) 26px 27px
+    );
+  mix-blend-mode: screen;
+  opacity: 0.4;
+}
+
+.hero-atmosphere {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-haze,
+.hero-light-streak,
+.hero-shadow-form,
+.hero-silhouette {
+  position: absolute;
+}
+
+.hero-haze {
+  border-radius: 999px;
+  filter: blur(44px);
+  mix-blend-mode: screen;
+  opacity: 0.55;
+}
+
+.hero-haze-left {
+  left: -3rem;
+  bottom: -2rem;
+  width: 18rem;
+  height: 14rem;
+  background: radial-gradient(circle, rgba(120, 14, 22, 0.38), transparent 68%);
+}
+
+.hero-haze-right {
+  right: 12%;
+  top: 8%;
+  width: 19rem;
+  height: 16rem;
+  background: radial-gradient(circle, rgba(214, 93, 40, 0.22), transparent 70%);
+}
+
+.hero-light-streak {
+  inset: -8% 12% -8% 34%;
+  background:
+    linear-gradient(111deg, transparent 0 42%, rgba(255, 102, 38, 0.34) 48%, transparent 58%),
+    linear-gradient(111deg, transparent 0 54%, rgba(255, 225, 177, 0.1) 57%, transparent 62%);
+  filter: blur(6px);
+  opacity: 0.7;
+  transform: skewX(-10deg);
+}
+
+.hero-shadow-form {
+  right: 24%;
+  bottom: -16%;
+  width: 30rem;
+  height: 18rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.54), transparent 70%);
+  filter: blur(10px);
+}
+
+.hero-silhouette {
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.5));
+  opacity: 0.5;
+  filter: blur(1px);
+}
+
+.hero-silhouette-left {
+  left: 34%;
+  width: 10rem;
+  height: 48%;
+  clip-path: polygon(28% 0, 70% 0, 100% 100%, 0 100%);
+}
+
+.hero-silhouette-right {
+  right: 6%;
+  width: 14rem;
+  height: 62%;
+  clip-path: polygon(34% 0, 62% 0, 100% 100%, 8% 100%);
 }
 
 .hero-copy {
@@ -413,6 +499,7 @@ textarea {
   gap: 1.05rem;
   align-content: center;
   max-width: 40rem;
+  padding: clamp(1rem, 2vw, 1.4rem) clamp(0.2rem, 1vw, 0.6rem) clamp(0.8rem, 1.5vw, 1rem);
 }
 
 .hero-copy h1,
@@ -454,8 +541,9 @@ textarea {
 
 .hero-body {
   max-width: 34rem;
-  color: rgba(239, 229, 211, 0.84);
+  color: rgba(239, 229, 211, 0.9);
   font-size: clamp(1rem, 1.3vw, 1.08rem);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
 }
 
 .hero-accent {
@@ -573,41 +661,43 @@ textarea {
   grid-template-columns: minmax(12rem, 15rem) minmax(0, 1fr);
   gap: 1.1rem;
   align-items: stretch;
-  padding: 1.1rem;
-  border-radius: 1.2rem;
-  border: 1px solid rgba(198, 161, 93, 0.15);
+  padding: 1.1rem 0.9rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(198, 161, 93, 0.08);
   background:
-    linear-gradient(180deg, rgba(255, 248, 235, 0.04), rgba(255, 248, 235, 0.01)),
-    rgba(4, 2, 2, 0.74);
+    linear-gradient(90deg, rgba(255, 248, 235, 0.02), transparent 22%),
+    rgba(4, 2, 2, 0.18);
   min-height: 29rem;
   box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.02),
-    0 20px 50px rgba(0, 0, 0, 0.45);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.015),
+    0 12px 40px rgba(0, 0, 0, 0.24);
 }
 
 .hero-feature-poster {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-feature-media,
 .poster-frame {
   position: relative;
-  border-radius: 0.7rem;
+  border-radius: 0.35rem;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(198, 30, 39, 0.2), rgba(0, 0, 0, 0.32)),
     #100909;
 }
 
 .hero-feature-media {
   min-height: 100%;
-  width: 100%;
-  border: 1px solid rgba(244, 231, 211, 0.12);
+  width: calc(100% - 0.8rem);
+  border: 1px solid rgba(244, 231, 211, 0.18);
   box-shadow:
-    0 28px 64px rgba(0, 0, 0, 0.7),
-    0 0 0 1px rgba(255, 255, 255, 0.03);
-  transform: rotate(-3.8deg);
+    0 36px 74px rgba(0, 0, 0, 0.8),
+    -10px 0 34px rgba(0, 0, 0, 0.28),
+    12px 0 24px rgba(255, 122, 52, 0.12);
+  transform: rotate(-3.2deg);
 }
 
 .hero-feature-media::before,
@@ -618,9 +708,9 @@ textarea {
   pointer-events: none;
   z-index: 1;
   background:
-    linear-gradient(8deg, transparent 0 82%, rgba(0, 0, 0, 0.36) 100%),
-    linear-gradient(170deg, rgba(255, 248, 235, 0.12), transparent 18%, transparent 82%, rgba(0, 0, 0, 0.24)),
-    repeating-linear-gradient(122deg, transparent 0 22px, rgba(255, 255, 255, 0.02) 22px 23px);
+    linear-gradient(8deg, transparent 0 82%, rgba(0, 0, 0, 0.5) 100%),
+    linear-gradient(170deg, rgba(255, 248, 235, 0.14), transparent 16%, transparent 80%, rgba(0, 0, 0, 0.34)),
+    repeating-linear-gradient(122deg, transparent 0 22px, rgba(255, 255, 255, 0.026) 22px 23px);
 }
 
 .hero-feature-media::after,
@@ -630,18 +720,21 @@ textarea {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 18%, transparent 72%, rgba(0, 0, 0, 0.36)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.28), transparent 16%, transparent 84%, rgba(0, 0, 0, 0.28));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 18%, transparent 72%, rgba(0, 0, 0, 0.42)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.34), transparent 16%, transparent 82%, rgba(255, 184, 112, 0.1)),
+    radial-gradient(circle at 82% 18%, rgba(255, 204, 132, 0.12), transparent 24%);
 }
 
 .hero-feature-burn {
   position: absolute;
-  inset: auto -1rem 1rem auto;
-  width: 7rem;
-  height: 7rem;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(198, 30, 39, 0.36), transparent 68%);
-  filter: blur(22px);
+  inset: auto -0.4rem 1.6rem auto;
+  width: 9rem;
+  height: 10rem;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 45%, rgba(255, 130, 64, 0.22), transparent 48%),
+    radial-gradient(circle, rgba(198, 30, 39, 0.28), transparent 72%);
+  filter: blur(26px);
   pointer-events: none;
 }
 
@@ -656,6 +749,8 @@ textarea {
   display: grid;
   gap: 0.85rem;
   align-content: center;
+  padding: 0.9rem 0.7rem 0.8rem 0.4rem;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.34);
 }
 
 .hero-feature-label {
@@ -691,9 +786,9 @@ textarea {
   display: grid;
   gap: 0.25rem;
   padding: 0.8rem 0.9rem;
-  border: 1px solid rgba(255, 248, 235, 0.08);
-  border-radius: 0.9rem;
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 248, 235, 0.05);
+  border-radius: 0.35rem;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .hero-feature-strip strong {
@@ -733,8 +828,8 @@ textarea {
 .detail-meta span,
 .review-meta span {
   padding: 0.48rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25rem;
+  background: rgba(255, 255, 255, 0.04);
   color: var(--muted-strong);
   font-size: 0.82rem;
   border: 1px solid rgba(255, 248, 235, 0.06);

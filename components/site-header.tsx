@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
@@ -12,9 +13,16 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link href="/" className="brand-lockup" aria-label="Snap Critique home">
+        <Link href="/" className="brand-lockup" aria-label="Studio 198 home">
           <div className="brand-mark" aria-hidden="true">
-            198
+            <Image
+              src="/brand/studio-198-logo.png"
+              alt=""
+              width={220}
+              height={224}
+              className="brand-logo"
+              priority
+            />
           </div>
           <div className="brand-text">
             <p>Studio 198</p>

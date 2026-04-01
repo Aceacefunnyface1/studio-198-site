@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { BrowseExplorer } from "@/components/browse-explorer";
-import { ReviewCard } from "@/components/review-card";
 import {
   getDailyFeaturedReview,
   getPublishedReviewsWithStats,
@@ -31,6 +30,8 @@ export default async function HomePage() {
         verdict: heroReview.verdict,
       }
     : null;
+  const posterWallLead = spotlightReviews[0] ?? null;
+  const posterWallSupporting = spotlightReviews.slice(1, 3);
 
   return (
     <>
@@ -161,48 +162,71 @@ export default async function HomePage() {
       </section>
 
       <div className="page-stack hell-page-stack">
-        <section className="content-section inferno-band">
-          <div className="inferno-band__grid">
-            <div className="inferno-band__panel">
-              <p className="eyebrow">THE AIR SHOULD HURT</p>
-              <h2>Everything on the page now runs hotter.</h2>
-              <p>
-                The look leans into lava rivers, cathedral silhouettes, ember
-                glow, and scorched metal so the whole site feels hostile in the
-                best possible way.
-              </p>
-            </div>
-            <div className="inferno-band__list">
-              <div className="inferno-band__item">
-                <span>01</span>
-                <strong>Burning skies and abyssal depth</strong>
-              </div>
-              <div className="inferno-band__item">
-                <span>02</span>
-                <strong>Molten highlights instead of clean gloss</strong>
-              </div>
-              <div className="inferno-band__item">
-                <span>03</span>
-                <strong>Sharper contrast so every section hits harder</strong>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="content-section">
-          <div className="section-heading">
+        <section className="poster-wall-section">
+          <div className="poster-wall__header">
             <div>
               <p className="eyebrow">FEATURED VERDICTS</p>
-              <h2>Fresh damage from the furnace wall.</h2>
+              <h2>POSTER WALL. FRESH DAMAGE.</h2>
             </div>
-            <Link href="/reviews" className="text-link">
-              Walk the whole pit
+            <Link href="/reviews" className="poster-wall__archive">
+              ENTER THE ARCHIVE
             </Link>
           </div>
-          <div className="card-grid card-grid-featured">
-            {spotlightReviews.map((review) => (
-              <ReviewCard key={review.id} review={review} />
-            ))}
+
+          <div className="poster-wall">
+            {posterWallLead ? (
+              <Link
+                href={`/reviews/${posterWallLead.slug}`}
+                className="poster-wall__tile poster-wall__tile--lead"
+              >
+                <img
+                  src={posterWallLead.resolvedPosterImage}
+                  alt={`${posterWallLead.movieTitle} poster`}
+                />
+                <span
+                  className={`poster-wall__stamp verdict-${posterWallLead.verdictKey}`}
+                >
+                  {posterWallLead.verdict}
+                </span>
+                <div className="poster-wall__overlay">
+                  <div>
+                    <h3>{posterWallLead.movieTitle}</h3>
+                    <p>
+                      {posterWallLead.quickHit?.split(".")[0] ??
+                        "Fresh damage on the wall."}
+                    </p>
+                  </div>
+                  <span className="poster-wall__heat">
+                    🔥 {posterWallLead.heatCount} HEAT
+                  </span>
+                </div>
+              </Link>
+            ) : null}
+
+            <div className="poster-wall__stack">
+              {posterWallSupporting.map((review, index) => (
+                <Link
+                  key={review.id}
+                  href={`/reviews/${review.slug}`}
+                  className={`poster-wall__tile poster-wall__tile--support poster-wall__tile--support-${index + 1}`}
+                >
+                  <img
+                    src={review.resolvedPosterImage}
+                    alt={`${review.movieTitle} poster`}
+                  />
+                  <span className={`poster-wall__stamp verdict-${review.verdictKey}`}>
+                    {review.verdict}
+                  </span>
+                  <div className="poster-wall__overlay">
+                    <div>
+                      <h3>{review.movieTitle}</h3>
+                      <p>{review.quickHit?.split(".")[0] ?? "Still burning."}</p>
+                    </div>
+                    <span className="poster-wall__heat">🔥 {review.heatCount}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 

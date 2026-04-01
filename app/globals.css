@@ -463,6 +463,222 @@ body::after {
   padding: 1.4rem;
 }
 
+.poster-wall-section {
+  width: min(1400px, 90vw);
+  margin: 0 auto;
+  padding-top: 0.25rem;
+}
+
+.poster-wall__header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.poster-wall__header h2 {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2rem, 4vw, 4.2rem);
+  line-height: 0.92;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.poster-wall__archive {
+  color: #f2ae58;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-align: right;
+  transition: color 0.18s ease, transform 0.18s ease, text-shadow 0.18s ease;
+}
+
+.poster-wall__archive:hover,
+.poster-wall__archive:focus-visible {
+  color: #ffd4a8;
+  transform: translateY(-1px);
+  text-shadow: 0 0 20px rgba(255, 102, 36, 0.24);
+}
+
+.poster-wall {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.poster-wall__stack {
+  display: grid;
+  gap: 24px;
+}
+
+.poster-wall__tile {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  min-height: 0;
+  transform-origin: center;
+  box-shadow:
+    0 36px 90px rgba(0, 0, 0, 0.72),
+    0 0 42px rgba(255, 96, 22, 0.1);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    filter 0.22s ease;
+}
+
+.poster-wall__tile::before,
+.poster-wall__tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.poster-wall__tile::before {
+  z-index: 2;
+  opacity: 0.6;
+  background:
+    repeating-linear-gradient(
+      112deg,
+      transparent 0 28px,
+      rgba(255, 255, 255, 0.04) 28px 29px,
+      transparent 29px 52px
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 16%, transparent 72%, rgba(0, 0, 0, 0.56)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.28), transparent 16%, transparent 82%, rgba(255, 152, 92, 0.14));
+  mix-blend-mode: screen;
+}
+
+.poster-wall__tile::after {
+  z-index: 3;
+  background:
+    radial-gradient(circle at 12% 14%, rgba(255, 139, 70, 0.18), transparent 12%),
+    radial-gradient(circle at 86% 24%, rgba(255, 103, 33, 0.12), transparent 14%),
+    radial-gradient(circle at 50% 110%, rgba(0, 0, 0, 0.9), transparent 48%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.18) 45%, rgba(4, 0, 0, 0.82) 100%);
+}
+
+.poster-wall__tile:hover,
+.poster-wall__tile:focus-visible {
+  transform: translateY(-4px) scale(1.014);
+  box-shadow:
+    0 46px 110px rgba(0, 0, 0, 0.76),
+    0 0 54px rgba(255, 102, 36, 0.18);
+  filter: saturate(1.04);
+}
+
+.poster-wall__tile:hover .poster-wall__stamp,
+.poster-wall__tile:focus-visible .poster-wall__stamp {
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.4),
+    0 0 28px rgba(255, 109, 43, 0.2);
+  transform: rotate(-7deg) scale(1.04);
+}
+
+.poster-wall__tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poster-wall__tile--lead {
+  min-height: 46rem;
+  transform: rotate(-1deg);
+}
+
+.poster-wall__tile--support {
+  min-height: 22rem;
+}
+
+.poster-wall__tile--support-1 {
+  transform: rotate(1.1deg);
+}
+
+.poster-wall__tile--support-2 {
+  transform: rotate(-1.4deg);
+}
+
+.poster-wall__stamp {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.1rem;
+  padding: 0.35rem 0.7rem 0.3rem;
+  color: #220100;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background:
+    linear-gradient(180deg, rgba(255, 220, 194, 0.96), rgba(228, 175, 136, 0.9));
+  border: 1px solid rgba(68, 18, 4, 0.4);
+  transform: rotate(-7deg);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.poster-wall__overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 1.2rem 1rem;
+}
+
+.poster-wall__overlay h3,
+.poster-wall__overlay p {
+  margin: 0;
+}
+
+.poster-wall__overlay h3 {
+  color: #fff1e1;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.8rem, 2.2vw, 3.2rem);
+  line-height: 0.92;
+  text-shadow: 0 10px 28px rgba(0, 0, 0, 0.75);
+}
+
+.poster-wall__overlay p {
+  margin-top: 0.45rem;
+  max-width: 20rem;
+  color: rgba(246, 221, 199, 0.86);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.poster-wall__tile--support .poster-wall__overlay h3 {
+  font-size: clamp(1.45rem, 1.5vw, 2.2rem);
+}
+
+.poster-wall__tile--support .poster-wall__overlay p {
+  max-width: 14rem;
+  font-size: 0.82rem;
+}
+
+.poster-wall__heat {
+  align-self: end;
+  flex: none;
+  color: #ffd0a8;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-shadow: 0 0 24px rgba(255, 107, 35, 0.18);
+  white-space: nowrap;
+}
+
 .section-heading h2 {
   letter-spacing: 0.02em;
 }
@@ -502,7 +718,8 @@ body::after {
 
 @media (max-width: 1100px) {
   .hell-hero__inner,
-  .inferno-band__grid {
+  .inferno-band__grid,
+  .poster-wall {
     grid-template-columns: 1fr;
   }
 
@@ -529,6 +746,11 @@ body::after {
 
   .hell-stage__card--featured {
     width: min(18rem, 54%);
+  }
+
+  .poster-wall__tile--lead,
+  .poster-wall__tile--support {
+    min-height: 26rem;
   }
 }
 
@@ -581,6 +803,46 @@ body::after {
   .hell-search-shell,
   .inferno-band {
     padding: 1rem;
+  }
+
+  .poster-wall-section {
+    width: min(100vw - 1.25rem, 100%);
+  }
+
+  .poster-wall__header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .poster-wall__archive {
+    text-align: left;
+  }
+
+  .poster-wall__stack {
+    gap: 18px;
+  }
+
+  .poster-wall__tile--lead,
+  .poster-wall__tile--support {
+    min-height: 22rem;
+    transform: none;
+  }
+
+  .poster-wall__overlay {
+    padding: 1rem 0.95rem 0.9rem;
+  }
+
+  .poster-wall__overlay h3 {
+    font-size: 1.7rem;
+  }
+
+  .poster-wall__overlay p {
+    max-width: 12rem;
+    font-size: 0.8rem;
+  }
+
+  .poster-wall__heat {
+    font-size: 0.72rem;
   }
 }
 

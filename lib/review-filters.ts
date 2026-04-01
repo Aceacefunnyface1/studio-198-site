@@ -68,7 +68,7 @@ export function applyReviewFilters(
       case "rating":
         return (right.rating ?? -1) - (left.rating ?? -1);
       case "popularity":
-        return right.likeCount - left.likeCount;
+        return right.heatCount - left.heatCount;
       default:
         return +new Date(right.createdAt) - +new Date(left.createdAt);
     }

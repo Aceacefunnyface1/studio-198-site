@@ -117,8 +117,8 @@ export default async function ReviewDetailPage({
 
             <div className="stats-strip">
               <div>
-                <strong>{review.likeCount}</strong>
-                <span>Likes</span>
+                <strong>{review.heatCount}</strong>
+                <span>HEAT</span>
               </div>
               <div>
                 <strong>{review.commentCount}</strong>

@@ -1,5 +1,6 @@
 import "server-only";
 
+import { getHeatCount } from "@/lib/heat";
 import { resolvePoster } from "@/lib/poster-resolver";
 import { readSiteData, sortReviewsByNewest } from "@/lib/site-data";
 import { Comment, Review, ReviewWithStats } from "@/lib/types";
@@ -17,11 +18,16 @@ function withStats(review: Review, likes: Record<string, number>, comments: Comm
   const visibleComments = comments.filter(
     (comment) => comment.reviewId === review.id && comment.status === "visible",
   );
+  const likeCount = likes[review.id] ?? 0;
 
   return {
     ...review,
     ...resolvePoster(review),
-    likeCount: likes[review.id] ?? 0,
+    likeCount,
+    heatCount: getHeatCount({
+      ...review,
+      likeCount,
+    }),
     commentCount: visibleComments.length,
     ratingLabel: ratingLabel(review.rating),
     verdictKey: verdictKey(review.verdict),

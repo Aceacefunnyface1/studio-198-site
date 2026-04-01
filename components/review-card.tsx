@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import Link from "next/link";
 import { ReviewWithStats } from "@/lib/types";
 import { PosterFrame } from "@/components/poster-frame";
@@ -45,19 +47,33 @@ function getRatingVisual(rating: number | null) {
 
 export function ReviewCard({ review }: ReviewCardProps) {
   const ratingVisual = getRatingVisual(review.rating);
-  const likeCount = review.likeCount ?? 0;
   const commentCount = review.commentCount ?? 0;
 
   return (
     <article className={`review-card ${ratingVisual.accentClass}`}>
-      <PosterFrame
-        posterImage={review.resolvedPosterImage}
-        title={review.movieTitle}
-        className="review-card-poster"
-      />
+      <div className="review-card-poster-shell">
+        <span className={`verdict-badge review-card-verdict verdict-${review.verdictKey}`}>
+          {review.verdict}
+        </span>
+        <div className="review-card-poster-meta">
+          <span className="review-card-heat">🔥 {review.heatCount} HEAT</span>
+          {review.rating !== null ? (
+            <span className="review-card-score">{review.rating.toFixed(1)}</span>
+          ) : null}
+        </div>
+        <PosterFrame
+          posterImage={review.resolvedPosterImage}
+          title={review.movieTitle}
+          className="review-card-poster"
+        />
+      </div>
 
       <div className="review-card-body">
         <div className="review-card-heading">
+          <p className="review-card-kicker">
+            Studio 198 File
+            {review.releaseYear ? ` / ${review.releaseYear}` : ""}
+          </p>
           <h3 className="review-card-title">
             <span>{review.movieTitle}</span>
             {review.releaseYear ? (
@@ -73,6 +89,12 @@ export function ReviewCard({ review }: ReviewCardProps) {
           {review.quickHit || "Studio 198 verdict locked. Read the full take."}
         </p>
 
+        <div className="review-card-tags">
+          {review.genreTags.slice(0, 3).map((tag) => (
+            <span key={tag}>{tag}</span>
+          ))}
+        </div>
+
         <WatchThisMovie
           url={review.amazonAffiliateUrl}
           className="review-card-watch"
@@ -80,8 +102,8 @@ export function ReviewCard({ review }: ReviewCardProps) {
 
         <div className="review-card-bottom">
           <div className="review-card-stats" aria-label="Review engagement">
+            <span>🔥 {review.heatCount} HEAT</span>
             <span>{commentCount} comments</span>
-            <span>{likeCount} likes</span>
           </div>
 
           <div className="review-card-footer">

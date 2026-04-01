@@ -45,12 +45,12 @@ export function ReviewLikeButton({ reviewId }: ReviewLikeButtonProps) {
         disabled={liked}
         aria-pressed={liked}
       >
-        {liked ? "Liked On This Device" : "Like This Review"}
+        {liked ? "Heat Logged On This Device" : "Add Heat To This Verdict"}
       </button>
       <p className="review-like-note">
         {liked
-          ? "Saved locally so the action stays reliable."
-          : "Safe local like for now while server likes are offline."}
+          ? "Saved locally so the heat sticks without the app blinking."
+          : "Local for now, but it still lets the verdict carry some heat."}
       </p>
     </div>
   );

@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 type PosterFrameProps = {
   posterImage: string;
   title: string;

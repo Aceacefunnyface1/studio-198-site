@@ -64,6 +64,7 @@ export type SiteData = {
 
 export type ReviewWithStats = Review & {
   likeCount: number;
+  heatCount: number;
   commentCount: number;
   ratingLabel: string;
   verdictKey: string;

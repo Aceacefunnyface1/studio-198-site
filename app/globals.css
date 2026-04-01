@@ -29,6 +29,561 @@
   --font-cinzel: var(--font-display);
 }
 
+:root {
+  --background: #120100;
+  --surface: #140403;
+  --surface-strong: #1d0603;
+  --surface-soft: rgba(255, 120, 54, 0.07);
+  --foreground: #f6ddc7;
+  --muted: #d0ab92;
+  --muted-strong: #f1cfb2;
+  --line: rgba(255, 128, 58, 0.16);
+  --line-strong: rgba(255, 77, 23, 0.5);
+  --red: #8b0d06;
+  --red-bright: #ff4c1d;
+  --ember: #ff7a1a;
+  --gold: #f2ae58;
+  --gold-soft: rgba(242, 174, 88, 0.18);
+  --shadow: 0 34px 100px rgba(0, 0, 0, 0.72);
+}
+
+html {
+  background:
+    radial-gradient(circle at 50% -10%, rgba(255, 77, 29, 0.3), transparent 28%),
+    radial-gradient(circle at 78% 18%, rgba(255, 123, 38, 0.14), transparent 22%),
+    radial-gradient(circle at 12% 22%, rgba(120, 8, 8, 0.18), transparent 26%),
+    linear-gradient(180deg, #150100 0%, #090000 28%, #120100 64%, #060000 100%);
+}
+
+body::before {
+  opacity: 0.13;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04) 0,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    radial-gradient(circle at 18% 20%, rgba(255, 200, 155, 0.05), transparent 18%),
+    radial-gradient(circle at 80% 58%, rgba(255, 99, 34, 0.08), transparent 16%);
+}
+
+body::after {
+  background:
+    radial-gradient(circle at 50% 16%, transparent 0 24%, rgba(0, 0, 0, 0.4) 64%, rgba(0, 0, 0, 0.88) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.ambient-left {
+  top: 4rem;
+  left: -10rem;
+  background: rgba(255, 71, 25, 0.26);
+}
+
+.ambient-right {
+  top: 16rem;
+  right: -8rem;
+  background: rgba(255, 166, 65, 0.18);
+}
+
+.site-frame::before {
+  background:
+    radial-gradient(circle at 16% 18%, rgba(255, 85, 28, 0.15), transparent 20%),
+    radial-gradient(circle at 84% 28%, rgba(255, 145, 48, 0.12), transparent 20%);
+}
+
+.site-header {
+  background:
+    linear-gradient(180deg, rgba(30, 4, 2, 0.96), rgba(10, 2, 1, 0.86)),
+    rgba(0, 0, 0, 0.82);
+  border-bottom: 1px solid rgba(255, 135, 60, 0.15);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.46);
+}
+
+.site-header::after {
+  background:
+    radial-gradient(circle at 12% 50%, rgba(255, 73, 22, 0.2), transparent 18%),
+    linear-gradient(90deg, rgba(255, 88, 32, 0.12), transparent 24%, transparent 82%, rgba(255, 186, 106, 0.08));
+}
+
+.site-footer {
+  border-top: 1px solid rgba(255, 115, 43, 0.14);
+  background:
+    linear-gradient(180deg, rgba(12, 2, 2, 0.84), rgba(5, 1, 1, 0.96));
+}
+
+.hell-hero {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255, 88, 24, 0.18), transparent 20%),
+    linear-gradient(180deg, #1a0100 0%, #090000 46%, #120100 100%);
+}
+
+.hell-hero__smoke,
+.hell-hero__lava,
+.hell-hero__ash {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hell-hero__smoke {
+  z-index: 4;
+  opacity: 0.38;
+  background:
+    radial-gradient(circle at 14% 24%, rgba(0, 0, 0, 0.42), transparent 16%),
+    radial-gradient(circle at 82% 18%, rgba(0, 0, 0, 0.48), transparent 18%),
+    radial-gradient(circle at 54% 36%, rgba(0, 0, 0, 0.34), transparent 22%);
+  filter: blur(34px);
+  animation: smokeShift 18s ease-in-out infinite alternate;
+}
+
+.hell-hero__lava {
+  z-index: 1;
+  inset: auto 0 0;
+  height: 18vh;
+  background:
+    radial-gradient(circle at 10% 50%, rgba(255, 129, 51, 0.28), transparent 18%),
+    radial-gradient(circle at 50% 60%, rgba(255, 87, 20, 0.32), transparent 20%),
+    radial-gradient(circle at 82% 50%, rgba(255, 150, 59, 0.24), transparent 16%),
+    linear-gradient(180deg, rgba(255, 104, 28, 0.1), rgba(255, 77, 11, 0.28));
+  filter: blur(12px);
+  animation: lavaPulse 5s ease-in-out infinite;
+}
+
+.hell-hero__ash {
+  z-index: 5;
+  opacity: 0.24;
+  background-image:
+    radial-gradient(circle, rgba(255, 212, 160, 0.9) 0.7px, transparent 1px),
+    radial-gradient(circle, rgba(255, 95, 32, 0.8) 1px, transparent 1.3px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.4) 0.7px, transparent 1px);
+  background-size: 220px 220px, 170px 170px, 290px 290px;
+  background-position: 0 0, 60px 40px, 110px 0;
+  animation: ashFall 24s linear infinite;
+}
+
+.hell-hero__inner {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  width: min(1380px, calc(100vw - 2rem));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.95fr);
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: center;
+  padding: 7.5rem 0 4rem;
+}
+
+.hell-hero__copy {
+  position: relative;
+  z-index: 2;
+  max-width: 40rem;
+}
+
+.hell-hero__title {
+  font-size: clamp(5.4rem, 10vw, 10.5rem);
+}
+
+.hell-hero__tagline {
+  max-width: 14ch;
+  color: #ffe4c6;
+}
+
+.hell-hero__body {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+  max-width: 36rem;
+}
+
+.hell-hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.hell-stat {
+  border: 1px solid rgba(255, 122, 54, 0.18);
+  background:
+    linear-gradient(180deg, rgba(255, 119, 49, 0.08), rgba(19, 6, 5, 0.76)),
+    rgba(10, 3, 2, 0.9);
+  padding: 1rem 1rem 0.95rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 208, 170, 0.06),
+    0 24px 40px rgba(0, 0, 0, 0.26);
+}
+
+.hell-stat__label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #f2ae58;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hell-stat strong {
+  color: #fff0e1;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+
+.hell-stage {
+  position: relative;
+  min-height: 44rem;
+}
+
+.hell-stage__main,
+.hell-stage__card {
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid rgba(255, 122, 54, 0.18);
+  box-shadow:
+    0 28px 90px rgba(0, 0, 0, 0.72),
+    0 0 40px rgba(255, 93, 24, 0.12);
+}
+
+.hell-stage__main {
+  inset: 1.4rem 6% 5rem 8%;
+  z-index: 2;
+  transform: rotate(-2.2deg);
+}
+
+.hell-stage__main::after,
+.hell-stage__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 18%, transparent 72%, rgba(0, 0, 0, 0.5)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.24), transparent 16%, transparent 84%, rgba(255, 150, 84, 0.12));
+}
+
+.hell-stage__main img,
+.hell-stage__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hell-stage__card {
+  background: #120302;
+}
+
+.hell-stage__card--landscape {
+  top: 0;
+  right: 0;
+  width: min(19rem, 38%);
+  height: 12rem;
+  z-index: 3;
+  transform: rotate(4deg);
+}
+
+.hell-stage__card-copy {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 0.9rem 1rem;
+  background: linear-gradient(180deg, transparent, rgba(9, 3, 2, 0.94));
+}
+
+.hell-stage__card-copy p,
+.hell-stage__card-copy span {
+  margin: 0;
+}
+
+.hell-stage__card-copy p {
+  color: #ff6f3f;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hell-stage__card-copy span {
+  color: #f6ddc7;
+  font-size: 0.92rem;
+}
+
+.hell-stage__card--featured {
+  left: 0;
+  bottom: 2.2rem;
+  z-index: 4;
+  width: min(22rem, 48%);
+  padding: 1rem;
+  background:
+    linear-gradient(180deg, rgba(255, 104, 28, 0.12), rgba(10, 3, 2, 0.96)),
+    rgba(8, 2, 1, 0.96);
+  transform: rotate(-5deg);
+}
+
+.hell-stage__featured-label {
+  color: #f2ae58;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hell-stage__featured-poster {
+  aspect-ratio: 0.72;
+  margin-top: 0.85rem;
+  overflow: hidden;
+  background: #090101;
+}
+
+.hell-stage__featured-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hell-stage__featured-copy {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+}
+
+.hell-stage__featured-copy h2 {
+  margin: 0;
+  color: #fff0e1;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.8rem, 1.8vw, 2.8rem);
+  line-height: 0.92;
+}
+
+.hell-stage__featured-copy p {
+  margin: 0;
+  color: rgba(246, 221, 199, 0.86);
+  line-height: 1.45;
+}
+
+.hell-stage__featured-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.hell-stage__featured-meta span {
+  padding: 0.34rem 0.55rem;
+  color: #ffe7d2;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(255, 110, 36, 0.12);
+  border: 1px solid rgba(255, 122, 54, 0.16);
+}
+
+.hell-stage__card--river {
+  right: 8%;
+  bottom: 0.8rem;
+  width: min(18rem, 34%);
+  height: 11rem;
+  z-index: 1;
+  transform: rotate(7deg);
+}
+
+.hell-page-stack {
+  gap: 1.8rem;
+  padding-top: 2.8rem;
+}
+
+.inferno-band,
+.hell-search-shell,
+.two-column-callout .callout-block {
+  border: 1px solid rgba(255, 122, 54, 0.16);
+  background:
+    linear-gradient(180deg, rgba(255, 108, 37, 0.08), rgba(13, 4, 3, 0.94)),
+    rgba(11, 3, 2, 0.96);
+  box-shadow: 0 26px 72px rgba(0, 0, 0, 0.44);
+}
+
+.inferno-band {
+  padding: clamp(1.5rem, 3vw, 2rem);
+}
+
+.inferno-band__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.inferno-band__panel p,
+.inferno-band__panel h2 {
+  margin: 0;
+}
+
+.inferno-band__panel h2 {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3.4rem);
+  line-height: 0.95;
+  margin-top: 0.45rem;
+}
+
+.inferno-band__panel > p:last-child {
+  margin-top: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.inferno-band__list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.inferno-band__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(255, 122, 54, 0.15);
+  background: rgba(255, 99, 28, 0.05);
+}
+
+.inferno-band__item span {
+  color: #ff6f3f;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+}
+
+.inferno-band__item strong {
+  color: #f8e2d0;
+  font-size: 0.96rem;
+}
+
+.hell-search-shell {
+  padding: 1.4rem;
+}
+
+.section-heading h2 {
+  letter-spacing: 0.02em;
+}
+
+@keyframes ashFall {
+  from {
+    transform: translate3d(0, -1%, 0);
+  }
+
+  to {
+    transform: translate3d(-2%, 6%, 0);
+  }
+}
+
+@keyframes smokeShift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(0.6rem, -0.4rem, 0) scale(1.04);
+  }
+}
+
+@keyframes lavaPulse {
+  0%,
+  100% {
+    opacity: 0.92;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0.35rem);
+  }
+}
+
+@media (max-width: 1100px) {
+  .hell-hero__inner,
+  .inferno-band__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hell-hero__inner {
+    padding-top: 7rem;
+  }
+
+  .hell-hero__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hell-stage {
+    min-height: 38rem;
+    margin-top: 1rem;
+  }
+
+  .hell-stage__main {
+    inset: 2rem 8% 5rem;
+  }
+
+  .hell-stage__card--landscape {
+    width: 14rem;
+  }
+
+  .hell-stage__card--featured {
+    width: min(18rem, 54%);
+  }
+}
+
+@media (max-width: 720px) {
+  .hell-hero {
+    min-height: auto;
+  }
+
+  .hell-hero__inner {
+    width: min(100vw - 1.25rem, 100%);
+    padding: 6.6rem 0 3rem;
+  }
+
+  .hell-hero__title {
+    font-size: clamp(4rem, 24vw, 6.2rem);
+  }
+
+  .hell-stage {
+    min-height: 30rem;
+  }
+
+  .hell-stage__main {
+    inset: 0.9rem 0.2rem 7.6rem;
+    transform: none;
+  }
+
+  .hell-stage__card--landscape {
+    top: auto;
+    right: 0;
+    bottom: 0.5rem;
+    width: 9rem;
+    height: 6rem;
+  }
+
+  .hell-stage__card--river {
+    right: auto;
+    left: 0;
+    bottom: 1.2rem;
+    width: 8rem;
+    height: 5.5rem;
+  }
+
+  .hell-stage__card--featured {
+    left: 50%;
+    bottom: -1.2rem;
+    width: min(17rem, calc(100% - 2rem));
+    transform: translateX(-50%) rotate(-2deg);
+  }
+
+  .hell-search-shell,
+  .inferno-band {
+    padding: 1rem;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

@@ -34,7 +34,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="studio-hero relative min-h-[92vh] w-full overflow-hidden bg-black">
+      <section className="studio-hero hell-hero">
         <div className="studio-hero__bg" />
         <div className="studio-hero__texture" />
         <div className="studio-hero__vignette" />
@@ -45,95 +45,158 @@ export default async function HomePage() {
         <div className="studio-hero__haze" />
         <div className="studio-hero__embers" />
 
-        <div className="relative z-10 h-auto min-h-[92vh] w-full lg:h-[92vh]">
-          <div className="mx-auto grid h-full max-w-[1800px] grid-cols-1 gap-10 px-6 pt-28 pb-16 lg:grid-cols-[42%_8%_50%] lg:gap-0 lg:px-[6vw] lg:py-0">
-            <div className="flex h-full flex-col justify-center pb-0 pt-0 lg:pb-[10vh] lg:pt-[18vh]">
-              <p className="studio-hero__eyebrow">STUDIO 198 PRESENTS</p>
+        <div className="hell-hero__smoke" />
+        <div className="hell-hero__lava" />
+        <div className="hell-hero__ash" />
 
-              <h1 className="studio-hero__title">
-                <span>SNAP</span>
-                <span>CRITIQUE</span>
-              </h1>
+        <div className="hell-hero__inner">
+          <div className="hell-hero__copy">
+            <p className="studio-hero__eyebrow">STUDIO 198 DESCENDS</p>
 
-              <p className="studio-hero__tagline">Not Meant to Feel Safe.</p>
+            <h1 className="studio-hero__title hell-hero__title">
+              <span>WELCOME</span>
+              <span>BELOW</span>
+            </h1>
 
-              <div className="mt-6 max-w-[34rem] space-y-2">
-                <p className="studio-hero__body">
-                  Fast verdicts. Sharp takes. No fake praise.
-                </p>
-                <p className="studio-hero__body">
-                  If it hits, it earns it. If it doesn&apos;t, it gets buried.
-                </p>
+            <p className="studio-hero__tagline hell-hero__tagline">
+              A movie site that feels like the gates already closed behind you.
+            </p>
+
+            <div className="hell-hero__body">
+              <p className="studio-hero__body">
+                Lava in the sky. Smoke in the air. Reviews carved out with heat,
+                venom, and no interest in playing nice.
+              </p>
+              <p className="studio-hero__body">
+                This is the archive for films that earn obsession, survive the
+                fire, or get dragged straight into it.
+              </p>
+            </div>
+
+            <p className="studio-hero__aggression">ENTER AT YOUR OWN RISK.</p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link href="/reviews" className="studio-btn studio-btn--primary">
+                Enter the Fire
+              </Link>
+              <Link
+                href={featuredReview ? `/reviews/${featuredReview.slug}` : "/reviews"}
+                className="studio-btn studio-btn--secondary"
+              >
+                Read Tonight&apos;s Verdict
+              </Link>
+            </div>
+
+            <div className="hell-hero__stats" aria-label="Site atmosphere">
+              <div className="hell-stat">
+                <span className="hell-stat__label">Atmosphere</span>
+                <strong>Molten</strong>
               </div>
+              <div className="hell-stat">
+                <span className="hell-stat__label">Tone</span>
+                <strong>Unforgiving</strong>
+              </div>
+              <div className="hell-stat">
+                <span className="hell-stat__label">Archive</span>
+                <strong>{reviews.length} verdicts burning</strong>
+              </div>
+            </div>
+          </div>
 
-              <p className="studio-hero__aggression mt-8">NO HYPE. NO MERCY.</p>
+          <div className="hell-stage">
+            <div className="hell-stage__main">
+              <img
+                src="/inferno/demon-garage.png"
+                alt="Infernal hot rods in front of a towering demon"
+              />
+            </div>
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/reviews" className="studio-btn studio-btn--primary">
-                  ENTER REVIEWS
-                </Link>
-                <Link
-                  href={featuredReview ? `/reviews/${featuredReview.slug}` : "/reviews"}
-                  className="studio-btn studio-btn--secondary"
-                >
-                  READ THE VERDICT
-                </Link>
+            <div className="hell-stage__card hell-stage__card--landscape">
+              <img
+                src="/inferno/hellscape-wide.png"
+                alt="Hell landscape with rivers of lava and a burning fortress"
+              />
+              <div className="hell-stage__card-copy">
+                <p>Outer Ring</p>
+                <span>The horizon never cools down.</span>
               </div>
             </div>
 
-            <div className="pointer-events-none relative hidden h-full lg:block" />
-
-            <div className="relative flex h-full items-center justify-center pb-0 pt-0 lg:justify-end lg:pb-[8vh] lg:pt-[16vh]">
-              <div className="studio-poster-wrap">
-                <div className="studio-poster">
-                  {featuredReview ? (
-                    <img
-                      src={featuredReview.posterImage}
-                      alt={`${featuredReview.title} poster`}
-                    />
-                  ) : (
-                    <img
-                      src="/posters/next-review-slot.svg"
-                      alt="Next review slot"
-                    />
-                  )}
-                  <div className="studio-poster-meta">
-                    <p className="studio-poster-meta__eyebrow">TONIGHT&apos;S VERDICT</p>
-                    <h2 className="studio-poster-meta__title">
-                      {featuredReview?.title ?? "LOADING"}
-                    </h2>
-                    <p className="studio-poster-meta__desc">
-                      {featuredReview?.quickHit ??
-                        "The next featured verdict is loading into the frame."}
-                    </p>
-
-                    <div className="studio-poster-meta__row">
-                      {featuredReview?.releaseYear ? (
-                        <span>{featuredReview.releaseYear}</span>
-                      ) : null}
-                      {featuredReview?.rating ? <span>{featuredReview.rating}</span> : null}
-                      {featuredReview ? <span>🔥 {featuredReview.heat} HEAT</span> : null}
-                    </div>
-                  </div>
-                </div>
-                <p className="studio-poster-meta__stamp">
-                  {featuredReview?.verdict ?? "WATCH"}
-                </p>
+            <div className="hell-stage__card hell-stage__card--featured">
+              <div className="hell-stage__featured-label">Tonight&apos;s Sacrifice</div>
+              <div className="hell-stage__featured-poster">
+                <img
+                  src={featuredReview?.posterImage ?? "/posters/next-review-slot.svg"}
+                  alt={
+                    featuredReview
+                      ? `${featuredReview.title} poster`
+                      : "Next review slot"
+                  }
+                />
               </div>
+              <div className="hell-stage__featured-copy">
+                <h2>{featuredReview?.title ?? "Next film on the pyre"}</h2>
+                <p>
+                  {featuredReview?.quickHit ??
+                    "A fresh verdict is being hauled up from the flames."}
+                </p>
+                <div className="hell-stage__featured-meta">
+                  {featuredReview?.releaseYear ? (
+                    <span>{featuredReview.releaseYear}</span>
+                  ) : null}
+                  {featuredReview?.rating ? <span>{featuredReview.rating}</span> : null}
+                  {featuredReview ? <span>🔥 {featuredReview.heat} HEAT</span> : null}
+                </div>
+              </div>
+            </div>
+
+            <div className="hell-stage__card hell-stage__card--river">
+              <img
+                src="/inferno/hellscape-alt.png"
+                alt="A river of lava cutting through a scorched infernal valley"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <div className="page-stack">
+      <div className="page-stack hell-page-stack">
+        <section className="content-section inferno-band">
+          <div className="inferno-band__grid">
+            <div className="inferno-band__panel">
+              <p className="eyebrow">THE AIR SHOULD HURT</p>
+              <h2>Everything on the page now runs hotter.</h2>
+              <p>
+                The look leans into lava rivers, cathedral silhouettes, ember
+                glow, and scorched metal so the whole site feels hostile in the
+                best possible way.
+              </p>
+            </div>
+            <div className="inferno-band__list">
+              <div className="inferno-band__item">
+                <span>01</span>
+                <strong>Burning skies and abyssal depth</strong>
+              </div>
+              <div className="inferno-band__item">
+                <span>02</span>
+                <strong>Molten highlights instead of clean gloss</strong>
+              </div>
+              <div className="inferno-band__item">
+                <span>03</span>
+                <strong>Sharper contrast so every section hits harder</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="content-section">
           <div className="section-heading">
             <div>
               <p className="eyebrow">FEATURED VERDICTS</p>
-              <h2>Poster wall. Fresh damage.</h2>
+              <h2>Fresh damage from the furnace wall.</h2>
             </div>
             <Link href="/reviews" className="text-link">
-              Enter the archive
+              Walk the whole pit
             </Link>
           </div>
           <div className="card-grid card-grid-featured">
@@ -143,26 +206,26 @@ export default async function HomePage() {
           </div>
         </section>
 
-        <section className="content-section">
+        <section className="content-section hell-search-shell">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">DIG THROUGH THE WALL</p>
-              <h2>Search the cuts. Sort the wreckage.</h2>
+              <p className="eyebrow">SEARCH THE RUINS</p>
+              <h2>Dig through the ash. Sort the bodies.</h2>
             </div>
           </div>
           <BrowseExplorer
             reviews={reviews}
-            emptyMessage="Nothing matches the current cut of the archive."
+            emptyMessage="Nothing survived this filter pass."
           />
         </section>
 
         <section className="content-section two-column-callout">
           <div className="callout-block">
             <p className="eyebrow">LATEST FILES</p>
-            <h2>Fresh cuts from the booth</h2>
+            <h2>Fresh arrivals on the lower level</h2>
             <p>
-              New verdicts hit fast, land hard, and stay on the wall until
-              something meaner replaces them.
+              New reviews drop into the fire first. The ones with heat rise.
+              The rest stay buried under smoke.
             </p>
             <div className="stack-list">
               {latest.map((review) => (
@@ -174,12 +237,12 @@ export default async function HomePage() {
             </div>
           </div>
           <div className="callout-block">
-            <p className="eyebrow">THE HOUSE STYLE</p>
-            <h2>No soft focus. No mercy edits.</h2>
+            <p className="eyebrow">HOUSE RULES</p>
+            <h2>No safe takes. No cold corners.</h2>
             <p>
-              Studio 198 doesn&apos;t hand out participation trophies. Every review
-              is built to hit quick, read clean, and leave a mark after the page
-              goes black.
+              Every page should feel infernal, but the reviews still need to hit
+              clean. The goal is atmosphere with teeth, not noise for its own
+              sake.
             </p>
             <Link href="/about" className="button-secondary">
               Read the manifesto

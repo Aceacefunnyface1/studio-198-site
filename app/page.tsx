@@ -38,6 +38,9 @@ export default async function HomePage() {
         <div className="studio-hero__bg" />
         <div className="studio-hero__texture" />
         <div className="studio-hero__vignette" />
+        <div className="studio-hero__frame" />
+        <div className="studio-hero__topline" />
+        <div className="studio-hero__seal" />
         <div className="studio-hero__crack" />
         <div className="studio-hero__haze" />
         <div className="studio-hero__embers" />
@@ -94,29 +97,28 @@ export default async function HomePage() {
                       alt="Next review slot"
                     />
                   )}
-                </div>
+                  <div className="studio-poster-meta">
+                    <p className="studio-poster-meta__eyebrow">TONIGHT&apos;S VERDICT</p>
+                    <h2 className="studio-poster-meta__title">
+                      {featuredReview?.title ?? "LOADING"}
+                    </h2>
+                    <p className="studio-poster-meta__desc">
+                      {featuredReview?.quickHit ??
+                        "The next featured verdict is loading into the frame."}
+                    </p>
 
-                <div className="studio-poster-meta">
-                  <p className="studio-poster-meta__eyebrow">TONIGHT&apos;S VERDICT</p>
-                  <p className="studio-poster-meta__stamp">
-                    {featuredReview?.verdict ?? "WATCH"}
-                  </p>
-                  <h2 className="studio-poster-meta__title">
-                    {featuredReview?.title ?? "LOADING"}
-                  </h2>
-                  <p className="studio-poster-meta__desc">
-                    {featuredReview?.quickHit ??
-                      "The next featured verdict is loading into the frame."}
-                  </p>
-
-                  <div className="studio-poster-meta__row">
-                    {featuredReview?.releaseYear ? (
-                      <span>{featuredReview.releaseYear}</span>
-                    ) : null}
-                    {featuredReview?.rating ? <span>{featuredReview.rating}</span> : null}
-                    {featuredReview ? <span>🔥 {featuredReview.heat} HEAT</span> : null}
+                    <div className="studio-poster-meta__row">
+                      {featuredReview?.releaseYear ? (
+                        <span>{featuredReview.releaseYear}</span>
+                      ) : null}
+                      {featuredReview?.rating ? <span>{featuredReview.rating}</span> : null}
+                      {featuredReview ? <span>🔥 {featuredReview.heat} HEAT</span> : null}
+                    </div>
                   </div>
                 </div>
+                <p className="studio-poster-meta__stamp">
+                  {featuredReview?.verdict ?? "WATCH"}
+                </p>
               </div>
             </div>
           </div>

@@ -336,6 +336,9 @@ textarea {
 .studio-hero__bg,
 .studio-hero__texture,
 .studio-hero__vignette,
+.studio-hero__frame,
+.studio-hero__topline,
+.studio-hero__seal,
 .studio-hero__crack,
 .studio-hero__haze,
 .studio-hero__embers {
@@ -371,6 +374,67 @@ textarea {
   z-index: 2;
   background:
     radial-gradient(circle at center, transparent 38%, rgba(0, 0, 0, 0.45) 70%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.studio-hero__frame {
+  z-index: 2;
+  inset: 2.2vh 2vw;
+  border: 1px solid rgba(154, 96, 69, 0.18);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 211, 184, 0.03),
+    inset 0 0 40px rgba(0, 0, 0, 0.35);
+  opacity: 0.9;
+}
+
+.studio-hero__frame::before,
+.studio-hero__frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.studio-hero__frame::before {
+  background:
+    linear-gradient(90deg, rgba(255, 168, 117, 0.06), transparent 14%, transparent 86%, rgba(255, 168, 117, 0.05)),
+    linear-gradient(180deg, rgba(255, 168, 117, 0.04), transparent 12%, transparent 88%, rgba(255, 168, 117, 0.05));
+  mix-blend-mode: screen;
+}
+
+.studio-hero__frame::after {
+  opacity: 0.22;
+  background:
+    radial-gradient(circle at 0 0, rgba(255, 198, 160, 0.5), transparent 7%),
+    radial-gradient(circle at 100% 0, rgba(255, 198, 160, 0.36), transparent 7%),
+    radial-gradient(circle at 0 100%, rgba(255, 198, 160, 0.34), transparent 7%),
+    radial-gradient(circle at 100% 100%, rgba(255, 198, 160, 0.26), transparent 7%);
+}
+
+.studio-hero__topline {
+  z-index: 3;
+  inset: 11.5vh 2vw auto;
+  height: 1px;
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(197, 55, 24, 0.5) 14%, rgba(255, 132, 68, 0.72) 48%, rgba(197, 55, 24, 0.42) 78%, transparent 100%);
+  box-shadow:
+    0 0 22px rgba(255, 86, 28, 0.16),
+    0 0 46px rgba(188, 33, 14, 0.12);
+  opacity: 0.88;
+}
+
+.studio-hero__seal {
+  z-index: 1;
+  left: 2.5vw;
+  top: 11vh;
+  width: min(38vw, 640px);
+  height: min(38vw, 640px);
+  border-radius: 50%;
+  opacity: 0.16;
+  filter: blur(0.2px);
+  background:
+    radial-gradient(circle, transparent 52%, rgba(170, 125, 92, 0.22) 52.7%, transparent 54.5%, transparent 61%, rgba(170, 125, 92, 0.14) 61.8%, transparent 63.6%),
+    radial-gradient(circle at center, rgba(74, 32, 25, 0.24), transparent 62%);
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.35);
 }
 
 .studio-hero__crack {
@@ -449,6 +513,22 @@ textarea {
     0 0 24px rgba(130, 0, 0, 0.1),
     0 18px 28px rgba(0, 0, 0, 0.34);
   filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.44));
+  position: relative;
+}
+
+.studio-hero__title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      103deg,
+      rgba(56, 18, 14, 0.22) 0 7px,
+      transparent 7px 16px
+    );
+  mix-blend-mode: multiply;
+  opacity: 0.32;
+  pointer-events: none;
 }
 
 .studio-hero__tagline {
@@ -558,6 +638,7 @@ textarea {
   height: 91%;
   transform: translateX(9%) rotate(3.4deg) scale(1.12);
   z-index: 2;
+  overflow: hidden;
   box-shadow:
     0 58px 118px rgba(0, 0, 0, 0.84),
     0 0 58px rgba(255, 78, 20, 0.14),
@@ -584,14 +665,18 @@ textarea {
 
 .studio-poster-meta {
   position: absolute;
-  right: 6%;
-  top: 14%;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 3;
-  width: 44%;
+  width: auto;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.55rem;
+  padding: 1.35rem 1.4rem 1.2rem;
   color: var(--studio-bone);
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(13, 8, 8, 0.16) 14%, rgba(10, 5, 5, 0.72) 46%, rgba(7, 4, 4, 0.94) 100%);
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
 }
 
@@ -599,44 +684,54 @@ textarea {
   margin: 0;
   color: #df2f22;
   text-transform: uppercase;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.18em;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
 }
 
 .studio-poster-meta__stamp {
-  display: inline-block;
-  width: fit-content;
+  position: absolute;
+  right: -1.6rem;
+  top: 0.75rem;
+  z-index: 4;
   margin: 0;
-  color: #d8ff5b;
+  padding: 0.45rem 0.8rem 0.4rem;
+  color: #7b180e;
+  background:
+    linear-gradient(180deg, rgba(226, 213, 190, 0.96), rgba(179, 162, 141, 0.92));
+  border: 1px solid rgba(78, 33, 24, 0.34);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 243, 228, 0.08) inset;
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 0.16em;
-  transform: rotate(-3deg);
+  letter-spacing: 0.08em;
+  line-height: 0.92;
+  transform: rotate(-8deg);
 }
 
 .studio-poster-meta__title {
   margin: 0;
   font-family: var(--font-cinzel, serif);
-  font-size: clamp(2.6rem, 2.5vw, 4.5rem);
-  line-height: 0.9;
+  font-size: clamp(2.9rem, 2.8vw, 4.9rem);
+  line-height: 0.86;
   color: var(--studio-bone);
 }
 
 .studio-poster-meta__desc {
   margin: 0;
-  max-width: 20rem;
+  max-width: 16rem;
   color: rgba(239, 230, 214, 0.9);
-  font-size: clamp(1rem, 0.4vw + 0.8rem, 1.25rem);
-  line-height: 1.42;
+  font-size: clamp(0.98rem, 0.3vw + 0.84rem, 1.14rem);
+  line-height: 1.4;
 }
 
 .studio-poster-meta__row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.55rem 0.9rem;
   color: rgba(239, 230, 214, 0.92);
-  font-size: 1rem;
+  font-size: 0.92rem;
 }
 
 .studio-poster-meta__row span {
@@ -1937,10 +2032,6 @@ textarea {
   .studio-poster-wrap {
     width: min(48vw, 720px);
   }
-
-  .studio-poster-meta {
-    width: 46%;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -1970,10 +2061,27 @@ textarea {
   }
 
   .studio-poster-meta {
-    position: static;
-    width: 100%;
+    position: absolute;
+    inset: auto 0 0 0;
     text-align: left;
     gap: 0.7rem;
+  }
+
+  .studio-poster-meta__stamp {
+    right: -0.6rem;
+    top: 0.4rem;
+  }
+
+  .studio-hero__seal {
+    width: min(64vw, 540px);
+    height: min(64vw, 540px);
+    left: -10vw;
+    top: 18vh;
+    opacity: 0.12;
+  }
+
+  .studio-hero__frame {
+    inset: 1.4vh 1.6vw;
   }
 }
 

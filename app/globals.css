@@ -314,14 +314,10 @@ textarea {
 
 .page-stack {
   display: grid;
-  gap: 2rem;
+  gap: 1.4rem;
   padding: 2rem 0 4rem;
 }
 
-.hero-panel,
-.content-section,
-.callout-block,
-.review-card,
 .detail-shell,
 .admin-shell,
 .contact-shell,
@@ -339,16 +335,15 @@ textarea {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.95fr);
   gap: clamp(1.2rem, 2vw, 1.8rem);
-  padding: clamp(1.4rem, 3vw, 2.4rem);
-  border-radius: 0.9rem;
-  overflow: hidden;
+  padding: clamp(1.8rem, 4vw, 3rem) clamp(0.4rem, 1vw, 0.9rem) clamp(1.6rem, 3vw, 2.5rem);
+  overflow: visible;
   position: relative;
   align-items: center;
   min-height: 38rem;
   background:
-    radial-gradient(circle at 78% 24%, rgba(191, 35, 30, 0.26), transparent 18%),
-    radial-gradient(circle at 60% 42%, rgba(224, 116, 40, 0.12), transparent 22%),
-    linear-gradient(136deg, rgba(15, 9, 9, 0.96), rgba(5, 3, 3, 0.98) 42%, rgba(11, 5, 5, 0.98));
+    radial-gradient(circle at 78% 24%, rgba(191, 35, 30, 0.2), transparent 18%),
+    radial-gradient(circle at 60% 42%, rgba(224, 116, 40, 0.08), transparent 24%),
+    linear-gradient(136deg, rgba(15, 9, 9, 0.68), rgba(5, 3, 3, 0.4) 42%, rgba(11, 5, 5, 0.62));
   isolation: isolate;
 }
 
@@ -661,16 +656,8 @@ textarea {
   grid-template-columns: minmax(12rem, 15rem) minmax(0, 1fr);
   gap: 1.1rem;
   align-items: stretch;
-  padding: 1.1rem 0.9rem 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid rgba(198, 161, 93, 0.08);
-  background:
-    linear-gradient(90deg, rgba(255, 248, 235, 0.02), transparent 22%),
-    rgba(4, 2, 2, 0.18);
+  padding: 0.5rem 0 0.2rem;
   min-height: 29rem;
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.015),
-    0 12px 40px rgba(0, 0, 0, 0.24);
 }
 
 .hero-feature-poster {
@@ -683,7 +670,7 @@ textarea {
 .hero-feature-media,
 .poster-frame {
   position: relative;
-  border-radius: 0.35rem;
+  border-radius: 0.18rem;
   overflow: hidden;
   background:
     #100909;
@@ -692,11 +679,10 @@ textarea {
 .hero-feature-media {
   min-height: 100%;
   width: calc(100% - 0.8rem);
-  border: 1px solid rgba(244, 231, 211, 0.18);
   box-shadow:
-    0 36px 74px rgba(0, 0, 0, 0.8),
-    -10px 0 34px rgba(0, 0, 0, 0.28),
-    12px 0 24px rgba(255, 122, 52, 0.12);
+    0 40px 74px rgba(0, 0, 0, 0.84),
+    -12px 0 34px rgba(0, 0, 0, 0.32),
+    18px 0 28px rgba(255, 122, 52, 0.1);
   transform: rotate(-3.2deg);
 }
 
@@ -749,7 +735,7 @@ textarea {
   display: grid;
   gap: 0.85rem;
   align-content: center;
-  padding: 0.9rem 0.7rem 0.8rem 0.4rem;
+  padding: 0.5rem 0 0.2rem 0.2rem;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.34);
 }
 
@@ -785,10 +771,7 @@ textarea {
 .hero-feature-strip div {
   display: grid;
   gap: 0.25rem;
-  padding: 0.8rem 0.9rem;
-  border: 1px solid rgba(255, 248, 235, 0.05);
-  border-radius: 0.35rem;
-  background: rgba(255, 255, 255, 0.02);
+  padding: 0.25rem 0;
 }
 
 .hero-feature-strip strong {
@@ -827,12 +810,12 @@ textarea {
 .stat-row span,
 .detail-meta span,
 .review-meta span {
-  padding: 0.48rem 0.7rem;
-  border-radius: 0.25rem;
-  background: rgba(255, 255, 255, 0.04);
+  padding: 0;
+  border-radius: 0;
+  background: none;
   color: var(--muted-strong);
   font-size: 0.82rem;
-  border: 1px solid rgba(255, 248, 235, 0.06);
+  border: 0;
 }
 
 .content-section,
@@ -845,6 +828,15 @@ textarea {
 .auth-panel {
   border-radius: 1.15rem;
   padding: 1.4rem;
+}
+
+.content-section,
+.callout-block {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0.6rem 0;
 }
 
 .section-heading {
@@ -885,61 +877,43 @@ textarea {
   --card-accent-glow: rgba(255, 122, 24, 0.32);
   display: grid;
   gap: 0;
-  padding: 0.95rem;
-  border-radius: 1rem;
+  padding: 0.4rem 0;
+  border: 0;
+  border-radius: 0;
   align-content: start;
-  background:
-    linear-gradient(180deg, rgba(255, 248, 235, 0.05), rgba(255, 248, 235, 0.01)),
-    linear-gradient(180deg, rgba(7, 7, 7, 0.98), rgba(2, 2, 2, 0.96));
+  background: none;
+  box-shadow: none;
   overflow: hidden;
   transition:
     transform 0.24s ease,
-    box-shadow 0.24s ease,
-    border-color 0.24s ease;
+    box-shadow 0.24s ease;
 }
 
 .review-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at top right, var(--card-accent-soft), transparent 34%),
-    linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.26) 100%);
-  pointer-events: none;
+  content: none;
 }
 
 .review-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0.3;
-  pointer-events: none;
-  background:
-    linear-gradient(115deg, transparent 0 74%, rgba(255, 255, 255, 0.06) 74.3%, transparent 74.6%),
-    linear-gradient(180deg, transparent 0 86%, rgba(198, 30, 39, 0.26) 100%),
-    repeating-linear-gradient(32deg, transparent 0 26px, rgba(255, 255, 255, 0.025) 26px 27px);
+  content: none;
 }
 
 .review-card:hover,
 .review-card:focus-within {
-  transform: translateY(-8px) rotate(-0.4deg);
-  border-color: rgba(255, 248, 235, 0.18);
-  box-shadow:
-    0 40px 78px rgba(0, 0, 0, 0.78),
-    0 0 40px rgba(198, 30, 39, 0.08);
+  transform: translateY(-4px);
+  box-shadow: none;
 }
 
 .card-grid-featured .review-card:nth-child(2n) {
-  transform: rotate(-0.45deg);
+  transform: none;
 }
 
 .card-grid-featured .review-card:nth-child(3n) {
-  transform: rotate(0.55deg);
+  transform: none;
 }
 
 .card-grid-featured .review-card:hover,
 .card-grid-featured .review-card:focus-within {
-  transform: translateY(-8px) scale(1.01) rotate(0deg);
+  transform: translateY(-4px);
 }
 
 .review-card-elite {
@@ -968,10 +942,12 @@ textarea {
 
 .review-card-poster {
   aspect-ratio: 2 / 3;
-  border-radius: 0.6rem;
+  border-radius: 0.18rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 248, 235, 0.1);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.56);
+  border: 0;
+  box-shadow:
+    0 22px 48px rgba(0, 0, 0, 0.58),
+    10px 0 22px rgba(255, 122, 52, 0.08);
   transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 
@@ -982,10 +958,10 @@ textarea {
 
 .review-card:hover .review-card-poster,
 .review-card:focus-within .review-card-poster {
-  transform: scale(1.045);
+  transform: translateY(-2px) scale(1.02);
   box-shadow:
-    0 30px 62px rgba(0, 0, 0, 0.74),
-    0 0 28px rgba(198, 30, 39, 0.14);
+    0 28px 58px rgba(0, 0, 0, 0.68),
+    12px 0 26px rgba(198, 30, 39, 0.1);
 }
 
 .review-card-verdict {
@@ -1010,10 +986,10 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.38rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 248, 235, 0.14);
-  background: rgba(0, 0, 0, 0.72);
+  padding: 0.18rem 0;
+  border-radius: 0;
+  border: 0;
+  background: none;
   color: var(--bone);
   font-size: 0.72rem;
   font-weight: 800;
@@ -1132,10 +1108,10 @@ textarea {
 }
 
 .review-card-tags span {
-  padding: 0.36rem 0.58rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 248, 235, 0.08);
-  background: rgba(255, 255, 255, 0.04);
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  background: none;
   color: rgba(239, 229, 211, 0.78);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
@@ -1151,6 +1127,17 @@ textarea {
   background:
     linear-gradient(180deg, rgba(198, 30, 39, 0.08), rgba(255, 255, 255, 0.02)),
     rgba(255, 255, 255, 0.02);
+}
+
+.review-card .watch-this-movie {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.review-card .watch-this-movie-button {
+  box-shadow: none;
 }
 
 .watch-this-movie-label {
@@ -1196,12 +1183,12 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 5.9rem;
-  min-height: 1.9rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 248, 235, 0.08);
-  background: rgba(255, 255, 255, 0.05);
+  min-width: auto;
+  min-height: auto;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  background: none;
   color: rgba(244, 239, 228, 0.86);
   font-size: 0.72rem;
   font-weight: 700;
@@ -1290,68 +1277,38 @@ textarea {
 .verdict-badge {
   display: inline-flex;
   width: fit-content;
-  padding: 0.58rem 0.8rem;
-  border: 1px solid currentColor;
-  border-radius: 0.28rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  box-shadow:
-    0 10px 24px rgba(0, 0, 0, 0.35),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-  transform: rotate(-4.5deg);
-  backdrop-filter: blur(4px);
+  box-shadow: none;
+  transform: none;
+  backdrop-filter: none;
   position: relative;
   overflow: hidden;
 }
 
 .verdict-badge::before,
 .verdict-badge::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.verdict-badge::before {
-  opacity: 0.22;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      transparent 0 9px,
-      rgba(255, 255, 255, 0.15) 9px 10px
-    ),
-    repeating-linear-gradient(
-      15deg,
-      transparent 0 18px,
-      rgba(0, 0, 0, 0.2) 18px 19px
-    );
-}
-
-.verdict-badge::after {
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 92% 100%, 0 100%);
-  border: 1px dashed rgba(255, 255, 255, 0.12);
-  opacity: 0.4;
+  content: none;
 }
 
 .verdict-watch {
-  background: rgba(33, 77, 17, 0.76);
   color: var(--acid);
 }
 
 .verdict-only-if-you-re-into-it {
-  background: rgba(111, 75, 14, 0.72);
   color: var(--dirty-amber);
 }
 
 .verdict-dont-bother {
-  background: rgba(109, 11, 18, 0.78);
   color: #ffb2b6;
 }
 
 .verdict-straight-trash {
-  background: linear-gradient(90deg, rgba(68, 68, 68, 0.82), rgba(126, 13, 20, 0.76));
   color: #f3c7c7;
 }
 
@@ -1394,10 +1351,10 @@ textarea {
 .field-full select,
 .field-full textarea {
   width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
-  padding: 0.8rem 0.95rem;
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(239, 229, 211, 0.08);
+  border-radius: 0.25rem;
+  padding: 0.78rem 0.82rem;
+  background: rgba(255, 255, 255, 0.015);
   color: var(--foreground);
   outline: none;
 }
@@ -1502,14 +1459,14 @@ textarea {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.85rem 1rem;
-  border-radius: 0.9rem;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.03);
+  padding: 0.8rem 0;
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid rgba(239, 229, 211, 0.08);
+  background: none;
   transition:
     transform 0.2s ease,
-    border-color 0.2s ease,
-    background-color 0.2s ease;
+    border-color 0.2s ease;
 }
 
 .admin-item {
@@ -1525,7 +1482,6 @@ textarea {
 .list-link:focus-visible {
   transform: translateY(-2px);
   border-color: rgba(198, 161, 93, 0.24);
-  background: rgba(255, 255, 255, 0.045);
 }
 
 .review-form,
@@ -1673,10 +1629,18 @@ textarea {
 
   .hero-panel {
     min-height: unset;
+    padding: 1rem 0.2rem 1.2rem;
+    border-radius: 0;
   }
 
   .hero-feature-media {
     min-height: 18rem;
+  }
+
+  .content-section,
+  .callout-block {
+    padding: 0.45rem 0;
+    border-radius: 0;
   }
 
   .review-card-footer {

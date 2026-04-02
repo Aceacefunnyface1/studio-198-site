@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ReviewWithStats } from "@/lib/types";
+import { getRatingVisual } from "@/lib/utils";
 
 type ReviewCardProps = {
   review: ReviewWithStats;
 };
 
 export function ReviewCard({ review }: ReviewCardProps) {
+  const ratingVisual = getRatingVisual(review.rating);
+
   return (
     <Link href={`/reviews/${review.slug}`} className="group block h-full">
       <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-black/40 backdrop-blur-sm transition-transform duration-200 group-hover:-translate-y-1">
@@ -65,15 +68,28 @@ export function ReviewCard({ review }: ReviewCardProps) {
               ) : null}
             </div>
 
-            <div className="text-right">
-              <p className="text-xs uppercase tracking-[0.18em] text-white/50">
-                Rating
-              </p>
-              <p className="text-lg font-bold text-white">
-                {typeof review.rating === "number"
-                  ? review.rating.toFixed(1)
-                  : "\u2014"}
-              </p>
+            <div className="flex items-end gap-3 text-right">
+              {ratingVisual ? (
+                <div className="relative h-10 w-10 overflow-hidden">
+                  <Image
+                    src={ratingVisual.iconSrc}
+                    alt={ratingVisual.iconAlt}
+                    fill
+                    className="object-contain"
+                    sizes="40px"
+                  />
+                </div>
+              ) : null}
+              <div>
+                <p className="text-xs uppercase tracking-[0.18em] text-white/50">
+                  {ratingVisual?.label ?? "rating"}
+                </p>
+                <p className="text-lg font-bold text-white">
+                  {typeof review.rating === "number"
+                    ? review.rating.toFixed(1)
+                    : "\u2014"}
+                </p>
+              </div>
             </div>
           </div>
         </div>

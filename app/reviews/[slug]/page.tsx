@@ -10,7 +10,7 @@ import { ReviewCard } from "@/components/review-card";
 import { ShareActions } from "@/components/share-actions";
 import { WatchThisMovie } from "@/components/watch-this-movie";
 import { getReviewBundle } from "@/lib/review-queries";
-import { formatDate } from "@/lib/utils";
+import { formatDate, getRatingVisual } from "@/lib/utils";
 
 type ReviewDetailPageProps = {
   params: Promise<{
@@ -49,6 +49,7 @@ export default async function ReviewDetailPage({
   }
 
   const { review, comments, related } = bundle;
+  const ratingVisual = getRatingVisual(review.rating);
 
   return (
     <div className="page-stack">
@@ -76,7 +77,13 @@ export default async function ReviewDetailPage({
               ) : null}
             </div>
             <div className="detail-meta">
-              <span>{review.ratingLabel}</span>
+              <span className="detail-rating-chip">
+                {ratingVisual ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={ratingVisual.iconSrc} alt={ratingVisual.iconAlt} />
+                ) : null}
+                <em>{review.ratingLabel}</em>
+              </span>
               <span>{review.reviewerName}</span>
               {review.runtime ? <span>{review.runtime}</span> : null}
             </div>

@@ -1,5 +1,11 @@
 import { Verdict, VerdictTone } from "@/lib/types";
 
+type RatingVisual = {
+  iconSrc: string;
+  iconAlt: string;
+  label: string;
+};
+
 export function slugify(value: string) {
   return value
     .toLowerCase()
@@ -30,6 +36,42 @@ export function ratingLabel(rating: number | null) {
   }
 
   return `${rating.toFixed(1)}/5`;
+}
+
+export function getRatingVisual(rating: number | null): RatingVisual | null {
+  if (rating === null || Number.isNaN(rating)) {
+    return null;
+  }
+
+  if (rating >= 4.0) {
+    return {
+      iconSrc: "/rating-icons/fire-eye.png",
+      iconAlt: "Fire eye rating icon",
+      label: "elite",
+    };
+  }
+
+  if (rating >= 3.0) {
+    return {
+      iconSrc: "/rating-icons/skull.png",
+      iconAlt: "Skull rating icon",
+      label: "solid",
+    };
+  }
+
+  if (rating >= 1.1) {
+    return {
+      iconSrc: "/rating-icons/block.png",
+      iconAlt: "No symbol rating icon",
+      label: "bad",
+    };
+  }
+
+  return {
+    iconSrc: "/rating-icons/poop.png",
+    iconAlt: "Poop rating icon",
+    label: "trash",
+  };
 }
 
 export function verdictTone(verdict: Verdict): VerdictTone {

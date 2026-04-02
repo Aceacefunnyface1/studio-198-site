@@ -2,14 +2,14 @@ const crew = [
   {
     image: "/about/mandy.jpg",
     name: "MANDY S",
-    role: "Emotional read / instinct pass",
+    role: "100 REVIEWS",
     meta: ["Eufaula, AL", "Melynda’s Love", "Los Angeles Film School"],
     description: "Brings instinct and emotional read to every review.",
   },
   {
     image: "/about/ace.jpg",
     name: "ACE B",
-    role: "Executioner / system builder",
+    role: "",
     meta: [
       "Lawton, OK",
       "Studio 198",
@@ -21,7 +21,7 @@ const crew = [
   {
     image: "/about/leeanne.jpg",
     name: "LEEANNE",
-    role: "Story / pacing / structure",
+    role: "100 REVIEWS",
     meta: [
       "Cleveland, TN",
       "One Generation Studio",
@@ -67,7 +67,9 @@ export default function AboutPage() {
               </div>
 
               <div className="about-copy">
-                <p className="about-role">{member.role}</p>
+                {member.role ? (
+                  <p className="about-role">{`${member.name} — ${member.role}`}</p>
+                ) : null}
                 <h2 className="about-name">{member.name}</h2>
                 <p className="about-meta">
                   {member.meta.map((line) => (

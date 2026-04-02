@@ -20,12 +20,10 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Snap Critique by Studio 198",
-    template: "%s | Snap Critique",
-  },
+  metadataBase: new URL("https://www.moviesbybrad.com"),
+  title: "Snap Critique - No Hype. No Mercy.",
   description:
-    "Dark, verdict-first movie reviews from Studio 198. Poster-driven criticism with sharp quick hits, full takes, and where-to-watch links.",
+    "Short-form reviews. Instant verdicts. No fake praise. If it hits, it earns it. If it doesn't, it gets buried.",
   applicationName: "Snap Critique",
   keywords: [
     "Snap Critique",
@@ -36,17 +34,24 @@ export const metadata: Metadata = {
     "Terrifier 3 review",
   ],
   openGraph: {
-    title: "Snap Critique by Studio 198",
-    description:
-      "Not Meant to Feel Safe. A cinematic movie review platform built by Studio 198.",
+    title: "Snap Critique - No Hype. No Mercy.",
+    description: "Short-form reviews. Instant verdicts. No fake praise.",
+    url: "https://www.moviesbybrad.com",
     siteName: "Snap Critique",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+      },
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Snap Critique by Studio 198",
-    description:
-      "Verdict-driven movie reviews with a dark cinematic Studio 198 identity.",
+    title: "Snap Critique - No Hype. No Mercy.",
+    description: "Short-form reviews. Instant verdicts. No fake praise.",
+    images: ["/twitter-image"],
   },
   icons: {
     icon: "/favicon.ico",

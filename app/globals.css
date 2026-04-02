@@ -3492,7 +3492,7 @@ textarea {
 .cinema-home__column {
   position: relative;
   z-index: 1;
-  width: min(790px, calc(100vw - 1.5rem));
+  width: min(960px, calc(100vw - 1.5rem));
   margin: 0 auto;
   display: grid;
   gap: 0.9rem;
@@ -3733,7 +3733,7 @@ textarea {
 .cinema-latest-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.7rem;
+  gap: 0.9rem;
 }
 
 .cinema-panel--latest .review-card {
@@ -3786,6 +3786,10 @@ textarea {
   .cinema-poster-wall__support,
   .cinema-poster-wall__lead {
     min-height: 18rem;
+  }
+
+  .cinema-home__column {
+    width: min(760px, calc(100vw - 1.5rem));
   }
 }
 

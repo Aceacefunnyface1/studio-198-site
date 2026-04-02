@@ -1,73 +1,76 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "About",
-  description:
-    "Learn how Snap Critique works, who reviews the films, and how Studio 198 ties the platform together.",
-};
-
 export default function AboutPage() {
   return (
-    <div className="page-stack">
-      <section className="about-shell">
-        <p className="eyebrow">About Snap Critique</p>
-        <h1>About Snap Critique</h1>
-        <div className="info-grid">
-          <div>
-            <h2>Snap Critique is built to answer one question fast:</h2>
-            <p>What are we watching tonight?</p>
-            <p>
-              No long reads. No filler.
-            </p>
-            <p>
-              You see the poster, you see the verdict, and you know if it&apos;s
-              worth your time.
-            </p>
+    <main className="about-page">
+      <section className="about-wrapper">
+        <h1 className="about-title">THE CREW BEHIND THE VERDICT</h1>
 
-            <h2>Who&apos;s Behind It</h2>
-            <p>This isn&apos;t just one opinion.</p>
-            <p>Reviews come from:</p>
-            <ul>
-              <li>Ace</li>
-              <li>and two working filmmakers</li>
-            </ul>
-            <p>
-              Different perspectives, same goal:
+        <p className="about-intro">
+          Three creators. One system. No fluff.
+          <br />
+          <br />
+          What started in the same classroom at The Los Angeles Film School
+          turned into something sharper — a platform built to cut through noise
+          and deliver real takes on film.
+          <br />
+          <br />
+          We don’t review movies the safe way. We break them down, call them
+          out, and give you a verdict you can actually trust.
+          <br />
+          <br />
+          <strong>Snap Critique isn’t about hype. It’s about truth.</strong>
+        </p>
+
+        <div className="about-grid">
+          <div className="about-card">
+            <img src="/about/mandy.jpg" className="about-avatar" />
+            <h2 className="about-name">MANDY S</h2>
+            <p className="about-meta">
+              Eufaula, AL
               <br />
-              call it straight.
+              Melynda’s Love
+              <br />
+              Los Angeles Film School
             </p>
-
-            <h2>How It Works</h2>
-            <ul>
-              <li>Poster first</li>
-              <li>Verdict first</li>
-              <li>Quick take</li>
-              <li>Full breakdown if you want it</li>
-            </ul>
-            <p>You don&apos;t have to dig for the answer. It&apos;s right there.</p>
+            <p className="about-desc">
+              Brings instinct and emotional read to every review.
+            </p>
           </div>
-          <div>
-            <h2>What You&apos;ll Start Seeing</h2>
-            <p>
-              Short hits. Fast reviews. 5-10 second drops.
-            </p>
-            <p>
-              You&apos;ll see something, think &ldquo;should we watch this?&rdquo; and
-              land here for the answer.
-            </p>
 
-            <h2>Studio 198</h2>
-            <p>Snap Critique runs under Studio 198.</p>
-            <p>
-              Film, reviews, and everything around it connect back here.
+          <div className="about-card">
+            <img src="/about/ace.jpg" className="about-avatar" />
+            <h2 className="about-name">ACE B</h2>
+            <p className="about-meta">
+              Lawton, OK
+              <br />
+              Studio 198
+              <br />
+              Los Angeles Film School
+              <br />
+              www.moviesbybrad.com
             </p>
+            <p className="about-desc">
+              Executioner of the verdict. Built the system.
+            </p>
+          </div>
 
-            <h2>Bottom Line</h2>
-            <p>You don&apos;t need another opinion.</p>
-            <p>You need a decision.</p>
+          <div className="about-card">
+            <img src="/about/leeanne.jpg" className="about-avatar" />
+            <h2 className="about-name">LEEANNE</h2>
+            <p className="about-meta">
+              Cleveland, TN
+              <br />
+              One Generation Studio
+              <br />
+              Los Angeles Film School
+            </p>
+            <p className="about-desc">
+              Focuses on story, pacing, and structure.
+            </p>
           </div>
         </div>
+
+        <p className="about-footer">Three perspectives. One verdict system.</p>
       </section>
-    </div>
+    </main>
   );
 }

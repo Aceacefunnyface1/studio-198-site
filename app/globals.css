@@ -4148,3 +4148,45 @@ textarea {
     min-height: auto;
   }
 }
+
+.about-page {
+  background: #050505;
+  color: #eaeaea;
+  padding: 4rem 1rem;
+}
+
+.about-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 2rem;
+}
+
+.about-intro {
+  margin-bottom: 3rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.about-card {
+  padding: 1.5rem;
+}
+
+.about-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.about-footer {
+  margin-top: 2rem;
+}

@@ -131,6 +131,24 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
   const bundledBySlug = new Map(
     bundled.reviews.map((review) => [review.slug, enforceReviewPolicies(review)]),
   );
+  const mergedCommentMap = new Map<string, SiteData["comments"][number]>();
+
+  function getCommentMergeKey(comment: SiteData["comments"][number]) {
+    return [
+      comment.id?.trim() || "",
+      comment.reviewSlug?.trim() || "",
+      comment.displayName?.trim() || "",
+      comment.body?.trim() || "",
+      comment.createdAt?.trim() || "",
+    ].join("|");
+  }
+
+  function addMergedComment(comment: SiteData["comments"][number]) {
+    mergedCommentMap.set(getCommentMergeKey(comment), comment);
+  }
+
+  existing.comments.forEach(addMergedComment);
+  bundled.comments.forEach(addMergedComment);
 
   function shouldPreferBundledPoster(
     existingPoster: string,
@@ -273,6 +291,10 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
   return {
     ...existing,
     reviews: [...mergedReviews, ...missingBundledReviews],
+    comments: [...mergedCommentMap.values()].sort(
+      (left, right) =>
+        +new Date(right.createdAt || 0) - +new Date(left.createdAt || 0),
+    ),
   } satisfies SiteData;
 }
 

@@ -48,6 +48,8 @@ function getRatingVisual(rating: number | null) {
 export function ReviewCard({ review }: ReviewCardProps) {
   const ratingVisual = getRatingVisual(review.rating);
   const commentCount = review.commentCount ?? 0;
+  const commentsLabel =
+    commentCount > 0 ? `${commentCount} COMMENTS` : "COMMENTS";
 
   return (
     <article className={`review-card ${ratingVisual.accentClass}`}>
@@ -102,8 +104,12 @@ export function ReviewCard({ review }: ReviewCardProps) {
 
         <div className="review-card-bottom">
           <div className="review-card-stats" aria-label="Review engagement">
-            <span>🔥 {review.heatCount} HEAT</span>
-            <span>{commentCount} comments</span>
+            <span className="review-card-stat review-card-stat--heat">
+              🔥 {review.heatCount} HEAT
+            </span>
+            <span className="review-card-stat review-card-stat--comments">
+              {commentsLabel}
+            </span>
           </div>
 
           <div className="review-card-footer">

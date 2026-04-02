@@ -121,8 +121,12 @@ export default async function ReviewDetailPage({
                 <span>HEAT</span>
               </div>
               <div>
-                <strong>{review.commentCount}</strong>
-                <span>Comments</span>
+                <strong>
+                  {review.commentCount > 0 ? review.commentCount : "COMMENTS"}
+                </strong>
+                <span className="stats-strip__comments">
+                  {review.commentCount > 0 ? "Comments" : "Join the thread"}
+                </span>
               </div>
               <div>
                 <strong>{formatDate(review.updatedAt)}</strong>

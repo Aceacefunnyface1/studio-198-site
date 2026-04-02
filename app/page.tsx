@@ -52,29 +52,31 @@ export default async function HomePage() {
 
         <div className="hell-hero__inner">
           <div className="hell-hero__copy">
-            <p className="studio-hero__eyebrow">STUDIO 198 DESCENDS</p>
+            <p className="studio-hero__eyebrow">STUDIO 198 PRESENTS</p>
 
             <h1 className="studio-hero__title hell-hero__title">
-              <span>WELCOME</span>
-              <span>BELOW</span>
+              <span>SNAP</span>
+              <span>CRITIQUE</span>
             </h1>
 
             <p className="studio-hero__tagline hell-hero__tagline">
-              A movie site that feels like the gates already closed behind you.
+              NO HYPE. NO MERCY.
             </p>
 
             <div className="hell-hero__body">
               <p className="studio-hero__body">
-                Lava in the sky. Smoke in the air. Reviews carved out with heat,
-                venom, and no interest in playing nice.
+                Poster-first verdicts with smoke in the air, heat in the frame,
+                and no interest in fake praise.
               </p>
               <p className="studio-hero__body">
-                This is the archive for films that earn obsession, survive the
-                fire, or get dragged straight into it.
+                Movies either survive the fire, earn the obsession, or get
+                dragged straight into it.
               </p>
             </div>
 
-            <p className="studio-hero__aggression">ENTER AT YOUR OWN RISK.</p>
+            <p className="studio-hero__aggression">
+              SHORT-FORM REVIEWS. INSTANT VERDICTS.
+            </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/reviews" className="studio-btn studio-btn--primary">
@@ -167,6 +169,10 @@ export default async function HomePage() {
             <div>
               <p className="eyebrow">FEATURED VERDICTS</p>
               <h2>POSTER WALL. FRESH DAMAGE.</h2>
+              <p className="poster-wall__subcopy">
+                Posters lead. The verdict follows. Nothing here should feel
+                blank, padded, or polite.
+              </p>
             </div>
             <Link href="/reviews" className="poster-wall__archive">
               ENTER THE ARCHIVE

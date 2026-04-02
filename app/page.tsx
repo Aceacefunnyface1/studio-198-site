@@ -24,9 +24,15 @@ export default async function HomePage() {
 
   return (
     <div className="cinema-home">
-      <section className="cinema-band cinema-band--top">
-        <div className="cinema-shell cinema-shell--hero">
-          <div className="cinema-hero-copy">
+      <div className="cinema-home__backdrop" aria-hidden="true">
+        <div className="cinema-home__backdrop-top" />
+        <div className="cinema-home__backdrop-mid" />
+        <div className="cinema-home__backdrop-bottom" />
+      </div>
+
+      <div className="cinema-home__column">
+        <section className="cinema-panel cinema-panel--hero">
+          <div className="cinema-panel__copy">
             <p className="eyebrow cinema-home__eyebrow">Studio 198 presents</p>
             <h1 className="cinema-home__title">
               <span>SNAP</span>
@@ -34,11 +40,12 @@ export default async function HomePage() {
             </h1>
             <p className="cinema-home__tagline">NO HYPE. NO MERCY.</p>
             <p className="cinema-home__lede">
-              Poster-first movie verdicts with heat, smoke, and zero patience
-              for fake praise.
+              Poster-first verdicts with smoke in the air and no patience for
+              fake praise.
             </p>
             <p className="cinema-home__lede">
-              If it hits, it earns obsession. If it misses, it gets dragged.
+              Movies either survive the fire, earn the obsession, or get
+              dragged straight into it.
             </p>
 
             <div className="cinema-home__actions">
@@ -52,34 +59,25 @@ export default async function HomePage() {
                 Read Tonight&apos;s Verdict
               </Link>
             </div>
-
-            <div className="cinema-home__stats" aria-label="Site atmosphere">
-              <div>
-                <span>Archive</span>
-                <strong>{reviews.length} verdicts</strong>
-              </div>
-              <div>
-                <span>Tone</span>
-                <strong>Unforgiving</strong>
-              </div>
-              <div>
-                <span>Heat</span>
-                <strong>Always on</strong>
-              </div>
-            </div>
           </div>
 
-          <div className="cinema-hero-stage">
-            <div className="cinema-hero-stage__main">
+          <div className="cinema-panel__stage">
+            <div className="cinema-stage__main">
               <img
                 src="/inferno/demon-garage.png"
                 alt="Infernal hot rods in front of a towering demon"
               />
             </div>
 
-            <div className="cinema-hero-stage__featured">
-              <p>Tonight&apos;s sacrifice</p>
-              <div className="cinema-hero-stage__poster">
+            <div className="cinema-stage__mini cinema-stage__mini--top">
+              <img
+                src="/inferno/hellscape-wide.png"
+                alt="Burning fortress on the edge of a lava field"
+              />
+            </div>
+
+            <div className="cinema-stage__featured">
+              <div className="cinema-stage__featured-poster">
                 <img
                   src={heroReview?.resolvedPosterImage ?? "/posters/next-review-slot.svg"}
                   alt={
@@ -89,7 +87,8 @@ export default async function HomePage() {
                   }
                 />
               </div>
-              <div className="cinema-hero-stage__featured-copy">
+              <div className="cinema-stage__featured-copy">
+                <p>Tonight&apos;s sacrifice</p>
                 <h2>{heroReview?.movieTitle ?? "Next film on the pyre"}</h2>
                 <span>
                   {heroReview?.releaseYear ? `${heroReview.releaseYear} / ` : ""}
@@ -97,34 +96,13 @@ export default async function HomePage() {
                 </span>
               </div>
             </div>
-
-            <div className="cinema-hero-stage__detail cinema-hero-stage__detail--top">
-              <img
-                src="/inferno/hellscape-wide.png"
-                alt="Burning fortress on the edge of a lava field"
-              />
-            </div>
-
-            <div className="cinema-hero-stage__detail cinema-hero-stage__detail--bottom">
-              <img
-                src="/inferno/hellscape-alt.png"
-                alt="Infernal canyon with a river of lava"
-              />
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="cinema-band cinema-band--middle">
-        <div className="cinema-shell cinema-shell--poster-wall">
-          <div className="cinema-section-heading">
-            <div>
-              <p className="eyebrow">Featured verdicts</p>
-              <h2>POSTER WALL. FRESH DAMAGE.</h2>
-            </div>
-            <Link href="/reviews" className="cinema-section-heading__link">
-              See all reviews
-            </Link>
+        <section className="cinema-panel cinema-panel--wall">
+          <div className="cinema-panel__heading">
+            <h2>POSTER WALL. FRESH DAMAGE.</h2>
+            <Link href="/reviews">SEE ALL REVIEWS</Link>
           </div>
 
           <div className="cinema-poster-wall">
@@ -138,16 +116,11 @@ export default async function HomePage() {
                   alt={`${leadReview.movieTitle} poster`}
                 />
                 <div className="cinema-poster-wall__overlay">
-                  <span className={`verdict-badge verdict-${leadReview.verdictKey}`}>
-                    {leadReview.verdict}
-                  </span>
-                  <div>
-                    <h3>{leadReview.movieTitle}</h3>
-                    <p>
-                      {leadReview.quickHit?.split(".")[0] ??
-                        "Fresh damage on the wall."}
-                    </p>
-                  </div>
+                  <h3>{leadReview.movieTitle}</h3>
+                  <p>
+                    {leadReview.quickHit?.split(".")[0] ??
+                      "Fresh damage on the wall."}
+                  </p>
                 </div>
               </Link>
             ) : null}
@@ -164,60 +137,33 @@ export default async function HomePage() {
                     alt={`${review.movieTitle} poster`}
                   />
                   <div className="cinema-poster-wall__overlay">
-                    <span className={`verdict-badge verdict-${review.verdictKey}`}>
-                      {review.verdict}
-                    </span>
-                    <div>
-                      <h3>{review.movieTitle}</h3>
-                      <p>{review.quickHit?.split(".")[0] ?? "Still burning."}</p>
-                    </div>
+                    <h3>{review.movieTitle}</h3>
+                    <p>{review.quickHit?.split(".")[0] ?? "Still burning."}</p>
                   </div>
                 </Link>
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="cinema-shell cinema-shell--explorer">
-          <div className="cinema-section-heading cinema-section-heading--stacked">
-            <div>
-              <p className="eyebrow">Dig through the ash</p>
-              <h2>Sort the bodies.</h2>
-            </div>
-            <p className="cinema-section-heading__copy">
-              Search, filter, and pull up every review without losing the dark
-              theatrical feel from the landing page.
-            </p>
+        <section className="cinema-panel cinema-panel--explorer">
+          <div className="cinema-panel__heading cinema-panel__heading--stacked cinema-panel__heading--compact">
+            <h2>DIG THROUGH THE ASH. SORT THE BODIES.</h2>
           </div>
           <BrowseExplorer
             reviews={reviews}
             emptyMessage="Nothing survived this filter pass."
           />
-        </div>
+        </section>
 
-        <div className="cinema-shell cinema-shell--latest">
-          <div className="cinema-section-heading cinema-section-heading--stacked">
-            <div>
-              <p className="eyebrow">Latest files</p>
-              <h2>New arrivals on the lower level.</h2>
-            </div>
-            <p className="cinema-section-heading__copy">
-              Fresh reviews stay front and center before they disappear into the
-              wider archive.
-            </p>
-          </div>
-
-          <div className="card-grid card-grid-featured cinema-latest-grid">
+        <section className="cinema-panel cinema-panel--latest">
+          <div className="cinema-latest-grid">
             {latest.map((review) => (
               <ReviewCard key={review.id} review={review} />
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="cinema-band cinema-band--bottom">
-        <div className="cinema-bottom-spacer" aria-hidden="true" />
-      </section>
+        </section>
+      </div>
     </div>
   );
 }

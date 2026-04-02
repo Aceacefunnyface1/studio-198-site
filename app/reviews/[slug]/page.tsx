@@ -16,6 +16,7 @@ type ReviewDetailPageProps = {
   params: Promise<{
     slug: string;
   }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
 
 export async function generateMetadata({
@@ -40,8 +41,10 @@ export async function generateMetadata({
 
 export default async function ReviewDetailPage({
   params,
+  searchParams,
 }: ReviewDetailPageProps) {
   const { slug } = await params;
+  const resolvedSearchParams = await searchParams;
   const bundle = await getReviewBundle(slug);
 
   if (!bundle || bundle.review.status !== "published") {
@@ -50,6 +53,10 @@ export default async function ReviewDetailPage({
 
   const { review, comments, related } = bundle;
   const ratingVisual = getRatingVisual(review.rating);
+  const error =
+    typeof resolvedSearchParams.error === "string"
+      ? resolvedSearchParams.error
+      : "";
 
   return (
     <div className="page-stack">
@@ -155,6 +162,8 @@ export default async function ReviewDetailPage({
             <h2>Talk back to the verdict</h2>
           </div>
         </div>
+
+        {error ? <p className="muted-note">{error}</p> : null}
 
         <form action={addCommentAction} className="contact-form">
           <input type="hidden" name="reviewId" value={review.id} />

@@ -158,24 +158,46 @@ export async function addCommentAction(formData: FormData) {
   const body = requireText(formData.get("body"));
   const reviewId = requireText(formData.get("reviewId"));
   const reviewSlug = requireText(formData.get("reviewSlug"));
+  const safeReviewPath = reviewSlug ? `/reviews/${reviewSlug}` : "/reviews";
 
   if (!body || !reviewId || !reviewSlug) {
-    redirect(`/reviews/${reviewSlug}?error=Comment%20could%20not%20be%20saved`);
+    redirect(`${safeReviewPath}?error=Comment%20could%20not%20be%20saved`);
   }
 
-  const data = await readSiteData();
-  data.comments.unshift({
-    id: `comment-${crypto.randomUUID()}`,
-    reviewId,
-    reviewSlug,
-    displayName,
-    body,
-    createdAt: new Date().toISOString(),
-    status: "visible",
-  });
+  try {
+    const data = await readSiteData();
+    const review = data.reviews.find(
+      (entry) => entry.id === reviewId && entry.slug === reviewSlug,
+    );
 
-  await writeSiteData(data);
+    if (!review) {
+      throw new Error("Review not found");
+    }
+
+    data.comments.unshift({
+      id: `comment-${crypto.randomUUID()}`,
+      reviewId,
+      reviewSlug,
+      displayName,
+      body,
+      createdAt: new Date().toISOString(),
+      status: "visible",
+    });
+
+    await writeSiteData(data);
+  } catch (error) {
+    const message =
+      error instanceof Error ? error.message : "Comment save failed";
+    redirect(
+      `${safeReviewPath}?error=${encodeURIComponent(
+        message || "Comment%20save%20failed",
+      )}`,
+    );
+  }
+
   revalidatePath(`/reviews/${reviewSlug}`);
+  revalidatePath("/reviews");
+  revalidatePath("/");
   revalidatePath("/admin");
   redirect(`/reviews/${reviewSlug}#comments`);
 }

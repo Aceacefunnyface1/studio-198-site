@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ReviewWithStats } from "@/lib/types";
-import { getRatingVisual } from "@/lib/utils";
+import { getRatingVisual, getReviewerPresentation } from "@/lib/utils";
 
 const DEFAULT_AMAZON_AFFILIATE_URL = "https://amzn.to/3PtHOkZ";
 
@@ -16,6 +16,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
   const directorName = review.director?.trim() || "Unknown";
   const directorPrefix = directorName.length > 16 ? "BY" : "DIRECTED BY";
   const commentCount = typeof review.commentCount === "number" ? review.commentCount : 0;
+  const reviewer = getReviewerPresentation(review.reviewerName);
 
   return (
     <article className="movie-review-card">
@@ -98,7 +99,11 @@ export function ReviewCard({ review }: ReviewCardProps) {
           </div>
         </div>
 
-        <p className="movie-review-card__executioner">EXECUTIONER "ACE"</p>
+        <p
+          className={`movie-review-card__executioner movie-review-card__executioner--${reviewer.tone}`}
+        >
+          {reviewer.label}
+        </p>
 
         <div className="movie-review-card__footer">
           <div className="movie-review-card__rating-icon">

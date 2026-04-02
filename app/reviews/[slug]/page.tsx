@@ -10,7 +10,7 @@ import { ReviewCard } from "@/components/review-card";
 import { ShareActions } from "@/components/share-actions";
 import { WatchThisMovie } from "@/components/watch-this-movie";
 import { getReviewBundle } from "@/lib/review-queries";
-import { formatDate, getRatingVisual } from "@/lib/utils";
+import { formatDate, getRatingVisual, getReviewerPresentation } from "@/lib/utils";
 
 type ReviewDetailPageProps = {
   params: Promise<{
@@ -53,6 +53,7 @@ export default async function ReviewDetailPage({
 
   const { review, comments, related } = bundle;
   const ratingVisual = getRatingVisual(review.rating);
+  const reviewer = getReviewerPresentation(review.reviewerName);
   const error =
     typeof resolvedSearchParams.error === "string"
       ? resolvedSearchParams.error
@@ -91,7 +92,9 @@ export default async function ReviewDetailPage({
                 ) : null}
                 <em>{review.ratingLabel}</em>
               </span>
-              <span>{review.reviewerName}</span>
+              <span className={`detail-reviewer detail-reviewer--${reviewer.tone}`}>
+                {reviewer.label}
+              </span>
               {review.runtime ? <span>{review.runtime}</span> : null}
             </div>
 

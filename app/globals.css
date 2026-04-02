@@ -4072,7 +4072,6 @@ textarea {
   grid-row: 12 / span 1;
   align-self: center;
   margin: 0;
-  color: #64ff2a;
   font-family: var(--font-body), Helvetica, Arial, sans-serif;
   font-size: 0.76rem;
   font-weight: 900;
@@ -4080,6 +4079,18 @@ textarea {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.movie-review-card__executioner--ace {
+  color: #64ff2a;
+}
+
+.movie-review-card__executioner--mandy {
+  color: #b58cff;
+}
+
+.movie-review-card__executioner--leeanna {
+  color: #ff5b5b;
 }
 
 .movie-review-card__footer {
@@ -4124,6 +4135,24 @@ textarea {
   font-size: 1.58rem;
   font-weight: 900;
   line-height: 0.95;
+}
+
+.detail-reviewer {
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.detail-reviewer--ace {
+  color: #64ff2a;
+}
+
+.detail-reviewer--mandy {
+  color: #b58cff;
+}
+
+.detail-reviewer--leeanna {
+  color: #ff5b5b;
 }
 
 @media (max-width: 640px) {

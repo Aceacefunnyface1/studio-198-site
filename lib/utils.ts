@@ -6,6 +6,11 @@ type RatingVisual = {
   label: string;
 };
 
+type ReviewerPresentation = {
+  label: string;
+  tone: "ace" | "mandy" | "leeanna";
+};
+
 export function slugify(value: string) {
   return value
     .toLowerCase()
@@ -71,6 +76,31 @@ export function getRatingVisual(rating: number | null): RatingVisual | null {
     iconSrc: "/rating-icons/poop.png",
     iconAlt: "Poop rating icon",
     label: "trash",
+  };
+}
+
+export function getReviewerPresentation(
+  reviewerName: string | null | undefined,
+): ReviewerPresentation {
+  const normalized = (reviewerName || "").trim().toUpperCase();
+
+  if (normalized === "MANDY") {
+    return {
+      label: "MANDY",
+      tone: "mandy",
+    };
+  }
+
+  if (normalized === "LEEANNA") {
+    return {
+      label: "LEEANNA",
+      tone: "leeanna",
+    };
+  }
+
+  return {
+    label: 'EXECUTIONER "ACE"',
+    tone: "ace",
   };
 }
 

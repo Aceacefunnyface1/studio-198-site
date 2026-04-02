@@ -3271,7 +3271,7 @@ textarea {
 
 .card-grid-featured,
 .related-grid {
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .review-card {
@@ -3440,6 +3440,9 @@ textarea {
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  filter: blur(5px);
+  transform: scale(1.02);
+  transform-origin: center top;
 }
 
 .cinema-home__backdrop-top,

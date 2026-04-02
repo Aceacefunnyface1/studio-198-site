@@ -1,57 +1,43 @@
-"use client";
-
-import { useState } from "react";
+import { cookies } from "next/headers";
+import { likeReviewAction } from "@/app/actions";
 
 type ReviewLikeButtonProps = {
   reviewId: string;
+  reviewSlug: string;
 };
 
-function getStorageKey(reviewId: string) {
-  return `snap-critique-liked:${reviewId}`;
-}
+const likedCookieName = "snap-critique-likes";
 
-export function ReviewLikeButton({ reviewId }: ReviewLikeButtonProps) {
-  const [liked, setLiked] = useState(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
-
-    try {
-      return window.localStorage.getItem(getStorageKey(reviewId)) === "1";
-    } catch {
-      return false;
-    }
-  });
-
-  function handleLike() {
-    if (typeof window === "undefined" || liked) {
-      return;
-    }
-
-    try {
-      window.localStorage.setItem(getStorageKey(reviewId), "1");
-      setLiked(true);
-    } catch {
-      setLiked(true);
-    }
-  }
+export async function ReviewLikeButton({
+  reviewId,
+  reviewSlug,
+}: ReviewLikeButtonProps) {
+  const cookieStore = await cookies();
+  const likedReviews = new Set(
+    (cookieStore.get(likedCookieName)?.value || "")
+      .split(",")
+      .map((value) => value.trim())
+      .filter(Boolean),
+  );
+  const alreadyLiked = likedReviews.has(reviewId);
 
   return (
-    <div className="review-like-shell">
+    <form action={likeReviewAction} className="review-like-shell">
+      <input type="hidden" name="reviewId" value={reviewId} />
+      <input type="hidden" name="reviewSlug" value={reviewSlug} />
       <button
-        type="button"
+        type="submit"
         className="button-primary"
-        onClick={handleLike}
-        disabled={liked}
-        aria-pressed={liked}
+        disabled={alreadyLiked}
+        aria-pressed={alreadyLiked}
       >
-        {liked ? "Heat Logged On This Device" : "Add Heat To This Verdict"}
+        {alreadyLiked ? "HEAT Already Logged" : "Add Heat To This Verdict"}
       </button>
       <p className="review-like-note">
-        {liked
-          ? "Saved locally so the heat sticks without the app blinking."
-          : "Local for now, but it still lets the verdict carry some heat."}
+        {alreadyLiked
+          ? "Duplicate protection is active: this browser already logged one HEAT vote."
+          : "One HEAT vote per browser. A valid vote adds exactly 1 and persists after refresh."}
       </p>
-    </div>
+    </form>
   );
 }

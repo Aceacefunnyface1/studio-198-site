@@ -54,10 +54,7 @@ export function getHeatCount(review: HeatSource) {
   const [min, max] = getRange(review);
   const spread = max - min;
   const likeCount = review.likeCount ?? 0;
+  const baseHeat = min + (hash % (spread + 1));
 
-  if (likeCount > 0) {
-    return Math.min(max, min + likeCount * 23 + (hash % 67));
-  }
-
-  return min + (hash % (spread + 1));
+  return baseHeat + likeCount;
 }

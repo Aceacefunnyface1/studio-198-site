@@ -3492,7 +3492,7 @@ textarea {
 .cinema-home__column {
   position: relative;
   z-index: 1;
-  width: min(960px, calc(100vw - 1.5rem));
+  width: min(1080px, calc(100vw - 1.25rem));
   margin: 0 auto;
   display: grid;
   gap: 0.9rem;
@@ -3733,7 +3733,7 @@ textarea {
 .cinema-latest-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.9rem;
+  gap: 0.72rem;
 }
 
 .cinema-panel--latest .review-card {
@@ -3850,6 +3850,7 @@ textarea {
 .movie-review-card__poster-link,
 .movie-review-card__content-link {
   display: block;
+  width: 100%;
 }
 
 .movie-review-card__poster {

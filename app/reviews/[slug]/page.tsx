@@ -148,7 +148,7 @@ export default async function ReviewDetailPage({
               </div>
             </div>
 
-            <ReviewLikeButton reviewId={review.id} />
+            <ReviewLikeButton reviewId={review.id} reviewSlug={review.slug} />
 
             <ShareActions title={review.movieTitle} path={`/reviews/${review.slug}`} />
           </div>

@@ -3446,33 +3446,33 @@ textarea {
 .cinema-home__backdrop-mid,
 .cinema-home__backdrop-bottom {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(760px, calc(100vw - 1rem));
+  left: 0;
+  right: 0;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: contain;
-  opacity: 0.96;
+  background-size: 100% auto;
+  opacity: 1;
 }
 
 .cinema-home__backdrop-top {
   top: 0;
-  height: clamp(18rem, 30vw, 28rem);
-  background-image: url("/reference-home/top.png");
+  height: clamp(12rem, 22vw, 19rem);
+  background-image: url("/reference-home/cropped/top-crop.png");
 }
 
 .cinema-home__backdrop-mid {
-  top: clamp(12rem, 18vw, 16rem);
-  bottom: 9rem;
-  background-image: url("/reference-home/mid.png");
+  top: clamp(9rem, 16vw, 13rem);
+  bottom: 7rem;
+  background-image: url("/reference-home/cropped/mid-crop.png");
   background-repeat: repeat-y;
-  background-size: min(760px, calc(100vw - 1rem)) auto;
+  background-size: 100% auto;
 }
 
 .cinema-home__backdrop-bottom {
   bottom: 0;
-  height: clamp(15rem, 26vw, 22rem);
-  background-image: url("/reference-home/bottom.png");
+  height: clamp(11rem, 20vw, 16rem);
+  background-image: url("/reference-home/cropped/bottom-crop.png");
   background-position: center bottom;
 }
 

@@ -2852,6 +2852,7 @@ textarea {
 }
 
 .newsletter-block .sub,
+.newsletter-kicker,
 .newsletter-block .offer,
 .newsletter-block .fine,
 .newsletter-feedback {
@@ -2867,6 +2868,13 @@ textarea {
   margin-top: 1rem;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.newsletter-kicker {
+  margin-top: 0.85rem;
+  color: rgba(244, 231, 211, 0.9);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
 }
 
 .newsletter-block .offer strong {

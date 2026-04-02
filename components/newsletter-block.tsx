@@ -18,16 +18,16 @@ export default function NewsletterBlock({ state = "" }: NewsletterBlockProps) {
       <div className="newsletter-inner">
         <p className="eyebrow">Monthly Entry</p>
         <h2>SNAP CRITIQUE GIVEAWAY</h2>
-        <p className="sub">Every month. No fluff. No spam.</p>
+        <p className="sub">Every month:</p>
 
         <p className="offer">
-          Subscribe and you&apos;re automatically entered to win:
-          <br />
           <strong>$50 AMC Gift Card</strong>
         </p>
 
-        <p className="fine">Winner drawn on the 1st of every month.</p>
-        <p className="fine">Just real reviews and a shot at free movies.</p>
+        <p className="fine">
+          Enter your email to join the newsletter and get automatically entered.
+        </p>
+        <p className="fine">No fluff. Just movies.</p>
 
         <form className="newsletter-form" action={subscribeNewsletterAction}>
           <label className="newsletter-label" htmlFor="newsletter-email">

@@ -154,6 +154,10 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
         </section>
 
+        <section className="cinema-panel cinema-panel--newsletter">
+          <NewsletterBlock state={newsletterState} />
+        </section>
+
         <section className="cinema-panel cinema-panel--explorer">
           <div className="cinema-panel__heading cinema-panel__heading--stacked cinema-panel__heading--compact">
             <h2>DIG THROUGH THE ASH. SORT THE BODIES.</h2>
@@ -163,8 +167,6 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             emptyMessage="Nothing survived this filter pass."
           />
         </section>
-
-        <NewsletterBlock state={newsletterState} />
 
         <section className="cinema-panel cinema-panel--latest">
           <div className="cinema-latest-grid">

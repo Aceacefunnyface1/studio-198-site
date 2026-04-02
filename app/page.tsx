@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { BrowseExplorer } from "@/components/browse-explorer";
+import { ReviewCard } from "@/components/review-card";
 import {
   getDailyFeaturedReview,
   getPublishedReviewsWithStats,
@@ -18,268 +19,205 @@ export default async function HomePage() {
       ? [heroReview, ...latest.filter((review) => review.id !== heroReview.id)]
       : latest
   ).slice(0, 3);
-  const featuredReview = heroReview
-    ? {
-        title: heroReview.movieTitle,
-        slug: heroReview.slug,
-        posterImage: heroReview.resolvedPosterImage,
-        releaseYear: heroReview.releaseYear,
-        rating: heroReview.ratingLabel,
-        quickHit: heroReview.quickHit,
-        heat: heroReview.heatCount,
-        verdict: heroReview.verdict,
-      }
-    : null;
-  const posterWallLead = spotlightReviews[0] ?? null;
-  const posterWallSupporting = spotlightReviews.slice(1, 3);
+  const leadReview = spotlightReviews[0] ?? null;
+  const supportReviews = spotlightReviews.slice(1, 3);
 
   return (
-    <>
-      <section className="studio-hero hell-hero">
-        <div className="studio-hero__bg" />
-        <div className="studio-hero__texture" />
-        <div className="studio-hero__vignette" />
-        <div className="studio-hero__frame" />
-        <div className="studio-hero__topline" />
-        <div className="studio-hero__seal" />
-        <div className="studio-hero__crack" />
-        <div className="studio-hero__haze" />
-        <div className="studio-hero__embers" />
-
-        <div className="hell-hero__smoke" />
-        <div className="hell-hero__lava" />
-        <div className="hell-hero__ash" />
-
-        <div className="hell-hero__inner">
-          <div className="hell-hero__copy">
-            <p className="studio-hero__eyebrow">STUDIO 198 PRESENTS</p>
-
-            <h1 className="studio-hero__title hell-hero__title">
+    <div className="cinema-home">
+      <section className="cinema-band cinema-band--top">
+        <div className="cinema-shell cinema-shell--hero">
+          <div className="cinema-hero-copy">
+            <p className="eyebrow cinema-home__eyebrow">Studio 198 presents</p>
+            <h1 className="cinema-home__title">
               <span>SNAP</span>
               <span>CRITIQUE</span>
             </h1>
-
-            <p className="studio-hero__tagline hell-hero__tagline">
-              NO HYPE. NO MERCY.
+            <p className="cinema-home__tagline">NO HYPE. NO MERCY.</p>
+            <p className="cinema-home__lede">
+              Poster-first movie verdicts with heat, smoke, and zero patience
+              for fake praise.
+            </p>
+            <p className="cinema-home__lede">
+              If it hits, it earns obsession. If it misses, it gets dragged.
             </p>
 
-            <div className="hell-hero__body">
-              <p className="studio-hero__body">
-                Poster-first verdicts with smoke in the air, heat in the frame,
-                and no interest in fake praise.
-              </p>
-              <p className="studio-hero__body">
-                Movies either survive the fire, earn the obsession, or get
-                dragged straight into it.
-              </p>
-            </div>
-
-            <p className="studio-hero__aggression">
-              SHORT-FORM REVIEWS. INSTANT VERDICTS.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/reviews" className="studio-btn studio-btn--primary">
-                Enter the Fire
+            <div className="cinema-home__actions">
+              <Link href="/reviews" className="button-primary">
+                Enter the Archive
               </Link>
               <Link
-                href={featuredReview ? `/reviews/${featuredReview.slug}` : "/reviews"}
-                className="studio-btn studio-btn--secondary"
+                href={heroReview ? `/reviews/${heroReview.slug}` : "/reviews"}
+                className="button-secondary"
               >
                 Read Tonight&apos;s Verdict
               </Link>
             </div>
 
-            <div className="hell-hero__stats" aria-label="Site atmosphere">
-              <div className="hell-stat">
-                <span className="hell-stat__label">Atmosphere</span>
-                <strong>Molten</strong>
+            <div className="cinema-home__stats" aria-label="Site atmosphere">
+              <div>
+                <span>Archive</span>
+                <strong>{reviews.length} verdicts</strong>
               </div>
-              <div className="hell-stat">
-                <span className="hell-stat__label">Tone</span>
+              <div>
+                <span>Tone</span>
                 <strong>Unforgiving</strong>
               </div>
-              <div className="hell-stat">
-                <span className="hell-stat__label">Archive</span>
-                <strong>{reviews.length} verdicts burning</strong>
+              <div>
+                <span>Heat</span>
+                <strong>Always on</strong>
               </div>
             </div>
           </div>
 
-          <div className="hell-stage">
-            <div className="hell-stage__main">
+          <div className="cinema-hero-stage">
+            <div className="cinema-hero-stage__main">
               <img
                 src="/inferno/demon-garage.png"
                 alt="Infernal hot rods in front of a towering demon"
               />
             </div>
 
-            <div className="hell-stage__card hell-stage__card--landscape">
-              <img
-                src="/inferno/hellscape-wide.png"
-                alt="Hell landscape with rivers of lava and a burning fortress"
-              />
-              <div className="hell-stage__card-copy">
-                <p>Outer Ring</p>
-                <span>The horizon never cools down.</span>
-              </div>
-            </div>
-
-            <div className="hell-stage__card hell-stage__card--featured">
-              <div className="hell-stage__featured-label">Tonight&apos;s Sacrifice</div>
-              <div className="hell-stage__featured-poster">
+            <div className="cinema-hero-stage__featured">
+              <p>Tonight&apos;s sacrifice</p>
+              <div className="cinema-hero-stage__poster">
                 <img
-                  src={featuredReview?.posterImage ?? "/posters/next-review-slot.svg"}
+                  src={heroReview?.resolvedPosterImage ?? "/posters/next-review-slot.svg"}
                   alt={
-                    featuredReview
-                      ? `${featuredReview.title} poster`
+                    heroReview
+                      ? `${heroReview.movieTitle} poster`
                       : "Next review slot"
                   }
                 />
               </div>
-              <div className="hell-stage__featured-copy">
-                <h2>{featuredReview?.title ?? "Next film on the pyre"}</h2>
-                <p>
-                  {featuredReview?.quickHit ??
-                    "A fresh verdict is being hauled up from the flames."}
-                </p>
-                <div className="hell-stage__featured-meta">
-                  {featuredReview?.releaseYear ? (
-                    <span>{featuredReview.releaseYear}</span>
-                  ) : null}
-                  {featuredReview?.rating ? <span>{featuredReview.rating}</span> : null}
-                  {featuredReview ? <span>🔥 {featuredReview.heat} HEAT</span> : null}
-                </div>
+              <div className="cinema-hero-stage__featured-copy">
+                <h2>{heroReview?.movieTitle ?? "Next film on the pyre"}</h2>
+                <span>
+                  {heroReview?.releaseYear ? `${heroReview.releaseYear} / ` : ""}
+                  {heroReview?.ratingLabel ?? "Awaiting rating"}
+                </span>
               </div>
             </div>
 
-            <div className="hell-stage__card hell-stage__card--river">
+            <div className="cinema-hero-stage__detail cinema-hero-stage__detail--top">
+              <img
+                src="/inferno/hellscape-wide.png"
+                alt="Burning fortress on the edge of a lava field"
+              />
+            </div>
+
+            <div className="cinema-hero-stage__detail cinema-hero-stage__detail--bottom">
               <img
                 src="/inferno/hellscape-alt.png"
-                alt="A river of lava cutting through a scorched infernal valley"
+                alt="Infernal canyon with a river of lava"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <div className="page-stack hell-page-stack">
-        <section className="poster-wall-section">
-          <div className="poster-wall__header">
+      <section className="cinema-band cinema-band--middle">
+        <div className="cinema-shell cinema-shell--poster-wall">
+          <div className="cinema-section-heading">
             <div>
-              <p className="eyebrow">FEATURED VERDICTS</p>
+              <p className="eyebrow">Featured verdicts</p>
               <h2>POSTER WALL. FRESH DAMAGE.</h2>
-              <p className="poster-wall__subcopy">
-                Posters lead. The verdict follows. Nothing here should feel
-                blank, padded, or polite.
-              </p>
             </div>
-            <Link href="/reviews" className="poster-wall__archive">
-              ENTER THE ARCHIVE
+            <Link href="/reviews" className="cinema-section-heading__link">
+              See all reviews
             </Link>
           </div>
 
-          <div className="poster-wall">
-            {posterWallLead ? (
+          <div className="cinema-poster-wall">
+            {leadReview ? (
               <Link
-                href={`/reviews/${posterWallLead.slug}`}
-                className="poster-wall__tile poster-wall__tile--lead"
+                href={`/reviews/${leadReview.slug}`}
+                className="cinema-poster-wall__lead"
               >
                 <img
-                  src={posterWallLead.resolvedPosterImage}
-                  alt={`${posterWallLead.movieTitle} poster`}
+                  src={leadReview.resolvedPosterImage}
+                  alt={`${leadReview.movieTitle} poster`}
                 />
-                <span
-                  className={`poster-wall__stamp verdict-${posterWallLead.verdictKey}`}
-                >
-                  {posterWallLead.verdict}
-                </span>
-                <div className="poster-wall__overlay">
+                <div className="cinema-poster-wall__overlay">
+                  <span className={`verdict-badge verdict-${leadReview.verdictKey}`}>
+                    {leadReview.verdict}
+                  </span>
                   <div>
-                    <h3>{posterWallLead.movieTitle}</h3>
+                    <h3>{leadReview.movieTitle}</h3>
                     <p>
-                      {posterWallLead.quickHit?.split(".")[0] ??
+                      {leadReview.quickHit?.split(".")[0] ??
                         "Fresh damage on the wall."}
                     </p>
                   </div>
-                  <span className="poster-wall__heat">
-                    🔥 {posterWallLead.heatCount} HEAT
-                  </span>
                 </div>
               </Link>
             ) : null}
 
-            <div className="poster-wall__stack">
-              {posterWallSupporting.map((review, index) => (
+            <div className="cinema-poster-wall__stack">
+              {supportReviews.map((review) => (
                 <Link
                   key={review.id}
                   href={`/reviews/${review.slug}`}
-                  className={`poster-wall__tile poster-wall__tile--support poster-wall__tile--support-${index + 1}`}
+                  className="cinema-poster-wall__support"
                 >
                   <img
                     src={review.resolvedPosterImage}
                     alt={`${review.movieTitle} poster`}
                   />
-                  <span className={`poster-wall__stamp verdict-${review.verdictKey}`}>
-                    {review.verdict}
-                  </span>
-                  <div className="poster-wall__overlay">
+                  <div className="cinema-poster-wall__overlay">
+                    <span className={`verdict-badge verdict-${review.verdictKey}`}>
+                      {review.verdict}
+                    </span>
                     <div>
                       <h3>{review.movieTitle}</h3>
                       <p>{review.quickHit?.split(".")[0] ?? "Still burning."}</p>
                     </div>
-                    <span className="poster-wall__heat">🔥 {review.heatCount}</span>
                   </div>
                 </Link>
               ))}
             </div>
           </div>
-        </section>
+        </div>
 
-        <section className="content-section hell-search-shell">
-          <div className="section-heading">
+        <div className="cinema-shell cinema-shell--explorer">
+          <div className="cinema-section-heading cinema-section-heading--stacked">
             <div>
-              <p className="eyebrow">SEARCH THE RUINS</p>
-              <h2>Dig through the ash. Sort the bodies.</h2>
+              <p className="eyebrow">Dig through the ash</p>
+              <h2>Sort the bodies.</h2>
             </div>
+            <p className="cinema-section-heading__copy">
+              Search, filter, and pull up every review without losing the dark
+              theatrical feel from the landing page.
+            </p>
           </div>
           <BrowseExplorer
             reviews={reviews}
             emptyMessage="Nothing survived this filter pass."
           />
-        </section>
+        </div>
 
-        <section className="content-section two-column-callout">
-          <div className="callout-block">
-            <p className="eyebrow">LATEST FILES</p>
-            <h2>Fresh arrivals on the lower level</h2>
-            <p>
-              New reviews drop into the fire first. The ones with heat rise.
-              The rest stay buried under smoke.
-            </p>
-            <div className="stack-list">
-              {latest.map((review) => (
-                <Link key={review.id} href={`/reviews/${review.slug}`} className="list-link">
-                  <span>{review.movieTitle}</span>
-                  <span>🔥 {review.heatCount} HEAT</span>
-                </Link>
-              ))}
+        <div className="cinema-shell cinema-shell--latest">
+          <div className="cinema-section-heading cinema-section-heading--stacked">
+            <div>
+              <p className="eyebrow">Latest files</p>
+              <h2>New arrivals on the lower level.</h2>
             </div>
-          </div>
-          <div className="callout-block">
-            <p className="eyebrow">HOUSE RULES</p>
-            <h2>No safe takes. No cold corners.</h2>
-            <p>
-              Every page should feel infernal, but the reviews still need to hit
-              clean. The goal is atmosphere with teeth, not noise for its own
-              sake.
+            <p className="cinema-section-heading__copy">
+              Fresh reviews stay front and center before they disappear into the
+              wider archive.
             </p>
-            <Link href="/about" className="button-secondary">
-              Read the manifesto
-            </Link>
           </div>
-        </section>
-      </div>
-    </>
+
+          <div className="card-grid card-grid-featured cinema-latest-grid">
+            {latest.map((review) => (
+              <ReviewCard key={review.id} review={review} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="cinema-band cinema-band--bottom">
+        <div className="cinema-bottom-spacer" aria-hidden="true" />
+      </section>
+    </div>
   );
 }

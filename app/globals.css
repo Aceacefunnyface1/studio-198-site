@@ -3429,3 +3429,418 @@ textarea {
     transform: none;
   }
 }
+
+.cinema-home {
+  position: relative;
+  isolation: isolate;
+}
+
+.cinema-band {
+  position: relative;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 0;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cinema-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cinema-band--top {
+  padding-top: 5.5rem;
+  padding-bottom: 2.5rem;
+  background-image: url("/reference-home/top.png");
+}
+
+.cinema-band--top::before {
+  background:
+    linear-gradient(180deg, rgba(8, 0, 0, 0.74), rgba(17, 3, 2, 0.5) 28%, rgba(11, 2, 1, 0.7) 100%);
+}
+
+.cinema-band--middle {
+  background-image: url("/reference-home/mid.png");
+}
+
+.cinema-band--middle::before {
+  background:
+    linear-gradient(180deg, rgba(12, 1, 0, 0.72), rgba(8, 1, 0, 0.38) 16%, rgba(10, 1, 0, 0.62) 100%);
+}
+
+.cinema-band--bottom {
+  min-height: 24rem;
+  background-image: url("/reference-home/bottom.png");
+  background-position: center bottom;
+}
+
+.cinema-band--bottom::before {
+  background: linear-gradient(180deg, rgba(11, 1, 0, 0.14), rgba(5, 0, 0, 0.5) 100%);
+}
+
+.cinema-shell {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, calc(100vw - 1.5rem));
+  margin: 0 auto;
+  border: 1px solid rgba(255, 141, 66, 0.16);
+  background:
+    linear-gradient(180deg, rgba(73, 20, 11, 0.18), rgba(11, 4, 4, 0.95)),
+    rgba(11, 4, 4, 0.92);
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.56),
+    inset 0 1px 0 rgba(255, 210, 170, 0.06);
+}
+
+.cinema-shell + .cinema-shell {
+  margin-top: 1.5rem;
+}
+
+.cinema-shell--hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.95fr);
+  gap: clamp(1.5rem, 4vw, 3.25rem);
+  padding: clamp(1.35rem, 2.7vw, 2rem);
+}
+
+.cinema-home__eyebrow {
+  margin-bottom: 0.85rem;
+}
+
+.cinema-home__title {
+  margin: 0;
+  display: grid;
+  color: #e5d6c5;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3.7rem, 8vw, 6.5rem);
+  line-height: 0.83;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.cinema-home__tagline {
+  margin: 1rem 0 0;
+  color: #f0a467;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+.cinema-home__lede {
+  max-width: 35rem;
+  margin: 1rem 0 0;
+  color: rgba(239, 223, 205, 0.82);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.cinema-home__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+
+.cinema-home__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+.cinema-home__stats div {
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(255, 142, 61, 0.15);
+  background: rgba(255, 119, 49, 0.06);
+}
+
+.cinema-home__stats span {
+  display: block;
+  color: #e7a454;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.cinema-home__stats strong {
+  display: block;
+  margin-top: 0.4rem;
+  color: #f7eadb;
+  font-size: 0.96rem;
+}
+
+.cinema-hero-stage {
+  position: relative;
+  min-height: 34rem;
+}
+
+.cinema-hero-stage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cinema-hero-stage__main,
+.cinema-hero-stage__featured,
+.cinema-hero-stage__detail {
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid rgba(255, 140, 59, 0.16);
+  background: #120302;
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.58),
+    0 0 28px rgba(255, 110, 36, 0.08);
+}
+
+.cinema-hero-stage__main {
+  inset: 0.8rem 6% 4rem 7%;
+}
+
+.cinema-hero-stage__featured {
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: min(17rem, 42%);
+  padding: 0.9rem;
+  transform: rotate(-5deg);
+}
+
+.cinema-hero-stage__featured p {
+  margin: 0;
+  color: #e7a454;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.cinema-hero-stage__poster {
+  aspect-ratio: 0.7;
+  margin-top: 0.75rem;
+}
+
+.cinema-hero-stage__featured-copy {
+  margin-top: 0.75rem;
+}
+
+.cinema-hero-stage__featured-copy h2 {
+  margin: 0;
+  color: #f4e5d6;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.5rem, 2vw, 2.25rem);
+  line-height: 0.92;
+}
+
+.cinema-hero-stage__featured-copy span {
+  display: block;
+  margin-top: 0.45rem;
+  color: rgba(239, 223, 205, 0.82);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cinema-hero-stage__detail--top {
+  top: 0;
+  right: 0;
+  width: min(15rem, 34%);
+  height: 9rem;
+  transform: rotate(4deg);
+}
+
+.cinema-hero-stage__detail--bottom {
+  right: 8%;
+  bottom: 1.2rem;
+  width: min(13rem, 30%);
+  height: 9rem;
+  transform: rotate(6deg);
+}
+
+.cinema-shell--poster-wall,
+.cinema-shell--explorer,
+.cinema-shell--latest {
+  padding: clamp(1.2rem, 2.6vw, 1.8rem);
+}
+
+.cinema-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.cinema-section-heading h2 {
+  margin: 0.3rem 0 0;
+  color: #eadbca;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 3.9rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.cinema-section-heading__link {
+  color: #f0a467;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.cinema-section-heading--stacked {
+  align-items: start;
+}
+
+.cinema-section-heading__copy {
+  max-width: 32rem;
+  margin: 0;
+  color: rgba(239, 223, 205, 0.74);
+  line-height: 1.65;
+}
+
+.cinema-poster-wall {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 1.15rem;
+}
+
+.cinema-poster-wall__lead,
+.cinema-poster-wall__support {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.54),
+    0 0 28px rgba(255, 110, 36, 0.08);
+}
+
+.cinema-poster-wall__lead {
+  min-height: 34rem;
+}
+
+.cinema-poster-wall__stack {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.cinema-poster-wall__support {
+  min-height: 16.4rem;
+}
+
+.cinema-poster-wall__lead img,
+.cinema-poster-wall__support img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cinema-poster-wall__overlay {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: linear-gradient(180deg, transparent, rgba(9, 2, 1, 0.94) 40%);
+}
+
+.cinema-poster-wall__overlay h3 {
+  margin: 0;
+  color: #f2e4d5;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.4rem, 2.2vw, 2.15rem);
+  line-height: 0.95;
+}
+
+.cinema-poster-wall__overlay p {
+  margin: 0.4rem 0 0;
+  color: rgba(239, 223, 205, 0.76);
+  line-height: 1.5;
+}
+
+.cinema-latest-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cinema-bottom-spacer {
+  height: clamp(14rem, 28vw, 24rem);
+}
+
+@media (max-width: 1100px) {
+  .cinema-shell--hero,
+  .cinema-poster-wall,
+  .cinema-latest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cinema-hero-stage {
+    min-height: 29rem;
+  }
+
+  .cinema-hero-stage__main {
+    inset: 0.7rem 7% 3.4rem 8%;
+  }
+
+  .cinema-hero-stage__featured {
+    width: min(15rem, 46%);
+  }
+}
+
+@media (max-width: 760px) {
+  .cinema-band--top {
+    padding-top: 4.75rem;
+  }
+
+  .cinema-shell {
+    width: min(100vw - 1rem, 42rem);
+  }
+
+  .cinema-shell--hero,
+  .cinema-shell--poster-wall,
+  .cinema-shell--explorer,
+  .cinema-shell--latest {
+    padding: 1rem;
+  }
+
+  .cinema-home__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .cinema-hero-stage {
+    min-height: 24rem;
+  }
+
+  .cinema-hero-stage__detail {
+    display: none;
+  }
+
+  .cinema-hero-stage__main {
+    inset: 0;
+  }
+
+  .cinema-hero-stage__featured {
+    bottom: -0.2rem;
+    left: 0.45rem;
+    width: min(12rem, 52%);
+    padding: 0.75rem;
+  }
+
+  .cinema-section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .cinema-poster-wall__lead {
+    min-height: 28rem;
+  }
+
+  .cinema-poster-wall__support {
+    min-height: 14rem;
+  }
+}

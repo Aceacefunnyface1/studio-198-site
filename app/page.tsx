@@ -2,13 +2,21 @@
 
 import Link from "next/link";
 import { BrowseExplorer } from "@/components/browse-explorer";
+import NewsletterBlock from "@/components/newsletter-block";
 import { ReviewCard } from "@/components/review-card";
 import {
   getDailyFeaturedReview,
   getPublishedReviewsWithStats,
 } from "@/lib/review-queries";
 
-export default async function HomePage() {
+type HomePageProps = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
+
+export default async function HomePage({ searchParams }: HomePageProps) {
+  const params = await searchParams;
+  const newsletterState =
+    typeof params.newsletter === "string" ? params.newsletter : "";
   const reviews = await getPublishedReviewsWithStats();
   const heroReview = getDailyFeaturedReview(reviews);
   const latest = [...reviews]
@@ -155,6 +163,8 @@ export default async function HomePage() {
             emptyMessage="Nothing survived this filter pass."
           />
         </section>
+
+        <NewsletterBlock state={newsletterState} />
 
         <section className="cinema-panel cinema-panel--latest">
           <div className="cinema-latest-grid">

@@ -10,6 +10,14 @@ import {
   getExpectedAdminPassword,
   isAdminAuthenticated,
 } from "@/lib/admin-auth";
+import {
+  formatGiveawayMonth,
+  GIVEAWAY_PRIZE,
+  getGiveawayMonthKey,
+  isValidSubscriberEmail,
+  normalizeSubscriberEmail,
+  runMonthlyGiveawayDraw,
+} from "@/lib/giveaway";
 import { readSiteData, saveUpload, writeSiteData } from "@/lib/site-data";
 import { Review, Verdict, verdictOptions } from "@/lib/types";
 import { clampRating, slugify, splitTags } from "@/lib/utils";
@@ -19,6 +27,10 @@ const forcedDraftSlugs = new Set(pendingPosterSlugs as string[]);
 
 function requireText(value: FormDataEntryValue | null, fallback = "") {
   return typeof value === "string" ? value.trim() : fallback;
+}
+
+function newsletterRedirectPath(state: string) {
+  return `/?newsletter=${state}#newsletter`;
 }
 
 export async function loginAction(formData: FormData) {
@@ -294,4 +306,80 @@ export async function submitInquiryAction(formData: FormData) {
   revalidatePath("/contact");
   revalidatePath("/admin");
   redirect("/contact?success=Message%20received");
+}
+
+export async function subscribeNewsletterAction(formData: FormData) {
+  const normalizedEmail = normalizeSubscriberEmail(requireText(formData.get("email")));
+
+  if (!normalizedEmail || !isValidSubscriberEmail(normalizedEmail)) {
+    redirect(newsletterRedirectPath("invalid"));
+  }
+
+  const data = await readSiteData();
+  const existingSubscriber = data.newsletterSubscribers.find(
+    (subscriber) => normalizeSubscriberEmail(subscriber.email) === normalizedEmail,
+  );
+
+  if (existingSubscriber?.status === "active") {
+    redirect(newsletterRedirectPath("exists"));
+  }
+
+  const nextSubscriber = existingSubscriber
+    ? {
+        ...existingSubscriber,
+        email: normalizedEmail,
+        status: "active" as const,
+      }
+    : {
+        id: `subscriber-${crypto.randomUUID()}`,
+        email: normalizedEmail,
+        createdAt: new Date().toISOString(),
+        status: "active" as const,
+      };
+
+  data.newsletterSubscribers = [
+    nextSubscriber,
+    ...data.newsletterSubscribers.filter(
+      (subscriber) => subscriber.id !== nextSubscriber.id,
+    ),
+  ].sort(
+    (left, right) =>
+      +new Date(right.createdAt || 0) - +new Date(left.createdAt || 0),
+  );
+
+  await writeSiteData(data);
+  revalidatePath("/");
+  revalidatePath("/admin");
+  redirect(newsletterRedirectPath("success"));
+}
+
+export async function drawGiveawayWinnerAction() {
+  if (!(await isAdminAuthenticated())) {
+    redirect("/admin?error=Please%20log%20in%20first");
+  }
+
+  const data = await readSiteData();
+  const result = runMonthlyGiveawayDraw(data, new Date());
+  const currentMonthLabel = formatGiveawayMonth(getGiveawayMonthKey(new Date()));
+
+  if (result.status === "no-eligible") {
+    redirect("/admin?error=No%20eligible%20newsletter%20subscribers%20found");
+  }
+
+  if (result.status === "created") {
+    await writeSiteData(data);
+    revalidatePath("/admin");
+    revalidatePath("/");
+    redirect(
+      `/admin?success=${encodeURIComponent(
+        `Winner selected for ${formatGiveawayMonth(result.winner.giveawayMonth)}`,
+      )}`,
+    );
+  }
+
+  redirect(
+    `/admin?success=${encodeURIComponent(
+      `Winner already exists for ${currentMonthLabel}`,
+    )}`,
+  );
 }

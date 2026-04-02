@@ -56,11 +56,33 @@ export type Inquiry = {
   createdAt: string;
 };
 
+export type NewsletterSubscriberStatus = "active" | "inactive";
+
+export type NewsletterSubscriber = {
+  id: string;
+  email: string;
+  createdAt: string;
+  status: NewsletterSubscriberStatus;
+};
+
+export type GiveawayWinnerStatus = "selected";
+
+export type GiveawayWinner = {
+  id: string;
+  email: string;
+  drawnAt: string;
+  giveawayMonth: string;
+  prize: string;
+  status: GiveawayWinnerStatus;
+};
+
 export type SiteData = {
   reviews: Review[];
   comments: Comment[];
   likes: Record<string, number>;
   inquiries: Inquiry[];
+  newsletterSubscribers: NewsletterSubscriber[];
+  giveawayWinners: GiveawayWinner[];
 };
 
 export type ReviewWithStats = Review & {

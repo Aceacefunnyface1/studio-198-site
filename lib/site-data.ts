@@ -5,7 +5,14 @@ import path from "node:path";
 import { get, put } from "@vercel/blob";
 import bundledSeedData from "@/data/site-data.json";
 import pendingPosterSlugs from "@/data/pending-poster-slugs.json";
-import { Review, SiteData, Verdict, verdictOptions } from "@/lib/types";
+import {
+  GiveawayWinner,
+  NewsletterSubscriber,
+  Review,
+  SiteData,
+  Verdict,
+  verdictOptions,
+} from "@/lib/types";
 
 const dataFilePath = path.join(process.cwd(), "data", "site-data.json");
 const siteDataBlobPath = "site-data.json";
@@ -18,6 +25,8 @@ const initialData: SiteData = {
   comments: [],
   likes: {},
   inquiries: [],
+  newsletterSubscribers: [],
+  giveawayWinners: [],
 };
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -47,11 +56,33 @@ async function ensureDataFile() {
 async function readLocalSeedData() {
   await ensureDataFile();
   const raw = await readFile(dataFilePath, "utf8");
-  return JSON.parse(raw) as SiteData;
+  return normalizeSiteData(JSON.parse(raw));
 }
 
 function getBundledSeedData() {
-  return bundledSeedData as SiteData;
+  return normalizeSiteData(bundledSeedData);
+}
+
+function normalizeSiteData(data: unknown): SiteData {
+  const candidate = (data ?? {}) as Partial<SiteData>;
+
+  return {
+    reviews: Array.isArray(candidate.reviews) ? candidate.reviews : [],
+    comments: Array.isArray(candidate.comments) ? candidate.comments : [],
+    likes:
+      candidate.likes &&
+      typeof candidate.likes === "object" &&
+      !Array.isArray(candidate.likes)
+        ? candidate.likes
+        : {},
+    inquiries: Array.isArray(candidate.inquiries) ? candidate.inquiries : [],
+    newsletterSubscribers: Array.isArray(candidate.newsletterSubscribers)
+      ? candidate.newsletterSubscribers
+      : [],
+    giveawayWinners: Array.isArray(candidate.giveawayWinners)
+      ? candidate.giveawayWinners
+      : [],
+  };
 }
 
 function classifyPosterPath(posterPath: string) {
@@ -128,10 +159,17 @@ export function getResolvedReviewStatus(review: Pick<Review, "slug" | "status">)
 }
 
 function mergeSiteData(existing: SiteData, bundled: SiteData) {
+  const normalizedExisting = normalizeSiteData(existing);
+  const normalizedBundled = normalizeSiteData(bundled);
   const bundledBySlug = new Map(
-    bundled.reviews.map((review) => [review.slug, enforceReviewPolicies(review)]),
+    normalizedBundled.reviews.map((review) => [
+      review.slug,
+      enforceReviewPolicies(review),
+    ]),
   );
   const mergedCommentMap = new Map<string, SiteData["comments"][number]>();
+  const mergedSubscriberMap = new Map<string, NewsletterSubscriber>();
+  const mergedWinnerMap = new Map<string, GiveawayWinner>();
 
   function getCommentMergeKey(comment: SiteData["comments"][number]) {
     return [
@@ -147,8 +185,41 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
     mergedCommentMap.set(getCommentMergeKey(comment), comment);
   }
 
-  existing.comments.forEach(addMergedComment);
-  bundled.comments.forEach(addMergedComment);
+  normalizedExisting.comments.forEach(addMergedComment);
+  normalizedBundled.comments.forEach(addMergedComment);
+
+  function getNormalizedEmail(email: string | null | undefined) {
+    return (email || "").trim().toLowerCase();
+  }
+
+  function addMergedSubscriber(subscriber: NewsletterSubscriber) {
+    const key = getNormalizedEmail(subscriber.email);
+
+    if (!key || mergedSubscriberMap.has(key)) {
+      return;
+    }
+
+    mergedSubscriberMap.set(key, {
+      ...subscriber,
+      email: key,
+    });
+  }
+
+  function addMergedWinner(winner: GiveawayWinner) {
+    const key = winner.giveawayMonth?.trim() || winner.id;
+
+    if (!key || mergedWinnerMap.has(key)) {
+      return;
+    }
+
+    mergedWinnerMap.set(key, winner);
+  }
+
+  normalizedExisting.newsletterSubscribers.forEach(addMergedSubscriber);
+  normalizedBundled.newsletterSubscribers.forEach(addMergedSubscriber);
+
+  normalizedExisting.giveawayWinners.forEach(addMergedWinner);
+  normalizedBundled.giveawayWinners.forEach(addMergedWinner);
 
   function shouldPreferBundledPoster(
     existingPoster: string,
@@ -186,7 +257,7 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
     return false;
   }
 
-  const mergedReviews = existing.reviews.map((review) => {
+  const mergedReviews = normalizedExisting.reviews.map((review) => {
     const existingReview = enforceReviewPolicies(review);
     const bundledReview = bundledBySlug.get(existingReview.slug);
 
@@ -289,11 +360,19 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
   );
 
   return {
-    ...existing,
+    ...normalizedExisting,
     reviews: [...mergedReviews, ...missingBundledReviews],
     comments: [...mergedCommentMap.values()].sort(
       (left, right) =>
         +new Date(right.createdAt || 0) - +new Date(left.createdAt || 0),
+    ),
+    newsletterSubscribers: [...mergedSubscriberMap.values()].sort(
+      (left, right) =>
+        +new Date(right.createdAt || 0) - +new Date(left.createdAt || 0),
+    ),
+    giveawayWinners: [...mergedWinnerMap.values()].sort(
+      (left, right) =>
+        +new Date(right.drawnAt || 0) - +new Date(left.drawnAt || 0),
     ),
   } satisfies SiteData;
 }
@@ -348,7 +427,7 @@ async function readBlobSiteData() {
   }
 
   const raw = await streamToText(result.stream);
-  const blobData = JSON.parse(raw) as SiteData;
+  const blobData = normalizeSiteData(JSON.parse(raw));
   const bundledData = getBundledSeedData();
   const mergedData = mergeSiteData(blobData, bundledData);
 
@@ -385,9 +464,10 @@ export async function readSiteData() {
 
 export async function writeSiteData(data: SiteData) {
   requireBlobInProduction();
+  const normalizedData = normalizeSiteData(data);
 
   if (isVercelBlobEnabled) {
-    await put(siteDataBlobPath, JSON.stringify(data, null, 2), {
+    await put(siteDataBlobPath, JSON.stringify(normalizedData, null, 2), {
       access: blobAccess,
       addRandomSuffix: false,
       allowOverwrite: true,
@@ -398,7 +478,7 @@ export async function writeSiteData(data: SiteData) {
   }
 
   await ensureDataFile();
-  await writeFile(dataFilePath, JSON.stringify(data, null, 2), "utf8");
+  await writeFile(dataFilePath, JSON.stringify(normalizedData, null, 2), "utf8");
 }
 
 export async function saveUpload(

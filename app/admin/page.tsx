@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import {
   deleteCommentAction,
   deleteReviewAction,
+  drawGiveawayWinnerAction,
   loginAction,
   logoutAction,
   saveReviewAction,
   toggleCommentVisibilityAction,
 } from "@/app/actions";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
+import { formatGiveawayMonth, GIVEAWAY_PRIZE } from "@/lib/giveaway";
 import {
   getResolvedReviewStatus,
   isPosterBlockedReview,
@@ -333,10 +335,73 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
             <strong>{data.inquiries.length}</strong>
             <span>Inbox messages</span>
           </div>
+          <div>
+            <strong>{data.newsletterSubscribers.length}</strong>
+            <span>Subscribers</span>
+          </div>
         </div>
 
         <h2>Create Review</h2>
         <ReviewForm />
+      </section>
+
+      <section className="admin-shell">
+        <p className="eyebrow">Giveaway</p>
+        <h2>Newsletter capture and monthly winner history</h2>
+        <div className="stats-strip">
+          <div>
+            <strong>
+              {
+                data.newsletterSubscribers.filter(
+                  (subscriber) => subscriber.status === "active",
+                ).length
+              }
+            </strong>
+            <span>Active subscribers</span>
+          </div>
+          <div>
+            <strong>{data.giveawayWinners[0]?.email ?? "None yet"}</strong>
+            <span>
+              {data.giveawayWinners[0]
+                ? `Latest winner · ${formatGiveawayMonth(
+                    data.giveawayWinners[0].giveawayMonth,
+                  )}`
+                : "Latest winner"}
+            </span>
+          </div>
+        </div>
+
+        <div className="button-row">
+          <form action={drawGiveawayWinnerAction}>
+            <button type="submit" className="button-primary">
+              Draw This Month&apos;s Winner
+            </button>
+          </form>
+        </div>
+
+        <p className="muted-note">
+          Prize: {GIVEAWAY_PRIZE}. The draw only creates one winner record per
+          month and is ready to be called by a future scheduled job.
+        </p>
+
+        <div className="stack-list">
+          {data.giveawayWinners.length ? (
+            data.giveawayWinners.map((winner) => (
+              <div key={winner.id} className="admin-item">
+                <div>
+                  <strong>{winner.email}</strong>
+                  <p>
+                    {formatGiveawayMonth(winner.giveawayMonth)} ·{" "}
+                    {winner.prize} · {winner.status}
+                  </p>
+                  <p>{formatDate(winner.drawnAt)}</p>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="empty-state">No winners drawn yet.</p>
+          )}
+        </div>
       </section>
 
       <section className="admin-shell">

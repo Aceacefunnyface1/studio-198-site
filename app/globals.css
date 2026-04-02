@@ -2825,6 +2825,105 @@ textarea {
   color: var(--foreground);
 }
 
+.newsletter-block {
+  padding: 1.4rem;
+  border: 1px solid rgba(255, 118, 61, 0.14);
+  background:
+    linear-gradient(180deg, rgba(22, 7, 7, 0.94), rgba(10, 4, 4, 0.98)),
+    radial-gradient(circle at top, rgba(147, 27, 21, 0.16), transparent 55%);
+  box-shadow:
+    0 20px 36px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 216, 180, 0.05);
+}
+
+.newsletter-inner {
+  max-width: 36rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-inner h2 {
+  margin: 0;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 0.92;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.newsletter-block .sub,
+.newsletter-block .offer,
+.newsletter-block .fine,
+.newsletter-feedback {
+  margin: 0;
+}
+
+.newsletter-block .sub {
+  margin-top: 0.6rem;
+  color: rgba(244, 231, 211, 0.82);
+}
+
+.newsletter-block .offer {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.newsletter-block .offer strong {
+  color: #f4d389;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.newsletter-block .fine {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.newsletter-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.85rem;
+  align-items: end;
+  margin-top: 1.25rem;
+}
+
+.newsletter-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.newsletter-form input {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.82rem 0.92rem;
+  border: 1px solid rgba(239, 229, 211, 0.08);
+  border-radius: 0.12rem;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--foreground);
+  outline: none;
+}
+
+.newsletter-form input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(186, 146, 64, 0.14);
+}
+
+.newsletter-feedback {
+  margin-top: 0.9rem;
+  color: #f4d389;
+  font-size: 0.92rem;
+}
+
 .footer-inner {
   display: flex;
   justify-content: space-between;

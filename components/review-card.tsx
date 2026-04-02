@@ -1,139 +1,85 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import Link from "next/link";
 import { ReviewWithStats } from "@/lib/types";
-import { PosterFrame } from "@/components/poster-frame";
-import { WatchThisMovie } from "@/components/watch-this-movie";
 
 type ReviewCardProps = {
   review: ReviewWithStats;
 };
 
-function getRatingVisual(rating: number | null) {
-  if (rating !== null && rating >= 4) {
-    return {
-      accentClass: "review-card-elite",
-      label: "elite",
-      iconSrc: "/rating-icons/fire-eye.png",
-      iconAlt: "Fire eye rating icon",
-    };
-  }
-
-  if (rating !== null && rating >= 3) {
-    return {
-      accentClass: "review-card-solid",
-      label: "solid",
-      iconSrc: "/rating-icons/skull.png",
-      iconAlt: "Skull rating icon",
-    };
-  }
-
-  if (rating !== null && rating >= 1.1) {
-    return {
-      accentClass: "review-card-bad",
-      label: "bad",
-      iconSrc: "/rating-icons/block.png",
-      iconAlt: "Block rating icon",
-    };
-  }
-
-  return {
-    accentClass: "review-card-trash",
-    label: "trash",
-    iconSrc: "/rating-icons/poop.png",
-    iconAlt: "Trash rating icon",
-  };
-}
-
 export function ReviewCard({ review }: ReviewCardProps) {
-  const ratingVisual = getRatingVisual(review.rating);
-  const commentCount = review.commentCount ?? 0;
-  const commentsLabel =
-    commentCount > 0 ? `${commentCount} COMMENTS` : "COMMENTS";
-
   return (
-    <article className={`review-card ${ratingVisual.accentClass}`}>
-      <div className="review-card-poster-shell">
-        <span className={`verdict-badge review-card-verdict verdict-${review.verdictKey}`}>
-          {review.verdict}
-        </span>
-        <div className="review-card-poster-meta">
-          <span className="review-card-heat">🔥 {review.heatCount} HEAT</span>
-          {review.rating !== null ? (
-            <span className="review-card-score">{review.rating.toFixed(1)}</span>
-          ) : null}
-        </div>
-        <PosterFrame
-          posterImage={review.resolvedPosterImage}
-          title={review.movieTitle}
-          className="review-card-poster"
-        />
-      </div>
-
-      <div className="review-card-body">
-        <div className="review-card-heading">
-          <p className="review-card-kicker">
-            Studio 198 File
-            {review.releaseYear ? ` / ${review.releaseYear}` : ""}
-          </p>
-          <h3 className="review-card-title">
-            <span>{review.movieTitle}</span>
-            {review.releaseYear ? (
-              <span className="review-card-year">({review.releaseYear})</span>
-            ) : null}
-          </h3>
-          {review.director ? (
-            <p className="review-card-director">Directed by {review.director}</p>
-          ) : null}
+    <Link href={`/reviews/${review.slug}`} className="group block h-full">
+      <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-black/40 backdrop-blur-sm transition-transform duration-200 group-hover:-translate-y-1">
+        <div className="relative aspect-[2/3] w-full overflow-hidden bg-black">
+          {review.resolvedPosterImage ? (
+            <Image
+              src={review.resolvedPosterImage}
+              alt={review.movieTitle}
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center text-sm text-white/40">
+              No Poster
+            </div>
+          )}
         </div>
 
-        <p className="review-card-hook">
-          {review.quickHit || "Studio 198 verdict locked. Read the full take."}
-        </p>
-
-        <div className="review-card-tags">
-          {review.genreTags.slice(0, 3).map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
-
-        <WatchThisMovie
-          url={review.amazonAffiliateUrl}
-          className="review-card-watch"
-        />
-
-        <div className="review-card-bottom">
-          <div className="review-card-stats" aria-label="Review engagement">
-            <span className="review-card-stat review-card-stat--heat">
-              🔥 {review.heatCount} HEAT
-            </span>
-            <span className="review-card-stat review-card-stat--comments">
-              {commentsLabel}
-            </span>
+        <div className="flex flex-1 flex-col p-4">
+          <div className="min-h-[3.5rem]">
+            <h3 className="line-clamp-2 text-lg font-semibold leading-tight text-white">
+              {review.movieTitle}
+              {review.releaseYear ? (
+                <span className="ml-2 text-white/50">({review.releaseYear})</span>
+              ) : null}
+            </h3>
           </div>
 
-          <div className="review-card-footer">
-            <Link href={`/reviews/${review.slug}`} className="button-primary review-card-button">
-              Read Review
-            </Link>
+          <div className="mt-2 min-h-[1.5rem]">
+            {review.director ? (
+              <p className="line-clamp-1 text-sm text-white/60">
+                Directed by {review.director}
+              </p>
+            ) : (
+              <div />
+            )}
+          </div>
 
-            <div className="review-card-rating" aria-label={`${ratingVisual.label} rating ${review.rating ?? 0}`}>
-              <span className="review-card-rating-label">{ratingVisual.label}</span>
-              <div className="review-card-rating-main">
-                <img
-                  src={ratingVisual.iconSrc}
-                  alt={ratingVisual.iconAlt}
-                  className="review-card-rating-icon"
-                  loading="lazy"
-                />
-                <span className="review-card-rating-value">
-                  {review.rating !== null ? review.rating.toFixed(1) : "0.0"}
-                </span>
-              </div>
+          <div className="mt-3 min-h-[4.5rem]">
+            {review.quickHit ? (
+              <p className="line-clamp-3 text-sm leading-6 text-white/80">
+                {review.quickHit}
+              </p>
+            ) : (
+              <div />
+            )}
+          </div>
+
+          <div className="mt-auto flex items-end justify-between pt-4">
+            <div>
+              {review.verdict ? (
+                <p className="text-xs uppercase tracking-[0.18em] text-red-400">
+                  {review.verdict}
+                </p>
+              ) : null}
+            </div>
+
+            <div className="text-right">
+              <p className="text-xs uppercase tracking-[0.18em] text-white/50">
+                Rating
+              </p>
+              <p className="text-lg font-bold text-white">
+                {typeof review.rating === "number"
+                  ? review.rating.toFixed(1)
+                  : "\u2014"}
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </Link>
   );
 }
+
+export default ReviewCard;

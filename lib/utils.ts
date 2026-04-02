@@ -86,14 +86,14 @@ export function getReviewerPresentation(
 
   if (normalized === "MANDY") {
     return {
-      label: "MANDY",
+      label: 'INSTINCT "MANDY"',
       tone: "mandy",
     };
   }
 
   if (normalized === "LEEANNA") {
     return {
-      label: "LEEANNA",
+      label: 'ARCHITECT "LEEANNA"',
       tone: "leeanna",
     };
   }

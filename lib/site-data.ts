@@ -257,6 +257,34 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
     return false;
   }
 
+  function shouldPreferBundledReviewerName(
+    existingReviewerName: string,
+    bundledReviewerName: string,
+  ) {
+    const existingValue = existingReviewerName.trim();
+    const bundledValue = bundledReviewerName.trim();
+
+    if (!bundledValue) {
+      return false;
+    }
+
+    if (!existingValue) {
+      return true;
+    }
+
+    const normalizedExisting = existingValue.toUpperCase();
+    const normalizedBundled = bundledValue.toUpperCase();
+
+    if (normalizedExisting === normalizedBundled) {
+      return false;
+    }
+
+    // Reviewer attribution is editorial data owned by the bundled seed. If the
+    // repo assignment changes (for example Ace -> Mandy / Leeanna), keep the
+    // bundled reviewer name instead of preserving an older Blob value.
+    return true;
+  }
+
   const mergedReviews = normalizedExisting.reviews.map((review) => {
     const existingReview = enforceReviewPolicies(review);
     const bundledReview = bundledBySlug.get(existingReview.slug);
@@ -315,10 +343,12 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
         preferBundledReviewFields && bundledReview.rating !== null
           ? bundledReview.rating
           : existingReview.rating ?? bundledReview.rating,
-      reviewerName: mergeStringField(
+      reviewerName: shouldPreferBundledReviewerName(
         existingReview.reviewerName,
         bundledReview.reviewerName,
-      ),
+      )
+        ? bundledReview.reviewerName
+        : mergeStringField(existingReview.reviewerName, bundledReview.reviewerName),
       quickHit: mergeStringField(existingReview.quickHit, bundledReview.quickHit),
       fullTake: mergeStringField(existingReview.fullTake, bundledReview.fullTake),
       reviewVideoUrl: mergeStringField(

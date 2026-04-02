@@ -74,7 +74,7 @@ export async function saveReviewAction(formData: FormData) {
       verdictInput as (typeof verdictOptions)[number],
     )
       ? (verdictInput as Verdict)
-      : "WATCH";
+      : "🔥";
 
     const ratingRaw = requireText(formData.get("rating"));
     const parsedRating = ratingRaw ? Number.parseFloat(ratingRaw) : null;

@@ -86,7 +86,7 @@ function ReviewForm({
         <select
           id={`verdict-${review?.id ?? "new"}`}
           name="verdict"
-          defaultValue={review?.verdict ?? "WATCH"}
+          defaultValue={review?.verdict ?? "🔥"}
         >
           {verdictOptions.map((verdict) => (
             <option key={verdict} value={verdict}>

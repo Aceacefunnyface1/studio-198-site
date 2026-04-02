@@ -40,10 +40,10 @@ def extract_good_titles() -> list[str]:
             paragraphs.append(text)
 
     verdicts = {
-        "WATCH",
-        "ONLY IF YOU'RE INTO IT",
-        "DON'T BOTHER",
-        "STRAIGHT TRASH 💩",
+        "🔥",
+        "👀",
+        "❌",
+        "💩",
     }
     control_strings = {
         "Read Review",

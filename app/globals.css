@@ -2599,19 +2599,19 @@ textarea {
   content: none;
 }
 
-.verdict-watch {
+.verdict-fire {
   color: var(--acid);
 }
 
-.verdict-only-if-you-re-into-it {
+.verdict-mixed {
   color: var(--dirty-amber);
 }
 
-.verdict-dont-bother {
+.verdict-nope {
   color: #ffb2b6;
 }
 
-.verdict-straight-trash {
+.verdict-trash {
   color: #f3c7c7;
 }
 

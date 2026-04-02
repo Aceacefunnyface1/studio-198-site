@@ -23,7 +23,7 @@ export function WatchThisMovie({
 
   return (
     <section className={`watch-this-movie ${className}`.trim()}>
-      <p className="watch-this-movie-label">WATCH THIS MOVIE</p>
+      <p className="watch-this-movie-label">SEE THIS MOVIE</p>
       <p className="watch-this-movie-note">
         👉 Streaming now — check availability before it rotates out
       </p>
@@ -33,7 +33,7 @@ export function WatchThisMovie({
         rel="noreferrer"
         className="button-primary watch-this-movie-button"
       >
-        Watch on Amazon
+        Open on Amazon
       </a>
     </section>
   );

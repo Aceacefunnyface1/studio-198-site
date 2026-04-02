@@ -1,13 +1,14 @@
 export const verdictOptions = [
-  "WATCH",
-  "ONLY IF YOU'RE INTO IT",
-  "DON'T BOTHER",
-  "STRAIGHT TRASH 💩",
+  "🔥",
+  "👀",
+  "❌",
+  "💩",
 ] as const;
 
 export const statusOptions = ["published", "draft"] as const;
 
 export type Verdict = (typeof verdictOptions)[number];
+export type VerdictTone = "fire" | "mixed" | "nope" | "trash";
 export type ReviewStatus = (typeof statusOptions)[number];
 
 export type Review = {
@@ -67,7 +68,7 @@ export type ReviewWithStats = Review & {
   heatCount: number;
   commentCount: number;
   ratingLabel: string;
-  verdictKey: string;
+  verdictTone: VerdictTone;
   resolvedPosterImage: string;
   posterStatus: "approved" | "needs-replacement" | "missing";
   posterSource: "custom" | "batch-17" | "external" | "missing";

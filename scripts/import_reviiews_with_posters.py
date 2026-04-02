@@ -51,12 +51,12 @@ def parse_rating(value: object) -> float:
 
 def verdict_for_rating(rating: float) -> str:
     if rating >= 4.0:
-        return "WATCH"
+        return "🔥"
     if rating >= 3.0:
-        return "ONLY IF YOU'RE INTO IT"
+        return "👀"
     if rating >= 1.1:
-        return "DON'T BOTHER"
-    return "STRAIGHT TRASH 💩"
+        return "❌"
+    return "💩"
 
 
 def build_poster_lookup() -> dict[str, Path]:

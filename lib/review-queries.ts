@@ -4,7 +4,7 @@ import { getHeatCount } from "@/lib/heat";
 import { resolvePoster } from "@/lib/poster-resolver";
 import { readSiteData, sortReviewsByNewest } from "@/lib/site-data";
 import { Comment, Review, ReviewWithStats } from "@/lib/types";
-import { ratingLabel, verdictKey } from "@/lib/utils";
+import { ratingLabel, verdictTone } from "@/lib/utils";
 
 function hasResolvedPoster(review: Review) {
   return resolvePoster(review).posterStatus !== "missing";
@@ -30,7 +30,7 @@ function withStats(review: Review, likes: Record<string, number>, comments: Comm
     }),
     commentCount: visibleComments.length,
     ratingLabel: ratingLabel(review.rating),
-    verdictKey: verdictKey(review.verdict),
+    verdictTone: verdictTone(review.verdict),
   } satisfies ReviewWithStats;
 }
 

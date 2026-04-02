@@ -29,12 +29,12 @@ function getRange(review: HeatSource) {
     review.featured ||
     likeCount >= 12 ||
     rating >= 4.4 ||
-    (review.verdict === "WATCH" && rating >= 4)
+    (review.verdict === "🔥" && rating >= 4)
   ) {
     return HIGH_RANGE;
   }
 
-  if (review.verdict === "WATCH" || likeCount >= 4 || rating >= 3) {
+  if (review.verdict === "🔥" || likeCount >= 4 || rating >= 3) {
     return MEDIUM_RANGE;
   }
 
@@ -61,4 +61,3 @@ export function getHeatCount(review: HeatSource) {
 
   return min + (hash % (spread + 1));
 }
-

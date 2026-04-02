@@ -63,7 +63,7 @@ export default async function ReviewDetailPage({
 
         <div className="detail-main">
           <div className="detail-copy">
-            <span className={`verdict-badge verdict-${review.verdictKey}`}>
+            <span className={`verdict-badge verdict-${review.verdictTone}`}>
               {review.verdict}
             </span>
             <div className="detail-heading">
@@ -107,7 +107,7 @@ export default async function ReviewDetailPage({
                   rel="noreferrer"
                   className="button-primary"
                 >
-                  Watch Review Video
+                  Open Review Video
                 </a>
               ) : null}
               <Link href="/reviews" className="button-link">

@@ -21,12 +21,12 @@ def slugify(value: str) -> str:
 
 
 def normalize_verdict(value: str) -> str:
-    normalized = value.replace("’", "'").strip()
+    normalized = value.strip()
     mapping = {
-        "WATCH": "WATCH",
-        "ONLY IF YOU'RE INTO IT": "ONLY IF YOU'RE INTO IT",
-        "DON'T BOTHER": "DON'T BOTHER",
-        "STRAIGHT TRASH 💩": "STRAIGHT TRASH 💩",
+        "🔥": "🔥",
+        "👀": "👀",
+        "❌": "❌",
+        "💩": "💩",
     }
     if normalized not in mapping:
         raise ValueError(f"Unsupported verdict: {value}")
@@ -102,7 +102,7 @@ def main() -> None:
             "releaseYear": None,
             "posterImage": "",
             "backdropImage": "",
-            "verdict": "WATCH",
+            "verdict": "🔥",
             "rating": None,
             "reviewerName": "Ace Verdict",
             "quickHit": "",

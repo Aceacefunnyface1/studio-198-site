@@ -1,3 +1,5 @@
+import { Verdict, VerdictTone } from "@/lib/types";
+
 export function slugify(value: string) {
   return value
     .toLowerCase()
@@ -30,12 +32,17 @@ export function ratingLabel(rating: number | null) {
   return `${rating.toFixed(1)}/5`;
 }
 
-export function verdictKey(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/'/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+export function verdictTone(verdict: Verdict): VerdictTone {
+  switch (verdict) {
+    case "🔥":
+      return "fire";
+    case "👀":
+      return "mixed";
+    case "❌":
+      return "nope";
+    case "💩":
+      return "trash";
+  }
 }
 
 export function clampRating(value: number | null) {

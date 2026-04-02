@@ -5,7 +5,7 @@ import path from "node:path";
 import { get, put } from "@vercel/blob";
 import bundledSeedData from "@/data/site-data.json";
 import pendingPosterSlugs from "@/data/pending-poster-slugs.json";
-import { Review, SiteData } from "@/lib/types";
+import { Review, SiteData, Verdict, verdictOptions } from "@/lib/types";
 
 const dataFilePath = path.join(process.cwd(), "data", "site-data.json");
 const siteDataBlobPath = "site-data.json";
@@ -107,8 +107,13 @@ function getTimestamp(value: string | null | undefined) {
 }
 
 function enforceReviewPolicies(review: Review) {
+  const verdict = verdictOptions.includes(review.verdict as Verdict)
+    ? review.verdict
+    : "🔥";
+
   return {
     ...review,
+    verdict,
     posterImage: normalizePosterPath(review.posterImage),
     status: getResolvedReviewStatus(review),
   } satisfies Review;

@@ -13,6 +13,9 @@ export function ReviewCard({ review }: ReviewCardProps) {
   const ratingVisual = getRatingVisual(review.rating);
   const amazonHref = review.amazonAffiliateUrl?.trim() || DEFAULT_AMAZON_AFFILIATE_URL;
   const tagLine = review.genreTags.slice(0, 3).join(" / ");
+  const directorName = review.director?.trim() || "Unknown";
+  const directorPrefix = directorName.length > 16 ? "BY" : "DIRECTED BY";
+  const commentCount = typeof review.commentCount === "number" ? review.commentCount : 0;
 
   return (
     <article className="movie-review-card">
@@ -46,7 +49,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
           </h3>
 
           <p className="movie-review-card__director">
-            {review.director ? `DIRECTED BY ${review.director}` : "DIRECTED BY UNKNOWN"}
+            {`${directorPrefix} ${directorName}`}
           </p>
 
           <p className="movie-review-card__hook">
@@ -62,10 +65,22 @@ export function ReviewCard({ review }: ReviewCardProps) {
             target="_blank"
             rel="noreferrer"
             className="movie-review-card__amazon-button"
+            aria-label={`Watch or buy ${review.movieTitle} on Amazon`}
           >
-            <span>Watch / Buy on Amazon</span>
+            <Image
+              src="/card-assets/amazon-button-reference.png"
+              alt="Available at Amazon"
+              fill
+              className="movie-review-card__amazon-button-image"
+              sizes="160px"
+            />
           </a>
-          <div className="movie-review-card__action-slot" aria-hidden="true" />
+          <Link
+            href={`/reviews/${review.slug}`}
+            className="movie-review-card__action-slot movie-review-card__action-slot--link"
+          >
+            Read Review
+          </Link>
         </div>
 
         <div className="movie-review-card__counters">
@@ -73,9 +88,13 @@ export function ReviewCard({ review }: ReviewCardProps) {
             <span>HEAT</span>
             <strong>{review.heatCount}</strong>
           </div>
-          <div className="movie-review-card__counter movie-review-card__counter--comments">
+          <div
+            className={`movie-review-card__counter movie-review-card__counter--comments${
+              commentCount < 1 ? " movie-review-card__counter--empty" : ""
+            }`}
+          >
             <span>COMMENTS</span>
-            <strong>{review.commentCount}</strong>
+            {commentCount > 0 ? <strong>{commentCount}</strong> : null}
           </div>
         </div>
 

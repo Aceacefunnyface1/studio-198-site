@@ -14,9 +14,16 @@ function hasAmazonAffiliateUrl(review: Review) {
   return Boolean(review.amazonAffiliateUrl?.trim());
 }
 
+function matchesReviewComment(comment: Comment, review: Review) {
+  return (
+    comment.status === "visible" &&
+    (comment.reviewId === review.id || comment.reviewSlug === review.slug)
+  );
+}
+
 function withStats(review: Review, likes: Record<string, number>, comments: Comment[]) {
   const visibleComments = comments.filter(
-    (comment) => comment.reviewId === review.id && comment.status === "visible",
+    (comment) => matchesReviewComment(comment, review),
   );
   const likeCount = likes[review.id] ?? 0;
 
@@ -94,9 +101,7 @@ export async function getReviewBundle(slug: string) {
 
   const reviewWithStats = withStats(review, data.likes, data.comments);
   const comments = data.comments
-    .filter(
-      (comment) => comment.reviewId === review.id && comment.status === "visible",
-    )
+    .filter((comment) => matchesReviewComment(comment, review))
     .sort((left, right) => +new Date(right.createdAt) - +new Date(left.createdAt));
   const related = sortReviewsByNewest(
     data.reviews.filter(

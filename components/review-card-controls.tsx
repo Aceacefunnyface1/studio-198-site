@@ -106,7 +106,7 @@ export function ReviewCardControls({
       </div>
 
       <p className="movie-review-card__control-feedback" aria-live="polite">
-        {heatState.message || "\u00a0"}
+        {heatState.message}
       </p>
     </div>
   );

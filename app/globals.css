@@ -4068,25 +4068,23 @@ textarea {
 }
 
 .movie-review-card__body {
-  --card-line: 1.36rem;
-  display: grid;
-  grid-template-rows: repeat(14, minmax(0, var(--card-line)));
-  gap: 0;
-  min-height: calc(var(--card-line) * 14);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 20rem;
   padding: 1rem 1rem 0.95rem;
   font-family: var(--font-body), Helvetica, Arial, sans-serif;
 }
 
 .movie-review-card__content-link {
-  display: contents;
+  display: grid;
+  gap: 0.42rem;
 }
 
 .movie-review-card__title {
-  grid-row: 1 / span 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  align-self: center;
   margin: 0;
   overflow: hidden;
   color: #65ff25;
@@ -4102,8 +4100,6 @@ textarea {
 }
 
 .movie-review-card__director {
-  grid-row: 3 / span 1;
-  align-self: center;
   margin: 0;
   color: rgba(245, 239, 231, 0.7);
   overflow: hidden;
@@ -4117,23 +4113,19 @@ textarea {
 }
 
 .movie-review-card__hook {
-  grid-row: 4 / span 3;
-  align-self: center;
   margin: 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
   color: #f5eee4;
-  font-size: 1.01rem;
+  font-size: 0.98rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.2;
   text-shadow: 0 0 12px rgba(255, 96, 46, 0.16);
 }
 
 .movie-review-card__tags {
-  grid-row: 7 / span 1;
-  align-self: center;
   margin: 0;
   overflow: hidden;
   color: rgba(245, 239, 231, 0.64);
@@ -4147,11 +4139,9 @@ textarea {
 }
 
 .movie-review-card__control-panel {
-  grid-row: 8 / span 4;
   position: relative;
-  align-self: stretch;
-  margin-top: 0.22rem;
-  padding: 0.62rem 0.62rem 0.54rem;
+  margin-top: 0.1rem;
+  padding: 0.48rem 0.48rem 0.44rem;
   border: 1px solid rgba(255, 92, 41, 0.24);
   border-radius: 1rem;
   background:
@@ -4167,19 +4157,19 @@ textarea {
 .movie-review-card__control-panel::after {
   content: "";
   position: absolute;
-  inset-inline: 0.72rem;
+  inset-inline: 0.58rem;
   height: 1px;
   pointer-events: none;
 }
 
 .movie-review-card__control-panel::before {
-  top: 0.5rem;
+  top: 0.42rem;
   background: linear-gradient(90deg, transparent, rgba(255, 81, 28, 0.7), transparent);
   box-shadow: 0 0 18px rgba(255, 54, 18, 0.4);
 }
 
 .movie-review-card__control-panel::after {
-  bottom: 0.48rem;
+  bottom: 0.38rem;
   background: linear-gradient(90deg, transparent, rgba(181, 255, 49, 0.72), transparent);
   box-shadow: 0 0 18px rgba(181, 255, 49, 0.26);
 }
@@ -4189,8 +4179,7 @@ textarea {
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.54rem;
-  margin-bottom: 0.24rem;
+  gap: 0.42rem;
 }
 
 .movie-review-card__action-form {
@@ -4201,10 +4190,10 @@ textarea {
   position: relative;
   display: grid;
   align-content: space-between;
-  gap: 0.3rem;
-  min-height: 3.5rem;
+  gap: 0.18rem;
+  min-height: 2.5rem;
   width: 100%;
-  padding: 0.56rem 0.7rem 0.62rem;
+  padding: 0.38rem 0.54rem 0.44rem;
   overflow: hidden;
   border: 0;
   color: #fff7ef;
@@ -4233,8 +4222,8 @@ textarea {
 }
 
 .movie-review-card__action-tile::after {
-  inset: auto 0.75rem 0.55rem;
-  height: 2px;
+  inset: auto 0.58rem 0.34rem;
+  height: 1px;
   background: linear-gradient(90deg, currentColor, transparent 82%);
   opacity: 0.75;
   filter: blur(0.2px);
@@ -4252,9 +4241,9 @@ textarea {
   position: relative;
   z-index: 1;
   color: rgba(255, 244, 230, 0.72);
-  font-size: 0.44rem;
+  font-size: 0.38rem;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.16em;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -4265,7 +4254,7 @@ textarea {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  gap: 0.34rem;
+  gap: 0.22rem;
 }
 
 .movie-review-card__action-main strong,
@@ -4276,15 +4265,15 @@ textarea {
 }
 
 .movie-review-card__action-main strong {
-  font-size: 0.62rem;
+  font-size: 0.54rem;
   font-weight: 900;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   line-height: 1;
 }
 
 .movie-review-card__action-main em {
   font-family: var(--font-display), Georgia, serif;
-  font-size: 1.1rem;
+  font-size: 0.92rem;
   font-weight: 700;
   line-height: 0.88;
 }
@@ -4292,16 +4281,16 @@ textarea {
 .movie-review-card__action-main--stacked {
   display: grid;
   align-items: start;
-  gap: 0.2rem;
+  gap: 0.08rem;
 }
 
 .movie-review-card__action-main--stacked strong {
-  font-size: 0.5rem;
-  letter-spacing: 0.18em;
+  font-size: 0.42rem;
+  letter-spacing: 0.14em;
 }
 
 .movie-review-card__action-main--stacked em {
-  font-size: 0.82rem;
+  font-size: 0.68rem;
   line-height: 0.92;
 }
 
@@ -4352,20 +4341,22 @@ textarea {
 }
 
 .movie-review-card__control-feedback {
-  min-height: 0.75rem;
-  margin: 0;
+  margin: 0.2rem 0 0;
   color: rgba(245, 239, 231, 0.62);
-  font-size: 0.52rem;
+  font-size: 0.42rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
+.movie-review-card__control-feedback:empty {
+  display: none;
+}
+
 .movie-review-card__executioner {
-  grid-row: 12 / span 1;
+  margin-top: 0.08rem;
   align-self: center;
-  margin: 0;
   font-family: var(--font-body), Helvetica, Arial, sans-serif;
   font-size: 0.76rem;
   font-weight: 900;
@@ -4388,13 +4379,13 @@ textarea {
 }
 
 .movie-review-card__footer {
-  grid-row: 13 / span 2;
   align-self: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.42rem;
-  margin-top: 0;
+  margin-top: auto;
+  padding-top: 0.22rem;
 }
 
 .movie-review-card__rating-icon {
@@ -4455,21 +4446,9 @@ textarea {
   }
 
   .movie-review-card__body {
-    display: flex;
-    flex-direction: column;
     gap: 0.9rem;
-    min-height: auto;
+    min-height: 0;
     padding: 1rem;
-  }
-
-  .movie-review-card__title,
-  .movie-review-card__director,
-  .movie-review-card__hook,
-  .movie-review-card__tags,
-  .movie-review-card__control-panel,
-  .movie-review-card__executioner,
-  .movie-review-card__footer {
-    grid-row: auto;
   }
 
   .movie-review-card__title {
@@ -4507,16 +4486,16 @@ textarea {
 
   .movie-review-card__control-panel {
     margin-top: 0;
-    padding: 0.6rem 0.6rem 0.52rem;
+    padding: 0.46rem 0.46rem 0.42rem;
   }
 
   .movie-review-card__action-grid {
-    gap: 0.54rem;
+    gap: 0.4rem;
   }
 
   .movie-review-card__action-tile {
-    min-height: 3.4rem;
-    padding: 0.54rem 0.58rem 0.58rem;
+    min-height: 2.8rem;
+    padding: 0.42rem 0.48rem 0.46rem;
   }
 
   .movie-review-card__action-main {
@@ -4524,20 +4503,19 @@ textarea {
   }
 
   .movie-review-card__action-main strong {
-    font-size: 0.58rem;
+    font-size: 0.5rem;
   }
 
   .movie-review-card__action-main em {
-    font-size: 1rem;
+    font-size: 0.82rem;
   }
 
   .movie-review-card__action-main--stacked em {
-    font-size: 0.74rem;
+    font-size: 0.6rem;
   }
 
   .movie-review-card__control-feedback {
-    min-height: 0.7rem;
-    font-size: 0.48rem;
+    font-size: 0.4rem;
   }
 
   .movie-review-card__executioner {
@@ -4548,7 +4526,7 @@ textarea {
 
   .movie-review-card__footer {
     gap: 0.75rem;
-    padding-top: 0.15rem;
+    padding-top: 0.1rem;
   }
 
   .movie-review-card__rating-copy span {
@@ -4566,44 +4544,43 @@ textarea {
   }
 
   .movie-review-card__control-panel {
-    padding: 0.54rem 0.54rem 0.48rem;
+    padding: 0.42rem 0.42rem 0.38rem;
   }
 
   .movie-review-card__action-grid {
-    gap: 0.46rem;
+    gap: 0.34rem;
   }
 
   .movie-review-card__action-tile {
-    min-height: 3.1rem;
-    padding: 0.48rem 0.5rem 0.52rem;
+    min-height: 2.5rem;
+    padding: 0.38rem 0.4rem 0.4rem;
   }
 
   .movie-review-card__action-eyebrow {
-    font-size: 0.4rem;
+    font-size: 0.34rem;
     letter-spacing: 0.16em;
   }
 
   .movie-review-card__action-main strong {
-    font-size: 0.52rem;
+    font-size: 0.46rem;
     letter-spacing: 0.1em;
   }
 
   .movie-review-card__action-main em {
-    font-size: 0.9rem;
+    font-size: 0.76rem;
   }
 
   .movie-review-card__action-main--stacked strong {
-    font-size: 0.46rem;
+    font-size: 0.38rem;
     letter-spacing: 0.14em;
   }
 
   .movie-review-card__action-main--stacked em {
-    font-size: 0.68rem;
+    font-size: 0.54rem;
   }
 
   .movie-review-card__control-feedback {
-    min-height: 0.66rem;
-    font-size: 0.44rem;
+    font-size: 0.36rem;
   }
 }
 

@@ -158,24 +158,6 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           <NewsletterBlock state={newsletterState} />
         </section>
 
-        <section className="cinema-panel cinema-panel--explorer">
-          <div className="cinema-panel__heading cinema-panel__heading--stacked cinema-panel__heading--compact">
-            <h2>DIG THROUGH THE ASH. SORT THE BODIES.</h2>
-          </div>
-          <BrowseExplorer
-            reviews={reviews}
-            emptyMessage="Nothing survived this filter pass."
-          />
-        </section>
-
-        <section className="cinema-panel cinema-panel--latest">
-          <div className="cinema-latest-grid">
-            {latest.map((review) => (
-              <ReviewCard key={review.id} review={review} />
-            ))}
-          </div>
-        </section>
-
         <section className="cinema-panel cinema-panel--support">
           <div className="support-panel">
             <div className="support-panel__copy">
@@ -198,6 +180,24 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                 alt="Buy Me a Coffee QR code for Snap Critique support"
               />
             </div>
+          </div>
+        </section>
+
+        <section className="cinema-panel cinema-panel--explorer">
+          <div className="cinema-panel__heading cinema-panel__heading--stacked cinema-panel__heading--compact">
+            <h2>DIG THROUGH THE ASH. SORT THE BODIES.</h2>
+          </div>
+          <BrowseExplorer
+            reviews={reviews}
+            emptyMessage="Nothing survived this filter pass."
+          />
+        </section>
+
+        <section className="cinema-panel cinema-panel--latest">
+          <div className="cinema-latest-grid">
+            {latest.map((review) => (
+              <ReviewCard key={review.id} review={review} />
+            ))}
           </div>
         </section>
       </div>

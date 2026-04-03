@@ -34,6 +34,12 @@ export type NewsletterActionState = {
   message: string;
 };
 
+export type HeatVoteActionState = {
+  status: "idle" | "success" | "duplicate" | "error";
+  message: string;
+  heatCount: number;
+};
+
 export async function loginAction(formData: FormData) {
   const submittedPassword = requireText(formData.get("password"));
 
@@ -213,6 +219,61 @@ export async function addCommentAction(formData: FormData) {
   revalidatePath("/");
   revalidatePath("/admin");
   redirect(`/reviews/${reviewSlug}#comments`);
+}
+
+export async function submitHeatVoteAction(
+  _previousState: HeatVoteActionState,
+  formData: FormData,
+): Promise<HeatVoteActionState> {
+  const reviewId = requireText(formData.get("reviewId"));
+  const reviewSlug = requireText(formData.get("reviewSlug"));
+  const currentHeatCount = Number.parseInt(requireText(formData.get("heatCount")), 10) || 0;
+  const cookieStore = await cookies();
+  const existingLikes = new Set(
+    (cookieStore.get(likedCookieName)?.value || "")
+      .split(",")
+      .map((value) => value.trim())
+      .filter(Boolean),
+  );
+
+  if (!reviewId || !reviewSlug) {
+    return {
+      status: "error",
+      message: "Heat could not be logged.",
+      heatCount: currentHeatCount,
+    };
+  }
+
+  if (existingLikes.has(reviewId)) {
+    return {
+      status: "duplicate",
+      message: "This browser already used its HEAT vote.",
+      heatCount: currentHeatCount,
+    };
+  }
+
+  const data = await readSiteData();
+  data.likes[reviewId] = (data.likes[reviewId] ?? 0) + 1;
+  await writeSiteData(data);
+
+  existingLikes.add(reviewId);
+  cookieStore.set(likedCookieName, [...existingLikes].join(","), {
+    httpOnly: true,
+    sameSite: "lax",
+    secure: process.env.NODE_ENV === "production",
+    path: "/",
+    maxAge: 60 * 60 * 24 * 365,
+  });
+
+  revalidatePath("/");
+  revalidatePath("/reviews");
+  revalidatePath(`/reviews/${reviewSlug}`);
+
+  return {
+    status: "success",
+    message: "HEAT vote logged.",
+    heatCount: currentHeatCount + 1,
+  };
 }
 
 export async function likeReviewAction(formData: FormData) {

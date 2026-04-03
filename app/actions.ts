@@ -29,9 +29,10 @@ function requireText(value: FormDataEntryValue | null, fallback = "") {
   return typeof value === "string" ? value.trim() : fallback;
 }
 
-function newsletterRedirectPath(state: string) {
-  return `/?newsletter=${state}#newsletter`;
-}
+export type NewsletterActionState = {
+  status: "idle" | "success" | "exists" | "invalid" | "error";
+  message: string;
+};
 
 export async function loginAction(formData: FormData) {
   const submittedPassword = requireText(formData.get("password"));
@@ -308,49 +309,73 @@ export async function submitInquiryAction(formData: FormData) {
   redirect("/contact?success=Message%20received");
 }
 
-export async function subscribeNewsletterAction(formData: FormData) {
+export async function subscribeNewsletterAction(
+  _previousState: NewsletterActionState,
+  formData: FormData,
+): Promise<NewsletterActionState> {
   const normalizedEmail = normalizeSubscriberEmail(requireText(formData.get("email")));
 
   if (!normalizedEmail || !isValidSubscriberEmail(normalizedEmail)) {
-    redirect(newsletterRedirectPath("invalid"));
+    return {
+      status: "invalid",
+      message: "Enter a valid email address to join the giveaway.",
+    };
   }
 
-  const data = await readSiteData();
-  const existingSubscriber = data.newsletterSubscribers.find(
-    (subscriber) => normalizeSubscriberEmail(subscriber.email) === normalizedEmail,
-  );
+  try {
+    const data = await readSiteData();
+    const existingSubscriber = data.newsletterSubscribers.find(
+      (subscriber) => normalizeSubscriberEmail(subscriber.email) === normalizedEmail,
+    );
 
-  if (existingSubscriber?.status === "active") {
-    redirect(newsletterRedirectPath("exists"));
-  }
-
-  const nextSubscriber = existingSubscriber
-    ? {
-        ...existingSubscriber,
-        email: normalizedEmail,
-        status: "active" as const,
-      }
-    : {
-        id: `subscriber-${crypto.randomUUID()}`,
-        email: normalizedEmail,
-        createdAt: new Date().toISOString(),
-        status: "active" as const,
+    if (existingSubscriber?.status === "active") {
+      return {
+        status: "exists",
+        message:
+          "That email is already subscribed and still entered in the giveaway.",
       };
+    }
 
-  data.newsletterSubscribers = [
-    nextSubscriber,
-    ...data.newsletterSubscribers.filter(
-      (subscriber) => subscriber.id !== nextSubscriber.id,
-    ),
-  ].sort(
-    (left, right) =>
-      +new Date(right.createdAt || 0) - +new Date(left.createdAt || 0),
-  );
+    const nextSubscriber = existingSubscriber
+      ? {
+          ...existingSubscriber,
+          email: normalizedEmail,
+          status: "active" as const,
+        }
+      : {
+          id: `subscriber-${crypto.randomUUID()}`,
+          email: normalizedEmail,
+          createdAt: new Date().toISOString(),
+          status: "active" as const,
+        };
 
-  await writeSiteData(data);
-  revalidatePath("/");
-  revalidatePath("/admin");
-  redirect(newsletterRedirectPath("success"));
+    data.newsletterSubscribers = [
+      nextSubscriber,
+      ...data.newsletterSubscribers.filter(
+        (subscriber) => subscriber.id !== nextSubscriber.id,
+      ),
+    ].sort(
+      (left, right) =>
+        +new Date(right.createdAt || 0) - +new Date(left.createdAt || 0),
+    );
+
+    await writeSiteData(data);
+    revalidatePath("/");
+    revalidatePath("/admin");
+
+    return {
+      status: "success",
+      message:
+        "You’re in. Your email is saved and entered for the next monthly draw.",
+    };
+  } catch (error) {
+    console.error("Newsletter signup failed", error);
+    return {
+      status: "error",
+      message:
+        "We couldn’t save your entry right now. Please try again in a moment.",
+    };
+  }
 }
 
 export async function drawGiveawayWinnerAction() {

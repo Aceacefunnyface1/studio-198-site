@@ -2898,6 +2898,10 @@ textarea {
   margin-top: 1.25rem;
 }
 
+.newsletter-submit {
+  min-width: 8.5rem;
+}
+
 .newsletter-label {
   position: absolute;
   width: 1px;
@@ -2930,6 +2934,20 @@ textarea {
   margin-top: 0.9rem;
   color: #f4d389;
   font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.newsletter-feedback--success {
+  color: #f4d389;
+}
+
+.newsletter-feedback--exists {
+  color: #efe7dc;
+}
+
+.newsletter-feedback--invalid,
+.newsletter-feedback--error {
+  color: #ff9675;
 }
 
 .support-panel {
@@ -3881,7 +3899,7 @@ textarea {
 .cinema-latest-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.72rem;
+  gap: 1rem;
 }
 
 .cinema-panel--latest .review-card {
@@ -3916,11 +3934,14 @@ textarea {
   margin-top: 0.75rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   .cinema-panel--hero,
-  .cinema-poster-wall,
-  .cinema-latest-grid {
+  .cinema-poster-wall {
     grid-template-columns: 1fr;
+  }
+
+  .cinema-latest-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .cinema-panel__stage {
@@ -3955,7 +3976,7 @@ textarea {
   .cinema-panel--wall,
   .cinema-panel--explorer,
   .cinema-panel--latest {
-    padding: 0.8rem;
+    padding: 0.95rem;
   }
 
   .cinema-home__title {
@@ -3977,6 +3998,25 @@ textarea {
 
   .cinema-stage__featured {
     width: 7rem;
+  }
+
+  .cinema-latest-grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .newsletter-inner {
+    text-align: left;
+  }
+
+  .newsletter-form {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .newsletter-submit {
+    width: 100%;
+    min-width: 0;
   }
 }
 
@@ -4305,24 +4345,107 @@ textarea {
 
 @media (max-width: 640px) {
   .movie-review-card {
-    grid-template-rows: auto minmax(18rem, 1fr);
+    grid-template-rows: auto auto;
   }
 
   .movie-review-card__body {
-    --card-line: 1.3rem;
-    padding-inline: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    min-height: auto;
+    padding: 1rem;
   }
 
-  .movie-review-card__counter {
-    min-height: 2.86rem;
+  .movie-review-card__title,
+  .movie-review-card__director,
+  .movie-review-card__hook,
+  .movie-review-card__tags,
+  .movie-review-card__actions,
+  .movie-review-card__counters,
+  .movie-review-card__executioner,
+  .movie-review-card__footer {
+    grid-row: auto;
   }
 
   .movie-review-card__title {
-    font-size: 1.05rem;
+    display: block;
+    overflow: visible;
+    font-size: 1.22rem;
+    line-height: 1;
+  }
+
+  .movie-review-card__director,
+  .movie-review-card__hook {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+  }
+
+  .movie-review-card__director {
+    font-size: 0.68rem;
+    line-height: 1.35;
   }
 
   .movie-review-card__hook {
+    display: block;
     min-height: auto;
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+
+  .movie-review-card__tags {
+    overflow: visible;
+    font-size: 0.68rem;
+    line-height: 1.4;
+    white-space: normal;
+  }
+
+  .movie-review-card__actions {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .movie-review-card__amazon-button,
+  .movie-review-card__action-slot {
+    min-height: 3.25rem;
+  }
+
+  .movie-review-card__amazon-button {
+    width: 100%;
+    max-width: none;
+  }
+
+  .movie-review-card__counters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .movie-review-card__counter {
+    min-height: 3.1rem;
+  }
+
+  .movie-review-card__counter span {
+    font-size: 0.62rem;
+  }
+
+  .movie-review-card__executioner {
+    font-size: 0.82rem;
+    line-height: 1.3;
+    white-space: normal;
+  }
+
+  .movie-review-card__footer {
+    gap: 0.75rem;
+    padding-top: 0.15rem;
+  }
+
+  .movie-review-card__rating-copy span {
+    font-size: 0.72rem;
+  }
+
+  .movie-review-card__rating-copy strong {
+    font-size: 1.65rem;
   }
 }
 

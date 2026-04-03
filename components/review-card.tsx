@@ -32,7 +32,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
               alt={review.movieTitle}
               fill
               className="movie-review-card__poster-image"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
             />
           ) : (
             <div className="movie-review-card__poster-fallback">No Poster</div>

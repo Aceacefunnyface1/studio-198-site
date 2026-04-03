@@ -13,10 +13,7 @@ type HomePageProps = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default async function HomePage({ searchParams }: HomePageProps) {
-  const params = await searchParams;
-  const newsletterState =
-    typeof params.newsletter === "string" ? params.newsletter : "";
+export default async function HomePage(_props: HomePageProps) {
   const reviews = await getPublishedReviewsWithStats();
   const heroReview = getDailyFeaturedReview(reviews);
   const latest = [...reviews]
@@ -155,7 +152,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
         </section>
 
         <section className="cinema-panel cinema-panel--newsletter">
-          <NewsletterBlock state={newsletterState} />
+          <NewsletterBlock />
         </section>
 
         <section className="cinema-panel cinema-panel--support">

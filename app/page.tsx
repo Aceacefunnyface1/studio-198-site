@@ -175,6 +175,31 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             ))}
           </div>
         </section>
+
+        <section className="cinema-panel cinema-panel--support">
+          <div className="support-panel">
+            <div className="support-panel__copy">
+              <p className="eyebrow">Support</p>
+              <h2>SUPPORT THE VERDICT</h2>
+              <p>If Snap Critique hits, support keeps it alive.</p>
+              <a
+                href="https://buymeacoffee.com/ace198"
+                target="_blank"
+                rel="noreferrer"
+                className="button-primary"
+              >
+                Support Snap Critique
+              </a>
+            </div>
+
+            <div className="support-panel__qr">
+              <img
+                src="/bmc_qr.png"
+                alt="Buy Me a Coffee QR code for Snap Critique support"
+              />
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

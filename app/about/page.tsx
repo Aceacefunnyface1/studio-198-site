@@ -8,6 +8,7 @@ const crew = [
     tone: "mandy",
     meta: ["Eufaula, AL", "Melynda’s Love", "Los Angeles Film School"],
     description: "Brings instinct and emotional read to every review.",
+    socials: [],
   },
   {
     image: "/about/ace.jpg",
@@ -20,6 +21,40 @@ const crew = [
       "www.moviesbybrad.com",
     ],
     description: "Executioner of the verdict. Built the system.",
+    socials: [
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/profile.php?id=61574699900336",
+      },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/acebehnkebrad/",
+      },
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/brad-behnke-thedoocumantguy/",
+      },
+      {
+        label: "FilmFreeway",
+        href: "https://filmfreeway.com/BradBehnke",
+      },
+      {
+        label: "IMDb",
+        href: "https://www.imdb.com/user/ur180728718/?ref_=hm_nv_profile",
+      },
+      {
+        label: "X",
+        href: "https://x.com/BradLeebehnke2",
+      },
+      {
+        label: "YouTube",
+        href: "https://www.youtube.com/@AceStudio198",
+      },
+      {
+        label: "TikTok",
+        href: "https://www.tiktok.com/@stud1o19884o0",
+      },
+    ],
   },
   {
     image: "/about/leeanne.jpg",
@@ -31,6 +66,7 @@ const crew = [
       "Los Angeles Film School",
     ],
     description: "Focuses on story, pacing, and structure.",
+    socials: [],
   },
 ];
 
@@ -88,6 +124,21 @@ export default async function AboutPage() {
                       <span key={line}>{line}</span>
                     ))}
                   </p>
+                  {member.socials.length ? (
+                    <div className="about-socials">
+                      {member.socials.map((social) => (
+                        <a
+                          key={social.href}
+                          href={social.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="about-social-link"
+                        >
+                          {social.label}
+                        </a>
+                      ))}
+                    </div>
+                  ) : null}
                   <p className="about-desc">{member.description}</p>
                 </div>
               </article>

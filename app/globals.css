@@ -4734,6 +4734,45 @@ textarea {
   display: block;
 }
 
+.about-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.about-social-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.42rem 0.72rem;
+  border: 1px solid rgba(211, 96, 48, 0.24);
+  color: #f5d0aa;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  background:
+    linear-gradient(180deg, rgba(52, 14, 11, 0.92), rgba(16, 5, 5, 0.98)),
+    rgba(11, 4, 4, 0.98);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 226, 192, 0.05),
+    0 10px 22px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.about-social-link:hover,
+.about-social-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(239, 174, 105, 0.52);
+  color: #fff1e0;
+  outline: none;
+}
+
 .about-desc {
   margin: 0;
   color: rgba(244, 232, 221, 0.9);

@@ -1,15 +1,18 @@
+import { readSiteData } from "@/lib/site-data";
+import { getReviewerPresentation } from "@/lib/utils";
+
 const crew = [
   {
     image: "/about/mandy.jpg",
     name: "MANDY S",
-    role: "100 REVIEWS",
+    tone: "mandy",
     meta: ["Eufaula, AL", "Melynda’s Love", "Los Angeles Film School"],
     description: "Brings instinct and emotional read to every review.",
   },
   {
     image: "/about/ace.jpg",
     name: "ACE B",
-    role: "",
+    tone: "ace",
     meta: [
       "Lawton, OK",
       "Studio 198",
@@ -21,7 +24,7 @@ const crew = [
   {
     image: "/about/leeanne.jpg",
     name: "LEEANNE",
-    role: "100 REVIEWS",
+    tone: "leeanna",
     meta: [
       "Cleveland, TN",
       "One Generation Studio",
@@ -31,7 +34,14 @@ const crew = [
   },
 ];
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const data = await readSiteData();
+  const reviewCounts = data.reviews.reduce<Record<string, number>>((totals, review) => {
+    const { tone } = getReviewerPresentation(review.reviewerName);
+    totals[tone] = (totals[tone] ?? 0) + 1;
+    return totals;
+  }, {});
+
   return (
     <main className="about-page">
       <section className="about-wrapper">
@@ -56,30 +66,33 @@ export default function AboutPage() {
         </div>
 
         <div className="about-grid">
-          {crew.map((member) => (
-            <article key={member.name} className="about-card">
-              <div className="about-portrait-shell">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="about-avatar"
-                />
-              </div>
+          {crew.map((member) => {
+            const reviewCount = reviewCounts[member.tone] ?? 0;
+            const role = `${reviewCount} REVIEW${reviewCount === 1 ? "" : "S"}`;
 
-              <div className="about-copy">
-                {member.role ? (
-                  <p className="about-role">{`${member.name} — ${member.role}`}</p>
-                ) : null}
-                <h2 className="about-name">{member.name}</h2>
-                <p className="about-meta">
-                  {member.meta.map((line) => (
-                    <span key={line}>{line}</span>
-                  ))}
-                </p>
-                <p className="about-desc">{member.description}</p>
-              </div>
-            </article>
-          ))}
+            return (
+              <article key={member.name} className="about-card">
+                <div className="about-portrait-shell">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="about-avatar"
+                  />
+                </div>
+
+                <div className="about-copy">
+                  <p className="about-role">{`${member.name} — ${role}`}</p>
+                  <h2 className="about-name">{member.name}</h2>
+                  <p className="about-meta">
+                    {member.meta.map((line) => (
+                      <span key={line}>{line}</span>
+                    ))}
+                  </p>
+                  <p className="about-desc">{member.description}</p>
+                </div>
+              </article>
+            );
+          })}
         </div>
 
         <p className="about-footer">Three perspectives. One verdict system.</p>

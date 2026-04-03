@@ -60,42 +60,48 @@ export function ReviewCard({ review }: ReviewCardProps) {
           <p className="movie-review-card__tags">{tagLine || "MOVIE TAGS"}</p>
         </Link>
 
-        <div className="movie-review-card__actions">
-          <a
-            href={amazonHref}
-            target="_blank"
-            rel="noreferrer"
-            className="movie-review-card__amazon-button"
-            aria-label={`Watch or buy ${review.movieTitle} on Amazon`}
-          >
-            <Image
-              src="/card-assets/amazon-button-reference.png"
-              alt="Available at Amazon"
-              fill
-              className="movie-review-card__amazon-button-image"
-              sizes="160px"
-            />
-          </a>
-          <Link
-            href={`/reviews/${review.slug}`}
-            className="movie-review-card__action-slot movie-review-card__action-slot--link"
-          >
-            Read Review
-          </Link>
-        </div>
+        <div className="movie-review-card__control-panel">
+          <div className="movie-review-card__action-grid">
+            <div className="movie-review-card__action-tile movie-review-card__action-tile--heat">
+              <span className="movie-review-card__action-eyebrow">Signal</span>
+              <div className="movie-review-card__action-main">
+                <strong>HEAT</strong>
+                <em>{review.heatCount}</em>
+              </div>
+            </div>
 
-        <div className="movie-review-card__counters">
-          <div className="movie-review-card__counter movie-review-card__counter--heat">
-            <span>HEAT</span>
-            <strong>{review.heatCount}</strong>
-          </div>
-          <div
-            className={`movie-review-card__counter movie-review-card__counter--comments${
-              commentCount < 1 ? " movie-review-card__counter--empty" : ""
-            }`}
-          >
-            <span>COMMENTS</span>
-            {commentCount > 0 ? <strong>{commentCount}</strong> : null}
+            <div className="movie-review-card__action-tile movie-review-card__action-tile--comments">
+              <span className="movie-review-card__action-eyebrow">Thread</span>
+              <div className="movie-review-card__action-main">
+                <strong>COMMENTS</strong>
+                <em>{commentCount}</em>
+              </div>
+            </div>
+
+            <a
+              href={amazonHref}
+              target="_blank"
+              rel="noreferrer"
+              className="movie-review-card__action-tile movie-review-card__action-tile--amazon"
+              aria-label={`Watch or buy ${review.movieTitle} on Amazon`}
+            >
+              <span className="movie-review-card__action-eyebrow">Stream</span>
+              <div className="movie-review-card__action-main movie-review-card__action-main--stacked">
+                <strong>WATCH ON</strong>
+                <em>AMAZON</em>
+              </div>
+            </a>
+
+            <Link
+              href={`/reviews/${review.slug}`}
+              className="movie-review-card__action-tile movie-review-card__action-tile--review"
+            >
+              <span className="movie-review-card__action-eyebrow">Full Take</span>
+              <div className="movie-review-card__action-main movie-review-card__action-main--stacked">
+                <strong>READ</strong>
+                <em>REVIEW</em>
+              </div>
+            </Link>
           </div>
         </div>
 

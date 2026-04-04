@@ -1,0 +1,75 @@
+# Early Horror Import Report
+
+- Imported count: 761
+- Live visible count: 695
+- Hidden pending-poster count: 66
+- Titles still failing after normalization/alias pass: 66
+
+## Still Missing Posters
+
+- Escamotage d’une dame au théâtre Robert Houdin
+- Photographing a Ghost
+- The Accursed Cavern
+- Raising Spirits
+- Chinese Magic
+- Faust and Marguerite
+- Satan s'amuse
+- Trilby
+- After Death
+- Snow White
+- Black Orchids
+- Malombra
+- The Craving
+- J'accuse
+- Madness
+- The Dance of Death
+- Desire
+- The Dark Mirror
+- The Phantom Carriage
+- Waxworks
+- Tianak
+- Mga Kaluluwang Napaligaw
+- Bakas Ng Kalansay
+- La Herencia Macabra
+- The Face at the Window
+- The Devil Bat's Daughter
+- New Version of the Ghost of Yotsuya
+- Kamay ni Satanas
+- I Vampiri
+- La Maldicion de la Momia Azteca
+- La Momia Azteca
+- The Body Snatcher
+- Pusang Itim
+- Terror in the Haunted House
+- The Crawling Eye
+- The Haunted Strangler
+- Tokaido Yotsuya kaidan
+- Uncle Was a Vampire
+- Eyes Without a Face
+- Ginoong Misteryoso
+- Manananggal vs. Mangkukulam
+- The City of the Dead
+- The Two Faces of Dr. Jekyll
+- Captain Clegg
+- Night of the Eagle
+- The Cursed Palace
+- House of the Damned
+- Dr. Orloff's Monster
+- Face of the Screaming Werewolf
+- Monstrosity
+- War of the Zombies
+- A Devilish Homicide
+- Curse of Simba
+- Fanatic
+- The She Wolf
+- The Hand of Night
+- Even the Wind is Scared
+- A Tale of Peonies and Lanterns
+- Any Body...Any Way
+- Curse of the Crimson Altar
+- Snow Ghost
+- The Devil Rides Out
+- Witchfinder General
+- Fangs of the Living Dead
+- Rote lippen
+- The Haunted House of Horror

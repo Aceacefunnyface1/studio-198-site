@@ -35,6 +35,8 @@ export type Review = {
   runtime: string;
   director: string;
   status: ReviewStatus;
+  collection?: string;
+  pendingPoster?: boolean;
 };
 
 export type Comment = {

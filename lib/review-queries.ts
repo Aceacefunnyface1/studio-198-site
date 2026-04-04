@@ -1,5 +1,13 @@
 import "server-only";
 
+import {
+  EARLY_HORROR_COLLECTION,
+  EARLY_HORROR_END_YEAR,
+  EARLY_HORROR_START_YEAR,
+  EarlyHorrorDecadeKey,
+  earlyHorrorDecades,
+  getEarlyHorrorDecadeKey,
+} from "@/lib/early-horror";
 import { getHeatCount } from "@/lib/heat";
 import { resolvePoster } from "@/lib/poster-resolver";
 import { readSiteData, sortReviewsByNewest } from "@/lib/site-data";
@@ -12,6 +20,26 @@ function hasResolvedPoster(review: Review) {
 
 function hasAmazonAffiliateUrl(review: Review) {
   return Boolean(review.amazonAffiliateUrl?.trim());
+}
+
+function hasUsableSlug(review: Review) {
+  return Boolean(review.slug?.trim());
+}
+
+function isChronologicallyEarlier(left: Review, right: Review) {
+  return (left.releaseYear ?? 9999) - (right.releaseYear ?? 9999);
+}
+
+function sortReviewsChronologically<T extends Review>(reviews: T[]) {
+  return [...reviews].sort((left, right) => {
+    const yearDelta = isChronologicallyEarlier(left, right);
+
+    if (yearDelta !== 0) {
+      return yearDelta;
+    }
+
+    return left.movieTitle.localeCompare(right.movieTitle);
+  });
 }
 
 function matchesReviewComment(comment: Comment, review: Review) {
@@ -58,6 +86,115 @@ export async function getAllReviewsWithStats() {
   return sortReviewsByNewest(data.reviews).map((review) =>
     withStats(review, data.likes, data.comments),
   );
+}
+
+export type EarlyHorrorDecadeStat = {
+  key: EarlyHorrorDecadeKey;
+  label: string;
+  filmCount: number;
+  averageRating: number | null;
+  liveFilmCount: number;
+};
+
+export type EarlyHorrorArchiveBundle = {
+  summary: {
+    filmCount: number;
+    averageRating: number | null;
+    earliestYear: number | null;
+    latestYear: number | null;
+    importedCount: number;
+    liveVisibleCount: number;
+    hiddenPendingPosterCount: number;
+  };
+  decades: EarlyHorrorDecadeStat[];
+  reviews: ReviewWithStats[];
+};
+
+export function isLiveEarlyHorrorReview(review: Review) {
+  return (
+    review.collection === EARLY_HORROR_COLLECTION &&
+    typeof review.releaseYear === "number" &&
+    review.releaseYear >= EARLY_HORROR_START_YEAR &&
+    review.releaseYear <= EARLY_HORROR_END_YEAR &&
+    review.status === "published" &&
+    hasResolvedPoster(review) &&
+    hasUsableSlug(review)
+  );
+}
+
+export async function getEarlyHorrorArchiveBundle(): Promise<EarlyHorrorArchiveBundle> {
+  const data = await readSiteData();
+  const collectionReviews = data.reviews.filter(
+    (review) => review.collection === EARLY_HORROR_COLLECTION,
+  );
+  const liveReviews = sortReviewsChronologically(
+    collectionReviews.filter(isLiveEarlyHorrorReview),
+  ).map((review) => withStats(review, data.likes, data.comments));
+  const ratings = collectionReviews
+    .map((review) => review.rating)
+    .filter((rating): rating is number => typeof rating === "number");
+  const years = collectionReviews
+    .map((review) => review.releaseYear)
+    .filter((year): year is number => typeof year === "number");
+
+  const decades = earlyHorrorDecades.map((decade) => {
+    if (decade.key === "all") {
+      return {
+        key: decade.key,
+        label: decade.label,
+        filmCount: collectionReviews.length,
+        averageRating: ratings.length
+          ? Number((ratings.reduce((sum, value) => sum + value, 0) / ratings.length).toFixed(1))
+          : null,
+        liveFilmCount: liveReviews.length,
+      } satisfies EarlyHorrorDecadeStat;
+    }
+
+    const decadeReviews = collectionReviews.filter(
+      (review) =>
+        typeof review.releaseYear === "number" &&
+        review.releaseYear >= decade.startYear &&
+        review.releaseYear <= decade.endYear,
+    );
+    const decadeRatings = decadeReviews
+      .map((review) => review.rating)
+      .filter((rating): rating is number => typeof rating === "number");
+
+    return {
+      key: decade.key,
+      label: decade.label,
+      filmCount: decadeReviews.length,
+      averageRating: decadeRatings.length
+        ? Number(
+            (
+              decadeRatings.reduce((sum, value) => sum + value, 0) /
+              decadeRatings.length
+            ).toFixed(1),
+          )
+        : null,
+      liveFilmCount: liveReviews.filter(
+        (review) => getEarlyHorrorDecadeKey(review.releaseYear) === decade.key,
+      ).length,
+    } satisfies EarlyHorrorDecadeStat;
+  });
+
+  return {
+    summary: {
+      filmCount: collectionReviews.length,
+      averageRating: ratings.length
+        ? Number((ratings.reduce((sum, value) => sum + value, 0) / ratings.length).toFixed(1))
+        : null,
+      earliestYear: years.length ? Math.min(...years) : null,
+      latestYear: years.length ? Math.max(...years) : null,
+      importedCount: collectionReviews.length,
+      liveVisibleCount: liveReviews.length,
+      hiddenPendingPosterCount: collectionReviews.filter(
+        (review) => review.pendingPoster || !hasResolvedPoster(review) || review.status !== "published",
+      ).length,
+    },
+    decades,
+    reviews: liveReviews,
+  };
 }
 
 function getDayOfYear(date: Date) {

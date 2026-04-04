@@ -10,6 +10,7 @@ export function SiteFooter() {
         </div>
         <nav aria-label="Footer">
           <Link href="/reviews">Archive</Link>
+          <Link href="/early-horror">The Bloody Birth of Horror</Link>
           <Link href="/about">Mission</Link>
           <Link href="/contact">Contact</Link>
           <a href="#" aria-disabled="true">

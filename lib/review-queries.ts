@@ -26,6 +26,10 @@ function hasUsableSlug(review: Review) {
   return Boolean(review.slug?.trim());
 }
 
+function isStandardArchiveReview(review: Review) {
+  return review.collection !== EARLY_HORROR_COLLECTION;
+}
+
 function isChronologicallyEarlier(left: Review, right: Review) {
   return (left.releaseYear ?? 9999) - (right.releaseYear ?? 9999);
 }
@@ -72,7 +76,10 @@ function withStats(review: Review, likes: Record<string, number>, comments: Comm
 export async function getPublishedReviewsWithStats() {
   const data = await readSiteData();
   const publishedReviews = data.reviews.filter(
-    (review) => review.status === "published" && hasResolvedPoster(review),
+    (review) =>
+      review.status === "published" &&
+      hasResolvedPoster(review) &&
+      isStandardArchiveReview(review),
   );
 
   return sortReviewsByNewest(publishedReviews).map((review) =>

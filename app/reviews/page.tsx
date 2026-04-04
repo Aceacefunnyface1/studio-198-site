@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BrowseExplorer } from "@/components/browse-explorer";
 import { getPublishedReviewsWithStats } from "@/lib/review-queries";
 
@@ -19,6 +20,9 @@ export default async function ReviewsPage() {
             <p className="eyebrow">Reviews Archive</p>
             <h2>Every published verdict in one place</h2>
           </div>
+          <Link href="/early-horror" className="text-link">
+            Browse The Bloody Birth of Horror
+          </Link>
         </div>
         <BrowseExplorer
           reviews={reviews}

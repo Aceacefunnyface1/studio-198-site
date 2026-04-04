@@ -4,6 +4,7 @@ import Link from "next/link";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/reviews", label: "Reviews" },
+  { href: "/early-horror", label: "The Bloody Birth of Horror" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/admin", label: "Admin" },

@@ -8,9 +8,9 @@ import {
 import { getEarlyHorrorArchiveBundle } from "@/lib/review-queries";
 
 export const metadata: Metadata = {
-  title: "The Birth of Horror",
+  title: "The Bloody Birth of Horror",
   description:
-    "Browse the Early Horror archive from 1896 through 1969 by decade, with live poster-backed reviews only.",
+    "Browse The Bloody Birth of Horror archive from 1896 through 1969 by decade, with live poster-backed reviews only.",
 };
 
 export default async function EarlyHorrorPage() {
@@ -20,7 +20,7 @@ export default async function EarlyHorrorPage() {
     <div className="page-stack early-horror-page">
       <section className="content-section early-horror-hero">
         <div className="early-horror-hero__copy">
-          <p className="eyebrow">Early Horror Archive</p>
+          <p className="eyebrow">The Bloody Birth of Horror</p>
           <h1>{EARLY_HORROR_TITLE}</h1>
           <p className="early-horror-hero__subtitle">{EARLY_HORROR_SUBTITLE}</p>
           <p className="early-horror-hero__support">{EARLY_HORROR_SUPPORT_LINE}</p>

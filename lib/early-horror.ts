@@ -1,5 +1,5 @@
 export const EARLY_HORROR_COLLECTION = "early-horror";
-export const EARLY_HORROR_TITLE = "The Birth of Horror";
+export const EARLY_HORROR_TITLE = "The Bloody Birth of Horror";
 export const EARLY_HORROR_SUBTITLE = "1896–1969";
 export const EARLY_HORROR_SUPPORT_LINE =
   "761 films. The entire foundation of horror.";

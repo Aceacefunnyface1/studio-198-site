@@ -66,7 +66,12 @@ const crew = [
       "Los Angeles Film School",
     ],
     description: "Focuses on story, pacing, and structure.",
-    socials: [],
+    socials: [
+      {
+        label: "One Generation Studio",
+        href: "https://onegenerationstudio.square.site/",
+      },
+    ],
   },
 ];
 

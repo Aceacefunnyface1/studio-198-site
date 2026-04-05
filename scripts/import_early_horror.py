@@ -129,8 +129,8 @@ def normalize_reviewer(value: object) -> str:
     text = collapse_spaces(value)
     upper = text.upper()
 
-    if "MANDY" in upper:
-        return "Mandy"
+    if "MINDY" in upper or "MANDY" in upper:
+        return "Mindy"
     if "LEE" in upper:
         return "Leeanne"
     return "Ace"

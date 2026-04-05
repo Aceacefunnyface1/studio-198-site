@@ -4,7 +4,7 @@ import { getReviewerPresentation } from "@/lib/utils";
 const crew = [
   {
     image: "/about/mandy.jpg",
-    name: "MANDY S",
+    name: "MINDY S",
     tone: "mandy",
     meta: ["Eufaula, AL", "Melynda’s Love", "Los Angeles Film School"],
     description: "Brings instinct and emotional read to every review.",

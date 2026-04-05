@@ -84,9 +84,9 @@ export function getReviewerPresentation(
 ): ReviewerPresentation {
   const normalized = (reviewerName || "").trim().toUpperCase();
 
-  if (normalized.includes("MANDY")) {
+  if (normalized.includes("MINDY") || normalized.includes("MANDY")) {
     return {
-      label: 'INSTINCT "MANDY"',
+      label: 'INSTINCT "MINDY"',
       tone: "mandy",
     };
   }

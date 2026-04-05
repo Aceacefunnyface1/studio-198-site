@@ -280,7 +280,7 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
     }
 
     // Reviewer attribution is editorial data owned by the bundled seed. If the
-    // repo assignment changes (for example Ace -> Mandy / Leeanna), keep the
+    // repo assignment changes (for example Ace -> Mindy / Leeanna), keep the
     // bundled reviewer name instead of preserving an older Blob value.
     return true;
   }

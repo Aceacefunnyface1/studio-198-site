@@ -4088,9 +4088,10 @@ textarea {
   padding: 0.4rem;
   background: linear-gradient(180deg, transparent, rgba(10, 3, 2, 0.94) 38%);
   color: #f1e3d5;
-  font-size: 0.58rem;
+  font-size: 0.64rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -4268,7 +4269,8 @@ textarea {
   }
 
   .poster-match-board {
-    gap: 0.45rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.55rem;
   }
 
   .poster-match-promo-grid {

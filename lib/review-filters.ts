@@ -4,6 +4,7 @@ export type ReviewFilters = {
   search: string;
   verdict: string;
   genre: string;
+  decade: string;
   rating: string;
   sort: string;
   featuredOnly: boolean;
@@ -13,6 +14,7 @@ export const defaultFilters: ReviewFilters = {
   search: "",
   verdict: "all",
   genre: "all",
+  decade: "all",
   rating: "all",
   sort: "newest",
   featuredOnly: false,
@@ -20,6 +22,20 @@ export const defaultFilters: ReviewFilters = {
 
 export function collectGenres(reviews: ReviewWithStats[]) {
   return [...new Set(reviews.flatMap((review) => review.genreTags))].sort();
+}
+
+export function collectDecades(reviews: ReviewWithStats[]) {
+  return [
+    ...new Set(
+      reviews
+        .map((review) =>
+          typeof review.releaseYear === "number"
+            ? `${Math.floor(review.releaseYear / 10) * 10}s`
+            : null,
+        )
+        .filter((decade): decade is string => Boolean(decade)),
+    ),
+  ].sort((left, right) => Number.parseInt(right, 10) - Number.parseInt(left, 10));
 }
 
 export function applyReviewFilters(
@@ -45,6 +61,10 @@ export function applyReviewFilters(
       filters.verdict === "all" || review.verdict === filters.verdict;
     const matchesGenre =
       filters.genre === "all" || review.genreTags.includes(filters.genre);
+    const matchesDecade =
+      filters.decade === "all" ||
+      (typeof review.releaseYear === "number" &&
+        `${Math.floor(review.releaseYear / 10) * 10}s` === filters.decade);
     const matchesFeatured = !filters.featuredOnly || review.featured;
     const minRating =
       filters.rating === "all" ? null : Number.parseFloat(filters.rating);
@@ -56,6 +76,7 @@ export function applyReviewFilters(
       matchesSearch &&
       matchesVerdict &&
       matchesGenre &&
+      matchesDecade &&
       matchesFeatured &&
       matchesRating
     );

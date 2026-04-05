@@ -4,21 +4,29 @@ import { useState } from "react";
 import { ReviewCard } from "@/components/review-card";
 import {
   applyReviewFilters,
+  collectDecades,
   collectGenres,
   defaultFilters,
+  type ReviewFilters,
 } from "@/lib/review-filters";
 import { verdictOptions, ReviewWithStats } from "@/lib/types";
 
 type BrowseExplorerProps = {
   reviews: ReviewWithStats[];
   emptyMessage: string;
+  initialFilters?: Partial<ReviewFilters>;
 };
 
 export function BrowseExplorer({
   reviews,
   emptyMessage,
+  initialFilters,
 }: BrowseExplorerProps) {
-  const [filters, setFilters] = useState(defaultFilters);
+  const [filters, setFilters] = useState({
+    ...defaultFilters,
+    ...initialFilters,
+  });
+  const decades = collectDecades(reviews);
   const genres = collectGenres(reviews);
   const filteredReviews = applyReviewFilters(reviews, filters);
 
@@ -78,6 +86,27 @@ export function BrowseExplorer({
             {genres.map((genre) => (
               <option key={genre} value={genre}>
                 {genre}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="field">
+          <label htmlFor="decade">Decade</label>
+          <select
+            id="decade"
+            value={filters.decade}
+            onChange={(event) =>
+              setFilters((current) => ({
+                ...current,
+                decade: event.target.value,
+              }))
+            }
+          >
+            <option value="all">All decades</option>
+            {decades.map((decade) => (
+              <option key={decade} value={decade}>
+                {decade}
               </option>
             ))}
           </select>

@@ -1,0 +1,1041 @@
+# Reviews Without Comments
+
+Total: 1037
+
+- Escamotage d’une dame au théâtre Robert Houdin (1896) — draft — /reviews/escamotage-dune-dame-au-theatre-robert-houdin-1896
+- Photographing a Ghost (1898) — draft — /reviews/photographing-a-ghost-1898
+- The Accursed Cavern (1898) — draft — /reviews/the-accursed-cavern-1898
+- Raising Spirits (1899) — draft — /reviews/raising-spirits-1899
+- Chinese Magic (1900) — draft — /reviews/chinese-magic-yellow-peril-1900
+- Faust and Marguerite (1900) — draft — /reviews/faust-and-marguerite-1900
+- Satan s'amuse (1907) — draft — /reviews/satan-s-amuse-satan-at-play-1907
+- Trilby (1912) — draft — /reviews/trilby-1912-film-1912
+- After Death (1915) — draft — /reviews/after-death-1915-film-1915
+- Snow White (1916) — draft — /reviews/snow-white-1916-film-1916
+- Black Orchids (1917) — draft — /reviews/black-orchids-film-1917
+- Malombra (1917) — draft — /reviews/malombra-1917-film-1917
+- The Craving (1918) — draft — /reviews/the-craving-1918-film-1918
+- J'accuse (1919) — draft — /reviews/j-accuse-1919-film-1919
+- Madness (1919) — draft — /reviews/madness-1919-film-1919
+- The Dance of Death (1919) — draft — /reviews/the-dance-of-death-1919-film-1919
+- Desire (1920) — draft — /reviews/desire-1920-film-1920
+- The Dark Mirror (1920) — draft — /reviews/the-dark-mirror-1920-film-1920
+- The Kid (1921) — draft — /reviews/the-kid
+- The Phantom Carriage (1921) — draft — /reviews/the-phantom-carriage-17-1921
+- Sherlock Jr. (1924) — draft — /reviews/sherlock-jr
+- Waxworks (1924) — draft — /reviews/waxworks-1924
+- The Gold Rush (1925) — draft — /reviews/the-gold-rush
+- The General (1926) — draft — /reviews/the-general
+- The Passion of Joan of Arc (1928) — draft — /reviews/the-passion-of-joan-of-arc
+- Tianak (1932) — draft — /reviews/tianak-1932
+- Mga Kaluluwang Napaligaw (1936) — draft — /reviews/mga-kaluluwang-napaligaw-1936
+- Bakas Ng Kalansay (1937) — draft — /reviews/bakas-ng-kalansay-1937
+- Gone with the Wind (1939) — draft — /reviews/gone-with-the-wind
+- La Herencia Macabra (1939) — draft — /reviews/la-herencia-macabra-1939
+- Mr. Smith Goes to Washington (1939) — draft — /reviews/mr-smith-goes-to-washington
+- The Face at the Window (1939) — draft — /reviews/the-face-at-the-window-1939
+- The Wizard of Oz (1939) — draft — /reviews/the-wizard-of-oz
+- The Grapes of Wrath (1940) — draft — /reviews/the-grapes-of-wrath
+- The Best Years of Our Lives (1946) — draft — /reviews/the-best-years-of-our-lives
+- The Devil Bat's Daughter (1946) — draft — /reviews/the-devil-bat-s-daughter-1946
+- The Treasure of the Sierra Madre (1948) — draft — /reviews/the-treasure-of-the-sierra-madre
+- New Version of the Ghost of Yotsuya (1949) — draft — /reviews/new-version-of-the-ghost-of-yotsuya-1949
+- The Third Man (1949) — draft — /reviews/the-third-man
+- All About Eve (1950) — draft — /reviews/all-about-eve
+- Kamay ni Satanas (1950) — draft — /reviews/kamay-ni-satanas-1950
+- Rashomon (1950) — draft — /reviews/rashomon
+- Ikiru (1952) — draft — /reviews/ikiru
+- The Wages of Fear (1953) — draft — /reviews/the-wages-of-fear
+- Tokyo Story (1953) — draft — /reviews/tokyo-story
+- Dial M for Murder (1954) — draft — /reviews/dial-m-for-murder
+- On the Waterfront (1954) — draft — /reviews/on-the-waterfront
+- I Vampiri (1957) — draft — /reviews/i-vampiri-aka-the-devil-s-commandment-1957
+- La Maldicion de la Momia Azteca (1957) — draft — /reviews/la-maldicion-de-la-momia-azteca-aka-curse-of-the-aztec-mummy-1957
+- La Momia Azteca (1957) — draft — /reviews/la-momia-azteca-aka-the-aztec-mummy-1957
+- The Body Snatcher (1957) — draft — /reviews/the-body-snatcher-aka-ladron-de-cadaveres-1957
+- The Bridge on the River Kwai (1957) — draft — /reviews/the-bridge-on-the-river-kwai
+- The Seventh Seal (1957) — draft — /reviews/the-seventh-seal
+- Wild Strawberries (1957) — draft — /reviews/wild-strawberries
+- Pusang Itim (1958) — draft — /reviews/pusang-itim-1958
+- Terror in the Haunted House (1958) — draft — /reviews/terror-in-the-haunted-house-aka-my-world-dies-screaming-1958
+- The Crawling Eye (1958) — draft — /reviews/the-crawling-eye-aka-the-trollenberg-terror-1958
+- The Haunted Strangler (1958) — draft — /reviews/the-haunted-strangler-aka-grip-of-the-strangler-1958
+- Ben-Hur (1959) — draft — /reviews/ben-hur
+- Some Like It Hot (1959) — draft — /reviews/some-like-it-hot
+- Tokaido Yotsuya kaidan (1959) — draft — /reviews/tokaido-yotsuya-kaidan-aka-the-ghost-of-yotsuya-1959
+- Uncle Was a Vampire (1959) — draft — /reviews/uncle-was-a-vampire-aka-hard-times-for-vampires-1959
+- Eyes Without a Face (1960) — draft — /reviews/eyes-without-a-face-aka-the-horror-chamber-of-dr-faustus-1960
+- Ginoong Misteryoso (1960) — draft — /reviews/ginoong-misteryoso-hari-ng-kababalaghan-1960
+- Manananggal vs. Mangkukulam (1960) — draft — /reviews/manananggal-vs-mangkukulam-1960
+- The City of the Dead (1960) — draft — /reviews/the-city-of-the-dead-aka-horror-hotel-1960
+- The Two Faces of Dr. Jekyll (1960) — draft — /reviews/the-two-faces-of-dr-jekyll-a-k-a-house-of-fright-1960
+- Yojimbo (1961) — draft — /reviews/yojimbo
+- Captain Clegg (1962) — draft — /reviews/captain-clegg-a-k-a-night-creatures-1962
+- Night of the Eagle (1962) — draft — /reviews/night-of-the-eagle-a-k-a-burn-witch-burn-1962
+- The Cursed Palace (1962) — draft — /reviews/the-cursed-palace-a-k-a-al-qasr-malaoon-1962
+- House of the Damned (1963) — draft — /reviews/house-of-ther-damned-1963
+- The Great Escape (1963) — draft — /reviews/the-great-escape
+- Dr. Orloff's Monster (1964) — draft — /reviews/dr-orloff-s-monster-aka-the-secret-of-dr-orloff-1964
+- Face of the Screaming Werewolf (1964) — draft — /reviews/face-of-the-screaming-werewolf-re-edited-version-of-la-casa-del-terror-1964
+- Monstrosity (1964) — draft — /reviews/monstrosity-a-k-a-the-atomic-brain-1964
+- War of the Zombies (1964) — draft — /reviews/war-of-the-zombies-a-k-a-rome-against-rome-1964
+- A Devilish Homicide (1965) — draft — /reviews/a-devilish-homicide-1965
+- Curse of Simba (1965) — draft — /reviews/curse-of-simba-aka-curse-of-the-voodoo-1965
+- Fanatic (1965) — draft — /reviews/fanatic-a-k-a-die-die-my-darling-1965
+- The She Wolf (1965) — draft — /reviews/the-she-wolf-1965
+- The Sound of Music (1965) — draft — /reviews/the-sound-of-music
+- The Battle of Algiers (1966) — draft — /reviews/the-battle-of-algiers
+- The Hand of Night (1966) — draft — /reviews/the-hand-of-night-aka-beast-of-morocco-1966
+- Even the Wind is Scared (1967) — draft — /reviews/even-the-wind-is-scared-1967
+- A Tale of Peonies and Lanterns (1968) — draft — /reviews/a-tale-of-peonies-and-lanterns-1968
+- Any Body...Any Way (1968) — draft — /reviews/any-body-any-way-a-k-a-behind-locked-doors-1968
+- Curse of the Crimson Altar (1968) — draft — /reviews/curse-of-the-crimson-altar-usa-title-the-crimson-cult-1968
+- Snow Ghost (1968) — draft — /reviews/snow-ghost-1968
+- The Devil Rides Out (1968) — draft — /reviews/the-devil-rides-out-usa-title-the-devil-s-bride-1968
+- Witchfinder General (1968) — draft — /reviews/witchfinder-general-usa-title-the-conqueror-worm-1968
+- Fangs of the Living Dead (1969) — draft — /reviews/fangs-of-the-living-dead-a-k-a-malenka-the-vampire-s-niece-1969
+- Rote lippen (1969) — draft — /reviews/rote-lippen-a-k-a-two-undercover-angels-1969
+- The Haunted House of Horror (1969) — draft — /reviews/the-haunted-house-of-horror-a-k-a-the-dark-1969
+- The Exorcist (1973) — draft — /reviews/the-exorcist
+- Chinatown (1974) — draft — /reviews/chinatown
+- Barry Lyndon (1975) — draft — /reviews/barry-lyndon
+- Jaws (1975) — draft — /reviews/jaws
+- Monty Python and the Holy Grail (1975) — draft — /reviews/monty-python-and-the-holy-grail
+- The Chaos Class Failed the Class (1975) — draft — /reviews/the-chaos-class-failed-the-class
+- Network (1976) — draft — /reviews/network
+- Rocky (1976) — draft — /reviews/rocky
+- The Deer Hunter (1978) — draft — /reviews/the-deer-hunter
+- Unforgiven (1992) — draft — /reviews/unforgiven
+- In the Name of the Father (1993) — draft — /reviews/in-the-name-of-the-father
+- Before Sunrise (1995) — draft — /reviews/before-sunrise
+- Casino (1995) — draft — /reviews/casino
+- La haine (1995) — draft — /reviews/la-haine
+- Fargo (1996) — draft — /reviews/fargo
+- Trainspotting (1996) — draft — /reviews/trainspotting
+- Children of Heaven (1997) — draft — /reviews/children-of-heaven
+- L.A. Confidential (1997) — draft — /reviews/l-a-confidential
+- Lock, Stock and Two Smoking Barrels (1998) — draft — /reviews/lock-stock-and-two-smoking-barrels
+- The Big Lebowski (1998) — draft — /reviews/the-big-lebowski
+- The Iron Giant (1999) — draft — /reviews/the-iron-giant
+- The Sixth Sense (1999) — draft — /reviews/the-sixth-sense
+- Requiem for a Dream (2000) — draft — /reviews/requiem-for-a-dream
+- A Beautiful Mind (2001) — draft — /reviews/a-beautiful-mind
+- Amélie (2001) — draft — /reviews/am-lie
+- Monsters, Inc. (2001) — draft — /reviews/monsters-inc
+- Catch Me If You Can (2002) — draft — /reviews/catch-me-if-you-can
+- Finding Nemo (2003) — draft — /reviews/finding-nemo
+- Kill Bill: Vol. 1 (2003) — draft — /reviews/kill-bill-vol-1
+- Memories of Murder (2003) — draft — /reviews/memories-of-murder
+- Pirates of the Caribbean: The Curse of the Black Pearl (2003) — draft — /reviews/pirates-of-the-caribbean-the-curse-of-the-black-pearl
+- The Best of Youth (2003) — draft — /reviews/the-best-of-youth
+- Before Sunset (2004) — draft — /reviews/before-sunset
+- Hotel Rwanda (2004) — draft — /reviews/hotel-rwanda
+- Howl's Moving Castle (2004) — draft — /reviews/howl-s-moving-castle
+- Million Dollar Baby (2004) — draft — /reviews/million-dollar-baby
+- The Incredibles (2004) — draft — /reviews/the-incredibles
+- My Father and My Son (2005) — draft — /reviews/my-father-and-my-son
+- V for Vendetta (2005) — draft — /reviews/v-for-vendetta
+- Pan's Labyrinth (2006) — draft — /reviews/pan-s-labyrinth
+- Ratatouille (2007) — draft — /reviews/ratatouille
+- There Will Be Blood (2007) — draft — /reviews/there-will-be-blood
+- Gran Torino (2008) — draft — /reviews/gran-torino
+- Hachi: A Dog's Tale (2009) — draft — /reviews/hachi-a-dog-s-tale
+- Inglourious Basterds (2009) — draft — /reviews/inglourious-basterds
+- Mary and Max (2009) — draft — /reviews/mary-and-max
+- The Secret in Their Eyes (2009) — draft — /reviews/the-secret-in-their-eyes
+- How to Train Your Dragon (2010) — draft — /reviews/how-to-train-your-dragon
+- Harry Potter and the Deathly Hallows: Part 2 (2011) — draft — /reviews/harry-potter-and-the-deathly-hallows-part-2
+- Warrior (2011) — draft — /reviews/warrior
+- Gangs of Wasseypur (2012) — draft — /reviews/gangs-of-wasseypur
+- The Hunt (2012) — draft — /reviews/the-hunt
+- 12 Years a Slave (2013) — draft — /reviews/12-years-a-slave
+- Prisoners (2013) — draft — /reviews/prisoners
+- Rush (2013) — draft — /reviews/rush
+- Gone Girl (2014) — draft — /reviews/gone-girl
+- The Grand Budapest Hotel (2014) — draft — /reviews/the-grand-budapest-hotel
+- Wild Tales (2014) — draft — /reviews/wild-tales
+- Drishyam (2015) — draft — /reviews/drishyam
+- Inside Out (2015) — draft — /reviews/inside-out
+- Mad Max: Fury Road (2015) — draft — /reviews/mad-max-fury-road
+- Room (2015) — draft — /reviews/room
+- Spotlight (2015) — draft — /reviews/spotlight
+- A Silent Voice: The Movie (2016) — draft — /reviews/a-silent-voice-the-movie
+- Hacksaw Ridge (2016) — draft — /reviews/hacksaw-ridge
+- The Handmaiden (2016) — draft — /reviews/the-handmaiden
+- Logan (2017) — draft — /reviews/logan
+- Three Billboards Outside Ebbing, Missouri (2017) — draft — /reviews/three-billboards-outside-ebbing-missouri
+- Ford v Ferrari (2019) — draft — /reviews/ford-v-ferrari
+- Klaus (2019) — draft — /reviews/klaus
+- The Father (2020) — draft — /reviews/the-father
+- Jai Bhim (2021) — draft — /reviews/jai-bhim
+- Spider-Man: No Way Home (2021) — draft — /reviews/spider-man-no-way-home
+- Top Gun: Maverick (2022) — draft — /reviews/top-gun-maverick
+- Maharaja (2024) — draft — /reviews/maharaja
+- The Wild Robot (2024) — draft — /reviews/the-wild-robot
+- Chainsaw Man - The Movie: Reze Arc (2025) — draft — /reviews/chainsaw-man-the-movie-reze-arc
+- Demon Slayer: Kimetsu No Yaiba Infinity Castle (2025) — draft — /reviews/demon-slayer-kimetsu-no-yaiba-infinity-castle
+- I Swear — draft — /reviews/i-swear
+- Next Review Slot — draft — /reviews/next-review-slot
+- Le Manoir du diable (1896) — published — /reviews/le-manoir-du-diable-1896
+- Une nuit terrible (1896) — published — /reviews/une-nuit-terrible-1896
+- The Alchemist's Hallucination (1897) — published — /reviews/the-alchemist-s-hallucination-1897
+- The Bewitched Inn (1897) — published — /reviews/the-bewitched-inn-1897
+- The Haunted Castle (1897) — published — /reviews/the-haunted-castle-1897
+- The X-Rays (1897) — published — /reviews/the-x-rays-1897
+- Bake Jizo (Jizo the Spook) (1898) — published — /reviews/bake-jizo-jizo-the-spook-1898
+- Shinin No Sosei (Resurrection of a Corpse) (1898) — published — /reviews/shinin-no-sosei-resurrection-of-a-corpse-1898
+- The Astronomer's Dream (1898) — published — /reviews/the-astronomer-s-dream-1898
+- The Cavalier's Dream (1898) — published — /reviews/the-cavalier-s-dream-1898
+- Cléopâtre (1899) — published — /reviews/cleopatre-1899
+- Le Diable au couvent (1899) — published — /reviews/le-diable-au-couvent-1899
+- The Miser's Doom (1899) — published — /reviews/the-miser-s-doom-1899
+- Bluebeard (1901) — published — /reviews/bluebeard-1901
+- Le Diable géant ou Le miracle de la madonne (The Devil and the Statue) (1901) — published — /reviews/le-diable-geant-ou-le-miracle-de-la-madonne-the-devil-and-the-statue-1901
+- The Haunted Curiosity Shop (1901) — published — /reviews/the-haunted-curiosity-shop-1901
+- Les Trésors de Satan (1902) — published — /reviews/les-tresors-de-satan-1902
+- Le Cake-walk infernal (The Infernal Cake Walk) (1903) — published — /reviews/le-cake-walk-infernal-the-infernal-cake-walk-1903
+- Le Chaudron Infernal (The Infernal Boiling Pot) (1903) — published — /reviews/le-chaudron-infernal-the-infernal-boiling-pot-1903
+- Le Monstre (1903) — published — /reviews/le-monstre-1903
+- Le Diable Noir (The Black Imp) (1905) — published — /reviews/le-diable-noir-the-black-imp-1905
+- La Maison hantée (1906) — published — /reviews/la-maison-hantee-1906
+- Les Quatre cents farces du diable(The Merry Frolics of Satan) (1906) — published — /reviews/les-quatre-cents-farces-du-diable-the-merry-frolics-of-satan-1906
+- Dr. Jekyll and Mr. Hyde (1908) — published — /reviews/dr-jekyll-and-mr-hyde-1908
+- La maison ensorcelée (The Haunted House) (1908) — published — /reviews/la-maison-ensorcelee-the-haunted-house-1908
+- Frankenstein (1910) — published — /reviews/frankenstein-1910
+- L'Inferno (1911) — published — /reviews/l-inferno-1911
+- Dr. Jekyll and Mr. Hyde (1912) — published — /reviews/dr-jekyll-and-mr-hyde-1912
+- Le Système du Docteur Goudron et du Professeur Plume (1912) — published — /reviews/le-systeme-du-docteur-goudron-et-du-professeur-plume-1912
+- The Mask of Horror (1912) — published — /reviews/the-mask-of-horror-1912
+- The Spider's Web (1912) — published — /reviews/the-spider-s-web-1912
+- Dr. Jekyll and Mr. Hyde (1913) — published — /reviews/dr-jekyll-and-mr-hyde-1913
+- The Skull (1913) — published — /reviews/the-skull-1913
+- The Student of Prague (1913) — published — /reviews/the-student-of-prague-1913
+- The Werewolf (1913) — published — /reviews/the-werewolf-1913
+- Der Hund von Baskerville (1914) — published — /reviews/der-hund-von-baskerville-1914
+- Figures de cire (1914) — published — /reviews/figures-de-cire-1914
+- The Avenging Conscience (1914) — published — /reviews/the-avenging-conscience-1914
+- The Ghost Breaker (1914) — published — /reviews/the-ghost-breaker-1914-film-1914
+- Het geheim van het slot arco (1915) — published — /reviews/het-geheim-van-het-slot-arco-1915
+- Life Without Soul (1915) — published — /reviews/life-without-soul-1915
+- Rapsodia Satanica (1915) — published — /reviews/rapsodia-satanica-1915
+- The Haunting Fear (1915) — published — /reviews/the-haunting-fear-1915
+- A Night of Horror (1916) — published — /reviews/a-night-of-horror-1916
+- Das Phantom der Oper (1916) — published — /reviews/das-phantom-der-oper-1916
+- Hævnens nat (1916) — published — /reviews/hvnens-nat-1916
+- The Crimson Stain Mystery (1916) — published — /reviews/the-crimson-stain-mystery-1916
+- Der Golem und die Tänzerin (1917) — published — /reviews/der-golem-und-die-tanzerin-1917
+- Fear (1917) — published — /reviews/fear-1917
+- The Brand of Satan (1917) — published — /reviews/the-brand-of-satan-1917
+- Alraune (1918) — published — /reviews/alraune-1918
+- Die Augen der Mumie Ma (1918) — published — /reviews/die-augen-der-mumie-ma-1918
+- The Bells (1918) — published — /reviews/the-bells-1918-film-1918
+- The Ancestress (1919) — published — /reviews/the-ancestress-1919
+- The Beetle (1919) — published — /reviews/the-beetle-1919
+- The Haunted Bedroom (1919) — published — /reviews/the-haunted-bedroom-1919
+- The Plague of Florence (1919) — published — /reviews/the-plague-of-florence-1919
+- Anita (1920) — published — /reviews/anita-1920
+- Der Graf von Cagliostro (1920) — published — /reviews/der-graf-von-cagliostro-1920
+- Dr. Jekyll and Mr. Hyde (1920) — published — /reviews/dr-jekyll-and-mr-hyde-1920
+- Dr. Jekyll and Mr. Hyde (1920) — published — /reviews/dr-jekyll-and-mr-hyde-1920-2
+- From Morn to Midnight (1920) — published — /reviews/from-morn-to-midnight-1920
+- Genuine (1920) — published — /reviews/genuine-1920
+- Love Without Question (1920) — published — /reviews/love-without-question-1920
+- The Cabinet of Dr. Caligari (1920) — published — /reviews/the-cabinet-of-dr-caligari-1920
+- The Dream Cheater (1920) — published — /reviews/the-dream-cheater-1920
+- The Golem: How He Came into the World (1920) — published — /reviews/the-golem-how-he-came-into-the-world-1920
+- The Head of Janus (1920) — published — /reviews/the-head-of-janus-1920
+- The House of Whispers (1920) — published — /reviews/the-house-of-whispers-1920
+- The Hunchback and the Dancer (1920) — published — /reviews/the-hunchback-and-the-dancer-1920
+- The Monster of Frankenstein (1920) — published — /reviews/the-monster-of-frankenstein-1920
+- The Penalty (1920) — published — /reviews/the-penalty-1920
+- Das grinsende Gesicht (1921) — published — /reviews/das-grinsende-gesicht-1921
+- Destiny (1921) — published — /reviews/destiny-1921
+- Dracula's Death (1921) — published — /reviews/dracula-s-death-1921
+- Labyrinth of Horror (1921) — published — /reviews/labyrinth-of-horror-1921
+- The Arrival from the Darkness (1921) — published — /reviews/the-arrival-from-the-darkness-1921
+- The Haunted Castle (1921) — published — /reviews/the-haunted-castle-1921
+- A Blind Bargain (1922) — published — /reviews/a-blind-bargain-1922
+- Nosferatu (1922) — published — /reviews/nosferatu-1922
+- One Exciting Night (1922) — published — /reviews/one-exciting-night-1922
+- The Ghost Breaker (1922) — published — /reviews/the-ghost-breaker-1922
+- The Headless Horseman (1922) — published — /reviews/the-headless-horseman-1922
+- Old Baron of Rautakylä (1923) — published — /reviews/old-baron-of-rautakyla-1923
+- The Hunchback of Notre Dame (1923) — published — /reviews/the-hunchback-of-notre-dame-1923
+- The Last Moment (1923) — published — /reviews/the-last-moment-1923
+- While Paris Sleeps (1923) — published — /reviews/while-paris-sleeps-1923
+- Dante's Inferno (1924) — published — /reviews/dante-s-inferno-1924
+- The Hands of Orlac (1924) — published — /reviews/the-hands-of-orlac-1924
+- The Monster (1925) — published — /reviews/the-monster-1925
+- The Phantom of the Opera (1925) — published — /reviews/the-phantom-of-the-opera-1925
+- Wolfblood: A Tale of the Forest (1925) — published — /reviews/wolfblood-a-tale-of-the-forest-1925
+- A Page of Madness (1926) — published — /reviews/a-page-of-madness-1926
+- Faust – Eine deutsche Volkssage (1926) — published — /reviews/faust-eine-deutsche-volkssage-1926
+- Maciste all'inferno (1926) — published — /reviews/maciste-all-inferno-1926
+- The Bat (1926) — published — /reviews/the-bat-1926
+- The Bells (1926) — published — /reviews/the-bells-1926
+- The Magician (1926) — published — /reviews/the-magician-1926
+- The Student of Prague (1926) — published — /reviews/the-student-of-prague-1926
+- London After Midnight (1927) — published — /reviews/london-after-midnight-1927
+- The Cat and the Canary (1927) — published — /reviews/the-cat-and-the-canary-1927
+- The Gorilla (1927) — published — /reviews/the-gorilla-1927
+- The Unknown (1927) — published — /reviews/the-unknown-1927
+- The Wizard (1927) — published — /reviews/the-wizard-1927
+- Alraune (1928) — published — /reviews/alraune-1928
+- The Ape (1928) — published — /reviews/the-ape-1928
+- The Fall of the House of Usher (1928) — published — /reviews/the-fall-of-the-house-of-usher-1928
+- The Fall of the House of Usher (1928) — published — /reviews/the-fall-of-the-house-of-usher-1928-2
+- The Last Warning (1928) — published — /reviews/the-last-warning-1928
+- The Man Who Laughs (1928) — published — /reviews/the-man-who-laughs-1928
+- The Terror (1928) — published — /reviews/the-terror-1928
+- Dr. Jekyll and Mr. Hyde (1931) — published — /reviews/dr-jekyll-and-mr-hyde-1931
+- Dracula (1931) — published — /reviews/dracula-1931
+- Dracula (1931) — published — /reviews/dracula-1931-2
+- Frankenstein (1931) — published — /reviews/frankenstein-1931
+- The Phantom (1931) — published — /reviews/the-phantom-1931
+- Behind the Mask (1932) — published — /reviews/behind-the-mask-1932
+- Castle Sinister (1932) — published — /reviews/castle-sinister-1932
+- Chandu the Magician (1932) — published — /reviews/chandu-the-magician-1932
+- Doctor X (1932) — published — /reviews/doctor-x-1932
+- Freaks (1932) — published — /reviews/freaks-1932
+- Island of Lost Souls (1932) — published — /reviews/island-of-lost-souls-1932
+- Kongo (1932) — published — /reviews/kongo-1932
+- Murders in the Rue Morgue (1932) — published — /reviews/murders-in-the-rue-morgue-1932
+- The Mask of Fu Manchu (1932) — published — /reviews/the-mask-of-fu-manchu-1932
+- The Monster Walks (1932) — published — /reviews/the-monster-walks-1932
+- The Most Dangerous Game (1932) — published — /reviews/the-most-dangerous-game-1932
+- The Mummy (1932) — published — /reviews/the-mummy-1932
+- The Old Dark House (1932) — published — /reviews/the-old-dark-house-1932
+- Unheimliche Geschichten (1932) — published — /reviews/unheimliche-geschichten-1932
+- Vampyr (1932) — published — /reviews/vampyr-1932
+- White Zombie (1932) — published — /reviews/white-zombie-1932
+- A Study in Scarlet (1933) — published — /reviews/a-study-in-scarlet-1933
+- La Llorona (1933) — published — /reviews/la-llorona-1933
+- Murders in the Zoo (1933) — published — /reviews/murders-in-the-zoo-1933
+- Mystery of the Wax Museum (1933) — published — /reviews/mystery-of-the-wax-museum-1933
+- Night of Terror (1933) — published — /reviews/night-of-terror-1933
+- Supernatural (1933) — published — /reviews/supernatural-1933
+- The Ghoul (1933) — published — /reviews/the-ghoul-1933
+- The Invisible Man (1933) — published — /reviews/the-invisible-man-1933
+- The Monkey's Paw (1933) — published — /reviews/the-monkey-s-paw-1933
+- The Vampire Bat (1933) — published — /reviews/the-vampire-bat-1933
+- The Witch (1933) — published — /reviews/the-witch-1933
+- Black Moon (1934) — published — /reviews/black-moon-1934
+- Chloe, Love Is Calling You (1934) — published — /reviews/chloe-love-is-calling-you-1934
+- House of Mystery (1934) — published — /reviews/house-of-mystery-1934
+- Maniac (1934) — published — /reviews/maniac-1934
+- The Black Cat (1934) — published — /reviews/the-black-cat-1934
+- The Ninth Guest (1934) — published — /reviews/the-ninth-guest-1934
+- The Phantom of the Convent (1934) — published — /reviews/the-phantom-of-the-convent-1934
+- The Tell-Tale Heart (1934) — published — /reviews/the-tell-tale-heart-1934
+- Air Hawks (1935) — published — /reviews/air-hawks-1935
+- Bride of Frankenstein (1935) — published — /reviews/bride-of-frankenstein-1935
+- Condemned to Live (1935) — published — /reviews/condemned-to-live-1935
+- Dante's Inferno (1935) — published — /reviews/dante-s-inferno-1935
+- Mad Love (1935) — published — /reviews/mad-love-1935
+- Mark of the Vampire (1935) — published — /reviews/mark-of-the-vampire-1935
+- Ouanga (1935) — published — /reviews/ouanga-1935
+- The Black Room (1935) — published — /reviews/the-black-room-1935
+- The Crime of Dr. Crespi (1935) — published — /reviews/the-crime-of-dr-crespi-1935
+- The Raven (1935) — published — /reviews/the-raven-1935
+- The Student of Prague (1935) — published — /reviews/the-student-of-prague-1935
+- Werewolf of London (1935) — published — /reviews/werewolf-of-london-1935
+- Dracula's Daughter (1936) — published — /reviews/dracula-s-daughter-1936
+- El Baúl Macabro (1936) — published — /reviews/el-baul-macabro-1936
+- Fährmann Maria (1936) — published — /reviews/fahrmann-maria-1936
+- Revolt of the Zombies (1936) — published — /reviews/revolt-of-the-zombies-1936
+- Sweeney Todd: The Demon Barber of Fleet Street (1936) — published — /reviews/sweeney-todd-the-demon-barber-of-fleet-street-1936
+- The Devil-Doll (1936) — published — /reviews/the-devil-doll-1936
+- The Golem (1936) — published — /reviews/the-golem-1936
+- The Invisible Ray (1936) — published — /reviews/the-invisible-ray-1936
+- The Man Who Changed His Mind (1936) — published — /reviews/the-man-who-changed-his-mind-1936
+- The Walking Dead (1936) — published — /reviews/the-walking-dead-1936
+- Anak Ng kadiliman (1937) — published — /reviews/anak-ng-kadiliman-1937
+- Demon Man (1937) — published — /reviews/demon-man-1937
+- Buried Alive (1939) — published — /reviews/buried-alive-1939
+- Son of Frankenstein (1939) — published — /reviews/son-of-frankenstein-1939
+- The Cat and the Canary (1939) — published — /reviews/the-cat-and-the-canary-1939
+- The Dark Eyes of London (1939) — published — /reviews/the-dark-eyes-of-london-1939
+- The Gorilla (1939) — published — /reviews/the-gorilla-1939
+- The Man They Could Not Hang (1939) — published — /reviews/the-man-they-could-not-hang-1939
+- The Return of Doctor X (1939) — published — /reviews/the-return-of-doctor-x-1939
+- Torture Ship (1939) — published — /reviews/torture-ship-1939
+- Before I Hang (1940) — published — /reviews/before-i-hang-1940
+- Black Friday (1940) — published — /reviews/black-friday-1940
+- Dr. Cyclops (1940) — published — /reviews/dr-cyclops-1940
+- Island of Doomed Men (1940) — published — /reviews/island-of-doomed-men-1940
+- Son of Ingagi (1940) — published — /reviews/son-of-ingagi-1940
+- The Ape (1940) — published — /reviews/the-ape-1940
+- The Devil Bat (1940) — published — /reviews/the-devil-bat-1940
+- The Door with Seven Locks (1940) — published — /reviews/the-door-with-seven-locks-1940
+- The Ghost Breakers (1940) — published — /reviews/the-ghost-breakers-1940
+- The Invisible Man Returns (1940) — published — /reviews/the-invisible-man-returns-1940
+- The Man with Nine Lives (1940) — published — /reviews/the-man-with-nine-lives-1940
+- The Mummy's Hand (1940) — published — /reviews/the-mummy-s-hand-1940
+- You'll Find Out (1940) — published — /reviews/you-ll-find-out-1940
+- Dr. Jekyll and Mr. Hyde (1941) — published — /reviews/dr-jekyll-and-mr-hyde-1941
+- Horror Island (1941) — published — /reviews/horror-island-1941
+- Invisible Ghost (1941) — published — /reviews/invisible-ghost-1941
+- King of the Zombies (1941) — published — /reviews/king-of-the-zombies-1941
+- Man Made Monster (1941) — published — /reviews/man-made-monster-1941
+- Spooks Run Wild (1941) — published — /reviews/spooks-run-wild-1941
+- The Black Cat (1941) — published — /reviews/the-black-cat-1941
+- The Devil Commands (1941) — published — /reviews/the-devil-commands-1941
+- The Face Behind the Mask (1941) — published — /reviews/the-face-behind-the-mask-1941
+- The Monster and the Girl (1941) — published — /reviews/the-monster-and-the-girl-1941
+- The Wolf Man (1941) — published — /reviews/the-wolf-man-1941
+- A Light in the Window (1942) — published — /reviews/a-light-in-the-window-1942
+- Cat People (1942) — published — /reviews/cat-people-1942
+- Dr. Renault's Secret (1942) — published — /reviews/dr-renault-s-secret-1942
+- Night Monster (1942) — published — /reviews/night-monster-1942
+- The Boogie Man Will Get You (1942) — published — /reviews/the-boogie-man-will-get-you-1942
+- The Corpse Vanishes (1942) — published — /reviews/the-corpse-vanishes-1942
+- The Ghost of Frankenstein (1942) — published — /reviews/the-ghost-of-frankenstein-1942
+- The Mad Doctor of Market Street (1942) — published — /reviews/the-mad-doctor-of-market-street-1942
+- The Mad Monster (1942) — published — /reviews/the-mad-monster-1942
+- The Mummy's Tomb (1942) — published — /reviews/the-mummy-s-tomb-1942
+- The Undying Monster (1942) — published — /reviews/the-undying-monster-1942
+- Captive Wild Woman (1943) — published — /reviews/captive-wild-woman-1943
+- Carnival of Sinners (1943) — published — /reviews/carnival-of-sinners-1943
+- Dead Men Walk (1943) — published — /reviews/dead-men-walk-1943
+- Frankenstein Meets the Wolf Man (1943) — published — /reviews/frankenstein-meets-the-wolf-man-1943
+- I Walked with a Zombie (1943) — published — /reviews/i-walked-with-a-zombie-1943
+- Revenge of the Zombies (1943) — published — /reviews/revenge-of-the-zombies-1943
+- Son of Dracula (1943) — published — /reviews/son-of-dracula-1943
+- The Ape Man (1943) — published — /reviews/the-ape-man-1943
+- The Leopard Man (1943) — published — /reviews/the-leopard-man-1943
+- The Mad Ghoul (1943) — published — /reviews/the-mad-ghoul-1943
+- The Mysterious Doctor (1943) — published — /reviews/the-mysterious-doctor-1943
+- The Return of the Vampire (1943) — published — /reviews/the-return-of-the-vampire-1943
+- The Seventh Victim (1943) — published — /reviews/the-seventh-victim-1943
+- Crazy Knights (1944) — published — /reviews/crazy-knights-1944
+- Cry of the Werewolf (1944) — published — /reviews/cry-of-the-werewolf-1944
+- House of Frankenstein (1944) — published — /reviews/house-of-frankenstein-1944
+- Jungle Woman (1944) — published — /reviews/jungle-woman-1944
+- Return of the Ape Man (1944) — published — /reviews/return-of-the-ape-man-1944
+- The Climax (1944) — published — /reviews/the-climax-1944
+- The Ghost Catchers (1944) — published — /reviews/the-ghost-catchers-1944
+- The Invisible Man's Revenge (1944) — published — /reviews/the-invisible-man-s-revenge-1944
+- The Lady and the Monster (1944) — published — /reviews/the-lady-and-the-monster-1944
+- The Man in Half Moon Street (1944) — published — /reviews/the-man-in-half-moon-street-1944
+- The Monster Maker (1944) — published — /reviews/the-monster-maker-1944
+- The Mummy's Curse (1944) — published — /reviews/the-mummy-s-curse-1944
+- The Mummy's Ghost (1944) — published — /reviews/the-mummy-s-ghost-1944
+- The Soul of a Monster (1944) — published — /reviews/the-soul-of-a-monster-1944
+- The Tower of the Seven Hunchbacks (1944) — published — /reviews/the-tower-of-the-seven-hunchbacks-1944
+- The Uninvited (1944) — published — /reviews/the-uninvited-1944
+- Voodoo Man (1944) — published — /reviews/voodoo-man-1944
+- Weird Woman (1944) — published — /reviews/weird-woman-1944
+- Dead of Night (1945) — published — /reviews/dead-of-night-1945
+- Fog Island (1945) — published — /reviews/fog-island-1945
+- Hangover Square (1945) — published — /reviews/hangover-square-1945
+- House of Dracula (1945) — published — /reviews/house-of-dracula-1945
+- Isle of the Dead (1945) — published — /reviews/isle-of-the-dead-1945
+- La Fiancée des ténèbres (1945) — published — /reviews/la-fiancee-des-tenebres-1945
+- The Jungle Captive (1945) — published — /reviews/the-jungle-captive-1945
+- The Picture of Dorian Gray (1945) — published — /reviews/the-picture-of-dorian-gray-1945
+- The Vampire's Ghost (1945) — published — /reviews/the-vampire-s-ghost-1945
+- Zombies on Broadway (1945) — published — /reviews/zombies-on-broadway-1945
+- House of Horrors (1946) — published — /reviews/house-of-horrors-1946
+- She-Wolf of London (1946) — published — /reviews/she-wolf-of-london-1946
+- Strangler of the Swamp (1946) — published — /reviews/strangler-of-the-swamp-1946
+- The Beast with Five Fingers (1946) — published — /reviews/the-beast-with-five-fingers-1946
+- The Cat Creeps (1946) — published — /reviews/the-cat-creeps-1946
+- The Catman of Paris (1946) — published — /reviews/the-catman-of-paris-1946
+- The Face of Marble (1946) — published — /reviews/the-face-of-marble-1946
+- The Flying Serpent (1946) — published — /reviews/the-flying-serpent-1946
+- The Mask of Diijon (1946) — published — /reviews/the-mask-of-diijon-1946
+- The Spider Woman Strikes Back (1946) — published — /reviews/the-spider-woman-strikes-back-1946
+- Valley of the Zombies (1946) — published — /reviews/valley-of-the-zombies-1946
+- Abbott and Costello Meet Frankenstein (1948) — published — /reviews/abbott-and-costello-meet-frankenstein-1948
+- The Amazing Mr. X (1948) — published — /reviews/the-amazing-mr-x-1948
+- The Creeper (1948) — published — /reviews/the-creeper-1948
+- Mahal (1949) — published — /reviews/mahal-1949
+- The Fall of the House of Usher (1950) — published — /reviews/the-fall-of-the-house-of-usher-1950
+- Abbott and Costello Meet the Invisible Man (1951) — published — /reviews/abbott-and-costello-meet-the-invisible-man-1951
+- Bluebeard (1951) — published — /reviews/bluebeard-1951
+- Bride of the Gorilla (1951) — published — /reviews/bride-of-the-gorilla-1951
+- Claws of Iron (1951) — published — /reviews/claws-of-iron-1951
+- Five (1951) — published — /reviews/five-1951
+- Satur (1951) — published — /reviews/satur-1951
+- The Man from Planet X (1951) — published — /reviews/the-man-from-planet-x-1951
+- The Son of Dr. Jekyll (1951) — published — /reviews/the-son-of-dr-jekyll-1951
+- The Strange Door (1951) — published — /reviews/the-strange-door-1951
+- The Thing from Another World (1951) — published — /reviews/the-thing-from-another-world-1951
+- Alraune (1952) — published — /reviews/alraune-1952
+- Ghost Ship (1952) — published — /reviews/ghost-ship-1952
+- Ghost Story: Passion in Fukagawa (1952) — published — /reviews/ghost-story-passion-in-fukagawa-1952
+- Mother Riley Meets the Vampire (1952) — published — /reviews/mother-riley-meets-the-vampire-1952
+- Sandino (1952) — published — /reviews/sandino-1952
+- Taong Paniki (1952) — published — /reviews/taong-paniki-1952
+- The Black Castle (1952) — published — /reviews/the-black-castle-1952
+- Abbott and Costello Meet Dr. Jekyll and Mr. Hyde (1953) — published — /reviews/abbott-and-costello-meet-dr-jekyll-and-mr-hyde-1953
+- Donovan's Brain (1953) — published — /reviews/donovan-s-brain-1953
+- Ghost of Saga Mansion (1953) — published — /reviews/ghost-of-saga-mansion-1953
+- Ghost-Cat of Arima Palace (1953) — published — /reviews/ghost-cat-of-arima-palace-1953
+- House of Wax (1953) — published — /reviews/house-of-wax-1953
+- Invaders from Mars (1953) — published — /reviews/invaders-from-mars-1953
+- Man in the Attic (1953) — published — /reviews/man-in-the-attic-1953
+- Phantom from Space (1953) — published — /reviews/phantom-from-space-1953
+- Scared Stiff (1953) — published — /reviews/scared-stiff-1953
+- The Beast from 20,000 Fathoms (1953) — published — /reviews/the-beast-from-20-000-fathoms-1953
+- The Knight of the Night (1953) — published — /reviews/the-knight-of-the-night-1953
+- The Magnetic Monster (1953) — published — /reviews/the-magnetic-monster-1953
+- The Maze (1953) — published — /reviews/the-maze-1953
+- The Neanderthal Man (1953) — published — /reviews/the-neanderthal-man-1953
+- White Witch Doctor (1953) — published — /reviews/white-witch-doctor-1953
+- Creature from the Black Lagoon (1954) — published — /reviews/creature-from-the-black-lagoon-1954
+- Ghost Man (1954) — published — /reviews/ghost-man-1954
+- Godzilla (1954) — published — /reviews/godzilla-1954
+- Gog (1954) — published — /reviews/gog-1954
+- Gorilla at Large (1954) — published — /reviews/gorilla-at-large-1954
+- Hiwaga sa Balete Drive (1954) — published — /reviews/hiwaga-sa-balete-drive-1954
+- Inugami-ke no nazo: Akuma wa odoru (1954) — published — /reviews/inugami-ke-no-nazo-akuma-wa-odoru-1954
+- Killers from Space (1954) — published — /reviews/killers-from-space-1954
+- La Bruja (1954) — published — /reviews/la-bruja-1954
+- Phantom of the Rue Morgue (1954) — published — /reviews/phantom-of-the-rue-morgue-1954
+- Terrible Ghost Cat of Okazaki (1954) — published — /reviews/terrible-ghost-cat-of-okazaki-1954
+- The Ghost Cat of Ouma Crossing (1954) — published — /reviews/the-ghost-cat-of-ouma-crossing-1954
+- The Golden Mistress (1954) — published — /reviews/the-golden-mistress-1954
+- The Mad Magician (1954) — published — /reviews/the-mad-magician-1954
+- The Snow Creature (1954) — published — /reviews/the-snow-creature-1954
+- Them! (1954) — published — /reviews/them-1954
+- Abbott and Costello Meet the Mummy (1955) — published — /reviews/abbott-and-costello-meet-the-mummy-1955
+- Bride of the Monster (1955) — published — /reviews/bride-of-the-monster-1955
+- Creature with the Atom Brain (1955) — published — /reviews/creature-with-the-atom-brain-1955
+- Cult of the Cobra (1955) — published — /reviews/cult-of-the-cobra-1955
+- Dementia (1955) — published — /reviews/dementia-1955
+- It Came from Beneath the Sea (1955) — published — /reviews/it-came-from-beneath-the-sea-1955
+- Les Diaboliques (1955) — published — /reviews/les-diaboliques-1955
+- Night of the Hunter (1955) — published — /reviews/night-of-the-hunter-1955
+- Earth vs. the Flying Saucers (1956) — published — /reviews/earth-vs-the-flying-saucers-1956
+- Francis in the Haunted House (1956) — published — /reviews/francis-in-the-haunted-house-1956
+- Invasion of the Body Snatchers (1956) — published — /reviews/invasion-of-the-body-snatchers-1956
+- Man Beast (1956) — published — /reviews/man-beast-1956
+- The Black Sleep (1956) — published — /reviews/the-black-sleep-1956
+- The Blonde Witch (1956) — published — /reviews/the-blonde-witch-1956
+- The Gamma People (1956) — published — /reviews/the-gamma-people-1956
+- The Hunchback of Notre Dame (1956) — published — /reviews/the-hunchback-of-notre-dame-1956
+- The Mole People (1956) — published — /reviews/the-mole-people-1956
+- The She-Creature (1956) — published — /reviews/the-she-creature-1956
+- The Werewolf (1956) — published — /reviews/the-werewolf-1956
+- 20 Million Miles to Earth (1957) — published — /reviews/20-million-miles-to-earth-1957
+- Attack of the Crab Monsters (1957) — published — /reviews/attack-of-the-crab-monsters-1957
+- Back from the Dead (1957) — published — /reviews/back-from-the-dead-1957
+- Blood of Dracula (1957) — published — /reviews/blood-of-dracula-1957
+- Cat Girl (1957) — published — /reviews/cat-girl-1957
+- Daughter of Dr. Jekyll (1957) — published — /reviews/daughter-of-dr-jekyll-1957
+- From Hell It Came (1957) — published — /reviews/from-hell-it-came-1957
+- Godzilla, King of the Monsters! (1957) — published — /reviews/godzilla-king-of-the-monsters-1957
+- Kronos (1957) — published — /reviews/kronos-1957
+- Night of the Demon (1957) — published — /reviews/night-of-the-demon-1957
+- Pharaoh's Curse (1957) — published — /reviews/pharaoh-s-curse-1957
+- Plan 9 from Outer Space (1957) — published — /reviews/plan-9-from-outer-space-1957
+- She Devil (1957) — published — /reviews/she-devil-1957
+- Spook Chasers (1957) — published — /reviews/spook-chasers-1957
+- The Abominable Snowman (1957) — published — /reviews/the-abominable-snowman-1957
+- The Black Scorpion (1957) — published — /reviews/the-black-scorpion-1957
+- The Curse of Frankenstein (1957) — published — /reviews/the-curse-of-frankenstein-1957
+- The Disembodied (1957) — published — /reviews/the-disembodied-1957
+- The Giant Claw (1957) — published — /reviews/the-giant-claw-1957
+- The Incredible Shrinking Man (1957) — published — /reviews/the-incredible-shrinking-man-1957
+- The Man Who Turned to Stone (1957) — published — /reviews/the-man-who-turned-to-stone-1957
+- The Monster That Challenged the World (1957) — published — /reviews/the-monster-that-challenged-the-world-1957
+- The Robot vs the Aztec Mummy (1957) — published — /reviews/the-robot-vs-the-aztec-mummy-1957
+- The Undead (1957) — published — /reviews/the-undead-1957
+- The Unknown Terror (1957) — published — /reviews/the-unknown-terror-1957
+- The Vampire (1957) — published — /reviews/the-vampire-1957
+- Voodoo Island (1957) — published — /reviews/voodoo-island-1957
+- Voodoo Woman (1957) — published — /reviews/voodoo-woman-1957
+- Zombies of Mora Tau (1957) — published — /reviews/zombies-of-mora-tau-1957
+- Attack of the 50 Foot Woman (1958) — published — /reviews/attack-of-the-50-foot-woman-1958
+- Black Cat Mansion (1958) — published — /reviews/black-cat-mansion-1958
+- Blood of the Vampire (1958) — published — /reviews/blood-of-the-vampire-1958
+- Corridors of Blood (1958) — published — /reviews/corridors-of-blood-1958
+- Curse of the Faceless Man (1958) — published — /reviews/curse-of-the-faceless-man-1958
+- El hombre y el monstruo (The Man and the Monster) (1958) — published — /reviews/el-hombre-y-el-monstruo-the-man-and-the-monster-1958
+- Frankenstein 1970 (1958) — published — /reviews/frankenstein-1970-1958
+- Giant from the Unknown (1958) — published — /reviews/giant-from-the-unknown-1958
+- I Bury the Living (1958) — published — /reviews/i-bury-the-living-1958
+- I Married a Monster from Outer Space (1958) — published — /reviews/i-married-a-monster-from-outer-space-1958
+- It! The Terror from Beyond Space (1958) — published — /reviews/it-the-terror-from-beyond-space-1958
+- Macabre (1958) — published — /reviews/macabre-1958
+- Monster on the Campus (1958) — published — /reviews/monster-on-the-campus-1958
+- Space Master X-7 (1958) — published — /reviews/space-master-x-7-1958
+- The Blob (1958) — published — /reviews/the-blob-1958
+- The Brain Eaters (1958) — published — /reviews/the-brain-eaters-1958
+- The Bride and the Beast (1958) — published — /reviews/the-bride-and-the-beast-1958
+- The Castle of the Monsters (1958) — published — /reviews/the-castle-of-the-monsters-1958
+- The Colossus of New York (1958) — published — /reviews/the-colossus-of-new-york-1958
+- The Fly (1958) — published — /reviews/the-fly-1958
+- The Hideous Sun Demon (1958) — published — /reviews/the-hideous-sun-demon-1958
+- The Horror of Dracula (1958) — published — /reviews/the-horror-of-dracula-1958
+- The Return of Dracula (1958) — published — /reviews/the-return-of-dracula-1958
+- The Revenge of Frankenstein (1958) — published — /reviews/the-revenge-of-frankenstein-1958
+- The Screaming Skull (1958) — published — /reviews/the-screaming-skull-1958
+- The Snorkel (1958) — published — /reviews/the-snorkel-1958
+- The Space Children (1958) — published — /reviews/the-space-children-1958
+- The Thing That Couldn't Die (1958) — published — /reviews/the-thing-that-couldn-t-die-1958
+- The Vampire's Coffin (1958) — published — /reviews/the-vampire-s-coffin-1958
+- The Woman Eater (1958) — published — /reviews/the-woman-eater-1958
+- A Bucket of Blood (1959) — published — /reviews/a-bucket-of-blood-1959
+- Attack of the Giant Leeches (1959) — published — /reviews/attack-of-the-giant-leeches-1959
+- Beast from Haunted Cave (1959) — published — /reviews/beast-from-haunted-cave-1959
+- Curse of the Undead (1959) — published — /reviews/curse-of-the-undead-1959
+- Doctor Without Scruples (1959) — published — /reviews/doctor-without-scruples-1959
+- Ghost of Dragstrip Hollow (1959) — published — /reviews/ghost-of-dragstrip-hollow-1959
+- House of Terror (1959) — published — /reviews/house-of-terror-1959
+- House on Haunted Hill (1959) — published — /reviews/house-on-haunted-hill-1959
+- Jack the Ripper (1959) — published — /reviews/jack-the-ripper-1959
+- La Llorona (1959) — published — /reviews/la-llorona-a-k-a-the-crying-woman-1959
+- Return of the Fly (1959) — published — /reviews/return-of-the-fly-1959
+- Teenagers from Outer Space (1959) — published — /reviews/teenagers-from-outer-space-1959
+- Terror Is a Man (1959) — published — /reviews/terror-is-a-man-1959
+- The Alligator People (1959) — published — /reviews/the-alligator-people-1959
+- The Four Skulls of Jonathan Drake (1959) — published — /reviews/the-four-skulls-of-jonathan-drake-1959
+- The Giant Gila Monster (1959) — published — /reviews/the-giant-gila-monster-1959
+- The Head (1959) — published — /reviews/the-head-1959
+- The Hound of the Baskervilles (1959) — published — /reviews/the-hound-of-the-baskervilles-1959
+- The Man Who Could Cheat Death (1959) — published — /reviews/the-man-who-could-cheat-death-1959
+- The Mummy (1959) — published — /reviews/the-mummy-1959
+- The Tingler (1959) — published — /reviews/the-tingler-1959
+- 13 Ghosts (1960) — published — /reviews/13-ghosts-1960
+- Atom Age Vampire (1960) — published — /reviews/atom-age-vampire-1960
+- Black Sunday (1960) — published — /reviews/black-sunday-1960
+- Blood and Roses (1960) — published — /reviews/blood-and-roses-1960
+- Circus of Horrors (1960) — published — /reviews/circus-of-horrors-1960
+- Gabi ng Lagim (1960) — published — /reviews/gabi-ng-lagim-1960
+- Horrors of Spider Island (1960) — published — /reviews/horrors-of-spider-island-1960
+- House of Usher (1960) — published — /reviews/house-of-usher-1960
+- Jigoku (1960) — published — /reviews/jigoku-1960
+- Katotohanan O Guniguni? (1960) — published — /reviews/katotohanan-o-guniguni-1960
+- Mga Alamat Ng Sandaigdig (1960) — published — /reviews/mga-alamat-ng-sandaigdig-1960
+- Mill of the Stone Women (1960) — published — /reviews/mill-of-the-stone-women-1960
+- Pagsapit ng Hatinggabi (1960) — published — /reviews/pagsapit-ng-hatinggabi-1960
+- Peeping Tom (1960) — published — /reviews/peeping-tom-1960
+- The Brides of Dracula (1960) — published — /reviews/the-brides-of-dracula-1960
+- The Demon of Mount Oe (1960) — published — /reviews/the-demon-of-mount-oe-1960
+- The Flesh and the Fiends (1960) — published — /reviews/the-flesh-and-the-fiends-1960
+- The Full Treatment (1960) — published — /reviews/the-full-treatment-1960
+- The Ghost Cat of Otama Pond (1960) — published — /reviews/the-ghost-cat-of-otama-pond-1960
+- The Hands of Orlac (1960) — published — /reviews/the-hands-of-orlac-1960
+- The Housemaid (1960) — published — /reviews/the-housemaid-1960
+- The Hypnotic Eye (1960) — published — /reviews/the-hypnotic-eye-1960
+- The Leech Woman (1960) — published — /reviews/the-leech-woman-1960
+- The Little Shop of Horrors (1960) — published — /reviews/the-little-shop-of-horrors-1960
+- The Playgirls and the Vampire (1960) — published — /reviews/the-playgirls-and-the-vampire-1960
+- The Priest and the Beauty (1960) — published — /reviews/the-priest-and-the-beauty-1960
+- The Secret of the Telegian (1960) — published — /reviews/the-secret-of-the-telegian-1960
+- The Stranglers of Bombay (1960) — published — /reviews/the-stranglers-of-bombay-1960
+- The Tell-Tale Heart (1960) — published — /reviews/the-tell-tale-heart-1960
+- The Vampire and the Ballerina (1960) — published — /reviews/the-vampire-and-the-ballerina-1960
+- The World of Vampires (1960) — published — /reviews/the-world-of-vampires-1960
+- Tormented (1960) — published — /reviews/tormented-1960
+- Village of the Damned (1960) — published — /reviews/village-of-the-damned-1960
+- Bloodlust! (1961) — published — /reviews/bloodlust-1961
+- Creature from the Haunted Sea (1961) — published — /reviews/creature-from-the-haunted-sea-1961
+- Doctor Blood's Coffin (1961) — published — /reviews/doctor-blood-s-coffin-1961
+- Homicidal (1961) — published — /reviews/homicidal-1961
+- Konga (1961) — published — /reviews/konga-1961
+- Mr. Sardonicus (1961) — published — /reviews/mr-sardonicus-1961
+- Shadow of the Cat (1961) — published — /reviews/shadow-of-the-cat-1961
+- The Beast of Yucca Flats (1961) — published — /reviews/the-beast-of-yucca-flats-1961
+- The Brainiac (1961) — published — /reviews/the-brainiac-1961
+- The Curse of the Crying Woman (1961) — published — /reviews/the-curse-of-the-crying-woman-1961
+- The Curse of the Werewolf (1961) — published — /reviews/the-curse-of-the-werewolf-1961
+- The Innocents (1961) — published — /reviews/the-innocents-1961
+- The Mask (1961) — published — /reviews/the-mask-1961
+- The Pit and the Pendulum (1961) — published — /reviews/the-pit-and-the-pendulum-1961
+- Werewolf in a Girls' Dormitory (1961) — published — /reviews/werewolf-in-a-girls-dormitory-1961
+- Beauty and the Beast (1962) — published — /reviews/beauty-and-the-beast-1962
+- Cape Fear (1962) — published — /reviews/cape-fear-1962
+- Carnival of Souls (1962) — published — /reviews/carnival-of-souls-1962
+- Hand of Death (1962) — published — /reviews/hand-of-death-1962
+- Hands of a Stranger (1962) — published — /reviews/hands-of-a-stranger-1962
+- Slaughter of the Vampires (1962) — published — /reviews/slaughter-of-the-vampires-1962
+- Tales of Terror (1962) — published — /reviews/tales-of-terror-1962
+- The Awful Dr. Orloff (1962) — published — /reviews/the-awful-dr-orloff-1962
+- The Blancheville Monster (1962) — published — /reviews/the-blancheville-monster-a-k-a-horror-1962
+- The Brain That Wouldn't Die (1962) — published — /reviews/the-brain-that-wouldn-t-die-1962
+- The Cabinet of Caligari (1962) — published — /reviews/the-cabinet-of-caligari-1962
+- The Couch (1962) — published — /reviews/the-couch-1962
+- The Damned (1962) — published — /reviews/the-damned-1962
+- The Horrible Dr. Hichcock (1962) — published — /reviews/the-horrible-dr-hichcock-1962
+- The Phantom of the Opera (1962) — published — /reviews/the-phantom-of-the-opera-1962
+- The Premature Burial (1962) — published — /reviews/the-premature-burial-1962
+- What Ever Happened to Baby Jane? (1962) — published — /reviews/what-ever-happened-to-baby-jane-1962
+- Where the Truth Lies (1962) — published — /reviews/where-the-truth-lies-1962
+- Black Sabbath (1963) — published — /reviews/black-sabbath-1963
+- Black Zoo (1963) — published — /reviews/black-zoo-1963
+- Blood Feast (1963) — published — /reviews/blood-feast-1963
+- Dementia 13 (1963) — published — /reviews/dementia-13-1963
+- Diary of a Madman (1963) — published — /reviews/diary-of-a-madman-1963
+- Katarsis (1963) — published — /reviews/katarsis-1963
+- Kiss of the Vampire (1963) — published — /reviews/kiss-of-the-vampire-1963
+- Maniac (1963) — published — /reviews/maniac-1963
+- Matango (1963) — published — /reviews/matango-1963
+- Paranoiac (1963) — published — /reviews/paranoiac-1963
+- Slime People (1963) — published — /reviews/slime-people-1963
+- The Birds (1963) — published — /reviews/the-birds-1963
+- The Blancheville Monster (1963) — published — /reviews/the-blancheville-monster-1963
+- The Comedy of Terrors (1963) — published — /reviews/the-comedy-of-terrors-1963
+- The Eyes of Annie Jones (1963) — published — /reviews/the-eyes-of-annie-jones-1963
+- The Ghost (1963) — published — /reviews/the-ghost-1963
+- The Haunted Palace (1963) — published — /reviews/the-haunted-palace-1963
+- The Old Dark House (1963) — published — /reviews/the-old-dark-house-1963
+- The Raven (1963) — published — /reviews/the-raven-1963
+- The Terror (1963) — published — /reviews/the-terror-1963
+- The Virgin of Nuremberg (1963) — published — /reviews/the-virgin-of-nuremberg-1963
+- The Whip and the Body (1963) — published — /reviews/the-whip-and-the-body-1963
+- Tomb of Torture (1963) — published — /reviews/tomb-of-torture-1963
+- Twice-Told Tales (1963) — published — /reviews/twice-told-tales-1963
+- Unearthly Stranger (1963) — published — /reviews/unearthly-stranger-1963
+- 2000 Maniacs (1964) — published — /reviews/2000-maniacs-1964
+- At Midnight I'll Take Your Soul (1964) — published — /reviews/at-midnight-i-ll-take-your-soul-1964
+- Castle of Blood (aka Danza Macabre) (1964) — published — /reviews/castle-of-blood-aka-danza-macabre-1964
+- Castle of the Living Dead (1964) — published — /reviews/castle-of-the-living-dead-1964
+- Cave of the Living Dead (1964) — published — /reviews/cave-of-the-living-dead-1964
+- Cien Gritos de Terror (100 Cries of Terror) (1964) — published — /reviews/cien-gritos-de-terror-100-cries-of-terror-1964
+- Devil Doll (1964) — published — /reviews/devil-doll-1964
+- Dungeon of Harrow (1964) — published — /reviews/dungeon-of-harrow-1964
+- Hush...Hush, Sweet Charlotte (1964) — published — /reviews/hush-hush-sweet-charlotte-1964
+- I Eat Your Skin (1964) — published — /reviews/i-eat-your-skin-1964
+- Kwaidan (1964) — published — /reviews/kwaidan-1964
+- Lady in a Cage (1964) — published — /reviews/lady-in-a-cage-1964
+- Las Luchadoras contra la Momia (The Wrestling Women vs the Aztec Mummy) (1964) — published — /reviews/las-luchadoras-contra-la-momia-the-wrestling-women-vs-the-aztec-mummy-1964
+- Onibaba (1964) — published — /reviews/onibaba-1964
+- Pyro... The Thing Without a Face (1964) — published — /reviews/pyro-the-thing-without-a-face-1964
+- Strait-Jacket (1964) — published — /reviews/strait-jacket-1964
+- Terror in the Crypt (1964) — published — /reviews/terror-in-the-crypt-1964
+- The Black Torment (1964) — published — /reviews/the-black-torment-1964
+- The Creeping Terror (1964) — published — /reviews/the-creeping-terror-1964
+- The Curse of the Living Corpse (1964) — published — /reviews/the-curse-of-the-living-corpse-1964
+- The Curse of the Mummy's Tomb (1964) — published — /reviews/the-curse-of-the-mummy-s-tomb-1964
+- The Earth Dies Screaming (1964) — published — /reviews/the-earth-dies-screaming-1964
+- The Evil of Frankenstein (1964) — published — /reviews/the-evil-of-frankenstein-1964
+- The Flesh Eaters (1964) — published — /reviews/the-flesh-eaters-1964
+- The Gorgon (1964) — published — /reviews/the-gorgon-1964
+- The Horror of It All (1964) — published — /reviews/the-horror-of-it-all-1964
+- The Horror of Party Beach (1964) — published — /reviews/the-horror-of-party-beach-1964
+- The Incredibly Strange Creatures Who Stopped Living and Became Mixed-Up Zombies (1964) — published — /reviews/the-incredibly-strange-creatures-who-stopped-living-and-became-mixed-up-zombies-1964
+- The Last Man on Earth (1964) — published — /reviews/the-last-man-on-earth-1964
+- The Long Hair of Death (1964) — published — /reviews/the-long-hair-of-death-1964
+- The Masque of the Red Death (1964) — published — /reviews/the-masque-of-the-red-death-1964
+- The Night Walker (1964) — published — /reviews/the-night-walker-1964
+- The Tomb of Ligeia (1964) — published — /reviews/the-tomb-of-ligeia-1964
+- Witchcraft (1964) — published — /reviews/witchcraft-1964
+- A Study in Terror (1965) — published — /reviews/a-study-in-terror-1965
+- Bloody Pit of Horror (1965) — published — /reviews/bloody-pit-of-horror-1965
+- Color Me Blood Red (1965) — published — /reviews/color-me-blood-red-1965
+- Curse of the Fly (1965) — published — /reviews/curse-of-the-fly-1965
+- Dark Intruder (1965) — published — /reviews/dark-intruder-1965
+- Devils of Darkness (1965) — published — /reviews/devils-of-darkness-1965
+- Die, Monster, Die! (1965) — published — /reviews/die-monster-die-1965
+- Dr. Terror's House of Horrors (1965) — published — /reviews/dr-terror-s-house-of-horrors-1965
+- Frankenstein Conquers the World (1965) — published — /reviews/frankenstein-conquers-the-world-1965
+- House of Terrors (Kaidan Semushi Otoko) (1965) — published — /reviews/house-of-terrors-kaidan-semushi-otoko-1965
+- I Saw What You Did (1965) — published — /reviews/i-saw-what-you-did-1965
+- Illusion of Blood (1965) — published — /reviews/illusion-of-blood-1965
+- Incubus (1965) — published — /reviews/incubus-1965
+- Kaidan Katame no Otoko (1965) — published — /reviews/kaidan-katame-no-otoko-1965
+- Lady Morgan's Vengeance (1965) — published — /reviews/lady-morgan-s-vengeance-1965
+- Monster a Go-Go (1965) — published — /reviews/monster-a-go-go-1965
+- Monsters Crash the Pajama Party (1965) — published — /reviews/monsters-crash-the-pajama-party-1965
+- Nightmare Castle (1965) — published — /reviews/nightmare-castle-1965
+- Orgy of the Dead (1965) — published — /reviews/orgy-of-the-dead-1965
+- Planet of the Vampires (1965) — published — /reviews/planet-of-the-vampires-1965
+- Psycho A-Go-Go (1965) — published — /reviews/psycho-a-go-go-1965
+- Terror-Creatures from the Grave (1965) — published — /reviews/terror-creatures-from-the-grave-1965
+- The Beach Girls and the Monster (1965) — published — /reviews/the-beach-girls-and-the-monster-1965
+- The Beast That Killed Women (1965) — published — /reviews/the-beast-that-killed-women-1965
+- The Collector (1965) — published — /reviews/the-collector-1965
+- The Embalmer (1965) — published — /reviews/the-embalmer-1965
+- The Face of Fu Manchu (1965) — published — /reviews/the-face-of-fu-manchu-1965
+- The Nanny (1965) — published — /reviews/the-nanny-1965
+- The Seventh Grave (1965) — published — /reviews/the-seventh-grave-1965
+- The Skull (1965) — published — /reviews/the-skull-1965
+- Two on a Guillotine (1965) — published — /reviews/two-on-a-guillotine-1965
+- Un Vampiro para Dos (1965) — published — /reviews/un-vampiro-para-dos-1965
+- An Angel for Satan (1966) — published — /reviews/an-angel-for-satan-1966
+- Billy the Kid vs. Dracula (1966) — published — /reviews/billy-the-kid-vs-dracula-1966
+- Blood Bath (1966) — published — /reviews/blood-bath-1966
+- Carry on Screaming! (1966) — published — /reviews/carry-on-screaming-1966
+- Chamber of Horrors (1966) — published — /reviews/chamber-of-horrors-1966
+- Curse of the Swamp Creature (1966) — published — /reviews/curse-of-the-swamp-creature-1966
+- Daimajin (1966) — published — /reviews/daimajin-1966
+- Daimajin Strikes Again (1966) — published — /reviews/daimajin-strikes-again-1966
+- Death Curse of Tartu (1966) — published — /reviews/death-curse-of-tartu-1966
+- Dracula: Prince of Darkness (1966) — published — /reviews/dracula-prince-of-darkness-1966
+- Island of Terror (1966) — published — /reviews/island-of-terror-1966
+- Jesse James Meets Frankenstein's Daughter (1966) — published — /reviews/jesse-james-meets-frankenstein-s-daughter-1966
+- Kill, Baby, Kill (1966) — published — /reviews/kill-baby-kill-1966
+- Manos: The Hands of Fate (1966) — published — /reviews/manos-the-hands-of-fate-1966
+- Munster, Go Home! (1966) — published — /reviews/munster-go-home-1966
+- Naked Evil (1966) — published — /reviews/naked-evil-1966
+- Picture Mommy Dead (1966) — published — /reviews/picture-mommy-dead-1966
+- Queen of Blood (1966) — published — /reviews/queen-of-blood-1966
+- Rasputin, the Mad Monk (1966) — published — /reviews/rasputin-the-mad-monk-1966
+- Return of Daimajin (1966) — published — /reviews/return-of-daimajin-1966
+- Seconds (1966) — published — /reviews/seconds-1966
+- Sting of Death (1966) — published — /reviews/sting-of-death-1966
+- Terror Beneath the Sea (1966) — published — /reviews/terror-beneath-the-sea-1966
+- The Black Cat (1966) — published — /reviews/the-black-cat-1966
+- The Blood Drinkers (1966) — published — /reviews/the-blood-drinkers-1966
+- The Deadly Bees (1966) — published — /reviews/the-deadly-bees-1966
+- The Diabolical Dr. Z (1966) — published — /reviews/the-diabolical-dr-z-1966
+- The Empire of Dracula (1966) — published — /reviews/the-empire-of-dracula-1966
+- The Ghost and Mr. Chicken (1966) — published — /reviews/the-ghost-and-mr-chicken-1966
+- The Murder Clinic (1966) — published — /reviews/the-murder-clinic-1966
+- The Navy vs. the Night Monsters (1966) — published — /reviews/the-navy-vs-the-night-monsters-1966
+- The Painted Skin (1966) — published — /reviews/the-painted-skin-1966
+- The Plague of the Zombies (1966) — published — /reviews/the-plague-of-the-zombies-1966
+- The Reptile (1966) — published — /reviews/the-reptile-1966
+- The She Beast (1966) — published — /reviews/the-she-beast-1966
+- The Undertaker and His Pals (1966) — published — /reviews/the-undertaker-and-his-pals-1966
+- The Vulture (1966) — published — /reviews/the-vulture-1966
+- The Witches (1966) — published — /reviews/the-witches-1966
+- A Taste of Blood (1967) — published — /reviews/a-taste-of-blood-1967
+- Berserk! (1967) — published — /reviews/berserk-1967
+- Blood of the Virgins (1967) — published — /reviews/blood-of-the-virgins-1967
+- Cauldron of Blood (1967) — published — /reviews/cauldron-of-blood-1967
+- Creature of Destruction (1967) — published — /reviews/creature-of-destruction-1967
+- Eye of the Devil (1967) — published — /reviews/eye-of-the-devil-1967
+- Frankenstein Created Woman (1967) — published — /reviews/frankenstein-created-woman-1967
+- Games (1967) — published — /reviews/games-1967
+- Hillbillys in a Haunted House (1967) — published — /reviews/hillbillys-in-a-haunted-house-1967
+- It! (1967) — published — /reviews/it-1967
+- Maneater of Hydra (1967) — published — /reviews/maneater-of-hydra-1967
+- Night of the Big Heat (1967) — published — /reviews/night-of-the-big-heat-1967
+- Quatermass and the Pit (1967) — published — /reviews/quatermass-and-the-pit-1967
+- She Freak (1967) — published — /reviews/she-freak-1967
+- Something Weird (1967) — published — /reviews/something-weird-1967
+- The Fearless Vampire Killers (1967) — published — /reviews/the-fearless-vampire-killers-1967
+- The Frozen Dead (1967) — published — /reviews/the-frozen-dead-1967
+- The Gruesome Twosome (1967) — published — /reviews/the-gruesome-twosome-1967
+- The Mummy's Shroud (1967) — published — /reviews/the-mummy-s-shroud-1967
+- The Shuttered Room (1967) — published — /reviews/the-shuttered-room-1967
+- The Sorcerers (1967) — published — /reviews/the-sorcerers-1967
+- The Spirit Is Willing (1967) — published — /reviews/the-spirit-is-willing-1967
+- Theatre of Death (1967) — published — /reviews/theatre-of-death-1967
+- This Night I'll Possess Your Corpse (1967) — published — /reviews/this-night-i-ll-possess-your-corpse-1967
+- Torture Garden (1967) — published — /reviews/torture-garden-1967
+- Viy (1967) — published — /reviews/viy-1967
+- Zinda Laash (1967) — published — /reviews/zinda-laash-1967
+- Corruption (1968) — published — /reviews/corruption-1968
+- Dracula Has Risen from the Grave (1968) — published — /reviews/dracula-has-risen-from-the-grave-1968
+- Fear Chamber (1968) — published — /reviews/fear-chamber-1968
+- Genocide (1968) — published — /reviews/genocide-1968
+- Goke, Body Snatcher from Hell (1968) — published — /reviews/goke-body-snatcher-from-hell-1968
+- Hour of the Wolf (1968) — published — /reviews/hour-of-the-wolf-1968
+- House of Evil (1968) — published — /reviews/house-of-evil-1968
+- Kuroneko (1968) — published — /reviews/kuroneko-1968
+- Mantis in Lace (1968) — published — /reviews/mantis-in-lace-1968
+- Nights of the Werewolf (1968) — published — /reviews/nights-of-the-werewolf-1968
+- Rape of the Vampire (1968) — published — /reviews/rape-of-the-vampire-1968
+- Rosemary's Baby (1968) — published — /reviews/rosemary-s-baby-1968
+- Satanik (1968) — published — /reviews/satanik-1968
+- Secret Ceremony (1968) — published — /reviews/secret-ceremony-1968
+- Snake Woman's Curse (1968) — published — /reviews/snake-woman-s-curse-1968
+- Spider Baby (1968) — published — /reviews/spider-baby-1968
+- Spirits of the Dead (1968) — published — /reviews/spirits-of-the-dead-1968
+- Succubus (1968) — published — /reviews/succubus-1968
+- The Astro-Zombies (1968) — published — /reviews/the-astro-zombies-1968
+- The Blood Beast Terror (1968) — published — /reviews/the-blood-beast-terror-1968
+- The Ghastly Ones (1968) — published — /reviews/the-ghastly-ones-1968
+- The Green Slime (1968) — published — /reviews/the-green-slime-1968
+- The Joy of Torture (1968) — published — /reviews/the-joy-of-torture-1968
+- The Living Skeleton (1968) — published — /reviews/the-living-skeleton-1968
+- The Mad Doctor of Blood Island (1968) — published — /reviews/the-mad-doctor-of-blood-island-1968
+- The Mark of the Werewolf (1968) — published — /reviews/the-mark-of-the-werewolf-1968
+- The Strange World of Coffin Joe (1968) — published — /reviews/the-strange-world-of-coffin-joe-1968
+- Trilogy of Terror (1968) — published — /reviews/trilogy-of-terror-1968
+- Twisted Nerve (1968) — published — /reviews/twisted-nerve-1968
+- Blind Beast (1969) — published — /reviews/blind-beast-1969
+- Blood of Dracula's Castle (1969) — published — /reviews/blood-of-dracula-s-castle-1969
+- Eye of the Cat (1969) — published — /reviews/eye-of-the-cat-1969
+- Fear No Evil (1969) — published — /reviews/fear-no-evil-1969
+- Frankenstein Must Be Destroyed (1969) — published — /reviews/frankenstein-must-be-destroyed-1969
+- Hiroku Kaibyoden (1969) — published — /reviews/hiroku-kaibyoden-1969
+- Horrors of Malformed Men (1969) — published — /reviews/horrors-of-malformed-men-1969
+- Inferno of Torture (1969) — published — /reviews/inferno-of-torture-1969
+- It's Alive! (1969) — published — /reviews/it-s-alive-1969
+- Night of Bloody Horror (1969) — published — /reviews/night-of-bloody-horror-1969
+- Nightmare in Wax (1969) — published — /reviews/nightmare-in-wax-1969
+- Scream Baby Scream (1969) — published — /reviews/scream-baby-scream-1969
+- The Corpse (1969) — published — /reviews/the-corpse-1969
+- The Mad Room (1969) — published — /reviews/the-mad-room-1969
+- The Oblong Box (1969) — published — /reviews/the-oblong-box-1969
+- What Ever Happened to Aunt Alice? (1969) — published — /reviews/what-ever-happened-to-aunt-alice-1969
+- Airplane! (1980) — published — /reviews/airplane
+- Atlantic City (1980) — published — /reviews/atlantic-city
+- Caddyshack (1980) — published — /reviews/caddyshack
+- Friday the 13th (1980) — published — /reviews/friday-the-13th
+- Kagemusha (1980) — published — /reviews/kagemusha
+- Ordinary People (1980) — published — /reviews/ordinary-people
+- Raging Bull (1980) — published — /reviews/raging-bull
+- Star Wars: Episode V - The Empire Strikes Back (1980) — published — /reviews/star-wars-episode-v-the-empire-strikes-back
+- The Blues Brothers (1980) — published — /reviews/the-blues-brothers
+- The Elephant Man (1980) — published — /reviews/the-elephant-man
+- The Last Metro (1980) — published — /reviews/the-last-metro
+- The Stunt Man (1980) — published — /reviews/the-stunt-man
+- Arthur (1981) — published — /reviews/arthur
+- Blow Out (1981) — published — /reviews/blow-out
+- Body Heat (1981) — published — /reviews/body-heat
+- Chariots of Fire (1981) — published — /reviews/chariots-of-fire
+- Dragonslayer (1981) — published — /reviews/dragonslayer
+- Escape From New York (1981) — published — /reviews/escape-from-new-york
+- Mad Max 2: The Road Warrior (1981) — published — /reviews/mad-max-2-the-road-warrior
+- My Dinner With Andre (1981) — published — /reviews/my-dinner-with-andre
+- Possession (1981) — published — /reviews/possession
+- Scanners (1981) — published — /reviews/scanners
+- Stripes (1981) — published — /reviews/stripes
+- Time Bandits (1981) — published — /reviews/time-bandits
+- Blade Runner (1982) — published — /reviews/blade-runner
+- E.T. the Extra-Terrestrial (1982) — published — /reviews/e-t-the-extra-terrestrial
+- Fanny and Alexander (1982) — published — /reviews/fanny-and-alexander
+- Fast Times at Ridgemont High (1982) — published — /reviews/fast-times-at-ridgemont-high
+- Gandhi (1982) — published — /reviews/gandhi
+- Poltergeist (1982) — published — /reviews/poltergeist
+- The Thing (1982) — published — /reviews/the-thing
+- Tootsie (1982) — published — /reviews/tootsie
+- Tron (1982) — published — /reviews/tron
+- A Christmas Story (1983) — published — /reviews/a-christmas-story
+- Eddie Murphy: Delirious (1983) — published — /reviews/eddie-murphy-delirious
+- L'Argent (1983) — published — /reviews/l-argent
+- Local Hero (1983) — published — /reviews/local-hero
+- National Lampoon's Vacation (1983) — published — /reviews/national-lampoon-s-vacation
+- Risky Business (1983) — published — /reviews/risky-business
+- Sleepaway Camp (1983) — published — /reviews/sleepaway-camp
+- Tender Mercies (1983) — published — /reviews/tender-mercies
+- Terms of Endearment (1983) — published — /reviews/terms-of-endearment
+- The Big Chill (1983) — published — /reviews/the-big-chill
+- The King of Comedy (1983) — published — /reviews/the-king-of-comedy
+- The Right Stuff (1983) — published — /reviews/the-right-stuff
+- Trading Places (1983) — published — /reviews/trading-places
+- Valley Girl (1983) — published — /reviews/valley-girl
+- Videodrome (1983) — published — /reviews/videodrome
+- WarGames (1983) — published — /reviews/wargames
+- A Nightmare on Elm Street (1984) — published — /reviews/a-nightmare-on-elm-street
+- A Passage to India (1984) — published — /reviews/a-passage-to-india
+- A Soldier's Story (1984) — published — /reviews/a-soldier-s-story
+- Beverly Hills Cop (1984) — published — /reviews/beverly-hills-cop
+- Blood Simple (1984) — published — /reviews/blood-simple
+- Ghostbusters (1984) — published — /reviews/ghostbusters
+- Gremlins (1984) — published — /reviews/gremlins
+- Indiana Jones and the Temple of Doom (1984) — published — /reviews/indiana-jones-and-the-temple-of-doom
+- Paris, Texas (1984) — published — /reviews/paris-texas
+- Purple Rain (1984) — published — /reviews/purple-rain
+- Repo Man (1984) — published — /reviews/repo-man
+- Revenge of the Nerds (1984) — published — /reviews/revenge-of-the-nerds
+- Sixteen Candles (1984) — published — /reviews/sixteen-candles
+- Stop Making Sense (1984) — published — /reviews/stop-making-sense
+- The Adventures of Buckaroo Banzai Across the Eighth Dimension (1984) — published — /reviews/the-adventures-of-buckaroo-banzai-across-the-eighth-dimension
+- The Karate Kid (1984) — published — /reviews/the-karate-kid
+- The Killing Fields (1984) — published — /reviews/the-killing-fields
+- The Last Starfighter (1984) — published — /reviews/the-last-starfighter
+- The Neverending Story (1984) — published — /reviews/the-neverending-story
+- The Terminator (1984) — published — /reviews/the-terminator
+- The Toxic Avenger (1984) — published — /reviews/the-toxic-avenger
+- This Is Spinal Tap (1984) — published — /reviews/this-is-spinal-tap
+- After Hours (1985) — published — /reviews/after-hours
+- Back to the Future (1985) — published — /reviews/back-to-the-future
+- Better Off Dead (1985) — published — /reviews/better-off-dead
+- Brazil (1985) — published — /reviews/brazil
+- Commando (1985) — published — /reviews/commando
+- Desperately Seeking Susan (1985) — published — /reviews/desperately-seeking-susan
+- Kiss of the Spider Woman (1985) — published — /reviews/kiss-of-the-spider-woman
+- Ladyhawke (1985) — published — /reviews/ladyhawke
+- Lost in America (1985) — published — /reviews/lost-in-america
+- Mishima: A Life in Four Chapters (1985) — published — /reviews/mishima-a-life-in-four-chapters
+- My Life as a Dog (1985) — published — /reviews/my-life-as-a-dog
+- Out of Africa (1985) — published — /reviews/out-of-africa
+- Prizzi's Honor (1985) — published — /reviews/prizzi-s-honor
+- Ran (1985) — published — /reviews/ran
+- Re-Animator (1985) — published — /reviews/re-animator
+- Real Genius (1985) — published — /reviews/real-genius
+- Shoah (1985) — published — /reviews/shoah
+- The Breakfast Club (1985) — published — /reviews/the-breakfast-club
+- The Color Purple (1985) — published — /reviews/the-color-purple
+- The Goonies (1985) — published — /reviews/the-goonies
+- The Return of the Living Dead (1985) — published — /reviews/the-return-of-the-living-dead
+- To Live and Die in L.A. (1985) — published — /reviews/to-live-and-die-in-l-a
+- Witness (1985) — published — /reviews/witness
+- A Room With a View (1986) — published — /reviews/a-room-with-a-view
+- Big Trouble in Little China (1986) — published — /reviews/big-trouble-in-little-china
+- Blue Velvet (1986) — published — /reviews/blue-velvet
+- Ferris Bueller's Day Off (1986) — published — /reviews/ferris-bueller-s-day-off
+- Flight of the Navigator (1986) — published — /reviews/flight-of-the-navigator
+- Hannah and Her Sisters (1986) — published — /reviews/hannah-and-her-sisters
+- Highlander (1986) — published — /reviews/highlander
+- Hoosiers (1986) — published — /reviews/hoosiers
+- Labyrinth (1986) — published — /reviews/labyrinth
+- Little Shop of Horrors (1986) — published — /reviews/little-shop-of-horrors
+- Mona Lisa (1986) — published — /reviews/mona-lisa
+- Platoon (1986) — published — /reviews/platoon
+- Pretty in Pink (1986) — published — /reviews/pretty-in-pink
+- Salvador (1986) — published — /reviews/salvador
+- She's Gotta Have It (1986) — published — /reviews/she-s-gotta-have-it
+- Short Circuit (1986) — published — /reviews/short-circuit
+- Sid & Nancy (1986) — published — /reviews/sid-and-nancy
+- Stand by Me (1986) — published — /reviews/stand-by-me
+- The Color of Money (1986) — published — /reviews/the-color-of-money
+- The Transformers: The Movie (1986) — published — /reviews/the-transformers-the-movie
+- Adventures in Babysitting (1987) — published — /reviews/adventures-in-babysitting
+- Au Revoir, les enfants (1987) — published — /reviews/au-revoir-les-enfants
+- Baby Boom (1987) — published — /reviews/baby-boom
+- Broadcast News (1987) — published — /reviews/broadcast-news
+- Dirty Dancing (1987) — published — /reviews/dirty-dancing
+- Evil Dead II (1987) — published — /reviews/evil-dead-ii
+- Fatal Attraction (1987) — published — /reviews/fatal-attraction
+- Hope and Glory (1987) — published — /reviews/hope-and-glory
+- Lethal Weapon (1987) — published — /reviews/lethal-weapon
+- Moonstruck (1987) — published — /reviews/moonstruck
+- Near Dark (1987) — published — /reviews/near-dark
+- Planes, Trains and Automobiles (1987) — published — /reviews/planes-trains-and-automobiles
+- Predator (1987) — published — /reviews/predator
+- Raising Arizona (1987) — published — /reviews/raising-arizona
+- RoboCop (1987) — published — /reviews/robocop
+- The Last Emperor (1987) — published — /reviews/the-last-emperor
+- The Lost Boys (1987) — published — /reviews/the-lost-boys
+- The Princess Bride (1987) — published — /reviews/the-princess-bride
+- The Untouchables (1987) — published — /reviews/the-untouchables
+- Wall Street (1987) — published — /reviews/wall-street
+- Wings of Desire (1987) — published — /reviews/wings-of-desire
+- A Fish Called Wanda (1988) — published — /reviews/a-fish-called-wanda
+- Akira (1988) — published — /reviews/akira
+- Beetlejuice (1988) — published — /reviews/beetlejuice
+- Big (1988) — published — /reviews/big
+- Bull Durham (1988) — published — /reviews/bull-durham
+- Coming to America (1988) — published — /reviews/coming-to-america
+- Dangerous Liaisons (1988) — published — /reviews/dangerous-liaisons
+- Grave of the Fireflies (1988) — published — /reviews/grave-of-the-fireflies
+- My Neighbor Totoro (1988) — published — /reviews/my-neighbor-totoro
+- Mystic Pizza (1988) — published — /reviews/mystic-pizza
+- Rain Man (1988) — published — /reviews/rain-man
+- The Land Before Time (1988) — published — /reviews/the-land-before-time
+- The Last Temptation of Christ (1988) — published — /reviews/the-last-temptation-of-christ
+- The Naked Gun: From the Files of Police Squad! (1988) — published — /reviews/the-naked-gun-from-the-files-of-police-squad
+- The Vanishing (1988) — published — /reviews/the-vanishing
+- They Live (1988) — published — /reviews/they-live
+- Who Framed Roger Rabbit (1988) — published — /reviews/who-framed-roger-rabbit
+- Working Girl (1988) — published — /reviews/working-girl
+- Batman (1989) — published — /reviews/batman
+- Bill & Ted's Excellent Adventure (1989) — published — /reviews/bill-and-ted-s-excellent-adventure
+- Crimes and Misdemeanors (1989) — published — /reviews/crimes-and-misdemeanors
+- Dead Poets Society (1989) — published — /reviews/dead-poets-society
+- Do the Right Thing (1989) — published — /reviews/do-the-right-thing
+- Driving Miss Daisy (1989) — published — /reviews/driving-miss-daisy
+- Drugstore Cowboy (1989) — published — /reviews/drugstore-cowboy
+- Field of Dreams (1989) — published — /reviews/field-of-dreams
+- Glory (1989) — published — /reviews/glory
+- Heathers (1989) — published — /reviews/heathers
+- Henry V (1989) — published — /reviews/henry-v
+- My Left Foot (1989) — published — /reviews/my-left-foot
+- Mystery Train (1989) — published — /reviews/mystery-train
+- Say Anything... (1989) — published — /reviews/say-anything
+- Sex, Lies, and Videotape (1989) — published — /reviews/sex-lies-and-videotape
+- Steel Magnolias (1989) — published — /reviews/steel-magnolias
+- The Killer (1989) — published — /reviews/the-killer
+- The Little Mermaid (1989) — published — /reviews/the-little-mermaid
+- UHF (1989) — published — /reviews/uhf
+- When Harry Met Sally... (1989) — published — /reviews/when-harry-met-sally
+- No Address (2025) — published — /reviews/no-address-2025

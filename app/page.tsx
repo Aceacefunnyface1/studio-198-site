@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BrowseExplorer } from "@/components/browse-explorer";
 import NewsletterBlock from "@/components/newsletter-block";
 import { ReviewCard } from "@/components/review-card";
+import { POSTER_MATCH_ROUTE } from "@/lib/poster-match";
 import {
   getDailyFeaturedReview,
   getPublishedReviewsWithStats,
@@ -26,6 +27,9 @@ export default async function HomePage(_props: HomePageProps) {
   ).slice(0, 3);
   const leadReview = spotlightReviews[0] ?? null;
   const supportReviews = spotlightReviews.slice(1, 3);
+  const promoReviews = [leadReview, ...supportReviews].filter(
+    (review): review is NonNullable<typeof leadReview> => Boolean(review),
+  );
 
   return (
     <div className="cinema-home">
@@ -54,6 +58,9 @@ export default async function HomePage(_props: HomePageProps) {
             </p>
 
             <div className="cinema-home__actions">
+              <Link href={POSTER_MATCH_ROUTE} className="button-primary">
+                Play Poster Match
+              </Link>
               <Link href="/reviews" className="button-primary">
                 Enter the Archive
               </Link>
@@ -100,6 +107,42 @@ export default async function HomePage(_props: HomePageProps) {
                   {heroReview?.ratingLabel ?? "Awaiting rating"}
                 </span>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="cinema-panel cinema-panel--game-promo">
+          <div className="match-promo">
+            <div className="match-promo__copy">
+              <p className="eyebrow">Giveaway Bonus</p>
+              <h2>MATCH 20 POSTERS. EARN EXTRA ENTRIES.</h2>
+              <p>
+                Quick mobile game. 10 pairs = +1 entry. 15 pairs = +2. Clear
+                all 20 pairs = +3.
+              </p>
+              <div className="cinema-home__actions">
+                <Link href={POSTER_MATCH_ROUTE} className="button-primary">
+                  Start The Game
+                </Link>
+                <Link href="/reviews" className="button-secondary">
+                  Browse Reviews
+                </Link>
+              </div>
+            </div>
+
+            <div className="match-promo__posters">
+              {promoReviews.map((review) => (
+                <Link
+                  key={review.id}
+                  href={`/reviews/${review.slug}`}
+                  className="match-promo__poster"
+                >
+                  <img
+                    src={review.resolvedPosterImage}
+                    alt={`${review.movieTitle} poster`}
+                  />
+                </Link>
+              ))}
             </div>
           </div>
         </section>

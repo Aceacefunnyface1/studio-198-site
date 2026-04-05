@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { POSTER_MATCH_ROUTE } from "@/lib/poster-match";
 
 export function SiteFooter() {
   return (
@@ -9,6 +10,7 @@ export function SiteFooter() {
           <p>Dark, verdict-first reviews built for the web.</p>
         </div>
         <nav aria-label="Footer">
+          <Link href={POSTER_MATCH_ROUTE}>Poster Match</Link>
           <Link href="/reviews">Archive</Link>
           <Link href="/early-horror">The Bloody Birth of Horror</Link>
           <Link href="/about">Mission</Link>

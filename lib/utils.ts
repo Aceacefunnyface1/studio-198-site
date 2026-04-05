@@ -91,7 +91,7 @@ export function getReviewerPresentation(
     };
   }
 
-  if (normalized.includes("LEEANNA")) {
+  if (normalized.includes("LEEANNA") || normalized.includes("LEEANNE")) {
     return {
       label: 'ARCHITECT "LEEANNA"',
       tone: "leeanna",

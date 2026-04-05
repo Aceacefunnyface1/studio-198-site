@@ -15,7 +15,11 @@ export function SiteFooter() {
           <Link href="/early-horror">The Bloody Birth of Horror</Link>
           <Link href="/about">Mission</Link>
           <Link href="/contact">Contact</Link>
-          <a href="#" aria-disabled="true">
+          <a
+            href="https://www.instagram.com/moviesbybrad198/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Instagram
           </a>
           <a href="#" aria-disabled="true">

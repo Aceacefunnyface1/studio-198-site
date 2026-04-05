@@ -2635,6 +2635,146 @@ textarea {
   gap: 1.5rem;
 }
 
+.furnace-picks-section {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 1.35rem;
+}
+
+.furnace-picks-row {
+  display: flex;
+  gap: 0.9rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  padding-bottom: 0.35rem;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.furnace-pick-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  flex: 0 0 12.75rem;
+  width: 12.75rem;
+  min-height: 21.25rem;
+  overflow: hidden;
+  border: 1px solid rgba(139, 28, 22, 0.92);
+  border-radius: 0.95rem;
+  background:
+    linear-gradient(180deg, rgba(46, 8, 8, 0.88), rgba(17, 6, 6, 0.98)),
+    rgba(13, 5, 5, 0.98);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 210, 182, 0.06),
+    0 14px 34px rgba(0, 0, 0, 0.38);
+  color: inherit;
+  scroll-snap-align: start;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.furnace-pick-card:hover,
+.furnace-pick-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(201, 160, 90, 0.7);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 210, 182, 0.1),
+    0 18px 38px rgba(0, 0, 0, 0.46);
+}
+
+.furnace-pick-card__poster {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  background: #120707;
+}
+
+.furnace-pick-card__poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #120707;
+}
+
+.furnace-pick-card__poster::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 34%;
+  background: linear-gradient(180deg, transparent, rgba(15, 6, 6, 0.18) 25%, rgba(15, 6, 6, 0.76) 100%);
+  pointer-events: none;
+}
+
+.furnace-pick-card__body {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.85rem 0.9rem 0.95rem;
+}
+
+.furnace-pick-card__reviewer {
+  margin: 0;
+  color: rgba(230, 197, 137, 0.9);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.furnace-pick-card h3 {
+  margin: 0;
+  color: #fff6eb;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+.furnace-pick-card__reason {
+  display: -webkit-box;
+  margin: 0;
+  min-height: 2.9em;
+  color: rgba(255, 227, 212, 0.82);
+  font-size: 0.84rem;
+  line-height: 1.45;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.furnace-pick-card__cta {
+  margin-top: auto;
+  color: #f7cf89;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.bloody-birth-callout {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(139, 28, 22, 0.6);
+  border-radius: 1rem;
+  background:
+    linear-gradient(145deg, rgba(35, 8, 8, 0.94), rgba(19, 6, 6, 0.94)),
+    rgba(13, 5, 5, 0.98);
+}
+
+.bloody-birth-callout h2,
+.bloody-birth-callout p {
+  margin: 0;
+}
+
+.bloody-birth-callout p:last-of-type {
+  margin-top: 0.35rem;
+  color: rgba(255, 227, 212, 0.76);
+}
+
 .archive-row-section {
   display: grid;
   gap: 0.8rem;
@@ -4329,12 +4469,35 @@ textarea {
     gap: 0.8rem;
   }
 
+  .furnace-pick-card {
+    flex-basis: 12.75rem;
+    width: 12.75rem;
+    min-height: 20.75rem;
+  }
+
+  .bloody-birth-callout {
+    align-items: start;
+    flex-direction: column;
+  }
+
   .archive-row__item {
     flex-basis: min(16rem, 84vw);
   }
 }
 
 @media (min-width: 900px) {
+  .furnace-picks-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .furnace-pick-card {
+    width: 13.5rem;
+    min-height: 21.75rem;
+  }
+
   .archive-row__item {
     flex-basis: 18rem;
   }

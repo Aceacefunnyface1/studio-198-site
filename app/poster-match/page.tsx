@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PosterMemoryGame } from "@/components/poster-memory-game";
+import { getPosterMatchPosters } from "@/lib/poster-match-server";
 import { getDailyFeaturedReview, getPublishedReviewsWithStats } from "@/lib/review-queries";
 import {
   POSTER_MATCH_TOTAL_PAIRS,
-  type PosterMatchPoster,
 } from "@/lib/poster-match";
 
 export const metadata: Metadata = {
@@ -15,20 +15,13 @@ export const metadata: Metadata = {
 
 export default async function PosterMatchPage() {
   const reviews = await getPublishedReviewsWithStats();
-  const posterCandidates = reviews
-    .filter((review) => review.posterStatus === "approved")
-    .slice(0, POSTER_MATCH_TOTAL_PAIRS);
-  const featuredReview = getDailyFeaturedReview(reviews) ?? posterCandidates[0] ?? null;
+  const posterCandidates = getPosterMatchPosters(reviews);
+  const featuredReview =
+    getDailyFeaturedReview(reviews) ??
+    reviews.find((review) => review.id === posterCandidates[0]?.id) ??
+    null;
 
-  const posters: PosterMatchPoster[] = posterCandidates.map((review) => ({
-    id: review.id,
-    slug: review.slug,
-    title: review.movieTitle,
-    image: review.resolvedPosterImage,
-    amazonAffiliateUrl: review.amazonAffiliateUrl,
-  }));
-
-  if (posters.length !== POSTER_MATCH_TOTAL_PAIRS || !featuredReview) {
+  if (posterCandidates.length !== POSTER_MATCH_TOTAL_PAIRS || !featuredReview) {
     return (
       <div className="page-stack">
         <section className="cinema-panel cinema-panel--wall">
@@ -49,7 +42,7 @@ export default async function PosterMatchPage() {
     <div className="page-stack poster-match-page">
       <section className="cinema-panel cinema-panel--poster-match">
         <PosterMemoryGame
-          posters={posters}
+          posters={posterCandidates}
           reviewHref={`/reviews/${featuredReview.slug}`}
           reviewTitle={featuredReview.movieTitle}
           watchHref={featuredReview.amazonAffiliateUrl || undefined}
@@ -62,7 +55,12 @@ export default async function PosterMatchPage() {
           <Link href="/reviews">SEE ALL REVIEWS</Link>
         </div>
         <div className="poster-match-promo-grid">
-          {posterCandidates.slice(0, 4).map((review) => (
+          {reviews
+            .filter((review) =>
+              posterCandidates.some((poster) => poster.id === review.id),
+            )
+            .slice(0, 4)
+            .map((review) => (
             <Link
               key={review.id}
               href={`/reviews/${review.slug}`}

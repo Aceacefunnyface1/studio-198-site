@@ -3,11 +3,15 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import {
+  createPosterMatchDeck,
   getChicagoDateKey,
+  hasValidPosterMatchDeck,
+  hasValidPosterMatchPosters,
   getPosterMatchReward,
   POSTER_MATCH_POINTS_PER_PAIR,
   POSTER_MATCH_STORAGE_KEY,
   POSTER_MATCH_TOTAL_PAIRS,
+  type PosterMatchCard,
   type PosterMatchPoster,
 } from "@/lib/poster-match";
 
@@ -20,21 +24,11 @@ type PosterMemoryGameProps = {
 
 type GameStatus = "idle" | "in_progress" | "completed";
 
-type GameCard = {
-  id: string;
-  pairId: string;
-  slug: string;
-  title: string;
-  image: string;
-  matched: boolean;
-  revealed: boolean;
-};
-
 type SavedPosterMatchState = {
   version: 1;
   dateKey: string;
   status: GameStatus;
-  cards: GameCard[];
+  cards: PosterMatchCard[];
   matchesFound: number;
   points: number;
   rewardEntries: number;
@@ -57,42 +51,6 @@ const EMPTY_STATE: PosterMatchState = {
     email: null,
   },
 };
-
-function shuffleCards(cards: GameCard[]) {
-  const nextCards = [...cards];
-
-  for (let index = nextCards.length - 1; index > 0; index -= 1) {
-    const swapIndex = Math.floor(Math.random() * (index + 1));
-    [nextCards[index], nextCards[swapIndex]] = [nextCards[swapIndex], nextCards[index]];
-  }
-
-  return nextCards;
-}
-
-function createDeck(posters: PosterMatchPoster[]) {
-  return shuffleCards(
-    posters.flatMap((poster) => [
-      {
-        id: `${poster.id}-a`,
-        pairId: poster.id,
-        slug: poster.slug,
-        title: poster.title,
-        image: poster.image,
-        matched: false,
-        revealed: false,
-      },
-      {
-        id: `${poster.id}-b`,
-        pairId: poster.id,
-        slug: poster.slug,
-        title: poster.title,
-        image: poster.image,
-        matched: false,
-        revealed: false,
-      },
-    ]),
-  );
-}
 
 function readSavedState() {
   try {
@@ -157,9 +115,14 @@ export function PosterMemoryGame({
   const settleTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
+    if (!hasValidPosterMatchPosters(posters)) {
+      setIsReady(true);
+      return;
+    }
+
     const savedState = readSavedState();
 
-    if (savedState) {
+    if (savedState && hasValidPosterMatchDeck(savedState.cards, posters)) {
       setGame({
         status: savedState.status,
         cards: savedState.cards,
@@ -192,7 +155,13 @@ export function PosterMemoryGame({
   }, [game, isReady]);
 
   const startGame = () => {
-    if (game.status === "completed" || posters.length !== POSTER_MATCH_TOTAL_PAIRS) {
+    if (game.status === "completed" || !hasValidPosterMatchPosters(posters)) {
+      return;
+    }
+
+    const deck = createPosterMatchDeck(posters);
+
+    if (!deck || !hasValidPosterMatchDeck(deck, posters)) {
       return;
     }
 
@@ -200,7 +169,7 @@ export function PosterMemoryGame({
     setTurnLocked(false);
     setGame({
       status: "in_progress",
-      cards: createDeck(posters),
+      cards: deck,
       matchesFound: 0,
       points: 0,
       rewardEntries: 0,
@@ -305,6 +274,17 @@ export function PosterMemoryGame({
     game.status === "completed"
       ? "Today’s play is locked in."
       : "1 play per day on this device.";
+
+  if (!hasValidPosterMatchPosters(posters)) {
+    return (
+      <section className="poster-match-shell">
+        <div className="poster-match-status">
+          <p className="eyebrow">Poster Match</p>
+          <h1>POSTER MATCH ISN&apos;T READY.</h1>
+        </div>
+      </section>
+    );
+  }
 
   if (!isReady) {
     return (

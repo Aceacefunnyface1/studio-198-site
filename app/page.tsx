@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import Link from "next/link";
 import { BrowseExplorer } from "@/components/browse-explorer";
 import NewsletterBlock from "@/components/newsletter-block";
@@ -60,28 +59,35 @@ export default async function HomePage() {
 
           <div className="cinema-panel__stage">
             <div className="cinema-stage__main">
-              <img
+              <Image
                 src="/inferno/demon-garage.png"
                 alt="Infernal hot rods in front of a towering demon"
+                fill
+                sizes="(max-width: 980px) 100vw, 46vw"
+                priority
               />
             </div>
 
             <div className="cinema-stage__mini cinema-stage__mini--top">
-              <img
+              <Image
                 src="/inferno/hellscape-wide.png"
                 alt="Burning fortress on the edge of a lava field"
+                fill
+                sizes="102px"
               />
             </div>
 
             <div className="cinema-stage__featured">
               <div className="cinema-stage__featured-poster">
-                <img
+                <Image
                   src={heroReview?.resolvedPosterImage ?? "/posters/next-review-slot.svg"}
                   alt={
                     heroReview
                       ? `${heroReview.movieTitle} poster`
                       : "Next review slot"
                   }
+                  fill
+                  sizes="112px"
                 />
               </div>
               <div className="cinema-stage__featured-copy">
@@ -112,9 +118,11 @@ export default async function HomePage() {
                 className="weekly-pick-card"
               >
                 <div className="weekly-pick-card__poster">
-                  <img
+                  <Image
                     src={pick.review.resolvedPosterImage}
                     alt={`${pick.review.movieTitle} poster`}
+                    fill
+                    sizes="(max-width: 699px) 110px, 132px"
                   />
                 </div>
                 <div className="weekly-pick-card__body">
@@ -129,8 +137,19 @@ export default async function HomePage() {
 
         {homepageShelves.shelves.map((section) => (
           <section key={section.title} className="cinema-panel cinema-panel--shelf">
-            <div className="cinema-panel__heading">
-              <h2>{section.title}</h2>
+            <div
+              className={`cinema-panel__heading ${
+                section.title === "The Bloody Birth of Horror"
+                  ? "cinema-panel__heading--bloody-birth"
+                  : ""
+              }`}
+            >
+              <div>
+                {section.title === "The Bloody Birth of Horror" ? (
+                  <p className="cinema-panel__kicker">1896-1969</p>
+                ) : null}
+                <h2>{section.title}</h2>
+              </div>
               <Link href={section.viewAllHref}>View All</Link>
             </div>
             <PosterShelfRow
@@ -178,9 +197,11 @@ export default async function HomePage() {
             </div>
 
             <div className="support-panel__qr">
-              <img
+              <Image
                 src="/bmc_qr.png"
                 alt="Buy Me a Coffee QR code for Snap Critique support"
+                width={220}
+                height={220}
               />
             </div>
           </div>

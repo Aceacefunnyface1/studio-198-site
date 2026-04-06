@@ -118,6 +118,7 @@ export type HomepageShelfSection = {
 };
 
 export type HomepageShelfBundle = {
+  robZombieCollection: HomepageShelfSection | null;
   weeklyPicks: HomepageWeeklyPick[];
   shelves: HomepageShelfSection[];
 };
@@ -161,6 +162,13 @@ function getLatestReviewByReviewer(
 export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
   const reviews = (await getAllReviewsWithStats()).filter(
     (review) => review.status === "published" && review.posterStatus === "approved",
+  );
+  const robZombieCollection = getHomepageShelfSection(
+    reviews,
+    "Rob Zombie Collection",
+    "/reviews?search=Rob%20Zombie#browse-all",
+    (review) => review.collection === "Rob Zombie Collection",
+    18,
   );
   const weeklyPicks = HOME_WEEKLY_PICK_CONFIG.map(({ reviewerName, slug, hook }) => {
     const configuredReview = reviews.find((review) => review.slug === slug);
@@ -227,6 +235,7 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
   ].filter((section): section is HomepageShelfSection => Boolean(section));
 
   return {
+    robZombieCollection,
     weeklyPicks,
     shelves: anchoredShelves,
   };

@@ -98,6 +98,24 @@ export default async function HomePage() {
           />
         </section>
 
+        {homepageShelves.robZombieCollection ? (
+          <section className="cinema-panel cinema-panel--shelf">
+            <div className="cinema-panel__heading">
+              <div>
+                <h2>{homepageShelves.robZombieCollection.title}</h2>
+                <p className="cinema-panel__subtitle">
+                  Every Rob Zombie title in one place.
+                </p>
+              </div>
+              <Link href={homepageShelves.robZombieCollection.viewAllHref}>View All</Link>
+            </div>
+            <PosterShelfRow
+              ariaLabel={homepageShelves.robZombieCollection.title}
+              reviews={homepageShelves.robZombieCollection.reviews}
+            />
+          </section>
+        ) : null}
+
         <section className="cinema-panel cinema-panel--weekly-picks">
           <div className="cinema-panel__heading">
             <h2>Three Picks from the Furnace</h2>

@@ -47,6 +47,9 @@ export function applyReviewFilters(
   const filtered = reviews.filter((review) => {
     const haystack = [
       review.movieTitle,
+      review.director,
+      review.collection,
+      review.reviewVideoUrl,
       review.verdict,
       review.quickHit,
       review.fullTake,

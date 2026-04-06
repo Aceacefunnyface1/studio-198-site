@@ -98,44 +98,6 @@ export default async function HomePage() {
           />
         </section>
 
-        {homepageShelves.quentinTarantinoCollection ? (
-          <section className="cinema-panel cinema-panel--shelf">
-            <div className="cinema-panel__heading">
-              <div>
-                <h2>{homepageShelves.quentinTarantinoCollection.title}</h2>
-                <p className="cinema-panel__subtitle">
-                  Full reviews, posters, and comments in the exact order you set.
-                </p>
-              </div>
-              <Link href={homepageShelves.quentinTarantinoCollection.viewAllHref}>
-                View All
-              </Link>
-            </div>
-            <PosterShelfRow
-              ariaLabel={homepageShelves.quentinTarantinoCollection.title}
-              reviews={homepageShelves.quentinTarantinoCollection.reviews}
-            />
-          </section>
-        ) : null}
-
-        {homepageShelves.robZombieCollection ? (
-          <section className="cinema-panel cinema-panel--shelf">
-            <div className="cinema-panel__heading">
-              <div>
-                <h2>{homepageShelves.robZombieCollection.title}</h2>
-                <p className="cinema-panel__subtitle">
-                  Every Rob Zombie title in one place.
-                </p>
-              </div>
-              <Link href={homepageShelves.robZombieCollection.viewAllHref}>View All</Link>
-            </div>
-            <PosterShelfRow
-              ariaLabel={homepageShelves.robZombieCollection.title}
-              reviews={homepageShelves.robZombieCollection.reviews}
-            />
-          </section>
-        ) : null}
-
         <section className="cinema-panel cinema-panel--weekly-picks">
           <div className="cinema-panel__heading">
             <h2>Three Picks from the Furnace</h2>
@@ -203,6 +165,44 @@ export default async function HomePage() {
             <PosterShelfRow ariaLabel={section.title} reviews={section.reviews} />
           </section>
         ))}
+
+        {homepageShelves.quentinTarantinoCollection ? (
+          <section className="cinema-panel cinema-panel--shelf">
+            <div className="cinema-panel__heading">
+              <div>
+                <h2>{homepageShelves.quentinTarantinoCollection.title}</h2>
+                <p className="cinema-panel__subtitle">
+                  Full reviews, posters, and comments in the exact order you set.
+                </p>
+              </div>
+              <Link href={homepageShelves.quentinTarantinoCollection.viewAllHref}>
+                View All
+              </Link>
+            </div>
+            <PosterShelfRow
+              ariaLabel={homepageShelves.quentinTarantinoCollection.title}
+              reviews={homepageShelves.quentinTarantinoCollection.reviews}
+            />
+          </section>
+        ) : null}
+
+        {homepageShelves.robZombieCollection ? (
+          <section className="cinema-panel cinema-panel--shelf">
+            <div className="cinema-panel__heading">
+              <div>
+                <h2>{homepageShelves.robZombieCollection.title}</h2>
+                <p className="cinema-panel__subtitle">
+                  Every Rob Zombie title in one place.
+                </p>
+              </div>
+              <Link href={homepageShelves.robZombieCollection.viewAllHref}>View All</Link>
+            </div>
+            <PosterShelfRow
+              ariaLabel={homepageShelves.robZombieCollection.title}
+              reviews={homepageShelves.robZombieCollection.reviews}
+            />
+          </section>
+        ) : null}
 
         <section className="cinema-panel cinema-panel--archive-entry">
           <div className="archive-entry-block">

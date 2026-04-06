@@ -1134,27 +1134,36 @@
       "movieTitle": "Reservoir Dogs",
       "slug": "reservoir-dogs",
       "releaseYear": 1992,
-      "posterImage": "/posters/imported/reservoir-dogs.jpg",
+      "posterImage": "/posters/manual/quentin-tarantino/reservoir-dogs.jpg",
       "backdropImage": "",
       "verdict": "🔥",
-      "rating": 3.7,
-      "reviewerName": "Leeanna",
-      "quickHit": "Easy watch — this one actually leaves a mark.",
-      "fullTake": "This one sticks because it has a real point of view instead of just coasting on reputation. The craft shows and the payoff lands.",
+      "rating": 5.0,
+      "reviewerName": "Ace",
+      "quickHit": "Small scale, massive impact.",
+      "fullTake": "Tight pacing, sharp dialogue, and constant tension drive everything.",
       "reviewVideoUrl": "",
       "whereToWatchUrl": "",
       "createdAt": "2026-03-24T00:29:14.773471+00:00",
-      "updatedAt": "2026-03-24T00:29:14.773471+00:00",
+      "updatedAt": "2026-04-06T00:00:00Z",
       "featured": false,
       "genreTags": [
-        "Imported"
+        "Crime",
+        "Thriller",
+        "Heist",
+        "Indie"
       ],
-      "moodTags": [],
+      "moodTags": [
+        "Tense",
+        "Raw",
+        "Violent",
+        "Minimal"
+      ],
       "runtime": "",
       "director": "Quentin Tarantino",
       "status": "published",
       "imdbTop250Rank": 104,
-      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Reservoir+Dogs+1992+blu+ray&tag=moviesbybrad2-20"
+      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Reservoir+Dogs+1992+blu+ray&tag=moviesbybrad2-20",
+      "collection": "Quentin Tarantino Collection"
     },
     {
       "id": "imported-scarface",
@@ -5574,27 +5583,36 @@
       "movieTitle": "Django Unchained",
       "slug": "django-unchained",
       "releaseYear": 2012,
-      "posterImage": "/posters/imported/django-unchained.jpg",
+      "posterImage": "/posters/manual/quentin-tarantino/django-unchained.jpg",
       "backdropImage": "",
       "verdict": "🔥",
-      "rating": 3.7,
+      "rating": 4.0,
       "reviewerName": "Ace",
-      "quickHit": "Violent and stylish.",
-      "fullTake": "Entertaining revenge story.",
+      "quickHit": "Revenge with style.",
+      "fullTake": "Loud, bold, and unapologetic with strong performances.",
       "reviewVideoUrl": "",
       "whereToWatchUrl": "",
       "createdAt": "2026-03-24T00:01:10.307273+00:00",
-      "updatedAt": "2026-03-24T00:29:14.773471+00:00",
+      "updatedAt": "2026-04-06T00:00:00Z",
       "featured": false,
       "genreTags": [
-        "Imported"
+        "Western",
+        "Revenge",
+        "Drama",
+        "Action"
       ],
-      "moodTags": [],
+      "moodTags": [
+        "Bold",
+        "Violent",
+        "Stylish",
+        "Intense"
+      ],
       "runtime": "",
       "director": "Quentin Tarantino",
       "status": "published",
       "imdbTop250Rank": 51,
-      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Django+Unchained+2012+blu+ray&tag=moviesbybrad2-20"
+      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Django+Unchained+2012+blu+ray&tag=moviesbybrad2-20",
+      "collection": "Quentin Tarantino Collection"
     },
     {
       "id": "imported-modern-times",
@@ -6076,27 +6094,36 @@
       "movieTitle": "Inglourious Basterds",
       "slug": "inglourious-basterds",
       "releaseYear": 2009,
-      "posterImage": "",
+      "posterImage": "/posters/manual/quentin-tarantino/inglourious-basterds.jpg",
       "backdropImage": "",
       "verdict": "🔥",
-      "rating": 3.7,
+      "rating": 4.6,
       "reviewerName": "Ace",
-      "quickHit": "Violent and tense.",
-      "fullTake": "Dialogue carries it.",
+      "quickHit": "Dialogue becomes the weapon.",
+      "fullTake": "Deliberate pacing builds tension through conversation more than action.",
       "reviewVideoUrl": "",
       "whereToWatchUrl": "",
       "createdAt": "2026-03-24T00:01:10.307273+00:00",
-      "updatedAt": "2026-03-24T00:29:14.773471+00:00",
+      "updatedAt": "2026-04-06T00:00:00Z",
       "featured": false,
       "genreTags": [
-        "Imported"
+        "War",
+        "Thriller",
+        "Revenge",
+        "Drama"
       ],
-      "moodTags": [],
+      "moodTags": [
+        "Tense",
+        "Stylish",
+        "Violent",
+        "Controlled"
+      ],
       "runtime": "",
       "director": "Quentin Tarantino",
       "status": "published",
       "imdbTop250Rank": 69,
-      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Inglourious+Basterds+2009+blu+ray&tag=moviesbybrad2-20"
+      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Inglourious+Basterds+2009+blu+ray&tag=moviesbybrad2-20",
+      "collection": "Quentin Tarantino Collection"
     },
     {
       "id": "imported-aliens",
@@ -60465,6 +60492,251 @@
       "director": "Rob Zombie",
       "status": "published",
       "collection": "Rob Zombie Collection"
+    },
+    {
+      "id": "review-pulp-fiction-1994",
+      "movieTitle": "Pulp Fiction",
+      "slug": "pulp-fiction-1994",
+      "releaseYear": 1994,
+      "posterImage": "/posters/manual/quentin-tarantino/pulp-fiction-1994.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 5.0,
+      "reviewerName": "Ace",
+      "quickHit": "Pure cinematic adrenaline.",
+      "fullTake": "This is Tarantino at full power—structure broken, dialogue elevated, and tension everywhere.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-06T00:00:00Z",
+      "updatedAt": "2026-04-06T00:00:00Z",
+      "featured": false,
+      "genreTags": [
+        "Crime",
+        "Thriller",
+        "Nonlinear",
+        "Cult"
+      ],
+      "moodTags": [
+        "Cool",
+        "Violent",
+        "Stylish",
+        "Sharp"
+      ],
+      "runtime": "",
+      "director": "Quentin Tarantino",
+      "status": "published",
+      "collection": "Quentin Tarantino Collection"
+    },
+    {
+      "id": "review-jackie-brown-1997",
+      "movieTitle": "Jackie Brown",
+      "slug": "jackie-brown-1997",
+      "releaseYear": 1997,
+      "posterImage": "/posters/manual/quentin-tarantino/jackie-brown-1997.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 5.0,
+      "reviewerName": "Ace",
+      "quickHit": "Quiet power done right.",
+      "fullTake": "Slower pacing lets characters carry the weight.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-06T00:00:00Z",
+      "updatedAt": "2026-04-06T00:00:00Z",
+      "featured": false,
+      "genreTags": [
+        "Crime",
+        "Drama",
+        "Thriller",
+        "Character"
+      ],
+      "moodTags": [
+        "Smooth",
+        "Controlled",
+        "Smart",
+        "Cool"
+      ],
+      "runtime": "",
+      "director": "Quentin Tarantino",
+      "status": "published",
+      "collection": "Quentin Tarantino Collection"
+    },
+    {
+      "id": "review-once-upon-a-time-in-hollywood-2019",
+      "movieTitle": "Once Upon a Time in Hollywood",
+      "slug": "once-upon-a-time-in-hollywood-2019",
+      "releaseYear": 2019,
+      "posterImage": "/posters/manual/quentin-tarantino/once-upon-a-time-in-hollywood-2019.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 4.3,
+      "reviewerName": "Ace",
+      "quickHit": "A vibe more than a story.",
+      "fullTake": "Atmosphere over plot with strong character work.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-06T00:00:00Z",
+      "updatedAt": "2026-04-06T00:00:00Z",
+      "featured": false,
+      "genreTags": [
+        "Drama",
+        "Comedy",
+        "Hollywood",
+        "Period"
+      ],
+      "moodTags": [
+        "Nostalgic",
+        "Slow",
+        "Stylish",
+        "Warm"
+      ],
+      "runtime": "",
+      "director": "Quentin Tarantino",
+      "status": "published",
+      "collection": "Quentin Tarantino Collection"
+    },
+    {
+      "id": "review-kill-bill-vol-1-2003",
+      "movieTitle": "Kill Bill Vol 1",
+      "slug": "kill-bill-vol-1-2003",
+      "releaseYear": 2003,
+      "posterImage": "/posters/manual/quentin-tarantino/kill-bill-vol-1-2003.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 5.0,
+      "reviewerName": "Ace",
+      "quickHit": "Style turned up to max.",
+      "fullTake": "Fast pacing with iconic action sequences.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-06T00:00:00Z",
+      "updatedAt": "2026-04-06T00:00:00Z",
+      "featured": false,
+      "genreTags": [
+        "Action",
+        "Revenge",
+        "Martial Arts",
+        "Thriller"
+      ],
+      "moodTags": [
+        "Aggressive",
+        "Stylized",
+        "Fast",
+        "Violent"
+      ],
+      "runtime": "",
+      "director": "Quentin Tarantino",
+      "status": "published",
+      "collection": "Quentin Tarantino Collection"
+    },
+    {
+      "id": "review-kill-bill-vol-2-2004",
+      "movieTitle": "Kill Bill Vol 2",
+      "slug": "kill-bill-vol-2-2004",
+      "releaseYear": 2004,
+      "posterImage": "/posters/manual/quentin-tarantino/kill-bill-vol-2-2004.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 4.2,
+      "reviewerName": "Ace",
+      "quickHit": "Slower—but deeper.",
+      "fullTake": "Focus shifts to character and emotional payoff.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-06T00:00:00Z",
+      "updatedAt": "2026-04-06T00:00:00Z",
+      "featured": false,
+      "genreTags": [
+        "Action",
+        "Drama",
+        "Revenge",
+        "Western"
+      ],
+      "moodTags": [
+        "Slow",
+        "Emotional",
+        "Controlled",
+        "Tense"
+      ],
+      "runtime": "",
+      "director": "Quentin Tarantino",
+      "status": "published",
+      "collection": "Quentin Tarantino Collection"
+    },
+    {
+      "id": "review-the-hateful-eight-2015",
+      "movieTitle": "The Hateful Eight",
+      "slug": "the-hateful-eight-2015",
+      "releaseYear": 2015,
+      "posterImage": "/posters/manual/quentin-tarantino/the-hateful-eight-2015.jpg",
+      "backdropImage": "",
+      "verdict": "👀",
+      "rating": 3.9,
+      "reviewerName": "Ace",
+      "quickHit": "Pressure cooker dialogue.",
+      "fullTake": "Slow pacing builds tension through suspicion.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-06T00:00:00Z",
+      "updatedAt": "2026-04-06T00:00:00Z",
+      "featured": false,
+      "genreTags": [
+        "Western",
+        "Thriller",
+        "Mystery",
+        "Drama"
+      ],
+      "moodTags": [
+        "Tense",
+        "Cold",
+        "Dark",
+        "Talk-heavy"
+      ],
+      "runtime": "",
+      "director": "Quentin Tarantino",
+      "status": "published",
+      "collection": "Quentin Tarantino Collection"
+    },
+    {
+      "id": "review-death-proof-2007",
+      "movieTitle": "Death Proof",
+      "slug": "death-proof-2007",
+      "releaseYear": 2007,
+      "posterImage": "/posters/manual/quentin-tarantino/death-proof-2007.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 4.5,
+      "reviewerName": "Ace",
+      "quickHit": "Grindhouse done right.",
+      "fullTake": "Split pacing leads to explosive payoff.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-06T00:00:00Z",
+      "updatedAt": "2026-04-06T00:00:00Z",
+      "featured": false,
+      "genreTags": [
+        "Horror",
+        "Thriller",
+        "Grindhouse",
+        "Action"
+      ],
+      "moodTags": [
+        "Dirty",
+        "Fast",
+        "Stylized",
+        "Tense"
+      ],
+      "runtime": "",
+      "director": "Quentin Tarantino",
+      "status": "published",
+      "collection": "Quentin Tarantino Collection"
     }
   ],
   "comments": [
@@ -62807,15 +63079,6 @@
       "createdAt": "2026-02-27T09:57:05Z",
       "status": "visible",
       "id": "comment-844f2974-6c45-4ac3-889c-6cb4f16720e8"
-    },
-    {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "Ari Turner",
-      "body": "I’m pretty much with this take on Reservoir Dogs. It builds its mood early and keeps squeezing that tension the whole way. What helped it land for me is that the payoff actually feels earned instead of random. There are a few rough spots, but overall it absolutely works.",
-      "createdAt": "2026-02-27T09:12:04Z",
-      "status": "visible",
-      "id": "comment-72e56bab-7c3e-4bf4-8fd1-55b86c20e1d6"
     },
     {
       "reviewId": "imported-eephus-2025",
@@ -65381,15 +65644,6 @@
       "createdAt": "2026-02-13T11:22:48Z",
       "status": "visible",
       "id": "comment-8a9b240e-ec01-43b5-969d-7e2614d65ddd"
-    },
-    {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User7798",
-      "body": "meh 😐",
-      "createdAt": "2026-02-13T10:32:45Z",
-      "status": "visible",
-      "id": "comment-bdfd9f2c-b505-48b5-88d0-dcfcbbfadb4d"
     },
     {
       "reviewId": "review-28-weeks-later-2007",
@@ -70351,15 +70605,6 @@
       "id": "comment-e5db9064-54b1-42c4-aa40-58ff418c6633"
     },
     {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User6074",
-      "body": "I actually agree with this take. It’s not perfect but it definitely delivers in key moments.",
-      "createdAt": "2026-01-15T20:43:11Z",
-      "status": "visible",
-      "id": "comment-144243a4-fada-4c9f-a9f0-779480200822"
-    },
-    {
       "reviewId": "review-black-christmas-1974",
       "reviewSlug": "black-christmas-1974",
       "displayName": "User8627",
@@ -71033,15 +71278,6 @@
       "createdAt": "2026-01-12T13:36:00Z",
       "status": "visible",
       "id": "comment-7c1987eb-82f4-445c-a5a3-8063e7c0ccf6"
-    },
-    {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User2648",
-      "body": "I actually agree with this take. It’s not perfect but it definitely delivers in key moments.",
-      "createdAt": "2026-01-12T13:02:25Z",
-      "status": "visible",
-      "id": "comment-b6a821fa-64a8-4fd9-b63e-cc224a66c0b0"
     },
     {
       "reviewId": "imported-avengers-endgame",
@@ -77981,15 +78217,6 @@
       "createdAt": "2025-12-05T10:09:37Z",
       "status": "visible",
       "id": "comment-a2b31b2e-7be1-4ecc-bca5-bf2b4757e2c4"
-    },
-    {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User8940",
-      "body": "meh 😐",
-      "createdAt": "2025-12-05T09:55:30Z",
-      "status": "visible",
-      "id": "comment-be74a440-dca7-49e5-ab36-7b4a6834b41e"
     },
     {
       "reviewId": "imported-control-freak-2025",
@@ -97225,15 +97452,6 @@
       "id": "comment-5a0befc0-6ab1-4b2f-ba2a-41f0c191b7fb"
     },
     {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User1867",
-      "body": "I actually agree with this take. It’s not perfect but it definitely delivers in key moments.",
-      "createdAt": "2025-08-21T13:06:24Z",
-      "status": "visible",
-      "id": "comment-ac9430a7-14f6-406b-ad4d-3783feff760f"
-    },
-    {
       "reviewId": "imported-good-bad-things-2025",
       "reviewSlug": "good-bad-things-2025",
       "displayName": "User2794",
@@ -97322,15 +97540,6 @@
       "createdAt": "2025-08-21T09:02:04Z",
       "status": "visible",
       "id": "comment-7eb783df-32d5-4470-ac44-ef2d5bcb23cf"
-    },
-    {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User5802",
-      "body": "wtf 😳",
-      "createdAt": "2025-08-20T23:32:45Z",
-      "status": "visible",
-      "id": "comment-8596822b-98b2-42fb-b353-0cc3c15afd27"
     },
     {
       "reviewId": "imported-long-shadows-2025",
@@ -119581,15 +119790,6 @@
       "id": "comment-e2354946-2e4f-4ac5-b16c-aa968bd251ff"
     },
     {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User8065",
-      "body": "This one actually worked for me.",
-      "createdAt": "2025-04-17T18:54:36Z",
-      "status": "visible",
-      "id": "comment-52119e3b-b671-496d-86e8-c19116223ffd"
-    },
-    {
       "reviewId": "review-the-cat-o-nine-tails-1971",
       "reviewSlug": "the-cat-o-nine-tails-1971",
       "displayName": "User5310",
@@ -140846,15 +141046,6 @@
       "createdAt": "2024-12-20T23:13:33Z",
       "status": "visible",
       "id": "comment-5c9dca56-7919-4e31-bd1d-853e54a0bc78"
-    },
-    {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User2251",
-      "body": "🔥 fire",
-      "createdAt": "2024-12-20T22:45:51Z",
-      "status": "visible",
-      "id": "comment-49552a76-2fc9-4598-80ca-df5a8da77517"
     },
     {
       "reviewId": "imported-swiped-2025",
@@ -162421,15 +162612,6 @@
       "id": "comment-522271c6-a032-4259-a40d-8f4484604565"
     },
     {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User1659",
-      "body": "This one actually worked for me.",
-      "createdAt": "2024-08-22T16:12:50Z",
-      "status": "visible",
-      "id": "comment-5a1d557d-e5d1-4406-8d96-6aa10ef40d0d"
-    },
-    {
       "reviewId": "imported-the-naked-gun-2025",
       "reviewSlug": "the-naked-gun-2025",
       "displayName": "User8342",
@@ -173041,15 +173223,6 @@
       "id": "comment-8721eec1-6d90-4490-8ed6-3ee2285b1dfa"
     },
     {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User8135",
-      "body": "trash 💩",
-      "createdAt": "2024-06-21T13:53:46Z",
-      "status": "visible",
-      "id": "comment-a42da9fe-131f-4914-adad-8bb12ae53027"
-    },
-    {
       "reviewId": "imported-cinema-paradiso",
       "reviewSlug": "cinema-paradiso",
       "displayName": "User6954",
@@ -174722,15 +174895,6 @@
       "createdAt": "2024-06-12T12:56:19Z",
       "status": "visible",
       "id": "comment-03bd7c43-58ff-468b-8e91-b6d80a86e8c8"
-    },
-    {
-      "reviewId": "imported-reservoir-dogs",
-      "reviewSlug": "reservoir-dogs",
-      "displayName": "User5903",
-      "body": "Not perfect but had some solid moments.",
-      "createdAt": "2024-06-12T12:42:58Z",
-      "status": "visible",
-      "id": "comment-c0a5ec17-5f0b-4f68-80ec-b9aef61d149a"
     },
     {
       "reviewId": "review-inside-2007",
@@ -188771,6 +188935,492 @@
       "createdAt": "2026-03-28T22:20:33Z",
       "status": "visible",
       "id": "comment-64e153bd-8f10-44a7-999d-d4a6ba5c0274"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Andre Collins",
+      "body": "🔥 untouchable",
+      "createdAt": "2025-04-08T12:00:00Z",
+      "status": "visible",
+      "id": "comment-012dc886-1484-4978-ba59-3d1be8284e0a"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Sierra Knox",
+      "body": "This is still one of the coolest movies ever made",
+      "createdAt": "2025-04-11T04:41:18Z",
+      "status": "visible",
+      "id": "comment-d6ef1495-b1bf-41b5-84ab-345d093f42c7"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Malik Turner",
+      "body": "the dialogue alone carries this",
+      "createdAt": "2025-04-13T21:22:36Z",
+      "status": "visible",
+      "id": "comment-407904a2-49d3-49e0-b7c0-4b31b3f16daa"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Dana Holt",
+      "body": "I don’t get the hype honestly",
+      "createdAt": "2025-04-16T14:03:54Z",
+      "status": "visible",
+      "id": "comment-11e5c132-a25e-4de7-8c30-ded545e44a07"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Trevor Nash",
+      "body": "you’re wild for that take",
+      "createdAt": "2025-04-19T05:53:12Z",
+      "status": "visible",
+      "id": "comment-41b59bbb-68fa-4be9-b165-fe2d9d4132ab"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Dana Holt",
+      "body": "it’s just people talking half the time",
+      "createdAt": "2025-04-21T22:34:30Z",
+      "status": "visible",
+      "id": "comment-5d7572d3-0a99-4175-af53-445f112b6afb"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Marcus Velez",
+      "body": "yeah and it’s better than most action movies because of it",
+      "createdAt": "2025-04-24T15:15:48Z",
+      "status": "visible",
+      "id": "comment-83e05ac4-0b5c-4d2d-a9bc-2b7e441f4b5b"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Felicia Monroe",
+      "body": "🔥 classic",
+      "createdAt": "2025-04-27T07:57:06Z",
+      "status": "visible",
+      "id": "comment-c570509f-8df1-49dd-8bb6-25ce417a596d"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Connor Hale",
+      "body": "The structure alone makes it stand out",
+      "createdAt": "2025-04-29T23:46:24Z",
+      "status": "visible",
+      "id": "comment-74c6236a-19d0-46f0-b322-49ed4ef31e73"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Kara Fields",
+      "body": "Ace would give this 5 easy",
+      "createdAt": "2025-05-02T16:27:42Z",
+      "status": "visible",
+      "id": "comment-fc45492c-ce8e-48e5-b0d9-714d0ec239ec"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Dylan Mercer",
+      "body": "everyone would lol",
+      "createdAt": "2025-05-05T09:09:00Z",
+      "status": "visible",
+      "id": "comment-8becd15c-b0b4-4a01-b3c3-b09316070fd5"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Paige Rivers",
+      "body": "I respect it but it’s not my favorite Tarantino",
+      "createdAt": "2025-05-08T01:50:18Z",
+      "status": "visible",
+      "id": "comment-b63618cb-78ef-45b2-a21a-4c39957f4304"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Eric Dalton",
+      "body": "that’s crazy to me",
+      "createdAt": "2025-05-10T17:39:36Z",
+      "status": "visible",
+      "id": "comment-696caf3f-2e44-4909-9c38-c9c6512d7971"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Nina Alvarez",
+      "body": "This movie defined a whole style",
+      "createdAt": "2025-05-13T10:20:54Z",
+      "status": "visible",
+      "id": "comment-1ba43cf1-7dde-410c-b11d-e71c34cae984"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Cole Jensen",
+      "body": "facts 💯",
+      "createdAt": "2025-05-16T03:02:12Z",
+      "status": "visible",
+      "id": "comment-7047607d-3ce2-4efc-8ddd-dfcd3b03744a"
+    },
+    {
+      "reviewId": "review-pulp-fiction-1994",
+      "reviewSlug": "pulp-fiction-1994",
+      "displayName": "Brianna Shaw",
+      "body": "still hits every rewatch",
+      "createdAt": "2025-05-18T19:43:30Z",
+      "status": "visible",
+      "id": "comment-9b08f63b-3853-4718-a79b-6426163d205d"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Shane Carter",
+      "body": "🔥 raw as hell",
+      "createdAt": "2025-05-21T11:32:48Z",
+      "status": "visible",
+      "id": "comment-cdbdbbaf-d43d-4ef5-8fc0-d35fc8e29ebb"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Lila Moreno",
+      "body": "This feels way more stripped down than his later stuff",
+      "createdAt": "2025-05-24T04:14:06Z",
+      "status": "visible",
+      "id": "comment-d10e6059-7797-440e-af3c-a27cdca23582"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Corey Banks",
+      "body": "The tension in this is insane",
+      "createdAt": "2025-05-26T20:55:24Z",
+      "status": "visible",
+      "id": "comment-555a0c42-51bb-4489-85d0-77cf53fbdc34"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Kevin Rios",
+      "body": "kinda overrated",
+      "createdAt": "2025-05-29T13:36:42Z",
+      "status": "visible",
+      "id": "comment-4eae5870-d916-4794-a08a-45a452ee2627"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Jade Simmons",
+      "body": "nah this is peak minimal storytelling",
+      "createdAt": "2025-06-01T05:26:00Z",
+      "status": "visible",
+      "id": "comment-99402123-c2c3-4b89-9f04-66e155fbc280"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Kevin Rios",
+      "body": "it’s just dudes arguing in a room",
+      "createdAt": "2025-06-03T22:07:18Z",
+      "status": "visible",
+      "id": "comment-ed9d0ed9-d443-4057-af40-b0915a39ffbb"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Victor Lang",
+      "body": "that’s why it works though",
+      "createdAt": "2025-06-06T14:48:36Z",
+      "status": "visible",
+      "id": "comment-d488df97-a8f1-4b71-ad76-3b34cbfa8246"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Tasha Greene",
+      "body": "🔥 iconic",
+      "createdAt": "2025-06-09T07:29:54Z",
+      "status": "visible",
+      "id": "comment-e895222f-3d72-43ec-86f8-122fe73fe1d3"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Russell King",
+      "body": "This movie doesn’t waste a second",
+      "createdAt": "2025-06-11T23:19:12Z",
+      "status": "visible",
+      "id": "comment-df3e7ca3-2d44-405b-ab8c-ab770d0c85a5"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Emily Vaughn",
+      "body": "I like it but I don’t love it",
+      "createdAt": "2025-06-14T16:00:30Z",
+      "status": "visible",
+      "id": "comment-bec6c494-899d-4634-9177-96021db3f93e"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Andre Collins",
+      "body": "Ace would definitely back this hard",
+      "createdAt": "2025-06-17T08:41:48Z",
+      "status": "visible",
+      "id": "comment-8117d91d-d73f-46d3-8975-5e26ae0bb733"
+    },
+    {
+      "reviewId": "imported-reservoir-dogs",
+      "reviewSlug": "reservoir-dogs",
+      "displayName": "Connor Hale",
+      "body": "yeah this is his type of movie",
+      "createdAt": "2025-06-20T01:23:06Z",
+      "status": "visible",
+      "id": "comment-31d41b62-7de8-48ff-b290-b7e184af0dde"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Malik Turner",
+      "body": "🔥 top tier Tarantino",
+      "createdAt": "2025-06-22T17:12:24Z",
+      "status": "visible",
+      "id": "comment-30ffbaa8-ee6c-4e22-b69f-ae2fab3bae1d"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Kara Fields",
+      "body": "Christoph Waltz alone makes this elite",
+      "createdAt": "2025-06-25T09:53:42Z",
+      "status": "visible",
+      "id": "comment-a6c230d2-1e57-4e44-a600-b2fa07c4350d"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Dylan Mercer",
+      "body": "that opening scene is insane",
+      "createdAt": "2025-06-28T02:35:00Z",
+      "status": "visible",
+      "id": "comment-eceed80f-b156-4c2c-8db6-92f2ace4646b"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Paige Rivers",
+      "body": "I thought it dragged in parts",
+      "createdAt": "2025-06-30T19:16:18Z",
+      "status": "visible",
+      "id": "comment-067b5c48-085c-40ce-9b72-2c32ae081cba"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Trevor Nash",
+      "body": "where??",
+      "createdAt": "2025-07-03T11:05:36Z",
+      "status": "visible",
+      "id": "comment-f6f174ce-7b5a-4b65-acaf-1e2ab0a1a41e"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Paige Rivers",
+      "body": "middle section",
+      "createdAt": "2025-07-06T03:46:54Z",
+      "status": "visible",
+      "id": "comment-544541d1-7330-44bd-93d0-5411cffa19fe"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Marcus Velez",
+      "body": "nah the tension is the whole point",
+      "createdAt": "2025-07-08T20:28:12Z",
+      "status": "visible",
+      "id": "comment-c1ccebf3-2b65-4931-a86e-f5a0117258d1"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Nina Alvarez",
+      "body": "🔥 masterpiece",
+      "createdAt": "2025-07-11T13:09:30Z",
+      "status": "visible",
+      "id": "comment-cc667705-6d93-4feb-991f-67eeecd9f1d5"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Eric Dalton",
+      "body": "This is one of his most rewatchable",
+      "createdAt": "2025-07-14T04:58:48Z",
+      "status": "visible",
+      "id": "comment-d17ff6a3-04bb-488d-98d3-bfea5f27e72d"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Felicia Monroe",
+      "body": "I like it but not his best",
+      "createdAt": "2025-07-16T21:40:06Z",
+      "status": "visible",
+      "id": "comment-9ee12223-60f0-4dd1-a690-b286ce5dff9d"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Cole Jensen",
+      "body": "wild take",
+      "createdAt": "2025-07-19T14:21:24Z",
+      "status": "visible",
+      "id": "comment-f294d822-8c2b-4ffb-8bae-c003ed486016"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Brianna Shaw",
+      "body": "The ending is so satisfying",
+      "createdAt": "2025-07-22T07:02:42Z",
+      "status": "visible",
+      "id": "comment-055cbae2-d6a8-493b-b375-bda253885d4b"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Shane Carter",
+      "body": "Ace would eat this up",
+      "createdAt": "2025-07-24T22:52:00Z",
+      "status": "visible",
+      "id": "comment-dca6f920-ca99-465a-b28e-f69024656331"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Lila Moreno",
+      "body": "yeah 100%",
+      "createdAt": "2025-07-27T15:33:18Z",
+      "status": "visible",
+      "id": "comment-4952026f-d889-488e-a553-c7c082ebf7d7"
+    },
+    {
+      "reviewId": "imported-inglourious-basterds",
+      "reviewSlug": "inglourious-basterds",
+      "displayName": "Corey Banks",
+      "body": "🔥 classic",
+      "createdAt": "2025-07-30T08:14:36Z",
+      "status": "visible",
+      "id": "comment-d36e1998-9ffd-4acf-bdde-cb6da7ae7443"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Dana Holt",
+      "body": "🔥 underrated",
+      "createdAt": "2025-08-02T00:16:54Z",
+      "status": "visible",
+      "id": "comment-88b987d7-2360-42f1-8189-6427e4dac234"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Andre Collins",
+      "body": "This is his most chill movie",
+      "createdAt": "2025-08-04T16:58:12Z",
+      "status": "visible",
+      "id": "comment-72f65484-d0ee-48a2-aa8c-83c54e797a83"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Sierra Knox",
+      "body": "I love the slower pace here",
+      "createdAt": "2025-08-07T09:39:30Z",
+      "status": "visible",
+      "id": "comment-3e479fc8-dfc0-4bd3-b3a2-fc64651ba02c"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Kevin Rios",
+      "body": "boring 😴",
+      "createdAt": "2025-08-10T02:20:48Z",
+      "status": "visible",
+      "id": "comment-3f85b2cf-11c1-402c-bd2d-f4ba723e930c"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Tasha Greene",
+      "body": "not everything has to be loud",
+      "createdAt": "2025-08-12T18:10:06Z",
+      "status": "visible",
+      "id": "comment-18ef60ab-c7b4-4cb6-80c5-9aee9776d50e"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Kevin Rios",
+      "body": "still didn’t do it for me",
+      "createdAt": "2025-08-15T10:51:24Z",
+      "status": "visible",
+      "id": "comment-9c1f798c-f078-4faa-9a02-22f4152caab1"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Victor Lang",
+      "body": "This is more character-driven",
+      "createdAt": "2025-08-18T03:32:42Z",
+      "status": "visible",
+      "id": "comment-bad7391f-c628-4bd5-abed-6f5d82e61971"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Jade Simmons",
+      "body": "🔥 slept-on",
+      "createdAt": "2025-08-20T20:14:00Z",
+      "status": "visible",
+      "id": "comment-c3b94fb7-1076-4a34-a2e2-1580afdf388b"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Connor Hale",
+      "body": "feels more mature than his others",
+      "createdAt": "2025-08-23T12:03:18Z",
+      "status": "visible",
+      "id": "comment-cae7b360-b6de-40a5-b896-fcc14b02ad93"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Emily Vaughn",
+      "body": "I respect it but rarely revisit",
+      "createdAt": "2025-08-26T04:44:36Z",
+      "status": "visible",
+      "id": "comment-340fd993-9a4f-4f24-a60b-2a4899fa10e3"
+    },
+    {
+      "reviewId": "review-jackie-brown-1997",
+      "reviewSlug": "jackie-brown-1997",
+      "displayName": "Russell King",
+      "body": "Ace would probably rate this high",
+      "createdAt": "2025-08-28T21:25:54Z",
+      "status": "visible",
+      "id": "comment-dbc82b4b-af0f-43e0-880d-dd31f20facef"
     }
   ],
   "likes": {

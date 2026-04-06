@@ -98,6 +98,26 @@ export default async function HomePage() {
           />
         </section>
 
+        {homepageShelves.quentinTarantinoCollection ? (
+          <section className="cinema-panel cinema-panel--shelf">
+            <div className="cinema-panel__heading">
+              <div>
+                <h2>{homepageShelves.quentinTarantinoCollection.title}</h2>
+                <p className="cinema-panel__subtitle">
+                  Full reviews, posters, and comments in the exact order you set.
+                </p>
+              </div>
+              <Link href={homepageShelves.quentinTarantinoCollection.viewAllHref}>
+                View All
+              </Link>
+            </div>
+            <PosterShelfRow
+              ariaLabel={homepageShelves.quentinTarantinoCollection.title}
+              reviews={homepageShelves.quentinTarantinoCollection.reviews}
+            />
+          </section>
+        ) : null}
+
         {homepageShelves.robZombieCollection ? (
           <section className="cinema-panel cinema-panel--shelf">
             <div className="cinema-panel__heading">

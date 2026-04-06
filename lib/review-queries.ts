@@ -32,6 +32,32 @@ const HOME_WEEKLY_PICK_CONFIG = [
   },
 ] as const;
 
+const ROB_ZOMBIE_COLLECTION_ORDER = [
+  "house-of-1000-corpses-2003",
+  "the-devils-rejects-2005",
+  "halloween-2007",
+  "halloween-ii-2009",
+  "the-lords-of-salem-2012",
+  "31-2016",
+  "3-from-hell-2019",
+  "the-munsters-2022",
+  "the-haunted-world-of-el-superbeasto-2009",
+  "werewolf-women-of-the-ss-2007",
+] as const;
+
+const QUENTIN_TARANTINO_COLLECTION_ORDER = [
+  "pulp-fiction-1994",
+  "reservoir-dogs",
+  "inglourious-basterds",
+  "jackie-brown-1997",
+  "django-unchained",
+  "once-upon-a-time-in-hollywood-2019",
+  "kill-bill-vol-1-2003",
+  "kill-bill-vol-2-2004",
+  "the-hateful-eight-2015",
+  "death-proof-2007",
+] as const;
+
 function hasResolvedPoster(review: Review) {
   return resolvePoster(review).posterStatus !== "missing";
 }
@@ -118,6 +144,7 @@ export type HomepageShelfSection = {
 };
 
 export type HomepageShelfBundle = {
+  quentinTarantinoCollection: HomepageShelfSection | null;
   robZombieCollection: HomepageShelfSection | null;
   weeklyPicks: HomepageWeeklyPick[];
   shelves: HomepageShelfSection[];
@@ -150,6 +177,28 @@ function getHomepageShelfSection(
   } satisfies HomepageShelfSection;
 }
 
+function getOrderedHomepageShelfSection(
+  reviews: ReviewWithStats[],
+  title: string,
+  viewAllHref: string,
+  slugs: readonly string[],
+) {
+  const reviewsBySlug = new Map(reviews.map((review) => [review.slug, review]));
+  const sectionReviews = slugs
+    .map((slug) => reviewsBySlug.get(slug))
+    .filter((review): review is ReviewWithStats => Boolean(review));
+
+  if (!sectionReviews.length) {
+    return null;
+  }
+
+  return {
+    title,
+    viewAllHref,
+    reviews: sectionReviews,
+  } satisfies HomepageShelfSection;
+}
+
 function getLatestReviewByReviewer(
   reviews: ReviewWithStats[],
   reviewerName: string,
@@ -163,12 +212,17 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
   const reviews = (await getAllReviewsWithStats()).filter(
     (review) => review.status === "published" && review.posterStatus === "approved",
   );
-  const robZombieCollection = getHomepageShelfSection(
+  const quentinTarantinoCollection = getOrderedHomepageShelfSection(
+    reviews,
+    "Quentin Tarantino Collection",
+    "/reviews?search=Quentin%20Tarantino#browse-all",
+    QUENTIN_TARANTINO_COLLECTION_ORDER,
+  );
+  const robZombieCollection = getOrderedHomepageShelfSection(
     reviews,
     "Rob Zombie Collection",
     "/reviews?search=Rob%20Zombie#browse-all",
-    (review) => review.collection === "Rob Zombie Collection",
-    18,
+    ROB_ZOMBIE_COLLECTION_ORDER,
   );
   const weeklyPicks = HOME_WEEKLY_PICK_CONFIG.map(({ reviewerName, slug, hook }) => {
     const configuredReview = reviews.find((review) => review.slug === slug);
@@ -235,6 +289,7 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
   ].filter((section): section is HomepageShelfSection => Boolean(section));
 
   return {
+    quentinTarantinoCollection,
     robZombieCollection,
     weeklyPicks,
     shelves: anchoredShelves,

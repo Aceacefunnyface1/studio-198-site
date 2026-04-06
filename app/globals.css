@@ -3636,9 +3636,9 @@ textarea {
 }
 
 .cinema-home {
-  --cinema-column-width: min(1080px, calc(100vw - 1.5rem));
-  --cinema-section-gap: 0.95rem;
-  --cinema-panel-padding: 0.95rem;
+  --cinema-column-width: min(860px, calc(100vw - 2.5rem));
+  --cinema-section-gap: 0.8rem;
+  --cinema-panel-padding: 0.8rem;
   --cinema-shelf-gap: 0.55rem;
   --cinema-shelf-poster-width: 95px;
   --cinema-pick-width: 118px;
@@ -3711,8 +3711,8 @@ textarea {
 
 .cinema-panel--hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 1rem;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 0.75rem;
   padding: var(--cinema-panel-padding);
   margin-top: 0.4rem;
   align-items: center;
@@ -3727,7 +3727,7 @@ textarea {
   display: grid;
   color: #e8d9ca;
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(2.75rem, 6.2vw, 4.15rem);
+  font-size: clamp(2.2rem, 4.8vw, 3.2rem);
   line-height: 0.84;
   text-transform: uppercase;
 }
@@ -3735,7 +3735,7 @@ textarea {
 .cinema-home__tagline {
   margin: 0.65rem 0 0;
   color: #efae69;
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -3743,22 +3743,22 @@ textarea {
 
 .cinema-home__lede {
   margin: 0.65rem 0 0;
-  max-width: 20rem;
+  max-width: 16.5rem;
   color: rgba(240, 226, 210, 0.76);
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   line-height: 1.5;
 }
 
 .cinema-home__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 0.95rem;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .cinema-panel__stage {
   position: relative;
-  min-height: 15.5rem;
+  min-height: 12.75rem;
   overflow: hidden;
   border: 1px solid rgba(255, 136, 59, 0.14);
   background: #140403;
@@ -3793,7 +3793,7 @@ textarea {
   margin: 0;
   color: #e7d6c6;
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(1.35rem, 3.2vw, 1.9rem);
+  font-size: clamp(1.12rem, 2.4vw, 1.52rem);
   line-height: 0.92;
   text-transform: uppercase;
 }
@@ -3833,14 +3833,14 @@ textarea {
 .cinema-panel__subtitle {
   margin: 0.16rem 0 0;
   color: rgba(240, 226, 210, 0.76);
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   line-height: 1.45;
 }
 
 .weekly-picks-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
+  gap: 0.55rem;
 }
 
 .weekly-pick-feature {
@@ -3852,8 +3852,8 @@ textarea {
 
 .weekly-pick-feature__media {
   display: grid;
-  grid-template-columns: 72px minmax(0, 92px);
-  gap: 0.5rem;
+  grid-template-columns: 60px minmax(0, 80px);
+  gap: 0.4rem;
   align-items: start;
 }
 
@@ -3871,7 +3871,7 @@ textarea {
 }
 
 .weekly-pick-feature__poster {
-  width: 92px;
+  width: 80px;
   aspect-ratio: 2 / 3;
 }
 
@@ -3888,7 +3888,7 @@ textarea {
 .weekly-pick-feature__name {
   margin: 0;
   color: #efae69;
-  font-size: 0.62rem;
+  font-size: 0.54rem;
   font-weight: 800;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -3898,14 +3898,14 @@ textarea {
   margin: 0;
   color: #f1e3d5;
   font-family: var(--font-display), Georgia, serif;
-  font-size: 0.96rem;
+  font-size: 0.8rem;
   line-height: 0.94;
 }
 
 .weekly-pick-feature__hook {
   margin: 0;
   color: rgba(240, 226, 210, 0.74);
-  font-size: 0.72rem;
+  font-size: 0.63rem;
   line-height: 1.4;
 }
 
@@ -4062,14 +4062,14 @@ textarea {
 .archive-entry-block h2 {
   color: #f1e3d5;
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(1.6rem, 3.8vw, 2.15rem);
+  font-size: clamp(1.28rem, 2.8vw, 1.68rem);
   line-height: 0.92;
   text-transform: uppercase;
 }
 
 .archive-entry-block p:last-of-type {
   color: rgba(240, 226, 210, 0.76);
-  font-size: 0.82rem;
+  font-size: 0.74rem;
   line-height: 1.5;
 }
 
@@ -4288,7 +4288,7 @@ textarea {
   }
  
   .cinema-panel__stage {
-    min-height: 15rem;
+    min-height: 13rem;
   }
 }
 
@@ -4361,8 +4361,8 @@ textarea {
 
 @media (min-width: 700px) {
   .cinema-home {
-    --cinema-shelf-poster-width: 120px;
-    --cinema-shelf-gap: 0.6rem;
+    --cinema-shelf-poster-width: 108px;
+    --cinema-shelf-gap: 0.55rem;
   }
 
   .home-shelf-item__title {
@@ -4370,15 +4370,15 @@ textarea {
   }
 
   .weekly-pick-feature__media {
-    grid-template-columns: 76px minmax(0, 94px);
+    grid-template-columns: 64px minmax(0, 82px);
   }
 
   .weekly-pick-feature__poster {
-    width: 94px;
+    width: 82px;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 860px) {
   .home-shelf-rail__arrow {
     display: grid;
     opacity: 0.55;
@@ -4400,7 +4400,7 @@ textarea {
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1100px) {
   .poster-match-board {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }

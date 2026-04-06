@@ -5,6 +5,7 @@ import path from "node:path";
 import { get, put } from "@vercel/blob";
 import bundledSeedData from "@/data/site-data.json";
 import pendingPosterSlugs from "@/data/pending-poster-slugs.json";
+import { normalizeAmazonAffiliateUrl } from "@/lib/amazon-links";
 import {
   GiveawayWinner,
   NewsletterSubscriber,
@@ -146,6 +147,11 @@ function enforceReviewPolicies(review: Review) {
     ...review,
     verdict,
     posterImage: normalizePosterPath(review.posterImage),
+    amazonAffiliateUrl: normalizeAmazonAffiliateUrl(review.amazonAffiliateUrl, {
+      movieTitle: review.movieTitle,
+      releaseYear: review.releaseYear,
+      director: review.director,
+    }),
     status: getResolvedReviewStatus(review),
   } satisfies Review;
 }

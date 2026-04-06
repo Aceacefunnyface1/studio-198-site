@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import pendingPosterSlugs from "@/data/pending-poster-slugs.json";
+import { normalizeAmazonAffiliateUrl } from "@/lib/amazon-links";
 import {
   clearAdminSession,
   createAdminSession,
@@ -114,7 +115,16 @@ export async function saveReviewAction(formData: FormData) {
       fullTake: requireText(formData.get("fullTake")),
       reviewVideoUrl: requireText(formData.get("reviewVideoUrl")),
       whereToWatchUrl: requireText(formData.get("whereToWatchUrl")),
-      amazonAffiliateUrl: requireText(formData.get("amazonAffiliateUrl")),
+      amazonAffiliateUrl: normalizeAmazonAffiliateUrl(
+        requireText(formData.get("amazonAffiliateUrl")),
+        {
+          movieTitle,
+          releaseYear: requireText(formData.get("releaseYear"))
+            ? Number.parseInt(requireText(formData.get("releaseYear")), 10)
+            : null,
+          director: requireText(formData.get("director")),
+        },
+      ),
       createdAt: existing?.createdAt || new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       featured: formData.get("featured") === "on",

@@ -4,15 +4,13 @@ import { ReviewCardControls } from "@/components/review-card-controls";
 import { ReviewWithStats } from "@/lib/types";
 import { getRatingVisual, getReviewerPresentation } from "@/lib/utils";
 
-const DEFAULT_AMAZON_AFFILIATE_URL = "https://amzn.to/3PtHOkZ";
-
 type ReviewCardProps = {
   review: ReviewWithStats;
 };
 
 export function ReviewCard({ review }: ReviewCardProps) {
   const ratingVisual = getRatingVisual(review.rating);
-  const amazonHref = review.amazonAffiliateUrl?.trim() || DEFAULT_AMAZON_AFFILIATE_URL;
+  const amazonHref = review.amazonAffiliateUrl?.trim() || "";
   const tagLine = review.genreTags.slice(0, 3).join(" / ");
   const directorName = review.director?.trim() || "Unknown";
   const directorPrefix = directorName.length > 16 ? "BY" : "DIRECTED BY";

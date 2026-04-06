@@ -3,33 +3,18 @@
 import Link from "next/link";
 import { BrowseExplorer } from "@/components/browse-explorer";
 import NewsletterBlock from "@/components/newsletter-block";
-import { ReviewCard } from "@/components/review-card";
+import { PosterShelfRow } from "@/components/poster-shelf-row";
 import { POSTER_MATCH_ROUTE } from "@/lib/poster-match";
 import {
   getDailyFeaturedReview,
+  getHomepageShelfBundle,
   getPublishedReviewsWithStats,
 } from "@/lib/review-queries";
 
-type HomePageProps = {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-};
-
-export default async function HomePage(_props: HomePageProps) {
+export default async function HomePage() {
   const reviews = await getPublishedReviewsWithStats();
   const heroReview = getDailyFeaturedReview(reviews);
-  const latest = [...reviews]
-    .sort((a, b) => +new Date(b.createdAt) - +new Date(a.createdAt))
-    .slice(0, 3);
-  const spotlightReviews = (
-    heroReview
-      ? [heroReview, ...latest.filter((review) => review.id !== heroReview.id)]
-      : latest
-  ).slice(0, 3);
-  const leadReview = spotlightReviews[0] ?? null;
-  const supportReviews = spotlightReviews.slice(1, 3);
-  const promoReviews = [leadReview, ...supportReviews].filter(
-    (review): review is NonNullable<typeof leadReview> => Boolean(review),
-  );
+  const homepageShelves = await getHomepageShelfBundle();
 
   return (
     <div className="cinema-home">
@@ -111,87 +96,65 @@ export default async function HomePage(_props: HomePageProps) {
           </div>
         </section>
 
-        <section className="cinema-panel cinema-panel--game-promo">
-          <div className="match-promo">
-            <div className="match-promo__copy">
-              <p className="eyebrow">Giveaway Bonus</p>
-              <h2>MATCH 20 POSTERS. EARN EXTRA ENTRIES.</h2>
-              <p>
-                Quick mobile game. 10 pairs = +1 entry. 15 pairs = +2. Clear
-                all 20 pairs = +3.
-              </p>
-              <div className="cinema-home__actions">
-                <Link href={POSTER_MATCH_ROUTE} className="button-primary">
-                  Start The Game
-                </Link>
-                <Link href="/reviews" className="button-secondary">
-                  Browse Reviews
-                </Link>
-              </div>
-            </div>
+        <section className="cinema-panel cinema-panel--weekly-picks">
+          <div className="cinema-panel__heading">
+            <h2>Three Picks from the Furnace</h2>
+          </div>
 
-            <div className="match-promo__posters">
-              {promoReviews.map((review) => (
-                <Link
-                  key={review.id}
-                  href={`/reviews/${review.slug}`}
-                  className="match-promo__poster"
-                >
+          <div
+            className="weekly-picks-row"
+            aria-label="Three Picks from the Furnace"
+          >
+            {homepageShelves.weeklyPicks.map((pick) => (
+              <Link
+                key={pick.review.id}
+                href={`/reviews/${pick.review.slug}`}
+                className="weekly-pick-card"
+              >
+                <div className="weekly-pick-card__poster">
                   <img
-                    src={review.resolvedPosterImage}
-                    alt={`${review.movieTitle} poster`}
+                    src={pick.review.resolvedPosterImage}
+                    alt={`${pick.review.movieTitle} poster`}
                   />
-                </Link>
-              ))}
-            </div>
+                </div>
+                <div className="weekly-pick-card__body">
+                  <h3>{pick.review.movieTitle}</h3>
+                  <p className="weekly-pick-card__reviewer">{pick.reviewerName}</p>
+                  <p className="weekly-pick-card__reason">{pick.reason}</p>
+                </div>
+              </Link>
+            ))}
           </div>
         </section>
 
-        <section className="cinema-panel cinema-panel--wall">
-          <div className="cinema-panel__heading">
-            <h2>POSTER WALL. FRESH DAMAGE.</h2>
-            <Link href="/reviews">SEE ALL REVIEWS</Link>
-          </div>
-
-          <div className="cinema-poster-wall">
-            {leadReview ? (
-              <Link
-                href={`/reviews/${leadReview.slug}`}
-                className="cinema-poster-wall__lead"
-              >
-                <img
-                  src={leadReview.resolvedPosterImage}
-                  alt={`${leadReview.movieTitle} poster`}
-                />
-                <div className="cinema-poster-wall__overlay">
-                  <h3>{leadReview.movieTitle}</h3>
-                  <p>
-                    {leadReview.quickHit?.split(".")[0] ??
-                      "Fresh damage on the wall."}
-                  </p>
-                </div>
-              </Link>
-            ) : null}
-
-            <div className="cinema-poster-wall__stack">
-              {supportReviews.map((review) => (
-                <Link
-                  key={review.id}
-                  href={`/reviews/${review.slug}`}
-                  className="cinema-poster-wall__support"
-                >
-                  <img
-                    src={review.resolvedPosterImage}
-                    alt={`${review.movieTitle} poster`}
-                  />
-                  <div className="cinema-poster-wall__overlay">
-                    <h3>{review.movieTitle}</h3>
-                    <p>{review.quickHit?.split(".")[0] ?? "Still burning."}</p>
-                  </div>
-                </Link>
-              ))}
+        {homepageShelves.shelves.map((section) => (
+          <section key={section.title} className="cinema-panel cinema-panel--shelf">
+            <div className="cinema-panel__heading">
+              <h2>{section.title}</h2>
+              <Link href={section.viewAllHref}>View All</Link>
             </div>
+            <PosterShelfRow
+              ariaLabel={section.title}
+              reviews={section.reviews}
+            />
+          </section>
+        ))}
+
+        <section className="cinema-panel cinema-panel--explorer">
+          <div className="cinema-panel__heading cinema-panel__heading--stacked">
+            <div>
+              <p className="eyebrow">Full Archive</p>
+              <h2>Full Archive</h2>
+            </div>
+            <p>
+              Full cards, filters, and search live down here after the curated
+              shelves.
+            </p>
           </div>
+          <BrowseExplorer
+            reviews={reviews}
+            emptyMessage="Nothing survived this filter pass."
+          />
         </section>
 
         <section className="cinema-panel cinema-panel--newsletter">
@@ -220,24 +183,6 @@ export default async function HomePage(_props: HomePageProps) {
                 alt="Buy Me a Coffee QR code for Snap Critique support"
               />
             </div>
-          </div>
-        </section>
-
-        <section className="cinema-panel cinema-panel--explorer">
-          <div className="cinema-panel__heading cinema-panel__heading--stacked cinema-panel__heading--compact">
-            <h2>DIG THROUGH THE ASH. SORT THE BODIES.</h2>
-          </div>
-          <BrowseExplorer
-            reviews={reviews}
-            emptyMessage="Nothing survived this filter pass."
-          />
-        </section>
-
-        <section className="cinema-panel cinema-panel--latest">
-          <div className="cinema-latest-grid">
-            {latest.map((review) => (
-              <ReviewCard key={review.id} review={review} />
-            ))}
           </div>
         </section>
       </div>

@@ -14,6 +14,15 @@ import { readSiteData, sortReviewsByNewest } from "@/lib/site-data";
 import { Comment, Review, ReviewWithStats } from "@/lib/types";
 import { ratingLabel, verdictTone } from "@/lib/utils";
 
+const HOME_WEEKLY_PICK_CONFIG = [
+  { reviewerName: "Ace", slug: "air-hawks-1935" },
+  { reviewerName: "Mindy", slug: "the-haunted-castle-1897" },
+  {
+    reviewerName: "Leeanna",
+    slug: "escamotage-dune-dame-au-theatre-robert-houdin-1896",
+  },
+] as const;
+
 function hasResolvedPoster(review: Review) {
   return resolvePoster(review).posterStatus !== "missing";
 }
@@ -85,6 +94,144 @@ export async function getPublishedReviewsWithStats() {
   return sortReviewsByNewest(publishedReviews).map((review) =>
     withStats(review, data.likes, data.comments),
   );
+}
+
+export type HomepageWeeklyPick = {
+  reviewerName: "Ace" | "Mindy" | "Leeanna";
+  review: ReviewWithStats;
+  reason: string;
+};
+
+export type HomepageShelfSection = {
+  title: string;
+  viewAllHref: string;
+  reviews: ReviewWithStats[];
+};
+
+export type HomepageShelfBundle = {
+  weeklyPicks: HomepageWeeklyPick[];
+  shelves: HomepageShelfSection[];
+};
+
+function getFirstQuickHitSentence(review: Pick<Review, "quickHit">) {
+  return review.quickHit
+    .split(/[.!?]+/)
+    .map((part) => part.trim())
+    .find(Boolean) ?? "Read the full review.";
+}
+
+function getHomepageShelfSection(
+  reviews: ReviewWithStats[],
+  title: string,
+  viewAllHref: string,
+  predicate: (review: ReviewWithStats) => boolean,
+  limit = 18,
+) {
+  const sectionReviews = reviews.filter(predicate).slice(0, limit);
+
+  if (!sectionReviews.length) {
+    return null;
+  }
+
+  return {
+    title,
+    viewAllHref,
+    reviews: sectionReviews,
+  } satisfies HomepageShelfSection;
+}
+
+function getLatestReviewByReviewer(
+  reviews: ReviewWithStats[],
+  reviewerName: string,
+) {
+  return [...reviews]
+    .filter((review) => review.reviewerName === reviewerName)
+    .sort((left, right) => +new Date(right.createdAt) - +new Date(left.createdAt))[0];
+}
+
+export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
+  const reviews = (await getAllReviewsWithStats()).filter(
+    (review) => review.status === "published" && review.posterStatus === "approved",
+  );
+  const weeklyPicks = HOME_WEEKLY_PICK_CONFIG.map(({ reviewerName, slug }) => {
+    const configuredReview = reviews.find((review) => review.slug === slug);
+    const review = configuredReview ?? getLatestReviewByReviewer(reviews, reviewerName);
+
+    if (!review) {
+      return null;
+    }
+
+    return {
+      reviewerName,
+      review,
+      reason: getFirstQuickHitSentence(review),
+    } satisfies HomepageWeeklyPick;
+  }).filter(Boolean) as HomepageWeeklyPick[];
+
+  const anchoredShelves = [
+    getHomepageShelfSection(
+      reviews,
+      "The Bloody Birth of Horror",
+      "/early-horror",
+      (review) =>
+        review.collection === EARLY_HORROR_COLLECTION &&
+        typeof review.releaseYear === "number" &&
+        review.releaseYear >= EARLY_HORROR_START_YEAR &&
+        review.releaseYear <= EARLY_HORROR_END_YEAR,
+    ),
+    getHomepageShelfSection(
+      reviews,
+      "1970s",
+      "/reviews?decade=1970s#browse-all",
+      (review) =>
+        typeof review.releaseYear === "number" &&
+        review.releaseYear >= 1970 &&
+        review.releaseYear <= 1979,
+    ),
+    getHomepageShelfSection(
+      reviews,
+      "1980s",
+      "/reviews?decade=1980s#browse-all",
+      (review) =>
+        typeof review.releaseYear === "number" &&
+        review.releaseYear >= 1980 &&
+        review.releaseYear <= 1989,
+    ),
+  ].filter((section): section is HomepageShelfSection => Boolean(section));
+
+  const decadeCounts = new Map<string, number>();
+
+  for (const review of reviews) {
+    if (typeof review.releaseYear !== "number" || review.collection === EARLY_HORROR_COLLECTION) {
+      continue;
+    }
+
+    const decade = `${Math.floor(review.releaseYear / 10) * 10}s`;
+    decadeCounts.set(decade, (decadeCounts.get(decade) ?? 0) + 1);
+  }
+
+  const additionalShelves = [...decadeCounts.entries()]
+    .filter(([decade]) => !new Set(["1970s", "1980s"]).has(decade))
+    .filter(([, count]) => count >= 10)
+    .sort((left, right) => right[1] - left[1])
+    .slice(0, 2)
+    .map(([decade]) =>
+      getHomepageShelfSection(
+        reviews,
+        decade,
+        `/reviews?decade=${encodeURIComponent(decade)}#browse-all`,
+        (review) =>
+          typeof review.releaseYear === "number" &&
+          `${Math.floor(review.releaseYear / 10) * 10}s` === decade &&
+          review.collection !== EARLY_HORROR_COLLECTION,
+      ),
+    )
+    .filter((section): section is HomepageShelfSection => Boolean(section));
+
+  return {
+    weeklyPicks,
+    shelves: [...anchoredShelves, ...additionalShelves],
+  };
 }
 
 export async function getAllReviewsWithStats() {

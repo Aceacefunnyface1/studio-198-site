@@ -70,16 +70,10 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <div className="cinema-panel__stage cinema-panel__stage--hero-art">
-            <Image
-              src="/inferno/hero-vault.png"
-              alt="Infernal landscape with demonic figure and burning hot rods"
-              fill
-              priority
-              sizes="(max-width: 980px) 100vw, 58vw"
-              className="cinema-stage__main-image"
-            />
-          </div>
+          <div
+            className="cinema-panel__stage cinema-panel__stage--hero-art"
+            aria-hidden="true"
+          />
         </section>
 
         <section className="cinema-panel cinema-panel--weekly-picks">

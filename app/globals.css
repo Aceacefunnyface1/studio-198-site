@@ -3636,13 +3636,13 @@ textarea {
 }
 
 .cinema-home {
-  --cinema-column-max-width: 860px;
-  --cinema-column-gutter: 1.25rem;
-  --cinema-section-gap: 0.8rem;
-  --cinema-panel-padding: 0.8rem;
-  --cinema-shelf-gap: 0.55rem;
-  --cinema-shelf-poster-width: 95px;
-  --cinema-pick-width: 118px;
+  --cinema-column-max-width: 1200px;
+  --cinema-column-gutter: 0.85rem;
+  --cinema-section-gap: 0.56rem;
+  --cinema-panel-padding: 0.56rem;
+  --cinema-shelf-gap: 0.42rem;
+  --cinema-shelf-poster-width: 78px;
+  --cinema-pick-width: 92px;
   position: relative;
   width: 100%;
   padding: 2rem 0 10rem;
@@ -3696,12 +3696,13 @@ textarea {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: calc(var(--cinema-column-max-width) + (var(--cinema-column-gutter) * 2));
+  max-width: var(--cinema-column-max-width);
   margin: 0 auto;
   padding-inline: var(--cinema-column-gutter);
   box-sizing: border-box;
   display: grid;
   gap: var(--cinema-section-gap);
+  justify-items: center;
 }
 
 .cinema-panel {
@@ -3712,19 +3713,25 @@ textarea {
   box-shadow:
     0 24px 70px rgba(0, 0, 0, 0.56),
     inset 0 1px 0 rgba(255, 220, 180, 0.05);
+  width: 100%;
+  max-width: 860px;
 }
 
 .cinema-panel--hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: 0.75rem;
+  grid-template-columns: minmax(0, 13.5rem) minmax(0, 1fr);
+  gap: 0.5rem;
   padding: var(--cinema-panel-padding);
   margin-top: 0.4rem;
   align-items: center;
 }
 
+.cinema-panel__copy {
+  min-width: 0;
+}
+
 .cinema-home__eyebrow {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.42rem;
 }
 
 .cinema-home__title {
@@ -3732,51 +3739,51 @@ textarea {
   display: grid;
   color: #e8d9ca;
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(2.2rem, 4.8vw, 3.2rem);
+  font-size: clamp(1.55rem, 3.2vw, 2.2rem);
   line-height: 0.84;
   text-transform: uppercase;
 }
 
 .cinema-home__tagline {
-  margin: 0.65rem 0 0;
+  margin: 0.45rem 0 0;
   color: #efae69;
-  font-size: 0.72rem;
+  font-size: 0.6rem;
   font-weight: 800;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
 }
 
 .cinema-home__lede {
-  margin: 0.65rem 0 0;
-  max-width: 16.5rem;
+  margin: 0.45rem 0 0;
+  max-width: 11.5rem;
   color: rgba(240, 226, 210, 0.76);
-  font-size: 0.72rem;
-  line-height: 1.5;
+  font-size: 0.58rem;
+  line-height: 1.38;
 }
 
 .cinema-home__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
+  gap: 0.4rem;
+  margin-top: 0.55rem;
+  max-width: 13.75rem;
 }
 
 .cinema-panel__stage {
   position: relative;
-  min-height: 12.75rem;
+  min-height: 7.8rem;
   overflow: hidden;
   border: 1px solid rgba(255, 136, 59, 0.14);
   background: #140403;
   box-shadow: 0 20px 54px rgba(0, 0, 0, 0.52);
 }
 
-.cinema-stage__main-image {
-  object-fit: cover !important;
-  object-position: center center !important;
-}
-
 .cinema-panel__stage--hero-art {
   aspect-ratio: 998 / 258;
+  background-image: url("/inferno/hero-vault.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .cinema-panel--weekly-picks,
@@ -3790,24 +3797,24 @@ textarea {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.55rem;
+  gap: 0.7rem;
+  margin-bottom: 0.42rem;
 }
 
 .cinema-panel__heading h2 {
   margin: 0;
   color: #e7d6c6;
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(1.12rem, 2.4vw, 1.52rem);
+  font-size: clamp(0.94rem, 1.8vw, 1.2rem);
   line-height: 0.92;
   text-transform: uppercase;
 }
 
 .cinema-panel__heading a {
   color: #efae69;
-  font-size: 0.68rem;
+  font-size: 0.56rem;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
@@ -3828,37 +3835,37 @@ textarea {
 
 .cinema-panel__heading--bloody-birth {
   margin-top: 0.25rem;
-  margin-bottom: 0.78rem;
+  margin-bottom: 0.56rem;
 }
 
 .cinema-panel__heading--bloody-birth h2 {
-  font-size: clamp(1.55rem, 3.6vw, 2.16rem);
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
 }
 
 .cinema-panel__subtitle {
   margin: 0.16rem 0 0;
   color: rgba(240, 226, 210, 0.76);
-  font-size: 0.74rem;
-  line-height: 1.45;
+  font-size: 0.6rem;
+  line-height: 1.35;
 }
 
 .weekly-picks-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.55rem;
+  gap: 0.42rem;
 }
 
 .weekly-pick-feature {
   display: grid;
-  gap: 0.48rem;
+  gap: 0.34rem;
   color: inherit;
   text-decoration: none;
 }
 
 .weekly-pick-feature__media {
   display: grid;
-  grid-template-columns: 60px minmax(0, 80px);
-  gap: 0.4rem;
+  grid-template-columns: 46px minmax(0, 62px);
+  gap: 0.28rem;
   align-items: start;
 }
 
@@ -3876,7 +3883,7 @@ textarea {
 }
 
 .weekly-pick-feature__poster {
-  width: 80px;
+  width: 62px;
   aspect-ratio: 2 / 3;
 }
 
@@ -3887,13 +3894,13 @@ textarea {
 
 .weekly-pick-feature__copy {
   display: grid;
-  gap: 0.16rem;
+  gap: 0.1rem;
 }
 
 .weekly-pick-feature__name {
   margin: 0;
   color: #efae69;
-  font-size: 0.54rem;
+  font-size: 0.46rem;
   font-weight: 800;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -3903,15 +3910,15 @@ textarea {
   margin: 0;
   color: #f1e3d5;
   font-family: var(--font-display), Georgia, serif;
-  font-size: 0.8rem;
+  font-size: 0.62rem;
   line-height: 0.94;
 }
 
 .weekly-pick-feature__hook {
   margin: 0;
   color: rgba(240, 226, 210, 0.74);
-  font-size: 0.63rem;
-  line-height: 1.4;
+  font-size: 0.52rem;
+  line-height: 1.28;
 }
 
 .home-shelf-rail {
@@ -3990,7 +3997,7 @@ textarea {
 .home-shelf-item__meta {
   display: grid;
   gap: 0.12rem;
-  padding-top: 0.3rem;
+  padding-top: 0.22rem;
 }
 
 .home-shelf-item__title,
@@ -4000,14 +4007,14 @@ textarea {
 
 .home-shelf-item__title {
   color: rgba(244, 230, 216, 0.9);
-  font-size: 0.63rem;
+  font-size: 0.54rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.14;
 }
 
 .home-shelf-item__year {
   color: rgba(240, 174, 105, 0.8);
-  font-size: 0.56rem;
+  font-size: 0.48rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -4056,7 +4063,7 @@ textarea {
 .archive-entry-block {
   display: grid;
   justify-items: start;
-  gap: 0.48rem;
+  gap: 0.34rem;
 }
 
 .archive-entry-block h2,
@@ -4067,15 +4074,15 @@ textarea {
 .archive-entry-block h2 {
   color: #f1e3d5;
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(1.28rem, 2.8vw, 1.68rem);
+  font-size: clamp(0.98rem, 1.9vw, 1.26rem);
   line-height: 0.92;
   text-transform: uppercase;
 }
 
 .archive-entry-block p:last-of-type {
   color: rgba(240, 226, 210, 0.76);
-  font-size: 0.74rem;
-  line-height: 1.5;
+  font-size: 0.58rem;
+  line-height: 1.35;
 }
 
 .cinema-panel--poster-match {
@@ -4366,20 +4373,20 @@ textarea {
 
 @media (min-width: 700px) {
   .cinema-home {
-    --cinema-shelf-poster-width: 108px;
-    --cinema-shelf-gap: 0.55rem;
+    --cinema-shelf-poster-width: 84px;
+    --cinema-shelf-gap: 0.45rem;
   }
 
   .home-shelf-item__title {
-    font-size: 0.67rem;
+    font-size: 0.56rem;
   }
 
   .weekly-pick-feature__media {
-    grid-template-columns: 64px minmax(0, 82px);
+    grid-template-columns: 50px minmax(0, 66px);
   }
 
   .weekly-pick-feature__poster {
-    width: 82px;
+    width: 66px;
   }
 }
 

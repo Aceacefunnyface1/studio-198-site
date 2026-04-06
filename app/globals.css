@@ -3636,13 +3636,15 @@ textarea {
 }
 
 .cinema-home {
-  --cinema-column-width: min(860px, calc(100vw - 2.5rem));
+  --cinema-column-max-width: 860px;
+  --cinema-column-gutter: 1.25rem;
   --cinema-section-gap: 0.8rem;
   --cinema-panel-padding: 0.8rem;
   --cinema-shelf-gap: 0.55rem;
   --cinema-shelf-poster-width: 95px;
   --cinema-pick-width: 118px;
   position: relative;
+  width: 100%;
   padding: 2rem 0 10rem;
 }
 
@@ -3693,8 +3695,11 @@ textarea {
 .cinema-home__column {
   position: relative;
   z-index: 1;
-  width: var(--cinema-column-width);
+  width: 100%;
+  max-width: calc(var(--cinema-column-max-width) + (var(--cinema-column-gutter) * 2));
   margin: 0 auto;
+  padding-inline: var(--cinema-column-gutter);
+  box-sizing: border-box;
   display: grid;
   gap: var(--cinema-section-gap);
 }
@@ -4294,11 +4299,11 @@ textarea {
 
 @media (max-width: 640px) {
   .cinema-home {
+    --cinema-column-gutter: 0.5rem;
     padding-top: 1rem;
   }
 
   .cinema-home__column {
-    width: min(100vw - 1rem, var(--cinema-column-width));
     gap: var(--cinema-section-gap);
   }
 

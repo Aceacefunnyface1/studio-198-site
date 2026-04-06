@@ -15,11 +15,20 @@ import { Comment, Review, ReviewWithStats } from "@/lib/types";
 import { ratingLabel, verdictTone } from "@/lib/utils";
 
 const HOME_WEEKLY_PICK_CONFIG = [
-  { reviewerName: "Ace", slug: "air-hawks-1935" },
-  { reviewerName: "Mindy", slug: "the-haunted-castle-1897" },
+  {
+    reviewerName: "Ace",
+    slug: "final-destination-bloodlines-2025",
+    hook: "Ace says this week needs a clean hit of chaos, payoff, and crowd-pleasing damage.",
+  },
+  {
+    reviewerName: "Mindy",
+    slug: "rosemary-s-baby-1968",
+    hook: "Mindy is pointing straight at dread this week: elegant, intimate, and still deeply upsetting.",
+  },
   {
     reviewerName: "Leeanna",
-    slug: "escamotage-dune-dame-au-theatre-robert-houdin-1896",
+    slug: "the-wailing-2016",
+    hook: "Leeanna's pick this week is all control and escalation, the kind that keeps getting meaner the longer it sits.",
   },
 ] as const;
 
@@ -153,7 +162,7 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
   const reviews = (await getAllReviewsWithStats()).filter(
     (review) => review.status === "published" && review.posterStatus === "approved",
   );
-  const weeklyPicks = HOME_WEEKLY_PICK_CONFIG.map(({ reviewerName, slug }) => {
+  const weeklyPicks = HOME_WEEKLY_PICK_CONFIG.map(({ reviewerName, slug, hook }) => {
     const configuredReview = reviews.find((review) => review.slug === slug);
     const review = configuredReview ?? getLatestReviewByReviewer(reviews, reviewerName);
 
@@ -164,7 +173,7 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
     return {
       reviewerName,
       review,
-      reason: getFirstQuickHitSentence(review),
+      reason: hook || getFirstQuickHitSentence(review),
     } satisfies HomepageWeeklyPick;
   }).filter(Boolean) as HomepageWeeklyPick[];
 
@@ -197,40 +206,29 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
         review.releaseYear >= 1980 &&
         review.releaseYear <= 1989,
     ),
+    getHomepageShelfSection(
+      reviews,
+      "2020s",
+      "/reviews?decade=2020s#browse-all",
+      (review) =>
+        typeof review.releaseYear === "number" &&
+        review.releaseYear >= 2020 &&
+        review.releaseYear <= 2029,
+    ),
+    getHomepageShelfSection(
+      reviews,
+      "2010s",
+      "/reviews?decade=2010s#browse-all",
+      (review) =>
+        typeof review.releaseYear === "number" &&
+        review.releaseYear >= 2010 &&
+        review.releaseYear <= 2019,
+    ),
   ].filter((section): section is HomepageShelfSection => Boolean(section));
-
-  const decadeCounts = new Map<string, number>();
-
-  for (const review of reviews) {
-    if (typeof review.releaseYear !== "number" || review.collection === EARLY_HORROR_COLLECTION) {
-      continue;
-    }
-
-    const decade = `${Math.floor(review.releaseYear / 10) * 10}s`;
-    decadeCounts.set(decade, (decadeCounts.get(decade) ?? 0) + 1);
-  }
-
-  const additionalShelves = [...decadeCounts.entries()]
-    .filter(([decade]) => !new Set(["1970s", "1980s"]).has(decade))
-    .filter(([, count]) => count >= 10)
-    .sort((left, right) => right[1] - left[1])
-    .slice(0, 2)
-    .map(([decade]) =>
-      getHomepageShelfSection(
-        reviews,
-        decade,
-        `/reviews?decade=${encodeURIComponent(decade)}#browse-all`,
-        (review) =>
-          typeof review.releaseYear === "number" &&
-          `${Math.floor(review.releaseYear / 10) * 10}s` === decade &&
-          review.collection !== EARLY_HORROR_COLLECTION,
-      ),
-    )
-    .filter((section): section is HomepageShelfSection => Boolean(section));
 
   return {
     weeklyPicks,
-    shelves: [...anchoredShelves, ...additionalShelves],
+    shelves: anchoredShelves,
   };
 }
 

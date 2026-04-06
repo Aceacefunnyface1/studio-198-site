@@ -33,13 +33,28 @@ export function SiteHeader() {
           </div>
         </Link>
 
-        <nav className="header-nav" aria-label="Primary">
-          {navItems.map((item) => (
-            <Link key={item.href} href={item.href}>
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="site-header__utility">
+          <form action="/reviews" method="get" className="header-search" role="search">
+            <label htmlFor="header-search" className="sr-only">
+              Search reviews
+            </label>
+            <input
+              id="header-search"
+              name="search"
+              type="search"
+              placeholder="Search titles"
+            />
+            <button type="submit">Search</button>
+          </form>
+
+          <nav className="header-nav" aria-label="Primary">
+            {navItems.map((item) => (
+              <Link key={item.href} href={item.href}>
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </div>
     </header>
   );

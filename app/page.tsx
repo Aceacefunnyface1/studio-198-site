@@ -54,6 +54,28 @@ export default async function HomePage() {
               dragged straight into it.
             </p>
 
+            <form
+              action="/reviews"
+              method="get"
+              className="cinema-home__search"
+              role="search"
+            >
+              <label htmlFor="home-search" className="sr-only">
+                Search the archive
+              </label>
+              <div className="cinema-home__search-row">
+                <input
+                  id="home-search"
+                  name="search"
+                  type="search"
+                  placeholder="Search movie title or review video"
+                />
+                <button type="submit" className="button-primary">
+                  Search
+                </button>
+              </div>
+            </form>
+
             <div className="cinema-home__actions">
               <Link href={POSTER_MATCH_ROUTE} className="button-primary">
                 Play Poster Match

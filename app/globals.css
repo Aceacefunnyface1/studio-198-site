@@ -5710,3 +5710,125 @@ textarea {
     font-size: clamp(1rem, 2.8vw, 1.45rem);
   }
 }
+
+.cinema-panel--hero-vault {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.hero-vault-card {
+  position: relative;
+  background: #180404;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.hero-vault-card__top-bar {
+  height: 18px;
+  background: #020202;
+}
+
+.hero-vault-card__media {
+  position: relative;
+  margin: 0;
+  min-height: clamp(20rem, 41vw, 30rem);
+  background: #1a0505;
+  overflow: hidden;
+}
+
+.hero-vault-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-vault-card__buttons {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: -1rem 0 0;
+  padding: 0 0.9rem;
+}
+
+.hero-vault-card__button {
+  position: relative;
+  display: block;
+  width: min(100%, 27rem);
+  text-decoration: none;
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.hero-vault-card__button:hover,
+.hero-vault-card__button:focus-visible {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.hero-vault-card__button img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-vault-card__button span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 17%;
+  color: #f7efe1;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1rem, 1vw + 0.7rem, 1.65rem);
+  letter-spacing: 0.02em;
+  line-height: 1.02;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.9),
+    0 0 14px rgba(0, 0, 0, 0.72);
+}
+
+.hero-vault-card__fire {
+  position: relative;
+  margin-top: -0.5rem;
+  padding: 0 0.9rem;
+}
+
+.hero-vault-card__fire img {
+  width: 100%;
+  height: clamp(78px, 8vw, 110px);
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .hero-vault-card__media {
+    min-height: clamp(14rem, 62vw, 24rem);
+  }
+
+  .hero-vault-card__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: -0.35rem;
+    padding: 0 0.5rem;
+  }
+
+  .hero-vault-card__button {
+    width: min(100%, 520px);
+  }
+
+  .hero-vault-card__button span {
+    padding: 0 19%;
+    font-size: clamp(1rem, 2.8vw, 1.45rem);
+  }
+
+  .hero-vault-card__fire {
+    padding: 0 0.5rem;
+  }
+}

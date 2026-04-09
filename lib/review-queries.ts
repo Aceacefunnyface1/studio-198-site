@@ -144,8 +144,7 @@ export type HomepageShelfSection = {
 };
 
 export type HomepageShelfBundle = {
-  quentinTarantinoCollection: HomepageShelfSection | null;
-  robZombieCollection: HomepageShelfSection | null;
+  collectionSections: HomepageShelfSection[];
   weeklyPicks: HomepageWeeklyPick[];
   shelves: HomepageShelfSection[];
 };
@@ -199,6 +198,26 @@ function getOrderedHomepageShelfSection(
   } satisfies HomepageShelfSection;
 }
 
+function getChronologicalHomepageShelfSection(
+  reviews: ReviewWithStats[],
+  title: string,
+  viewAllHref: string,
+  predicate: (review: ReviewWithStats) => boolean,
+  limit = 18,
+) {
+  const sectionReviews = sortReviewsChronologically(reviews.filter(predicate)).slice(0, limit);
+
+  if (!sectionReviews.length) {
+    return null;
+  }
+
+  return {
+    title,
+    viewAllHref,
+    reviews: sectionReviews,
+  } satisfies HomepageShelfSection;
+}
+
 function getLatestReviewByReviewer(
   reviews: ReviewWithStats[],
   reviewerName: string,
@@ -212,18 +231,36 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
   const reviews = (await getAllReviewsWithStats()).filter(
     (review) => review.status === "published" && review.posterStatus === "approved",
   );
-  const quentinTarantinoCollection = getOrderedHomepageShelfSection(
+  const collectionSections = [
+    getOrderedHomepageShelfSection(
     reviews,
     "Quentin Tarantino Collection",
     "/reviews?search=Quentin%20Tarantino#browse-all",
     QUENTIN_TARANTINO_COLLECTION_ORDER,
-  );
-  const robZombieCollection = getOrderedHomepageShelfSection(
+    ),
+    getOrderedHomepageShelfSection(
     reviews,
     "Rob Zombie Collection",
     "/reviews?search=Rob%20Zombie#browse-all",
     ROB_ZOMBIE_COLLECTION_ORDER,
-  );
+    ),
+    getChronologicalHomepageShelfSection(
+      reviews,
+      "Alfred Hitchcock Collection",
+      "/reviews?search=Alfred%20Hitchcock#browse-all",
+      (review) =>
+        review.collection === "Alfred Hitchcock Collection" ||
+        review.director === "Alfred Hitchcock",
+    ),
+    getChronologicalHomepageShelfSection(
+      reviews,
+      "Brian De Palma Collection",
+      "/reviews?search=Brian%20De%20Palma#browse-all",
+      (review) =>
+        review.collection === "Brian De Palma Collection" ||
+        review.director === "Brian De Palma",
+    ),
+  ].filter((section): section is HomepageShelfSection => Boolean(section));
   const weeklyPicks = HOME_WEEKLY_PICK_CONFIG.map(({ reviewerName, slug, hook }) => {
     const configuredReview = reviews.find((review) => review.slug === slug);
     const review = configuredReview ?? getLatestReviewByReviewer(reviews, reviewerName);
@@ -289,8 +326,7 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
   ].filter((section): section is HomepageShelfSection => Boolean(section));
 
   return {
-    quentinTarantinoCollection,
-    robZombieCollection,
+    collectionSections,
     weeklyPicks,
     shelves: anchoredShelves,
   };

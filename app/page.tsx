@@ -23,10 +23,14 @@ const TARANTINO_FALLBACK_HREF = "/reviews?search=Quentin%20Tarantino#browse-all"
 
 export default async function HomePage() {
   const homepageShelves = await getHomepageShelfBundle();
+  const collectionSectionByTitle = new Map(
+    homepageShelves.collectionSections.map((section) => [section.title, section]),
+  );
   const robZombieHref =
-    homepageShelves.robZombieCollection?.viewAllHref ?? ROB_ZOMBIE_FALLBACK_HREF;
+    collectionSectionByTitle.get("Rob Zombie Collection")?.viewAllHref ??
+    ROB_ZOMBIE_FALLBACK_HREF;
   const tarantinoHref =
-    homepageShelves.quentinTarantinoCollection?.viewAllHref ??
+    collectionSectionByTitle.get("Quentin Tarantino Collection")?.viewAllHref ??
     TARANTINO_FALLBACK_HREF;
 
   return (
@@ -137,43 +141,33 @@ export default async function HomePage() {
           </section>
         ))}
 
-        {homepageShelves.quentinTarantinoCollection ? (
-          <section className="cinema-panel cinema-panel--shelf">
-            <div className="cinema-panel__heading">
-              <div>
-                <h2>{homepageShelves.quentinTarantinoCollection.title}</h2>
-                <p className="cinema-panel__subtitle">
-                  Full reviews, posters, and comments in the exact order you set.
-                </p>
-              </div>
-              <Link href={homepageShelves.quentinTarantinoCollection.viewAllHref}>
-                View All
-              </Link>
-            </div>
-            <PosterShelfRow
-              ariaLabel={homepageShelves.quentinTarantinoCollection.title}
-              reviews={homepageShelves.quentinTarantinoCollection.reviews}
-            />
-          </section>
-        ) : null}
+        {homepageShelves.collectionSections.map((section) => {
+          const subtitle =
+            section.title === "Quentin Tarantino Collection"
+              ? "Full reviews, posters, and comments in the exact order you set."
+              : section.title === "Rob Zombie Collection"
+                ? "Every Rob Zombie title in one place."
+                : section.title === "Alfred Hitchcock Collection"
+                  ? "The Hitchcock run, lined up in chronological order."
+                  : section.title === "Brian De Palma Collection"
+                    ? "The De Palma run, lined up in chronological order."
+                    : "";
 
-        {homepageShelves.robZombieCollection ? (
-          <section className="cinema-panel cinema-panel--shelf">
-            <div className="cinema-panel__heading">
-              <div>
-                <h2>{homepageShelves.robZombieCollection.title}</h2>
-                <p className="cinema-panel__subtitle">
-                  Every Rob Zombie title in one place.
-                </p>
+          return (
+            <section key={section.title} className="cinema-panel cinema-panel--shelf">
+              <div className="cinema-panel__heading">
+                <div>
+                  <h2>{section.title}</h2>
+                  {subtitle ? (
+                    <p className="cinema-panel__subtitle">{subtitle}</p>
+                  ) : null}
+                </div>
+                <Link href={section.viewAllHref}>View All</Link>
               </div>
-              <Link href={homepageShelves.robZombieCollection.viewAllHref}>View All</Link>
-            </div>
-            <PosterShelfRow
-              ariaLabel={homepageShelves.robZombieCollection.title}
-              reviews={homepageShelves.robZombieCollection.reviews}
-            />
-          </section>
-        ) : null}
+              <PosterShelfRow ariaLabel={section.title} reviews={section.reviews} />
+            </section>
+          );
+        })}
 
         <section className="cinema-panel cinema-panel--archive-entry">
           <div className="archive-entry-block">

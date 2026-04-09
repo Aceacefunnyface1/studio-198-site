@@ -53,6 +53,37 @@ function getCandidateValues(context: AmazonReviewContext) {
   ];
 }
 
+function getNormalizedAmazonDirectUrl(value: string | null | undefined) {
+  const input = (value || "").trim();
+
+  if (!input) {
+    return "";
+  }
+
+  try {
+    const parsed = new URL(input);
+    const hostname = parsed.hostname.toLowerCase();
+
+    if (!["http:", "https:"].includes(parsed.protocol)) {
+      return "";
+    }
+
+    if (
+      hostname === "amzn.to" ||
+      hostname === AMAZON_HOST ||
+      hostname.endsWith(".amazon.com") ||
+      hostname.endsWith(".amazon.co.uk") ||
+      hostname.endsWith(".amazon.ca")
+    ) {
+      return parsed.toString();
+    }
+  } catch {
+    // Ignore malformed values and fall through to empty.
+  }
+
+  return "";
+}
+
 export function extractAsin(value: string | null | undefined) {
   const direct = normalizeAsin(value);
 
@@ -157,6 +188,16 @@ export function buildAmazonSearchLink(
 
 function getSafeAmazonLinkFromContext(context: AmazonReviewContext): SafeAmazonLink {
   for (const candidate of getCandidateValues(context)) {
+    const directUrl = getNormalizedAmazonDirectUrl(candidate);
+
+    if (directUrl) {
+      return {
+        url: directUrl,
+        type: "dp",
+        asin: extractAsin(directUrl) || null,
+      };
+    }
+
     const asin = extractAsin(candidate);
 
     if (asin) {
@@ -197,5 +238,6 @@ export function normalizeAmazonAffiliateUrl(
 }
 
 export function getAmazonCtaLabel(type: AmazonLinkType) {
-  return type === "dp" ? "WATCH NOW ON AMAZON →" : "FIND IT ON AMAZON →";
+  void type;
+  return "WATCH ON AMAZON →";
 }

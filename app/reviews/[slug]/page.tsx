@@ -113,6 +113,9 @@ export default async function ReviewDetailPage({
 
             <WatchThisMovie
               url={review.amazonAffiliateUrl}
+              movieTitle={review.movieTitle}
+              releaseYear={review.releaseYear}
+              director={review.director}
               className="detail-watch-this-movie"
             />
 

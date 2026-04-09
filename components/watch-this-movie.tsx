@@ -1,15 +1,28 @@
+import { getAmazonCtaLabel, getSafeAmazonLink } from "@/lib/amazon-links";
+
 type WatchThisMovieProps = {
   url?: string | null;
+  movieTitle?: string | null;
+  releaseYear?: number | null;
+  director?: string | null;
   className?: string;
   compact?: boolean;
 };
 
 export function WatchThisMovie({
   url,
+  movieTitle,
+  releaseYear,
+  director,
   className = "",
   compact = false,
 }: WatchThisMovieProps) {
-  const href = url?.trim() || "";
+  const safeAmazonLink = getSafeAmazonLink(url, {
+    movieTitle,
+    releaseYear,
+    director,
+  });
+  const href = safeAmazonLink.url.trim();
 
   try {
     const parsedUrl = new URL(href);
@@ -35,7 +48,7 @@ export function WatchThisMovie({
         rel="noreferrer"
         className="button-primary watch-this-movie-button"
       >
-        Watch / Buy on Amazon
+        {getAmazonCtaLabel(safeAmazonLink.type)}
       </a>
     </section>
   );

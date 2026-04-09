@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ReviewCardControls } from "@/components/review-card-controls";
+import { getSafeAmazonLink } from "@/lib/amazon-links";
 import { ReviewWithStats } from "@/lib/types";
 import { getRatingVisual, getReviewerPresentation } from "@/lib/utils";
 
@@ -10,7 +11,11 @@ type ReviewCardProps = {
 
 export function ReviewCard({ review }: ReviewCardProps) {
   const ratingVisual = getRatingVisual(review.rating);
-  const amazonHref = review.amazonAffiliateUrl?.trim() || "";
+  const safeAmazonLink = getSafeAmazonLink(review.amazonAffiliateUrl, {
+    movieTitle: review.movieTitle,
+    releaseYear: review.releaseYear,
+    director: review.director,
+  });
   const tagLine = review.genreTags.slice(0, 3).join(" / ");
   const directorName = review.director?.trim() || "Unknown";
   const directorPrefix = directorName.length > 16 ? "BY" : "DIRECTED BY";
@@ -63,7 +68,8 @@ export function ReviewCard({ review }: ReviewCardProps) {
           reviewId={review.id}
           reviewSlug={review.slug}
           reviewTitle={review.movieTitle}
-          amazonHref={amazonHref}
+          amazonHref={safeAmazonLink.url}
+          amazonLinkType={safeAmazonLink.type}
           heatCount={review.heatCount}
           commentCount={commentCount}
         />

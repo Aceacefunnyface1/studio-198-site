@@ -3,12 +3,14 @@
 import Link from "next/link";
 import { useActionState } from "react";
 import { submitHeatVoteAction, type HeatVoteActionState } from "@/app/actions";
+import { getAmazonCtaLabel, type AmazonLinkType } from "@/lib/amazon-links";
 
 type ReviewCardControlsProps = {
   reviewId: string;
   reviewSlug: string;
   reviewTitle: string;
   amazonHref: string;
+  amazonLinkType: AmazonLinkType;
   heatCount: number;
   commentCount: number;
 };
@@ -26,6 +28,7 @@ export function ReviewCardControls({
   reviewSlug,
   reviewTitle,
   amazonHref,
+  amazonLinkType,
   heatCount,
   commentCount,
 }: ReviewCardControlsProps) {
@@ -88,8 +91,7 @@ export function ReviewCardControls({
         >
           <span className="movie-review-card__action-eyebrow">Stream</span>
           <div className="movie-review-card__action-main movie-review-card__action-main--stacked">
-            <strong>WATCH ON</strong>
-            <em>AMAZON</em>
+            <strong>{getAmazonCtaLabel(amazonLinkType)}</strong>
           </div>
         </a>
 

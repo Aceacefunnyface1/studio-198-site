@@ -8,7 +8,7 @@ type RatingVisual = {
 
 type ReviewerPresentation = {
   label: string;
-  tone: "ace" | "mandy" | "leeanna";
+  tone: "ace" | "mindy" | "leeanna";
 };
 
 export function slugify(value: string) {
@@ -87,7 +87,7 @@ export function getReviewerPresentation(
   if (normalized.includes("MINDY") || normalized.includes("MANDY")) {
     return {
       label: 'INSTINCT "MINDY"',
-      tone: "mandy",
+      tone: "mindy",
     };
   }
 

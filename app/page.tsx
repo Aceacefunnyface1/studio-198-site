@@ -9,7 +9,7 @@ const reviewerPortraits = {
     alt: "Ace portrait",
   },
   Mindy: {
-    image: "/about/mandy.jpg",
+    image: "/about/mindy.jpg",
     alt: "Mindy portrait",
   },
   Leeanna: {

@@ -32,7 +32,7 @@ type ArchiveSection = {
 type ReviewerPick = {
   review: ReviewWithStats;
   reviewerName: string;
-  tone: "ace" | "mandy" | "leeanna";
+  tone: "ace" | "mindy" | "leeanna";
   reason: string;
 };
 

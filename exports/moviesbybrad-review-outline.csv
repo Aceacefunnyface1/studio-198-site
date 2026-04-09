@@ -1,0 +1,87 @@
+Section,Item,Notes
+Rating Scale,Use one consistent scale,Recommended: 1-10 with halves or 1-5 stars
+Rating Scale,Use one consistent label,Examples: Rating; Verdict; Quick Take
+Required Review Fields,Movie title,Required
+Required Review Fields,Release year,Required
+Required Review Fields,Poster or image,Required
+Required Review Fields,Rating,Required
+Required Review Fields,Review headline,Required
+Required Review Fields,Short summary,Required
+Required Review Fields,Full review body,Required
+Required Review Fields,Genre,Required
+Required Review Fields,Director,Required
+Required Review Fields,Runtime,Required
+Required Review Fields,Where watched,Required
+Required Review Fields,Watch date,Required
+Required Review Fields,Publish date,Required
+Required Review Fields,Author name,Required
+Nice-to-Have Fields,Cast,Optional
+Nice-to-Have Fields,Streaming or platform info,Optional
+Nice-to-Have Fields,Franchise or series tag,Optional
+Nice-to-Have Fields,Decade tag,Optional
+Nice-to-Have Fields,Collection tag,Optional
+Nice-to-Have Fields,Content warning,Optional
+Nice-to-Have Fields,Favorite scene,Optional
+Nice-to-Have Fields,Rewatch value,Optional
+Nice-to-Have Fields,Audience recommendation,Skip; Worth a watch; Recommended; Must watch
+Review Structure,Opening quick verdict,Recommended section
+Review Structure,What works,Recommended section
+Review Structure,What does not work,Recommended section
+Review Structure,Performances,Recommended section
+Review Structure,Direction or style,Recommended section
+Review Structure,Story or pacing,Recommended section
+Review Structure,Final rating,Recommended section
+Review Structure,Final recommendation,Recommended section
+Rating Display Rules,Show score at top of review,Required display rule
+Rating Display Rules,Show score in cards and grids,Required display rule
+Rating Display Rules,Keep score format identical,Required display rule
+Rating Display Rules,Use same label everywhere,Required display rule
+Posting Workflow,Create review draft,Step 1
+Posting Workflow,Add movie details,Step 2
+Posting Workflow,Add poster or image,Step 3
+Posting Workflow,Add rating,Step 4
+Posting Workflow,Add short summary,Step 5
+Posting Workflow,Add full review,Step 6
+Posting Workflow,Add tags and categories,Step 7
+Posting Workflow,Preview page,Step 8
+Posting Workflow,Publish,Step 9
+Categories and Taxonomy,Year,Category
+Categories and Taxonomy,Decade,Category
+Categories and Taxonomy,Genre,Category
+Categories and Taxonomy,Director,Category
+Categories and Taxonomy,Franchise,Category
+Categories and Taxonomy,Collection,Category
+Categories and Taxonomy,Horror,Special feature tag
+Categories and Taxonomy,Cult,Special feature tag
+Categories and Taxonomy,Classic,Special feature tag
+Categories and Taxonomy,Rewatch,Special feature tag
+Categories and Taxonomy,Hidden gem,Special feature tag
+Homepage and Archive Needs,Featured latest review,Homepage/archive requirement
+Homepage and Archive Needs,Recent reviews shelf,Homepage/archive requirement
+Homepage and Archive Needs,Highest rated shelf,Homepage/archive requirement
+Homepage and Archive Needs,Lowest rated shelf,Homepage/archive requirement
+Homepage and Archive Needs,Browse by year,Homepage/archive requirement
+Homepage and Archive Needs,Browse by collection,Homepage/archive requirement
+Homepage and Archive Needs,Search by title,Homepage/archive requirement
+Review Card Needs,Poster,Card field
+Review Card Needs,Title,Card field
+Review Card Needs,Year,Card field
+Review Card Needs,Rating,Card field
+Review Card Needs,One-line summary,Card field
+Review Card Needs,Link to full review,Card field
+Admin and Editor Needs,Draft or published status,Admin field
+Admin and Editor Needs,Edit review,Admin action
+Admin and Editor Needs,Replace poster,Admin action
+Admin and Editor Needs,Change rating,Admin action
+Admin and Editor Needs,Schedule publish date,Admin action
+Admin and Editor Needs,Delete or unpublish,Admin action
+Admin and Editor Needs,Filter by rating year and collection,Admin filter
+SEO and Sharing Needs,Review title,SEO field
+SEO and Sharing Needs,Meta description,SEO field
+SEO and Sharing Needs,Open Graph image,SEO field
+SEO and Sharing Needs,Canonical URL,SEO field
+SEO and Sharing Needs,Structured review data,Optional for search visibility
+Consistency Rules,One rating system only,Consistency rule
+Consistency Rules,One review template only,Consistency rule
+Consistency Rules,Same field order every time,Consistency rule
+Consistency Rules,Same category naming every time,Consistency rule

@@ -151,6 +151,10 @@ export default async function HomePage() {
                   ? "The Hitchcock run, lined up in chronological order."
                   : section.title === "Brian De Palma Collection"
                     ? "The De Palma run, lined up in chronological order."
+                    : section.title === "John Carpenter Collection"
+                      ? "The Carpenter run, lined up in chronological order."
+                      : section.title === "David Fincher Collection"
+                        ? "The Fincher run, lined up in chronological order."
                     : "";
 
           return (

@@ -233,16 +233,16 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
   );
   const collectionSections = [
     getOrderedHomepageShelfSection(
-    reviews,
-    "Quentin Tarantino Collection",
-    "/reviews?search=Quentin%20Tarantino#browse-all",
-    QUENTIN_TARANTINO_COLLECTION_ORDER,
+      reviews,
+      "Quentin Tarantino Collection",
+      "/reviews?search=Quentin%20Tarantino#browse-all",
+      QUENTIN_TARANTINO_COLLECTION_ORDER,
     ),
     getOrderedHomepageShelfSection(
-    reviews,
-    "Rob Zombie Collection",
-    "/reviews?search=Rob%20Zombie#browse-all",
-    ROB_ZOMBIE_COLLECTION_ORDER,
+      reviews,
+      "Rob Zombie Collection",
+      "/reviews?search=Rob%20Zombie#browse-all",
+      ROB_ZOMBIE_COLLECTION_ORDER,
     ),
     getChronologicalHomepageShelfSection(
       reviews,
@@ -259,6 +259,22 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
       (review) =>
         review.collection === "Brian De Palma Collection" ||
         review.director === "Brian De Palma",
+    ),
+    getChronologicalHomepageShelfSection(
+      reviews,
+      "John Carpenter Collection",
+      "/reviews?search=John%20Carpenter#browse-all",
+      (review) =>
+        review.collection === "John Carpenter Collection" ||
+        review.director === "John Carpenter",
+    ),
+    getChronologicalHomepageShelfSection(
+      reviews,
+      "David Fincher Collection",
+      "/reviews?search=David%20Fincher#browse-all",
+      (review) =>
+        review.collection === "David Fincher Collection" ||
+        review.director === "David Fincher",
     ),
   ].filter((section): section is HomepageShelfSection => Boolean(section));
   const weeklyPicks = HOME_WEEKLY_PICK_CONFIG.map(({ reviewerName, slug, hook }) => {

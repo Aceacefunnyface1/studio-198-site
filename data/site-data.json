@@ -617,34 +617,33 @@
       "movieTitle": "Christine",
       "slug": "christine-1983",
       "releaseYear": 1983,
-      "posterImage": "/posters/imported/christine-1983.jpeg",
+      "posterImage": "/posters/manual/john-carpenter/christine.jpg",
       "backdropImage": "",
       "verdict": "👀",
-      "rating": 3.9,
-      "reviewerName": "Leeanna",
-      "quickHit": "Christine unfolds like a supernatural dread machine—slick, mean, and never wastes a scare.",
-      "fullTake": "Christine leans hard into supernatural horror energy, and John Carpenter keeps the tone slick without letting the movie drift. It knows its lane and drives straight into the dark with style, control, and just enough mean streak. It may not be for everybody, but it definitely has teeth.",
+      "rating": 4.0,
+      "reviewerName": "Ace",
+      "quickHit": "Killer car energy.",
+      "fullTake": "Simple premise elevated by mood and execution.",
       "reviewVideoUrl": "",
       "whereToWatchUrl": "",
       "createdAt": "2026-03-25T00:00:00.000Z",
-      "updatedAt": "2026-03-25T00:00:00.000Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
       "featured": false,
       "genreTags": [
-        "Supernatural Horror",
-        "Possession Horror",
-        "Teen Horror",
-        "Classic"
+        "horror",
+        "supernatural"
       ],
       "moodTags": [
-        "Slick",
-        "Mean",
-        "Cool",
-        "Possessive"
+        "dark",
+        "stylish",
+        "possessive",
+        "slow"
       ],
       "runtime": "110 min",
       "director": "John Carpenter",
       "status": "published",
-      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Christine+1983&tag=moviesbybrad2-20"
+      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Christine+1983&tag=moviesbybrad2-20",
+      "collection": "John Carpenter Collection"
     },
     {
       "id": "imported-project-hail-mary",
@@ -2388,35 +2387,34 @@
       "movieTitle": "The Thing",
       "slug": "the-thing",
       "releaseYear": 1982,
-      "posterImage": "/posters/80s-option-b/the-thing.jpg",
+      "posterImage": "/posters/manual/john-carpenter/the-thing.jpg",
       "backdropImage": "",
-      "verdict": "👀",
-      "rating": 3.8,
+      "verdict": "🔥",
+      "rating": 5.0,
       "reviewerName": "Ace",
-      "quickHit": "In remote Antarctica, a group of American research scientists are disturbed at their...",
-      "fullTake": "Grimmer and more terrifying than the 1950s take, John Carpenter's The Thing is a tense sci-fi thriller rife with compelling tension and some remarkable make-up eoects. In remote Antarctica, a group of American research scientists are disturbed at their base camp by a helicopter shooting at a sled dog. Ace verdict: not flawless, but...",
+      "quickHit": "Trust no one.",
+      "fullTake": "Masterclass in tension, effects, and psychological horror.",
       "reviewVideoUrl": "",
       "whereToWatchUrl": "",
       "createdAt": "2026-03-24T00:29:14.773471+00:00",
-      "updatedAt": "2026-04-04T05:52:29.508414+00:00",
+      "updatedAt": "2026-04-09T17:28:32Z",
       "featured": false,
       "genreTags": [
-        "Crime",
-        "Thriller",
-        "Sci-Fi",
-        "Drama"
+        "horror",
+        "sci-fi"
       ],
       "moodTags": [
-        "Dark",
-        "Tense",
-        "Stylish",
-        "Raw"
+        "paranoid",
+        "isolated",
+        "brutal",
+        "iconic"
       ],
       "runtime": "",
       "director": "John Carpenter",
       "status": "published",
       "imdbTop250Rank": 148,
-      "amazonAffiliateUrl": "https://www.amazon.com/s?k=The+Thing+1982&tag=moviesbybrad2-20"
+      "amazonAffiliateUrl": "https://www.amazon.com/s?k=The+Thing+1982&tag=moviesbybrad2-20",
+      "collection": "John Carpenter Collection"
     },
     {
       "id": "imported-top-gun-maverick",
@@ -3876,27 +3874,35 @@
       "movieTitle": "Gone Girl",
       "slug": "gone-girl",
       "releaseYear": 2014,
-      "posterImage": "",
+      "posterImage": "/posters/manual/david-fincher/gone-girl.jpg",
       "backdropImage": "",
       "verdict": "🔥",
-      "rating": 3.7,
+      "rating": 4.7,
       "reviewerName": "Ace",
-      "quickHit": "Petty, poisonous, and absolutely locked in.",
-      "fullTake": "This is the kind of thriller that stays fun because everybody is awful and the movie knows it. Sharp, nasty, and never boring.",
+      "quickHit": "Marriage as crime scene.",
+      "fullTake": "Pure poison in designer packaging. Fincher turns suburban image-management into horror, then smiles while the whole thing curdles.",
       "reviewVideoUrl": "",
       "whereToWatchUrl": "",
       "createdAt": "2026-03-24T00:29:14.773471+00:00",
-      "updatedAt": "2026-03-24T00:29:14.773471+00:00",
+      "updatedAt": "2026-04-09T17:28:32Z",
       "featured": false,
       "genreTags": [
-        "Imported"
+        "thriller",
+        "mystery",
+        "satire"
       ],
-      "moodTags": [],
+      "moodTags": [
+        "venomous",
+        "glossy",
+        "twisted",
+        "calculating"
+      ],
       "runtime": "",
       "director": "David Fincher",
       "status": "published",
       "imdbTop250Rank": 201,
-      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Gone+Girl+2014&tag=moviesbybrad2-20"
+      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Gone+Girl+2014&tag=moviesbybrad2-20",
+      "collection": "David Fincher Collection"
     },
     {
       "id": "imported-monsters-inc",
@@ -7553,34 +7559,33 @@
       "movieTitle": "In the Mouth of Madness",
       "slug": "in-the-mouth-of-madness-1994",
       "releaseYear": 1994,
-      "posterImage": "/posters/imported/in-the-mouth-of-madness-1994.jpg",
+      "posterImage": "/posters/manual/john-carpenter/in-the-mouth-of-madness.jpg",
       "backdropImage": "",
       "verdict": "🔥",
-      "rating": 4.3,
+      "rating": 4.6,
       "reviewerName": "Ace",
-      "quickHit": "In the Mouth of Madness hits like a head-trip horror piece—paranoid, surreal, and leaves a bad taste on purpose.",
-      "fullTake": "In the Mouth of Madness leans hard into psychological horror energy, and John Carpenter keeps the tone paranoid without letting the movie drift. It knows its lane and drives straight into the dark with style, control, and just enough mean streak. Not flawless, but the swing is worth it.",
+      "quickHit": "Reality breaks.",
+      "fullTake": "Lovecraftian horror done with full madness.",
       "reviewVideoUrl": "",
       "whereToWatchUrl": "",
       "createdAt": "2026-03-25T08:33:50Z",
-      "updatedAt": "2026-03-25T08:33:50Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
       "featured": false,
       "genreTags": [
-        "Psychological Horror",
-        "Cosmic Horror",
-        "Mystery",
-        "Cult"
+        "horror",
+        "cosmic"
       ],
       "moodTags": [
-        "Paranoid",
-        "Surreal",
-        "Apocalyptic",
-        "Unsettling"
+        "insane",
+        "meta",
+        "chaotic",
+        "nightmare"
       ],
       "runtime": "95 min",
       "director": "John Carpenter",
       "status": "published",
-      "amazonAffiliateUrl": "https://www.amazon.com/s?k=In+the+Mouth+of+Madness+1994&tag=moviesbybrad2-20"
+      "amazonAffiliateUrl": "https://www.amazon.com/s?k=In+the+Mouth+of+Madness+1994&tag=moviesbybrad2-20",
+      "collection": "John Carpenter Collection"
     },
     {
       "id": "review-possession-1981",
@@ -7825,34 +7830,33 @@
       "movieTitle": "Halloween",
       "slug": "halloween-1978",
       "releaseYear": 1978,
-      "posterImage": "/posters/imported/halloween-1978.jpg",
+      "posterImage": "/posters/manual/john-carpenter/halloween.jpg",
       "backdropImage": "",
       "verdict": "🔥",
-      "rating": 4.8,
+      "rating": 5.0,
       "reviewerName": "Ace",
-      "quickHit": "Halloween rips like a blade-forward slasher—lean, stalking, with zero interest in comforting you.",
-      "fullTake": "Halloween leans hard into slasher energy, and John Carpenter keeps the tone lean without letting the movie drift. The filmmaking is locked in, the atmosphere is doing real work, and the payoff earns the damage. It absolutely earns the spot in a serious horror library.",
+      "quickHit": "The Shape arrives.",
+      "fullTake": "Minimalism turned into pure terror—genre-defining.",
       "reviewVideoUrl": "",
       "whereToWatchUrl": "",
       "createdAt": "2026-03-25T08:33:50Z",
-      "updatedAt": "2026-03-25T08:33:50Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
       "featured": false,
       "genreTags": [
-        "Slasher",
-        "Psychological Horror",
-        "Classic",
-        "Thriller"
+        "horror",
+        "slasher"
       ],
       "moodTags": [
-        "Lean",
-        "Stalking",
-        "Autumnal",
-        "Iconic"
+        "cold",
+        "iconic",
+        "tense",
+        "unstoppable"
       ],
       "runtime": "91 min",
       "director": "John Carpenter",
       "status": "published",
-      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Halloween+1978&tag=moviesbybrad2-20"
+      "amazonAffiliateUrl": "https://www.amazon.com/s?k=Halloween+1978&tag=moviesbybrad2-20",
+      "collection": "John Carpenter Collection"
     },
     {
       "id": "review-a-nightmare-on-elm-street-1984",
@@ -30138,31 +30142,30 @@
       "reviewVideoUrl": "",
       "whereToWatchUrl": "",
       "amazonAffiliateUrl": "https://www.amazon.com/s?k=Escape+From+New+York+1981&tag=moviesbybrad2-20",
-      "movieTitle": "Escape From New York",
+      "movieTitle": "Escape from New York",
       "slug": "escape-from-new-york",
       "releaseYear": 1981,
-      "posterImage": "/posters/80s-option-b/escape-from-new-york.jpg",
-      "verdict": "👀",
-      "rating": 3.9,
+      "posterImage": "/posters/manual/john-carpenter/escape-from-new-york.jpg",
+      "verdict": "🔥",
+      "rating": 4.6,
       "reviewerName": "Ace",
-      "quickHit": "In 1997, a major war between the United States and the Soviet Union is concluding, and...",
-      "fullTake": "Featuring an atmospherically grimy futuristic metropolis, Escape from New York is a strange, entertaining jumble of thrilling action and oddball weirdness. In 1997, a major war between the United States and the Soviet Union is concluding, and the entire island of Manhattan has been converted into.... Ace verdict: not flawless, but...",
-      "updatedAt": "2026-04-04T05:52:29.508414+00:00",
+      "quickHit": "Snake Plissken rules.",
+      "fullTake": "World-building and attitude carry this cult classic.",
+      "updatedAt": "2026-04-09T17:28:32Z",
       "genreTags": [
-        "War",
-        "Drama",
-        "Classic",
-        "Character"
+        "action",
+        "sci-fi"
       ],
       "moodTags": [
-        "Dark",
-        "Tense",
-        "Weird",
-        "Raw"
+        "gritty",
+        "iconic",
+        "dystopian",
+        "stylish"
       ],
       "runtime": "",
       "director": "John Carpenter",
-      "status": "published"
+      "status": "published",
+      "collection": "John Carpenter Collection"
     },
     {
       "id": "imported-chariots-of-fire",
@@ -32861,28 +32864,28 @@
       "movieTitle": "Big Trouble in Little China",
       "slug": "big-trouble-in-little-china",
       "releaseYear": 1986,
-      "posterImage": "/posters/80s-option-b/big-trouble-in-little-china.jpg",
-      "verdict": "👀",
-      "rating": 3.3,
+      "posterImage": "/posters/manual/john-carpenter/big-trouble-in-little-china.jpg",
+      "verdict": "🔥",
+      "rating": 4.5,
       "reviewerName": "Ace",
-      "quickHit": "Kurt Russell plays hard-boiled truck driver Jack Burton, who gets caught in a bizarre...",
-      "fullTake": "Brimming with energy and packed with humor, Big Trouble in Little China distills kung fu B-movies as aoectionately as it subverts them. Kurt Russell plays hard-boiled truck driver Jack Burton, who gets caught in a bizarre conflict within, and underneath, San Francisco's Chinatown. Ace verdict: more niche than essential, even if the...",
-      "updatedAt": "2026-04-04T05:52:29.508414+00:00",
+      "quickHit": "Pure chaos fun.",
+      "fullTake": "Wild tone, endless charm, and nonstop energy.",
+      "updatedAt": "2026-04-09T17:28:32Z",
       "genreTags": [
-        "Comedy",
-        "Drama",
-        "Classic",
-        "Character"
+        "action",
+        "comedy",
+        "fantasy"
       ],
       "moodTags": [
-        "Stylish",
-        "Weird",
-        "Funny",
-        "Rewatchable"
+        "fun",
+        "chaotic",
+        "stylish",
+        "cult"
       ],
       "runtime": "",
       "director": "John Carpenter",
-      "status": "published"
+      "status": "published",
+      "collection": "John Carpenter Collection"
     },
     {
       "id": "imported-a-room-with-a-view",
@@ -34152,28 +34155,27 @@
       "movieTitle": "They Live",
       "slug": "they-live",
       "releaseYear": 1988,
-      "posterImage": "/posters/80s-option-b/they-live.jpg",
-      "verdict": "👀",
-      "rating": 3.9,
+      "posterImage": "/posters/manual/john-carpenter/they-live.jpg",
+      "verdict": "🔥",
+      "rating": 4.7,
       "reviewerName": "Ace",
-      "quickHit": "Nada (Roddy Piper), a wanderer without meaning in his life, discovers a pair of...",
-      "fullTake": "A politically subversive blend of horror and sci fi, They Live is an underrated genre film from John Carpenter. Nada (Roddy Piper), a wanderer without meaning in his life, discovers a pair of sunglasses capable of showing the world the way it truly is..... Ace verdict: not flawless, but there is plenty here if you’re on its wavelength.",
-      "updatedAt": "2026-04-04T05:52:29.508414+00:00",
+      "quickHit": "Obey.",
+      "fullTake": "Brutal satire wrapped in a cult action classic.",
+      "updatedAt": "2026-04-09T17:28:32Z",
       "genreTags": [
-        "Horror",
-        "Drama",
-        "Classic",
-        "Character"
+        "sci-fi",
+        "action"
       ],
       "moodTags": [
-        "Stylish",
-        "Dark",
-        "Tense",
-        "Emotional"
+        "satirical",
+        "gritty",
+        "iconic",
+        "rebellious"
       ],
       "runtime": "",
       "director": "John Carpenter",
-      "status": "published"
+      "status": "published",
+      "collection": "John Carpenter Collection"
     },
     {
       "id": "imported-beetlejuice",
@@ -34559,29 +34561,29 @@
       "amazonAffiliateUrl": "https://www.amazon.com/s?k=The+Killer+1989&tag=moviesbybrad2-20",
       "movieTitle": "The Killer",
       "slug": "the-killer",
-      "releaseYear": 1989,
-      "posterImage": "/posters/80s-option-b/the-killer.jpg",
-      "verdict": "🔥",
-      "rating": 4.4,
+      "releaseYear": 2023,
+      "posterImage": "/posters/manual/david-fincher/the-killer.jpg",
+      "verdict": "👀",
+      "rating": 4.3,
       "reviewerName": "Ace",
-      "quickHit": "Mob assassin Jeorey (Chow Yun-Fat) is no ordinary hired gun; the best in his business,...",
-      "fullTake": "The Killer is another hard-boiled action flick from John Woo featuring eye-popping balletic violence and philosophical underpinnings. Mob assassin Jeorey (Chow Yun-Fat) is no ordinary hired gun; the best in his business, he views his chosen profession as a calling rather than.... Ace verdict: this is straight-up era-defining and...",
-      "updatedAt": "2026-04-04T05:52:29.508414+00:00",
+      "quickHit": "Procedure as religion.",
+      "fullTake": "Fincher makes repetition feel lethal. It’s dry on purpose, funny in a sick way, and locked into the assassin’s warped rhythm.",
+      "updatedAt": "2026-04-09T17:28:32Z",
       "genreTags": [
-        "Crime",
-        "Thriller",
-        "Drama",
-        "Classic"
+        "thriller",
+        "crime",
+        "noir"
       ],
       "moodTags": [
-        "Raw",
-        "Tense",
-        "Dark",
-        "Emotional"
+        "clinical",
+        "deadpan",
+        "cool",
+        "controlled"
       ],
       "runtime": "",
-      "director": "John Woo",
-      "status": "published"
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
     },
     {
       "id": "imported-glory",
@@ -63362,9 +63364,2963 @@
       "status": "published",
       "amazonAffiliateUrl": "https://www.amazon.com/s?k=Aventure+Malgache+1944&tag=moviesbybrad2-20",
       "collection": "Alfred Hitchcock Collection"
+    },
+    {
+      "id": "imported-dark-star",
+      "movieTitle": "Dark Star",
+      "slug": "dark-star",
+      "releaseYear": 1974,
+      "posterImage": "/posters/manual/john-carpenter/dark-star.jpg",
+      "backdropImage": "",
+      "verdict": "❌",
+      "rating": 3.6,
+      "reviewerName": "Ace",
+      "quickHit": "Space madness on a budget.",
+      "fullTake": "Rough, funny, and chaotic—Carpenter learning his voice.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "sci-fi",
+        "comedy",
+        "indie"
+      ],
+      "moodTags": [
+        "weird",
+        "loose",
+        "experimental",
+        "cheap"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-assault-on-precinct-13",
+      "movieTitle": "Assault on Precinct 13",
+      "slug": "assault-on-precinct-13",
+      "releaseYear": 1976,
+      "posterImage": "/posters/manual/john-carpenter/assault-on-precinct-13.jpg",
+      "backdropImage": "",
+      "verdict": "👀",
+      "rating": 4.4,
+      "reviewerName": "Ace",
+      "quickHit": "Siege film perfection.",
+      "fullTake": "Lean, brutal, and nonstop tension—pure Carpenter control.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "action",
+        "thriller",
+        "crime"
+      ],
+      "moodTags": [
+        "tense",
+        "gritty",
+        "relentless",
+        "raw"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-the-fog",
+      "movieTitle": "The Fog",
+      "slug": "the-fog",
+      "releaseYear": 1980,
+      "posterImage": "/posters/manual/john-carpenter/the-fog.jpg",
+      "backdropImage": "",
+      "verdict": "👀",
+      "rating": 4.0,
+      "reviewerName": "Ace",
+      "quickHit": "Ghost story done right.",
+      "fullTake": "Heavy atmosphere carries a simple but effective story.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "horror",
+        "ghost"
+      ],
+      "moodTags": [
+        "moody",
+        "slow",
+        "atmospheric",
+        "creepy"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-starman",
+      "movieTitle": "Starman",
+      "slug": "starman",
+      "releaseYear": 1984,
+      "posterImage": "/posters/manual/john-carpenter/starman.jpg",
+      "backdropImage": "",
+      "verdict": "❌",
+      "rating": 3.8,
+      "reviewerName": "Ace",
+      "quickHit": "Unexpected heart.",
+      "fullTake": "Carpenter shifts tone into something human and gentle.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "sci-fi",
+        "romance"
+      ],
+      "moodTags": [
+        "soft",
+        "emotional",
+        "slow",
+        "quiet"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-prince-of-darkness",
+      "movieTitle": "Prince of Darkness",
+      "slug": "prince-of-darkness",
+      "releaseYear": 1987,
+      "posterImage": "/posters/manual/john-carpenter/prince-of-darkness.jpg",
+      "backdropImage": "",
+      "verdict": "👀",
+      "rating": 4.2,
+      "reviewerName": "Ace",
+      "quickHit": "Science meets evil.",
+      "fullTake": "Unsettling ideas carry a slow-burn nightmare.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "horror",
+        "cosmic"
+      ],
+      "moodTags": [
+        "weird",
+        "philosophical",
+        "creepy",
+        "slow"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-memoirs-of-an-invisible-man",
+      "movieTitle": "Memoirs of an Invisible Man",
+      "slug": "memoirs-of-an-invisible-man",
+      "releaseYear": 1992,
+      "posterImage": "/posters/manual/john-carpenter/memoirs-of-an-invisible-man.jpg",
+      "backdropImage": "",
+      "verdict": "❌",
+      "rating": 3.5,
+      "reviewerName": "Ace",
+      "quickHit": "Doesn’t fit.",
+      "fullTake": "Feels restrained and out of place.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "comedy",
+        "sci-fi"
+      ],
+      "moodTags": [
+        "light",
+        "odd",
+        "studio",
+        "uneven"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-village-of-the-damned",
+      "movieTitle": "Village of the Damned",
+      "slug": "village-of-the-damned",
+      "releaseYear": 1995,
+      "posterImage": "/posters/manual/john-carpenter/village-of-the-damned.jpg",
+      "backdropImage": "",
+      "verdict": "❌",
+      "rating": 3.6,
+      "reviewerName": "Ace",
+      "quickHit": "Cold children.",
+      "fullTake": "Interesting but lacks bite.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "horror",
+        "sci-fi"
+      ],
+      "moodTags": [
+        "creepy",
+        "slow",
+        "controlled",
+        "flat"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-escape-from-la",
+      "movieTitle": "Escape from L.A.",
+      "slug": "escape-from-la",
+      "releaseYear": 1996,
+      "posterImage": "/posters/manual/john-carpenter/escape-from-la.jpg",
+      "backdropImage": "",
+      "verdict": "❌",
+      "rating": 3.7,
+      "reviewerName": "Ace",
+      "quickHit": "Bigger, dumber sequel.",
+      "fullTake": "Leans into chaos but loses edge.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "action",
+        "sci-fi"
+      ],
+      "moodTags": [
+        "campy",
+        "over-the-top",
+        "weird",
+        "fun"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-vampires",
+      "movieTitle": "Vampires",
+      "slug": "vampires",
+      "releaseYear": 1998,
+      "posterImage": "/posters/manual/john-carpenter/vampires.jpg",
+      "backdropImage": "",
+      "verdict": "👀",
+      "rating": 4.0,
+      "reviewerName": "Ace",
+      "quickHit": "Vampire hunters.",
+      "fullTake": "Rough, mean, and effective.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "horror",
+        "western"
+      ],
+      "moodTags": [
+        "gritty",
+        "violent",
+        "stylish",
+        "dirty"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-ghosts-of-mars",
+      "movieTitle": "Ghosts of Mars",
+      "slug": "ghosts-of-mars",
+      "releaseYear": 2001,
+      "posterImage": "/posters/manual/john-carpenter/ghosts-of-mars.jpg",
+      "backdropImage": "",
+      "verdict": "❌",
+      "rating": 3.5,
+      "reviewerName": "Ace",
+      "quickHit": "Missed potential.",
+      "fullTake": "Feels like a remix of better ideas.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "sci-fi",
+        "horror"
+      ],
+      "moodTags": [
+        "loud",
+        "chaotic",
+        "weak",
+        "stylish"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-the-ward",
+      "movieTitle": "The Ward",
+      "slug": "the-ward",
+      "releaseYear": 2010,
+      "posterImage": "/posters/manual/john-carpenter/the-ward.jpg",
+      "backdropImage": "",
+      "verdict": "❌",
+      "rating": 3.5,
+      "reviewerName": "Ace",
+      "quickHit": "Return falls flat.",
+      "fullTake": "Lacks the signature Carpenter edge.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "horror",
+        "psychological"
+      ],
+      "moodTags": [
+        "generic",
+        "flat",
+        "modern",
+        "weak"
+      ],
+      "runtime": "",
+      "director": "John Carpenter",
+      "status": "published",
+      "collection": "John Carpenter Collection"
+    },
+    {
+      "id": "imported-alien-3",
+      "movieTitle": "Alien 3",
+      "slug": "alien-3",
+      "releaseYear": 1992,
+      "posterImage": "/posters/manual/david-fincher/alien-3.jpg",
+      "backdropImage": "",
+      "verdict": "❌",
+      "rating": 3.7,
+      "reviewerName": "Ace",
+      "quickHit": "Studio war leaves scars.",
+      "fullTake": "A bruised debut with real atmosphere and zero mercy. You can feel Fincher fighting the machine in every cold corridor.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "sci-fi",
+        "horror",
+        "thriller"
+      ],
+      "moodTags": [
+        "bleak",
+        "industrial",
+        "grim",
+        "hostile"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
+    },
+    {
+      "id": "imported-se7en",
+      "movieTitle": "Se7en",
+      "slug": "se7en",
+      "releaseYear": 1995,
+      "posterImage": "/posters/manual/david-fincher/se7en.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 5.0,
+      "reviewerName": "Ace",
+      "quickHit": "Sin has a body count.",
+      "fullTake": "Fincher turns rot into opera. Every frame stinks of moral collapse, and the ending still lands like a brick to the skull.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "crime",
+        "thriller",
+        "mystery"
+      ],
+      "moodTags": [
+        "filthy",
+        "nihilistic",
+        "rain-soaked",
+        "relentless"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
+    },
+    {
+      "id": "imported-the-game",
+      "movieTitle": "The Game",
+      "slug": "the-game",
+      "releaseYear": 1997,
+      "posterImage": "/posters/manual/david-fincher/the-game.jpg",
+      "backdropImage": "",
+      "verdict": "👀",
+      "rating": 4.4,
+      "reviewerName": "Ace",
+      "quickHit": "Wealth becomes a trap.",
+      "fullTake": "A precision-built panic spiral. The last-act mechanics wobble a little, but the ride is too sharp and too mean to ignore.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "thriller",
+        "mystery",
+        "psychological"
+      ],
+      "moodTags": [
+        "slick",
+        "paranoid",
+        "twisty",
+        "disorienting"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
+    },
+    {
+      "id": "imported-fight-club",
+      "movieTitle": "Fight Club",
+      "slug": "fight-club",
+      "releaseYear": 1999,
+      "posterImage": "/posters/manual/david-fincher/fight-club.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 4.8,
+      "reviewerName": "Ace",
+      "quickHit": "Consumer culture gets punched in the mouth.",
+      "fullTake": "Fincher weaponizes style without losing control. Mean, funny, ugly, and still electric when it finally burns the house down.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "drama",
+        "thriller",
+        "satire"
+      ],
+      "moodTags": [
+        "anarchic",
+        "toxic",
+        "stylized",
+        "feral"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
+    },
+    {
+      "id": "imported-panic-room",
+      "movieTitle": "Panic Room",
+      "slug": "panic-room",
+      "releaseYear": 2002,
+      "posterImage": "/posters/manual/david-fincher/panic-room.jpg",
+      "backdropImage": "",
+      "verdict": "👀",
+      "rating": 4.1,
+      "reviewerName": "Ace",
+      "quickHit": "A steel box of pure pressure.",
+      "fullTake": "Maybe his leanest mainstream thriller. The camera glides like a ghost while every locked door turns the screws tighter.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "thriller",
+        "crime",
+        "home-invasion"
+      ],
+      "moodTags": [
+        "claustrophobic",
+        "tense",
+        "clean",
+        "mechanical"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
+    },
+    {
+      "id": "imported-zodiac",
+      "movieTitle": "Zodiac",
+      "slug": "zodiac",
+      "releaseYear": 2007,
+      "posterImage": "/posters/manual/david-fincher/zodiac.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 4.9,
+      "reviewerName": "Ace",
+      "quickHit": "Obsession is the real killer.",
+      "fullTake": "This is Fincher at forensic full power. It trades cheap shocks for dread that seeps into your bones and stays there.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "crime",
+        "thriller",
+        "procedural"
+      ],
+      "moodTags": [
+        "obsessive",
+        "haunting",
+        "meticulous",
+        "unsettling"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
+    },
+    {
+      "id": "imported-the-curious-case-of-benjamin-button",
+      "movieTitle": "The Curious Case of Benjamin Button",
+      "slug": "the-curious-case-of-benjamin-button",
+      "releaseYear": 2008,
+      "posterImage": "/posters/manual/david-fincher/the-curious-case-of-benjamin-button.jpg",
+      "backdropImage": "",
+      "verdict": "👀",
+      "rating": 4.0,
+      "reviewerName": "Ace",
+      "quickHit": "Time turns inside out.",
+      "fullTake": "A softer Fincher, but not a weaker one. The sentiment works because the craft is immaculate and the loneliness feels earned.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "drama",
+        "fantasy",
+        "romance"
+      ],
+      "moodTags": [
+        "wistful",
+        "elegant",
+        "melancholic",
+        "grand"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
+    },
+    {
+      "id": "imported-the-social-network",
+      "movieTitle": "The Social Network",
+      "slug": "the-social-network",
+      "releaseYear": 2010,
+      "posterImage": "/posters/manual/david-fincher/the-social-network.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 5.0,
+      "reviewerName": "Ace",
+      "quickHit": "Code, ego, betrayal.",
+      "fullTake": "A modern masterpiece with a pulse like a panic attack. Fincher makes ambition feel both seductive and spiritually dead on arrival.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "drama",
+        "biopic"
+      ],
+      "moodTags": [
+        "icy",
+        "razor-sharp",
+        "propulsive",
+        "clinical"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
+    },
+    {
+      "id": "imported-the-girl-with-the-dragon-tattoo",
+      "movieTitle": "The Girl with the Dragon Tattoo",
+      "slug": "the-girl-with-the-dragon-tattoo",
+      "releaseYear": 2011,
+      "posterImage": "/posters/manual/david-fincher/the-girl-with-the-dragon-tattoo.jpg",
+      "backdropImage": "",
+      "verdict": "🔥",
+      "rating": 4.5,
+      "reviewerName": "Ace",
+      "quickHit": "Snow, secrets, and open wounds.",
+      "fullTake": "A hard, beautiful machine of a thriller. Fincher strips the pulp down to cold steel and lets Rooney Mara cut through it.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "thriller",
+        "mystery",
+        "crime"
+      ],
+      "moodTags": [
+        "frigid",
+        "brutal",
+        "precise",
+        "corrosive"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
+    },
+    {
+      "id": "imported-mank",
+      "movieTitle": "Mank",
+      "slug": "mank",
+      "releaseYear": 2020,
+      "posterImage": "/posters/manual/david-fincher/mank.jpg",
+      "backdropImage": "",
+      "verdict": "❌",
+      "rating": 3.9,
+      "reviewerName": "Ace",
+      "quickHit": "Old Hollywood with a hangover.",
+      "fullTake": "Beautifully built and intellectually alive, but it stays a little too far from the blood. Admire it more than love it.",
+      "reviewVideoUrl": "",
+      "whereToWatchUrl": "",
+      "amazonAffiliateUrl": "",
+      "createdAt": "2026-04-09T17:28:32Z",
+      "updatedAt": "2026-04-09T17:28:32Z",
+      "featured": false,
+      "genreTags": [
+        "drama",
+        "biopic",
+        "period"
+      ],
+      "moodTags": [
+        "ornate",
+        "acerbic",
+        "nostalgic",
+        "detached"
+      ],
+      "runtime": "",
+      "director": "David Fincher",
+      "status": "published",
+      "collection": "David Fincher Collection"
     }
   ],
   "comments": [
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Kara Fields",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:00:00Z",
+      "status": "visible",
+      "id": "comment-48ed5203-3852-4af1-b336-9b5f330e6a8d"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Jade Simmons",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:00:01Z",
+      "status": "visible",
+      "id": "comment-d2cca644-5ebf-4e60-95ce-081d0121af43"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Kevin Rios",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:00:02Z",
+      "status": "visible",
+      "id": "comment-f8444d4a-d97b-4d80-9a43-84c45a481c7f"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Jade Simmons",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:00:03Z",
+      "status": "visible",
+      "id": "comment-01555e2f-e0f9-4153-abb1-d44aad1cbbb7"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Dana Holt",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:00:04Z",
+      "status": "visible",
+      "id": "comment-d8162602-e8df-4213-86ca-3128a2d38130"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Jade Simmons",
+      "body": "Easy rewatch, this is just that good.",
+      "createdAt": "2026-04-09T13:00:05Z",
+      "status": "visible",
+      "id": "comment-fd9d187b-abc5-4ddf-81af-3b34e476cba9"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Kevin Rios",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:00:06Z",
+      "status": "visible",
+      "id": "comment-4392f5ab-602f-42a9-a5cd-4bac1f00f370"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Kevin Rios",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:00:07Z",
+      "status": "visible",
+      "id": "comment-e05f8891-6488-4d09-9d9c-82f44d75ea2e"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Dana Holt",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:00:08Z",
+      "status": "visible",
+      "id": "comment-8e4d388a-2d32-42fe-b0f4-c9aee8b3c80d"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Dana Holt",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:00:09Z",
+      "status": "visible",
+      "id": "comment-2455e53d-a447-41cc-a367-582e82500edb"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Felicia Monroe",
+      "body": "kinda overrated imo",
+      "createdAt": "2026-04-09T13:00:10Z",
+      "status": "visible",
+      "id": "comment-ca6913a5-4980-4ce6-8eab-543f9cbba721"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Marcus Velez",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:00:11Z",
+      "status": "visible",
+      "id": "comment-3f1517b2-94a5-4fa3-8029-2d23b6d44dee"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Trevor Nash",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:00:12Z",
+      "status": "visible",
+      "id": "comment-2b383b53-3019-45c4-8eb9-0b6725aa137d"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Kevin Rios",
+      "body": "Easy rewatch, this is just that good.",
+      "createdAt": "2026-04-09T13:00:13Z",
+      "status": "visible",
+      "id": "comment-2f2dce72-9a4f-4a19-9643-3b2f1cf635f0"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Trevor Nash",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:00:14Z",
+      "status": "visible",
+      "id": "comment-75821806-2309-4c8d-9ed1-4257f1cb6153"
+    },
+    {
+      "reviewId": "imported-assault-on-precinct-13",
+      "reviewSlug": "assault-on-precinct-13",
+      "displayName": "Connor Hale",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:00:15Z",
+      "status": "visible",
+      "id": "comment-b27ee75c-632e-44b8-8f1e-7cd52e5e320a"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Trevor Nash",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:00:27Z",
+      "status": "visible",
+      "id": "comment-f2b58755-3421-47dd-8760-179bc4756bc1"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Corey Banks",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:00:28Z",
+      "status": "visible",
+      "id": "comment-30c57a45-b2eb-499b-a605-92a913beb5ce"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Connor Hale",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:00:29Z",
+      "status": "visible",
+      "id": "comment-1514f6dc-9fd7-46ed-a2a6-f97183e33648"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Connor Hale",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:00:30Z",
+      "status": "visible",
+      "id": "comment-2910f9b5-189f-40fc-9e52-0318346a870c"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Marcus Velez",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:00:31Z",
+      "status": "visible",
+      "id": "comment-b4401ff7-31f9-4ac5-b15d-32dc09ecdf01"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Marcus Velez",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:00:32Z",
+      "status": "visible",
+      "id": "comment-242379a9-c495-4192-a169-a33b01c3e65f"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Paige Rivers",
+      "body": "didn’t fully land for me",
+      "createdAt": "2026-04-09T13:00:34Z",
+      "status": "visible",
+      "id": "comment-312a619a-95e3-491f-835d-6039a8f651a6"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Cole Jensen",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:00:35Z",
+      "status": "visible",
+      "id": "comment-74df0c67-dabd-4b31-80e7-2379940118e1"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Andre Collins",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:00:37Z",
+      "status": "visible",
+      "id": "comment-2db61bda-3255-4955-90f2-0c2ab64c5ae4"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Lila Moreno",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:00:38Z",
+      "status": "visible",
+      "id": "comment-353c1ed5-ed77-4d83-a78d-0ef8879bc3fb"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Connor Hale",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:00:39Z",
+      "status": "visible",
+      "id": "comment-fc5c13f5-8013-4d43-8aad-c7de4be5f64d"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Cole Jensen",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:00:41Z",
+      "status": "visible",
+      "id": "comment-037c99b2-5b93-43af-8f0b-3565873c4c64"
+    },
+    {
+      "reviewId": "imported-the-fog",
+      "reviewSlug": "the-fog",
+      "displayName": "Felicia Monroe",
+      "body": "🔥 flawless",
+      "createdAt": "2026-04-09T13:00:42Z",
+      "status": "visible",
+      "id": "comment-9bf6fe18-de07-4d8c-8b31-3edd609673b8"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Emily Vaughn",
+      "body": "kinda overrated imo",
+      "createdAt": "2026-04-09T13:01:16Z",
+      "status": "visible",
+      "id": "comment-589c71b2-99dc-456f-88f8-5eee14890ec2"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Kevin Rios",
+      "body": "Everything about this works.",
+      "createdAt": "2026-04-09T13:01:17Z",
+      "status": "visible",
+      "id": "comment-11f039dd-3db3-4107-891d-167ff64f0c58"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Connor Hale",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:01:18Z",
+      "status": "visible",
+      "id": "comment-9eb0c596-f7af-457c-9956-bba8448f0c02"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Felicia Monroe",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:01:19Z",
+      "status": "visible",
+      "id": "comment-462931cf-1c29-422b-bfba-661ff39f5d6c"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Victor Lang",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:01:20Z",
+      "status": "visible",
+      "id": "comment-c670dcbe-2656-4096-b2a4-36ff61a1a5f0"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Victor Lang",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:01:21Z",
+      "status": "visible",
+      "id": "comment-56ccdb5c-22d6-42da-9e84-980e76a5a095"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Andre Collins",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:01:22Z",
+      "status": "visible",
+      "id": "comment-52e6daef-cf3f-4b78-aeb7-8b28596cd67a"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Corey Banks",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:01:23Z",
+      "status": "visible",
+      "id": "comment-36e5c757-0105-40e2-b24c-e743f168a663"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Victor Lang",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:01:24Z",
+      "status": "visible",
+      "id": "comment-b18e071f-cadf-4856-93d6-f8b1187b73b1"
+    },
+    {
+      "reviewId": "imported-starman",
+      "reviewSlug": "starman",
+      "displayName": "Felicia Monroe",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:01:26Z",
+      "status": "visible",
+      "id": "comment-e3a6c4e9-4113-4e0e-8ff8-218e99e3106e"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Andre Collins",
+      "body": "Everything about this works.",
+      "createdAt": "2026-04-09T13:01:39Z",
+      "status": "visible",
+      "id": "comment-c50b412a-2a24-4e12-8d63-05913bbb08f2"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Brianna Shaw",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:01:40Z",
+      "status": "visible",
+      "id": "comment-935938ef-5155-441f-940e-5994e69ef775"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Brianna Shaw",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:01:41Z",
+      "status": "visible",
+      "id": "comment-c00eab2b-56e5-4725-8449-c1eec1603c80"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Felicia Monroe",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:01:42Z",
+      "status": "visible",
+      "id": "comment-b2054e4b-cde8-43d5-949f-6cee10b26b42"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Marcus Velez",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:01:43Z",
+      "status": "visible",
+      "id": "comment-cd5974ad-346e-473d-a1d1-b4fda9f9832c"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Malik Turner",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:01:44Z",
+      "status": "visible",
+      "id": "comment-2014b940-ea2f-4d65-861e-24894b3ed71f"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Nina Alvarez",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:01:45Z",
+      "status": "visible",
+      "id": "comment-aff1c3c4-ca1d-48c9-beb3-f83f87a26d37"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Brianna Shaw",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:01:46Z",
+      "status": "visible",
+      "id": "comment-430b2f2c-e805-4850-99c8-7e9d7757412f"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Marcus Velez",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:01:47Z",
+      "status": "visible",
+      "id": "comment-373d8476-7e77-4cdc-960a-67cd834db815"
+    },
+    {
+      "reviewId": "imported-prince-of-darkness",
+      "reviewSlug": "prince-of-darkness",
+      "displayName": "Marcus Velez",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:01:48Z",
+      "status": "visible",
+      "id": "comment-9c1352c4-9df6-4eb3-b6ab-20daefd0d449"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Felicia Monroe",
+      "body": "🔥 flawless",
+      "createdAt": "2026-04-09T13:02:03Z",
+      "status": "visible",
+      "id": "comment-66b68354-3e6e-4ca2-89b7-1f847178374b"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Felicia Monroe",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:02:04Z",
+      "status": "visible",
+      "id": "comment-94cdd209-46aa-41e0-85d7-4cb4dd0e1ed3"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Marcus Velez",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:02:05Z",
+      "status": "visible",
+      "id": "comment-921789c2-2f80-4e34-ba78-420ab0e83397"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Jade Simmons",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:02:06Z",
+      "status": "visible",
+      "id": "comment-04cad094-cefa-47aa-b7e4-6fedd41c6b1d"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Eric Dalton",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:02:07Z",
+      "status": "visible",
+      "id": "comment-df36f35a-13ef-4456-b6db-e3d02df5b7b1"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Brianna Shaw",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:02:08Z",
+      "status": "visible",
+      "id": "comment-35b9f688-18bc-4aec-bea4-797bcfc1f802"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Eric Dalton",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:02:09Z",
+      "status": "visible",
+      "id": "comment-34a1be21-96ba-44dd-aae0-c8660e7a06b2"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Eric Dalton",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:02:11Z",
+      "status": "visible",
+      "id": "comment-45d5dfda-bc67-488e-9f6d-391c7fa28dcf"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Felicia Monroe",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:02:13Z",
+      "status": "visible",
+      "id": "comment-f8466358-487a-41b6-ae05-37a67492cf7e"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Felicia Monroe",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:02:14Z",
+      "status": "visible",
+      "id": "comment-604fce55-e1b0-4cfd-bc24-9e88ac7af0ec"
+    },
+    {
+      "reviewId": "imported-memoirs-of-an-invisible-man",
+      "reviewSlug": "memoirs-of-an-invisible-man",
+      "displayName": "Connor Hale",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:02:15Z",
+      "status": "visible",
+      "id": "comment-d2034b9b-c36b-4d11-8b7b-c06034de1e59"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Trevor Nash",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:02:43Z",
+      "status": "visible",
+      "id": "comment-62874ea9-a1c8-483e-b404-17fd8df26331"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Kara Fields",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:02:44Z",
+      "status": "visible",
+      "id": "comment-085240fd-1bc2-4663-8e86-57612104a87f"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Dana Holt",
+      "body": "kinda overrated imo",
+      "createdAt": "2026-04-09T13:02:45Z",
+      "status": "visible",
+      "id": "comment-66327610-a253-47a4-9c78-93a3b8604dcc"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Connor Hale",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:02:46Z",
+      "status": "visible",
+      "id": "comment-6bdfa399-b331-4d00-b174-0558043606bc"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Paige Rivers",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:02:47Z",
+      "status": "visible",
+      "id": "comment-a8977545-cec4-46eb-9dca-8a99e7d994b8"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Malik Turner",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:02:48Z",
+      "status": "visible",
+      "id": "comment-6018a501-7adc-4bc6-9c60-6d92fdc65f99"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Trevor Nash",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:02:49Z",
+      "status": "visible",
+      "id": "comment-984d43d5-dad3-4b5a-9b4d-59ab4d0f7676"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Dana Holt",
+      "body": "Easy rewatch, this is just that good.",
+      "createdAt": "2026-04-09T13:02:51Z",
+      "status": "visible",
+      "id": "comment-1394bcf4-c12c-4113-abec-faf3124ffbe6"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Dylan Mercer",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:02:52Z",
+      "status": "visible",
+      "id": "comment-4729b644-4a75-4860-af03-1958be272197"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Kevin Rios",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:02:53Z",
+      "status": "visible",
+      "id": "comment-8c1b8c4f-d453-46c5-b4e6-174974aa7772"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Marcus Velez",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:02:54Z",
+      "status": "visible",
+      "id": "comment-f86a9c2b-88fe-4f11-957e-998292e1f4c7"
+    },
+    {
+      "reviewId": "imported-escape-from-la",
+      "reviewSlug": "escape-from-la",
+      "displayName": "Tasha Greene",
+      "body": "Easy rewatch, this is just that good.",
+      "createdAt": "2026-04-09T13:02:55Z",
+      "status": "visible",
+      "id": "comment-5e7d2fd7-c0e5-4fad-af67-7fe7265cf48b"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Brianna Shaw",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:02:56Z",
+      "status": "visible",
+      "id": "comment-ea3bafab-3c39-472a-8ce3-3219be1fa8b4"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Dana Holt",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:02:57Z",
+      "status": "visible",
+      "id": "comment-9abb9bbb-cb82-49aa-b4e0-2d49b007b73e"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Kevin Rios",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:02:58Z",
+      "status": "visible",
+      "id": "comment-21f40915-76d7-4288-9faf-f8d68f8b7c6a"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Kevin Rios",
+      "body": "Everything about this works.",
+      "createdAt": "2026-04-09T13:02:59Z",
+      "status": "visible",
+      "id": "comment-9d229c86-3a45-40fc-add8-414197f96ca9"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Nina Alvarez",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:03:00Z",
+      "status": "visible",
+      "id": "comment-a5616236-f395-4988-b2ef-b66420bfdadc"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Trevor Nash",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:03:01Z",
+      "status": "visible",
+      "id": "comment-b0a4f13f-5307-42cb-badf-2824308d1d0c"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Malik Turner",
+      "body": "didn’t fully land for me",
+      "createdAt": "2026-04-09T13:03:02Z",
+      "status": "visible",
+      "id": "comment-130d4806-b65d-4745-aef2-649306b3bbed"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Nina Alvarez",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:03:03Z",
+      "status": "visible",
+      "id": "comment-4059a86b-61b2-413a-89e8-d58a599d951b"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Emily Vaughn",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:03:04Z",
+      "status": "visible",
+      "id": "comment-90ad0413-498e-42c3-a818-358ea47f0d7d"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Connor Hale",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:03:05Z",
+      "status": "visible",
+      "id": "comment-2f4797fe-bee7-41ba-991d-ec9f0587d129"
+    },
+    {
+      "reviewId": "imported-vampires",
+      "reviewSlug": "vampires",
+      "displayName": "Emily Vaughn",
+      "body": "Everything about this works.",
+      "createdAt": "2026-04-09T13:03:06Z",
+      "status": "visible",
+      "id": "comment-b26e1f93-8e0c-43b9-a179-0f3df6495308"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Emily Vaughn",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:03:07Z",
+      "status": "visible",
+      "id": "comment-0ce45bc2-9f24-47d0-ad04-4569801ca4a4"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Kara Fields",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:03:08Z",
+      "status": "visible",
+      "id": "comment-ca491193-20f7-46e4-b785-927f09dc957b"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Trevor Nash",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:03:09Z",
+      "status": "visible",
+      "id": "comment-450e623d-41eb-4d37-8ce0-0c5953116559"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Cole Jensen",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:03:10Z",
+      "status": "visible",
+      "id": "comment-5bea6c3e-d87a-49bb-978f-2674dbee5273"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Tasha Greene",
+      "body": "kinda overrated imo",
+      "createdAt": "2026-04-09T13:03:11Z",
+      "status": "visible",
+      "id": "comment-1f597d13-8f3c-496c-ad17-444cd5667ed8"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Lila Moreno",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:03:12Z",
+      "status": "visible",
+      "id": "comment-b47dd807-9abd-41da-a42f-d37edec30e5c"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Cole Jensen",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:03:13Z",
+      "status": "visible",
+      "id": "comment-45c3f79a-46e2-4cfa-8402-5cded753134c"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Trevor Nash",
+      "body": "Everything about this works.",
+      "createdAt": "2026-04-09T13:03:14Z",
+      "status": "visible",
+      "id": "comment-d1859749-2ce7-4377-bee2-adbbd4115208"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Trevor Nash",
+      "body": "didn’t fully land for me",
+      "createdAt": "2026-04-09T13:03:15Z",
+      "status": "visible",
+      "id": "comment-bb3a7d8b-48b7-4ec7-a1ae-c24591244d99"
+    },
+    {
+      "reviewId": "imported-ghosts-of-mars",
+      "reviewSlug": "ghosts-of-mars",
+      "displayName": "Cole Jensen",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:03:16Z",
+      "status": "visible",
+      "id": "comment-cffa144c-e50c-4707-aeda-0c1b051f7630"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Lila Moreno",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:03:17Z",
+      "status": "visible",
+      "id": "comment-0b6fd44b-c6a0-42d8-92d1-301bcad83825"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Lila Moreno",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:03:18Z",
+      "status": "visible",
+      "id": "comment-00c09cc7-9d08-4a9b-b6bf-4af342013dec"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Tasha Greene",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:03:19Z",
+      "status": "visible",
+      "id": "comment-dfd5f4d6-d4b7-42f7-92d1-df68cd67a865"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Felicia Monroe",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:03:20Z",
+      "status": "visible",
+      "id": "comment-402ded7f-8787-4bfc-88bb-e50aec5dc0f9"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Lila Moreno",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:03:21Z",
+      "status": "visible",
+      "id": "comment-d19d9a81-bb18-4613-9e69-a9d15c4669e0"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Malik Turner",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:03:22Z",
+      "status": "visible",
+      "id": "comment-b29b8c47-fc35-4b64-bac0-792bf40cca78"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Sierra Knox",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:03:23Z",
+      "status": "visible",
+      "id": "comment-eda43189-ae55-49c8-b884-54d905d0e3fe"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Tasha Greene",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:03:24Z",
+      "status": "visible",
+      "id": "comment-3861c694-7067-4039-9ad7-ceac7e7a8537"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Malik Turner",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:03:25Z",
+      "status": "visible",
+      "id": "comment-e3cc87b0-2eb4-45e6-afef-3905fd6e8b8b"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Kara Fields",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:03:26Z",
+      "status": "visible",
+      "id": "comment-cf0fe4a5-1d37-4f98-8132-18a9631f899f"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Dana Holt",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:03:27Z",
+      "status": "visible",
+      "id": "comment-e2078819-ad2a-427b-81aa-392c37d4986a"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Kara Fields",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:03:28Z",
+      "status": "visible",
+      "id": "comment-9bf2f5cc-8856-44f0-a25b-b2e94adfb9c7"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Andre Collins",
+      "body": "kinda overrated imo",
+      "createdAt": "2026-04-09T13:03:29Z",
+      "status": "visible",
+      "id": "comment-586c16a8-ac69-4bc7-8bb9-bb75042166fb"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Dana Holt",
+      "body": "Easy rewatch, this is just that good.",
+      "createdAt": "2026-04-09T13:03:30Z",
+      "status": "visible",
+      "id": "comment-832c062b-0311-4a60-94de-5757041eb6b7"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Andre Collins",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:03:31Z",
+      "status": "visible",
+      "id": "comment-3bfc6913-7d42-4f8d-9521-be5a861550c9"
+    },
+    {
+      "reviewId": "imported-the-ward",
+      "reviewSlug": "the-ward",
+      "displayName": "Cole Jensen",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:03:32Z",
+      "status": "visible",
+      "id": "comment-50bc78d8-9925-4a10-a456-c2991a978f1e"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Paige Rivers",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:03:33Z",
+      "status": "visible",
+      "id": "comment-c6c24b1e-aee4-4504-8c18-72d21010c442"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Marcus Velez",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:03:34Z",
+      "status": "visible",
+      "id": "comment-fb2719f7-a3ed-4866-b2b5-c0333ccfbce9"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Cole Jensen",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:03:35Z",
+      "status": "visible",
+      "id": "comment-b2346281-b493-4501-8a47-44c50ef7eedf"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Trevor Nash",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:03:36Z",
+      "status": "visible",
+      "id": "comment-5639836b-8802-4a02-adaa-f60e66098852"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Paige Rivers",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:03:37Z",
+      "status": "visible",
+      "id": "comment-4215a424-59ba-4cc1-85be-9cdbd93e2c2d"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Nina Alvarez",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:03:38Z",
+      "status": "visible",
+      "id": "comment-6d950fd5-d38c-4182-b931-1b6108167b64"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Nina Alvarez",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:03:39Z",
+      "status": "visible",
+      "id": "comment-5555f64c-7e79-4f1a-819a-e6aaf2e33042"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Cole Jensen",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:03:40Z",
+      "status": "visible",
+      "id": "comment-3f5a3472-954f-4f8f-9a5e-3f89d71bdc2a"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Trevor Nash",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:03:41Z",
+      "status": "visible",
+      "id": "comment-907f7b77-4e18-4507-8c76-2470b72e5bbc"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Victor Lang",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:03:42Z",
+      "status": "visible",
+      "id": "comment-32a209b8-4bfd-448a-a2b7-f95f6327b2e7"
+    },
+    {
+      "reviewId": "imported-alien-3",
+      "reviewSlug": "alien-3",
+      "displayName": "Felicia Monroe",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:03:43Z",
+      "status": "visible",
+      "id": "comment-04443e36-126f-46e2-9136-ce3eda3c0504"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Jade Simmons",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:03:44Z",
+      "status": "visible",
+      "id": "comment-b2b01d86-f625-47f8-baee-29110bb2505c"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Marcus Velez",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:03:45Z",
+      "status": "visible",
+      "id": "comment-42c583e2-373b-4538-b985-c6f16235cd75"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Trevor Nash",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:03:46Z",
+      "status": "visible",
+      "id": "comment-30094521-cd20-49e4-87be-c94414665f4b"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Dana Holt",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:03:47Z",
+      "status": "visible",
+      "id": "comment-090f118a-671e-4c76-936a-c641c08deb45"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Dylan Mercer",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:03:48Z",
+      "status": "visible",
+      "id": "comment-d9da0d73-4a2f-481f-8ab7-ff6a22be27fc"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Marcus Velez",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:03:49Z",
+      "status": "visible",
+      "id": "comment-26ce93ab-f3e6-417c-be0c-ed515029b5f5"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Nina Alvarez",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:03:50Z",
+      "status": "visible",
+      "id": "comment-f6ce5e97-c9d8-4e02-8dce-21a8daaaf10a"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Andre Collins",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:03:51Z",
+      "status": "visible",
+      "id": "comment-baf620df-0006-43a2-b35f-873536203e1a"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Andre Collins",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:03:52Z",
+      "status": "visible",
+      "id": "comment-92913e5f-af49-4f23-9c6c-0871f26af251"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Dylan Mercer",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:03:53Z",
+      "status": "visible",
+      "id": "comment-e64c6d0e-8210-47ea-9d9a-06e506b15a66"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Tasha Greene",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:03:54Z",
+      "status": "visible",
+      "id": "comment-0a473b38-9546-475a-b088-b0b705f5baa0"
+    },
+    {
+      "reviewId": "imported-se7en",
+      "reviewSlug": "se7en",
+      "displayName": "Jade Simmons",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:03:55Z",
+      "status": "visible",
+      "id": "comment-3354090e-39c5-4abd-b3f0-7240b930aee3"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Jade Simmons",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:03:56Z",
+      "status": "visible",
+      "id": "comment-b0e96c55-4f77-457e-88fb-9c64642c2e79"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Nina Alvarez",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:03:57Z",
+      "status": "visible",
+      "id": "comment-f00ef0fa-88d3-41d3-af89-2e0e05661676"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Emily Vaughn",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:03:58Z",
+      "status": "visible",
+      "id": "comment-0dbbfda9-d4f0-4b57-aca1-b93fea487e8e"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Paige Rivers",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:03:59Z",
+      "status": "visible",
+      "id": "comment-5753e4e0-98c1-48b3-943e-82b37250c252"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Dylan Mercer",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:04:00Z",
+      "status": "visible",
+      "id": "comment-dcb468e0-f4e1-42ff-89d3-7b32e0be645e"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Trevor Nash",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:04:01Z",
+      "status": "visible",
+      "id": "comment-5edb3f9e-6a10-45ac-be9f-ebef3d9ba595"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Andre Collins",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:04:02Z",
+      "status": "visible",
+      "id": "comment-9e617e6a-4c0b-4d02-a06b-6208192f51b4"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Nina Alvarez",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:04:03Z",
+      "status": "visible",
+      "id": "comment-90559483-0af0-4da4-b631-546357ad6622"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Emily Vaughn",
+      "body": "🔥 flawless",
+      "createdAt": "2026-04-09T13:04:04Z",
+      "status": "visible",
+      "id": "comment-1f1c5309-9a3c-4fbb-a3c8-2b037924e3ca"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Paige Rivers",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:04:05Z",
+      "status": "visible",
+      "id": "comment-8c887323-1996-4733-9f4a-7e81fe2ecfe8"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Paige Rivers",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:04:06Z",
+      "status": "visible",
+      "id": "comment-9db9ba4b-15ba-46d5-8c37-1704f945c52c"
+    },
+    {
+      "reviewId": "imported-the-game",
+      "reviewSlug": "the-game",
+      "displayName": "Paige Rivers",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:04:07Z",
+      "status": "visible",
+      "id": "comment-aa5763cf-f9a9-471d-93aa-3afa3486403b"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Sierra Knox",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:04:08Z",
+      "status": "visible",
+      "id": "comment-54c676c3-1b8f-4f02-a037-75f3f5390169"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Connor Hale",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:04:09Z",
+      "status": "visible",
+      "id": "comment-a9d57eab-33e6-4f16-99db-e72bfa995ae4"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Marcus Velez",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:04:10Z",
+      "status": "visible",
+      "id": "comment-82f91daa-a6d9-4354-a08c-98cabbf868e5"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Sierra Knox",
+      "body": "Easy rewatch, this is just that good.",
+      "createdAt": "2026-04-09T13:04:11Z",
+      "status": "visible",
+      "id": "comment-58491fd6-9763-4603-9ce4-01fcf50f3f4e"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Sierra Knox",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:04:12Z",
+      "status": "visible",
+      "id": "comment-3271ac0d-7b1e-43be-8259-57368fc0916b"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Marcus Velez",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:04:13Z",
+      "status": "visible",
+      "id": "comment-72b5fba3-2e1e-4645-98a7-833827998f34"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Malik Turner",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:04:14Z",
+      "status": "visible",
+      "id": "comment-b92798ea-c9e1-4438-97c9-3d5fb7f50005"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Felicia Monroe",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:04:15Z",
+      "status": "visible",
+      "id": "comment-887096c3-971f-443d-96cb-82e95d27a344"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Kara Fields",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:04:16Z",
+      "status": "visible",
+      "id": "comment-a4d5c060-e3cd-4cef-beb9-b2677d351343"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Marcus Velez",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:04:17Z",
+      "status": "visible",
+      "id": "comment-0a795c45-8a52-48d1-ae4c-a41b12461122"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Connor Hale",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:04:18Z",
+      "status": "visible",
+      "id": "comment-8225da87-c189-4fb1-bff5-6279ad7048e8"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Andre Collins",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:04:19Z",
+      "status": "visible",
+      "id": "comment-7eca2859-52ec-46a4-842e-ad80dafc1d29"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Emily Vaughn",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:04:20Z",
+      "status": "visible",
+      "id": "comment-39a9c84d-36f8-4526-9d14-66f3ca1e966a"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Dylan Mercer",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:04:21Z",
+      "status": "visible",
+      "id": "comment-79933e22-fca0-4be8-a269-1c47c3ef6661"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Dylan Mercer",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:04:22Z",
+      "status": "visible",
+      "id": "comment-8bf89eae-8600-4cf3-a4ca-35ca423923a8"
+    },
+    {
+      "reviewId": "imported-fight-club",
+      "reviewSlug": "fight-club",
+      "displayName": "Russell King",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:04:23Z",
+      "status": "visible",
+      "id": "comment-05d4fd42-9e49-4fca-8d35-2afca14bde3b"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Connor Hale",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:04:24Z",
+      "status": "visible",
+      "id": "comment-d3446e02-45c9-4b3c-8fd7-07c53d054a6c"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Brianna Shaw",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:04:26Z",
+      "status": "visible",
+      "id": "comment-77410c3e-f113-4790-92ad-dacb59b6f32f"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Trevor Nash",
+      "body": "🔥 flawless",
+      "createdAt": "2026-04-09T13:04:27Z",
+      "status": "visible",
+      "id": "comment-2bf58e4f-5d42-4acc-a6df-ba4f8dec2637"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Malik Turner",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:04:28Z",
+      "status": "visible",
+      "id": "comment-c9b00efd-252b-4e95-a57e-1a873e85f65c"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Trevor Nash",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:04:29Z",
+      "status": "visible",
+      "id": "comment-366c7637-bcab-488d-a3a3-7ee78d3327e9"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Shane Carter",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:04:30Z",
+      "status": "visible",
+      "id": "comment-b8cb8406-93be-43b7-8320-f72f9671f027"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Brianna Shaw",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:04:31Z",
+      "status": "visible",
+      "id": "comment-b4fef8d0-1c83-4119-a12b-6d94e643e6ac"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Trevor Nash",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:04:32Z",
+      "status": "visible",
+      "id": "comment-ef0a4717-7c62-4e0c-a948-77b434b710c1"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Dylan Mercer",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:04:33Z",
+      "status": "visible",
+      "id": "comment-6968807f-70cd-4cde-9c35-4365d45204c5"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Victor Lang",
+      "body": "Easy rewatch, this is just that good.",
+      "createdAt": "2026-04-09T13:04:34Z",
+      "status": "visible",
+      "id": "comment-38abeaca-e69c-411d-850c-2fa43b3741e6"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Paige Rivers",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:04:35Z",
+      "status": "visible",
+      "id": "comment-74dcf7bb-3c88-4e84-a610-0647a2586ec2"
+    },
+    {
+      "reviewId": "imported-panic-room",
+      "reviewSlug": "panic-room",
+      "displayName": "Dylan Mercer",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:04:36Z",
+      "status": "visible",
+      "id": "comment-5ee170dc-049d-485d-b2b7-70e8db2e53a4"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Victor Lang",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:04:37Z",
+      "status": "visible",
+      "id": "comment-10fd025e-8b8f-484f-b650-48e60a1d79dc"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Victor Lang",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:04:38Z",
+      "status": "visible",
+      "id": "comment-0a626345-8427-46ab-b3aa-70be77ecc02c"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Tasha Greene",
+      "body": "Easy rewatch, this is just that good.",
+      "createdAt": "2026-04-09T13:04:39Z",
+      "status": "visible",
+      "id": "comment-2f1ab2da-ac10-41a6-8c68-25dd0858bd21"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Victor Lang",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:04:40Z",
+      "status": "visible",
+      "id": "comment-4bb15404-a444-4c1f-add3-8d98dfdd8ecc"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Malik Turner",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:04:41Z",
+      "status": "visible",
+      "id": "comment-6bc75f5a-3704-4bc4-847f-44af72cf4d29"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Paige Rivers",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:04:42Z",
+      "status": "visible",
+      "id": "comment-0cc77066-2264-4b5c-9820-17fb616415f2"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Kevin Rios",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:04:43Z",
+      "status": "visible",
+      "id": "comment-b2b37c4f-2763-401f-b3a8-03176f47311e"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Dana Holt",
+      "body": "kinda overrated imo",
+      "createdAt": "2026-04-09T13:04:44Z",
+      "status": "visible",
+      "id": "comment-a73c9569-7fe0-41bb-bcd3-e6c92abaa370"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Lila Moreno",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:04:45Z",
+      "status": "visible",
+      "id": "comment-eac814d0-af33-432f-922c-815edbbb7561"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Paige Rivers",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:04:46Z",
+      "status": "visible",
+      "id": "comment-c3765794-5147-423f-ad7e-cd13880a407b"
+    },
+    {
+      "reviewId": "imported-zodiac",
+      "reviewSlug": "zodiac",
+      "displayName": "Kara Fields",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:04:47Z",
+      "status": "visible",
+      "id": "comment-d6af096d-2ff7-4ecf-9ee6-5e8229166393"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Tasha Greene",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:04:48Z",
+      "status": "visible",
+      "id": "comment-0e08491b-6a4f-4844-9e48-1b11ea89b044"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Victor Lang",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:04:49Z",
+      "status": "visible",
+      "id": "comment-46e20e89-fa57-4148-b8e0-aeca57bc43c5"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Marcus Velez",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:04:50Z",
+      "status": "visible",
+      "id": "comment-b084232a-13d4-4bec-bb7f-0a6769375a97"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Russell King",
+      "body": "🔥 flawless",
+      "createdAt": "2026-04-09T13:04:51Z",
+      "status": "visible",
+      "id": "comment-1d6e79a5-0f16-4292-9d89-b448bd59014d"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Kevin Rios",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:04:52Z",
+      "status": "visible",
+      "id": "comment-431d7b3f-d03c-4859-9799-17b19bd25ae8"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Corey Banks",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:04:53Z",
+      "status": "visible",
+      "id": "comment-790d8963-2062-4808-87f0-01adaf876986"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Emily Vaughn",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:04:54Z",
+      "status": "visible",
+      "id": "comment-8945b6cb-0696-433e-95de-269b93c02f17"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Marcus Velez",
+      "body": "didn’t fully land for me",
+      "createdAt": "2026-04-09T13:04:55Z",
+      "status": "visible",
+      "id": "comment-da2d584a-bd50-4f02-a32e-c7b35aeb2637"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Kevin Rios",
+      "body": "kinda overrated imo",
+      "createdAt": "2026-04-09T13:04:56Z",
+      "status": "visible",
+      "id": "comment-8433058c-959e-4afd-9c99-604178340b5f"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Tasha Greene",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:04:57Z",
+      "status": "visible",
+      "id": "comment-2f6e332c-06f3-428c-ab9e-c79667d04e84"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Corey Banks",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:04:58Z",
+      "status": "visible",
+      "id": "comment-84e4e02b-c259-42c0-ac87-542eacbe8065"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Victor Lang",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:04:59Z",
+      "status": "visible",
+      "id": "comment-2984a28d-fb0f-4bf4-b67f-756d63bd8d27"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Tasha Greene",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:05:01Z",
+      "status": "visible",
+      "id": "comment-3ffc4be3-3112-41b1-9c92-7a9234284831"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Corey Banks",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:05:02Z",
+      "status": "visible",
+      "id": "comment-00375857-c2d5-40e0-8d98-27d06a49f882"
+    },
+    {
+      "reviewId": "imported-the-curious-case-of-benjamin-button",
+      "reviewSlug": "the-curious-case-of-benjamin-button",
+      "displayName": "Victor Lang",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:05:03Z",
+      "status": "visible",
+      "id": "comment-66119a12-8ee9-4412-beaa-9d899a2dedaf"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Paige Rivers",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:05:04Z",
+      "status": "visible",
+      "id": "comment-f1fa18fe-6117-4698-b833-3df5240e3f7c"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Andre Collins",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:05:05Z",
+      "status": "visible",
+      "id": "comment-afd7acf2-88d1-43ea-9976-87d9311f05a6"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Cole Jensen",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:05:06Z",
+      "status": "visible",
+      "id": "comment-0fef9644-7a74-4ffa-8297-30bfd735e6f5"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Emily Vaughn",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:05:07Z",
+      "status": "visible",
+      "id": "comment-d84ab472-bb37-4758-93c8-0fb933e2bd03"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Marcus Velez",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:05:08Z",
+      "status": "visible",
+      "id": "comment-02625a19-b0aa-41cb-9c45-8dfc3e019ede"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Malik Turner",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:05:09Z",
+      "status": "visible",
+      "id": "comment-fb885c82-5752-48a0-8227-c77fb6dded47"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Paige Rivers",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:05:10Z",
+      "status": "visible",
+      "id": "comment-00f63216-6c45-4c43-bd73-ec4b3f26f5cb"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Emily Vaughn",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:05:11Z",
+      "status": "visible",
+      "id": "comment-fc275124-c1a6-4fa7-a803-cba48683f374"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Tasha Greene",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:05:12Z",
+      "status": "visible",
+      "id": "comment-1c48e22e-eb90-4382-8c48-ffcb8719cc6e"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Dana Holt",
+      "body": "🔥 flawless",
+      "createdAt": "2026-04-09T13:05:14Z",
+      "status": "visible",
+      "id": "comment-ffe6b022-28ba-4d12-b47a-e8ad3773f1fd"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Tasha Greene",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:05:15Z",
+      "status": "visible",
+      "id": "comment-405b8cdd-5778-4ad6-b353-05fb41ec2ba7"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Marcus Velez",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:05:16Z",
+      "status": "visible",
+      "id": "comment-6f27739b-7ca4-48f2-8c62-adfc33996713"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Paige Rivers",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:05:17Z",
+      "status": "visible",
+      "id": "comment-8ce930b8-7836-4207-a943-d3bdf46c1ae1"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Emily Vaughn",
+      "body": "kinda overrated imo",
+      "createdAt": "2026-04-09T13:05:18Z",
+      "status": "visible",
+      "id": "comment-c9f7fd4a-72cc-4d16-a747-c775b4a9090f"
+    },
+    {
+      "reviewId": "imported-the-social-network",
+      "reviewSlug": "the-social-network",
+      "displayName": "Russell King",
+      "body": "🔥 flawless",
+      "createdAt": "2026-04-09T13:05:19Z",
+      "status": "visible",
+      "id": "comment-970068f1-9b90-4435-88c0-664179384e57"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Victor Lang",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:05:20Z",
+      "status": "visible",
+      "id": "comment-6f67b59d-f604-41a6-9c5e-ac0864fd0771"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Victor Lang",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:05:21Z",
+      "status": "visible",
+      "id": "comment-10a81ed1-5b34-4bb4-bdae-cb5f2b290a9c"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Victor Lang",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:05:22Z",
+      "status": "visible",
+      "id": "comment-02d67ec3-db9f-4a1b-8a72-bbce81366ed4"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Andre Collins",
+      "body": "Easy rewatch, this is just that good.",
+      "createdAt": "2026-04-09T13:05:23Z",
+      "status": "visible",
+      "id": "comment-fe9a0152-80dd-4f44-8225-b4eaff0ba8f4"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Brianna Shaw",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:05:24Z",
+      "status": "visible",
+      "id": "comment-9ee9ed42-eac5-4fcd-b52a-e4079c51cb25"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Sierra Knox",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:05:25Z",
+      "status": "visible",
+      "id": "comment-699db22d-501e-45bc-baa1-b5d94235bcf2"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Kevin Rios",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:05:26Z",
+      "status": "visible",
+      "id": "comment-3bce2d36-a6d6-40d8-b810-7d30775be92f"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Lila Moreno",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:05:27Z",
+      "status": "visible",
+      "id": "comment-2d9bdbc0-be3d-41b1-8314-031ecd82e95d"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Connor Hale",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:05:28Z",
+      "status": "visible",
+      "id": "comment-c32faeb0-e791-45b9-9617-1cb803b67ec5"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Cole Jensen",
+      "body": "This one absolutely hits for me.",
+      "createdAt": "2026-04-09T13:05:29Z",
+      "status": "visible",
+      "id": "comment-56550ac7-c3b0-42cb-94eb-6a9ec0b897a1"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Dylan Mercer",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:05:30Z",
+      "status": "visible",
+      "id": "comment-dab24bfb-775d-4134-b03f-5396e3d42096"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Sierra Knox",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:05:31Z",
+      "status": "visible",
+      "id": "comment-76dfdbc8-3664-446f-9bdf-f42f1c70dfda"
+    },
+    {
+      "reviewId": "imported-the-girl-with-the-dragon-tattoo",
+      "reviewSlug": "the-girl-with-the-dragon-tattoo",
+      "displayName": "Malik Turner",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:05:32Z",
+      "status": "visible",
+      "id": "comment-7ee67e8e-0741-4114-b710-9b4c0be2762d"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Dylan Mercer",
+      "body": "🔥 elite",
+      "createdAt": "2026-04-09T13:05:47Z",
+      "status": "visible",
+      "id": "comment-fc7bfcaf-35e1-44e6-a0e2-0fb6934417b6"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Corey Banks",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:05:48Z",
+      "status": "visible",
+      "id": "comment-71686360-0676-412e-b22f-92950e005e8c"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Trevor Nash",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:05:49Z",
+      "status": "visible",
+      "id": "comment-0367e89d-8191-4f7b-8465-406ff8799648"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Corey Banks",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:05:50Z",
+      "status": "visible",
+      "id": "comment-be4adddb-ae03-4bf6-8375-f894b350b374"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Sierra Knox",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:05:51Z",
+      "status": "visible",
+      "id": "comment-36057bc5-9031-4cfd-b759-c8b9bc194fb2"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Brianna Shaw",
+      "body": "This is one of those movies that just works on every level. The tone, pacing, and execution all come together perfectly.",
+      "createdAt": "2026-04-09T13:05:52Z",
+      "status": "visible",
+      "id": "comment-29aa3e99-9018-46e0-bb96-c06ad8d4e132"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Sierra Knox",
+      "body": "so good 🔥",
+      "createdAt": "2026-04-09T13:05:53Z",
+      "status": "visible",
+      "id": "comment-672329e3-c705-4ff8-85d7-63b58035f64c"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Eric Dalton",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:05:54Z",
+      "status": "visible",
+      "id": "comment-b0dbc124-adf6-44e2-99e0-f3a8ee12a787"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Paige Rivers",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:05:55Z",
+      "status": "visible",
+      "id": "comment-d0fe3169-efdb-40f1-afa3-ddeca265ae42"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Corey Banks",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:05:56Z",
+      "status": "visible",
+      "id": "comment-e6e59138-76e9-499d-9dd0-63b3d073079b"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Eric Dalton",
+      "body": "this is exactly why Ace rates this high",
+      "createdAt": "2026-04-09T13:05:57Z",
+      "status": "visible",
+      "id": "comment-5f49cd6b-862a-488d-8e9c-6fcfd89d9491"
+    },
+    {
+      "reviewId": "imported-mank",
+      "reviewSlug": "mank",
+      "displayName": "Dana Holt",
+      "body": "classic 🔥",
+      "createdAt": "2026-04-09T13:05:58Z",
+      "status": "visible",
+      "id": "comment-e20f4043-df17-4e88-814b-9bed7bc9541c"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Malik Turner",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:06:51Z",
+      "status": "visible",
+      "id": "comment-323b7162-ba1a-4d3f-8387-4ecab5cdd7b4"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Marcus Velez",
+      "body": "🔥 masterpiece",
+      "createdAt": "2026-04-09T13:06:52Z",
+      "status": "visible",
+      "id": "comment-73af535d-b504-432d-afb9-5c7f2bdfa705"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Malik Turner",
+      "body": "I honestly think this is elite. It might not be perfect, but it does so many things right that it doesn’t matter.",
+      "createdAt": "2026-04-09T13:06:53Z",
+      "status": "visible",
+      "id": "comment-be441efb-20c6-44b7-91d5-337c944854cc"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Sierra Knox",
+      "body": "kinda overrated imo",
+      "createdAt": "2026-04-09T13:06:54Z",
+      "status": "visible",
+      "id": "comment-7f5a0c6a-e63a-4327-915f-419793092bfd"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Kevin Rios",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:06:55Z",
+      "status": "visible",
+      "id": "comment-0e59b09c-8c4a-4ebb-b2c1-b454cda3a842"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Emily Vaughn",
+      "body": "Ace don’t miss on this one",
+      "createdAt": "2026-04-09T13:06:56Z",
+      "status": "visible",
+      "id": "comment-4d54186c-d681-40c6-96d3-8a433bf5c3c5"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Malik Turner",
+      "body": "Way better than most movies out there.",
+      "createdAt": "2026-04-09T13:06:57Z",
+      "status": "visible",
+      "id": "comment-fc2fd6c8-8ddd-4c5a-9986-6c645e84758b"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Sierra Knox",
+      "body": "This is top-tier for me.",
+      "createdAt": "2026-04-09T13:06:58Z",
+      "status": "visible",
+      "id": "comment-34c41c3d-e9ad-4b5b-b0e7-43473032e22d"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Sierra Knox",
+      "body": "This sticks with you. The atmosphere and direction carry it hard and make it feel special.",
+      "createdAt": "2026-04-09T13:06:59Z",
+      "status": "visible",
+      "id": "comment-d6e79ba5-6eb1-4e8f-988f-51014a90743c"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Dana Holt",
+      "body": "not really my thing",
+      "createdAt": "2026-04-09T13:07:00Z",
+      "status": "visible",
+      "id": "comment-0eb475ab-afd1-4ef5-8179-0da6d04a8b1a"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Sierra Knox",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:07:01Z",
+      "status": "visible",
+      "id": "comment-b2f40f26-2080-437c-9e02-76dd873da4c2"
+    },
+    {
+      "reviewId": "imported-alfred-hitchcock-collection-the-ring-1927",
+      "reviewSlug": "the-ring-1927",
+      "displayName": "Jade Simmons",
+      "body": "Ace was right, this is elite",
+      "createdAt": "2026-04-09T13:07:02Z",
+      "status": "visible",
+      "id": "comment-8f596a69-0ceb-4d22-8630-c551dd4aaf22"
+    },
     {
       "reviewId": "review-halloween-1978",
       "reviewSlug": "halloween-1978",

@@ -10,6 +10,19 @@ export const statusOptions = ["published", "draft"] as const;
 export type Verdict = (typeof verdictOptions)[number];
 export type VerdictTone = "fire" | "mixed" | "nope" | "trash";
 export type ReviewStatus = (typeof statusOptions)[number];
+export type AmazonLinkType = "dp" | "search";
+export type WatchProviderType =
+  | "subscription"
+  | "rent_buy"
+  | "free"
+  | "ads"
+  | "channel"
+  | "other";
+
+export type WatchProvider = {
+  name: string;
+  type: WatchProviderType;
+};
 
 export type Review = {
   id: string;
@@ -27,6 +40,12 @@ export type Review = {
   reviewVideoUrl: string;
   whereToWatchUrl: string;
   amazonAffiliateUrl?: string;
+  amazonUrl?: string;
+  amazonAsin?: string;
+  amazonLinkType?: AmazonLinkType;
+  watchProviders?: WatchProvider[];
+  watchDataSource?: string;
+  watchLastCheckedAt?: string;
   createdAt: string;
   updatedAt: string;
   featured: boolean;

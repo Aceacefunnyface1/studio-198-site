@@ -11,10 +11,14 @@ type ReviewCardProps = {
 
 export function ReviewCard({ review }: ReviewCardProps) {
   const ratingVisual = getRatingVisual(review.rating);
-  const safeAmazonLink = getSafeAmazonLink(review.amazonAffiliateUrl, {
+  const safeAmazonLink = getSafeAmazonLink({
     movieTitle: review.movieTitle,
     releaseYear: review.releaseYear,
     director: review.director,
+    amazonAffiliateUrl: review.amazonAffiliateUrl,
+    amazonUrl: review.amazonUrl,
+    amazonAsin: review.amazonAsin,
+    amazonLinkType: review.amazonLinkType,
   });
   const tagLine = review.genreTags.slice(0, 3).join(" / ");
   const directorName = review.director?.trim() || "Unknown";

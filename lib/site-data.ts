@@ -5,7 +5,10 @@ import path from "node:path";
 import { get, put } from "@vercel/blob";
 import bundledSeedData from "@/data/site-data.json";
 import pendingPosterSlugs from "@/data/pending-poster-slugs.json";
-import { normalizeAmazonAffiliateUrl } from "@/lib/amazon-links";
+import {
+  getSafeAmazonLink,
+  normalizeAmazonAffiliateUrl,
+} from "@/lib/amazon-links";
 import {
   GiveawayWinner,
   NewsletterSubscriber,
@@ -13,6 +16,7 @@ import {
   SiteData,
   Verdict,
   verdictOptions,
+  WatchProvider,
 } from "@/lib/types";
 
 const dataFilePath = path.join(process.cwd(), "data", "site-data.json");
@@ -138,10 +142,57 @@ function getTimestamp(value: string | null | undefined) {
   return Number.isNaN(timestamp) ? Number.NEGATIVE_INFINITY : timestamp;
 }
 
+function normalizeWatchProviders(value: unknown): WatchProvider[] {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  return value.flatMap((provider) => {
+    if (!provider || typeof provider !== "object") {
+      return [];
+    }
+
+    const candidate = provider as Partial<WatchProvider>;
+    const name =
+      typeof candidate.name === "string" ? candidate.name.trim() : "";
+    const type = (
+      typeof candidate.type === "string" ? candidate.type : "other"
+    ).trim() as WatchProvider["type"];
+
+    if (!name) {
+      return [];
+    }
+
+    return [{ name, type }];
+  });
+}
+
+function normalizeWatchCheckedAt(value: string | null | undefined) {
+  const candidate = (value || "").trim();
+
+  if (!candidate) {
+    return "";
+  }
+
+  return Number.isNaN(Date.parse(candidate)) ? "" : candidate;
+}
+
 function enforceReviewPolicies(review: Review) {
   const verdict = verdictOptions.includes(review.verdict as Verdict)
     ? review.verdict
     : "🔥";
+  const safeAmazonLink = getSafeAmazonLink({
+    movieTitle: review.movieTitle,
+    releaseYear: review.releaseYear,
+    director: review.director,
+    amazonAsin: review.amazonAsin,
+    amazonAffiliateUrl: review.amazonAffiliateUrl,
+    amazonUrl: review.amazonUrl,
+  });
+  const normalizedProviders = normalizeWatchProviders(review.watchProviders);
+  const normalizedWatchLastCheckedAt = normalizeWatchCheckedAt(
+    review.watchLastCheckedAt,
+  );
 
   return {
     ...review,
@@ -151,7 +202,16 @@ function enforceReviewPolicies(review: Review) {
       movieTitle: review.movieTitle,
       releaseYear: review.releaseYear,
       director: review.director,
+      amazonAsin: review.amazonAsin,
+      amazonUrl: review.amazonUrl,
     }),
+    amazonUrl: safeAmazonLink.url,
+    amazonAsin: safeAmazonLink.asin ?? "",
+    amazonLinkType: safeAmazonLink.asin ? "dp" : safeAmazonLink.url ? "search" : "search",
+    watchProviders: normalizedProviders,
+    watchDataSource: (review.watchDataSource || "").trim() || "manual",
+    watchLastCheckedAt:
+      normalizedWatchLastCheckedAt || review.updatedAt || review.createdAt,
     status: getResolvedReviewStatus(review),
   } satisfies Review;
 }
@@ -368,6 +428,30 @@ function mergeSiteData(existing: SiteData, bundled: SiteData) {
       amazonAffiliateUrl: mergeStringField(
         existingReview.amazonAffiliateUrl ?? "",
         bundledReview.amazonAffiliateUrl ?? "",
+      ),
+      amazonUrl: mergeStringField(
+        existingReview.amazonUrl ?? "",
+        bundledReview.amazonUrl ?? "",
+      ),
+      amazonAsin: mergeStringField(
+        existingReview.amazonAsin ?? "",
+        bundledReview.amazonAsin ?? "",
+      ),
+      amazonLinkType:
+        existingReview.amazonLinkType === "dp" || existingReview.amazonLinkType === "search"
+          ? existingReview.amazonLinkType
+          : bundledReview.amazonLinkType,
+      watchProviders:
+        existingReview.watchProviders?.length
+          ? existingReview.watchProviders
+          : bundledReview.watchProviders ?? [],
+      watchDataSource: mergeStringField(
+        existingReview.watchDataSource ?? "",
+        bundledReview.watchDataSource ?? "",
+      ),
+      watchLastCheckedAt: mergeStringField(
+        existingReview.watchLastCheckedAt ?? "",
+        bundledReview.watchLastCheckedAt ?? "",
       ),
       featured:
         preferBundledReviewFields && bundledReview.featured !== existingReview.featured

@@ -8,6 +8,7 @@ export type AmazonReviewContext = {
   movieTitle?: string | null;
   releaseYear?: number | null;
   director?: string | null;
+  amazonLinkType?: AmazonLinkType | null;
   amazonAsin?: string | null;
   asin?: string | null;
   amazonAffiliateUrl?: string | null;
@@ -29,10 +30,20 @@ const AMAZON_ASIN_PATH_PATTERNS = [
   /\/dp\/([A-Z0-9]{10})(?:[/?]|$)/i,
   /\/gp\/product\/([A-Z0-9]{10})(?:[/?]|$)/i,
   /\/gp\/aw\/d\/([A-Z0-9]{10})(?:[/?]|$)/i,
-  /\/gp\/video\/detail\/([A-Z0-9]{10})(?:[/?]|$)/i,
   /\/exec\/obidos\/ASIN\/([A-Z0-9]{10})(?:[/?]|$)/i,
   /\/product\/([A-Z0-9]{10})(?:[/?]|$)/i,
+  /\/[^/]+\/dp\/([A-Z0-9]{10})(?:[/?]|$)/i,
 ];
+const AMAZON_BLOCKED_PATH_PATTERNS = [/\/gp\/video\/detail\//i];
+const AMAZON_ALLOWED_HOSTS = new Set([
+  AMAZON_HOST,
+  "amazon.com",
+  "smile.amazon.com",
+  "www.amazon.co.uk",
+  "amazon.co.uk",
+  "www.amazon.ca",
+  "amazon.ca",
+]);
 
 function normalizeAsin(candidate: string | null | undefined) {
   const value = (candidate || "").trim().toUpperCase();
@@ -41,11 +52,11 @@ function normalizeAsin(candidate: string | null | undefined) {
 
 function getCandidateValues(context: AmazonReviewContext) {
   return [
+    context.amazonUrl,
+    context.amazon_url,
     context.amazonAsin,
     context.asin,
     context.amazonAffiliateUrl,
-    context.amazonUrl,
-    context.amazon_url,
     context.watchUrl,
     context.watch_url,
     context.buyUrl,
@@ -53,7 +64,19 @@ function getCandidateValues(context: AmazonReviewContext) {
   ];
 }
 
-function getNormalizedAmazonDirectUrl(value: string | null | undefined) {
+function isAllowedAmazonHostname(hostname: string) {
+  return (
+    AMAZON_ALLOWED_HOSTS.has(hostname) ||
+    hostname.endsWith(".amazon.com") ||
+    hostname.endsWith(".amazon.co.uk") ||
+    hostname.endsWith(".amazon.ca")
+  );
+}
+
+function getNormalizedAmazonDirectUrl(
+  value: string | null | undefined,
+  tag = AMAZON_AFFILIATE_TAG,
+) {
   const input = (value || "").trim();
 
   if (!input) {
@@ -68,14 +91,35 @@ function getNormalizedAmazonDirectUrl(value: string | null | undefined) {
       return "";
     }
 
-    if (
-      hostname === "amzn.to" ||
-      hostname === AMAZON_HOST ||
-      hostname.endsWith(".amazon.com") ||
-      hostname.endsWith(".amazon.co.uk") ||
-      hostname.endsWith(".amazon.ca")
-    ) {
+    if (hostname === "amzn.to") {
       return parsed.toString();
+    }
+
+    if (!isAllowedAmazonHostname(hostname)) {
+      return "";
+    }
+
+    if (AMAZON_BLOCKED_PATH_PATTERNS.some((pattern) => pattern.test(parsed.pathname))) {
+      return "";
+    }
+
+    const asin = extractAsin(parsed.toString());
+
+    if (asin) {
+      return buildAmazonDpLink(asin, tag);
+    }
+
+    if (parsed.pathname === "/s" || parsed.pathname === "/s/") {
+      const query = parsed.searchParams.get("k")?.trim();
+
+      if (!query) {
+        return "";
+      }
+
+      return `https://${AMAZON_HOST}/s?${new URLSearchParams({
+        k: query,
+        tag,
+      }).toString()}`;
     }
   } catch {
     // Ignore malformed values and fall through to empty.
@@ -113,12 +157,11 @@ export function extractAsin(value: string | null | undefined) {
     const parsed = new URL(input);
     const hostname = parsed.hostname.toLowerCase();
 
-    if (
-      hostname === AMAZON_HOST ||
-      hostname.endsWith(".amazon.com") ||
-      hostname.endsWith(".amazon.co.uk") ||
-      hostname.endsWith(".amazon.ca")
-    ) {
+    if (isAllowedAmazonHostname(hostname)) {
+      if (AMAZON_BLOCKED_PATH_PATTERNS.some((pattern) => pattern.test(parsed.pathname))) {
+        return "";
+      }
+
       const asinParams = [
         parsed.searchParams.get("asin"),
         parsed.searchParams.get("ASIN"),
@@ -187,14 +230,20 @@ export function buildAmazonSearchLink(
 }
 
 function getSafeAmazonLinkFromContext(context: AmazonReviewContext): SafeAmazonLink {
+  const explicitLinkType = context.amazonLinkType === "dp" || context.amazonLinkType === "search"
+    ? context.amazonLinkType
+    : null;
+
   for (const candidate of getCandidateValues(context)) {
     const directUrl = getNormalizedAmazonDirectUrl(candidate);
 
     if (directUrl) {
+      const asin = extractAsin(directUrl) || null;
+
       return {
         url: directUrl,
-        type: "dp",
-        asin: extractAsin(directUrl) || null,
+        type: explicitLinkType ?? (asin ? "dp" : "search"),
+        asin,
       };
     }
 
@@ -209,8 +258,28 @@ function getSafeAmazonLinkFromContext(context: AmazonReviewContext): SafeAmazonL
     }
   }
 
+  const explicitAsin = normalizeAsin(context.amazonAsin ?? context.asin);
+
+  if (explicitAsin) {
+    return {
+      url: buildAmazonDpLink(explicitAsin),
+      type: "dp",
+      asin: explicitAsin,
+    };
+  }
+
+  const fallbackSearch = buildAmazonSearchLink(context.movieTitle, context.releaseYear);
+
+  if (fallbackSearch) {
+    return {
+      url: fallbackSearch,
+      type: "search",
+      asin: null,
+    };
+  }
+
   return {
-    url: buildAmazonSearchLink(context.movieTitle, context.releaseYear),
+    url: "",
     type: "search",
     asin: null,
   };
@@ -238,6 +307,5 @@ export function normalizeAmazonAffiliateUrl(
 }
 
 export function getAmazonCtaLabel(type: AmazonLinkType) {
-  void type;
-  return "WATCH ON AMAZON →";
+  return type === "dp" ? "WATCH NOW ON AMAZON →" : "FIND IT ON AMAZON →";
 }

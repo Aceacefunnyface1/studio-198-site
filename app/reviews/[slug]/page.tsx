@@ -8,7 +8,7 @@ import { PosterFrame } from "@/components/poster-frame";
 import { ReviewLikeButton } from "@/components/review-like-button";
 import { ReviewCard } from "@/components/review-card";
 import { ShareActions } from "@/components/share-actions";
-import { WatchThisMovie } from "@/components/watch-this-movie";
+import { WatchOptions } from "@/components/watch-options";
 import { getReviewBundle } from "@/lib/review-queries";
 import { formatDate, getRatingVisual, getReviewerPresentation } from "@/lib/utils";
 
@@ -98,6 +98,11 @@ export default async function ReviewDetailPage({
               {review.runtime ? <span>{review.runtime}</span> : null}
             </div>
 
+            <WatchOptions
+              review={review}
+              className="detail-watch-options"
+            />
+
             <div className="prose-block">
               <h2>Quick Hit</h2>
               <p>{review.quickHit || "Quick-hit review text pending publication."}</p>
@@ -110,14 +115,6 @@ export default async function ReviewDetailPage({
                   "The full written review has not been published yet."}
               </p>
             </div>
-
-            <WatchThisMovie
-              url={review.amazonAffiliateUrl}
-              movieTitle={review.movieTitle}
-              releaseYear={review.releaseYear}
-              director={review.director}
-              className="detail-watch-this-movie"
-            />
 
             <div className="button-row">
               {review.reviewVideoUrl ? (

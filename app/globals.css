@@ -2523,6 +2523,49 @@ textarea {
   box-shadow: 0 12px 28px rgba(164, 13, 25, 0.28);
 }
 
+.watch-options {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1rem 1.05rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(198, 30, 39, 0.24);
+  background:
+    linear-gradient(180deg, rgba(198, 30, 39, 0.08), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.025);
+}
+
+.watch-options__eyebrow {
+  margin: 0;
+  color: #f4efe4;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.watch-options__button {
+  width: fit-content;
+  box-shadow: 0 12px 28px rgba(164, 13, 25, 0.28);
+}
+
+.watch-options__providers {
+  margin: 0;
+  color: rgba(239, 229, 211, 0.88);
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.watch-options__providers span {
+  color: var(--muted-strong);
+}
+
+.watch-options__disclosure {
+  margin: 0;
+  color: rgba(239, 229, 211, 0.68);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
 .review-card-watch {
   margin-top: 0.05rem;
 }
@@ -2820,6 +2863,10 @@ textarea {
 
 .detail-watch-this-movie {
   margin-top: -0.1rem;
+}
+
+.detail-watch-options {
+  margin-top: -0.05rem;
 }
 
 .comment-shell {

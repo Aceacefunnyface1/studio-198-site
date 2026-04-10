@@ -63,7 +63,11 @@ function hasResolvedPoster(review: Review) {
 }
 
 function hasAmazonAffiliateUrl(review: Review) {
-  return Boolean(review.amazonAffiliateUrl?.trim());
+  return Boolean(
+    review.amazonAffiliateUrl?.trim() ||
+      review.amazonUrl?.trim() ||
+      review.amazonAsin?.trim(),
+  );
 }
 
 function hasUsableSlug(review: Review) {

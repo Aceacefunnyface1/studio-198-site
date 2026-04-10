@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useActionState } from "react";
 import { submitHeatVoteAction, type HeatVoteActionState } from "@/app/actions";
-import { getAmazonCtaLabel, type AmazonLinkType } from "@/lib/amazon-links";
+import { type AmazonLinkType } from "@/lib/amazon-links";
 
 type ReviewCardControlsProps = {
   reviewId: string;
@@ -22,6 +22,10 @@ const initialHeatVoteState = (
   message: "",
   heatCount,
 });
+
+function getCompactAmazonLabel(type: AmazonLinkType) {
+  return type === "dp" ? "WATCH AMAZON" : "FIND AMAZON";
+}
 
 export function ReviewCardControls({
   reviewId,
@@ -91,7 +95,7 @@ export function ReviewCardControls({
         >
           <span className="movie-review-card__action-eyebrow">Stream</span>
           <div className="movie-review-card__action-main movie-review-card__action-main--stacked">
-            <strong>{getAmazonCtaLabel(amazonLinkType)}</strong>
+            <strong>{getCompactAmazonLabel(amazonLinkType)}</strong>
           </div>
         </a>
 

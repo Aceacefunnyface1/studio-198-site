@@ -4,7 +4,11 @@ import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import pendingPosterSlugs from "@/data/pending-poster-slugs.json";
-import { normalizeAmazonAffiliateUrl } from "@/lib/amazon-links";
+import {
+  extractAsin,
+  getSafeAmazonLink,
+  normalizeAmazonAffiliateUrl,
+} from "@/lib/amazon-links";
 import {
   clearAdminSession,
   createAdminSession,
@@ -99,6 +103,20 @@ export async function saveReviewAction(formData: FormData) {
     const ratingRaw = requireText(formData.get("rating"));
     const parsedRating = ratingRaw ? Number.parseFloat(ratingRaw) : null;
 
+    const safeAmazonLink = getSafeAmazonLink(
+      requireText(formData.get("amazonAffiliateUrl")),
+      {
+        movieTitle,
+        releaseYear: requireText(formData.get("releaseYear"))
+          ? Number.parseInt(requireText(formData.get("releaseYear")), 10)
+          : null,
+        director: requireText(formData.get("director")),
+        amazonAsin: existing?.amazonAsin,
+        amazonUrl: existing?.amazonUrl,
+        amazonLinkType: existing?.amazonLinkType,
+      },
+    );
+
     const review: Review = {
       id,
       movieTitle,
@@ -125,6 +143,17 @@ export async function saveReviewAction(formData: FormData) {
           director: requireText(formData.get("director")),
         },
       ),
+      amazonUrl: safeAmazonLink.url || existing?.amazonUrl || "",
+      amazonAsin:
+        safeAmazonLink.asin || extractAsin(existing?.amazonAsin) || "",
+      amazonLinkType:
+        safeAmazonLink.type ||
+        existing?.amazonLinkType ||
+        "search",
+      watchProviders: existing?.watchProviders ?? [],
+      watchDataSource: existing?.watchDataSource ?? "manual",
+      watchLastCheckedAt:
+        existing?.watchLastCheckedAt ?? new Date().toISOString(),
       createdAt: existing?.createdAt || new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       featured: formData.get("featured") === "on",

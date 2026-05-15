@@ -1,189 +1,169 @@
 import Image from "next/image";
-import Link from "next/link";
-import { PosterShelfRow } from "@/components/poster-shelf-row";
-import { getHomepageShelfBundle } from "@/lib/review-queries";
+import { siteInfo } from "@/lib/shine-on-data";
 
-const reviewerPortraits = {
-  Ace: {
-    image: "/about/ace.jpg",
-    alt: "Ace portrait",
-  },
-  Mindy: {
-    image: "/about/mindy.jpg",
-    alt: "Mindy portrait",
-  },
-  Leeanna: {
-    image: "/about/leeanne.jpg",
-    alt: "Leeanna portrait",
-  },
-} as const;
+const trustItems = [
+  "Cash Rides",
+  "Work Rides",
+  "Local Driver",
+  "Out-of-Town Available",
+  "Starting at $6",
+  "No Base Rides",
+] as const;
 
-const ROB_ZOMBIE_FALLBACK_HREF = "/reviews?search=Rob%20Zombie#browse-all";
-const TARANTINO_FALLBACK_HREF = "/reviews?search=Quentin%20Tarantino#browse-all";
+const reasonsToCall = [
+  "Better than waiting on an app",
+  "Great for daily work rides",
+  "Local Lawton driver",
+  "Cash-friendly rides",
+  "Call or text directly",
+  "Out-of-town rides available",
+] as const;
 
-export default async function HomePage() {
-  const homepageShelves = await getHomepageShelfBundle();
-  const collectionSectionByTitle = new Map(
-    homepageShelves.collectionSections.map((section) => [section.title, section]),
-  );
-  const robZombieHref =
-    collectionSectionByTitle.get("Rob Zombie Collection")?.viewAllHref ??
-    ROB_ZOMBIE_FALLBACK_HREF;
-  const tarantinoHref =
-    collectionSectionByTitle.get("Quentin Tarantino Collection")?.viewAllHref ??
-    TARANTINO_FALLBACK_HREF;
-
+export default function HomePage() {
   return (
-    <div className="cinema-home">
-      <div className="cinema-home__backdrop" aria-hidden="true">
-        <div className="cinema-home__backdrop-top" />
-        <div className="cinema-home__backdrop-mid" />
-        <div className="cinema-home__backdrop-bottom" />
-      </div>
-
-      <div className="cinema-home__column">
-        <section className="cinema-panel cinema-panel--hero cinema-panel--hero-vault">
-          <h1 className="sr-only">Studio 198 featured collection hero</h1>
-
-          <div className="hero-vault-card">
-            <div className="hero-vault-card__top-bar" aria-hidden="true" />
-
-            <div className="hero-vault-card__media">
-              <img
-                src="/home-hero/hero-placeholder.png"
-                alt="Hero placeholder art. Replace public/home-hero/hero-placeholder.png to swap this image."
-              />
-            </div>
-
-            <div className="hero-vault-card__buttons" aria-label="Collection vault links">
-              <Link href={robZombieHref} className="hero-vault-card__button">
-                <img src="/home-hero/rob-zombie-button.png" alt="" />
-                <span>Enter the Rob Zombie Vault</span>
-              </Link>
-
-              <Link href={tarantinoHref} className="hero-vault-card__button">
-                <img src="/home-hero/tarantino-button.png" alt="" />
-                <span>Enter the Tarantino Vault</span>
-              </Link>
-            </div>
-
-            <div className="hero-vault-card__fire" aria-hidden="true">
-              <img src="/home-hero/fire-strip.png" alt="" />
-            </div>
-          </div>
-        </section>
-
-        <section className="cinema-panel cinema-panel--weekly-picks">
-          <div className="cinema-panel__heading">
-            <h2>Three Picks from the Furnace</h2>
-          </div>
-
-          <div className="weekly-picks-grid" aria-label="Three Picks from the Furnace">
-            {homepageShelves.weeklyPicks.map((pick) => {
-              const portrait = reviewerPortraits[pick.reviewerName];
-
-              return (
-                <Link
-                  key={pick.review.id}
-                  href={`/reviews/${pick.review.slug}`}
-                  className="weekly-pick-feature"
-                >
-                  <div className="weekly-pick-feature__media">
-                    <div className="weekly-pick-feature__reviewer-image">
-                      <Image
-                        src={portrait.image}
-                        alt={portrait.alt}
-                        fill
-                        sizes="76px"
-                      />
-                    </div>
-                    <div className="weekly-pick-feature__poster">
-                      <Image
-                        src={pick.review.resolvedPosterImage}
-                        alt={`${pick.review.movieTitle} poster`}
-                        fill
-                        sizes="90px"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="weekly-pick-feature__copy">
-                    <p className="weekly-pick-feature__name">{pick.reviewerName}</p>
-                    <h3>{pick.review.movieTitle}</h3>
-                    <p className="weekly-pick-feature__hook">{pick.reason}</p>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-
-        {homepageShelves.shelves.map((section) => (
-          <section key={section.title} className="cinema-panel cinema-panel--shelf">
-            <div
-              className={`cinema-panel__heading ${
-                section.title === "The Bloody Birth of Horror"
-                  ? "cinema-panel__heading--bloody-birth"
-                  : ""
-              }`}
-            >
-              <div>
-                <h2>{section.title}</h2>
-                {section.title === "The Bloody Birth of Horror" ? (
-                  <p className="cinema-panel__subtitle">
-                    Where horror began—tap a film and feel the first scream.
-                  </p>
-                ) : null}
+    <main className="landing-page">
+      <section className="hero">
+        <div className="container">
+          <div className="hero__layout">
+            <div className="hero__copy">
+              <p className="eyebrow">Cash rides in Lawton, Oklahoma</p>
+              <h1>UNDERCOVER TRANSPORTATION</h1>
+              <h2>Reliable Cash Rides in Lawton</h2>
+              <p className="hero__lead">
+                No app. No waiting around. Just call or text Matthew and get where
+                you need to go.
+              </p>
+              <div className="hero__details">
+                <p>Rides start at $6.</p>
+                <p>Available daily from 6AM to 9PM.</p>
+                <p>Work rides, local rides, and out-of-town rides available.</p>
               </div>
-              <Link href={section.viewAllHref}>View All</Link>
-            </div>
-            <PosterShelfRow ariaLabel={section.title} reviews={section.reviews} />
-          </section>
-        ))}
-
-        {homepageShelves.collectionSections.map((section) => {
-          const subtitle =
-            section.title === "Quentin Tarantino Collection"
-              ? "Full reviews, posters, and comments in the exact order you set."
-              : section.title === "Rob Zombie Collection"
-                ? "Every Rob Zombie title in one place."
-                : section.title === "Alfred Hitchcock Collection"
-                  ? "The Hitchcock run, lined up in chronological order."
-                  : section.title === "Brian De Palma Collection"
-                    ? "The De Palma run, lined up in chronological order."
-                    : section.title === "John Carpenter Collection"
-                      ? "The Carpenter run, lined up in chronological order."
-                      : section.title === "David Fincher Collection"
-                        ? "The Fincher run, lined up in chronological order."
-                    : "";
-
-          return (
-            <section key={section.title} className="cinema-panel cinema-panel--shelf">
-              <div className="cinema-panel__heading">
-                <div>
-                  <h2>{section.title}</h2>
-                  {subtitle ? (
-                    <p className="cinema-panel__subtitle">{subtitle}</p>
-                  ) : null}
-                </div>
-                <Link href={section.viewAllHref}>View All</Link>
+              <div className="cta-row">
+                <a href={siteInfo.phoneHref} className="button button--primary">
+                  CALL NOW - {siteInfo.phoneDisplay}
+                </a>
+                <a href={siteInfo.smsHref} className="button button--secondary">
+                  TEXT MATTHEW
+                </a>
               </div>
-              <PosterShelfRow ariaLabel={section.title} reviews={section.reviews} />
-            </section>
-          );
-        })}
+            </div>
 
-        <section className="cinema-panel cinema-panel--archive-entry">
-          <div className="archive-entry-block">
-            <p className="eyebrow">Full Archive</p>
-            <h2>Full Archive</h2>
-            <p>Every film. No mercy. Dig in.</p>
-            <Link href="/reviews" className="button-primary">
-              Enter the Archive
-            </Link>
+            <div className="hero__panel">
+              <div className="hero__image-wrap">
+                <Image
+                  src="/home-hero/undercover-hero.png"
+                  alt="Black car driving at night on a purple-lit city road"
+                  fill
+                  priority
+                  className="hero__image"
+                  sizes="(max-width: 980px) 100vw, 46vw"
+                />
+                <div className="hero__image-overlay" aria-hidden="true" />
+              </div>
+              <div className="hero__card">
+                <p className="hero__card-label">Call or text Matthew Rogers</p>
+                <a href={siteInfo.phoneHref} className="hero__phone">
+                  {siteInfo.phoneDisplay}
+                </a>
+                <p className="hero__card-copy">
+                  Direct rides around Lawton with simple pricing, reliable pickup,
+                  and no base rides.
+                </p>
+              </div>
+            </div>
           </div>
-        </section>
-      </div>
-    </div>
+
+          <div className="trust-strip" aria-label="Service highlights">
+            {trustItems.map((item) => (
+              <span key={item} className="trust-chip">
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="services">
+        <div className="container narrow-stack">
+          <p className="eyebrow">Need a dependable ride?</p>
+          <h2>Need a dependable ride?</h2>
+          <p className="section-copy">
+            Undercover Transportation helps people in Lawton get to work,
+            appointments, stores, home, and anywhere else they need to go. Matthew
+            specializes in reliable work rides and repeat customers who need
+            someone they can count on.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section--panel">
+        <div className="container">
+          <div className="section-heading">
+            <p className="eyebrow">Why call Matthew?</p>
+            <h2>Why call Matthew?</h2>
+          </div>
+          <div className="card-grid">
+            {reasonsToCall.map((item) => (
+              <article key={item} className="reason-card">
+                <span className="reason-card__mark" aria-hidden="true">
+                  +
+                </span>
+                <p>{item}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="pricing">
+        <div className="container split-panel">
+          <div>
+            <p className="eyebrow">Simple pricing</p>
+            <h2>Simple pricing</h2>
+            <p className="section-copy">
+              Rides start at $6. Final price depends on pickup, drop-off, distance,
+              and time. Call or text Matthew for a quick quote.
+            </p>
+          </div>
+          <div className="quote-box">
+            <p className="quote-box__label">Quick info</p>
+            <ul className="info-list">
+              <li>Cash-friendly rides</li>
+              <li>Daily availability from 6AM to 9PM</li>
+              <li>No military base rides</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--panel" id="coverage">
+        <div className="container narrow-stack">
+          <p className="eyebrow">Serving Lawton and beyond</p>
+          <h2>Serving Lawton and beyond</h2>
+          <p className="section-copy">
+            Based in Lawton, Oklahoma. Local rides available in town, plus
+            out-of-town trips when scheduled.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section--cta">
+        <div className="container cta-block">
+          <div>
+            <p className="eyebrow">Need a ride today?</p>
+            <h2>Need a ride today?</h2>
+            <p className="section-copy">Call or text Matthew Rogers now.</p>
+          </div>
+          <div className="cta-row">
+            <a href={siteInfo.phoneHref} className="button button--primary">
+              CALL {siteInfo.phoneDisplay}
+            </a>
+            <a href={siteInfo.smsHref} className="button button--secondary">
+              TEXT {siteInfo.phoneDisplay}
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

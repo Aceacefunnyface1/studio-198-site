@@ -1,157 +1,86 @@
-import { readSiteData } from "@/lib/site-data";
-import { getReviewerPresentation } from "@/lib/utils";
+import type { Metadata } from "next";
+import Image from "next/image";
+import { serviceHighlights, siteInfo } from "@/lib/shine-on-data";
 
-const crew = [
-  {
-    image: "/about/mindy.jpg",
-    name: "MINDY S",
-    tone: "mindy",
-    meta: ["Eufaula, AL", "Melynda’s Love", "Los Angeles Film School"],
-    description: "Brings instinct and emotional read to every review.",
-    socials: [],
-  },
-  {
-    image: "/about/ace.jpg",
-    name: "ACE B",
-    tone: "ace",
-    meta: [
-      "Lawton, OK",
-      "Studio 198",
-      "Los Angeles Film School",
-      "www.moviesbybrad.com",
-    ],
-    description: "Executioner of the verdict. Built the system.",
-    socials: [
-      {
-        label: "Facebook",
-        href: "https://www.facebook.com/profile.php?id=61574699900336",
-      },
-      {
-        label: "Instagram",
-        href: "https://www.instagram.com/acebehnkebrad/",
-      },
-      {
-        label: "LinkedIn",
-        href: "https://www.linkedin.com/in/brad-behnke-thedoocumantguy/",
-      },
-      {
-        label: "FilmFreeway",
-        href: "https://filmfreeway.com/BradBehnke",
-      },
-      {
-        label: "IMDb",
-        href: "https://www.imdb.com/user/ur180728718/?ref_=hm_nv_profile",
-      },
-      {
-        label: "X",
-        href: "https://x.com/BradLeebehnke2",
-      },
-      {
-        label: "YouTube",
-        href: "https://www.youtube.com/@AceStudio198",
-      },
-      {
-        label: "TikTok",
-        href: "https://www.tiktok.com/@stud1o19884o0",
-      },
-    ],
-  },
-  {
-    image: "/about/leeanne.jpg",
-    name: "LEEANNE",
-    tone: "leeanna",
-    meta: [
-      "Cleveland, TN",
-      "One Generation Studio",
-      "Los Angeles Film School",
-    ],
-    description: "Focuses on story, pacing, and structure.",
-    socials: [
-      {
-        label: "One Generation Studio",
-        href: "https://onegenerationstudio.square.site/",
-      },
-    ],
-  },
-];
+export const metadata: Metadata = {
+  title: `About | ${siteInfo.name}`,
+  description:
+    "Learn why Shine On Tattoo has become one of the most trusted tattoo shops in Lawton, Oklahoma.",
+};
 
-export default async function AboutPage() {
-  const data = await readSiteData();
-  const reviewCounts = data.reviews.reduce<Record<string, number>>((totals, review) => {
-    const { tone } = getReviewerPresentation(review.reviewerName);
-    totals[tone] = (totals[tone] ?? 0) + 1;
-    return totals;
-  }, {});
-
+export default function AboutPage() {
   return (
-    <main className="about-page">
-      <section className="about-wrapper">
-        <div className="about-hero">
-          <p className="about-eyebrow">Studio 198 / Snap Critique</p>
-          <h1 className="about-title">THE CREW BEHIND THE VERDICT</h1>
-          <p className="about-intro">
-            Three creators. One system. No fluff.
-            <br />
-            <br />
-            What started in the same classroom at The Los Angeles Film School
-            turned into something sharper — a platform built to cut through
-            noise and deliver real takes on film.
-            <br />
-            <br />
-            We don’t review movies the safe way. We break them down, call them
-            out, and give you a verdict you can actually trust.
-            <br />
-            <br />
-            <strong>Snap Critique isn’t about hype. It’s about truth.</strong>
-          </p>
+    <main>
+      <section className="page-hero">
+        <div className="container page-hero__grid">
+          <div>
+            <p className="section-label">About The Shop</p>
+            <h1>A LAWTON TATTOO SHOP BUILT ON REPUTATION</h1>
+            <div className="prose-block">
+              <p>
+                Shine On Tattoo is one of the most established and trusted tattoo shops in Lawton, Oklahoma. With hundreds of verified reviews and a strong local following, the shop has built its reputation on consistency, professionalism, and quality work.
+              </p>
+              <p>
+                The artists at Shine On Tattoo focus on delivering clean, long-lasting tattoos tailored to each client. Whether you&apos;re coming in for your first piece or adding to a full sleeve, the goal is the same - solid work done right the first time.
+              </p>
+              <p>
+                This isn&apos;t a high-pressure, gimmick-driven shop. It&apos;s a place where clients come back again and again because they trust the artists, the environment, and the results.
+              </p>
+            </div>
+          </div>
+
+          <div className="page-hero__visual">
+            <div className="media-frame">
+              <Image
+                src="/inferno/demon-garage.png"
+                alt="Gritty visual backdrop for Shine On Tattoo"
+                fill
+                sizes="(max-width: 960px) 100vw, 42vw"
+              />
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div className="about-grid">
-          {crew.map((member) => {
-            const reviewCount = reviewCounts[member.tone] ?? 0;
-            const role = `${reviewCount} REVIEW${reviewCount === 1 ? "" : "S"}`;
-
-            return (
-              <article key={member.name} className="about-card">
-                <div className="about-portrait-shell">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="about-avatar"
-                  />
-                </div>
-
-                <div className="about-copy">
-                  <p className="about-role">{`${member.name} — ${role}`}</p>
-                  <h2 className="about-name">{member.name}</h2>
-                  <p className="about-meta">
-                    {member.meta.map((line) => (
-                      <span key={line}>{line}</span>
-                    ))}
-                  </p>
-                  {member.socials.length ? (
-                    <div className="about-socials">
-                      {member.socials.map((social) => (
-                        <a
-                          key={social.href}
-                          href={social.href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="about-social-link"
-                        >
-                          {social.label}
-                        </a>
-                      ))}
-                    </div>
-                  ) : null}
-                  <p className="about-desc">{member.description}</p>
-                </div>
+      <section className="section">
+        <div className="container">
+          <div className="section-heading">
+            <p className="section-label">What Clients Come Back For</p>
+            <h2>Clear communication, solid execution, and a shop that takes the work seriously.</h2>
+          </div>
+          <div className="feature-grid">
+            {serviceHighlights.map((item, index) => (
+              <article key={item} className="feature-card">
+                <span className="feature-card__index">{String(index + 1).padStart(2, "0")}</span>
+                <p>{item}</p>
               </article>
-            );
-          })}
+            ))}
+          </div>
         </div>
+      </section>
 
-        <p className="about-footer">Three perspectives. One verdict system.</p>
+      <section className="section section--contrast">
+        <div className="container info-grid">
+          <div className="info-panel">
+            <p className="section-label">Visit</p>
+            <h2>{siteInfo.addressLine1}</h2>
+            <p>{siteInfo.addressLine2}</p>
+            <p>
+              <a href={siteInfo.phoneHref}>{siteInfo.phoneDisplay}</a>
+            </p>
+          </div>
+          <div className="info-panel">
+            <p className="section-label">Hours</p>
+            <ul className="stack-list">
+              {siteInfo.hours.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+              {siteInfo.policies.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   );

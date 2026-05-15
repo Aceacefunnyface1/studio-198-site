@@ -14,21 +14,21 @@ import { readSiteData, sortReviewsByNewest } from "@/lib/site-data";
 import { Comment, Review, ReviewWithStats } from "@/lib/types";
 import { ratingLabel, verdictTone } from "@/lib/utils";
 
-const HOME_WEEKLY_PICK_CONFIG = [
+export const HOME_WEEKLY_PICK_CONFIG = [
   {
     reviewerName: "Ace",
     slug: "final-destination-bloodlines-2025",
-    hook: "Ace says this week needs a clean hit of chaos, payoff, and crowd-pleasing damage.",
+    hook: "Ace's trending pick is a big crowd-pleaser with slick kills and real box-office heat.",
   },
   {
     reviewerName: "Mindy",
-    slug: "rosemary-s-baby-1968",
-    hook: "Mindy is pointing straight at dread this week: elegant, intimate, and still deeply upsetting.",
+    slug: "project-hail-mary",
+    hook: "Mindy's pick is a major sci-fi hit with the kind of scale people are showing up for right now.",
   },
   {
     reviewerName: "Leeanna",
-    slug: "the-wailing-2016",
-    hook: "Leeanna's pick this week is all control and escalation, the kind that keeps getting meaner the longer it sits.",
+    slug: "zootopia-2-2025",
+    hook: "Leeanna's pick keeps the list commercial this week: a huge hit with family appeal and real momentum.",
   },
 ] as const;
 
@@ -231,6 +231,25 @@ function getLatestReviewByReviewer(
     .sort((left, right) => +new Date(right.createdAt) - +new Date(left.createdAt))[0];
 }
 
+export function getConfiguredHomepageWeeklyPicks(
+  reviews: ReviewWithStats[],
+): HomepageWeeklyPick[] {
+  return HOME_WEEKLY_PICK_CONFIG.map(({ reviewerName, slug, hook }) => {
+    const configuredReview = reviews.find((review) => review.slug === slug);
+    const review = configuredReview ?? getLatestReviewByReviewer(reviews, reviewerName);
+
+    if (!review) {
+      return null;
+    }
+
+    return {
+      reviewerName,
+      review,
+      reason: hook || getFirstQuickHitSentence(review),
+    } satisfies HomepageWeeklyPick;
+  }).filter(Boolean) as HomepageWeeklyPick[];
+}
+
 export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
   const reviews = (await getAllReviewsWithStats()).filter(
     (review) => review.status === "published" && review.posterStatus === "approved",
@@ -281,20 +300,7 @@ export async function getHomepageShelfBundle(): Promise<HomepageShelfBundle> {
         review.director === "David Fincher",
     ),
   ].filter((section): section is HomepageShelfSection => Boolean(section));
-  const weeklyPicks = HOME_WEEKLY_PICK_CONFIG.map(({ reviewerName, slug, hook }) => {
-    const configuredReview = reviews.find((review) => review.slug === slug);
-    const review = configuredReview ?? getLatestReviewByReviewer(reviews, reviewerName);
-
-    if (!review) {
-      return null;
-    }
-
-    return {
-      reviewerName,
-      review,
-      reason: hook || getFirstQuickHitSentence(review),
-    } satisfies HomepageWeeklyPick;
-  }).filter(Boolean) as HomepageWeeklyPick[];
+  const weeklyPicks = getConfiguredHomepageWeeklyPicks(reviews);
 
   const anchoredShelves = [
     getHomepageShelfSection(

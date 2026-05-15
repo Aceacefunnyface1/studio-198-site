@@ -1,65 +1,41 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Cinzel_Decorative, Lato } from "next/font/google";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/shine/site-footer";
+import { SiteHeader } from "@/components/shine/site-header";
+import { siteInfo } from "@/lib/shine-on-data";
 import "./globals.css";
 
-const cinzelDecorative = Cinzel_Decorative({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["400", "700", "900"],
-  fallback: ["Georgia", "Times New Roman", "serif"],
-});
+const metadataBase = (() => {
+  const base =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    process.env.VERCEL_PROJECT_PRODUCTION_URL ??
+    "http://localhost:3000";
 
-const lato = Lato({
-  variable: "--font-body",
-  subsets: ["latin"],
-  weight: ["300", "400", "700", "900"],
-  fallback: ["Helvetica", "Arial", "sans-serif"],
-});
+  return new URL(base.startsWith("http") ? base : `https://${base}`);
+})();
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.moviesbybrad.com"),
-  title: "Snap Critique - No Hype. No Mercy.",
-  description:
-    "Short-form reviews. Instant verdicts. No fake praise. If it hits, it earns it. If it doesn't, it gets buried.",
-  applicationName: "Snap Critique",
-  keywords: [
-    "Snap Critique",
-    "Studio 198",
-    "movie reviews",
-    "film criticism",
-    "The Batman review",
-    "Terrifier 3 review",
-  ],
+  metadataBase,
+  title: siteInfo.title,
+  description: siteInfo.description,
+  applicationName: siteInfo.name,
+  keywords: [...siteInfo.keywords],
   openGraph: {
-    title: "Snap Critique - No Hype. No Mercy.",
-    description: "Short-form reviews. Instant verdicts. No fake praise.",
-    url: "https://www.moviesbybrad.com",
-    siteName: "Snap Critique",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    title: siteInfo.title,
+    description: siteInfo.description,
     type: "website",
+    locale: "en_US",
+    siteName: siteInfo.name,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Snap Critique - No Hype. No Mercy.",
-    description: "Short-form reviews. Instant verdicts. No fake praise.",
-    images: ["/twitter-image"],
+    title: siteInfo.title,
+    description: siteInfo.description,
   },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
-  },
-  verification: {
-    google: "DiAhR40RSmomb0K3RUxbwf9aKoYAP3Gzjz6VQpfBI-U",
   },
 };
 
@@ -68,19 +44,44 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    name: siteInfo.name,
+    image: `${metadataBase}/opengraph-image`,
+    telephone: siteInfo.phoneDisplay,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: siteInfo.addressLine1,
+      addressLocality: "Lawton",
+      addressRegion: "OK",
+      postalCode: "73505",
+      addressCountry: "US",
+    },
+    areaServed: "Lawton, Oklahoma",
+    paymentAccepted: "Cash",
+    openingHours: ["Mo-Su 06:00-21:00"],
+    url: metadataBase.toString(),
+  };
+
   return (
-    <html
-      lang="en"
-      className={`${cinzelDecorative.variable} ${lato.variable} bg-black`}
-    >
-      <body>
-        <div className="site-frame">
-          <div className="ambient ambient-left" />
-          <div className="ambient ambient-right" />
-          <SiteHeader />
-          <main>{children}</main>
-          <SiteFooter />
+    <html lang="en">
+      <body id="top">
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+        <div className="mobile-cta">
+          <a href={siteInfo.phoneHref} className="button button--primary">
+            Call {siteInfo.phoneDisplay}
+          </a>
+          <a href={siteInfo.smsHref} className="button button--secondary">
+            Text Now
+          </a>
         </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
         <Analytics />
       </body>
     </html>

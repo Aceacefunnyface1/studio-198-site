@@ -8,7 +8,10 @@ import {
   EARLY_HORROR_TITLE,
 } from "@/lib/early-horror";
 import { applyReviewFilters, type ReviewFilters } from "@/lib/review-filters";
-import { getPublishedReviewsWithStats } from "@/lib/review-queries";
+import {
+  getConfiguredHomepageWeeklyPicks,
+  getPublishedReviewsWithStats,
+} from "@/lib/review-queries";
 import { ReviewWithStats } from "@/lib/types";
 import { getReviewerPresentation } from "@/lib/utils";
 
@@ -143,31 +146,16 @@ function getPickReason(review: ReviewWithStats) {
 }
 
 function getReviewerWeeklyPicks(reviews: ReviewWithStats[]): ReviewerPick[] {
-  const reviewerOrder = ["Ace", "Mindy", "Leeanna"];
+  return getConfiguredHomepageWeeklyPicks(reviews).map((pick) => {
+    const presentation = getReviewerPresentation(pick.reviewerName);
 
-  return reviewerOrder
-    .map((reviewerName) => {
-      const review = reviews
-        .filter((entry) => entry.reviewerName === reviewerName)
-        .sort(
-          (left, right) =>
-            +new Date(right.createdAt) - +new Date(left.createdAt),
-        )[0];
-
-      if (!review) {
-        return null;
-      }
-
-      const presentation = getReviewerPresentation(reviewerName);
-
-      return {
-        review,
-        reviewerName,
-        tone: presentation.tone,
-        reason: getPickReason(review),
-      } satisfies ReviewerPick;
-    })
-    .filter((entry): entry is ReviewerPick => Boolean(entry));
+    return {
+      review: pick.review,
+      reviewerName: pick.reviewerName,
+      tone: presentation.tone,
+      reason: pick.reason || getPickReason(pick.review),
+    } satisfies ReviewerPick;
+  });
 }
 
 function getSingleSearchParam(

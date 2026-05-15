@@ -1,59 +1,72 @@
 import type { Metadata } from "next";
-import { submitInquiryAction } from "@/app/actions";
-
-type ContactPageProps = {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-};
+import { bookingNotes, siteInfo } from "@/lib/shine-on-data";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Send press, business, creator, or general inquiries to Snap Critique by Studio 198.",
+  title: `Contact | ${siteInfo.name}`,
+  description: "Contact Shine On Tattoo in Lawton, Oklahoma for walk-ins, booking questions, and shop hours.",
 };
 
-export default async function ContactPage({ searchParams }: ContactPageProps) {
-  const params = await searchParams;
-  const success = typeof params.success === "string" ? params.success : "";
-  const error = typeof params.error === "string" ? params.error : "";
-
+export default function ContactPage() {
   return (
-    <div className="page-stack">
-      <section className="contact-shell">
-        <p className="eyebrow">Contact / Submission</p>
-        <h1>Reach Studio 198</h1>
-        <p>
-          Use this form for press, partnerships, review requests, creator
-          submissions, or general questions. Messages are stored in the admin
-          panel for follow-up.
-        </p>
-
-        {success ? <p className="muted-note">{success}</p> : null}
-        {error ? <p className="muted-note">{error}</p> : null}
-
-        <form action={submitInquiryAction} className="contact-form">
-          <div className="field">
-            <label htmlFor="name">Name</label>
-            <input id="name" name="name" required />
-          </div>
-          <div className="field">
-            <label htmlFor="email">Email</label>
-            <input id="email" name="email" type="email" required />
-          </div>
-          <div className="field-full">
-            <label htmlFor="subject">Subject</label>
-            <input id="subject" name="subject" placeholder="Press, business, creator submission" />
-          </div>
-          <div className="field-full">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" required />
-          </div>
-          <div className="field-full">
-            <button type="submit" className="button-primary">
-              Send Message
-            </button>
-          </div>
-        </form>
+    <main>
+      <section className="page-hero">
+        <div className="container">
+          <p className="section-label">Get In Touch</p>
+          <h1>Call, stop by, or get directions to the shop.</h1>
+          <p className="page-hero__lead">
+            Shine On Tattoo keeps it simple. For bookings, walk-in questions, and availability, call the shop or come by during business hours.
+          </p>
+        </div>
       </section>
-    </div>
+
+      <section className="section">
+        <div className="container info-grid">
+          <article className="info-panel info-panel--accent" id="booking">
+            <p className="section-label">Contact</p>
+            <h2>{siteInfo.name}</h2>
+            <p>
+              {siteInfo.addressLine1}
+              <br />
+              {siteInfo.addressLine2}
+            </p>
+            <p>
+              <a href={siteInfo.phoneHref}>{siteInfo.phoneDisplay}</a>
+            </p>
+            <div className="hero-actions">
+              <a href={siteInfo.phoneHref} className="button button--primary">
+                Call Now
+              </a>
+              <a href={siteInfo.mapHref} target="_blank" rel="noreferrer" className="button button--ghost">
+                Get Directions
+              </a>
+            </div>
+          </article>
+
+          <article className="info-panel">
+            <p className="section-label">Hours</p>
+            <ul className="stack-list">
+              {siteInfo.hours.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+            <p className="section-label section-label--spaced">Shop Notes</p>
+            <ul className="stack-list">
+              {siteInfo.policies.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+          </article>
+
+          <article className="info-panel">
+            <p className="section-label">Booking Info</p>
+            <ul className="stack-list">
+              {bookingNotes.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
   );
 }
